@@ -1,10 +1,71 @@
 {
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/ResourceManagement/**.csproj",
+            "**/ServiceManagement/**.csproj"
+          ]
+        }
+      ],
+      "dest": "api/common"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "src/src/ServiceManagement/**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/ResourceManagement/**.csproj"
+          ]
+        }
+      ],
+      "dest": "api/servicemanagement"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "src/src/ResourceManagement/**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/ServiceManagement/**.csproj"
+          ]
+        }
+      ],
+      "dest": "api/resourcemanagement"
+    }
+  ],
   "build": {
     "content": [
       {
         "files": [
           "**/*.md"
         ],
+        "exclude": [
+          "**/obj/**",
+          "azure/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ],
+        "src": "api",
+        "dest": "api",
         "exclude": [
           "**/obj/**",
           "azure/**",
@@ -22,7 +83,7 @@
           "**/obj/**",
           "azure/**",
           "**/includes/**"
-        ] 
+        ]
       }
     ],
     "overwrite": [],

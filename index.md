@@ -7,17 +7,17 @@ layout: HubPage
         <h1>Azure .NET SDK Reference</h1>
         <h2>Learn what you can use the Azure SDK for .NET to do against the Microsoft Azure cloud</h2>
     </section>
-    <section id="featured" class="container">
+    <!--section id="featured" class="container">
         <h2 class="section-heading"><span class="icon icon-lightbulb-checked"></span> Featured Content</h2>
         <div class="features row">
             <ul class="column-half">
-                <li><a href="index">Get Started with the SDK</a></li>
+                <li><a href="">Get Started with the SDK</a></li>
             </ul>
             <ul class="column-half">
-                <li><a href="api/index">SDK Class Library</a></li>
+                <li><a href="">SDK Class Library</a></li>
             </ul>
         </div>
-    </section>
+    </section-->
     <div id="journeys">
         <section class="container">
             <ul class="journeys-list">
@@ -34,7 +34,7 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="">
+                                <a href="api/common">
                                     <h3>Common SDK Utilities</h3>
                                     <p>Reference for the common classes used throughout the Azure SDK for .NET</p>
                                 </a>
@@ -55,13 +55,13 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="">
+                                <a href="api/resourcemanagement">
                                     <h3>Azure Resource Manager (ARM)</h3>
                                     <p>Learn about the new, template-based management SDK.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="">
+                                <a href="api/servicemanagement">
                                     <h3>Azure Service Manager (ASM)</h3>
                                     <p>Learn about the Azure's classic management SDK.</p>
                                 </a>
