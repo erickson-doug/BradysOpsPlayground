@@ -1,0 +1,942 @@
+items:
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  commentId: T:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  id: DeploymentOperationsExtensions
+  parent: Microsoft.WindowsAzure.WebSitesExtensions
+  children:
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.Get(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetLog(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,System.String)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetLogAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,System.String)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.List(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListLogs(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListLogsAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.Redeploy(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  - Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.RedeployAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  langs:
+  - csharp
+  - vb
+  name: DeploymentOperationsExtensions
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeploymentOperationsExtensions
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nThe websites extensions client manages the web sites deployments, web\r\njobs and other extensions.\r\n"
+  example: []
+  syntax:
+    content: public class DeploymentOperationsExtensions
+    content.vb: Public Class DeploymentOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.Get(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.Get(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  id: Get(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(IDeploymentOperations, String)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.Get(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGets a deployment for a website.\r\n"
+  example: []
+  syntax:
+    content: public static DeploymentGetResponse Get(IDeploymentOperations operations, string deploymentId)
+    content.vb: Public Shared Function Get(operations As IDeploymentOperations, deploymentId As String) As DeploymentGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: deploymentId
+      type: System.String
+      description: "\r\nRequired. The deployment identifier.\r\n"
+    return:
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse
+      description: "\r\nThe deployment information operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  id: GetAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(IDeploymentOperations, String)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGets a deployment for a website.\r\n"
+  example: []
+  syntax:
+    content: public static Task<DeploymentGetResponse> GetAsync(IDeploymentOperations operations, string deploymentId)
+    content.vb: Public Shared Function GetAsync(operations As IDeploymentOperations, deploymentId As String) As Task(Of DeploymentGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: deploymentId
+      type: System.String
+      description: "\r\nRequired. The deployment identifier.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse}
+      description: "\r\nThe deployment information operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetLog(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,System.String)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetLog(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,System.String)
+  id: GetLog(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,System.String)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLog(IDeploymentOperations, String, String)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetLog(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetLog
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGets a deployment log for a website.\r\n"
+  example: []
+  syntax:
+    content: public static DeploymentGetLogResponse GetLog(IDeploymentOperations operations, string deploymentId, string deploymentLogId)
+    content.vb: Public Shared Function GetLog(operations As IDeploymentOperations, deploymentId As String, deploymentLogId As String) As DeploymentGetLogResponse
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: deploymentId
+      type: System.String
+      description: "\r\nRequired. The deployment identifier.\r\n"
+    - id: deploymentLogId
+      type: System.String
+      description: "\r\nRequired. The deployment log identifier.\r\n"
+    return:
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse
+      description: "\r\nThe get log for a deployments operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetLogAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,System.String)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetLogAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,System.String)
+  id: GetLogAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,System.String)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLogAsync(IDeploymentOperations, String, String)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.GetLogAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetLogAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGets a deployment log for a website.\r\n"
+  example: []
+  syntax:
+    content: public static Task<DeploymentGetLogResponse> GetLogAsync(IDeploymentOperations operations, string deploymentId, string deploymentLogId)
+    content.vb: Public Shared Function GetLogAsync(operations As IDeploymentOperations, deploymentId As String, deploymentLogId As String) As Task(Of DeploymentGetLogResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: deploymentId
+      type: System.String
+      description: "\r\nRequired. The deployment identifier.\r\n"
+    - id: deploymentLogId
+      type: System.String
+      description: "\r\nRequired. The deployment log identifier.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse}
+      description: "\r\nThe get log for a deployments operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.List(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.List(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  id: List(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IDeploymentOperations, DeploymentListParameters)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.List(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 136
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nList the deployments for a website.\r\n"
+  example: []
+  syntax:
+    content: public static DeploymentListResponse List(IDeploymentOperations operations, DeploymentListParameters parameters)
+    content.vb: Public Shared Function List(operations As IDeploymentOperations, parameters As DeploymentListParameters) As DeploymentListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters
+      description: "\r\nOptional. Additional parameters.\r\n"
+    return:
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse
+      description: "\r\nThe list of deployments operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  id: ListAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IDeploymentOperations, DeploymentListParameters)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 158
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nList the deployments for a website.\r\n"
+  example: []
+  syntax:
+    content: public static Task<DeploymentListResponse> ListAsync(IDeploymentOperations operations, DeploymentListParameters parameters)
+    content.vb: Public Shared Function ListAsync(operations As IDeploymentOperations, parameters As DeploymentListParameters) As Task(Of DeploymentListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters
+      description: "\r\nOptional. Additional parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse}
+      description: "\r\nThe list of deployments operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListLogs(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListLogs(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  id: ListLogs(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListLogs(IDeploymentOperations, String, DeploymentListParameters)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListLogs(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, System.String, Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogs
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 179
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nList the logs for a deployment for a website.\r\n"
+  example: []
+  syntax:
+    content: public static DeploymentListLogsResponse ListLogs(IDeploymentOperations operations, string deploymentId, DeploymentListParameters parameters)
+    content.vb: Public Shared Function ListLogs(operations As IDeploymentOperations, deploymentId As String, parameters As DeploymentListParameters) As DeploymentListLogsResponse
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: deploymentId
+      type: System.String
+      description: "\r\nRequired. The deployment identifier.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters
+      description: "\r\nOptional. Additional parameters.\r\n"
+    return:
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse
+      description: "\r\nThe list of deployments operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListLogsAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListLogsAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  id: ListLogsAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListLogsAsync(IDeploymentOperations, String, DeploymentListParameters)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.ListLogsAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, System.String, Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogsAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 204
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nList the logs for a deployment for a website.\r\n"
+  example: []
+  syntax:
+    content: public static Task<DeploymentListLogsResponse> ListLogsAsync(IDeploymentOperations operations, string deploymentId, DeploymentListParameters parameters)
+    content.vb: Public Shared Function ListLogsAsync(operations As IDeploymentOperations, deploymentId As String, parameters As DeploymentListParameters) As Task(Of DeploymentListLogsResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: deploymentId
+      type: System.String
+      description: "\r\nRequired. The deployment identifier.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters
+      description: "\r\nOptional. Additional parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse}
+      description: "\r\nThe list of deployments operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.Redeploy(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.Redeploy(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  id: Redeploy(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Redeploy(IDeploymentOperations, String)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.Redeploy(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Redeploy
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 223
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nRedeploys a specific website deployment.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse Redeploy(IDeploymentOperations operations, string deploymentId)
+    content.vb: Public Shared Function Redeploy(operations As IDeploymentOperations, deploymentId As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: deploymentId
+      type: System.String
+      description: "\r\nRequired. The deployment identifier.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.RedeployAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.RedeployAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  id: RedeployAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations,System.String)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: RedeployAsync(IDeploymentOperations, String)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.DeploymentOperationsExtensions.RedeployAsync(Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RedeployAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/DeploymentOperationsExtensions.cs
+    startLine: 246
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nRedeploys a specific website deployment.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> RedeployAsync(IDeploymentOperations operations, string deploymentId)
+    content.vb: Public Shared Function RedeployAsync(operations As IDeploymentOperations, deploymentId As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations.\r\n"
+    - id: deploymentId
+      type: System.String
+      description: "\r\nRequired. The deployment identifier.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.WindowsAzure.WebSitesExtensions
+  isExternal: false
+  name: Microsoft.WindowsAzure.WebSitesExtensions
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+  parent: Microsoft.WindowsAzure.WebSitesExtensions
+  isExternal: false
+  name: IDeploymentOperations
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IDeploymentOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: DeploymentGetResponse
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeploymentGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse)
+  name.vb: Task(Of DeploymentGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse
+    name: DeploymentGetResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse
+    name: DeploymentGetResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: DeploymentGetLogResponse
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeploymentGetLogResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse)
+  name.vb: Task(Of DeploymentGetLogResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse
+    name: DeploymentGetLogResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse
+    name: DeploymentGetLogResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentGetLogResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: DeploymentListParameters
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListParameters
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: DeploymentListResponse
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeploymentListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse)
+  name.vb: Task(Of DeploymentListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse
+    name: DeploymentListResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse
+    name: DeploymentListResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: DeploymentListLogsResponse
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeploymentListLogsResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse)
+  name.vb: Task(Of DeploymentListLogsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse
+    name: DeploymentListLogsResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse
+    name: DeploymentListLogsResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DeploymentListLogsResponse
+  - name: )
+    fullName: )
+- uid: AzureOperationResponse
+  isExternal: true
+  name: AzureOperationResponse
+  fullName: AzureOperationResponse
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )

@@ -1,0 +1,802 @@
+items:
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  commentId: T:Microsoft.Azure.Management.Compute.IComputeManagementClient
+  id: IComputeManagementClient
+  parent: Microsoft.Azure.Management.Compute
+  children:
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.ApiVersion
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.AvailabilitySets
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.BaseUri
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.Credentials
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.GetDeleteOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.LongRunningOperationInitialTimeout
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.LongRunningOperationRetryTimeout
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.Usage
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineExtensionImages
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineExtensions
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineImages
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachines
+  - Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineSizes
+  langs:
+  - csharp
+  - vb
+  name: IComputeManagementClient
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IComputeManagementClient
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nThe Compute Management Client.\r\n"
+  example: []
+  syntax:
+    content: 'public interface IComputeManagementClient : IDisposable'
+    content.vb: >-
+      Public Interface IComputeManagementClient
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.ApiVersion
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.BaseUri
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.Credentials
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.Credentials
+  id: Credentials
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.AvailabilitySets
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.AvailabilitySets
+  id: AvailabilitySets
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: AvailabilitySets
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.AvailabilitySets
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AvailabilitySets
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 81
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for managing the availability sets in compute management.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IAvailabilitySetOperations AvailabilitySets
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property AvailabilitySets As IAvailabilitySetOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.Usage
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.Usage
+  id: Usage
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Usage
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.Usage
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Usage
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 89
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for listing usage.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IUsageOperations Usage
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Usage As IUsageOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.IUsageOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineExtensionImages
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineExtensionImages
+  id: VirtualMachineExtensionImages
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachineExtensionImages
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineExtensionImages
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VirtualMachineExtensionImages
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 98
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for managing the virtual machine extension images in\r\ncompute management.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IVirtualMachineExtensionImageOperations VirtualMachineExtensionImages
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property VirtualMachineExtensionImages As IVirtualMachineExtensionImageOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineExtensions
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineExtensions
+  id: VirtualMachineExtensions
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachineExtensions
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineExtensions
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VirtualMachineExtensions
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 107
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for managing the virtual machine extensions in compute\r\nmanagement.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IVirtualMachineExtensionOperations VirtualMachineExtensions
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property VirtualMachineExtensions As IVirtualMachineExtensionOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineImages
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineImages
+  id: VirtualMachineImages
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachineImages
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineImages
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VirtualMachineImages
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 116
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for managing the virtual machine images in compute\r\nmanagement.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IVirtualMachineImageOperations VirtualMachineImages
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property VirtualMachineImages As IVirtualMachineImageOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.IVirtualMachineImageOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachines
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachines
+  id: VirtualMachines
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachines
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachines
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VirtualMachines
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for managing the virtual machines in compute management.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IVirtualMachineOperations VirtualMachines
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property VirtualMachines As IVirtualMachineOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.IVirtualMachineOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineSizes
+  commentId: P:Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineSizes
+  id: VirtualMachineSizes
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachineSizes
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.VirtualMachineSizes
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VirtualMachineSizes
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 132
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for listing virtual machine sizes available in a region.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IVirtualMachineSizeOperations VirtualMachineSizes
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property VirtualMachineSizes As IVirtualMachineSizeOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.GetDeleteOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IComputeManagementClient.GetDeleteOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetDeleteOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetDeleteOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.GetDeleteOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDeleteOperationStatusAsync
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 152
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nThe Get Delete Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call GetDeleteOperationStatus to determine whether the\r\noperation has succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<DeleteOperationResponse> GetDeleteOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetDeleteOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of DeleteOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.DeleteOperationResponse}
+      description: "\r\nThe compute long running operation response.\r\n"
+- uid: Microsoft.Azure.Management.Compute.IComputeManagementClient.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IComputeManagementClient.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IComputeManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetLongRunningOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IComputeManagementClient.GetLongRunningOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetLongRunningOperationStatusAsync
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IComputeManagementClient.cs
+    startLine: 169
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call GetLongRunningOperationStatus to determine whether the\r\noperation has succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<ComputeLongRunningOperationResponse> GetLongRunningOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetLongRunningOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of ComputeLongRunningOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.ComputeLongRunningOperationResponse}
+      description: "\r\nThe Compute service response for long-running operations.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: Microsoft.Azure.Management.Compute
+  fullName: Microsoft.Azure.Management.Compute
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  parent: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: IAvailabilitySetOperations
+  fullName: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+- uid: Microsoft.Azure.Management.Compute.IUsageOperations
+  parent: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: IUsageOperations
+  fullName: Microsoft.Azure.Management.Compute.IUsageOperations
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+  parent: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: IVirtualMachineExtensionImageOperations
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionOperations
+  parent: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: IVirtualMachineExtensionOperations
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionOperations
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineImageOperations
+  parent: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: IVirtualMachineImageOperations
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineImageOperations
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineOperations
+  parent: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: IVirtualMachineOperations
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineOperations
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations
+  parent: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: IVirtualMachineSizeOperations
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.DeleteOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DeleteOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.DeleteOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.DeleteOperationResponse)
+  name.vb: Task(Of DeleteOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.DeleteOperationResponse
+    name: DeleteOperationResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.DeleteOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.DeleteOperationResponse
+    name: DeleteOperationResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.DeleteOperationResponse
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.ComputeLongRunningOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ComputeLongRunningOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.ComputeLongRunningOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.ComputeLongRunningOperationResponse)
+  name.vb: Task(Of ComputeLongRunningOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.ComputeLongRunningOperationResponse
+    name: ComputeLongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.ComputeLongRunningOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.ComputeLongRunningOperationResponse
+    name: ComputeLongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.ComputeLongRunningOperationResponse
+  - name: )
+    fullName: )

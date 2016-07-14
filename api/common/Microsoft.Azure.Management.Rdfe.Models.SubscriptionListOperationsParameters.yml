@@ -1,0 +1,631 @@
+items:
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  commentId: T:Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  id: SubscriptionListOperationsParameters
+  parent: Microsoft.Azure.Management.Rdfe.Models
+  children:
+  - Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.#ctor
+  - Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.#ctor(System.DateTime,System.DateTime)
+  - Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.ContinuationToken
+  - Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.EndTime
+  - Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.ObjectIdFilter
+  - Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.OperationStatus
+  - Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.StartTime
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionListOperationsParameters
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  type: Class
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SubscriptionListOperationsParameters
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe.Models
+  summary: "\r\nParameters supplied to the List Subscription Operations operation.\r\n"
+  example: []
+  syntax:
+    content: public class SubscriptionListOperationsParameters
+    content.vb: Public Class SubscriptionListOperationsParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.ContinuationToken
+  commentId: P:Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.ContinuationToken
+  id: ContinuationToken
+  parent: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  langs:
+  - csharp
+  - vb
+  name: ContinuationToken
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.ContinuationToken
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ContinuationToken
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe.Models
+  summary: "\r\nOptional. When there are too many operations to list, such as when\r\nthe requested timeframe is very large, the response includes an\r\nincomplete list and a token that can be used to return the rest of\r\nthe list. Subsequent requests must include this parameter to\r\ncontinue listing operations from where the last response left off.\r\nIf no token is specified, a filter is not applied and the response\r\nwill begin at the specified StartTime.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ContinuationToken
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ContinuationToken As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.EndTime
+  commentId: P:Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.EndTime
+  id: EndTime
+  parent: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  langs:
+  - csharp
+  - vb
+  name: EndTime
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.EndTime
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: EndTime
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe.Models
+  summary: "\r\nRequired. The end of the timeframe to begin listing subscription\r\noperations in UTC format. This parameter and the StartTime\r\nparameter indicate the timeframe to retrieve subscription\r\noperations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime EndTime
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property EndTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.ObjectIdFilter
+  commentId: P:Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.ObjectIdFilter
+  id: ObjectIdFilter
+  parent: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  langs:
+  - csharp
+  - vb
+  name: ObjectIdFilter
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.ObjectIdFilter
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ObjectIdFilter
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+    startLine: 69
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe.Models
+  summary: "\r\nOptional. Returns subscription operations only for the specified\r\nobject type and object ID. This parameter must be set equal to the\r\nURL value for performing an HTTP GET on the object. If no object\r\nis specified, a filter is not applied.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ObjectIdFilter
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ObjectIdFilter As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.OperationStatus
+  commentId: P:Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.OperationStatus
+  id: OperationStatus
+  parent: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  langs:
+  - csharp
+  - vb
+  name: OperationStatus
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.OperationStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: OperationStatus
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe.Models
+  summary: "\r\nOptional. Returns subscription operations only for the specified\r\nresult status, either Succeeded, Failed, or InProgress. This\r\nfilter can be combined with the ObjectIdFilter to select\r\nsubscription operations for an object with a specific result\r\nstatus. If no result status is specified, a filter is not applied.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public OperationStatus? OperationStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property OperationStatus As OperationStatus?
+    parameters: []
+    return:
+      type: System.Nullable{Microsoft.Azure.OperationStatus}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.StartTime
+  commentId: P:Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.StartTime
+  id: StartTime
+  parent: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.StartTime
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StartTime
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe.Models
+  summary: "\r\nRequired. The start of the timeframe to begin listing subscription\r\noperations in UTC format. This parameter and the EndTime parameter\r\nindicate the timeframe to retrieve subscription operations. This\r\nparameter cannot indicate a start date of more than 90 days in the\r\npast.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime StartTime
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property StartTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.#ctor
+  commentId: M:Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionListOperationsParameters()
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.SubscriptionListOperationsParameters()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+    startLine: 109
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe.Models
+  summary: "\r\nInitializes a new instance of the\r\nSubscriptionListOperationsParameters class.\r\n"
+  example: []
+  syntax:
+    content: public SubscriptionListOperationsParameters()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.#ctor(System.DateTime,System.DateTime)
+  commentId: M:Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.#ctor(System.DateTime,System.DateTime)
+  id: '#ctor(System.DateTime,System.DateTime)'
+  parent: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionListOperationsParameters(DateTime, DateTime)
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters.SubscriptionListOperationsParameters(System.DateTime, System.DateTime)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Models/SubscriptionListOperationsParameters.cs
+    startLine: 117
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe.Models
+  summary: "\r\nInitializes a new instance of the\r\nSubscriptionListOperationsParameters class with required arguments.\r\n"
+  example: []
+  syntax:
+    content: public SubscriptionListOperationsParameters(DateTime startTime, DateTime endTime)
+    content.vb: Public Sub New(startTime As Date, endTime As Date)
+    parameters:
+    - id: startTime
+      type: System.DateTime
+    - id: endTime
+      type: System.DateTime
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Rdfe.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Rdfe.Models
+  fullName: Microsoft.Azure.Management.Rdfe.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Nullable{Microsoft.Azure.OperationStatus}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<OperationStatus>
+  fullName: System.Nullable<Microsoft.Azure.OperationStatus>
+  fullname.vb: System.Nullable(Of Microsoft.Azure.OperationStatus)
+  name.vb: Nullable(Of OperationStatus)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.OperationStatus
+    name: OperationStatus
+    fullName: Microsoft.Azure.OperationStatus
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.OperationStatus
+    name: OperationStatus
+    fullName: Microsoft.Azure.OperationStatus
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

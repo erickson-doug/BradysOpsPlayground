@@ -1,0 +1,602 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Graph_RBAC_IUserOperations">
+          <span class="lang-csharp">IUserOperations</span>
+          <span class="lang-vb">IUserOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Graph.RBAC.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for working with Users in Azure Active Directory Graph API.
+(see <a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for
+more information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IUserOperations_CreateAsync_Microsoft_Azure_Graph_RBAC_Models_UserCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateAsync(UserCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateAsync(UserCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Create a new user.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/dn130117.aspx">http://msdn.microsoft.com/en-us/library/azure/dn130117.aspx</a> for
+more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;UserGetResult&gt; CreateAsync(UserCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateAsync(parameters As UserCreateParameters, cancellationToken As CancellationToken) As Task(Of UserGetResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserCreateParameters.html#Microsoft_Azure_Graph_RBAC_Models_UserCreateParameters">UserCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserCreateParameters.html#Microsoft_Azure_Graph_RBAC_Models_UserCreateParameters">UserCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters to create a user.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserGetResult.html#Microsoft_Azure_Graph_RBAC_Models_UserGetResult">UserGetResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserGetResult.html#Microsoft_Azure_Graph_RBAC_Models_UserGetResult">UserGetResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Get user information API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IUserOperations_DeleteAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Delete a user.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/dn151676.aspx">http://msdn.microsoft.com/en-us/library/azure/dn151676.aspx</a> for
+more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteAsync(string user, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(user As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>user</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>user object id or user principal name</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IUserOperations_GetAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets user information from the directory.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/dn151678.aspx">http://msdn.microsoft.com/en-us/library/azure/dn151678.aspx</a> for
+more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;UserGetResult&gt; GetAsync(string upnOrObjectId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(upnOrObjectId As String, cancellationToken As CancellationToken) As Task(Of UserGetResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>upnOrObjectId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>User object Id or user principal name to get user information.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserGetResult.html#Microsoft_Azure_Graph_RBAC_Models_UserGetResult">UserGetResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserGetResult.html#Microsoft_Azure_Graph_RBAC_Models_UserGetResult">UserGetResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Get user information API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IUserOperations_GetByUserPrincipalNameAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetByUserPrincipalNameAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetByUserPrincipalNameAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets user information from the directory.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;UserListResult&gt; GetByUserPrincipalNameAsync(string userPrincipalName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetByUserPrincipalNameAsync(userPrincipalName As String, cancellationToken As CancellationToken) As Task(Of UserListResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>userPrincipalName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Filter based on userPrincipalName. This works well with guest users
+upn.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserListResult.html#Microsoft_Azure_Graph_RBAC_Models_UserListResult">UserListResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserListResult.html#Microsoft_Azure_Graph_RBAC_Models_UserListResult">UserListResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Get tenant users API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IUserOperations_GetMemberGroupsAsync_Microsoft_Azure_Graph_RBAC_Models_UserGetMemberGroupsParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetMemberGroupsAsync(UserGetMemberGroupsParameters, CancellationToken)</code>
+          <code class="lang-vb">GetMemberGroupsAsync(UserGetMemberGroupsParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets a collection that contains the Object IDs of the groups of
+which the user is a member.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;UserGetMemberGroupsResult&gt; GetMemberGroupsAsync(UserGetMemberGroupsParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetMemberGroupsAsync(parameters As UserGetMemberGroupsParameters, cancellationToken As CancellationToken) As Task(Of UserGetMemberGroupsResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserGetMemberGroupsParameters.html#Microsoft_Azure_Graph_RBAC_Models_UserGetMemberGroupsParameters">UserGetMemberGroupsParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserGetMemberGroupsParameters.html#Microsoft_Azure_Graph_RBAC_Models_UserGetMemberGroupsParameters">UserGetMemberGroupsParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>User filtering parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserGetMemberGroupsResult.html#Microsoft_Azure_Graph_RBAC_Models_UserGetMemberGroupsResult">UserGetMemberGroupsResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserGetMemberGroupsResult.html#Microsoft_Azure_Graph_RBAC_Models_UserGetMemberGroupsResult">UserGetMemberGroupsResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for GetMemberGroups API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IUserOperations_ListAsync_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(String, String, CancellationToken)</code>
+          <code class="lang-vb">ListAsync(String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets list of users for the current tenant.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;UserListResult&gt; ListAsync(string mail, string displayNameStartsWith, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(mail As String, displayNameStartsWith As String, cancellationToken As CancellationToken) As Task(Of UserListResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>mail</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Email to filter results.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>displayNameStartsWith</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Display name to filter results.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserListResult.html#Microsoft_Azure_Graph_RBAC_Models_UserListResult">UserListResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserListResult.html#Microsoft_Azure_Graph_RBAC_Models_UserListResult">UserListResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Get tenant users API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IUserOperations_ListNextAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListNextAsync(String, CancellationToken)</code>
+          <code class="lang-vb">ListNextAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets list of users for the current tenant.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;UserListResult&gt; ListNextAsync(string nextLink, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of UserListResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>nextLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>NextLink from the previous successful call to List operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserListResult.html#Microsoft_Azure_Graph_RBAC_Models_UserListResult">UserListResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.UserListResult.html#Microsoft_Azure_Graph_RBAC_Models_UserListResult">UserListResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Get tenant users API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

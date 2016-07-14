@@ -1,0 +1,195 @@
+items:
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations
+  commentId: T:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations
+  id: IVirtualMachineExtensionOperations
+  parent: Microsoft.WindowsAzure.Management.Compute
+  children:
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations.ListAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations.ListVersionsAsync(System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IVirtualMachineExtensionOperations
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IVirtualMachineExtensionOperations
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionOperations.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Service Management API includes operations for managing the virtual\r\nmachine extensions in your subscription.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/jj157206.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public interface IVirtualMachineExtensionOperations
+    content.vb: Public Interface IVirtualMachineExtensionOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionOperations.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe List Resource Extensions operation lists the resource\r\nextensions that are available to add to a Virtual Machine. In\r\nAzure, a process can run as a resource extension of a Virtual\r\nMachine. For example, Remote Desktop Access or the Azure\r\nDiagnostics Agent can run as resource extensions to the Virtual\r\nMachine.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn495441.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineExtensionListResponse> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of VirtualMachineExtensionListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse}
+      description: "\r\nThe List Resource Extensions operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations.ListVersionsAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations.ListVersionsAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListVersionsAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations
+  langs:
+  - csharp
+  - vb
+  name: ListVersionsAsync(String, String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineExtensionOperations.ListVersionsAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListVersionsAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionOperations.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe List Resource Extension Versions operation lists the versions\r\nof a resource extension that are available to add to a Virtual\r\nMachine. In Azure, a process can run as a resource extension of a\r\nVirtual Machine. For example, Remote Desktop Access or the Azure\r\nDiagnostics Agent can run as resource extensions to the Virtual\r\nMachine.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn495440.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineExtensionListResponse> ListVersionsAsync(string publisherName, string extensionName, CancellationToken cancellationToken)
+    content.vb: Function ListVersionsAsync(publisherName As String, extensionName As String, cancellationToken As CancellationToken) As Task(Of VirtualMachineExtensionListResponse)
+    parameters:
+    - id: publisherName
+      type: System.String
+      description: "\r\nThe name of the publisher.\r\n"
+    - id: extensionName
+      type: System.String
+      description: "\r\nThe name of the extension.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse}
+      description: "\r\nThe List Resource Extensions operation response.\r\n"
+references:
+- uid: Microsoft.WindowsAzure.Management.Compute
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.Compute
+  fullName: Microsoft.WindowsAzure.Management.Compute
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineExtensionListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse)
+  name.vb: Task(Of VirtualMachineExtensionListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse
+    name: VirtualMachineExtensionListResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse
+    name: VirtualMachineExtensionListResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineExtensionListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

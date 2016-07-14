@@ -1,0 +1,1386 @@
+items:
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  commentId: T:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  id: GroupOperationsExtensions
+  parent: Microsoft.Azure.Graph.RBAC
+  children:
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.AddMember(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.AddMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Create(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.CreateAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Delete(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.DeleteAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Get(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembers(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersNext(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetMemberGroups(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.List(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListNext(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.RemoveMember(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  - Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.RemoveMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: GroupOperationsExtensions
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GroupOperationsExtensions
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  syntax:
+    content: public class GroupOperationsExtensions
+    content.vb: Public Class GroupOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.AddMember(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.AddMember(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  id: AddMember(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMember(IGroupOperations, String, GroupAddMemberParameters)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.AddMember(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String, Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AddMember
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nAdd a memeber to a group.   (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151600.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse AddMember(IGroupOperations operations, string groupObjectId, GroupAddMemberParameters parameters)
+    content.vb: Public Shared Function AddMember(operations As IGroupOperations, groupObjectId As String, parameters As GroupAddMemberParameters) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nRequired. Group object id\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters
+      description: "\r\nRequired. Member Object Url as\r\nhttps://graph.windows.net/contoso.onmicrosoft.com/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.AddMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.AddMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  id: AddMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMemberAsync(IGroupOperations, String, GroupAddMemberParameters)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.AddMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String, Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AddMemberAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 80
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nAdd a memeber to a group.   (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151600.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> AddMemberAsync(IGroupOperations operations, string groupObjectId, GroupAddMemberParameters parameters)
+    content.vb: Public Shared Function AddMemberAsync(operations As IGroupOperations, groupObjectId As String, parameters As GroupAddMemberParameters) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nRequired. Group object id\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters
+      description: "\r\nRequired. Member Object Url as\r\nhttps://graph.windows.net/contoso.onmicrosoft.com/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Create(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Create(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  id: Create(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Create(IGroupOperations, GroupCreateParameters)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Create(Microsoft.Azure.Graph.RBAC.IGroupOperations, Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Create
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nCreate a group in the directory.  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151614.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public static GroupGetResult Create(IGroupOperations operations, GroupCreateParameters parameters)
+    content.vb: Public Shared Function Create(operations As IGroupOperations, parameters As GroupCreateParameters) As GroupGetResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters
+      description: "\r\nRequired. Parameters to create a group\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+      description: "\r\nServer response for Get group information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.CreateAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.CreateAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  id: CreateAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(IGroupOperations, GroupCreateParameters)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.CreateAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nCreate a group in the directory.  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151614.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public static Task<GroupGetResult> CreateAsync(IGroupOperations operations, GroupCreateParameters parameters)
+    content.vb: Public Shared Function CreateAsync(operations As IGroupOperations, parameters As GroupCreateParameters) As Task(Of GroupGetResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters
+      description: "\r\nRequired. Parameters to create a group\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetResult}
+      description: "\r\nServer response for Get group information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Delete(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Delete(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: Delete(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Delete(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Delete(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Delete
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 142
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nDelete a group in the directory.  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151608.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse Delete(IGroupOperations operations, string groupObjectId)
+    content.vb: Public Shared Function Delete(operations As IGroupOperations, groupObjectId As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nRequired. Object id\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.DeleteAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.DeleteAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: DeleteAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.DeleteAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 166
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nDelete a group in the directory.  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151608.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> DeleteAsync(IGroupOperations operations, string groupObjectId)
+    content.vb: Public Shared Function DeleteAsync(operations As IGroupOperations, groupObjectId As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nRequired. Object id\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Get(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Get(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: Get(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.Get(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 183
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets group information from the directory.\r\n"
+  example: []
+  syntax:
+    content: public static GroupGetResult Get(IGroupOperations operations, string objectId)
+    content.vb: Public Shared Function Get(operations As IGroupOperations, objectId As String) As GroupGetResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: objectId
+      type: System.String
+      description: "\r\nRequired. User objectId to get group information.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+      description: "\r\nServer response for Get group information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: GetAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 204
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets group information from the directory.\r\n"
+  example: []
+  syntax:
+    content: public static Task<GroupGetResult> GetAsync(IGroupOperations operations, string objectId)
+    content.vb: Public Shared Function GetAsync(operations As IGroupOperations, objectId As String) As Task(Of GroupGetResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: objectId
+      type: System.String
+      description: "\r\nRequired. User objectId to get group information.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetResult}
+      description: "\r\nServer response for Get group information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembers(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembers(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: GetGroupMembers(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGroupMembers(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembers(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetGroupMembers
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 221
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets the members of a group.\r\n"
+  example: []
+  syntax:
+    content: public static GetObjectsResult GetGroupMembers(IGroupOperations operations, string objectId)
+    content.vb: Public Shared Function GetGroupMembers(operations As IGroupOperations, objectId As String) As GetObjectsResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: objectId
+      type: System.String
+      description: "\r\nRequired. Group object Id who's members should be retrieved.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+      description: "\r\nServer response for Active Directory objects inquiry API calls\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: GetGroupMembersAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGroupMembersAsync(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetGroupMembersAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 242
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets the members of a group.\r\n"
+  example: []
+  syntax:
+    content: public static Task<GetObjectsResult> GetGroupMembersAsync(IGroupOperations operations, string objectId)
+    content.vb: Public Shared Function GetGroupMembersAsync(operations As IGroupOperations, objectId As String) As Task(Of GetObjectsResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: objectId
+      type: System.String
+      description: "\r\nRequired. Group object Id who's members should be retrieved.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult}
+      description: "\r\nServer response for Active Directory objects inquiry API calls\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersNext(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersNext(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: GetGroupMembersNext(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGroupMembersNext(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersNext(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetGroupMembersNext
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 260
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets next set of members of a group.\r\n"
+  example: []
+  syntax:
+    content: public static GetObjectsResult GetGroupMembersNext(IGroupOperations operations, string nextLink)
+    content.vb: Public Shared Function GetGroupMembersNext(operations As IGroupOperations, nextLink As String) As GetObjectsResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to\r\nGetGroupMembers or GetGroupMembersNext.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+      description: "\r\nServer response for Active Directory objects inquiry API calls\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: GetGroupMembersNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGroupMembersNextAsync(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetGroupMembersNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetGroupMembersNextAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 282
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets next set of members of a group.\r\n"
+  example: []
+  syntax:
+    content: public static Task<GetObjectsResult> GetGroupMembersNextAsync(IGroupOperations operations, string nextLink)
+    content.vb: Public Shared Function GetGroupMembersNextAsync(operations As IGroupOperations, nextLink As String) As Task(Of GetObjectsResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to\r\nGetGroupMembers or GetGroupMembersNext.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult}
+      description: "\r\nServer response for Active Directory objects inquiry API calls\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetMemberGroups(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetMemberGroups(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  id: GetMemberGroups(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMemberGroups(IGroupOperations, GroupGetMemberGroupsParameters)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetMemberGroups(Microsoft.Azure.Graph.RBAC.IGroupOperations, Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMemberGroups
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 300
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets a collection that contains the Object IDs of the groups of\r\nwhich the group is a member.\r\n"
+  example: []
+  syntax:
+    content: public static GroupGetMemberGroupsResult GetMemberGroups(IGroupOperations operations, GroupGetMemberGroupsParameters parameters)
+    content.vb: Public Shared Function GetMemberGroups(operations As IGroupOperations, parameters As GroupGetMemberGroupsParameters) As GroupGetMemberGroupsResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters
+      description: "\r\nRequired. Group filtering parameters.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+      description: "\r\nServer response for GetMemberGroups API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  id: GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMemberGroupsAsync(IGroupOperations, GroupGetMemberGroupsParameters)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMemberGroupsAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 322
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets a collection that contains the Object IDs of the groups of\r\nwhich the group is a member.\r\n"
+  example: []
+  syntax:
+    content: public static Task<GroupGetMemberGroupsResult> GetMemberGroupsAsync(IGroupOperations operations, GroupGetMemberGroupsParameters parameters)
+    content.vb: Public Shared Function GetMemberGroupsAsync(operations As IGroupOperations, parameters As GroupGetMemberGroupsParameters) As Task(Of GroupGetMemberGroupsResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters
+      description: "\r\nRequired. Group filtering parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult}
+      description: "\r\nServer response for GetMemberGroups API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.List(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.List(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  id: List(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IGroupOperations, String, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.List(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 342
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of groups for the current tenant.\r\n"
+  example: []
+  syntax:
+    content: public static GroupListResult List(IGroupOperations operations, string mail, string displayNameStartsWith)
+    content.vb: Public Shared Function List(operations As IGroupOperations, mail As String, displayNameStartsWith As String) As GroupListResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: mail
+      type: System.String
+      description: "\r\nOptional. Email to filter results.\r\n"
+    - id: displayNameStartsWith
+      type: System.String
+      description: "\r\nOptional. Display name to filter results.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+      description: "\r\nServer response for Get tenant groups API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  id: ListAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IGroupOperations, String, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 366
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of groups for the current tenant.\r\n"
+  example: []
+  syntax:
+    content: public static Task<GroupListResult> ListAsync(IGroupOperations operations, string mail, string displayNameStartsWith)
+    content.vb: Public Shared Function ListAsync(operations As IGroupOperations, mail As String, displayNameStartsWith As String) As Task(Of GroupListResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: mail
+      type: System.String
+      description: "\r\nOptional. Email to filter results.\r\n"
+    - id: displayNameStartsWith
+      type: System.String
+      description: "\r\nOptional. Display name to filter results.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupListResult}
+      description: "\r\nServer response for Get tenant groups API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListNext(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListNext(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: ListNext(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNext(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListNext(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNext
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 384
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of groups for the current tenant.\r\n"
+  example: []
+  syntax:
+    content: public static GroupListResult ListNext(IGroupOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNext(operations As IGroupOperations, nextLink As String) As GroupListResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+      description: "\r\nServer response for Get tenant groups API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  id: ListNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(IGroupOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.ListNextAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 406
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of groups for the current tenant.\r\n"
+  example: []
+  syntax:
+    content: public static Task<GroupListResult> ListNextAsync(IGroupOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNextAsync(operations As IGroupOperations, nextLink As String) As Task(Of GroupListResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupListResult}
+      description: "\r\nServer response for Get tenant groups API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.RemoveMember(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.RemoveMember(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  id: RemoveMember(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveMember(IGroupOperations, String, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.RemoveMember(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RemoveMember
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 429
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nRemove a memeber from a group  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151607.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse RemoveMember(IGroupOperations operations, string groupObjectId, string memberObjectId)
+    content.vb: Public Shared Function RemoveMember(operations As IGroupOperations, groupObjectId As String, memberObjectId As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nRequired. Group object id\r\n"
+    - id: memberObjectId
+      type: System.String
+      description: "\r\nRequired. Member Object id\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.RemoveMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.RemoveMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  id: RemoveMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations,System.String,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveMemberAsync(IGroupOperations, String, String)
+  fullName: Microsoft.Azure.Graph.RBAC.GroupOperationsExtensions.RemoveMemberAsync(Microsoft.Azure.Graph.RBAC.IGroupOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RemoveMemberAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/GroupOperationsExtensions.cs
+    startLine: 456
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nRemove a memeber from a group  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151607.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> RemoveMemberAsync(IGroupOperations operations, string groupObjectId, string memberObjectId)
+    content.vb: Public Shared Function RemoveMemberAsync(operations As IGroupOperations, groupObjectId As String, memberObjectId As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IGroupOperations
+      description: "\r\nReference to the Microsoft.Azure.Graph.RBAC.IGroupOperations.\r\n"
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nRequired. Group object id\r\n"
+    - id: memberObjectId
+      type: System.String
+      description: "\r\nRequired. Member Object id\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Graph.RBAC
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC
+  fullName: Microsoft.Azure.Graph.RBAC
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  parent: Microsoft.Azure.Graph.RBAC
+  isExternal: false
+  name: IGroupOperations
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters
+  parent: Microsoft.Azure.Graph.RBAC
+  isExternal: false
+  name: GroupAddMemberParameters
+  fullName: Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters
+- uid: AzureOperationResponse
+  isExternal: true
+  name: AzureOperationResponse
+  fullName: AzureOperationResponse
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GroupCreateParameters
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters
+- uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GroupGetResult
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+- uid: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC.Models
+  fullName: Microsoft.Azure.Graph.RBAC.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GroupGetResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GroupGetResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GroupGetResult)
+  name.vb: Task(Of GroupGetResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+    name: GroupGetResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+    name: GroupGetResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GetObjectsResult
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetObjectsResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult)
+  name.vb: Task(Of GetObjectsResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+    name: GetObjectsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+    name: GetObjectsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GroupGetMemberGroupsParameters
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters
+- uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GroupGetMemberGroupsResult
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GroupGetMemberGroupsResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult)
+  name.vb: Task(Of GroupGetMemberGroupsResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+    name: GroupGetMemberGroupsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+    name: GroupGetMemberGroupsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GroupListResult
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupListResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GroupListResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GroupListResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GroupListResult)
+  name.vb: Task(Of GroupListResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+    name: GroupListResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+    name: GroupListResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+  - name: )
+    fullName: )

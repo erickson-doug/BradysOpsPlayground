@@ -1,0 +1,187 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_IOperatingSystemOperations">
+          <span class="lang-csharp">IOperatingSystemOperations</span>
+          <span class="lang-vb">IOperatingSystemOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for determining the version of the Azure Guest Operating
+System on which your service is running.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ff684169.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ff684169.aspx</a> for
+more information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IOperatingSystemOperations_ListAsync_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(CancellationToken)</code>
+          <code class="lang-vb">ListAsync(CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List Operating Systems operation lists the versions of the
+guest operating system that are currently available in Windows
+Azure. The 2010-10-28 version of List Operating Systems also
+indicates what family an operating system version belongs to.
+Currently Azure supports two operating system families: the Azure
+guest operating system that is substantially compatible with
+Windows Server 2008 SP2, and the Azure guest operating system that
+is substantially compatible with Windows Server 2008 R2.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ff684168.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ff684168.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperatingSystemListResponse&gt; ListAsync(CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(cancellationToken As CancellationToken) As Task(Of OperatingSystemListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.OperatingSystemListResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListResponse">OperatingSystemListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.OperatingSystemListResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListResponse">OperatingSystemListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Operating Systems operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IOperatingSystemOperations_ListFamiliesAsync_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListFamiliesAsync(CancellationToken)</code>
+          <code class="lang-vb">ListFamiliesAsync(CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List OS Families operation lists the guest operating system
+families available in Azure, and also lists the operating system
+versions available for each family. Currently Azure supports two
+operating system families: the Azure guest operating system that
+is substantially compatible with Windows Server 2008 SP2, and the
+Azure guest operating system that is substantially compatible with
+Windows Server 2008 R2.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg441291.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/gg441291.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperatingSystemListFamiliesResponse&gt; ListFamiliesAsync(CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListFamiliesAsync(cancellationToken As CancellationToken) As Task(Of OperatingSystemListFamiliesResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.OperatingSystemListFamiliesResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListFamiliesResponse">OperatingSystemListFamiliesResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.OperatingSystemListFamiliesResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListFamiliesResponse">OperatingSystemListFamiliesResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Operating System Families operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

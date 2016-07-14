@@ -1,0 +1,557 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_WebSites_WebSiteManagementClientExtensions">
+          <span class="lang-csharp">WebSiteManagementClientExtensions</span>
+          <span class="lang-vb">WebSiteManagementClientExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">WebSiteManagementClientExtensions</code>
+                <code class="lang-vb">WebSiteManagementClientExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.WebSites.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Web Sites Management API provides a RESTful set of web services
+that interact with the Windows Azure Web Sites service to manage your
+web sites. The API has entities that capture the relationship between
+an end user and Windows Azure Web Sites service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx</a> for
+more information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_WebSites_WebSiteManagementClientExtensions_GetOperationStatus_Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetOperationStatus(IWebSiteManagementClient, String, String, String)</code>
+          <code class="lang-vb">GetOperationStatus(IWebSiteManagementClient, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Operation Status operation returns the status of the
+specified operation. After calling a long-running operation, you
+can call Get Operation Status to determine whether the operation
+has succeeded, failed, timed out, or is still in progress.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static WebSiteOperationStatusResponse GetOperationStatus(IWebSiteManagementClient operations, string webSpaceName, string siteName, string operationId)</code><code class="vb lang-vb">Public Shared Function GetOperationStatus(operations As IWebSiteManagementClient, webSpaceName As String, siteName As String, operationId As String) As WebSiteOperationStatusResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSpaceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the webspace for the website where the
+operation was targeted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>siteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the site where the operation was targeted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The operation ID for the operation you wish to track. The
+operation ID is returned in the ID field in the body of the
+response for long-running operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse.html#Microsoft_WindowsAzure_Management_WebSites_Models_WebSiteOperationStatusResponse">WebSiteOperationStatusResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse.html#Microsoft_WindowsAzure_Management_WebSites_Models_WebSiteOperationStatusResponse">WebSiteOperationStatusResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified long-running
+operation, indicating whether it has succeeded, is inprogress, has
+timed out, or has failed. Note that this status is distinct from
+the HTTP status code returned for the Get Operation Status
+operation itself. If the long-running operation failed, the
+response body includes error information regarding the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_WebSites_WebSiteManagementClientExtensions_GetOperationStatusAsync_Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetOperationStatusAsync(IWebSiteManagementClient, String, String, String)</code>
+          <code class="lang-vb">GetOperationStatusAsync(IWebSiteManagementClient, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Operation Status operation returns the status of the
+specified operation. After calling a long-running operation, you
+can call Get Operation Status to determine whether the operation
+has succeeded, failed, timed out, or is still in progress.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;WebSiteOperationStatusResponse&gt; GetOperationStatusAsync(IWebSiteManagementClient operations, string webSpaceName, string siteName, string operationId)</code><code class="vb lang-vb">Public Shared Function GetOperationStatusAsync(operations As IWebSiteManagementClient, webSpaceName As String, siteName As String, operationId As String) As Task(Of WebSiteOperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSpaceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the webspace for the website where the
+operation was targeted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>siteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the site where the operation was targeted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The operation ID for the operation you wish to track. The
+operation ID is returned in the ID field in the body of the
+response for long-running operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse.html#Microsoft_WindowsAzure_Management_WebSites_Models_WebSiteOperationStatusResponse">WebSiteOperationStatusResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse.html#Microsoft_WindowsAzure_Management_WebSites_Models_WebSiteOperationStatusResponse">WebSiteOperationStatusResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified long-running
+operation, indicating whether it has succeeded, is inprogress, has
+timed out, or has failed. Note that this status is distinct from
+the HTTP status code returned for the Get Operation Status
+operation itself. If the long-running operation failed, the
+response body includes error information regarding the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_WebSites_WebSiteManagementClientExtensions_RegisterSubscription_Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RegisterSubscription(IWebSiteManagementClient)</code>
+          <code class="lang-vb">RegisterSubscription(IWebSiteManagementClient)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Register your subscription to use Azure Web Sites.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse RegisterSubscription(IWebSiteManagementClient operations)</code><code class="vb lang-vb">Public Shared Function RegisterSubscription(operations As IWebSiteManagementClient) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_WebSites_WebSiteManagementClientExtensions_RegisterSubscriptionAsync_Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RegisterSubscriptionAsync(IWebSiteManagementClient)</code>
+          <code class="lang-vb">RegisterSubscriptionAsync(IWebSiteManagementClient)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Register your subscription to use Azure Web Sites.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; RegisterSubscriptionAsync(IWebSiteManagementClient operations)</code><code class="vb lang-vb">Public Shared Function RegisterSubscriptionAsync(operations As IWebSiteManagementClient) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_WebSites_WebSiteManagementClientExtensions_UnregisterSubscription_Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UnregisterSubscription(IWebSiteManagementClient)</code>
+          <code class="lang-vb">UnregisterSubscription(IWebSiteManagementClient)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Unregister your subscription to use Azure Web Sites.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse UnregisterSubscription(IWebSiteManagementClient operations)</code><code class="vb lang-vb">Public Shared Function UnregisterSubscription(operations As IWebSiteManagementClient) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_WebSites_WebSiteManagementClientExtensions_UnregisterSubscriptionAsync_Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UnregisterSubscriptionAsync(IWebSiteManagementClient)</code>
+          <code class="lang-vb">UnregisterSubscriptionAsync(IWebSiteManagementClient)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Unregister your subscription to use Azure Web Sites.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; UnregisterSubscriptionAsync(IWebSiteManagementClient operations)</code><code class="vb lang-vb">Public Shared Function UnregisterSubscriptionAsync(operations As IWebSiteManagementClient) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.html#Microsoft_WindowsAzure_Management_WebSites_IWebSiteManagementClient">IWebSiteManagementClient</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

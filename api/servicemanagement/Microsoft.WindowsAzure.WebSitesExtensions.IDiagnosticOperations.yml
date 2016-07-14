@@ -1,0 +1,225 @@
+items:
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations
+  commentId: T:Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations
+  id: IDiagnosticOperations
+  parent: Microsoft.WindowsAzure.WebSitesExtensions
+  children:
+  - Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations.GetSettingsAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations.UpdateSettingsAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticUpdateParameters,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDiagnosticOperations
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IDiagnosticOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IDiagnosticOperations
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IDiagnosticOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nOperations for managing the diagnostics settings.\r\n"
+  example: []
+  syntax:
+    content: public interface IDiagnosticOperations
+    content.vb: Public Interface IDiagnosticOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations.GetSettingsAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations.GetSettingsAsync(System.Threading.CancellationToken)
+  id: GetSettingsAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations
+  langs:
+  - csharp
+  - vb
+  name: GetSettingsAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations.GetSettingsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IDiagnosticOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetSettingsAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IDiagnosticOperations.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGet diagnostics settings.\r\n"
+  example: []
+  syntax:
+    content: Task<DiagnosticGetResponse> GetSettingsAsync(CancellationToken cancellationToken)
+    content.vb: Function GetSettingsAsync(cancellationToken As CancellationToken) As Task(Of DiagnosticGetResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticGetResponse}
+      description: "\r\nThe get diagnostic settings operation response.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations.UpdateSettingsAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations.UpdateSettingsAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticUpdateParameters,System.Threading.CancellationToken)
+  id: UpdateSettingsAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations
+  langs:
+  - csharp
+  - vb
+  name: UpdateSettingsAsync(DiagnosticUpdateParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IDiagnosticOperations.UpdateSettingsAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IDiagnosticOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UpdateSettingsAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IDiagnosticOperations.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nUpdate diagnostics settings.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> UpdateSettingsAsync(DiagnosticUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function UpdateSettingsAsync(parameters As DiagnosticUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticUpdateParameters
+      description: "\r\nThe diagnostics setting information new values.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.WindowsAzure.WebSitesExtensions
+  isExternal: false
+  name: Microsoft.WindowsAzure.WebSitesExtensions
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DiagnosticGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticGetResponse)
+  name.vb: Task(Of DiagnosticGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticGetResponse
+    name: DiagnosticGetResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticGetResponse
+    name: DiagnosticGetResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticUpdateParameters
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: DiagnosticUpdateParameters
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.DiagnosticUpdateParameters
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models

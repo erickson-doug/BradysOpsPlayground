@@ -1,0 +1,1462 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations">
+          <span class="lang-csharp">IVirtualMachineDiskOperations</span>
+          <span class="lang-vb">IVirtualMachineDiskOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Service Management API includes operations for managing the disks
+in your subscription.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157188.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157188.aspx</a> for
+more information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_BeginCreatingDataDiskAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreatingDataDiskAsync(String, String, String, VirtualMachineDataDiskCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginCreatingDataDiskAsync(String, String, String, VirtualMachineDataDiskCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create Data Disk operation adds a data disk to a virtual
+machine. There are three ways to create the data disk using the
+Add Data Disk operation. Option 1 - Attach an empty data disk to
+the role by specifying the disk label and location of the disk
+image. Do not include the DiskName and SourceMediaLink elements in
+the request body. Include the MediaLink element and reference a
+blob that is in the same geographical region as the role. You can
+also omit the MediaLink element. In this usage, Azure will create
+the data disk in the storage account configured as default for the
+role. Option 2 - Attach an existing data disk that is in the image
+repository. Do not include the DiskName and SourceMediaLink
+elements in the request body. Specify the data disk to use by
+including the DiskName element. Note: If included the in the
+response body, the MediaLink and LogicalDiskSizeInGB elements are
+ignored. Option 3 - Specify the location of a blob in your storage
+account that contain a disk image to use. Include the
+SourceMediaLink element. Note: If the MediaLink element
+isincluded, it is ignored.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157199.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157199.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginCreatingDataDiskAsync(string serviceName, string deploymentName, string roleName, VirtualMachineDataDiskCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginCreatingDataDiskAsync(serviceName As String, deploymentName As String, roleName As String, parameters As VirtualMachineDataDiskCreateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>roleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the role to add the data disk to.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDataDiskCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskCreateParameters">VirtualMachineDataDiskCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDataDiskCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskCreateParameters">VirtualMachineDataDiskCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Create Virtual Machine Data Disk
+operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_BeginDeletingDataDiskAsync_System_String_System_String_System_String_System_Int32_System_Boolean_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeletingDataDiskAsync(String, String, String, Int32, Boolean, CancellationToken)</code>
+          <code class="lang-vb">BeginDeletingDataDiskAsync(String, String, String, Int32, Boolean, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Deleting Data Disk operation removes the specified data
+disk from a virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157179.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157179.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginDeletingDataDiskAsync(string serviceName, string deploymentName, string roleName, int logicalUnitNumber, bool deleteFromStorage, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginDeletingDataDiskAsync(serviceName As String, deploymentName As String, roleName As String, logicalUnitNumber As Integer, deleteFromStorage As Boolean, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>roleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the role to delete the data disk from.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>logicalUnitNumber</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Int32</span></code>
+                        <code class="lang-vb"><span class="xref">System.Int32</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The logical unit number of the disk.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deleteFromStorage</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Boolean</span></code>
+                        <code class="lang-vb"><span class="xref">System.Boolean</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Specifies that the source blob for the disk should also be deleted
+from storage.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_BeginUpdatingDiskAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginUpdatingDiskAsync(String, VirtualMachineDiskUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginUpdatingDiskAsync(String, VirtualMachineDiskUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Add Disk operation adds a disk to the user image repository.
+The disk can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginUpdatingDiskAsync(string name, VirtualMachineDiskUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginUpdatingDiskAsync(name As String, parameters As VirtualMachineDiskUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>name</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the disk being updated.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters">VirtualMachineDiskUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters">VirtualMachineDiskUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Update Virtual Machine Disk operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_CreateDataDiskAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateDataDiskAsync(String, String, String, VirtualMachineDataDiskCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateDataDiskAsync(String, String, String, VirtualMachineDataDiskCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create Data Disk operation adds a data disk to a virtual
+machine. There are three ways to create the data disk using the
+Add Data Disk operation. Option 1 - Attach an empty data disk to
+the role by specifying the disk label and location of the disk
+image. Do not include the DiskName and SourceMediaLink elements in
+the request body. Include the MediaLink element and reference a
+blob that is in the same geographical region as the role. You can
+also omit the MediaLink element. In this usage, Azure will create
+the data disk in the storage account configured as default for the
+role. Option 2 - Attach an existing data disk that is in the image
+repository. Do not include the DiskName and SourceMediaLink
+elements in the request body. Specify the data disk to use by
+including the DiskName element. Note: If included the in the
+response body, the MediaLink and LogicalDiskSizeInGB elements are
+ignored. Option 3 - Specify the location of a blob in your storage
+account that contain a disk image to use. Include the
+SourceMediaLink element. Note: If the MediaLink element
+isincluded, it is ignored.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157199.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157199.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; CreateDataDiskAsync(string serviceName, string deploymentName, string roleName, VirtualMachineDataDiskCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateDataDiskAsync(serviceName As String, deploymentName As String, roleName As String, parameters As VirtualMachineDataDiskCreateParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>roleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the role to add the data disk to.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDataDiskCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskCreateParameters">VirtualMachineDataDiskCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDataDiskCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskCreateParameters">VirtualMachineDataDiskCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Create Virtual Machine Data Disk
+operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_CreateDiskAsync_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateDiskAsync(VirtualMachineDiskCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateDiskAsync(VirtualMachineDiskCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create Disk operation adds a disk to the user image repository.
+The disk can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;VirtualMachineDiskCreateResponse&gt; CreateDiskAsync(VirtualMachineDiskCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateDiskAsync(parameters As VirtualMachineDiskCreateParameters, cancellationToken As CancellationToken) As Task(Of VirtualMachineDiskCreateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskCreateParameters">VirtualMachineDiskCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskCreateParameters">VirtualMachineDiskCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Create Virtual Machine Disk operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskCreateResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskCreateResponse">VirtualMachineDiskCreateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskCreateResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskCreateResponse">VirtualMachineDiskCreateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A virtual machine disk associated with your subscription.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_DeleteDataDiskAsync_System_String_System_String_System_String_System_Int32_System_Boolean_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteDataDiskAsync(String, String, String, Int32, Boolean, CancellationToken)</code>
+          <code class="lang-vb">DeleteDataDiskAsync(String, String, String, Int32, Boolean, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete Data Disk operation removes the specified data disk from
+a virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157179.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157179.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; DeleteDataDiskAsync(string serviceName, string deploymentName, string roleName, int logicalUnitNumber, bool deleteFromStorage, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteDataDiskAsync(serviceName As String, deploymentName As String, roleName As String, logicalUnitNumber As Integer, deleteFromStorage As Boolean, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>roleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the role to delete the data disk from.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>logicalUnitNumber</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Int32</span></code>
+                        <code class="lang-vb"><span class="xref">System.Int32</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The logical unit number of the disk.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deleteFromStorage</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Boolean</span></code>
+                        <code class="lang-vb"><span class="xref">System.Boolean</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Specifies that the source blob for the disk should also be deleted
+from storage.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_DeleteDiskAsync_System_String_System_Boolean_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteDiskAsync(String, Boolean, CancellationToken)</code>
+          <code class="lang-vb">DeleteDiskAsync(String, Boolean, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete Disk operation deletes the specified data or operating
+system disk from your image repository.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157200.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157200.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteDiskAsync(string name, bool deleteFromStorage, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteDiskAsync(name As String, deleteFromStorage As Boolean, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>name</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the disk to delete.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deleteFromStorage</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Boolean</span></code>
+                        <code class="lang-vb"><span class="xref">System.Boolean</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Specifies that the source blob for the disk should also be deleted
+from storage.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_GetDataDiskAsync_System_String_System_String_System_String_System_Int32_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetDataDiskAsync(String, String, String, Int32, CancellationToken)</code>
+          <code class="lang-vb">GetDataDiskAsync(String, String, String, Int32, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Data Disk operation retrieves the specified data disk from
+a virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157180.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157180.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;VirtualMachineDataDiskGetResponse&gt; GetDataDiskAsync(string serviceName, string deploymentName, string roleName, int logicalUnitNumber, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetDataDiskAsync(serviceName As String, deploymentName As String, roleName As String, logicalUnitNumber As Integer, cancellationToken As CancellationToken) As Task(Of VirtualMachineDataDiskGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>roleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the role.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>logicalUnitNumber</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Int32</span></code>
+                        <code class="lang-vb"><span class="xref">System.Int32</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The logical unit number of the disk.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDataDiskGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskGetResponse">VirtualMachineDataDiskGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDataDiskGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskGetResponse">VirtualMachineDataDiskGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Data Disk operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_GetDiskAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetDiskAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetDiskAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Disk operation retrieves a disk from the user image
+repository. The disk can be an operating system disk or a data
+disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;VirtualMachineDiskGetResponse&gt; GetDiskAsync(string name, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetDiskAsync(name As String, cancellationToken As CancellationToken) As Task(Of VirtualMachineDiskGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>name</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the disk.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskGetResponse">VirtualMachineDiskGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskGetResponse">VirtualMachineDiskGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A virtual machine disk associated with your subscription.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_ListDisksAsync_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListDisksAsync(CancellationToken)</code>
+          <code class="lang-vb">ListDisksAsync(CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List Disks operation retrieves a list of the disks in your
+image repository.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157176.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157176.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;VirtualMachineDiskListResponse&gt; ListDisksAsync(CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListDisksAsync(cancellationToken As CancellationToken) As Task(Of VirtualMachineDiskListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskListResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskListResponse">VirtualMachineDiskListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskListResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskListResponse">VirtualMachineDiskListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Disks operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_UpdateDataDiskAsync_System_String_System_String_System_String_System_Int32_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateDataDiskAsync(String, String, String, Int32, VirtualMachineDataDiskUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateDataDiskAsync(String, String, String, Int32, VirtualMachineDataDiskUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Update Data Disk operation updates the specified data disk
+attached to the specified virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157190.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157190.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UpdateDataDiskAsync(string serviceName, string deploymentName, string roleName, int logicalUnitNumber, VirtualMachineDataDiskUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateDataDiskAsync(serviceName As String, deploymentName As String, roleName As String, logicalUnitNumber As Integer, parameters As VirtualMachineDataDiskUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>roleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the role to add the data disk to.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>logicalUnitNumber</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Int32</span></code>
+                        <code class="lang-vb"><span class="xref">System.Int32</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The logical unit number of the disk.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDataDiskUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskUpdateParameters">VirtualMachineDataDiskUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDataDiskUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDataDiskUpdateParameters">VirtualMachineDataDiskUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Update Virtual Machine Data Disk
+operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_UpdateDiskAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateDiskAsync(String, VirtualMachineDiskUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateDiskAsync(String, VirtualMachineDiskUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Add Disk operation adds a disk to the user image repository.
+The disk can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;VirtualMachineDiskUpdateResponse&gt; UpdateDiskAsync(string name, VirtualMachineDiskUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateDiskAsync(name As String, parameters As VirtualMachineDiskUpdateParameters, cancellationToken As CancellationToken) As Task(Of VirtualMachineDiskUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>name</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the disk being updated.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters">VirtualMachineDiskUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters">VirtualMachineDiskUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Update Virtual Machine Disk operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskUpdateResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateResponse">VirtualMachineDiskUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskUpdateResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateResponse">VirtualMachineDiskUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A virtual machine disk associated with your subscription.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineDiskOperations_UpdateDiskSizeAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateDiskSizeAsync(String, VirtualMachineDiskUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateDiskSizeAsync(String, VirtualMachineDiskUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Add Disk operation adds a disk to the user image repository.
+The disk can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; UpdateDiskSizeAsync(string name, VirtualMachineDiskUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateDiskSizeAsync(name As String, parameters As VirtualMachineDiskUpdateParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>name</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the disk being updated.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters">VirtualMachineDiskUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineDiskUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineDiskUpdateParameters">VirtualMachineDiskUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Update Virtual Machine Disk operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

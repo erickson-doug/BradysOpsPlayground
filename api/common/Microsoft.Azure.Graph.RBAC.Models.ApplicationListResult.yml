@@ -1,0 +1,193 @@
+items:
+- uid: Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult
+  commentId: T:Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult
+  id: ApplicationListResult
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  children:
+  - Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.#ctor
+  - Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.Applications
+  langs:
+  - csharp
+  - vb
+  name: ApplicationListResult
+  fullName: Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult
+  type: Class
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/Models/ApplicationListResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApplicationListResult
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/Models/ApplicationListResult.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC.Models
+  summary: "\r\nServer response for List application information API call\r\n"
+  example: []
+  syntax:
+    content: 'public class ApplicationListResult : AzureOperationResponse'
+    content.vb: >-
+      Public Class ApplicationListResult
+
+          Inherits AzureOperationResponse
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.Applications
+  commentId: P:Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.Applications
+  id: Applications
+  parent: Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult
+  langs:
+  - csharp
+  - vb
+  name: Applications
+  fullName: Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.Applications
+  type: Property
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/Models/ApplicationListResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Applications
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/Models/ApplicationListResult.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC.Models
+  summary: "\r\nOptional. Active Directory application list\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<Application> Applications
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Applications As IList(Of Application)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Graph.RBAC.Models.Application}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.#ctor
+  commentId: M:Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult
+  langs:
+  - csharp
+  - vb
+  name: ApplicationListResult()
+  fullName: Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.ApplicationListResult()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/Models/ApplicationListResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/Models/ApplicationListResult.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC.Models
+  summary: "\r\nInitializes a new instance of the ApplicationListResult class.\r\n"
+  example: []
+  syntax:
+    content: public ApplicationListResult()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC.Models
+  fullName: Microsoft.Azure.Graph.RBAC.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Graph.RBAC.Models.Application}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<Application>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Graph.RBAC.Models.Application>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Graph.RBAC.Models.Application)
+  name.vb: IList(Of Application)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.Application
+    name: Application
+    fullName: Microsoft.Azure.Graph.RBAC.Models.Application
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.Application
+    name: Application
+    fullName: Microsoft.Azure.Graph.RBAC.Models.Application
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

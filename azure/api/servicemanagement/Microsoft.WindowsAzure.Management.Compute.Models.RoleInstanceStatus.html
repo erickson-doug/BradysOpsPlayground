@@ -1,0 +1,646 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus">
+          <span class="lang-csharp">RoleInstanceStatus</span>
+          <span class="lang-vb">RoleInstanceStatus</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">RoleInstanceStatus</code>
+                <code class="lang-vb">RoleInstanceStatus</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The current status of a role instance.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="fields">
+      <h2>Fields
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_BusyRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BusyRole</code>
+          <code class="lang-vb">BusyRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The role instance is unavailable for requests. This state is
+usually generated while the role is being created or stopped.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string BusyRole = &quot;BusyRole&quot;</code><code class="vb lang-vb">Public Const BusyRole As String = &quot;BusyRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_CreatingRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreatingRole</code>
+          <code class="lang-vb">CreatingRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Azure is creating resources for the role.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string CreatingRole = &quot;CreatingRole&quot;</code><code class="vb lang-vb">Public Const CreatingRole As String = &quot;CreatingRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_CreatingVM">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreatingVM</code>
+          <code class="lang-vb">CreatingVM</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The host agent is currently creating resources for the Virtual
+Machine.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string CreatingVM = &quot;CreatingVM&quot;</code><code class="vb lang-vb">Public Const CreatingVM As String = &quot;CreatingVM&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_CyclingRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CyclingRole</code>
+          <code class="lang-vb">CyclingRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The role has continually crashed after being started by Azure. This
+status indicates that there is a problem with the role that
+prevents it from starting, and may be generated after the
+StartingRole and ReadyRole statuses are received. The problem in
+the role must be found and corrected before the role can be
+started. The InstanceStateDetails and InstanceErrorCode fields can
+hold information about the role error that caused this state,
+which may be useful for identifying and debugging the problem.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string CyclingRole = &quot;CyclingRole&quot;</code><code class="vb lang-vb">Public Const CyclingRole As String = &quot;CyclingRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_DeletingVM">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeletingVM</code>
+          <code class="lang-vb">DeletingVM</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Virtual Machine is being deleted by the host agent.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string DeletingVM = &quot;DeletingVM&quot;</code><code class="vb lang-vb">Public Const DeletingVM As String = &quot;DeletingVM&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_FailedStartingRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">FailedStartingRole</code>
+          <code class="lang-vb">FailedStartingRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The role has continually failed to start. This status indicates
+that there is a problem with the role that prevents it from
+starting, and may be generated after the process returns
+StartingRole. The problem in the role must be found and corrected
+before the role can be started. The InstanceStateDetails and
+InstanceErrorCode fields can hold information about the role error
+that caused this state, which may be useful for identifying and
+debugging the problem.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string FailedStartingRole = &quot;FailedStartingRole&quot;</code><code class="vb lang-vb">Public Const FailedStartingRole As String = &quot;FailedStartingRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_FailedStartingVM">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">FailedStartingVM</code>
+          <code class="lang-vb">FailedStartingVM</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>An Azure or container error is preventing the Virtual Machine from
+starting. This status is generated by Azure, and does not indicate
+an error with the role. It may be generated after the StartingRole
+state.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string FailedStartingVM = &quot;FailedStartingVM&quot;</code><code class="vb lang-vb">Public Const FailedStartingVM As String = &quot;FailedStartingVM&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_Provisioning">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Provisioning</code>
+          <code class="lang-vb">Provisioning</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Azure is provisioning the role.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string Provisioning = &quot;Provisioning&quot;</code><code class="vb lang-vb">Public Const Provisioning As String = &quot;Provisioning&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_ReadyRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ReadyRole</code>
+          <code class="lang-vb">ReadyRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The role instance has started and is ready to be used.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string ReadyRole = &quot;ReadyRole&quot;</code><code class="vb lang-vb">Public Const ReadyRole As String = &quot;ReadyRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_RestartingRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RestartingRole</code>
+          <code class="lang-vb">RestartingRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The role has unexpectedly stopped or has failed to start. This
+status indicates that there is a problem with the role that is
+causing it to crash or is preventing it from starting, which must
+be corrected before the role can be started. The
+InstanceStateDetails and InstanceErrorCode fields can hold
+information about the role error that caused this state, which may
+be useful for identifying and debugging the problem.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string RestartingRole = &quot;RestartingRole&quot;</code><code class="vb lang-vb">Public Const RestartingRole As String = &quot;RestartingRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_RoleStateUnknown">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RoleStateUnknown</code>
+          <code class="lang-vb">RoleStateUnknown</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The role state is currently unknown. The state should automatically
+be resolved once the role state is detected, so no action is
+required.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string RoleStateUnknown = &quot;RoleStateUnknown&quot;</code><code class="vb lang-vb">Public Const RoleStateUnknown As String = &quot;RoleStateUnknown&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_StartingRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StartingRole</code>
+          <code class="lang-vb">StartingRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Azure is starting the role.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string StartingRole = &quot;StartingRole&quot;</code><code class="vb lang-vb">Public Const StartingRole As String = &quot;StartingRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_StartingVM">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StartingVM</code>
+          <code class="lang-vb">StartingVM</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The host agent is starting the Virtual Machine.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string StartingVM = &quot;StartingVM&quot;</code><code class="vb lang-vb">Public Const StartingVM As String = &quot;StartingVM&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_StoppedVM">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StoppedVM</code>
+          <code class="lang-vb">StoppedVM</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Virtual Machine is not running. This is the final state of the
+shutdown process, and no other status messages should be received
+after StoppedVM.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string StoppedVM = &quot;StoppedVM&quot;</code><code class="vb lang-vb">Public Const StoppedVM As String = &quot;StoppedVM&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_StoppingRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StoppingRole</code>
+          <code class="lang-vb">StoppingRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Azure is stopping the role.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string StoppingRole = &quot;StoppingRole&quot;</code><code class="vb lang-vb">Public Const StoppingRole As String = &quot;StoppingRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_StoppingVM">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StoppingVM</code>
+          <code class="lang-vb">StoppingVM</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The host agent is stopping the Virtual Machine. This status also
+indicates that the role has already been stopped.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string StoppingVM = &quot;StoppingVM&quot;</code><code class="vb lang-vb">Public Const StoppingVM As String = &quot;StoppingVM&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_RoleInstanceStatus_UnresponsiveRole">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UnresponsiveRole</code>
+          <code class="lang-vb">UnresponsiveRole</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The role has timed out before receiving a status message and is not
+responding to requests.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public const string UnresponsiveRole = &quot;UnresponsiveRole&quot;</code><code class="vb lang-vb">Public Const UnresponsiveRole As String = &quot;UnresponsiveRole&quot;</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

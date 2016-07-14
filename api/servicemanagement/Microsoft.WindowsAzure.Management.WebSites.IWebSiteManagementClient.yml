@@ -1,0 +1,657 @@
+items:
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  commentId: T:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  id: IWebSiteManagementClient
+  parent: Microsoft.WindowsAzure.Management.WebSites
+  children:
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.ApiVersion
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.BaseUri
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.Credentials
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.GetOperationStatusAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.LongRunningOperationInitialTimeout
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.LongRunningOperationRetryTimeout
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.RegisterSubscriptionAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.UnregisterSubscriptionAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebHostingPlans
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebSites
+  - Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebSpaces
+  langs:
+  - csharp
+  - vb
+  name: IWebSiteManagementClient
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  type: Interface
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IWebSiteManagementClient
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nThe Web Sites Management API provides a RESTful set of web services\r\nthat interact with the Windows Azure Web Sites service to manage your\r\nweb sites. The API has entities that capture the relationship between\r\nan end user and Windows Azure Web Sites service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: 'public interface IWebSiteManagementClient : IDisposable'
+    content.vb: >-
+      Public Interface IWebSiteManagementClient
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.ApiVersion
+  commentId: P:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.BaseUri
+  commentId: P:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.Credentials
+  commentId: P:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.Credentials
+  id: Credentials
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebHostingPlans
+  commentId: P:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebHostingPlans
+  id: WebHostingPlans
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: WebHostingPlans
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebHostingPlans
+  type: Property
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: WebHostingPlans
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 86
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nOperations for managing web hosting plans beneath your subscription.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IWebHostingPlanOperations WebHostingPlans
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property WebHostingPlans As IWebHostingPlanOperations
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebHostingPlanOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebSites
+  commentId: P:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebSites
+  id: WebSites
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: WebSites
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebSites
+  type: Property
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: WebSites
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 96
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nOperations for managing the web sites in a web space.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: >-
+      IWebSiteOperations WebSites
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property WebSites As IWebSiteOperations
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebSiteOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebSpaces
+  commentId: P:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebSpaces
+  id: WebSpaces
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: WebSpaces
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.WebSpaces
+  type: Property
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: WebSpaces
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 104
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nOperations for managing web spaces beneath your subscription.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IWebSpaceOperations WebSpaces
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property WebSpaces As IWebSpaceOperations
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebSpaceOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.GetOperationStatusAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.GetOperationStatusAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetOperationStatusAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetOperationStatusAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.GetOperationStatusAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationStatusAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 140
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling a long-running operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, timed out, or is still in progress.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<WebSiteOperationStatusResponse> GetOperationStatusAsync(string webSpaceName, string siteName, string operationId, CancellationToken cancellationToken)
+    content.vb: Function GetOperationStatusAsync(webSpaceName As String, siteName As String, operationId As String, cancellationToken As CancellationToken) As Task(Of WebSiteOperationStatusResponse)
+    parameters:
+    - id: webSpaceName
+      type: System.String
+      description: "\r\nThe name of the webspace for the website where the operation was\r\ntargeted.\r\n"
+    - id: siteName
+      type: System.String
+      description: "\r\nThe name of the site where the operation was targeted.\r\n"
+    - id: operationId
+      type: System.String
+      description: "\r\nThe operation ID for the operation you wish to track. The operation\r\nID is returned in the ID field in the body of the response for\r\nlong-running operations.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified long-running\r\noperation, indicating whether it has succeeded, is inprogress, has\r\ntimed out, or has failed. Note that this status is distinct from\r\nthe HTTP status code returned for the Get Operation Status\r\noperation itself. If the long-running operation failed, the\r\nresponse body includes error information regarding the failure.\r\n"
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.RegisterSubscriptionAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.RegisterSubscriptionAsync(System.Threading.CancellationToken)
+  id: RegisterSubscriptionAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterSubscriptionAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.RegisterSubscriptionAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RegisterSubscriptionAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 152
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nRegister your subscription to use Azure Web Sites.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> RegisterSubscriptionAsync(CancellationToken cancellationToken)
+    content.vb: Function RegisterSubscriptionAsync(cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.UnregisterSubscriptionAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.UnregisterSubscriptionAsync(System.Threading.CancellationToken)
+  id: UnregisterSubscriptionAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  langs:
+  - csharp
+  - vb
+  name: UnregisterSubscriptionAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.UnregisterSubscriptionAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UnregisterSubscriptionAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IWebSiteManagementClient.cs
+    startLine: 164
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nUnregister your subscription to use Azure Web Sites.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> UnregisterSubscriptionAsync(CancellationToken cancellationToken)
+    content.vb: Function UnregisterSubscriptionAsync(cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.WindowsAzure.Management.WebSites
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.WebSites
+  fullName: Microsoft.WindowsAzure.Management.WebSites
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebHostingPlanOperations
+  parent: Microsoft.WindowsAzure.Management.WebSites
+  isExternal: false
+  name: IWebHostingPlanOperations
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebHostingPlanOperations
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteOperations
+  parent: Microsoft.WindowsAzure.Management.WebSites
+  isExternal: false
+  name: IWebSiteOperations
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteOperations
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSpaceOperations
+  parent: Microsoft.WindowsAzure.Management.WebSites
+  isExternal: false
+  name: IWebSpaceOperations
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSpaceOperations
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<WebSiteOperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse)
+  name.vb: Task(Of WebSiteOperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+    name: WebSiteOperationStatusResponse
+    fullName: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+    name: WebSiteOperationStatusResponse
+    fullName: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )

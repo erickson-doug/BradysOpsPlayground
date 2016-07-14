@@ -1,0 +1,182 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Graph_RBAC_IObjectOperations">
+          <span class="lang-csharp">IObjectOperations</span>
+          <span class="lang-vb">IObjectOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Graph.RBAC.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for working with Objects in Azure AD Graph API.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for more
+information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IObjectOperations_GetCurrentUserAsync_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetCurrentUserAsync(CancellationToken)</code>
+          <code class="lang-vb">GetCurrentUserAsync(CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the details for current logged in user</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;GetCurrentUserResult&gt; GetCurrentUserAsync(CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetCurrentUserAsync(cancellationToken As CancellationToken) As Task(Of GetCurrentUserResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult.html#Microsoft_Azure_Graph_RBAC_Models_GetCurrentUserResult">GetCurrentUserResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult.html#Microsoft_Azure_Graph_RBAC_Models_GetCurrentUserResult">GetCurrentUserResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Active Directory objects inquiry API calls</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IObjectOperations_GetObjectsByObjectIdsAsync_Microsoft_Azure_Graph_RBAC_Models_GetObjectsParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetObjectsByObjectIdsAsync(GetObjectsParameters, CancellationToken)</code>
+          <code class="lang-vb">GetObjectsByObjectIdsAsync(GetObjectsParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets AD group membership by provided AD object Ids</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;GetObjectsResult&gt; GetObjectsByObjectIdsAsync(GetObjectsParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetObjectsByObjectIdsAsync(parameters As GetObjectsParameters, cancellationToken As CancellationToken) As Task(Of GetObjectsResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters.html#Microsoft_Azure_Graph_RBAC_Models_GetObjectsParameters">GetObjectsParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters.html#Microsoft_Azure_Graph_RBAC_Models_GetObjectsParameters">GetObjectsParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Objects filtering parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult.html#Microsoft_Azure_Graph_RBAC_Models_GetObjectsResult">GetObjectsResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult.html#Microsoft_Azure_Graph_RBAC_Models_GetObjectsResult">GetObjectsResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Active Directory objects inquiry API calls</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

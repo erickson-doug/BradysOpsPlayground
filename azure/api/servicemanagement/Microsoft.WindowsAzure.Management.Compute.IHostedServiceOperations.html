@@ -1,0 +1,1595 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations">
+          <span class="lang-csharp">IHostedServiceOperations</span>
+          <span class="lang-vb">IHostedServiceOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Service Management API includes operations for managing the hosted
+services beneath your subscription.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460812.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460812.aspx</a> for
+more information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_AddExtensionAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceAddExtensionParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">AddExtensionAsync(String, HostedServiceAddExtensionParameters, CancellationToken)</code>
+          <code class="lang-vb">AddExtensionAsync(String, HostedServiceAddExtensionParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Add Extension operation adds an available extension to your
+cloud service. In Azure, a process can run as an extension of a
+cloud service. For example, Remote Desktop Access or the Azure
+Diagnostics Agent can run as extensions to the cloud service. You
+can find the available extension by using the List Available
+Extensions operation.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn169558.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn169558.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; AddExtensionAsync(string serviceName, HostedServiceAddExtensionParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function AddExtensionAsync(serviceName As String, parameters As HostedServiceAddExtensionParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceAddExtensionParameters">HostedServiceAddExtensionParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceAddExtensionParameters">HostedServiceAddExtensionParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Add Extension operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_BeginAddingExtensionAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceAddExtensionParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginAddingExtensionAsync(String, HostedServiceAddExtensionParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginAddingExtensionAsync(String, HostedServiceAddExtensionParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Adding Extension operation adds an available extension to
+your cloud service. In Azure, a process can run as an extension of
+a cloud service. For example, Remote Desktop Access or the Azure
+Diagnostics Agent can run as extensions to the cloud service. You
+can find the available extension by using the List Available
+Extensions operation.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn169558.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn169558.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginAddingExtensionAsync(string serviceName, HostedServiceAddExtensionParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginAddingExtensionAsync(serviceName As String, parameters As HostedServiceAddExtensionParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceAddExtensionParameters">HostedServiceAddExtensionParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceAddExtensionParameters">HostedServiceAddExtensionParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Begin Adding Extension operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_BeginDeletingAllAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeletingAllAsync(String, CancellationToken)</code>
+          <code class="lang-vb">BeginDeletingAllAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The DeleteAll Hosted Service operation deletes the specified cloud
+service as well as operating system disk, attached data disks, and
+the source blobs for the disks from storage from Microsoft Azure.
+(see
+&#39;<a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx</a>&#39;
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginDeletingAllAsync(string serviceName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginDeletingAllAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_BeginDeletingExtensionAsync_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeletingExtensionAsync(String, String, CancellationToken)</code>
+          <code class="lang-vb">BeginDeletingExtensionAsync(String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Deleting Extension operation deletes the specified
+extension from a cloud service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn169560.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn169560.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginDeletingExtensionAsync(string serviceName, string extensionId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginDeletingExtensionAsync(serviceName As String, extensionId As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>extensionId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The identifier that was assigned to the extension when it was added
+to the cloud service</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_CheckNameAvailabilityAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CheckNameAvailabilityAsync(String, CancellationToken)</code>
+          <code class="lang-vb">CheckNameAvailabilityAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Check Hosted Service Name Availability operation checks for the
+availability of the specified cloud service name.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154116.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154116.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceCheckNameAvailabilityResponse&gt; CheckNameAvailabilityAsync(string serviceName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CheckNameAvailabilityAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of HostedServiceCheckNameAvailabilityResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The cloud service name that you would like to use.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceCheckNameAvailabilityResponse">HostedServiceCheckNameAvailabilityResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceCheckNameAvailabilityResponse">HostedServiceCheckNameAvailabilityResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Check Hosted Service Name Availability operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_CreateAsync_Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateAsync(HostedServiceCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateAsync(HostedServiceCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create Hosted Service operation creates a new cloud service in
+Azure.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg441304.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/gg441304.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; CreateAsync(HostedServiceCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateAsync(parameters As HostedServiceCreateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceCreateParameters">HostedServiceCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceCreateParameters">HostedServiceCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Create Hosted Service operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_DeleteAllAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAllAsync(String, CancellationToken)</code>
+          <code class="lang-vb">DeleteAllAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The DeleteAll Hosted Service operation deletes the specified cloud
+service as well as operating system disk, attached data disks, and
+the source blobs for the disks from storage from Microsoft Azure.
+(see
+&#39;<a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx</a>&#39;
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; DeleteAllAsync(string serviceName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAllAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_DeleteAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete Hosted Service operation deletes the specified cloud
+service from Azure.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteAsync(string serviceName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_DeleteExtensionAsync_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteExtensionAsync(String, String, CancellationToken)</code>
+          <code class="lang-vb">DeleteExtensionAsync(String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete Extension operation deletes the specified extension from
+a cloud service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn169560.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn169560.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; DeleteExtensionAsync(string serviceName, string extensionId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteExtensionAsync(serviceName As String, extensionId As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>extensionId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The identifier that was assigned to the extension when it was added
+to the cloud service</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_GetAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Hosted Service Properties operation retrieves system
+properties for the specified cloud service. These properties
+include the service name and service type; and the name of the
+affinity group to which the service belongs, or its location if it
+is not part of an affinity group.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460806.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460806.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceGetResponse&gt; GetAsync(string serviceName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of HostedServiceGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceGetResponse">HostedServiceGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceGetResponse">HostedServiceGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Hosted Service operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_GetDetailedAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetDetailedAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetDetailedAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Detailed Hosted Service Properties operation retrieves
+system properties for the specified cloud service. These
+properties include the service name and service type; the name of
+the affinity group to which the service belongs, or its location
+if it is not part of an affinity group; and information on the
+deployments of the service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460806.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460806.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceGetDetailedResponse&gt; GetDetailedAsync(string serviceName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetDetailedAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of HostedServiceGetDetailedResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceGetDetailedResponse">HostedServiceGetDetailedResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceGetDetailedResponse">HostedServiceGetDetailedResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The detailed Get Hosted Service operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_GetExtensionAsync_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetExtensionAsync(String, String, CancellationToken)</code>
+          <code class="lang-vb">GetExtensionAsync(String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Extension operation retrieves information about a specified
+extension that was added to a cloud service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn169557.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn169557.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceGetExtensionResponse&gt; GetExtensionAsync(string serviceName, string extensionId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetExtensionAsync(serviceName As String, extensionId As String, cancellationToken As CancellationToken) As Task(Of HostedServiceGetExtensionResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>extensionId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The identifier that was assigned to the extension when it was added
+to the cloud service</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceGetExtensionResponse">HostedServiceGetExtensionResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceGetExtensionResponse">HostedServiceGetExtensionResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Extension operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_ListAsync_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(CancellationToken)</code>
+          <code class="lang-vb">ListAsync(CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List Hosted Services operation lists the cloud services
+available under the current subscription.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460781.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460781.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceListResponse&gt; ListAsync(CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(cancellationToken As CancellationToken) As Task(Of HostedServiceListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListResponse">HostedServiceListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListResponse">HostedServiceListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Hosted Service operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_ListAvailableExtensionsAsync_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAvailableExtensionsAsync(CancellationToken)</code>
+          <code class="lang-vb">ListAvailableExtensionsAsync(CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List Available Extensions operation lists the extensions that
+are available to add to your cloud service. In Windows Azure, a
+process can run as an extension of a cloud service. For example,
+Remote Desktop Access or the Azure Diagnostics Agent can run as
+extensions to the cloud service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn169559.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn169559.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceListAvailableExtensionsResponse&gt; ListAvailableExtensionsAsync(CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAvailableExtensionsAsync(cancellationToken As CancellationToken) As Task(Of HostedServiceListAvailableExtensionsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListAvailableExtensionsResponse">HostedServiceListAvailableExtensionsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListAvailableExtensionsResponse">HostedServiceListAvailableExtensionsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Available Extensions operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_ListExtensionsAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListExtensionsAsync(String, CancellationToken)</code>
+          <code class="lang-vb">ListExtensionsAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List Extensions operation lists all of the extensions that were
+added to a cloud service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn169561.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn169561.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceListExtensionsResponse&gt; ListExtensionsAsync(string serviceName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListExtensionsAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of HostedServiceListExtensionsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListExtensionsResponse">HostedServiceListExtensionsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListExtensionsResponse">HostedServiceListExtensionsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Extensions operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_ListExtensionVersionsAsync_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListExtensionVersionsAsync(String, String, CancellationToken)</code>
+          <code class="lang-vb">ListExtensionVersionsAsync(String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List Extension Versions operation lists the versions of an
+extension that are available to add to a cloud service. In Azure,
+a process can run as an extension of a cloud service. For example,
+Remote Desktop Access or the Azure Diagnostics Agent can run as
+extensions to the cloud service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn495437.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn495437.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceListAvailableExtensionsResponse&gt; ListExtensionVersionsAsync(string providerNamespace, string extensionType, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListExtensionVersionsAsync(providerNamespace As String, extensionType As String, cancellationToken As CancellationToken) As Task(Of HostedServiceListAvailableExtensionsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>providerNamespace</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The provider namespace.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>extensionType</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The extension type name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListAvailableExtensionsResponse">HostedServiceListAvailableExtensionsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListAvailableExtensionsResponse">HostedServiceListAvailableExtensionsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Available Extensions operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_ListPublisherExtensionsAsync_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListPublisherExtensionsAsync(CancellationToken)</code>
+          <code class="lang-vb">ListPublisherExtensionsAsync(CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List Available Extensions operation lists the extensions that
+are available to add to your cloud service. In Windows Azure, a
+process can run as an extension of a cloud service. For example,
+Remote Desktop Access or the Azure Diagnostics Agent can run as
+extensions to the cloud service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn169559.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn169559.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;HostedServiceListAvailableExtensionsResponse&gt; ListPublisherExtensionsAsync(CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListPublisherExtensionsAsync(cancellationToken As CancellationToken) As Task(Of HostedServiceListAvailableExtensionsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListAvailableExtensionsResponse">HostedServiceListAvailableExtensionsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceListAvailableExtensionsResponse">HostedServiceListAvailableExtensionsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Available Extensions operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IHostedServiceOperations_UpdateAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateAsync(String, HostedServiceUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateAsync(String, HostedServiceUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Update Hosted Service operation can update the label or
+description of a cloud service in Azure.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg441303.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/gg441303.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UpdateAsync(string serviceName, HostedServiceUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateAsync(serviceName As String, parameters As HostedServiceUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the cloud service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceUpdateParameters">HostedServiceUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_HostedServiceUpdateParameters">HostedServiceUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Update Hosted Service operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

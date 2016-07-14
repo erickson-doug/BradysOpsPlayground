@@ -1,0 +1,640 @@
+items:
+- uid: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  commentId: T:Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  id: RestoreRequest
+  parent: Microsoft.Azure.Management.WebSites.Models
+  children:
+  - Microsoft.Azure.Management.WebSites.Models.RestoreRequest.#ctor
+  - Microsoft.Azure.Management.WebSites.Models.RestoreRequest.AdjustConnectionStrings
+  - Microsoft.Azure.Management.WebSites.Models.RestoreRequest.BlobName
+  - Microsoft.Azure.Management.WebSites.Models.RestoreRequest.Databases
+  - Microsoft.Azure.Management.WebSites.Models.RestoreRequest.IgnoreConflictingHostNames
+  - Microsoft.Azure.Management.WebSites.Models.RestoreRequest.Overwrite
+  - Microsoft.Azure.Management.WebSites.Models.RestoreRequest.StorageAccountUrl
+  langs:
+  - csharp
+  - vb
+  name: RestoreRequest
+  fullName: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RestoreRequest
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites.Models
+  summary: "\r\nRestore request to either a new or an existing site.\r\n"
+  example: []
+  syntax:
+    content: public class RestoreRequest
+    content.vb: Public Class RestoreRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.AdjustConnectionStrings
+  commentId: P:Microsoft.Azure.Management.WebSites.Models.RestoreRequest.AdjustConnectionStrings
+  id: AdjustConnectionStrings
+  parent: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  langs:
+  - csharp
+  - vb
+  name: AdjustConnectionStrings
+  fullName: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.AdjustConnectionStrings
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AdjustConnectionStrings
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites.Models
+  summary: "\r\nOptional. If the restore operation also restores a database along\r\nwith the website and the database is on a different server than\r\nwhen the original site h\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool AdjustConnectionStrings
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AdjustConnectionStrings As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.BlobName
+  commentId: P:Microsoft.Azure.Management.WebSites.Models.RestoreRequest.BlobName
+  id: BlobName
+  parent: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  langs:
+  - csharp
+  - vb
+  name: BlobName
+  fullName: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.BlobName
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BlobName
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites.Models
+  summary: "\r\nOptional. The blob name where the backup is stored. E.g.\r\nmysite1_20140203.zip\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string BlobName
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property BlobName As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.Databases
+  commentId: P:Microsoft.Azure.Management.WebSites.Models.RestoreRequest.Databases
+  id: Databases
+  parent: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  langs:
+  - csharp
+  - vb
+  name: Databases
+  fullName: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.Databases
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Databases
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+    startLine: 64
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites.Models
+  summary: "\r\nOptional. Database settings for backup.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<DatabaseBackupSetting> Databases
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Databases As IList(Of DatabaseBackupSetting)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.IgnoreConflictingHostNames
+  commentId: P:Microsoft.Azure.Management.WebSites.Models.RestoreRequest.IgnoreConflictingHostNames
+  id: IgnoreConflictingHostNames
+  parent: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  langs:
+  - csharp
+  - vb
+  name: IgnoreConflictingHostNames
+  fullName: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.IgnoreConflictingHostNames
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IgnoreConflictingHostNames
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites.Models
+  summary: "\r\nOptional. When restoring a site, custom domains might conflict with\r\nother site in the same datacenter. If this value is true, such\r\nhostnames will be ignored during restore. If this is false, the\r\nrestore operation will fail on such conflict.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool IgnoreConflictingHostNames
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IgnoreConflictingHostNames As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.Overwrite
+  commentId: P:Microsoft.Azure.Management.WebSites.Models.RestoreRequest.Overwrite
+  id: Overwrite
+  parent: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  langs:
+  - csharp
+  - vb
+  name: Overwrite
+  fullName: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.Overwrite
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Overwrite
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+    startLine: 90
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites.Models
+  summary: "\r\nOptional. True if the restore operation will be used for overwrite\r\nan existing site; false otherwise.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool Overwrite
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Overwrite As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.StorageAccountUrl
+  commentId: P:Microsoft.Azure.Management.WebSites.Models.RestoreRequest.StorageAccountUrl
+  id: StorageAccountUrl
+  parent: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  langs:
+  - csharp
+  - vb
+  name: StorageAccountUrl
+  fullName: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.StorageAccountUrl
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StorageAccountUrl
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+    startLine: 102
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites.Models
+  syntax:
+    content: >-
+      public string StorageAccountUrl
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property StorageAccountUrl As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.#ctor
+  commentId: M:Microsoft.Azure.Management.WebSites.Models.RestoreRequest.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.WebSites.Models.RestoreRequest
+  langs:
+  - csharp
+  - vb
+  name: RestoreRequest()
+  fullName: Microsoft.Azure.Management.WebSites.Models.RestoreRequest.RestoreRequest()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/Models/RestoreRequest.cs
+    startLine: 111
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites.Models
+  summary: "\r\nInitializes a new instance of the RestoreRequest class.\r\n"
+  example: []
+  syntax:
+    content: public RestoreRequest()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.WebSites.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.WebSites.Models
+  fullName: Microsoft.Azure.Management.WebSites.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<DatabaseBackupSetting>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting)
+  name.vb: IList(Of DatabaseBackupSetting)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting
+    name: DatabaseBackupSetting
+    fullName: Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting
+    name: DatabaseBackupSetting
+    fullName: Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

@@ -1,0 +1,766 @@
+items:
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  id: SubscriptionOperationsExtensions
+  parent: Microsoft.Azure.Management.Rdfe
+  children:
+  - Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.Get(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  - Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.GetAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  - Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.ListOperations(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  - Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.ListOperationsAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  - Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.RegisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  - Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.RegisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  - Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.UnregisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  - Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.UnregisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionOperationsExtensions
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SubscriptionOperationsExtensions
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe Service Management API provides programmatic access to much of the\r\nfunctionality available through the Management Portal. The Service\r\nManagement API is a REST API. All API operations are performed over\r\nSSL and are mutually authenticated using X.509 v3 certificates.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460799.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public class SubscriptionOperationsExtensions
+    content.vb: Public Class SubscriptionOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.Get(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  commentId: M:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.Get(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  id: Get(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  parent: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(ISubscriptionOperations)
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.Get(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe Get Subscription operation returns account and resource\r\nallocation information for the specified subscription.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/hh403995.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: public static SubscriptionGetResponse Get(ISubscriptionOperations operations)
+    content.vb: Public Shared Function Get(operations As ISubscriptionOperations) As SubscriptionGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Rdfe.ISubscriptionOperations.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse
+      description: "\r\nThe Get Subscription operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.GetAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  commentId: M:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.GetAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  id: GetAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  parent: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(ISubscriptionOperations)
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.GetAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe Get Subscription operation returns account and resource\r\nallocation information for the specified subscription.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/hh403995.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: public static Task<SubscriptionGetResponse> GetAsync(ISubscriptionOperations operations)
+    content.vb: Public Shared Function GetAsync(operations As ISubscriptionOperations) As Task(Of SubscriptionGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Rdfe.ISubscriptionOperations.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse}
+      description: "\r\nThe Get Subscription operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.ListOperations(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  commentId: M:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.ListOperations(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  id: ListOperations(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  parent: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListOperations(ISubscriptionOperations, SubscriptionListOperationsParameters)
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.ListOperations(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations, Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListOperations
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe List Subscription Operations operation returns a list of\r\ncreate, update, and delete operations that were performed on a\r\nsubscription during the specified timeframe.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/gg715318.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: public static SubscriptionListOperationsResponse ListOperations(ISubscriptionOperations operations, SubscriptionListOperationsParameters parameters)
+    content.vb: Public Shared Function ListOperations(operations As ISubscriptionOperations, parameters As SubscriptionListOperationsParameters) As SubscriptionListOperationsResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Rdfe.ISubscriptionOperations.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+      description: "\r\nRequired. Parameters supplied to the List Subscription Operations\r\noperation.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse
+      description: "\r\nThe List Subscription Operations operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.ListOperationsAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  commentId: M:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.ListOperationsAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  id: ListOperationsAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  parent: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListOperationsAsync(ISubscriptionOperations, SubscriptionListOperationsParameters)
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.ListOperationsAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations, Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListOperationsAsync
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe List Subscription Operations operation returns a list of\r\ncreate, update, and delete operations that were performed on a\r\nsubscription during the specified timeframe.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/gg715318.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: public static Task<SubscriptionListOperationsResponse> ListOperationsAsync(ISubscriptionOperations operations, SubscriptionListOperationsParameters parameters)
+    content.vb: Public Shared Function ListOperationsAsync(operations As ISubscriptionOperations, parameters As SubscriptionListOperationsParameters) As Task(Of SubscriptionListOperationsResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Rdfe.ISubscriptionOperations.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+      description: "\r\nRequired. Parameters supplied to the List Subscription Operations\r\noperation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse}
+      description: "\r\nThe List Subscription Operations operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.RegisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.RegisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  id: RegisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  parent: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: RegisterResource(ISubscriptionOperations, String)
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.RegisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RegisterResource
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 141
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nRegister a resource with your subscription.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse RegisterResource(ISubscriptionOperations operations, string resourceName)
+    content.vb: Public Shared Function RegisterResource(operations As ISubscriptionOperations, resourceName As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Rdfe.ISubscriptionOperations.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of the resource to register.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.RegisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.RegisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  id: RegisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  parent: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: RegisterResourceAsync(ISubscriptionOperations, String)
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.RegisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RegisterResourceAsync
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 164
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nRegister a resource with your subscription.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> RegisterResourceAsync(ISubscriptionOperations operations, string resourceName)
+    content.vb: Public Shared Function RegisterResourceAsync(operations As ISubscriptionOperations, resourceName As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Rdfe.ISubscriptionOperations.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of the resource to register.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.UnregisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.UnregisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  id: UnregisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  parent: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnregisterResource(ISubscriptionOperations, String)
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.UnregisterResource(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UnregisterResource
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 183
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nUnregister a resource with your subscription.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse UnregisterResource(ISubscriptionOperations operations, string resourceName)
+    content.vb: Public Shared Function UnregisterResource(operations As ISubscriptionOperations, resourceName As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Rdfe.ISubscriptionOperations.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of the resource to unregister.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.UnregisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.UnregisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  id: UnregisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations,System.String)
+  parent: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnregisterResourceAsync(ISubscriptionOperations, String)
+  fullName: Microsoft.Azure.Management.Rdfe.SubscriptionOperationsExtensions.UnregisterResourceAsync(Microsoft.Azure.Management.Rdfe.ISubscriptionOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UnregisterResourceAsync
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/SubscriptionOperationsExtensions.cs
+    startLine: 206
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nUnregister a resource with your subscription.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> UnregisterResourceAsync(ISubscriptionOperations operations, string resourceName)
+    content.vb: Public Shared Function UnregisterResourceAsync(operations As ISubscriptionOperations, resourceName As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Rdfe.ISubscriptionOperations.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of the resource to unregister.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.Rdfe
+  isExternal: false
+  name: Microsoft.Azure.Management.Rdfe
+  fullName: Microsoft.Azure.Management.Rdfe
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+  parent: Microsoft.Azure.Management.Rdfe
+  isExternal: false
+  name: ISubscriptionOperations
+  fullName: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse
+  parent: Microsoft.Azure.Management.Rdfe.Models
+  isExternal: false
+  name: SubscriptionGetResponse
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse
+- uid: Microsoft.Azure.Management.Rdfe.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Rdfe.Models
+  fullName: Microsoft.Azure.Management.Rdfe.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse)
+  name.vb: Task(Of SubscriptionGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse
+    name: SubscriptionGetResponse
+    fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse
+    name: SubscriptionGetResponse
+    fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+  parent: Microsoft.Azure.Management.Rdfe.Models
+  isExternal: false
+  name: SubscriptionListOperationsParameters
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsParameters
+- uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse
+  parent: Microsoft.Azure.Management.Rdfe.Models
+  isExternal: false
+  name: SubscriptionListOperationsResponse
+  fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionListOperationsResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse)
+  name.vb: Task(Of SubscriptionListOperationsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse
+    name: SubscriptionListOperationsResponse
+    fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse
+    name: SubscriptionListOperationsResponse
+    fullName: Microsoft.Azure.Management.Rdfe.Models.SubscriptionListOperationsResponse
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: AzureOperationResponse
+  isExternal: true
+  name: AzureOperationResponse
+  fullName: AzureOperationResponse
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )

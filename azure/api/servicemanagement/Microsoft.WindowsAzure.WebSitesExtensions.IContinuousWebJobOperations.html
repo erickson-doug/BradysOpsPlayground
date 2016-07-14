@@ -1,0 +1,793 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations">
+          <span class="lang-csharp">IContinuousWebJobOperations</span>
+          <span class="lang-vb">IContinuousWebJobOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.WebSites.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for managing continuous WebJobs.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_DeleteAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Delete a continuous job.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteAsync(string jobName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>jobName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The continuous WebJob name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_GetAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Get a continuous WebJob.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ContinuousWebJobGetResponse&gt; GetAsync(string jobName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of ContinuousWebJobGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>jobName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The continuous WebJob name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse.html#Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobGetResponse">ContinuousWebJobGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse.html#Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobGetResponse">ContinuousWebJobGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The get continuous WebJob Operation Response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_GetSettingsAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetSettingsAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetSettingsAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Get the settings of a continuous WebJob.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ContinuousWebJobSettingsResponse&gt; GetSettingsAsync(string jobName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetSettingsAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of ContinuousWebJobSettingsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>jobName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The continuous WebJob name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse.html#Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobSettingsResponse">ContinuousWebJobSettingsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse.html#Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobSettingsResponse">ContinuousWebJobSettingsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The continuous WebJob settings operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_ListAsync_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(CancellationToken)</code>
+          <code class="lang-vb">ListAsync(CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>List the continuous web jobs.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ContinuousWebJobListResponse&gt; ListAsync(CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(cancellationToken As CancellationToken) As Task(Of ContinuousWebJobListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse.html#Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobListResponse">ContinuousWebJobListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse.html#Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobListResponse">ContinuousWebJobListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The list of continuous WebJobs operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_SetSettingsAsync_System_String_Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobSettingsUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">SetSettingsAsync(String, ContinuousWebJobSettingsUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">SetSettingsAsync(String, ContinuousWebJobSettingsUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Set the settings of a continuous WebJob (will replace the current
+settings of the WebJob).</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; SetSettingsAsync(string jobName, ContinuousWebJobSettingsUpdateParameters settings, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function SetSettingsAsync(jobName As String, settings As ContinuousWebJobSettingsUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>jobName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The continuous WebJob name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>settings</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters.html#Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobSettingsUpdateParameters">ContinuousWebJobSettingsUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters.html#Microsoft_WindowsAzure_WebSitesExtensions_Models_ContinuousWebJobSettingsUpdateParameters">ContinuousWebJobSettingsUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The continuous WebJob settings.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_StartAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StartAsync(String, CancellationToken)</code>
+          <code class="lang-vb">StartAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start a continuous WebJob.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; StartAsync(string jobName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function StartAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>jobName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The WebJob name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_StopAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StopAsync(String, CancellationToken)</code>
+          <code class="lang-vb">StopAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Stop a continuous WebJob.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; StopAsync(string jobName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function StopAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>jobName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The WebJob name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_UploadFileAsync_System_String_System_String_System_IO_Stream_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UploadFileAsync(String, String, Stream, CancellationToken)</code>
+          <code class="lang-vb">UploadFileAsync(String, String, Stream, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Create or replace a continuous WebJob with a script file (.exe,
+.bat, .php, .js...).</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UploadFileAsync(string jobName, string fileName, Stream jobContent, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UploadFileAsync(jobName As String, fileName As String, jobContent As Stream, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>jobName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The continuous WebJob name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>fileName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The file name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>jobContent</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.IO.Stream</span></code>
+                        <code class="lang-vb"><span class="xref">System.IO.Stream</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The file content.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_WebSitesExtensions_IContinuousWebJobOperations_UploadZipAsync_System_String_System_String_System_IO_Stream_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UploadZipAsync(String, String, Stream, CancellationToken)</code>
+          <code class="lang-vb">UploadZipAsync(String, String, Stream, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Create or replace a continuous WebJob with a zip file (containing
+the WebJob binaries).</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UploadZipAsync(string jobName, string fileName, Stream jobContent, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UploadZipAsync(jobName As String, fileName As String, jobContent As Stream, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>jobName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The continuous WebJob name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>fileName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The zip file name.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>jobContent</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.IO.Stream</span></code>
+                        <code class="lang-vb"><span class="xref">System.IO.Stream</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The zip file content.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

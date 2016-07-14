@@ -1,0 +1,3948 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_WebSites_IWebSiteOperations">
+          <span class="lang-csharp">IWebSiteOperations</span>
+          <span class="lang-vb">IWebSiteOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.WebSites.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for managing the web sites in a web space.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_BackupAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_BackupRequestEnvelope_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BackupAsync(String, String, String, BackupRequestEnvelope, CancellationToken)</code>
+          <code class="lang-vb">BackupAsync(String, String, String, BackupRequestEnvelope, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Backups a site on-demand.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteBackupResponse&gt; BackupAsync(string resourceGroupName, string webSiteName, string slotName, BackupRequestEnvelope backupRequestEnvelope, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BackupAsync(resourceGroupName As String, webSiteName As String, slotName As String, backupRequestEnvelope As BackupRequestEnvelope, cancellationToken As CancellationToken) As Task(Of WebSiteBackupResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web space.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>backupRequestEnvelope</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.BackupRequestEnvelope.html#Microsoft_Azure_Management_WebSites_Models_BackupRequestEnvelope">BackupRequestEnvelope</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.BackupRequestEnvelope.html#Microsoft_Azure_Management_WebSites_Models_BackupRequestEnvelope">BackupRequestEnvelope</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A backup specification.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteBackupResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteBackupResponse">WebSiteBackupResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteBackupResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteBackupResponse">WebSiteBackupResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The backup record created based on the backup request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_CloneAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteCloneParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CloneAsync(String, String, String, WebSiteCloneParameters, CancellationToken)</code>
+          <code class="lang-vb">CloneAsync(String, String, String, WebSiteCloneParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can clone a web site by using a PUT request that includes the
+name of the web site and other information in the request body.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166986.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166986.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteAsyncOperationResponse&gt; CloneAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteCloneParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CloneAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteCloneParameters, cancellationToken As CancellationToken) As Task(Of WebSiteAsyncOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteCloneParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteCloneParameters">WebSiteCloneParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteCloneParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteCloneParameters">WebSiteCloneParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the clone Web Site operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteAsyncOperationResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteAsyncOperationResponse">WebSiteAsyncOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteAsyncOperationResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteAsyncOperationResponse">WebSiteAsyncOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The website operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_CreateOrUpdateAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteCreateOrUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdateAsync(String, String, String, WebSiteCreateOrUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateOrUpdateAsync(String, String, String, WebSiteCreateOrUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can create a web site by using a POST request that includes the
+name of the web site and other information in the request body.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166986.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166986.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteCreateResponse&gt; CreateOrUpdateAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteCreateOrUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateOrUpdateAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteCreateOrUpdateParameters, cancellationToken As CancellationToken) As Task(Of WebSiteCreateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteCreateOrUpdateParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteCreateOrUpdateParameters">WebSiteCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteCreateOrUpdateParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteCreateOrUpdateParameters">WebSiteCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Create Web Site operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteCreateResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteCreateResponse">WebSiteCreateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteCreateResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteCreateResponse">WebSiteCreateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Create Web Space operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_CreateRepositoryAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateRepositoryAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">CreateRepositoryAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>A web site repository is essentially a GIT repository that you can
+use to manage your web site content. By using GIT source control
+tools, you can push or pull version controlled changes to your
+site. You can create a repository for your web site by issuing an
+HTTP POST request, or retrieve information about the repository by
+using HTTP GET.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166967.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166967.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; CreateRepositoryAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateRepositoryAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_DeleteAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteDeleteParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, String, String, WebSiteDeleteParameters, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, String, String, WebSiteDeleteParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deletes the web site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteDeleteParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteDeleteParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group..</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Web Site resource.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteDeleteParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteDeleteParameters">WebSiteDeleteParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteDeleteParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteDeleteParameters">WebSiteDeleteParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The parameters to delete a web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_DeleteRepositoryAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteRepositoryAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">DeleteRepositoryAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>A web site repository is essentially a GIT repository that you can
+use to manage your web site content. By using GIT source control
+tools, you can push or pull version controlled changes to your
+site. You can create a repository for your web site by issuing an
+HTTP POST request, or retrieve information about the repository by
+using HTTP GET.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166967.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166967.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteDeleteRepositoryResponse&gt; DeleteRepositoryAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteRepositoryAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteDeleteRepositoryResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteDeleteRepositoryResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteDeleteRepositoryResponse">WebSiteDeleteRepositoryResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteDeleteRepositoryResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteDeleteRepositoryResponse">WebSiteDeleteRepositoryResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Delete Web Site Repository operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_DeleteSiteSourceControlAsync_System_String_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteSiteSourceControlAsync(String, String, String, String, CancellationToken)</code>
+          <code class="lang-vb">DeleteSiteSourceControlAsync(String, String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Unlink source control from website</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteSiteSourceControlAsync(string resourceGroupName, string webSiteName, string slotName, string repoUrl, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteSiteSourceControlAsync(resourceGroupName As String, webSiteName As String, slotName As String, repoUrl As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>repoUrl</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The repository url.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_DiscoverAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_RestoreRequestEnvelope_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DiscoverAsync(String, String, String, RestoreRequestEnvelope, CancellationToken)</code>
+          <code class="lang-vb">DiscoverAsync(String, String, String, RestoreRequestEnvelope, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Scans a backup in a storage account and returns database
+information etc. Should be called before calling Restore to
+discover what parameters are needed for the restore operation.
+KNOWN BUG: This has to be called against an exisingsite, otherwise
+will hit an error about non-existing resource.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteRestoreDiscoverResponse&gt; DiscoverAsync(string resourceGroupName, string webSiteName, string slotName, RestoreRequestEnvelope restoreRequestEnvelope, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DiscoverAsync(resourceGroupName As String, webSiteName As String, slotName As String, restoreRequestEnvelope As RestoreRequestEnvelope, cancellationToken As CancellationToken) As Task(Of WebSiteRestoreDiscoverResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web space.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>restoreRequestEnvelope</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.RestoreRequestEnvelope.html#Microsoft_Azure_Management_WebSites_Models_RestoreRequestEnvelope">RestoreRequestEnvelope</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.RestoreRequestEnvelope.html#Microsoft_Azure_Management_WebSites_Models_RestoreRequestEnvelope">RestoreRequestEnvelope</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A restore request.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteRestoreDiscoverResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteRestoreDiscoverResponse">WebSiteRestoreDiscoverResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteRestoreDiscoverResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteRestoreDiscoverResponse">WebSiteRestoreDiscoverResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The information gathered about a backup storaged in a storage
+account.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GeneratePasswordAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GeneratePasswordAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GeneratePasswordAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can generate a new random password for publishing a site by
+issuing an HTTP POST request.  Tip: If you want to verify that the
+publish password has changed, call HTTP GET on /publishxml before
+calling /newpassword. In the publish XML, note the hash value in
+the userPWD attribute. After calling /newpassword, call
+/publishxml again. You can then compare the new value of userPWD
+in the Publish XML with the one you noted earlier.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn236428.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn236428.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; GeneratePasswordAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GeneratePasswordAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetAppSettingsAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAppSettingsAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetAppSettingsAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Restart the web site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteAppSettingsResult&gt; GetAppSettingsAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAppSettingsAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteAppSettingsResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteAppSettingsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteAppSettingsResult">WebSiteAppSettingsResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteAppSettingsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteAppSettingsResult">WebSiteAppSettingsResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of app settings for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteGetParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, String, String, WebSiteGetParameters, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, String, String, WebSiteGetParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can retrieve details for a web site by issuing an HTTP GET
+request.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn167007.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn167007.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteGetResponse&gt; GetAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteGetParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteGetParameters, cancellationToken As CancellationToken) As Task(Of WebSiteGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetParameters">WebSiteGetParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetParameters">WebSiteGetParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Additional parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetResponse">WebSiteGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetResponse">WebSiteGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Web Site Details operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetBackupConfigurationAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetBackupConfigurationAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetBackupConfigurationAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets a schedule configuration for site backups.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteGetBackupConfigurationResponse&gt; GetBackupConfigurationAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetBackupConfigurationAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteGetBackupConfigurationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web space.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetBackupConfigurationResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetBackupConfigurationResponse">WebSiteGetBackupConfigurationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetBackupConfigurationResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetBackupConfigurationResponse">WebSiteGetBackupConfigurationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Scheduled backup definition.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetConfigurationAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteGetConfigurationParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetConfigurationAsync(String, String, String, WebSiteGetConfigurationParameters, CancellationToken)</code>
+          <code class="lang-vb">GetConfigurationAsync(String, String, String, WebSiteGetConfigurationParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can retrieve the config settings for a web site by issuing an
+HTTP GET request, or update them by using HTTP PUT with a request
+body that contains the settings to be updated.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteGetConfigurationResult&gt; GetConfigurationAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteGetConfigurationParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetConfigurationAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteGetConfigurationParameters, cancellationToken As CancellationToken) As Task(Of WebSiteGetConfigurationResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetConfigurationParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetConfigurationParameters">WebSiteGetConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetConfigurationParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetConfigurationParameters">WebSiteGetConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Additional parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetConfigurationResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetConfigurationResult">WebSiteGetConfigurationResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetConfigurationResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetConfigurationResult">WebSiteGetConfigurationResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Config for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetConnectionStringsAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetConnectionStringsAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetConnectionStringsAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Restart the web site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteConnectionStringsResult&gt; GetConnectionStringsAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetConnectionStringsAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteConnectionStringsResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the web site</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteConnectionStringsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteConnectionStringsResult">WebSiteConnectionStringsResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteConnectionStringsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteConnectionStringsResult">WebSiteConnectionStringsResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of connection strings for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetHistoricalUsageMetricsAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteGetHistoricalUsageMetricsParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetHistoricalUsageMetricsAsync(String, String, String, WebSiteGetHistoricalUsageMetricsParameters, CancellationToken)</code>
+          <code class="lang-vb">GetHistoricalUsageMetricsAsync(String, String, String, WebSiteGetHistoricalUsageMetricsParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can retrieve historical usage metrics for a site by issuing an
+HTTP GET request.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166964.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166964.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteGetHistoricalUsageMetricsResponse&gt; GetHistoricalUsageMetricsAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteGetHistoricalUsageMetricsParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetHistoricalUsageMetricsAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteGetHistoricalUsageMetricsParameters, cancellationToken As CancellationToken) As Task(Of WebSiteGetHistoricalUsageMetricsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetHistoricalUsageMetricsParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetHistoricalUsageMetricsParameters">WebSiteGetHistoricalUsageMetricsParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetHistoricalUsageMetricsParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetHistoricalUsageMetricsParameters">WebSiteGetHistoricalUsageMetricsParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Web Site Historical Usage Metrics parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetHistoricalUsageMetricsResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetHistoricalUsageMetricsResponse">WebSiteGetHistoricalUsageMetricsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetHistoricalUsageMetricsResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetHistoricalUsageMetricsResponse">WebSiteGetHistoricalUsageMetricsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Web Site Historical Usage Metrics operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetMetadataAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetMetadataAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetMetadataAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Restart the web site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteMetadataResult&gt; GetMetadataAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetMetadataAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteMetadataResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the web site</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteMetadataResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteMetadataResult">WebSiteMetadataResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteMetadataResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteMetadataResult">WebSiteMetadataResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of metadata for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetOperationAsync_System_String_System_String_System_String_System_Guid_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetOperationAsync(String, String, String, Guid, CancellationToken)</code>
+          <code class="lang-vb">GetOperationAsync(String, String, String, Guid, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can retrieve details for a web site by issuing an HTTP GET
+request.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn167007.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn167007.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteAsyncOperationResponse&gt; GetOperationAsync(string resourceGroupName, string webSiteName, string slotName, Guid operationId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetOperationAsync(resourceGroupName As String, webSiteName As String, slotName As String, operationId As Guid, cancellationToken As CancellationToken) As Task(Of WebSiteAsyncOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Guid</span></code>
+                        <code class="lang-vb"><span class="xref">System.Guid</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Additional parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteAsyncOperationResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteAsyncOperationResponse">WebSiteAsyncOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteAsyncOperationResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteAsyncOperationResponse">WebSiteAsyncOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The website operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetPublishingCredentialsAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetPublishingCredentialsAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetPublishingCredentialsAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Get publishing credentials for the web site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSitePublishingCredentialsResult&gt; GetPublishingCredentialsAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetPublishingCredentialsAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSitePublishingCredentialsResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSitePublishingCredentialsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSitePublishingCredentialsResult">WebSitePublishingCredentialsResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSitePublishingCredentialsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSitePublishingCredentialsResult">WebSitePublishingCredentialsResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Publishing credentials for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetPublishProfileAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetPublishProfileAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetPublishProfileAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Retrieve the publish settings information for a web site.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166996.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166996.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteGetPublishProfileResponse&gt; GetPublishProfileAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetPublishProfileAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteGetPublishProfileResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetPublishProfileResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetPublishProfileResponse">WebSiteGetPublishProfileResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetPublishProfileResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetPublishProfileResponse">WebSiteGetPublishProfileResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Web Site Publish Profile operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetRepositoryAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetRepositoryAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetRepositoryAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>A web site repository is essentially a GIT repository that you can
+use to manage your web site content. By using GIT source control
+tools, you can push or pull version controlled changes to your
+site. You can create a repository for your web site by issuing an
+HTTP POST request, or retrieve information about the repository by
+using HTTP GET.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166967.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166967.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteGetRepositoryResponse&gt; GetRepositoryAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetRepositoryAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteGetRepositoryResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetRepositoryResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetRepositoryResponse">WebSiteGetRepositoryResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetRepositoryResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetRepositoryResponse">WebSiteGetRepositoryResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Web Site Repository operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetSlotConfigNamesAsync_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetSlotConfigNamesAsync(String, String, CancellationToken)</code>
+          <code class="lang-vb">GetSlotConfigNamesAsync(String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Update list of app settings and connection strings which to be slot
+specific. E.g. settings in staging slots remain in staging after
+swap with production.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;SlotConfigNamesResult&gt; GetSlotConfigNamesAsync(string resourceGroupName, string webSiteName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetSlotConfigNamesAsync(resourceGroupName As String, webSiteName As String, cancellationToken As CancellationToken) As Task(Of SlotConfigNamesResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.SlotConfigNamesResult.html#Microsoft_Azure_Management_WebSites_Models_SlotConfigNamesResult">SlotConfigNamesResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.SlotConfigNamesResult.html#Microsoft_Azure_Management_WebSites_Models_SlotConfigNamesResult">SlotConfigNamesResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of slot specific settings.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_GetUsageMetricsAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetUsageMetricsAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetUsageMetricsAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Get a web site&#39;s current usage metrics. The metrics returned
+include CPU Time, Data In, Data Out, Local bytes read, Local bytes
+written, Network bytes read, Network bytes written, WP stop
+requests, Memory Usage, CPU Time - Minute Limit, and File System
+Storage.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166991.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166991.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteGetUsageMetricsResponse&gt; GetUsageMetricsAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetUsageMetricsAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteGetUsageMetricsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetUsageMetricsResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetUsageMetricsResponse">WebSiteGetUsageMetricsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetUsageMetricsResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetUsageMetricsResponse">WebSiteGetUsageMetricsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Web Site Usage Metrics operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_ListAsync_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteListParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(String, String, WebSiteListParameters, CancellationToken)</code>
+          <code class="lang-vb">ListAsync(String, String, WebSiteListParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>List the Web Sites in a resource group.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteListResponse&gt; ListAsync(string resourceGroupName, string webSiteName, WebSiteListParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(resourceGroupName As String, webSiteName As String, parameters As WebSiteListParameters, cancellationToken As CancellationToken) As Task(Of WebSiteListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteListParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteListParameters">WebSiteListParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteListParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteListParameters">WebSiteListParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Additional parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteListResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteListResponse">WebSiteListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteListResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteListResponse">WebSiteListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Web Sites operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_ListBackupsAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListBackupsAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">ListBackupsAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns list of all backups which are tracked by the system.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteGetBackupsResponse&gt; ListBackupsAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListBackupsAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of WebSiteGetBackupsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetBackupsResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetBackupsResponse">WebSiteGetBackupsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteGetBackupsResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteGetBackupsResponse">WebSiteGetBackupsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of backups for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_RestartAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RestartAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">RestartAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Restart the web site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; RestartAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function RestartAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_RestoreAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_RestoreRequestEnvelope_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RestoreAsync(String, String, String, RestoreRequestEnvelope, CancellationToken)</code>
+          <code class="lang-vb">RestoreAsync(String, String, String, RestoreRequestEnvelope, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Restores a site to either a new site or existing site (Overwrite
+flag has to be set to true for that).</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteRestoreResponse&gt; RestoreAsync(string resourceGroupName, string webSiteName, string slotName, RestoreRequestEnvelope restoreRequestEnvelope, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function RestoreAsync(resourceGroupName As String, webSiteName As String, slotName As String, restoreRequestEnvelope As RestoreRequestEnvelope, cancellationToken As CancellationToken) As Task(Of WebSiteRestoreResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web space.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>restoreRequestEnvelope</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.RestoreRequestEnvelope.html#Microsoft_Azure_Management_WebSites_Models_RestoreRequestEnvelope">RestoreRequestEnvelope</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.RestoreRequestEnvelope.html#Microsoft_Azure_Management_WebSites_Models_RestoreRequestEnvelope">RestoreRequestEnvelope</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A restore request.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteRestoreResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteRestoreResponse">WebSiteRestoreResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteRestoreResponse.html#Microsoft_Azure_Management_WebSites_Models_WebSiteRestoreResponse">WebSiteRestoreResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Restore operation information.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_StartAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StartAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">StartAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Restart the web site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; StartAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function StartAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_StopAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StopAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">StopAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Restart the web site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; StopAsync(string resourceGroupName, string webSiteName, string slotName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function StopAsync(resourceGroupName As String, webSiteName As String, slotName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the web site</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_UpdateAppSettingsAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteNameValueParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateAppSettingsAsync(String, String, String, WebSiteNameValueParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateAppSettingsAsync(String, String, String, WebSiteNameValueParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can retrieve the application settings for a web site by issuing
+an HTTP GET request, or update them by using HTTP PUT with a
+request body that contains the settings to be updated.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteAppSettingsResult&gt; UpdateAppSettingsAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteNameValueParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateAppSettingsAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteNameValueParameters, cancellationToken As CancellationToken) As Task(Of WebSiteAppSettingsResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteNameValueParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteNameValueParameters">WebSiteNameValueParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteNameValueParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteNameValueParameters">WebSiteNameValueParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Update Web Site app settings parameters</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteAppSettingsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteAppSettingsResult">WebSiteAppSettingsResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteAppSettingsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteAppSettingsResult">WebSiteAppSettingsResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of app settings for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_UpdateBackupConfigurationAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_BackupRequestEnvelope_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateBackupConfigurationAsync(String, String, String, BackupRequestEnvelope, CancellationToken)</code>
+          <code class="lang-vb">UpdateBackupConfigurationAsync(String, String, String, BackupRequestEnvelope, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Updates a backup schedule for a site.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UpdateBackupConfigurationAsync(string resourceGroupName, string webSiteName, string slotName, BackupRequestEnvelope backupRequestEnvelope, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateBackupConfigurationAsync(resourceGroupName As String, webSiteName As String, slotName As String, backupRequestEnvelope As BackupRequestEnvelope, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web space.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>backupRequestEnvelope</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.BackupRequestEnvelope.html#Microsoft_Azure_Management_WebSites_Models_BackupRequestEnvelope">BackupRequestEnvelope</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.BackupRequestEnvelope.html#Microsoft_Azure_Management_WebSites_Models_BackupRequestEnvelope">BackupRequestEnvelope</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A backup schedule specification.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_UpdateConfigurationAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteUpdateConfigurationParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateConfigurationAsync(String, String, String, WebSiteUpdateConfigurationParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateConfigurationAsync(String, String, String, WebSiteUpdateConfigurationParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can retrieve the config settings for a web site by issuing an
+HTTP GET request, or update them by using HTTP PUT with a request
+body that contains the settings to be updated.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UpdateConfigurationAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteUpdateConfigurationParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateConfigurationAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteUpdateConfigurationParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteUpdateConfigurationParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteUpdateConfigurationParameters">WebSiteUpdateConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteUpdateConfigurationParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteUpdateConfigurationParameters">WebSiteUpdateConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Update Web Site Configuration parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_UpdateConnectionStringsAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteUpdateConnectionStringsParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateConnectionStringsAsync(String, String, String, WebSiteUpdateConnectionStringsParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateConnectionStringsAsync(String, String, String, WebSiteUpdateConnectionStringsParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can retrieve the connection strings for a web site by issuing
+an HTTP GET request, or update them by using HTTP PUT with a
+request body that contains the settings to be updated.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteConnectionStringsResult&gt; UpdateConnectionStringsAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteUpdateConnectionStringsParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateConnectionStringsAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteUpdateConnectionStringsParameters, cancellationToken As CancellationToken) As Task(Of WebSiteConnectionStringsResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteUpdateConnectionStringsParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteUpdateConnectionStringsParameters">WebSiteUpdateConnectionStringsParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteUpdateConnectionStringsParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteUpdateConnectionStringsParameters">WebSiteUpdateConnectionStringsParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Update Web Site connection strings parameters</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteConnectionStringsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteConnectionStringsResult">WebSiteConnectionStringsResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteConnectionStringsResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteConnectionStringsResult">WebSiteConnectionStringsResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of connection strings for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_UpdateMetadataAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_WebSiteNameValueParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateMetadataAsync(String, String, String, WebSiteNameValueParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateMetadataAsync(String, String, String, WebSiteNameValueParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>You can retrieve the metadata for a web site by issuing an HTTP GET
+request, or update them by using HTTP PUT with a request body that
+contains the settings to be updated.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn166985.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;WebSiteMetadataResult&gt; UpdateMetadataAsync(string resourceGroupName, string webSiteName, string slotName, WebSiteNameValueParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateMetadataAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As WebSiteNameValueParameters, cancellationToken As CancellationToken) As Task(Of WebSiteMetadataResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteNameValueParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteNameValueParameters">WebSiteNameValueParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteNameValueParameters.html#Microsoft_Azure_Management_WebSites_Models_WebSiteNameValueParameters">WebSiteNameValueParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Update Web Site metadata parameters</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteMetadataResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteMetadataResult">WebSiteMetadataResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.WebSiteMetadataResult.html#Microsoft_Azure_Management_WebSites_Models_WebSiteMetadataResult">WebSiteMetadataResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of metadata for the website.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_UpdateSiteSourceControlAsync_System_String_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_SiteSourceControlUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateSiteSourceControlAsync(String, String, String, SiteSourceControlUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateSiteSourceControlAsync(String, String, String, SiteSourceControlUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Link source control to website (do not forget to setup the token,
+and if needed token secret, for the specific source control type
+used).</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;SiteSourceControlUpdateResponse&gt; UpdateSiteSourceControlAsync(string resourceGroupName, string webSiteName, string slotName, SiteSourceControlUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateSiteSourceControlAsync(resourceGroupName As String, webSiteName As String, slotName As String, parameters As SiteSourceControlUpdateParameters, cancellationToken As CancellationToken) As Task(Of SiteSourceControlUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the web site</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>slotName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the slot of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.SiteSourceControlUpdateParameters.html#Microsoft_Azure_Management_WebSites_Models_SiteSourceControlUpdateParameters">SiteSourceControlUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.SiteSourceControlUpdateParameters.html#Microsoft_Azure_Management_WebSites_Models_SiteSourceControlUpdateParameters">SiteSourceControlUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The update site source control parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.WebSites.Models.SiteSourceControlUpdateResponse.html#Microsoft_Azure_Management_WebSites_Models_SiteSourceControlUpdateResponse">SiteSourceControlUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.WebSites.Models.SiteSourceControlUpdateResponse.html#Microsoft_Azure_Management_WebSites_Models_SiteSourceControlUpdateResponse">SiteSourceControlUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The link site to source control operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_WebSites_IWebSiteOperations_UpdateSlotConfigNamesAsync_System_String_System_String_Microsoft_Azure_Management_WebSites_Models_SlotConfigNamesUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateSlotConfigNamesAsync(String, String, SlotConfigNamesUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateSlotConfigNamesAsync(String, String, SlotConfigNamesUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Update list of app settings and connection strings which to be slot
+specific. E.g. settings in staging slots remain in staging after
+swap with production.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UpdateSlotConfigNamesAsync(string resourceGroupName, string webSiteName, SlotConfigNamesUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateSlotConfigNamesAsync(resourceGroupName As String, webSiteName As String, parameters As SlotConfigNamesUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>webSiteName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the website</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.SlotConfigNamesUpdateParameters.html#Microsoft_Azure_Management_WebSites_Models_SlotConfigNamesUpdateParameters">SlotConfigNamesUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.WebSites.Models.SlotConfigNamesUpdateParameters.html#Microsoft_Azure_Management_WebSites_Models_SlotConfigNamesUpdateParameters">SlotConfigNamesUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Update slot configs parameters</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

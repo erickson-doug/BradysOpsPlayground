@@ -1,0 +1,504 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Graph_RBAC_IServicePrincipalOperations">
+          <span class="lang-csharp">IServicePrincipalOperations</span>
+          <span class="lang-vb">IServicePrincipalOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Graph.RBAC.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for working with service principal in Azure Active Directory
+Graph API.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for more
+information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IServicePrincipalOperations_CreateAsync_Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateAsync(ServicePrincipalCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateAsync(ServicePrincipalCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a service principal in the  directory.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ServicePrincipalGetResult&gt; CreateAsync(ServicePrincipalCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateAsync(parameters As ServicePrincipalCreateParameters, cancellationToken As CancellationToken) As Task(Of ServicePrincipalGetResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalCreateParameters">ServicePrincipalCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalCreateParameters">ServicePrincipalCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters to create a service principal.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalGetResult">ServicePrincipalGetResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalGetResult">ServicePrincipalGetResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for service principal information API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IServicePrincipalOperations_DeleteAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deletes service principal from the directory.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ServicePrincipalGetResult&gt; DeleteAsync(string objectId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(objectId As String, cancellationToken As CancellationToken) As Task(Of ServicePrincipalGetResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>objectId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Object id to delete service principal information.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalGetResult">ServicePrincipalGetResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalGetResult">ServicePrincipalGetResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for service principal information API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IServicePrincipalOperations_GetAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets service principal information from the directory.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ServicePrincipalGetResult&gt; GetAsync(string objectId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(objectId As String, cancellationToken As CancellationToken) As Task(Of ServicePrincipalGetResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>objectId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Object id to get service principal information.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalGetResult">ServicePrincipalGetResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalGetResult">ServicePrincipalGetResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for service principal information API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IServicePrincipalOperations_GetByServicePrincipalNameAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetByServicePrincipalNameAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetByServicePrincipalNameAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets service principal information from the directory.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ServicePrincipalListResult&gt; GetByServicePrincipalNameAsync(string servicePrincipalName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetByServicePrincipalNameAsync(servicePrincipalName As String, cancellationToken As CancellationToken) As Task(Of ServicePrincipalListResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>servicePrincipalName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>filter based on service principal name</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalListResult">ServicePrincipalListResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalListResult">ServicePrincipalListResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for get tenant service principals API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IServicePrincipalOperations_ListAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(String, CancellationToken)</code>
+          <code class="lang-vb">ListAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets list of service principals from the current tenant.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ServicePrincipalListResult&gt; ListAsync(string displayNameStartsWith, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(displayNameStartsWith As String, cancellationToken As CancellationToken) As Task(Of ServicePrincipalListResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>displayNameStartsWith</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Display name to filter results.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalListResult">ServicePrincipalListResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalListResult">ServicePrincipalListResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for get tenant service principals API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IServicePrincipalOperations_ListNextAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListNextAsync(String, CancellationToken)</code>
+          <code class="lang-vb">ListNextAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets list of service principals for the current tenant.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ServicePrincipalListResult&gt; ListNextAsync(string nextLink, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of ServicePrincipalListResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>nextLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>NextLink from the previous successful call to List operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalListResult">ServicePrincipalListResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult.html#Microsoft_Azure_Graph_RBAC_Models_ServicePrincipalListResult">ServicePrincipalListResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for get tenant service principals API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>
