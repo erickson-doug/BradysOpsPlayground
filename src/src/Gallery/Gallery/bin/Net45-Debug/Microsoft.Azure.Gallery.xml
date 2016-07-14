@@ -1,0 +1,723 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Azure.Gallery</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Azure.AnonymousCloudCredentials">
+            <summary>
+            Class for token based credentials associated with a particular subscription.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.AnonymousCloudCredentials.SubscriptionId">
+            <summary>
+            Gets an empty subscription Id.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.ItemListFilter">
+            <summary>
+            Class used to define a list filter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.ItemListFilter.Name">
+            <summary>
+            Gets or sets gallery item name to filter by.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.ItemListFilter.Publisher">
+            <summary>
+            Gets or sets gallery item publisher name to filter by.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.ItemListFilter.CategoryIds">
+            <summary>
+            Gets or sets gallery items to filter by (using Contains method).
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.Artifact">
+            <summary>
+            A gallery item artifact.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Artifact.Name">
+            <summary>
+            Optional. Gets or sets artifact name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Artifact.Type">
+            <summary>
+            Optional. Gets or sets artifact type.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Artifact.Uri">
+            <summary>
+            Optional. Gets or sets artifact Uri.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.Artifact.#ctor">
+            <summary>
+            Initializes a new instance of the Artifact class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.ArtifactType">
+            <summary>
+            Gallery artifact type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.ArtifactType.Template">
+            <summary>
+            Deployment template.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.ArtifactType.Fragment">
+            <summary>
+            Deployment fragment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.ArtifactType.Custom">
+            <summary>
+            Custom element.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.ArtifactType.Metadata">
+            <summary>
+            Artifact specific metadata.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.Filter">
+            <summary>
+            A gallery item filter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Filter.Type">
+            <summary>
+            Optional. Gets or sets filter type.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Filter.Value">
+            <summary>
+            Optional. Gets or sets filter value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.Filter.#ctor">
+            <summary>
+            Initializes a new instance of the Filter class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.FilterType">
+            <summary>
+            Gallery item filter type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.FilterType.HideKey">
+            <summary>
+            Hide key.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.FilterType.Subscription">
+            <summary>
+            Subscription id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryClient.ApiVersion">
+            <summary>
+            Gets the API version.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryClient.BaseUri">
+            <summary>
+            Gets the URI used as the base for all cloud service requests.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryClient.Credentials">
+            <summary>
+            Gets subscription credentials which uniquely identify Microsoft
+            Azure subscription. The subscription ID forms part of the URI for
+            every service call.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryClient.LongRunningOperationInitialTimeout">
+            <summary>
+            Gets or sets the initial timeout for Long Running Operations.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryClient.LongRunningOperationRetryTimeout">
+            <summary>
+            Gets or sets the retry timeout for Long Running Operations.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryClient.Items">
+            <summary>
+            Operations for working with gallery items.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.GalleryClient.#ctor">
+            <summary>
+            Initializes a new instance of the GalleryClient class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.GalleryClient.#ctor(Microsoft.Azure.SubscriptionCloudCredentials,System.Uri)">
+            <summary>
+            Initializes a new instance of the GalleryClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Gets subscription credentials which uniquely identify
+            Microsoft Azure subscription. The subscription ID forms part of
+            the URI for every service call.
+            </param>
+            <param name='baseUri'>
+            Optional. Gets the URI used as the base for all cloud service
+            requests.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.GalleryClient.#ctor(Microsoft.Azure.SubscriptionCloudCredentials)">
+            <summary>
+            Initializes a new instance of the GalleryClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Gets subscription credentials which uniquely identify
+            Microsoft Azure subscription. The subscription ID forms part of
+            the URI for every service call.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.GalleryClient.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the GalleryClient class.
+            </summary>
+            <param name='httpClient'>
+            The Http client
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.GalleryClient.#ctor(Microsoft.Azure.SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the GalleryClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Gets subscription credentials which uniquely identify
+            Microsoft Azure subscription. The subscription ID forms part of
+            the URI for every service call.
+            </param>
+            <param name='baseUri'>
+            Optional. Gets the URI used as the base for all cloud service
+            requests.
+            </param>
+            <param name='httpClient'>
+            The Http client
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.GalleryClient.#ctor(Microsoft.Azure.SubscriptionCloudCredentials,System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the GalleryClient class.
+            </summary>
+            <param name='credentials'>
+            Required. Gets subscription credentials which uniquely identify
+            Microsoft Azure subscription. The subscription ID forms part of
+            the URI for every service call.
+            </param>
+            <param name='httpClient'>
+            The Http client
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.GalleryClient.Clone(Hyak.Common.ServiceClient{Microsoft.Azure.Gallery.GalleryClient})">
+            <summary>
+            Clones properties from current instance to another GalleryClient
+            instance
+            </summary>
+            <param name='client'>
+            Instance of GalleryClient to clone to
+            </param>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Artifacts">
+            <summary>
+            Optional. Gets or sets gallery item artifacts.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Categories">
+            <summary>
+            Optional. Gets or sets gallery item category identifiers.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Description">
+            <summary>
+            Optional. Gets or sets gallery item description.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.DisplayName">
+            <summary>
+            Optional. Gets or sets gallery item display name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Filters">
+            <summary>
+            Optional. Gets or sets gallery item filters.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.IconFileUris">
+            <summary>
+            Optional. Gets or sets gallery item screenshot Uris
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Identity">
+            <summary>
+            Optional. Gets or sets gallery item identity.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Links">
+            <summary>
+            Optional. Gets or sets gallery item links.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.LongSummary">
+            <summary>
+            Optional. Gets or sets gallery item long summary.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.MarketingMaterial">
+            <summary>
+            Optional. Gets or sets gallery item marketing information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Metadata">
+            <summary>
+            Optional. Gets or sets gallery item metadata.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Name">
+            <summary>
+            Optional. Gets or sets gallery item name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Products">
+            <summary>
+            Optional. Gets or sets gallery item product definition.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Properties">
+            <summary>
+            Optional. Gets or sets gallery item user visible properties.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Publisher">
+            <summary>
+            Optional. Gets or sets gallery item publisher.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.PublisherDisplayName">
+            <summary>
+            Optional. Gets or sets gallery item publisher display name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.ScreenshotUris">
+            <summary>
+            Optional. Gets or sets gallery item screenshot Uris
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Summary">
+            <summary>
+            Optional. Gets or sets gallery item summary.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.UiDefinitionUri">
+            <summary>
+            Optional. Gets or sets Azure Portal Uder Interface Definition
+            artificat Uri.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.GalleryItem.Version">
+            <summary>
+            Optional. Gets or sets gallery item version.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.GalleryItem.#ctor">
+            <summary>
+            Initializes a new instance of the GalleryItem class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.IconKind">
+            <summary>
+            Gallery icon types.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.IconKind.Small">
+            <summary>
+            Small icon.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.IconKind.Medium">
+            <summary>
+            Medium icon.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.IconKind.Large">
+            <summary>
+            Large icon.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.IconKind.Wide">
+            <summary>
+            Wide icon.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.Gallery.IconKind.Hero">
+            <summary>
+            Hero icon.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.IGalleryClient.ApiVersion">
+            <summary>
+            Gets the API version.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.IGalleryClient.BaseUri">
+            <summary>
+            Gets the URI used as the base for all cloud service requests.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.IGalleryClient.Credentials">
+            <summary>
+            Gets subscription credentials which uniquely identify Microsoft
+            Azure subscription. The subscription ID forms part of the URI for
+            every service call.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationInitialTimeout">
+            <summary>
+            Gets or sets the initial timeout for Long Running Operations.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationRetryTimeout">
+            <summary>
+            Gets or sets the retry timeout for Long Running Operations.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.IGalleryClient.Items">
+            <summary>
+            Operations for working with gallery items.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.IItemOperations">
+            <summary>
+            Operations for working with gallery items.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.IItemOperations.GetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Gets a gallery items.
+            </summary>
+            <param name='itemIdentity'>
+            Gallery item identity.
+            </param>
+            <param name='cancellationToken'>
+            Cancellation token.
+            </param>
+            <returns>
+            Gallery item information.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.IItemOperations.ListAsync(Microsoft.Azure.Gallery.Models.ItemListParameters,System.Threading.CancellationToken)">
+            <summary>
+            Gets collection of gallery items.
+            </summary>
+            <param name='parameters'>
+            Query parameters. If null is passed returns all gallery items.
+            </param>
+            <param name='cancellationToken'>
+            Cancellation token.
+            </param>
+            <returns>
+            List of gallery items.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.ItemOperations">
+            <summary>
+            Operations for working with gallery items.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.ItemOperations.#ctor(Microsoft.Azure.Gallery.GalleryClient)">
+            <summary>
+            Initializes a new instance of the ItemOperations class.
+            </summary>
+            <param name='client'>
+            Reference to the service client.
+            </param>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.ItemOperations.Client">
+            <summary>
+            Gets a reference to the Microsoft.Azure.Gallery.GalleryClient.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.ItemOperations.GetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Gets a gallery items.
+            </summary>
+            <param name='itemIdentity'>
+            Optional. Gallery item identity.
+            </param>
+            <param name='cancellationToken'>
+            Cancellation token.
+            </param>
+            <returns>
+            Gallery item information.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.ItemOperations.ListAsync(Microsoft.Azure.Gallery.Models.ItemListParameters,System.Threading.CancellationToken)">
+            <summary>
+            Gets collection of gallery items.
+            </summary>
+            <param name='parameters'>
+            Optional. Query parameters. If null is passed returns all gallery
+            items.
+            </param>
+            <param name='cancellationToken'>
+            Cancellation token.
+            </param>
+            <returns>
+            List of gallery items.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.ItemOperationsExtensions.Get(Microsoft.Azure.Gallery.IItemOperations,System.String)">
+            <summary>
+            Gets a gallery items.
+            </summary>
+            <param name='operations'>
+            Reference to the Microsoft.Azure.Gallery.IItemOperations.
+            </param>
+            <param name='itemIdentity'>
+            Optional. Gallery item identity.
+            </param>
+            <returns>
+            Gallery item information.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.ItemOperationsExtensions.GetAsync(Microsoft.Azure.Gallery.IItemOperations,System.String)">
+            <summary>
+            Gets a gallery items.
+            </summary>
+            <param name='operations'>
+            Reference to the Microsoft.Azure.Gallery.IItemOperations.
+            </param>
+            <param name='itemIdentity'>
+            Optional. Gallery item identity.
+            </param>
+            <returns>
+            Gallery item information.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.ItemOperationsExtensions.List(Microsoft.Azure.Gallery.IItemOperations,Microsoft.Azure.Gallery.Models.ItemListParameters)">
+            <summary>
+            Gets collection of gallery items.
+            </summary>
+            <param name='operations'>
+            Reference to the Microsoft.Azure.Gallery.IItemOperations.
+            </param>
+            <param name='parameters'>
+            Optional. Query parameters. If null is passed returns all gallery
+            items.
+            </param>
+            <returns>
+            List of gallery items.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.ItemOperationsExtensions.ListAsync(Microsoft.Azure.Gallery.IItemOperations,Microsoft.Azure.Gallery.Models.ItemListParameters)">
+            <summary>
+            Gets collection of gallery items.
+            </summary>
+            <param name='operations'>
+            Reference to the Microsoft.Azure.Gallery.IItemOperations.
+            </param>
+            <param name='parameters'>
+            Optional. Query parameters. If null is passed returns all gallery
+            items.
+            </param>
+            <returns>
+            List of gallery items.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.Link">
+            <summary>
+            A gallery item link.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Link.DisplayName">
+            <summary>
+            Optional. Gets or sets link display name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Link.Identifier">
+            <summary>
+            Optional. Gets or sets link identifier.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Link.Uri">
+            <summary>
+            Optional. Gets or sets link Uri.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.Link.#ctor">
+            <summary>
+            Initializes a new instance of the Link class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.MarketingMaterial">
+            <summary>
+            Gallery item mMarketing material.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.MarketingMaterial.Path">
+            <summary>
+            Optional. Gets or sets marketing web page relative path - Relative
+            to http://azure.com.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.MarketingMaterial.#ctor">
+            <summary>
+            Initializes a new instance of the MarketingMaterial class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.Models.ItemGetParameters">
+            <summary>
+            Gallery item information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Models.ItemGetParameters.Item">
+            <summary>
+            Optional. Gets or sets a gallery item.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.Models.ItemGetParameters.#ctor">
+            <summary>
+            Initializes a new instance of the ItemGetParameters class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.Models.ItemListParameters">
+            <summary>
+            Gallery items list parameters.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Models.ItemListParameters.Filter">
+            <summary>
+            Optional. Gets or sets OData filter. Optional.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Models.ItemListParameters.Top">
+            <summary>
+            Optional. Number of items to return. Optional.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.Models.ItemListParameters.#ctor">
+            <summary>
+            Initializes a new instance of the ItemListParameters class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.Models.ItemListResult">
+            <summary>
+            List of gallery items.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Models.ItemListResult.Items">
+            <summary>
+            Optional. Gets or sets the list of gallery items.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.Models.ItemListResult.#ctor">
+            <summary>
+            Initializes a new instance of the ItemListResult class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.OfferDetails">
+            <summary>
+            A gallery item offer details.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.OfferDetails.OfferIdentifier">
+            <summary>
+            Optional. Gets or sets offer identifier.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.OfferDetails.Plans">
+            <summary>
+            Optional. Gets or sets plans.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.OfferDetails.PublisherIdentifier">
+            <summary>
+            Optional. Gets or sets publisher identifier.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.OfferDetails.#ctor">
+            <summary>
+            Initializes a new instance of the OfferDetails class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.Plan">
+            <summary>
+            A gallery item plan.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Plan.Description">
+            <summary>
+            Optional. Gets or sets the plan description.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Plan.DisplayName">
+            <summary>
+            Optional. Gets or sets the plan display name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Plan.PlanIdentifier">
+            <summary>
+            Optional. Gets or sets the plan identifier.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Plan.Summary">
+            <summary>
+            Optional. Gets or sets the plan summary.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.Plan.#ctor">
+            <summary>
+            Initializes a new instance of the Plan class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.Gallery.Product">
+            <summary>
+            A gallery item product definition.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Product.DisplayName">
+            <summary>
+            Optional. Gets or sets product display name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Product.LegalTermsUri">
+            <summary>
+            Optional. Gets or sets product legal terms Uri.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Product.OfferDetails">
+            <summary>
+            Optional. Gets or sets product offer details.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Product.PricingDetailsUri">
+            <summary>
+            Optional. Gets or sets product pricing details Uri.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Product.PrivacyPolicyUri">
+            <summary>
+            Optional. Gets or sets product privacy policy Uri.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Gallery.Product.PublisherDisplayName">
+            <summary>
+            Optional. Gets or sets product publisher display name.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Gallery.Product.#ctor">
+            <summary>
+            Initializes a new instance of the Product class.
+            </summary>
+        </member>
+    </members>
+</doc>
