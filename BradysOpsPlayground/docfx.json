@@ -14,42 +14,32 @@
           "cwd": "src"
         }
       ],
-      "dest": "api"
+      "dest": "obj/api"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
+          "**/*.yml",
           "**/*.md"
         ],
-        "exclude": [
-          "**/obj/**",
-          "docs/**",
-          "**/includes/**"
-        ]
-      }
-    ],
-    "resource": [
+        "src": "api",
+        "dest": "api"
+      },
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "docs/**",
-          "**/includes/**"
+          "*.md",
+          "toc.yml"
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "/azure-docfx/toc.json"
+    },
+    "dest": "_site",
     "template": [
-      null
-    ],
-    "dest": "docs"
+      "docs.html"
+    ]
   }
 }
