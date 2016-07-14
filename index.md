@@ -25,7 +25,28 @@ layout: HubPage
                     <header class="journey-step-header row">
                         <div class="title column-third">
                             <span class="icon icon-tip"></span>
-                            <p>Learn the Platform</p>
+                            <p>Common SDK Utilities</p>
+                        </div>
+                        <p class="description column-two-thirds">
+                            Learn about the various utility classes and components use throughout the SDK. 
+                        </p>
+                    </header>
+                    <section class="journey-step-elements content">
+                        <ul class="row">
+                            <li class="column column-third">
+                                <a href="">
+                                    <h3>Common SDK Utilities</h3>
+                                    <p>Reference for the common classes used throughout the Azure SDK for .NET</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+                <li class="journey-step">
+                    <header class="journey-step-header row">
+                        <div class="title column-third">
+                            <span class="icon icon-tip"></span>
+                            <p>Management APIs</p>
                         </div>
                         <p class="description column-two-thirds">
                             Get started with the .NET SDK for Azure and learn how you can automate your cloud topologies.
