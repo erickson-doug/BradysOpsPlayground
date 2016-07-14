@@ -1,0 +1,381 @@
+items:
+- uid: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction
+  commentId: T:Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction
+  id: RPRegistrationAction
+  parent: Microsoft.Azure.Common.Authentication.Models
+  children:
+  - Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.Apply``1(``0,Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  - Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: RPRegistrationAction
+  fullName: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction
+  type: Class
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Models/RPRegistrationAction.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RPRegistrationAction
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Models/RPRegistrationAction.cs
+    startLine: 25
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Models
+  syntax:
+    content: 'public class RPRegistrationAction : IClientAction'
+    content.vb: >-
+      Public Class RPRegistrationAction
+
+          Implements IClientAction
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Common.Authentication.Models.IClientAction
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.Apply``1(``0,Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  commentId: M:Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.Apply``1(``0,Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  id: Apply``1(``0,Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  parent: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction
+  langs:
+  - csharp
+  - vb
+  name: Apply<TClient>(TClient, AzureProfile, AzureEnvironment.Endpoint)
+  fullName: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.Apply<TClient>(TClient, Microsoft.Azure.Common.Authentication.Models.AzureProfile, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Models/RPRegistrationAction.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Apply
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Models/RPRegistrationAction.cs
+    startLine: 125
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Models
+  syntax:
+    content: 'public void Apply<TClient>(TClient client, AzureProfile profile, AzureEnvironment.Endpoint endpoint)where TClient : ServiceClient<TClient>'
+    content.vb: Public Sub Apply(Of TClient As ServiceClient(Of TClient))(client As TClient, profile As AzureProfile, endpoint As AzureEnvironment.Endpoint)
+    parameters:
+    - id: client
+      type: '{TClient}'
+    - id: profile
+      type: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+    - id: endpoint
+      type: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+    typeParameters:
+    - id: TClient
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.Apply(Of TClient)(TClient, Microsoft.Azure.Common.Authentication.Models.AzureProfile, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  name.vb: Apply(Of TClient)(TClient, AzureProfile, AzureEnvironment.Endpoint)
+- uid: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.ClientFactory
+  commentId: P:Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.ClientFactory
+  id: ClientFactory
+  parent: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction
+  langs:
+  - csharp
+  - vb
+  name: ClientFactory
+  fullName: Microsoft.Azure.Common.Authentication.Models.RPRegistrationAction.ClientFactory
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Models/RPRegistrationAction.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ClientFactory
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Models/RPRegistrationAction.cs
+    startLine: 139
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Models
+  syntax:
+    content: >-
+      public IClientFactory ClientFactory
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ClientFactory As IClientFactory
+    parameters: []
+    return:
+      type: Microsoft.Azure.Common.Authentication.IClientFactory
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication.Models
+  fullName: Microsoft.Azure.Common.Authentication.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Common.Authentication.Models.IClientAction
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: IClientAction
+  fullName: Microsoft.Azure.Common.Authentication.Models.IClientAction
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{TClient}'
+  isExternal: false
+  name: TClient
+  fullName: TClient
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureProfile
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureEnvironment.Endpoint
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+- uid: Microsoft.Azure.Common.Authentication.IClientFactory
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IClientFactory
+  fullName: Microsoft.Azure.Common.Authentication.IClientFactory
+- uid: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication
+  fullName: Microsoft.Azure.Common.Authentication

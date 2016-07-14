@@ -1,0 +1,714 @@
+items:
+- uid: Microsoft.Azure.Common.Authentication.AzureSession
+  commentId: T:Microsoft.Azure.Common.Authentication.AzureSession
+  id: AzureSession
+  parent: Microsoft.Azure.Common.Authentication
+  children:
+  - Microsoft.Azure.Common.Authentication.AzureSession.AuthenticationFactory
+  - Microsoft.Azure.Common.Authentication.AzureSession.ClientFactory
+  - Microsoft.Azure.Common.Authentication.AzureSession.DataStore
+  - Microsoft.Azure.Common.Authentication.AzureSession.OldProfileFile
+  - Microsoft.Azure.Common.Authentication.AzureSession.OldProfileFileBackup
+  - Microsoft.Azure.Common.Authentication.AzureSession.ProfileDirectory
+  - Microsoft.Azure.Common.Authentication.AzureSession.ProfileFile
+  - Microsoft.Azure.Common.Authentication.AzureSession.TokenCache
+  - Microsoft.Azure.Common.Authentication.AzureSession.TokenCacheFile
+  langs:
+  - csharp
+  - vb
+  name: AzureSession
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession
+  type: Class
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AzureSession
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nRepresents current Azure session.\r\n"
+  example: []
+  syntax:
+    content: public class AzureSession
+    content.vb: Public Class AzureSession
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.ClientFactory
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.ClientFactory
+  id: ClientFactory
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: ClientFactory
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.ClientFactory
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ClientFactory
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets Azure client factory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static IClientFactory ClientFactory
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property ClientFactory As IClientFactory
+    parameters: []
+    return:
+      type: Microsoft.Azure.Common.Authentication.IClientFactory
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.AuthenticationFactory
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.AuthenticationFactory
+  id: AuthenticationFactory
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationFactory
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.AuthenticationFactory
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AuthenticationFactory
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 38
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets Azure authentication factory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static IAuthenticationFactory AuthenticationFactory
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property AuthenticationFactory As IAuthenticationFactory
+    parameters: []
+    return:
+      type: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.DataStore
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.DataStore
+  id: DataStore
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: DataStore
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.DataStore
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DataStore
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 43
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets data persistence store.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static IDataStore DataStore
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property DataStore As IDataStore
+    parameters: []
+    return:
+      type: Microsoft.Azure.Common.Authentication.IDataStore
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.TokenCache
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.TokenCache
+  id: TokenCache
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: TokenCache
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.TokenCache
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TokenCache
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets the token cache store.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static TokenCache TokenCache
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property TokenCache As TokenCache
+    parameters: []
+    return:
+      type: TokenCache
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.ProfileDirectory
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.ProfileDirectory
+  id: ProfileDirectory
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: ProfileDirectory
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.ProfileDirectory
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProfileDirectory
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets profile directory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static string ProfileDirectory
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property ProfileDirectory As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.TokenCacheFile
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.TokenCacheFile
+  id: TokenCacheFile
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: TokenCacheFile
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.TokenCacheFile
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TokenCacheFile
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets token cache file path.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static string TokenCacheFile
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property TokenCacheFile As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.ProfileFile
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.ProfileFile
+  id: ProfileFile
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: ProfileFile
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.ProfileFile
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProfileFile
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets profile file name.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static string ProfileFile
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property ProfileFile As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.OldProfileFileBackup
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.OldProfileFileBackup
+  id: OldProfileFileBackup
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: OldProfileFileBackup
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.OldProfileFileBackup
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: OldProfileFileBackup
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 68
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets file name for the migration backup.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static string OldProfileFileBackup
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property OldProfileFileBackup As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.AzureSession.OldProfileFile
+  commentId: P:Microsoft.Azure.Common.Authentication.AzureSession.OldProfileFile
+  id: OldProfileFile
+  parent: Microsoft.Azure.Common.Authentication.AzureSession
+  langs:
+  - csharp
+  - vb
+  name: OldProfileFile
+  fullName: Microsoft.Azure.Common.Authentication.AzureSession.OldProfileFile
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: OldProfileFile
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/AzureSession.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nGets or sets old profile file name.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static string OldProfileFile
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Shared Property OldProfileFile As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication
+  fullName: Microsoft.Azure.Common.Authentication
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Common.Authentication.IClientFactory
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IClientFactory
+  fullName: Microsoft.Azure.Common.Authentication.IClientFactory
+- uid: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IAuthenticationFactory
+  fullName: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+- uid: Microsoft.Azure.Common.Authentication.IDataStore
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IDataStore
+  fullName: Microsoft.Azure.Common.Authentication.IDataStore
+- uid: TokenCache
+  isExternal: true
+  name: TokenCache
+  fullName: TokenCache
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

@@ -1,0 +1,1130 @@
+items:
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  commentId: T:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  id: VirtualMachineCreateParameters
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  children:
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.#ctor
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.#ctor(System.String)
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.AvailabilitySetName
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ConfigurationSets
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.DataVirtualHardDisks
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.DebugSettings
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.LicenseType
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.MediaLocation
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.OSVirtualHardDisk
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ProvisionGuestAgent
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ResourceExtensionReferences
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.RoleName
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.RoleSize
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VMImageInput
+  - Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VMImageName
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachineCreateParameters
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  type: Class
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VirtualMachineCreateParameters
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nParameters supplied to the Create Virtual Machine operation.\r\n"
+  example: []
+  syntax:
+    content: public class VirtualMachineCreateParameters
+    content.vb: Public Class VirtualMachineCreateParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.AvailabilitySetName
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.AvailabilitySetName
+  id: AvailabilitySetName
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: AvailabilitySetName
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.AvailabilitySetName
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AvailabilitySetName
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 43
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Specifies the name of an availability set to which to add\r\nthe virtual machine. This value controls the virtual machine\r\nallocation in the Azure environment. Virtual machines specified in\r\nthe same availability set are allocated to different nodes to\r\nmaximize availability.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string AvailabilitySetName
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AvailabilitySetName As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ConfigurationSets
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ConfigurationSets
+  id: ConfigurationSets
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: ConfigurationSets
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ConfigurationSets
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ConfigurationSets
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Contains the collection of configuration sets that\r\ncontain system and application configuration settings.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<ConfigurationSet> ConfigurationSets
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ConfigurationSets As IList(Of ConfigurationSet)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.WindowsAzure.Management.Compute.Models.ConfigurationSet}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.DataVirtualHardDisks
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.DataVirtualHardDisks
+  id: DataVirtualHardDisks
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: DataVirtualHardDisks
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.DataVirtualHardDisks
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DataVirtualHardDisks
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 67
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Contains the parameters Azure used to create the data\r\ndisk for the virtual machine.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<DataVirtualHardDisk> DataVirtualHardDisks
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DataVirtualHardDisks As IList(Of DataVirtualHardDisk)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.WindowsAzure.Management.Compute.Models.DataVirtualHardDisk}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.DebugSettings
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.DebugSettings
+  id: DebugSettings
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: DebugSettings
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.DebugSettings
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DebugSettings
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Debug settings for console output.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DebugSettings DebugSettings
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DebugSettings As DebugSettings
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Management.Compute.Models.DebugSettings
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.LicenseType
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.LicenseType
+  id: LicenseType
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: LicenseType
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.LicenseType
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LicenseType
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 92
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Specifies that the image or disk that is being used was\r\nlicensed on-premises. This element is only used for images that\r\ncontain the Windows Server operating system. Possible values are:\r\nWindows_Client, Windows_Server\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string LicenseType
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LicenseType As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.MediaLocation
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.MediaLocation
+  id: MediaLocation
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: MediaLocation
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.MediaLocation
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MediaLocation
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 104
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Location where VMImage VHDs should be copied, for\r\npublished VMImages.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Uri MediaLocation
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MediaLocation As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.OSVirtualHardDisk
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.OSVirtualHardDisk
+  id: OSVirtualHardDisk
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: OSVirtualHardDisk
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.OSVirtualHardDisk
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: OSVirtualHardDisk
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 116
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Contains the parameters Azure used to create the\r\noperating system disk for the virtual machine.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public OSVirtualHardDisk OSVirtualHardDisk
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property OSVirtualHardDisk As OSVirtualHardDisk
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Management.Compute.Models.OSVirtualHardDisk
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ProvisionGuestAgent
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ProvisionGuestAgent
+  id: ProvisionGuestAgent
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: ProvisionGuestAgent
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ProvisionGuestAgent
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProvisionGuestAgent
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 129
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Indicates whether the WindowsAzureGuestAgent service is\r\ninstalled on the Virtual Machine. To run a resource extension in a\r\nVirtual Machine, this service must be installed.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool ? ProvisionGuestAgent
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProvisionGuestAgent As Boolean?
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ResourceExtensionReferences
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ResourceExtensionReferences
+  id: ResourceExtensionReferences
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: ResourceExtensionReferences
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.ResourceExtensionReferences
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ResourceExtensionReferences
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 142
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Contains a collection of resource extensions that are to\r\nbe installed on the Virtual Machine. This element is used if\r\nProvisionGuestAgent is set to true.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<ResourceExtensionReference> ResourceExtensionReferences
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ResourceExtensionReferences As IList(Of ResourceExtensionReference)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.WindowsAzure.Management.Compute.Models.ResourceExtensionReference}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.RoleName
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.RoleName
+  id: RoleName
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: RoleName
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.RoleName
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RoleName
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 154
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nRequired. Specifies the name for the virtual machine. The name must\r\nbe unique within the deployment.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string RoleName
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RoleName As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.RoleSize
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.RoleSize
+  id: RoleSize
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: RoleSize
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.RoleSize
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RoleSize
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 165
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. The size of the virtual machine.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string RoleSize
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RoleSize As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VMImageInput
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VMImageInput
+  id: VMImageInput
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: VMImageInput
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VMImageInput
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VMImageInput
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 181
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. When a VM Image is used to create a new PersistantVMRole,\r\nthe DiskConfigurations in the VM Image are used to create new\r\nDisks for the new VM. This parameter can be used to resize the\r\nnewly created Disks to a larger size than the underlying\r\nDiskConfigurations in the VM Image.This property is only returned\r\nwith a version header of 2014-10-01 or newer.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public VMImageInput VMImageInput
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VMImageInput As VMImageInput
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Management.Compute.Models.VMImageInput
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VMImageName
+  commentId: P:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VMImageName
+  id: VMImageName
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: VMImageName
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VMImageName
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VMImageName
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 197
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nOptional. Name of the VMImage from which this Role is to be\r\ncreated. If the OSDisk in the VMImage was Specialized, then no\r\nWindowsProvisioningConfigurationSet or\r\nLinuxProvisioningConfigurationSet should be provided. No\r\nOSVirtualHardDisk or DataVirtualHardDisk should be specified when\r\nusing this argument.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VMImageName
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VMImageName As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.#ctor
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.#ctor
+  id: '#ctor'
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachineCreateParameters()
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VirtualMachineCreateParameters()
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 207
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nInitializes a new instance of the VirtualMachineCreateParameters\r\nclass.\r\n"
+  example: []
+  syntax:
+    content: public VirtualMachineCreateParameters()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.#ctor(System.String)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachineCreateParameters(String)
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.VirtualMachineCreateParameters(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachineCreateParameters.cs
+    startLine: 218
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute.Models
+  summary: "\r\nInitializes a new instance of the VirtualMachineCreateParameters\r\nclass with required arguments.\r\n"
+  example: []
+  syntax:
+    content: public VirtualMachineCreateParameters(string roleName)
+    content.vb: Public Sub New(roleName As String)
+    parameters:
+    - id: roleName
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.Compute.Models
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.Generic.IList{Microsoft.WindowsAzure.Management.Compute.Models.ConfigurationSet}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<ConfigurationSet>
+  fullName: System.Collections.Generic.IList<Microsoft.WindowsAzure.Management.Compute.Models.ConfigurationSet>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.WindowsAzure.Management.Compute.Models.ConfigurationSet)
+  name.vb: IList(Of ConfigurationSet)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.ConfigurationSet
+    name: ConfigurationSet
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.ConfigurationSet
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.ConfigurationSet
+    name: ConfigurationSet
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.ConfigurationSet
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IList{Microsoft.WindowsAzure.Management.Compute.Models.DataVirtualHardDisk}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<DataVirtualHardDisk>
+  fullName: System.Collections.Generic.IList<Microsoft.WindowsAzure.Management.Compute.Models.DataVirtualHardDisk>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.WindowsAzure.Management.Compute.Models.DataVirtualHardDisk)
+  name.vb: IList(Of DataVirtualHardDisk)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.DataVirtualHardDisk
+    name: DataVirtualHardDisk
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.DataVirtualHardDisk
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.DataVirtualHardDisk
+    name: DataVirtualHardDisk
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.DataVirtualHardDisk
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.DebugSettings
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: DebugSettings
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.DebugSettings
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.OSVirtualHardDisk
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: OSVirtualHardDisk
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.OSVirtualHardDisk
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  fullname.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList{Microsoft.WindowsAzure.Management.Compute.Models.ResourceExtensionReference}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<ResourceExtensionReference>
+  fullName: System.Collections.Generic.IList<Microsoft.WindowsAzure.Management.Compute.Models.ResourceExtensionReference>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.WindowsAzure.Management.Compute.Models.ResourceExtensionReference)
+  name.vb: IList(Of ResourceExtensionReference)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.ResourceExtensionReference
+    name: ResourceExtensionReference
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.ResourceExtensionReference
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.ResourceExtensionReference
+    name: ResourceExtensionReference
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.ResourceExtensionReference
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VMImageInput
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: VMImageInput
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VMImageInput

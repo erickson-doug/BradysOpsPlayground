@@ -1,0 +1,794 @@
+items:
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient
+  commentId: T:Microsoft.Azure.Management.Rdfe.ManagementClient
+  id: ManagementClient
+  parent: Microsoft.Azure.Management.Rdfe
+  children:
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials)
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.ApiVersion
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.BaseUri
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Rdfe.ManagementClient})
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.Credentials
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.GetOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.LongRunningOperationInitialTimeout
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.LongRunningOperationRetryTimeout
+  - Microsoft.Azure.Management.Rdfe.ManagementClient.Subscriptions
+  langs:
+  - csharp
+  - vb
+  name: ManagementClient
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient
+  type: Class
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ManagementClient
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe Service Management API provides programmatic access to much of the\r\nfunctionality available through the Management Portal. The Service\r\nManagement API is a REST API. All API operations are performed over\r\nSSL and are mutually authenticated using X.509 v3 certificates.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460799.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: 'public class ManagementClient : ServiceClient<ManagementClient>, IManagementClient, IDisposable'
+    content.vb: >-
+      Public Class ManagementClient
+
+          Inherits ServiceClient(Of ManagementClient)
+
+          Implements IManagementClient, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Management.Rdfe.IManagementClient
+  - System.IDisposable
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.ApiVersion
+  commentId: P:Microsoft.Azure.Management.Rdfe.ManagementClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.BaseUri
+  commentId: P:Microsoft.Azure.Management.Rdfe.ManagementClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.Credentials
+  commentId: P:Microsoft.Azure.Management.Rdfe.ManagementClient.Credentials
+  id: Credentials
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.Azure.Management.Rdfe.ManagementClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 80
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.Azure.Management.Rdfe.ManagementClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.Subscriptions
+  commentId: P:Microsoft.Azure.Management.Rdfe.ManagementClient.Subscriptions
+  id: Subscriptions
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Subscriptions
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.Subscriptions
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Subscriptions
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 104
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nOperations for listing subscription details.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/gg715315.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual ISubscriptionOperations Subscriptions
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Subscriptions As ISubscriptionOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor
+  commentId: M:Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ManagementClient()
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.ManagementClient()
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 112
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nInitializes a new instance of the ManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ManagementClient()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  commentId: M:Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri)'
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ManagementClient(SubscriptionCloudCredentials, Uri)
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.ManagementClient(SubscriptionCloudCredentials, System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 134
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nInitializes a new instance of the ManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials)
+  commentId: M:Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials)
+  id: '#ctor(SubscriptionCloudCredentials)'
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ManagementClient(SubscriptionCloudCredentials)
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.ManagementClient(SubscriptionCloudCredentials)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 159
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nInitializes a new instance of the ManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ManagementClient(SubscriptionCloudCredentials credentials)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(System.Net.Http.HttpClient)
+  id: '#ctor(System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ManagementClient(HttpClient)
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.ManagementClient(System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 178
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nInitializes a new instance of the ManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ManagementClient(HttpClient httpClient)
+    content.vb: Public Sub New(httpClient As HttpClient)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ManagementClient(SubscriptionCloudCredentials, Uri, HttpClient)
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.ManagementClient(SubscriptionCloudCredentials, System.Uri, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 203
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nInitializes a new instance of the ManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Rdfe.ManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ManagementClient(SubscriptionCloudCredentials, HttpClient)
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.ManagementClient(SubscriptionCloudCredentials, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 231
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nInitializes a new instance of the ManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ManagementClient(SubscriptionCloudCredentials credentials, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Rdfe.ManagementClient})
+  commentId: M:Microsoft.Azure.Management.Rdfe.ManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Rdfe.ManagementClient})
+  id: Clone(ServiceClient{Microsoft.Azure.Management.Rdfe.ManagementClient})
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Clone(ServiceClient<ManagementClient>)
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.Clone(ServiceClient<Microsoft.Azure.Management.Rdfe.ManagementClient>)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Clone
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 251
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nClones properties from current instance to another ManagementClient\r\ninstance\r\n"
+  example: []
+  syntax:
+    content: protected override void Clone(ServiceClient<ManagementClient> client)
+    content.vb: Protected Overrides Sub Clone(client As ServiceClient(Of ManagementClient))
+    parameters:
+    - id: client
+      type: ServiceClient{Microsoft.Azure.Management.Rdfe.ManagementClient}
+      description: "\r\nInstance of ManagementClient to clone to\r\n"
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Microsoft.Azure.Management.Rdfe.ManagementClient.Clone(ServiceClient(Of Microsoft.Azure.Management.Rdfe.ManagementClient))
+  name.vb: Clone(ServiceClient(Of ManagementClient))
+- uid: Microsoft.Azure.Management.Rdfe.ManagementClient.GetOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Rdfe.ManagementClient.GetOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Rdfe.ManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Rdfe.ManagementClient.GetOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationStatusAsync
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Rdfe/ManagementClient.cs
+    startLine: 296
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: public Task<OperationStatusResponse> GetOperationStatusAsync(string requestId, CancellationToken cancellationToken)
+    content.vb: Public Function GetOperationStatusAsync(requestId As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)
+    parameters:
+    - id: requestId
+      type: System.String
+      description: "\r\nRequired. The request ID for the request you wish to track. The\r\nrequest ID is returned in the x-ms-request-id response header for\r\nevery request.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{OperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself.  If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request.  If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request, and also includes error\r\ninformation regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Rdfe
+  isExternal: false
+  name: Microsoft.Azure.Management.Rdfe
+  fullName: Microsoft.Azure.Management.Rdfe
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient
+  parent: Microsoft.Azure.Management.Rdfe
+  isExternal: false
+  name: IManagementClient
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+  parent: Microsoft.Azure.Management.Rdfe
+  isExternal: false
+  name: ISubscriptionOperations
+  fullName: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+- uid: System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+- uid: ServiceClient{Microsoft.Azure.Management.Rdfe.ManagementClient}
+  definition: ServiceClient`1
+  name: ServiceClient<ManagementClient>
+  fullName: ServiceClient<Microsoft.Azure.Management.Rdfe.ManagementClient>
+  fullname.vb: ServiceClient(Of Microsoft.Azure.Management.Rdfe.ManagementClient)
+  name.vb: ServiceClient(Of ManagementClient)
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Rdfe.ManagementClient
+    name: ManagementClient
+    fullName: Microsoft.Azure.Management.Rdfe.ManagementClient
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Rdfe.ManagementClient
+    name: ManagementClient
+    fullName: Microsoft.Azure.Management.Rdfe.ManagementClient
+  - name: )
+    fullName: )
+- uid: ServiceClient`1
+  isExternal: true
+  name: ServiceClient<>
+  fullName: ServiceClient<>
+  fullname.vb: ServiceClient(Of )
+  name.vb: ServiceClient(Of )
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{OperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<OperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of OperationStatusResponse)
+  name.vb: Task(Of OperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: OperationStatusResponse
+    name: OperationStatusResponse
+    fullName: OperationStatusResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: OperationStatusResponse
+    name: OperationStatusResponse
+    fullName: OperationStatusResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

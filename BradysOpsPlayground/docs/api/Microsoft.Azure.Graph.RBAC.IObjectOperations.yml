@@ -1,0 +1,223 @@
+items:
+- uid: Microsoft.Azure.Graph.RBAC.IObjectOperations
+  commentId: T:Microsoft.Azure.Graph.RBAC.IObjectOperations
+  id: IObjectOperations
+  parent: Microsoft.Azure.Graph.RBAC
+  children:
+  - Microsoft.Azure.Graph.RBAC.IObjectOperations.GetCurrentUserAsync(System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IObjectOperations.GetObjectsByObjectIdsAsync(Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IObjectOperations
+  fullName: Microsoft.Azure.Graph.RBAC.IObjectOperations
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/IObjectOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IObjectOperations
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/IObjectOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nOperations for working with Objects in Azure AD Graph API.  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/hh974476.aspx for more\r\ninformation)\r\n"
+  example: []
+  syntax:
+    content: public interface IObjectOperations
+    content.vb: Public Interface IObjectOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Graph.RBAC.IObjectOperations.GetCurrentUserAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IObjectOperations.GetCurrentUserAsync(System.Threading.CancellationToken)
+  id: GetCurrentUserAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IObjectOperations
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserAsync(CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IObjectOperations.GetCurrentUserAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/IObjectOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetCurrentUserAsync
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/IObjectOperations.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets the details for current logged in user\r\n"
+  example: []
+  syntax:
+    content: Task<GetCurrentUserResult> GetCurrentUserAsync(CancellationToken cancellationToken)
+    content.vb: Function GetCurrentUserAsync(cancellationToken As CancellationToken) As Task(Of GetCurrentUserResult)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult}
+      description: "\r\nServer response for Active Directory objects inquiry API calls\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IObjectOperations.GetObjectsByObjectIdsAsync(Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IObjectOperations.GetObjectsByObjectIdsAsync(Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters,System.Threading.CancellationToken)
+  id: GetObjectsByObjectIdsAsync(Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IObjectOperations
+  langs:
+  - csharp
+  - vb
+  name: GetObjectsByObjectIdsAsync(GetObjectsParameters, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IObjectOperations.GetObjectsByObjectIdsAsync(Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/IObjectOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetObjectsByObjectIdsAsync
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/IObjectOperations.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets AD group membership by provided AD object Ids\r\n"
+  example: []
+  syntax:
+    content: Task<GetObjectsResult> GetObjectsByObjectIdsAsync(GetObjectsParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function GetObjectsByObjectIdsAsync(parameters As GetObjectsParameters, cancellationToken As CancellationToken) As Task(Of GetObjectsResult)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters
+      description: "\r\nObjects filtering parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult}
+      description: "\r\nServer response for Active Directory objects inquiry API calls\r\n"
+references:
+- uid: Microsoft.Azure.Graph.RBAC
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC
+  fullName: Microsoft.Azure.Graph.RBAC
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetCurrentUserResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult)
+  name.vb: Task(Of GetCurrentUserResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult
+    name: GetCurrentUserResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult
+    name: GetCurrentUserResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GetCurrentUserResult
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GetObjectsParameters
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GetObjectsParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetObjectsResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult)
+  name.vb: Task(Of GetObjectsResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+    name: GetObjectsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+    name: GetObjectsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC.Models
+  fullName: Microsoft.Azure.Graph.RBAC.Models

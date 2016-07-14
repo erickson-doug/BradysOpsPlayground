@@ -1,0 +1,339 @@
+items:
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations
+  commentId: T:Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations
+  id: ISettingsOperations
+  parent: Microsoft.WindowsAzure.WebSitesExtensions
+  children:
+  - Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.ListAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.UpdateAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsUpdateParameters,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ISettingsOperations
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ISettingsOperations
+    path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nOperations for managing the settings.\r\n"
+  example: []
+  syntax:
+    content: public interface ISettingsOperations
+    content.vb: Public Interface ISettingsOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.DeleteAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGets a setting.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string settingId, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(settingId As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: settingId
+      type: System.String
+      description: "\r\nThe setting identifier.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.GetAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGets a setting.\r\n"
+  example: []
+  syntax:
+    content: Task<SettingsGetResponse> GetAsync(string settingId, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(settingId As String, cancellationToken As CancellationToken) As Task(Of SettingsGetResponse)
+    parameters:
+    - id: settingId
+      type: System.String
+      description: "\r\nThe setting identifier.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsGetResponse}
+      description: "\r\nThe get setting operation response.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nLists the settings.\r\n"
+  example: []
+  syntax:
+    content: Task<SettingsListResponse> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of SettingsListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsListResponse}
+      description: "\r\nThe list settings operation response.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.UpdateAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.UpdateAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsUpdateParameters,System.Threading.CancellationToken)
+  id: UpdateAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(SettingsUpdateParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.ISettingsOperations.UpdateAsync(Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UpdateAsync
+    path: BradysOpsPlayground/src/ServiceManagement/WebSite/WebSiteManagement/Generated/ISettingsOperations.cs
+    startLine: 88
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nUpdates a setting.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> UpdateAsync(SettingsUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function UpdateAsync(parameters As SettingsUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsUpdateParameters
+      description: "\r\nThe setting value.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.WindowsAzure.WebSitesExtensions
+  isExternal: false
+  name: Microsoft.WindowsAzure.WebSitesExtensions
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SettingsGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsGetResponse)
+  name.vb: Task(Of SettingsGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsGetResponse
+    name: SettingsGetResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsGetResponse
+    name: SettingsGetResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SettingsListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsListResponse)
+  name.vb: Task(Of SettingsListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsListResponse
+    name: SettingsListResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsListResponse
+    name: SettingsListResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsUpdateParameters
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: SettingsUpdateParameters
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.SettingsUpdateParameters
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models

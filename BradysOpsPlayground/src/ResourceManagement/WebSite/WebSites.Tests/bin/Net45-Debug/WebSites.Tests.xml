@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebSites.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Azure.Management.WebSites.WebSiteCloudException">
+            <summary>
+            Exception thrown for any invalid response from a WebSite operation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Management.WebSites.WebSiteCloudException.ExtendedErrorCode">
+            <summary>
+            Gets an extended error code that is a numeric value unique to this
+            error type. For a list of extended codes, see
+            WebSiteExtendedErrorCodes.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Management.WebSites.WebSiteCloudException.ErrorMessageFormat">
+            <summary>
+            Gets a template of the actual message presented to the user, with
+            place holders that are filled with information from the Parameters
+            element.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.Management.WebSites.WebSiteCloudException.ErrorMessageArguments">
+            <summary>
+            A container for strings that fill the place holders in the message
+            template. These strings contain information unique to the user's
+            scenario.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Management.WebSites.WebSiteCloudException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the WebSiteCloudException class.
+            </summary>
+            <param name="message">The exception message.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Management.WebSites.WebSiteCloudException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the WebSiteCloudException class.
+            </summary>
+            <param name="message">The exception message.</param>
+            <param name="innerException">Inner exception.</param>
+        </member>
+        <member name="M:Microsoft.Azure.Management.WebSites.WebSiteCloudException.CreateResourceCloudExceptionTemporaryImplementation(System.Net.Http.HttpRequestMessage,System.String,System.Net.Http.HttpResponseMessage,System.String,System.Exception)">
+            <summary>
+            Create a CloudException from a failed response.
+            </summary>
+            <param name="request">The HTTP request.</param>
+            <param name="requestContent">The HTTP request content.</param>
+            <param name="response">The HTTP response.</param>
+            <param name="responseContent">The HTTP response content.</param>
+            <param name="innerException">Optional inner exception.</param>
+            <returns>A CloudException representing the failure.</returns>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.ResourceManagement.Testing.UndoContextDiscoveryExtensions">
+            <summary>
+            Class used to discover and construct undo handlers available in the app domain
+            </summary>
+            
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.ResourceManagement.Testing.UndoContextDiscoveryExtensions.CreateResourceManagerUndoHandler">
+            <summary>
+            Create an undo handler for ResourceManager operations
+            </summary>
+            <returns>An undo handler for ResourceManager operations</returns>
+        </member>
+        <member name="M:WebSites.Tests.Helpers.ResourceGroupHelper.GetResourceLocation(Microsoft.Azure.Management.Resources.ResourceManagementClient,System.String)">
+            <summary>
+            Get a default resource location for a given resource type
+            </summary>
+            <param name="client">The resource management client</param>
+            <param name="resourceType">The type of resource to create</param>
+            <returns>A location where this resource type is supported for the current subscription</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,346 @@
+items:
+- uid: Microsoft.Azure.Gallery.IGalleryClient
+  commentId: T:Microsoft.Azure.Gallery.IGalleryClient
+  id: IGalleryClient
+  parent: Microsoft.Azure.Gallery
+  children:
+  - Microsoft.Azure.Gallery.IGalleryClient.ApiVersion
+  - Microsoft.Azure.Gallery.IGalleryClient.BaseUri
+  - Microsoft.Azure.Gallery.IGalleryClient.Credentials
+  - Microsoft.Azure.Gallery.IGalleryClient.Items
+  - Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationInitialTimeout
+  - Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationRetryTimeout
+  langs:
+  - csharp
+  - vb
+  name: IGalleryClient
+  fullName: Microsoft.Azure.Gallery.IGalleryClient
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IGalleryClient
+    path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.Azure.Gallery
+  namespace: Microsoft.Azure.Gallery
+  syntax:
+    content: 'public interface IGalleryClient : IDisposable'
+    content.vb: >-
+      Public Interface IGalleryClient
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Gallery.IGalleryClient.ApiVersion
+  commentId: P:Microsoft.Azure.Gallery.IGalleryClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Azure.Gallery.IGalleryClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.Azure.Gallery.IGalleryClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Gallery
+  namespace: Microsoft.Azure.Gallery
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Gallery.IGalleryClient.BaseUri
+  commentId: P:Microsoft.Azure.Gallery.IGalleryClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Azure.Gallery.IGalleryClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.Azure.Gallery.IGalleryClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.Azure.Gallery
+  namespace: Microsoft.Azure.Gallery
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Gallery.IGalleryClient.Credentials
+  commentId: P:Microsoft.Azure.Gallery.IGalleryClient.Credentials
+  id: Credentials
+  parent: Microsoft.Azure.Gallery.IGalleryClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.Azure.Gallery.IGalleryClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.Azure.Gallery
+  namespace: Microsoft.Azure.Gallery
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.Azure.Gallery.IGalleryClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.Azure.Gallery
+  namespace: Microsoft.Azure.Gallery
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.Azure.Gallery.IGalleryClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.Azure.Gallery.IGalleryClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+    startLine: 67
+  assemblies:
+  - Microsoft.Azure.Gallery
+  namespace: Microsoft.Azure.Gallery
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Azure.Gallery.IGalleryClient.Items
+  commentId: P:Microsoft.Azure.Gallery.IGalleryClient.Items
+  id: Items
+  parent: Microsoft.Azure.Gallery.IGalleryClient
+  langs:
+  - csharp
+  - vb
+  name: Items
+  fullName: Microsoft.Azure.Gallery.IGalleryClient.Items
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Items
+    path: BradysOpsPlayground/src/Gallery/Gallery/Generated/IGalleryClient.cs
+    startLine: 75
+  assemblies:
+  - Microsoft.Azure.Gallery
+  namespace: Microsoft.Azure.Gallery
+  summary: "\r\nOperations for working with gallery items.\r\n"
+  example: []
+  syntax:
+    content: >-
+      IItemOperations Items
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Items As IItemOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Gallery.IItemOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Microsoft.Azure.Gallery
+  isExternal: false
+  name: Microsoft.Azure.Gallery
+  fullName: Microsoft.Azure.Gallery
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.Azure.Gallery.IItemOperations
+  parent: Microsoft.Azure.Gallery
+  isExternal: false
+  name: IItemOperations
+  fullName: Microsoft.Azure.Gallery.IItemOperations

@@ -1,0 +1,785 @@
+items:
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  commentId: T:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  id: IVirtualMachineOSImageOperations
+  parent: Microsoft.WindowsAzure.Management.Compute
+  children:
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.BeginSharingAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.BeginUnreplicatingAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateParameters,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.DeleteAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.GetDetailsAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ListAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ReplicateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateParameters,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ShareAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.UnreplicateAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.UpdateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateParameters,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IVirtualMachineOSImageOperations
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IVirtualMachineOSImageOperations
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Service Management API includes operations for managing the OS\r\nimages in your subscription.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/jj157175.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public interface IVirtualMachineOSImageOperations
+    content.vb: Public Interface IVirtualMachineOSImageOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.BeginSharingAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.BeginSharingAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: BeginSharingAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginSharingAsync(String, String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.BeginSharingAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginSharingAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nShare an already replicated OS image. This operation is only for\r\npublishers. You have to be registered as image publisher with\r\nWindows Azure to be able to call this.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> BeginSharingAsync(string imageName, string permission, CancellationToken cancellationToken)
+    content.vb: Function BeginSharingAsync(imageName As String, permission As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the virtual machine image to share.\r\n"
+    - id: permission
+      type: System.String
+      description: "\r\nThe sharing permission: public, msdn, or private.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.BeginUnreplicatingAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.BeginUnreplicatingAsync(System.String,System.Threading.CancellationToken)
+  id: BeginUnreplicatingAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginUnreplicatingAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.BeginUnreplicatingAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginUnreplicatingAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nUnreplicate an OS image to multiple target locations. This\r\noperation is only for publishers. You have to be registered as\r\nimage publisher with Windows Azure to be able to call this. Note:\r\nThe operation removes the published copies of the user OS Image.\r\nIt does not remove the actual user OS Image. To remove the actual\r\nuser OS Image, the publisher will have to call Delete OS Image.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> BeginUnreplicatingAsync(string imageName, CancellationToken cancellationToken)
+    content.vb: Function BeginUnreplicatingAsync(imageName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the virtual machine image to replicate. Note: The OS\r\nImage Name should be the user OS Image, not the published name of\r\nthe OS Image.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateParameters,System.Threading.CancellationToken)
+  id: CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(VirtualMachineOSImageCreateParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 96
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Create OS Image operation adds an operating system image that\r\nis stored in a storage account and is available from the image\r\nrepository.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/jj157192.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineOSImageCreateResponse> CreateAsync(VirtualMachineOSImageCreateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateAsync(parameters As VirtualMachineOSImageCreateParameters, cancellationToken As CancellationToken) As Task(Of VirtualMachineOSImageCreateResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateParameters
+      description: "\r\nParameters supplied to the Create Virtual Machine Image operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateResponse}
+      description: "\r\nParameters returned from the Create Virtual Machine Image operation.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.DeleteAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.DeleteAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, Boolean, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.DeleteAsync(System.String, System.Boolean, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Delete OS Image operation deletes the specified OS image from\r\nyour image repository.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/jj157203.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string imageName, bool deleteFromStorage, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(imageName As String, deleteFromStorage As Boolean, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the image to delete.\r\n"
+    - id: deleteFromStorage
+      type: System.Boolean
+      description: "\r\nSpecifies that the source blob for the image should also be deleted\r\nfrom storage.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.GetAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Get OS Image operation retrieves the details for an operating\r\nsystem image from the image repository.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/jj157191.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineOSImageGetResponse> GetAsync(string imageName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(imageName As String, cancellationToken As CancellationToken) As Task(Of VirtualMachineOSImageGetResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the OS image to retrieve.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetResponse}
+      description: "\r\nA virtual machine image associated with your subscription.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.GetDetailsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.GetDetailsAsync(System.String,System.Threading.CancellationToken)
+  id: GetDetailsAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: GetDetailsAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.GetDetailsAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDetailsAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 151
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nGets OS Image's properties and its replication details. This\r\noperation is only for publishers. You have to be registered as\r\nimage publisher with Windows Azure to be able to call this.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineOSImageGetDetailsResponse> GetDetailsAsync(string imageName, CancellationToken cancellationToken)
+    content.vb: Function GetDetailsAsync(imageName As String, cancellationToken As CancellationToken) As Task(Of VirtualMachineOSImageGetDetailsResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the virtual machine image to replicate.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetDetailsResponse}
+      description: "\r\nThe Get Details OS Images operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 165
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe List OS Images operation retrieves a list of the operating\r\nsystem images from the image repository.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/jj157191.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineOSImageListResponse> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of VirtualMachineOSImageListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageListResponse}
+      description: "\r\nThe List OS Images operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ReplicateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ReplicateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateParameters,System.Threading.CancellationToken)
+  id: ReplicateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: ReplicateAsync(String, VirtualMachineOSImageReplicateParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ReplicateAsync(System.String, Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReplicateAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 185
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nReplicate an OS image to multiple target locations. This operation\r\nis only for publishers. You have to be registered as image\r\npublisher with Windows Azure to be able to call this.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineOSImageReplicateResponse> ReplicateAsync(string imageName, VirtualMachineOSImageReplicateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function ReplicateAsync(imageName As String, parameters As VirtualMachineOSImageReplicateParameters, cancellationToken As CancellationToken) As Task(Of VirtualMachineOSImageReplicateResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the virtual machine OS image to replicate.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateParameters
+      description: "\r\nParameters supplied to the Replicate Virtual Machine Image\r\noperation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateResponse}
+      description: "\r\nThe response body contains the published name of the image.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ShareAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ShareAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ShareAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: ShareAsync(String, String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.ShareAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ShareAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 212
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nShare an already replicated OS image. This operation is only for\r\npublishers. You have to be registered as image publisher with\r\nWindows Azure to be able to call this.\r\n"
+  example: []
+  syntax:
+    content: Task<OperationStatusResponse> ShareAsync(string imageName, string permission, CancellationToken cancellationToken)
+    content.vb: Function ShareAsync(imageName As String, permission As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the virtual machine image to share.\r\n"
+    - id: permission
+      type: System.String
+      description: "\r\nThe sharing permission: public, msdn, or private.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{OperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.UnreplicateAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.UnreplicateAsync(System.String,System.Threading.CancellationToken)
+  id: UnreplicateAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: UnreplicateAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.UnreplicateAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UnreplicateAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 241
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nUnreplicate an OS image to multiple target locations. This\r\noperation is only for publishers. You have to be registered as\r\nimage publisher with Windows Azure to be able to call this. Note:\r\nThe operation removes the published copies of the user OS Image.\r\nIt does not remove the actual user OS Image. To remove the actual\r\nuser OS Image, the publisher will have to call Delete OS Image.\r\n"
+  example: []
+  syntax:
+    content: Task<OperationStatusResponse> UnreplicateAsync(string imageName, CancellationToken cancellationToken)
+    content.vb: Function UnreplicateAsync(imageName As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the virtual machine image to replicate. Note: The OS\r\nImage Name should be the user OS Image, not the published name of\r\nthe OS Image.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{OperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.UpdateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.UpdateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateParameters,System.Threading.CancellationToken)
+  id: UpdateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(String, VirtualMachineOSImageUpdateParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IVirtualMachineOSImageOperations.UpdateAsync(System.String, Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UpdateAsync
+    path: BradysOpsPlayground/src/ServiceManagement/Compute/ComputeManagement/Generated/IVirtualMachineOSImageOperations.cs
+    startLine: 261
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Update OS Image operation updates an OS image that in your\r\nimage repository.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/jj157198.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineOSImageUpdateResponse> UpdateAsync(string imageName, VirtualMachineOSImageUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function UpdateAsync(imageName As String, parameters As VirtualMachineOSImageUpdateParameters, cancellationToken As CancellationToken) As Task(Of VirtualMachineOSImageUpdateResponse)
+    parameters:
+    - id: imageName
+      type: System.String
+      description: "\r\nThe name of the virtual machine image to be updated.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateParameters
+      description: "\r\nParameters supplied to the Update Virtual Machine Image operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateResponse}
+      description: "\r\nParameters returned from the Create Virtual Machine Image operation.\r\n"
+references:
+- uid: Microsoft.WindowsAzure.Management.Compute
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.Compute
+  fullName: Microsoft.WindowsAzure.Management.Compute
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateParameters
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: VirtualMachineOSImageCreateParameters
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateParameters
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineOSImageCreateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateResponse)
+  name.vb: Task(Of VirtualMachineOSImageCreateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateResponse
+    name: VirtualMachineOSImageCreateResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateResponse
+    name: VirtualMachineOSImageCreateResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageCreateResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.Compute.Models
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineOSImageGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetResponse)
+  name.vb: Task(Of VirtualMachineOSImageGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetResponse
+    name: VirtualMachineOSImageGetResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetResponse
+    name: VirtualMachineOSImageGetResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetDetailsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineOSImageGetDetailsResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetDetailsResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetDetailsResponse)
+  name.vb: Task(Of VirtualMachineOSImageGetDetailsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetDetailsResponse
+    name: VirtualMachineOSImageGetDetailsResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetDetailsResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetDetailsResponse
+    name: VirtualMachineOSImageGetDetailsResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageGetDetailsResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineOSImageListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageListResponse)
+  name.vb: Task(Of VirtualMachineOSImageListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageListResponse
+    name: VirtualMachineOSImageListResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageListResponse
+    name: VirtualMachineOSImageListResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateParameters
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: VirtualMachineOSImageReplicateParameters
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateParameters
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineOSImageReplicateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateResponse)
+  name.vb: Task(Of VirtualMachineOSImageReplicateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateResponse
+    name: VirtualMachineOSImageReplicateResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateResponse
+    name: VirtualMachineOSImageReplicateResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageReplicateResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{OperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<OperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of OperationStatusResponse)
+  name.vb: Task(Of OperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: OperationStatusResponse
+    name: OperationStatusResponse
+    fullName: OperationStatusResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: OperationStatusResponse
+    name: OperationStatusResponse
+    fullName: OperationStatusResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateParameters
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: VirtualMachineOSImageUpdateParameters
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateParameters
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineOSImageUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateResponse)
+  name.vb: Task(Of VirtualMachineOSImageUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateResponse
+    name: VirtualMachineOSImageUpdateResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateResponse
+    name: VirtualMachineOSImageUpdateResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineOSImageUpdateResponse
+  - name: )
+    fullName: )

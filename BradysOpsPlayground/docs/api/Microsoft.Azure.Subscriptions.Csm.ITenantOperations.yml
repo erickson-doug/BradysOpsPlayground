@@ -1,0 +1,146 @@
+items:
+- uid: Microsoft.Azure.Subscriptions.Csm.ITenantOperations
+  commentId: T:Microsoft.Azure.Subscriptions.Csm.ITenantOperations
+  id: ITenantOperations
+  parent: Microsoft.Azure.Subscriptions.Csm
+  children:
+  - Microsoft.Azure.Subscriptions.Csm.ITenantOperations.ListAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITenantOperations
+  fullName: Microsoft.Azure.Subscriptions.Csm.ITenantOperations
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ITenantOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ITenantOperations
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ITenantOperations.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Subscriptions.Csm
+  summary: "\r\nOperations for managing tenants.\r\n"
+  example: []
+  syntax:
+    content: public interface ITenantOperations
+    content.vb: Public Interface ITenantOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Subscriptions.Csm.ITenantOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Subscriptions.Csm.ITenantOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Subscriptions.Csm.ITenantOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.Azure.Subscriptions.Csm.ITenantOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ITenantOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ITenantOperations.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Subscriptions.Csm
+  summary: "\r\nGets a list of the tenantIds.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantListResult> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of TenantListResult)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Subscriptions.Csm.Models.TenantListResult}
+      description: "\r\nTenant Ids information.\r\n"
+references:
+- uid: Microsoft.Azure.Subscriptions.Csm
+  isExternal: false
+  name: Microsoft.Azure.Subscriptions.Csm
+  fullName: Microsoft.Azure.Subscriptions.Csm
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Subscriptions.Csm.Models.TenantListResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TenantListResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Subscriptions.Csm.Models.TenantListResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Subscriptions.Csm.Models.TenantListResult)
+  name.vb: Task(Of TenantListResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Subscriptions.Csm.Models.TenantListResult
+    name: TenantListResult
+    fullName: Microsoft.Azure.Subscriptions.Csm.Models.TenantListResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Subscriptions.Csm.Models.TenantListResult
+    name: TenantListResult
+    fullName: Microsoft.Azure.Subscriptions.Csm.Models.TenantListResult
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,270 @@
+items:
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+  commentId: T:Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+  id: IVirtualMachineExtensionImageOperations
+  parent: Microsoft.Azure.Management.Compute
+  children:
+  - Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.GetAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.ListTypesAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListTypesParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.ListVersionsAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListVersionsParameters,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IVirtualMachineExtensionImageOperations
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IVirtualMachineExtensionImageOperations
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionImageOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for managing the virtual machine extension images in compute\r\nmanagement.\r\n"
+  example: []
+  syntax:
+    content: public interface IVirtualMachineExtensionImageOperations
+    content.vb: Public Interface IVirtualMachineExtensionImageOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.GetAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.GetAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetParameters,System.Threading.CancellationToken)
+  id: GetAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(VirtualMachineExtensionImageGetParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.GetAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionImageOperations.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nGets a virtual machine extension image.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineExtensionImageGetResponse> GetAsync(VirtualMachineExtensionImageGetParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(parameters As VirtualMachineExtensionImageGetParameters, cancellationToken As CancellationToken) As Task(Of VirtualMachineExtensionImageGetResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetParameters
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetResponse}
+      description: "\r\nThe get virtual machine extension image operation response.\r\n"
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.ListTypesAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListTypesParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.ListTypesAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListTypesParameters,System.Threading.CancellationToken)
+  id: ListTypesAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListTypesParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+  langs:
+  - csharp
+  - vb
+  name: ListTypesAsync(VirtualMachineExtensionImageListTypesParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.ListTypesAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListTypesParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListTypesAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionImageOperations.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nGets a list of virtual machine extension image types.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineImageResourceList> ListTypesAsync(VirtualMachineExtensionImageListTypesParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function ListTypesAsync(parameters As VirtualMachineExtensionImageListTypesParameters, cancellationToken As CancellationToken) As Task(Of VirtualMachineImageResourceList)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListTypesParameters
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList}
+      description: "\r\nA list of virtual machine image resource information.\r\n"
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.ListVersionsAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListVersionsParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.ListVersionsAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListVersionsParameters,System.Threading.CancellationToken)
+  id: ListVersionsAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListVersionsParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations
+  langs:
+  - csharp
+  - vb
+  name: ListVersionsAsync(VirtualMachineExtensionImageListVersionsParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineExtensionImageOperations.ListVersionsAsync(Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListVersionsParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionImageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListVersionsAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineExtensionImageOperations.cs
+    startLine: 66
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nGets a list of virtual machine extension image versions.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineImageResourceList> ListVersionsAsync(VirtualMachineExtensionImageListVersionsParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function ListVersionsAsync(parameters As VirtualMachineExtensionImageListVersionsParameters, cancellationToken As CancellationToken) As Task(Of VirtualMachineImageResourceList)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListVersionsParameters
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList}
+      description: "\r\nA list of virtual machine image resource information.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: Microsoft.Azure.Management.Compute
+  fullName: Microsoft.Azure.Management.Compute
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetParameters
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: VirtualMachineExtensionImageGetParameters
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineExtensionImageGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetResponse)
+  name.vb: Task(Of VirtualMachineExtensionImageGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetResponse
+    name: VirtualMachineExtensionImageGetResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetResponse
+    name: VirtualMachineExtensionImageGetResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageGetResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Compute.Models
+  fullName: Microsoft.Azure.Management.Compute.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListTypesParameters
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: VirtualMachineExtensionImageListTypesParameters
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListTypesParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineImageResourceList>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList)
+  name.vb: Task(Of VirtualMachineImageResourceList)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList
+    name: VirtualMachineImageResourceList
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList
+    name: VirtualMachineImageResourceList
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineImageResourceList
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListVersionsParameters
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: VirtualMachineExtensionImageListVersionsParameters
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtensionImageListVersionsParameters

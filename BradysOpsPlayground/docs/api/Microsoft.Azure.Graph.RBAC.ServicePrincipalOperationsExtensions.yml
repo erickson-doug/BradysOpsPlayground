@@ -1,0 +1,905 @@
+items:
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  commentId: T:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  id: ServicePrincipalOperationsExtensions
+  parent: Microsoft.Azure.Graph.RBAC
+  children:
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Create(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.CreateAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Delete(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.DeleteAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Get(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetByServicePrincipalName(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetByServicePrincipalNameAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.List(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListNext(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  - Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListNextAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ServicePrincipalOperationsExtensions
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServicePrincipalOperationsExtensions
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  syntax:
+    content: public class ServicePrincipalOperationsExtensions
+    content.vb: Public Class ServicePrincipalOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Create(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Create(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  id: Create(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Create(IServicePrincipalOperations, ServicePrincipalCreateParameters)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Create(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Create
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nCreates a service principal in the  directory.\r\n"
+  example: []
+  syntax:
+    content: public static ServicePrincipalGetResult Create(IServicePrincipalOperations operations, ServicePrincipalCreateParameters parameters)
+    content.vb: Public Shared Function Create(operations As IServicePrincipalOperations, parameters As ServicePrincipalCreateParameters) As ServicePrincipalGetResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters
+      description: "\r\nRequired. Parameters to create a service principal.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+      description: "\r\nServer response for service principal information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.CreateAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.CreateAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  id: CreateAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(IServicePrincipalOperations, ServicePrincipalCreateParameters)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.CreateAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 67
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nCreates a service principal in the  directory.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ServicePrincipalGetResult> CreateAsync(IServicePrincipalOperations operations, ServicePrincipalCreateParameters parameters)
+    content.vb: Public Shared Function CreateAsync(operations As IServicePrincipalOperations, parameters As ServicePrincipalCreateParameters) As Task(Of ServicePrincipalGetResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters
+      description: "\r\nRequired. Parameters to create a service principal.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult}
+      description: "\r\nServer response for service principal information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Delete(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Delete(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: Delete(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Delete(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Delete(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Delete
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 85
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nDeletes service principal from the directory.\r\n"
+  example: []
+  syntax:
+    content: public static ServicePrincipalGetResult Delete(IServicePrincipalOperations operations, string objectId)
+    content.vb: Public Shared Function Delete(operations As IServicePrincipalOperations, objectId As String) As ServicePrincipalGetResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: objectId
+      type: System.String
+      description: "\r\nRequired. Object id to delete service principal information.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+      description: "\r\nServer response for service principal information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.DeleteAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.DeleteAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: DeleteAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.DeleteAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 107
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nDeletes service principal from the directory.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ServicePrincipalGetResult> DeleteAsync(IServicePrincipalOperations operations, string objectId)
+    content.vb: Public Shared Function DeleteAsync(operations As IServicePrincipalOperations, objectId As String) As Task(Of ServicePrincipalGetResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: objectId
+      type: System.String
+      description: "\r\nRequired. Object id to delete service principal information.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult}
+      description: "\r\nServer response for service principal information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Get(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Get(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: Get(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.Get(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 125
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets service principal information from the directory.\r\n"
+  example: []
+  syntax:
+    content: public static ServicePrincipalGetResult Get(IServicePrincipalOperations operations, string objectId)
+    content.vb: Public Shared Function Get(operations As IServicePrincipalOperations, objectId As String) As ServicePrincipalGetResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: objectId
+      type: System.String
+      description: "\r\nRequired. Object id to get service principal information.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+      description: "\r\nServer response for service principal information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: GetAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 147
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets service principal information from the directory.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ServicePrincipalGetResult> GetAsync(IServicePrincipalOperations operations, string objectId)
+    content.vb: Public Shared Function GetAsync(operations As IServicePrincipalOperations, objectId As String) As Task(Of ServicePrincipalGetResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: objectId
+      type: System.String
+      description: "\r\nRequired. Object id to get service principal information.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult}
+      description: "\r\nServer response for service principal information API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetByServicePrincipalName(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetByServicePrincipalName(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: GetByServicePrincipalName(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetByServicePrincipalName(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetByServicePrincipalName(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetByServicePrincipalName
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 165
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets service principal information from the directory.\r\n"
+  example: []
+  syntax:
+    content: public static ServicePrincipalListResult GetByServicePrincipalName(IServicePrincipalOperations operations, string servicePrincipalName)
+    content.vb: Public Shared Function GetByServicePrincipalName(operations As IServicePrincipalOperations, servicePrincipalName As String) As ServicePrincipalListResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: servicePrincipalName
+      type: System.String
+      description: "\r\nRequired. filter based on service principal name\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+      description: "\r\nServer response for get tenant service principals API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetByServicePrincipalNameAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetByServicePrincipalNameAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: GetByServicePrincipalNameAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetByServicePrincipalNameAsync(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.GetByServicePrincipalNameAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetByServicePrincipalNameAsync
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 187
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets service principal information from the directory.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ServicePrincipalListResult> GetByServicePrincipalNameAsync(IServicePrincipalOperations operations, string servicePrincipalName)
+    content.vb: Public Shared Function GetByServicePrincipalNameAsync(operations As IServicePrincipalOperations, servicePrincipalName As String) As Task(Of ServicePrincipalListResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: servicePrincipalName
+      type: System.String
+      description: "\r\nRequired. filter based on service principal name\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult}
+      description: "\r\nServer response for get tenant service principals API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.List(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.List(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: List(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.List(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 205
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of service principals from the current tenant.\r\n"
+  example: []
+  syntax:
+    content: public static ServicePrincipalListResult List(IServicePrincipalOperations operations, string displayNameStartsWith)
+    content.vb: Public Shared Function List(operations As IServicePrincipalOperations, displayNameStartsWith As String) As ServicePrincipalListResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: displayNameStartsWith
+      type: System.String
+      description: "\r\nOptional. Display name to filter results.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+      description: "\r\nServer response for get tenant service principals API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: ListAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 227
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of service principals from the current tenant.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ServicePrincipalListResult> ListAsync(IServicePrincipalOperations operations, string displayNameStartsWith)
+    content.vb: Public Shared Function ListAsync(operations As IServicePrincipalOperations, displayNameStartsWith As String) As Task(Of ServicePrincipalListResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: displayNameStartsWith
+      type: System.String
+      description: "\r\nOptional. Display name to filter results.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult}
+      description: "\r\nServer response for get tenant service principals API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListNext(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListNext(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: ListNext(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNext(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListNext(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNext
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 246
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of service principals for the current tenant.\r\n"
+  example: []
+  syntax:
+    content: public static ServicePrincipalListResult ListNext(IServicePrincipalOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNext(operations As IServicePrincipalOperations, nextLink As String) As ServicePrincipalListResult
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+      description: "\r\nServer response for get tenant service principals API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListNextAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  commentId: M:Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListNextAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  id: ListNextAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations,System.String)
+  parent: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(IServicePrincipalOperations, String)
+  fullName: Microsoft.Azure.Graph.RBAC.ServicePrincipalOperationsExtensions.ListNextAsync(Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: BradysOpsPlayground/src/Graph.RBAC/Graph.RBAC/Generated/ServicePrincipalOperationsExtensions.cs
+    startLine: 269
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of service principals for the current tenant.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ServicePrincipalListResult> ListNextAsync(IServicePrincipalOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNextAsync(operations As IServicePrincipalOperations, nextLink As String) As Task(Of ServicePrincipalListResult)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Graph.RBAC.IServicePrincipalOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult}
+      description: "\r\nServer response for get tenant service principals API call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Graph.RBAC
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC
+  fullName: Microsoft.Azure.Graph.RBAC
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+  parent: Microsoft.Azure.Graph.RBAC
+  isExternal: false
+  name: IServicePrincipalOperations
+  fullName: Microsoft.Azure.Graph.RBAC.IServicePrincipalOperations
+- uid: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: ServicePrincipalCreateParameters
+  fullName: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalCreateParameters
+- uid: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: ServicePrincipalGetResult
+  fullName: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+- uid: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC.Models
+  fullName: Microsoft.Azure.Graph.RBAC.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServicePrincipalGetResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult)
+  name.vb: Task(Of ServicePrincipalGetResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+    name: ServicePrincipalGetResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+    name: ServicePrincipalGetResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalGetResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: ServicePrincipalListResult
+  fullName: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServicePrincipalListResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult)
+  name.vb: Task(Of ServicePrincipalListResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+    name: ServicePrincipalListResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+    name: ServicePrincipalListResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalListResult
+  - name: )
+    fullName: )

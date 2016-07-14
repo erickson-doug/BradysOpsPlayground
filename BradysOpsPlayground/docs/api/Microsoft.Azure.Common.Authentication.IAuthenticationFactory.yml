@@ -1,0 +1,171 @@
+items:
+- uid: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  commentId: T:Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  id: IAuthenticationFactory
+  parent: Microsoft.Azure.Common.Authentication
+  children:
+  - Microsoft.Azure.Common.Authentication.IAuthenticationFactory.Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment,System.String,System.Security.SecureString,Microsoft.Azure.Common.Authentication.ShowDialog,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  - Microsoft.Azure.Common.Authentication.IAuthenticationFactory.GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  langs:
+  - csharp
+  - vb
+  name: IAuthenticationFactory
+  fullName: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Interfaces/IAuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IAuthenticationFactory
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Interfaces/IAuthenticationFactory.cs
+    startLine: 19
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  syntax:
+    content: public interface IAuthenticationFactory
+    content.vb: Public Interface IAuthenticationFactory
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Common.Authentication.IAuthenticationFactory.Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment,System.String,System.Security.SecureString,Microsoft.Azure.Common.Authentication.ShowDialog,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  commentId: M:Microsoft.Azure.Common.Authentication.IAuthenticationFactory.Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment,System.String,System.Security.SecureString,Microsoft.Azure.Common.Authentication.ShowDialog,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  id: Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment,System.String,System.Security.SecureString,Microsoft.Azure.Common.Authentication.ShowDialog,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  parent: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  langs:
+  - csharp
+  - vb
+  name: Authenticate(AzureAccount, AzureEnvironment, String, SecureString, ShowDialog, AzureEnvironment.Endpoint)
+  fullName: Microsoft.Azure.Common.Authentication.IAuthenticationFactory.Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment, System.String, System.Security.SecureString, Microsoft.Azure.Common.Authentication.ShowDialog, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Interfaces/IAuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Authenticate
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Interfaces/IAuthenticationFactory.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  summary: "\r\nReturns IAccessToken if authentication succeeds or throws an exception if authentication fails.\r\n"
+  example: []
+  syntax:
+    content: IAccessToken Authenticate(AzureAccount account, AzureEnvironment environment, string tenant, SecureString password, ShowDialog promptBehavior, AzureEnvironment.Endpoint resourceId = AzureEnvironment.Endpoint.ActiveDirectoryServiceEndpointResourceId)
+    content.vb: Function Authenticate(account As AzureAccount, environment As AzureEnvironment, tenant As String, password As SecureString, promptBehavior As ShowDialog, resourceId As AzureEnvironment.Endpoint = AzureEnvironment.Endpoint.ActiveDirectoryServiceEndpointResourceId) As IAccessToken
+    parameters:
+    - id: account
+      type: Microsoft.Azure.Common.Authentication.Models.AzureAccount
+      description: The azure account object
+    - id: environment
+      type: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment
+      description: The azure environment object
+    - id: tenant
+      type: System.String
+      description: The AD tenant in most cases should be 'common'
+    - id: password
+      type: System.Security.SecureString
+      description: The AD account password
+    - id: promptBehavior
+      type: Microsoft.Azure.Common.Authentication.ShowDialog
+      description: The prompt behavior
+    - id: resourceId
+      type: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+      description: Optional, the AD resource id
+    return:
+      type: Microsoft.Azure.Common.Authentication.IAccessToken
+- uid: Microsoft.Azure.Common.Authentication.IAuthenticationFactory.GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  commentId: M:Microsoft.Azure.Common.Authentication.IAuthenticationFactory.GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  id: GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  parent: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  langs:
+  - csharp
+  - vb
+  name: GetSubscriptionCloudCredentials(AzureContext)
+  fullName: Microsoft.Azure.Common.Authentication.IAuthenticationFactory.GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Interfaces/IAuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetSubscriptionCloudCredentials
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Interfaces/IAuthenticationFactory.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication
+  syntax:
+    content: SubscriptionCloudCredentials GetSubscriptionCloudCredentials(AzureContext context)
+    content.vb: Function GetSubscriptionCloudCredentials(context As AzureContext) As SubscriptionCloudCredentials
+    parameters:
+    - id: context
+      type: Microsoft.Azure.Common.Authentication.Models.AzureContext
+    return:
+      type: SubscriptionCloudCredentials
+references:
+- uid: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication
+  fullName: Microsoft.Azure.Common.Authentication
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureAccount
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureAccount
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureAccount
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureEnvironment
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Security.SecureString
+  parent: System.Security
+  isExternal: true
+  name: SecureString
+  fullName: System.Security.SecureString
+- uid: Microsoft.Azure.Common.Authentication.ShowDialog
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: ShowDialog
+  fullName: Microsoft.Azure.Common.Authentication.ShowDialog
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureEnvironment.Endpoint
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+- uid: Microsoft.Azure.Common.Authentication.IAccessToken
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IAccessToken
+  fullName: Microsoft.Azure.Common.Authentication.IAccessToken
+- uid: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication.Models
+  fullName: Microsoft.Azure.Common.Authentication.Models
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureContext
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureContext
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureContext
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials

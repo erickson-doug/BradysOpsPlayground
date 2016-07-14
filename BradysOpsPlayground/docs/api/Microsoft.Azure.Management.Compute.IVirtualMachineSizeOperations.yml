@@ -1,0 +1,158 @@
+items:
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations
+  commentId: T:Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations
+  id: IVirtualMachineSizeOperations
+  parent: Microsoft.Azure.Management.Compute
+  children:
+  - Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IVirtualMachineSizeOperations
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineSizeOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IVirtualMachineSizeOperations
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineSizeOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for listing virtual machine sizes available in a region.\r\n"
+  example: []
+  syntax:
+    content: public interface IVirtualMachineSizeOperations
+    content.vb: Public Interface IVirtualMachineSizeOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IVirtualMachineSizeOperations.ListAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineSizeOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IVirtualMachineSizeOperations.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nLists virtual-machine-sizes available in a location for a\r\nsubscription.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineSizeListResponse> ListAsync(string location, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(location As String, cancellationToken As CancellationToken) As Task(Of VirtualMachineSizeListResponse)
+    parameters:
+    - id: location
+      type: System.String
+      description: "\r\nThe location upon which virtual-machine-sizes is queried.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse}
+      description: "\r\nThe List Virtual Machine operation response.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: Microsoft.Azure.Management.Compute
+  fullName: Microsoft.Azure.Management.Compute
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineSizeListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse)
+  name.vb: Task(Of VirtualMachineSizeListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse
+    name: VirtualMachineSizeListResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse
+    name: VirtualMachineSizeListResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,676 @@
+items:
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  commentId: T:Microsoft.Azure.Management.Csm.ResourceManagementClient
+  id: ResourceManagementClient
+  parent: Microsoft.Azure.Management.Csm
+  children:
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials)
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.ApiVersion
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.BaseUri
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Csm.ResourceManagementClient})
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.Credentials
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.LongRunningOperationInitialTimeout
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.LongRunningOperationRetryTimeout
+  - Microsoft.Azure.Management.Csm.ResourceManagementClient.Providers
+  langs:
+  - csharp
+  - vb
+  name: ResourceManagementClient
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  type: Class
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ResourceManagementClient
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  syntax:
+    content: 'public class ResourceManagementClient : ServiceClient<ResourceManagementClient>, IResourceManagementClient, IDisposable'
+    content.vb: >-
+      Public Class ResourceManagementClient
+
+          Inherits ServiceClient(Of ResourceManagementClient)
+
+          Implements IResourceManagementClient, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Management.Csm.IResourceManagementClient
+  - System.IDisposable
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.ApiVersion
+  commentId: P:Microsoft.Azure.Management.Csm.ResourceManagementClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.BaseUri
+  commentId: P:Microsoft.Azure.Management.Csm.ResourceManagementClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.Credentials
+  commentId: P:Microsoft.Azure.Management.Csm.ResourceManagementClient.Credentials
+  id: Credentials
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.Azure.Management.Csm.ResourceManagementClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 66
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.Azure.Management.Csm.ResourceManagementClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.Providers
+  commentId: P:Microsoft.Azure.Management.Csm.ResourceManagementClient.Providers
+  id: Providers
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Providers
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.Providers
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Providers
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 88
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nOperations for managing providers.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IProviderOperations Providers
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Providers As IProviderOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Csm.IProviderOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor
+  commentId: M:Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ResourceManagementClient()
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.ResourceManagementClient()
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 96
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nInitializes a new instance of the ResourceManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ResourceManagementClient()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  commentId: M:Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri)'
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ResourceManagementClient(SubscriptionCloudCredentials, Uri)
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.ResourceManagementClient(SubscriptionCloudCredentials, System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nInitializes a new instance of the ResourceManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ResourceManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials)
+  commentId: M:Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials)
+  id: '#ctor(SubscriptionCloudCredentials)'
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ResourceManagementClient(SubscriptionCloudCredentials)
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.ResourceManagementClient(SubscriptionCloudCredentials)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 143
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nInitializes a new instance of the ResourceManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ResourceManagementClient(SubscriptionCloudCredentials credentials)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(System.Net.Http.HttpClient)
+  id: '#ctor(System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ResourceManagementClient(HttpClient)
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.ResourceManagementClient(System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 162
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nInitializes a new instance of the ResourceManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ResourceManagementClient(HttpClient httpClient)
+    content.vb: Public Sub New(httpClient As HttpClient)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ResourceManagementClient(SubscriptionCloudCredentials, Uri, HttpClient)
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.ResourceManagementClient(SubscriptionCloudCredentials, System.Uri, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 187
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nInitializes a new instance of the ResourceManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ResourceManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Csm.ResourceManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ResourceManagementClient(SubscriptionCloudCredentials, HttpClient)
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.ResourceManagementClient(SubscriptionCloudCredentials, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 215
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nInitializes a new instance of the ResourceManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public ResourceManagementClient(SubscriptionCloudCredentials credentials, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Csm.ResourceManagementClient})
+  commentId: M:Microsoft.Azure.Management.Csm.ResourceManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Csm.ResourceManagementClient})
+  id: Clone(ServiceClient{Microsoft.Azure.Management.Csm.ResourceManagementClient})
+  parent: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Clone(ServiceClient<ResourceManagementClient>)
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient.Clone(ServiceClient<Microsoft.Azure.Management.Csm.ResourceManagementClient>)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Clone
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ResourceManagementClient.cs
+    startLine: 235
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nClones properties from current instance to another\r\nResourceManagementClient instance\r\n"
+  example: []
+  syntax:
+    content: protected override void Clone(ServiceClient<ResourceManagementClient> client)
+    content.vb: Protected Overrides Sub Clone(client As ServiceClient(Of ResourceManagementClient))
+    parameters:
+    - id: client
+      type: ServiceClient{Microsoft.Azure.Management.Csm.ResourceManagementClient}
+      description: "\r\nInstance of ResourceManagementClient to clone to\r\n"
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Microsoft.Azure.Management.Csm.ResourceManagementClient.Clone(ServiceClient(Of Microsoft.Azure.Management.Csm.ResourceManagementClient))
+  name.vb: Clone(ServiceClient(Of ResourceManagementClient))
+references:
+- uid: Microsoft.Azure.Management.Csm
+  isExternal: false
+  name: Microsoft.Azure.Management.Csm
+  fullName: Microsoft.Azure.Management.Csm
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.Csm.IResourceManagementClient
+  parent: Microsoft.Azure.Management.Csm
+  isExternal: false
+  name: IResourceManagementClient
+  fullName: Microsoft.Azure.Management.Csm.IResourceManagementClient
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.Azure.Management.Csm.IProviderOperations
+  parent: Microsoft.Azure.Management.Csm
+  isExternal: false
+  name: IProviderOperations
+  fullName: Microsoft.Azure.Management.Csm.IProviderOperations
+- uid: System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+- uid: ServiceClient{Microsoft.Azure.Management.Csm.ResourceManagementClient}
+  definition: ServiceClient`1
+  name: ServiceClient<ResourceManagementClient>
+  fullName: ServiceClient<Microsoft.Azure.Management.Csm.ResourceManagementClient>
+  fullname.vb: ServiceClient(Of Microsoft.Azure.Management.Csm.ResourceManagementClient)
+  name.vb: ServiceClient(Of ResourceManagementClient)
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Csm.ResourceManagementClient
+    name: ResourceManagementClient
+    fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Csm.ResourceManagementClient
+    name: ResourceManagementClient
+    fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  - name: )
+    fullName: )
+- uid: ServiceClient`1
+  isExternal: true
+  name: ServiceClient<>
+  fullName: ServiceClient<>
+  fullname.vb: ServiceClient(Of )
+  name.vb: ServiceClient(Of )
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )

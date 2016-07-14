@@ -1,0 +1,453 @@
+items:
+- uid: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  commentId: T:Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  id: IAvailabilitySetOperations
+  parent: Microsoft.Azure.Management.Compute
+  children:
+  - Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.CreateOrUpdateAsync(System.String,Microsoft.Azure.Management.Compute.Models.AvailabilitySet,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.ListAvailableSizesAsync(System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IAvailabilitySetOperations
+  fullName: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  type: Interface
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IAvailabilitySetOperations
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for managing the availability sets in compute management.\r\n"
+  example: []
+  syntax:
+    content: public interface IAvailabilitySetOperations
+    content.vb: Public Interface IAvailabilitySetOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.CreateOrUpdateAsync(System.String,Microsoft.Azure.Management.Compute.Models.AvailabilitySet,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.CreateOrUpdateAsync(System.String,Microsoft.Azure.Management.Compute.Models.AvailabilitySet,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,Microsoft.Azure.Management.Compute.Models.AvailabilitySet,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, AvailabilitySet, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.CreateOrUpdateAsync(System.String, Microsoft.Azure.Management.Compute.Models.AvailabilitySet, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nThe operation to create or update the availability set.\r\n"
+  example: []
+  syntax:
+    content: Task<AvailabilitySetCreateOrUpdateResponse> CreateOrUpdateAsync(string resourceGroupName, AvailabilitySet parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, parameters As AvailabilitySet, cancellationToken As CancellationToken) As Task(Of AvailabilitySetCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Compute.Models.AvailabilitySet
+      description: "\r\nParameters supplied to the Create Availability Set operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.AvailabilitySetCreateOrUpdateResponse}
+      description: "\r\nThe Create Availability Set operation response.\r\n"
+- uid: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.DeleteAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+    startLine: 68
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nThe operation to delete the availability set.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string availabilitySetName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, availabilitySetName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: availabilitySetName
+      type: System.String
+      description: "\r\nThe name of the availability set.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.GetAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+    startLine: 85
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nThe operation to get the availability set.\r\n"
+  example: []
+  syntax:
+    content: Task<AvailabilitySetGetResponse> GetAsync(string resourceGroupName, string availabilitySetName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, availabilitySetName As String, cancellationToken As CancellationToken) As Task(Of AvailabilitySetGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: availabilitySetName
+      type: System.String
+      description: "\r\nThe name of the availability set.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.AvailabilitySetGetResponse}
+      description: "\r\nGET Availability Set operation response.\r\n"
+- uid: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.ListAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nThe operation to list the availability sets.\r\n"
+  example: []
+  syntax:
+    content: Task<AvailabilitySetListResponse> ListAsync(string resourceGroupName, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, cancellationToken As CancellationToken) As Task(Of AvailabilitySetListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.AvailabilitySetListResponse}
+      description: "\r\nThe List Availability Set operation response.\r\n"
+- uid: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.ListAvailableSizesAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.ListAvailableSizesAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListAvailableSizesAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAvailableSizesAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IAvailabilitySetOperations.ListAvailableSizesAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAvailableSizesAsync
+    path: BradysOpsPlayground/src/ResourceManagement/Compute/ComputeManagement/Generated/IAvailabilitySetOperations.cs
+    startLine: 117
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nLists virtual-machine-sizes available to be used for an\r\navailability set.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualMachineSizeListResponse> ListAvailableSizesAsync(string resourceGroupName, string availabilitySetName, CancellationToken cancellationToken)
+    content.vb: Function ListAvailableSizesAsync(resourceGroupName As String, availabilitySetName As String, cancellationToken As CancellationToken) As Task(Of VirtualMachineSizeListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: availabilitySetName
+      type: System.String
+      description: "\r\nThe name of the availability set.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse}
+      description: "\r\nThe List Virtual Machine operation response.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: Microsoft.Azure.Management.Compute
+  fullName: Microsoft.Azure.Management.Compute
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Compute.Models.AvailabilitySet
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: AvailabilitySet
+  fullName: Microsoft.Azure.Management.Compute.Models.AvailabilitySet
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.AvailabilitySetCreateOrUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AvailabilitySetCreateOrUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.AvailabilitySetCreateOrUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.AvailabilitySetCreateOrUpdateResponse)
+  name.vb: Task(Of AvailabilitySetCreateOrUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.AvailabilitySetCreateOrUpdateResponse
+    name: AvailabilitySetCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.AvailabilitySetCreateOrUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.AvailabilitySetCreateOrUpdateResponse
+    name: AvailabilitySetCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.AvailabilitySetCreateOrUpdateResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Compute.Models
+  fullName: Microsoft.Azure.Management.Compute.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.AvailabilitySetGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AvailabilitySetGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.AvailabilitySetGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.AvailabilitySetGetResponse)
+  name.vb: Task(Of AvailabilitySetGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.AvailabilitySetGetResponse
+    name: AvailabilitySetGetResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.AvailabilitySetGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.AvailabilitySetGetResponse
+    name: AvailabilitySetGetResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.AvailabilitySetGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.AvailabilitySetListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AvailabilitySetListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.AvailabilitySetListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.AvailabilitySetListResponse)
+  name.vb: Task(Of AvailabilitySetListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.AvailabilitySetListResponse
+    name: AvailabilitySetListResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.AvailabilitySetListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.AvailabilitySetListResponse
+    name: AvailabilitySetListResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.AvailabilitySetListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualMachineSizeListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse)
+  name.vb: Task(Of VirtualMachineSizeListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse
+    name: VirtualMachineSizeListResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse
+    name: VirtualMachineSizeListResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineSizeListResponse
+  - name: )
+    fullName: )

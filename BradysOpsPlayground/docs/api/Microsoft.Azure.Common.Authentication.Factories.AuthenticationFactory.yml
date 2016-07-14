@@ -1,0 +1,519 @@
+items:
+- uid: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory
+  commentId: T:Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory
+  id: AuthenticationFactory
+  parent: Microsoft.Azure.Common.Authentication.Factories
+  children:
+  - Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.#ctor
+  - Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment,System.String,System.Security.SecureString,Microsoft.Azure.Common.Authentication.ShowDialog,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  - Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.CommonAdTenant
+  - Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  - Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.TokenProvider
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationFactory
+  fullName: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory
+  type: Class
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AuthenticationFactory
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+    startLine: 23
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: 'public class AuthenticationFactory : IAuthenticationFactory'
+    content.vb: >-
+      Public Class AuthenticationFactory
+
+          Implements IAuthenticationFactory
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.CommonAdTenant
+  commentId: F:Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.CommonAdTenant
+  id: CommonAdTenant
+  parent: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory
+  langs:
+  - csharp
+  - vb
+  name: CommonAdTenant
+  fullName: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.CommonAdTenant
+  type: Field
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CommonAdTenant
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+    startLine: 25
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public const string CommonAdTenant = "Common"
+    content.vb: Public Const CommonAdTenant As String = "Common"
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.#ctor
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationFactory()
+  fullName: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.AuthenticationFactory()
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public AuthenticationFactory()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.TokenProvider
+  commentId: P:Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.TokenProvider
+  id: TokenProvider
+  parent: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory
+  langs:
+  - csharp
+  - vb
+  name: TokenProvider
+  fullName: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.TokenProvider
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TokenProvider
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: >-
+      public ITokenProvider TokenProvider
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TokenProvider As ITokenProvider
+    parameters: []
+    return:
+      type: Microsoft.Azure.Common.Authentication.ITokenProvider
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment,System.String,System.Security.SecureString,Microsoft.Azure.Common.Authentication.ShowDialog,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment,System.String,System.Security.SecureString,Microsoft.Azure.Common.Authentication.ShowDialog,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  id: Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment,System.String,System.Security.SecureString,Microsoft.Azure.Common.Authentication.ShowDialog,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  parent: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory
+  langs:
+  - csharp
+  - vb
+  name: Authenticate(AzureAccount, AzureEnvironment, String, SecureString, ShowDialog, AzureEnvironment.Endpoint)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.Authenticate(Microsoft.Azure.Common.Authentication.Models.AzureAccount, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment, System.String, System.Security.SecureString, Microsoft.Azure.Common.Authentication.ShowDialog, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Authenticate
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public IAccessToken Authenticate(AzureAccount account, AzureEnvironment environment, string tenant, SecureString password, ShowDialog promptBehavior, AzureEnvironment.Endpoint resourceId = AzureEnvironment.Endpoint.ActiveDirectoryServiceEndpointResourceId)
+    content.vb: Public Function Authenticate(account As AzureAccount, environment As AzureEnvironment, tenant As String, password As SecureString, promptBehavior As ShowDialog, resourceId As AzureEnvironment.Endpoint = AzureEnvironment.Endpoint.ActiveDirectoryServiceEndpointResourceId) As IAccessToken
+    parameters:
+    - id: account
+      type: Microsoft.Azure.Common.Authentication.Models.AzureAccount
+    - id: environment
+      type: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment
+    - id: tenant
+      type: System.String
+    - id: password
+      type: System.Security.SecureString
+    - id: promptBehavior
+      type: Microsoft.Azure.Common.Authentication.ShowDialog
+    - id: resourceId
+      type: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+    return:
+      type: Microsoft.Azure.Common.Authentication.IAccessToken
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  id: GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  parent: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory
+  langs:
+  - csharp
+  - vb
+  name: GetSubscriptionCloudCredentials(AzureContext)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.AuthenticationFactory.GetSubscriptionCloudCredentials(Microsoft.Azure.Common.Authentication.Models.AzureContext)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetSubscriptionCloudCredentials
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Factories/AuthenticationFactory.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public SubscriptionCloudCredentials GetSubscriptionCloudCredentials(AzureContext context)
+    content.vb: Public Function GetSubscriptionCloudCredentials(context As AzureContext) As SubscriptionCloudCredentials
+    parameters:
+    - id: context
+      type: Microsoft.Azure.Common.Authentication.Models.AzureContext
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Common.Authentication.Factories
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication.Factories
+  fullName: Microsoft.Azure.Common.Authentication.Factories
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IAuthenticationFactory
+  fullName: Microsoft.Azure.Common.Authentication.IAuthenticationFactory
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication
+  fullName: Microsoft.Azure.Common.Authentication
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Common.Authentication.ITokenProvider
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: ITokenProvider
+  fullName: Microsoft.Azure.Common.Authentication.ITokenProvider
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureAccount
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureAccount
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureAccount
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureEnvironment
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment
+- uid: System.Security.SecureString
+  parent: System.Security
+  isExternal: true
+  name: SecureString
+  fullName: System.Security.SecureString
+- uid: Microsoft.Azure.Common.Authentication.ShowDialog
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: ShowDialog
+  fullName: Microsoft.Azure.Common.Authentication.ShowDialog
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureEnvironment.Endpoint
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+- uid: Microsoft.Azure.Common.Authentication.IAccessToken
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IAccessToken
+  fullName: Microsoft.Azure.Common.Authentication.IAccessToken
+- uid: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication.Models
+  fullName: Microsoft.Azure.Common.Authentication.Models
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureContext
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureContext
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureContext
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials

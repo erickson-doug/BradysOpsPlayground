@@ -1,0 +1,501 @@
+items:
+- uid: Microsoft.Azure.Management.Csm.ProviderOperations
+  commentId: T:Microsoft.Azure.Management.Csm.ProviderOperations
+  id: ProviderOperations
+  parent: Microsoft.Azure.Management.Csm
+  children:
+  - Microsoft.Azure.Management.Csm.ProviderOperations.#ctor(Microsoft.Azure.Management.Csm.ResourceManagementClient)
+  - Microsoft.Azure.Management.Csm.ProviderOperations.Client
+  - Microsoft.Azure.Management.Csm.ProviderOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Csm.ProviderOperations.ListAsync(Microsoft.Azure.Management.Csm.Models.ProviderListParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Csm.ProviderOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Csm.ProviderOperations.RegisterAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Csm.ProviderOperations.UnregisterAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ProviderOperations
+  fullName: Microsoft.Azure.Management.Csm.ProviderOperations
+  type: Class
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProviderOperations
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nOperations for managing providers.\r\n"
+  example: []
+  syntax:
+    content: 'public class ProviderOperations : IServiceOperations<ResourceManagementClient>, IProviderOperations'
+    content.vb: >-
+      Public Class ProviderOperations
+
+          Inherits IServiceOperations(Of ResourceManagementClient)
+
+          Implements IProviderOperations
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Management.Csm.IProviderOperations
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Csm.ProviderOperations.#ctor(Microsoft.Azure.Management.Csm.ResourceManagementClient)
+  commentId: M:Microsoft.Azure.Management.Csm.ProviderOperations.#ctor(Microsoft.Azure.Management.Csm.ResourceManagementClient)
+  id: '#ctor(Microsoft.Azure.Management.Csm.ResourceManagementClient)'
+  parent: Microsoft.Azure.Management.Csm.ProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: ProviderOperations(ResourceManagementClient)
+  fullName: Microsoft.Azure.Management.Csm.ProviderOperations.ProviderOperations(Microsoft.Azure.Management.Csm.ResourceManagementClient)
+  type: Constructor
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nInitializes a new instance of the ProviderOperations class.\r\n"
+  example: []
+  syntax:
+    content: public ProviderOperations(ResourceManagementClient client)
+    content.vb: Public Sub New(client As ResourceManagementClient)
+    parameters:
+    - id: client
+      type: Microsoft.Azure.Management.Csm.ResourceManagementClient
+      description: "\r\nReference to the service client.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ProviderOperations.Client
+  commentId: P:Microsoft.Azure.Management.Csm.ProviderOperations.Client
+  id: Client
+  parent: Microsoft.Azure.Management.Csm.ProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: Client
+  fullName: Microsoft.Azure.Management.Csm.ProviderOperations.Client
+  type: Property
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Client
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGets a reference to the\r\nMicrosoft.Azure.Management.Csm.ResourceManagementClient.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ResourceManagementClient Client
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Client As ResourceManagementClient
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Csm.ProviderOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Csm.ProviderOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Csm.ProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Csm.ProviderOperations.GetAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGets a resource provider.\r\n"
+  example: []
+  syntax:
+    content: public Task<ProviderGetResult> GetAsync(string resourceProviderNamespace, CancellationToken cancellationToken)
+    content.vb: Public Function GetAsync(resourceProviderNamespace As String, cancellationToken As CancellationToken) As Task(Of ProviderGetResult)
+    parameters:
+    - id: resourceProviderNamespace
+      type: System.String
+      description: "\r\nRequired. Namespace of the resource provider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Csm.Models.ProviderGetResult}
+      description: "\r\nResource provider information.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ProviderOperations.ListAsync(Microsoft.Azure.Management.Csm.Models.ProviderListParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Csm.ProviderOperations.ListAsync(Microsoft.Azure.Management.Csm.Models.ProviderListParameters,System.Threading.CancellationToken)
+  id: ListAsync(Microsoft.Azure.Management.Csm.Models.ProviderListParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Csm.ProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(ProviderListParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Csm.ProviderOperations.ListAsync(Microsoft.Azure.Management.Csm.Models.ProviderListParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+    startLine: 258
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGets a list of resource providers.\r\n"
+  example: []
+  syntax:
+    content: public Task<ProviderListResult> ListAsync(ProviderListParameters parameters, CancellationToken cancellationToken)
+    content.vb: Public Function ListAsync(parameters As ProviderListParameters, cancellationToken As CancellationToken) As Task(Of ProviderListResult)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Management.Csm.Models.ProviderListParameters
+      description: "\r\nOptional. Query parameters. If null is passed returns all\r\ndeployments.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Csm.Models.ProviderListResult}
+      description: "\r\nList of resource providers.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ProviderOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Csm.ProviderOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Csm.ProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Csm.ProviderOperations.ListNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+    startLine: 457
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nGet a list of deployments.\r\n"
+  example: []
+  syntax:
+    content: public Task<ProviderListResult> ListNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Public Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of ProviderListResult)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Csm.Models.ProviderListResult}
+      description: "\r\nList of resource providers.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ProviderOperations.RegisterAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Csm.ProviderOperations.RegisterAsync(System.String,System.Threading.CancellationToken)
+  id: RegisterAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Csm.ProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Csm.ProviderOperations.RegisterAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RegisterAsync
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+    startLine: 643
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nRegisters provider to be used with a subscription.\r\n"
+  example: []
+  syntax:
+    content: public Task<AzureOperationResponse> RegisterAsync(string resourceProviderNamespace, CancellationToken cancellationToken)
+    content.vb: Public Function RegisterAsync(resourceProviderNamespace As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceProviderNamespace
+      type: System.String
+      description: "\r\nRequired. Namespace of the resource provider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Csm.ProviderOperations.UnregisterAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Csm.ProviderOperations.UnregisterAsync(System.String,System.Threading.CancellationToken)
+  id: UnregisterAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Csm.ProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: UnregisterAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Csm.ProviderOperations.UnregisterAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UnregisterAsync
+    path: BradysOpsPlayground/src/Authentication/Common.Authentication/Management.Csm/ProviderOperations.cs
+    startLine: 764
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Csm
+  summary: "\r\nUnregisters provider from a subscription.\r\n"
+  example: []
+  syntax:
+    content: public Task<AzureOperationResponse> UnregisterAsync(string resourceProviderNamespace, CancellationToken cancellationToken)
+    content.vb: Public Function UnregisterAsync(resourceProviderNamespace As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceProviderNamespace
+      type: System.String
+      description: "\r\nRequired. Namespace of the resource provider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Csm
+  isExternal: false
+  name: Microsoft.Azure.Management.Csm
+  fullName: Microsoft.Azure.Management.Csm
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.Csm.IProviderOperations
+  parent: Microsoft.Azure.Management.Csm
+  isExternal: false
+  name: IProviderOperations
+  fullName: Microsoft.Azure.Management.Csm.IProviderOperations
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Csm.ResourceManagementClient
+  parent: Microsoft.Azure.Management.Csm
+  isExternal: false
+  name: ResourceManagementClient
+  fullName: Microsoft.Azure.Management.Csm.ResourceManagementClient
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Csm.Models.ProviderGetResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProviderGetResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Csm.Models.ProviderGetResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Csm.Models.ProviderGetResult)
+  name.vb: Task(Of ProviderGetResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Csm.Models.ProviderGetResult
+    name: ProviderGetResult
+    fullName: Microsoft.Azure.Management.Csm.Models.ProviderGetResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Csm.Models.ProviderGetResult
+    name: ProviderGetResult
+    fullName: Microsoft.Azure.Management.Csm.Models.ProviderGetResult
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.Csm.Models.ProviderListParameters
+  parent: Microsoft.Azure.Management.Csm.Models
+  isExternal: false
+  name: ProviderListParameters
+  fullName: Microsoft.Azure.Management.Csm.Models.ProviderListParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Csm.Models.ProviderListResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProviderListResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Csm.Models.ProviderListResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Csm.Models.ProviderListResult)
+  name.vb: Task(Of ProviderListResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Csm.Models.ProviderListResult
+    name: ProviderListResult
+    fullName: Microsoft.Azure.Management.Csm.Models.ProviderListResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Csm.Models.ProviderListResult
+    name: ProviderListResult
+    fullName: Microsoft.Azure.Management.Csm.Models.ProviderListResult
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Csm.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Csm.Models
+  fullName: Microsoft.Azure.Management.Csm.Models
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
