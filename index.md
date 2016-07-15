@@ -55,13 +55,13 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="api/resourcemanagement">
+                                <a href="api/resourcemanagement/index">
                                     <h3>Azure Resource Manager (ARM)</h3>
                                     <p>Learn about the new, template-based management SDK.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/servicemanagement">
+                                <a href="api/servicemanagement/index">
                                     <h3>Azure Service Manager (ASM)</h3>
                                     <p>Learn about the Azure's classic management SDK.</p>
                                 </a>
