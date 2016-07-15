@@ -1,0 +1,333 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListFamiliesResponse_OperatingSystem">
+          <span class="lang-csharp">OperatingSystemListFamiliesResponse.OperatingSystem</span>
+          <span class="lang-vb">OperatingSystemListFamiliesResponse.OperatingSystem</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">OperatingSystemListFamiliesResponse.OperatingSystem</code>
+                <code class="lang-vb">OperatingSystemListFamiliesResponse.OperatingSystem</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>An operating system that is valid for your subscription.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="constructors">
+      <h2>Constructors
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListFamiliesResponse_OperatingSystem__ctor">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">OperatingSystem()</code>
+          <code class="lang-vb">OperatingSystem()</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Initializes a new instance of the OperatingSystem class.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public OperatingSystem()</code><code class="vb lang-vb">Public Sub New</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>
+    <header class="header" id="properties">
+      <h2>Properties
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListFamiliesResponse_OperatingSystem_IsActive">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">IsActive</code>
+          <code class="lang-vb">IsActive</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Optional. Indicates whether this operating system version is
+currently active for running a service. If an operating system
+version is active, you can manually configure your service to
+run on that version. An operating system version may be
+inactive for one of two reasons: 1. It is not yet active as it
+is in the process of being rolled out to Azure data centers.
+If your service is configured to use auto-upgrade, it will be
+upgraded to the new operating system version during the
+rollout. If you are manually configuring your operating system
+version, you can upgrade to the latest version once it becomes
+active. 2. It is no longer supported for running a service. In
+this case you will either need to manually configure your
+service to run on a newer version, or configure your service
+to use auto-upgrade to manage operating system upgrades.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public bool IsActive
+{
+
+    get;
+
+    set;
+
+}</code><code class="vb lang-vb">Public Property IsActive As Boolean</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+              <h6>Property Value</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Boolean</span></code>
+                      <code class="lang-vb"><span class="xref">System.Boolean</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListFamiliesResponse_OperatingSystem_IsDefault">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">IsDefault</code>
+          <code class="lang-vb">IsDefault</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Optional. Indicates whether this operating system version is
+the default version for a service that has not otherwise
+specified a particular version. The default operating system
+version is applied to services that are configured for
+auto-upgrade. An operating system family has exactly one
+default operating system version at any given time, for which
+the IsDefault element is set to true; for all other versions,
+IsDefault is set to false.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public bool IsDefault
+{
+
+    get;
+
+    set;
+
+}</code><code class="vb lang-vb">Public Property IsDefault As Boolean</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+              <h6>Property Value</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Boolean</span></code>
+                      <code class="lang-vb"><span class="xref">System.Boolean</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListFamiliesResponse_OperatingSystem_Label">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Label</code>
+          <code class="lang-vb">Label</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Optional. The label of the operating system version.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public string Label
+{
+
+    get;
+
+    set;
+
+}</code><code class="vb lang-vb">Public Property Label As String</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+              <h6>Property Value</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.String</span></code>
+                      <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_OperatingSystemListFamiliesResponse_OperatingSystem_Version">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Version</code>
+          <code class="lang-vb">Version</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Optional. The operating system version. This value corresponds
+to the configuration value for specifying that your service is
+to run on a particular version of the Azure guest operating
+system. See Configuring Settings for the Windows Azure Guest
+OS for additional details.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public string Version
+{
+
+    get;
+
+    set;
+
+}</code><code class="vb lang-vb">Public Property Version As String</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+              <h6>Property Value</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.String</span></code>
+                      <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

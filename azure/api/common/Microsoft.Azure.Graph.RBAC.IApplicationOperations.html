@@ -1,0 +1,452 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Graph_RBAC_IApplicationOperations">
+          <span class="lang-csharp">IApplicationOperations</span>
+          <span class="lang-vb">IApplicationOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Graph.RBAC.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for working with applications in Azure Active Directory
+Graph API.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for more
+information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IApplicationOperations_CreateAsync_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateAsync(ApplicationCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateAsync(ApplicationCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Create a new application.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for
+more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ApplicationGetResult&gt; CreateAsync(ApplicationCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateAsync(parameters As ApplicationCreateParameters, cancellationToken As CancellationToken) As Task(Of ApplicationGetResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationCreateParameters.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters">ApplicationCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationCreateParameters.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters">ApplicationCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters to create an application.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationGetResult">ApplicationGetResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationGetResult">ApplicationGetResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Get application information API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IApplicationOperations_DeleteAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Delete an application.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for
+more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteAsync(string applicationObjectId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(applicationObjectId As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>applicationObjectId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Application object id</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IApplicationOperations_GetAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Get an application by object Id.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for
+more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ApplicationGetResult&gt; GetAsync(string applicationObjectId, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(applicationObjectId As String, cancellationToken As CancellationToken) As Task(Of ApplicationGetResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>applicationObjectId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Application object id</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationGetResult">ApplicationGetResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationGetResult.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationGetResult">ApplicationGetResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for Get application information API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IApplicationOperations_ListAsync_Microsoft_Azure_Graph_RBAC_Models_ApplicationFilterParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(ApplicationFilterParameters, CancellationToken)</code>
+          <code class="lang-vb">ListAsync(ApplicationFilterParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Get applications by filters.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for
+more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ApplicationListResult&gt; ListAsync(ApplicationFilterParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(parameters As ApplicationFilterParameters, cancellationToken As CancellationToken) As Task(Of ApplicationListResult)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationFilterParameters.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationFilterParameters">ApplicationFilterParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationFilterParameters.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationFilterParameters">ApplicationFilterParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Application filter parameters</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationListResult">ApplicationListResult</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationListResult.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationListResult">ApplicationListResult</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Server response for List application information API call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Graph_RBAC_IApplicationOperations_UpdateAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateAsync(String, ApplicationCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateAsync(String, ApplicationCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Update existing application.  (see
+<a href="http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx">http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx</a> for
+more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UpdateAsync(string applicationObjectId, ApplicationCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateAsync(applicationObjectId As String, parameters As ApplicationCreateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>applicationObjectId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Application object id</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationCreateParameters.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters">ApplicationCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ApplicationCreateParameters.html#Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters">ApplicationCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters to create an application.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

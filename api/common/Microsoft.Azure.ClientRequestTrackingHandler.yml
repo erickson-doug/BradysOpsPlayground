@@ -1,0 +1,666 @@
+items:
+- uid: Microsoft.Azure.ClientRequestTrackingHandler
+  commentId: T:Microsoft.Azure.ClientRequestTrackingHandler
+  id: ClientRequestTrackingHandler
+  parent: Microsoft.Azure
+  children:
+  - Microsoft.Azure.ClientRequestTrackingHandler.#ctor(System.String)
+  - Microsoft.Azure.ClientRequestTrackingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  - Microsoft.Azure.ClientRequestTrackingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)
+  - Microsoft.Azure.ClientRequestTrackingHandler.TrackingId
+  langs:
+  - csharp
+  - vb
+  name: ClientRequestTrackingHandler
+  fullName: Microsoft.Azure.ClientRequestTrackingHandler
+  type: Class
+  source:
+    remote:
+      path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ClientRequestTrackingHandler
+    path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+    startLine: 20
+  assemblies:
+  - Microsoft.Azure.Common
+  namespace: Microsoft.Azure
+  syntax:
+    content: 'public class ClientRequestTrackingHandler : MessageProcessingHandler, IDisposable'
+    content.vb: >-
+      Public Class ClientRequestTrackingHandler
+
+          Inherits MessageProcessingHandler
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Net.Http.HttpMessageHandler
+  - System.Net.Http.DelegatingHandler
+  - System.Net.Http.MessageProcessingHandler
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Net.Http.MessageProcessingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  - System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+  - System.Net.Http.DelegatingHandler.InnerHandler
+  - System.Net.Http.HttpMessageHandler.Dispose
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.ClientRequestTrackingHandler.TrackingId
+  commentId: P:Microsoft.Azure.ClientRequestTrackingHandler.TrackingId
+  id: TrackingId
+  parent: Microsoft.Azure.ClientRequestTrackingHandler
+  langs:
+  - csharp
+  - vb
+  name: TrackingId
+  fullName: Microsoft.Azure.ClientRequestTrackingHandler.TrackingId
+  type: Property
+  source:
+    remote:
+      path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TrackingId
+    path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+    startLine: 23
+  assemblies:
+  - Microsoft.Azure.Common
+  namespace: Microsoft.Azure
+  syntax:
+    content: >-
+      public string TrackingId
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property TrackingId As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.ClientRequestTrackingHandler.#ctor(System.String)
+  commentId: M:Microsoft.Azure.ClientRequestTrackingHandler.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Azure.ClientRequestTrackingHandler
+  langs:
+  - csharp
+  - vb
+  name: ClientRequestTrackingHandler(String)
+  fullName: Microsoft.Azure.ClientRequestTrackingHandler.ClientRequestTrackingHandler(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+    startLine: 25
+  assemblies:
+  - Microsoft.Azure.Common
+  namespace: Microsoft.Azure
+  syntax:
+    content: public ClientRequestTrackingHandler(string trackingId)
+    content.vb: Public Sub New(trackingId As String)
+    parameters:
+    - id: trackingId
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.ClientRequestTrackingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.ClientRequestTrackingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  id: ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.ClientRequestTrackingHandler
+  langs:
+  - csharp
+  - vb
+  name: ProcessRequest(HttpRequestMessage, CancellationToken)
+  fullName: Microsoft.Azure.ClientRequestTrackingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProcessRequest
+    path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Azure.Common
+  namespace: Microsoft.Azure
+  syntax:
+    content: protected override HttpRequestMessage ProcessRequest(HttpRequestMessage request, CancellationToken cancellationToken)
+    content.vb: Protected Overrides Function ProcessRequest(request As HttpRequestMessage, cancellationToken As CancellationToken) As HttpRequestMessage
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Net.Http.HttpRequestMessage
+  overridden: System.Net.Http.MessageProcessingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Microsoft.Azure.ClientRequestTrackingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.ClientRequestTrackingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)
+  id: ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.ClientRequestTrackingHandler
+  langs:
+  - csharp
+  - vb
+  name: ProcessResponse(HttpResponseMessage, CancellationToken)
+  fullName: Microsoft.Azure.ClientRequestTrackingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProcessResponse
+    path: src/src/Common/Common/Handlers/ClientRequestTrackingHandler.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.Azure.Common
+  namespace: Microsoft.Azure
+  syntax:
+    content: protected override HttpResponseMessage ProcessResponse(HttpResponseMessage response, CancellationToken cancellationToken)
+    content.vb: Protected Overrides Function ProcessResponse(response As HttpResponseMessage, cancellationToken As CancellationToken) As HttpResponseMessage
+    parameters:
+    - id: response
+      type: System.Net.Http.HttpResponseMessage
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Net.Http.HttpResponseMessage
+  overridden: System.Net.Http.MessageProcessingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Microsoft.Azure
+  isExternal: false
+  name: Microsoft.Azure
+  fullName: Microsoft.Azure
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Net.Http.HttpMessageHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpMessageHandler
+  fullName: System.Net.Http.HttpMessageHandler
+- uid: System.Net.Http.DelegatingHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: DelegatingHandler
+  fullName: System.Net.Http.DelegatingHandler
+- uid: System.Net.Http.MessageProcessingHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: MessageProcessingHandler
+  fullName: System.Net.Http.MessageProcessingHandler
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System.Net.Http.MessageProcessingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.MessageProcessingHandler
+  isExternal: true
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  fullName: System.Net.Http.MessageProcessingHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.Net.Http.MessageProcessingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: SendAsync
+    fullName: System.Net.Http.MessageProcessingHandler.SendAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MessageProcessingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: SendAsync
+    fullName: System.Net.Http.MessageProcessingHandler.SendAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+  parent: System.Net.Http.DelegatingHandler
+  isExternal: true
+  name: Dispose(Boolean)
+  fullName: System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Net.Http.DelegatingHandler.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Net.Http.DelegatingHandler.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.DelegatingHandler.InnerHandler
+  parent: System.Net.Http.DelegatingHandler
+  isExternal: true
+  name: InnerHandler
+  fullName: System.Net.Http.DelegatingHandler.InnerHandler
+- uid: System.Net.Http.HttpMessageHandler.Dispose
+  parent: System.Net.Http.HttpMessageHandler
+  isExternal: true
+  name: Dispose()
+  fullName: System.Net.Http.HttpMessageHandler.Dispose()
+  spec.csharp:
+  - uid: System.Net.Http.HttpMessageHandler.Dispose
+    name: Dispose
+    fullName: System.Net.Http.HttpMessageHandler.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpMessageHandler.Dispose
+    name: Dispose
+    fullName: System.Net.Http.HttpMessageHandler.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Net.Http.MessageProcessingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.MessageProcessingHandler
+  isExternal: true
+  name: ProcessRequest(HttpRequestMessage, CancellationToken)
+  fullName: System.Net.Http.MessageProcessingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.Net.Http.MessageProcessingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: ProcessRequest
+    fullName: System.Net.Http.MessageProcessingHandler.ProcessRequest
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MessageProcessingHandler.ProcessRequest(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: ProcessRequest
+    fullName: System.Net.Http.MessageProcessingHandler.ProcessRequest
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Net.Http.MessageProcessingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.MessageProcessingHandler
+  isExternal: true
+  name: ProcessResponse(HttpResponseMessage, CancellationToken)
+  fullName: System.Net.Http.MessageProcessingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.Net.Http.MessageProcessingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)
+    name: ProcessResponse
+    fullName: System.Net.Http.MessageProcessingHandler.ProcessResponse
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MessageProcessingHandler.ProcessResponse(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken)
+    name: ProcessResponse
+    fullName: System.Net.Http.MessageProcessingHandler.ProcessResponse
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpResponseMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpResponseMessage
+  fullName: System.Net.Http.HttpResponseMessage

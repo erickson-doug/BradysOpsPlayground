@@ -1,0 +1,579 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_IServiceCertificateOperations">
+          <span class="lang-csharp">IServiceCertificateOperations</span>
+          <span class="lang-vb">IServiceCertificateOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for managing service certificates for your subscription.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee795178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee795178.aspx</a> for
+more information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IServiceCertificateOperations_BeginCreatingAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreatingAsync(String, ServiceCertificateCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginCreatingAsync(String, ServiceCertificateCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Creating Service Certificate operation adds a certificate
+to a hosted service. This operation is an asynchronous operation.
+To determine whether the management service has finished
+processing the request, call Get Operation Status.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460817.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460817.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginCreatingAsync(string serviceName, ServiceCertificateCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginCreatingAsync(serviceName As String, parameters As ServiceCertificateCreateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The DNS prefix name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateCreateParameters">ServiceCertificateCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateCreateParameters">ServiceCertificateCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Begin Creating Service Certificate
+operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IServiceCertificateOperations_BeginDeletingAsync_Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateDeleteParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeletingAsync(ServiceCertificateDeleteParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginDeletingAsync(ServiceCertificateDeleteParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Deleting Service Certificate operation deletes a service
+certificate from the certificate store of a hosted service. This
+operation is an asynchronous operation. To determine whether the
+management service has finished processing the request, call Get
+Operation Status.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460803.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460803.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginDeletingAsync(ServiceCertificateDeleteParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginDeletingAsync(parameters As ServiceCertificateDeleteParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateDeleteParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateDeleteParameters">ServiceCertificateDeleteParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateDeleteParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateDeleteParameters">ServiceCertificateDeleteParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Begin Deleting Service Certificate
+operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IServiceCertificateOperations_CreateAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateAsync(String, ServiceCertificateCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateAsync(String, ServiceCertificateCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create Service Certificate operation adds a certificate to a
+hosted service. This operation is an asynchronous operation. To
+determine whether the management service has finished processing
+the request, call Get Operation Status.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460817.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460817.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; CreateAsync(string serviceName, ServiceCertificateCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateAsync(serviceName As String, parameters As ServiceCertificateCreateParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The DNS prefix name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateCreateParameters">ServiceCertificateCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateCreateParameters">ServiceCertificateCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Create Service Certificate operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IServiceCertificateOperations_DeleteAsync_Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateDeleteParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(ServiceCertificateDeleteParameters, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(ServiceCertificateDeleteParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete Service Certificate operation deletes a service
+certificate from the certificate store of a hosted service. This
+operation is an asynchronous operation. To determine whether the
+management service has finished processing the request, call Get
+Operation Status.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460803.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460803.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; DeleteAsync(ServiceCertificateDeleteParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(parameters As ServiceCertificateDeleteParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateDeleteParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateDeleteParameters">ServiceCertificateDeleteParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateDeleteParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateDeleteParameters">ServiceCertificateDeleteParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Delete Service Certificate operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IServiceCertificateOperations_GetAsync_Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateGetParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(ServiceCertificateGetParameters, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(ServiceCertificateGetParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Service Certificate operation returns the public data for
+the specified X.509 certificate associated with a hosted service.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460792.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460792.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ServiceCertificateGetResponse&gt; GetAsync(ServiceCertificateGetParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(parameters As ServiceCertificateGetParameters, cancellationToken As CancellationToken) As Task(Of ServiceCertificateGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateGetParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateGetParameters">ServiceCertificateGetParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateGetParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateGetParameters">ServiceCertificateGetParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Get Service Certificate operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateGetResponse">ServiceCertificateGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateGetResponse">ServiceCertificateGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Service Certificate operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IServiceCertificateOperations_ListAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(String, CancellationToken)</code>
+          <code class="lang-vb">ListAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List Service Certificates operation lists all of the service
+certificates associated with the specified hosted service.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154105.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154105.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ServiceCertificateListResponse&gt; ListAsync(string serviceName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of ServiceCertificateListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The DNS prefix name of your hosted service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateListResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateListResponse">ServiceCertificateListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.ServiceCertificateListResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_ServiceCertificateListResponse">ServiceCertificateListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The List Service Certificates operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

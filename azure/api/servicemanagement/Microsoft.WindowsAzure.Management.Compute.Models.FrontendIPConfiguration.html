@@ -1,0 +1,269 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_Models_FrontendIPConfiguration">
+          <span class="lang-csharp">FrontendIPConfiguration</span>
+          <span class="lang-vb">FrontendIPConfiguration</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">FrontendIPConfiguration</code>
+                <code class="lang-vb">FrontendIPConfiguration</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The configuration for the virtual IP address (VIP) this load balancer
+provides.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="constructors">
+      <h2>Constructors
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_FrontendIPConfiguration__ctor">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">FrontendIPConfiguration()</code>
+          <code class="lang-vb">FrontendIPConfiguration()</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Initializes a new instance of the FrontendIPConfiguration class.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public FrontendIPConfiguration()</code><code class="vb lang-vb">Public Sub New</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>
+    <header class="header" id="properties">
+      <h2>Properties
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_FrontendIPConfiguration_StaticVirtualNetworkIPAddress">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StaticVirtualNetworkIPAddress</code>
+          <code class="lang-vb">StaticVirtualNetworkIPAddress</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Optional. If the deployment exists inside a virtual network, a
+specific address from the load balancer subnet can be specified.
+The VIP for the load balancer will then be this specific IP
+address. If a static virtual network IP address is provided, the
+SubnetName element of the load balancer must be specified as well.
+If the deployment exists outside of a virtual network, no static
+virtual network IP address can be specified.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public string StaticVirtualNetworkIPAddress
+{
+
+    get;
+
+    set;
+
+}</code><code class="vb lang-vb">Public Property StaticVirtualNetworkIPAddress As String</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+              <h6>Property Value</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.String</span></code>
+                      <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_FrontendIPConfiguration_SubnetName">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">SubnetName</code>
+          <code class="lang-vb">SubnetName</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Optional. If the deployment exists inside a virtual network, a
+subnet of that virtual network must be specified for the load
+balancer. The VIP managed by the load balancer will then be an IP
+address out of this subnet. If the deployment exists outside of a
+virtual network, no subnet can be specified and the private VIP
+will be an IP address from the general private address pool.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public string SubnetName
+{
+
+    get;
+
+    set;
+
+}</code><code class="vb lang-vb">Public Property SubnetName As String</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+              <h6>Property Value</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.String</span></code>
+                      <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_Models_FrontendIPConfiguration_Type">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Type</code>
+          <code class="lang-vb">Type</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Optional. The type of the VIP provided by this load balancer.
+Currently, only &#39;Private&#39; is supported. This will create load
+balancing services on a private VIP.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public string Type
+{
+
+    get;
+
+    set;
+
+}</code><code class="vb lang-vb">Public Property Type As String</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+              <h6>Property Value</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.String</span></code>
+                      <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

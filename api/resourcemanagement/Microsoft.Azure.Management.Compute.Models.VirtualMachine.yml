@@ -1,0 +1,677 @@
+items:
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  commentId: T:Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  id: VirtualMachine
+  parent: Microsoft.Azure.Management.Compute.Models
+  children:
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.#ctor
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.#ctor(System.String)
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.AvailabilitySetReference
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.DiagnosticsProfile
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.Extensions
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.HardwareProfile
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.InstanceView
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.NetworkProfile
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.OSProfile
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.Plan
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.ProvisioningState
+  - Microsoft.Azure.Management.Compute.Models.VirtualMachine.StorageProfile
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachine
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VirtualMachine
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nDescribes a Virtual Machine.\r\n"
+  example: []
+  syntax:
+    content: 'public class VirtualMachine : ResourceBaseExtended'
+    content.vb: >-
+      Public Class VirtualMachine
+
+          Inherits ResourceBaseExtended
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.AvailabilitySetReference
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.AvailabilitySetReference
+  id: AvailabilitySetReference
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: AvailabilitySetReference
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.AvailabilitySetReference
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AvailabilitySetReference
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets or sets the reference Id of the availailbity set to\r\nwhich this virtual machine belongs.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public AvailabilitySetReference AvailabilitySetReference
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AvailabilitySetReference As AvailabilitySetReference
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.Models.AvailabilitySetReference
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.DiagnosticsProfile
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.DiagnosticsProfile
+  id: DiagnosticsProfile
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticsProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.DiagnosticsProfile
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DiagnosticsProfile
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets or sets the diagnostics profile.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DiagnosticsProfile DiagnosticsProfile
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DiagnosticsProfile As DiagnosticsProfile
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.Models.DiagnosticsProfile
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.Extensions
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.Extensions
+  id: Extensions
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: Extensions
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.Extensions
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Extensions
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets the virtual machine child extension resources.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<VirtualMachineExtension> Extensions
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Extensions As IList(Of VirtualMachineExtension)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Models.VirtualMachineExtension}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.HardwareProfile
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.HardwareProfile
+  id: HardwareProfile
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: HardwareProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.HardwareProfile
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: HardwareProfile
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets or sets the hardware profile.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public HardwareProfile HardwareProfile
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property HardwareProfile As HardwareProfile
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.Models.HardwareProfile
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.InstanceView
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.InstanceView
+  id: InstanceView
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: InstanceView
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.InstanceView
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: InstanceView
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets the virtual machine instance view.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public VirtualMachineInstanceView InstanceView
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property InstanceView As VirtualMachineInstanceView
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.Models.VirtualMachineInstanceView
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.NetworkProfile
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.NetworkProfile
+  id: NetworkProfile
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: NetworkProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.NetworkProfile
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: NetworkProfile
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets or sets the network profile.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public NetworkProfile NetworkProfile
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NetworkProfile As NetworkProfile
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.Models.NetworkProfile
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.OSProfile
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.OSProfile
+  id: OSProfile
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: OSProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.OSProfile
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: OSProfile
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 106
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets or sets the OS profile.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public OSProfile OSProfile
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property OSProfile As OSProfile
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.Models.OSProfile
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.Plan
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.Plan
+  id: Plan
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: Plan
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.Plan
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Plan
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets or sets the purchase plan when deploying virtual\r\nmachine from VM Marketplace images.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Plan Plan
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Plan As Plan
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.Models.Plan
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.ProvisioningState
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.ProvisioningState
+  id: ProvisioningState
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: ProvisioningState
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.ProvisioningState
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProvisioningState
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 130
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets or sets the provisioning state, which only appears\r\nin the response.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ProvisioningState
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProvisioningState As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.StorageProfile
+  commentId: P:Microsoft.Azure.Management.Compute.Models.VirtualMachine.StorageProfile
+  id: StorageProfile
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: StorageProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.StorageProfile
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StorageProfile
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 141
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nOptional. Gets or sets the storage profile.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public StorageProfile StorageProfile
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property StorageProfile As StorageProfile
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Compute.Models.StorageProfile
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.#ctor
+  commentId: M:Microsoft.Azure.Management.Compute.Models.VirtualMachine.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachine()
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.VirtualMachine()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 150
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nInitializes a new instance of the VirtualMachine class.\r\n"
+  example: []
+  syntax:
+    content: public VirtualMachine()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachine.#ctor(System.String)
+  commentId: M:Microsoft.Azure.Management.Compute.Models.VirtualMachine.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Azure.Management.Compute.Models.VirtualMachine
+  langs:
+  - csharp
+  - vb
+  name: VirtualMachine(String)
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachine.VirtualMachine(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/Models/VirtualMachine.cs
+    startLine: 158
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute.Models
+  summary: "\r\nInitializes a new instance of the VirtualMachine class with\r\nrequired arguments.\r\n"
+  example: []
+  syntax:
+    content: public VirtualMachine(string location)
+    content.vb: Public Sub New(location As String)
+    parameters:
+    - id: location
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Compute.Models
+  fullName: Microsoft.Azure.Management.Compute.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Compute.Models.AvailabilitySetReference
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: AvailabilitySetReference
+  fullName: Microsoft.Azure.Management.Compute.Models.AvailabilitySetReference
+- uid: Microsoft.Azure.Management.Compute.Models.DiagnosticsProfile
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: DiagnosticsProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.DiagnosticsProfile
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Models.VirtualMachineExtension}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<VirtualMachineExtension>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Management.Compute.Models.VirtualMachineExtension>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Management.Compute.Models.VirtualMachineExtension)
+  name.vb: IList(Of VirtualMachineExtension)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtension
+    name: VirtualMachineExtension
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtension
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtension
+    name: VirtualMachineExtension
+    fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineExtension
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Azure.Management.Compute.Models.HardwareProfile
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: HardwareProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.HardwareProfile
+- uid: Microsoft.Azure.Management.Compute.Models.VirtualMachineInstanceView
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: VirtualMachineInstanceView
+  fullName: Microsoft.Azure.Management.Compute.Models.VirtualMachineInstanceView
+- uid: Microsoft.Azure.Management.Compute.Models.NetworkProfile
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: NetworkProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.NetworkProfile
+- uid: Microsoft.Azure.Management.Compute.Models.OSProfile
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: OSProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.OSProfile
+- uid: Microsoft.Azure.Management.Compute.Models.Plan
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: Plan
+  fullName: Microsoft.Azure.Management.Compute.Models.Plan
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Compute.Models.StorageProfile
+  parent: Microsoft.Azure.Management.Compute.Models
+  isExternal: false
+  name: StorageProfile
+  fullName: Microsoft.Azure.Management.Compute.Models.StorageProfile

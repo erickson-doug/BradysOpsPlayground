@@ -1,0 +1,1457 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions">
+          <span class="lang-csharp">LoadBalancerOperationsExtensions</span>
+          <span class="lang-vb">LoadBalancerOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">LoadBalancerOperationsExtensions</code>
+                <code class="lang-vb">LoadBalancerOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Service Management API provides programmatic access to much of the
+functionality available through the Management Portal. The Service
+Management API is a REST API. All API operations are performed over
+SSL, and are mutually authenticated using X.509 v3 certificates.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460799.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460799.aspx</a> for
+more information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_BeginCreating_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreating(ILoadBalancerOperations, String, String, LoadBalancerCreateParameters)</code>
+          <code class="lang-vb">BeginCreating(ILoadBalancerOperations, String, String, LoadBalancerCreateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Add an internal load balancer to a an existing deployment. When
+used by an input endpoint, the internal load balancer will provide
+an additional private VIP that can be used for load balancing to
+the roles in this deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static OperationStatusResponse BeginCreating(ILoadBalancerOperations operations, string serviceName, string deploymentName, LoadBalancerCreateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreating(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, parameters As LoadBalancerCreateParameters) As OperationStatusResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters">LoadBalancerCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters">LoadBalancerCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the Create Load Balancer operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">OperationStatusResponse</span></code>
+                      <code class="lang-vb"><span class="xref">OperationStatusResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_BeginCreatingAsync_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreatingAsync(ILoadBalancerOperations, String, String, LoadBalancerCreateParameters)</code>
+          <code class="lang-vb">BeginCreatingAsync(ILoadBalancerOperations, String, String, LoadBalancerCreateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Add an internal load balancer to a an existing deployment. When
+used by an input endpoint, the internal load balancer will provide
+an additional private VIP that can be used for load balancing to
+the roles in this deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;OperationStatusResponse&gt; BeginCreatingAsync(ILoadBalancerOperations operations, string serviceName, string deploymentName, LoadBalancerCreateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreatingAsync(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, parameters As LoadBalancerCreateParameters) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters">LoadBalancerCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters">LoadBalancerCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the Create Load Balancer operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_BeginDeleting_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeleting(ILoadBalancerOperations, String, String, String)</code>
+          <code class="lang-vb">BeginDeleting(ILoadBalancerOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Delete an internal load balancer from the deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static OperationStatusResponse BeginDeleting(ILoadBalancerOperations operations, string serviceName, string deploymentName, string loadBalancerName)</code><code class="vb lang-vb">Public Shared Function BeginDeleting(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, loadBalancerName As String) As OperationStatusResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>loadBalancerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the load balancer.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">OperationStatusResponse</span></code>
+                      <code class="lang-vb"><span class="xref">OperationStatusResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_BeginDeletingAsync_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeletingAsync(ILoadBalancerOperations, String, String, String)</code>
+          <code class="lang-vb">BeginDeletingAsync(ILoadBalancerOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Delete an internal load balancer from the deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;OperationStatusResponse&gt; BeginDeletingAsync(ILoadBalancerOperations operations, string serviceName, string deploymentName, string loadBalancerName)</code><code class="vb lang-vb">Public Shared Function BeginDeletingAsync(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, loadBalancerName As String) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>loadBalancerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the load balancer.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_BeginUpdating_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginUpdating(ILoadBalancerOperations, String, String, String, LoadBalancerUpdateParameters)</code>
+          <code class="lang-vb">BeginUpdating(ILoadBalancerOperations, String, String, String, LoadBalancerUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Updates an internal load balancer associated with an existing
+deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static OperationStatusResponse BeginUpdating(ILoadBalancerOperations operations, string serviceName, string deploymentName, string loadBalancerName, LoadBalancerUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginUpdating(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, loadBalancerName As String, parameters As LoadBalancerUpdateParameters) As OperationStatusResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>loadBalancerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the loadBalancer.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters">LoadBalancerUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters">LoadBalancerUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the Update Load Balancer operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">OperationStatusResponse</span></code>
+                      <code class="lang-vb"><span class="xref">OperationStatusResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_BeginUpdatingAsync_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginUpdatingAsync(ILoadBalancerOperations, String, String, String, LoadBalancerUpdateParameters)</code>
+          <code class="lang-vb">BeginUpdatingAsync(ILoadBalancerOperations, String, String, String, LoadBalancerUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Updates an internal load balancer associated with an existing
+deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;OperationStatusResponse&gt; BeginUpdatingAsync(ILoadBalancerOperations operations, string serviceName, string deploymentName, string loadBalancerName, LoadBalancerUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginUpdatingAsync(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, loadBalancerName As String, parameters As LoadBalancerUpdateParameters) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>loadBalancerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the loadBalancer.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters">LoadBalancerUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters">LoadBalancerUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the Update Load Balancer operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_Create_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Create(ILoadBalancerOperations, String, String, LoadBalancerCreateParameters)</code>
+          <code class="lang-vb">Create(ILoadBalancerOperations, String, String, LoadBalancerCreateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Add an internal load balancer to a an existing deployment. When
+used by an input endpoint, the internal load balancer will provide
+an additional private VIP that can be used for load balancing to
+the roles in this deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static OperationStatusResponse Create(ILoadBalancerOperations operations, string serviceName, string deploymentName, LoadBalancerCreateParameters parameters)</code><code class="vb lang-vb">Public Shared Function Create(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, parameters As LoadBalancerCreateParameters) As OperationStatusResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters">LoadBalancerCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters">LoadBalancerCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the Create Load Balancer operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">OperationStatusResponse</span></code>
+                      <code class="lang-vb"><span class="xref">OperationStatusResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_CreateAsync_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateAsync(ILoadBalancerOperations, String, String, LoadBalancerCreateParameters)</code>
+          <code class="lang-vb">CreateAsync(ILoadBalancerOperations, String, String, LoadBalancerCreateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Add an internal load balancer to a an existing deployment. When
+used by an input endpoint, the internal load balancer will provide
+an additional private VIP that can be used for load balancing to
+the roles in this deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;OperationStatusResponse&gt; CreateAsync(ILoadBalancerOperations operations, string serviceName, string deploymentName, LoadBalancerCreateParameters parameters)</code><code class="vb lang-vb">Public Shared Function CreateAsync(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, parameters As LoadBalancerCreateParameters) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters">LoadBalancerCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerCreateParameters">LoadBalancerCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the Create Load Balancer operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_Delete_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Delete(ILoadBalancerOperations, String, String, String)</code>
+          <code class="lang-vb">Delete(ILoadBalancerOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Delete an internal load balancer from the deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse Delete(ILoadBalancerOperations operations, string serviceName, string deploymentName, string loadBalancerName)</code><code class="vb lang-vb">Public Shared Function Delete(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, loadBalancerName As String) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>loadBalancerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the load balancer.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_DeleteAsync_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(ILoadBalancerOperations, String, String, String)</code>
+          <code class="lang-vb">DeleteAsync(ILoadBalancerOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Delete an internal load balancer from the deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; DeleteAsync(ILoadBalancerOperations operations, string serviceName, string deploymentName, string loadBalancerName)</code><code class="vb lang-vb">Public Shared Function DeleteAsync(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, loadBalancerName As String) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>loadBalancerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the load balancer.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_Update_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Update(ILoadBalancerOperations, String, String, String, LoadBalancerUpdateParameters)</code>
+          <code class="lang-vb">Update(ILoadBalancerOperations, String, String, String, LoadBalancerUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Updates an internal load balancer associated with an existing
+deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static OperationStatusResponse Update(ILoadBalancerOperations operations, string serviceName, string deploymentName, string loadBalancerName, LoadBalancerUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function Update(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, loadBalancerName As String, parameters As LoadBalancerUpdateParameters) As OperationStatusResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>loadBalancerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the loadBalancer.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters">LoadBalancerUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters">LoadBalancerUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the Update Load Balancer operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">OperationStatusResponse</span></code>
+                      <code class="lang-vb"><span class="xref">OperationStatusResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_LoadBalancerOperationsExtensions_UpdateAsync_Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateAsync(ILoadBalancerOperations, String, String, String, LoadBalancerUpdateParameters)</code>
+          <code class="lang-vb">UpdateAsync(ILoadBalancerOperations, String, String, String, LoadBalancerUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Updates an internal load balancer associated with an existing
+deployment.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;OperationStatusResponse&gt; UpdateAsync(ILoadBalancerOperations operations, string serviceName, string deploymentName, string loadBalancerName, LoadBalancerUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function UpdateAsync(operations As ILoadBalancerOperations, serviceName As String, deploymentName As String, loadBalancerName As String, parameters As LoadBalancerUpdateParameters) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.html#Microsoft_WindowsAzure_Management_Compute_ILoadBalancerOperations">ILoadBalancerOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.WindowsAzure.Management.Compute.ILoadBalancerOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>loadBalancerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the loadBalancer.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters">LoadBalancerUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.LoadBalancerUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_LoadBalancerUpdateParameters">LoadBalancerUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the Update Load Balancer operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

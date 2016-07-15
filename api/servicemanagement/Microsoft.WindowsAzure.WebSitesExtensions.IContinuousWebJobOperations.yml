@@ -1,0 +1,579 @@
+items:
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  commentId: T:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  id: IContinuousWebJobOperations
+  parent: Microsoft.WindowsAzure.WebSitesExtensions
+  children:
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.GetSettingsAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.ListAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.SetSettingsAsync(System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.StartAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.StopAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.UploadFileAsync(System.String,System.String,System.IO.Stream,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.UploadZipAsync(System.String,System.String,System.IO.Stream,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IContinuousWebJobOperations
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IContinuousWebJobOperations
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nOperations for managing continuous WebJobs.\r\n"
+  example: []
+  syntax:
+    content: public interface IContinuousWebJobOperations
+    content.vb: Public Interface IContinuousWebJobOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.DeleteAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nDelete a continuous job.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string jobName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nThe continuous WebJob name.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.GetAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGet a continuous WebJob.\r\n"
+  example: []
+  syntax:
+    content: Task<ContinuousWebJobGetResponse> GetAsync(string jobName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of ContinuousWebJobGetResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nThe continuous WebJob name.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse}
+      description: "\r\nThe get continuous WebJob Operation Response.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.GetSettingsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.GetSettingsAsync(System.String,System.Threading.CancellationToken)
+  id: GetSettingsAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: GetSettingsAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.GetSettingsAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetSettingsAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nGet the settings of a continuous WebJob.\r\n"
+  example: []
+  syntax:
+    content: Task<ContinuousWebJobSettingsResponse> GetSettingsAsync(string jobName, CancellationToken cancellationToken)
+    content.vb: Function GetSettingsAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of ContinuousWebJobSettingsResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nThe continuous WebJob name.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse}
+      description: "\r\nThe continuous WebJob settings operation response.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 88
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nList the continuous web jobs.\r\n"
+  example: []
+  syntax:
+    content: Task<ContinuousWebJobListResponse> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of ContinuousWebJobListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse}
+      description: "\r\nThe list of continuous WebJobs operation response.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.SetSettingsAsync(System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.SetSettingsAsync(System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters,System.Threading.CancellationToken)
+  id: SetSettingsAsync(System.String,Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: SetSettingsAsync(String, ContinuousWebJobSettingsUpdateParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.SetSettingsAsync(System.String, Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SetSettingsAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 107
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nSet the settings of a continuous WebJob (will replace the current\r\nsettings of the WebJob).\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> SetSettingsAsync(string jobName, ContinuousWebJobSettingsUpdateParameters settings, CancellationToken cancellationToken)
+    content.vb: Function SetSettingsAsync(jobName As String, settings As ContinuousWebJobSettingsUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nThe continuous WebJob name.\r\n"
+    - id: settings
+      type: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters
+      description: "\r\nThe continuous WebJob settings.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.StartAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.StartAsync(System.String,System.Threading.CancellationToken)
+  id: StartAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: StartAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.StartAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StartAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nStart a continuous WebJob.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> StartAsync(string jobName, CancellationToken cancellationToken)
+    content.vb: Function StartAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nThe WebJob name.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.StopAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.StopAsync(System.String,System.Threading.CancellationToken)
+  id: StopAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: StopAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.StopAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StopAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 137
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nStop a continuous WebJob.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> StopAsync(string jobName, CancellationToken cancellationToken)
+    content.vb: Function StopAsync(jobName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nThe WebJob name.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.UploadFileAsync(System.String,System.String,System.IO.Stream,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.UploadFileAsync(System.String,System.String,System.IO.Stream,System.Threading.CancellationToken)
+  id: UploadFileAsync(System.String,System.String,System.IO.Stream,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: UploadFileAsync(String, String, Stream, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.UploadFileAsync(System.String, System.String, System.IO.Stream, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UploadFileAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 159
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nCreate or replace a continuous WebJob with a script file (.exe,\r\n.bat, .php, .js...).\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> UploadFileAsync(string jobName, string fileName, Stream jobContent, CancellationToken cancellationToken)
+    content.vb: Function UploadFileAsync(jobName As String, fileName As String, jobContent As Stream, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nThe continuous WebJob name.\r\n"
+    - id: fileName
+      type: System.String
+      description: "\r\nThe file name.\r\n"
+    - id: jobContent
+      type: System.IO.Stream
+      description: "\r\nThe file content.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.UploadZipAsync(System.String,System.String,System.IO.Stream,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.UploadZipAsync(System.String,System.String,System.IO.Stream,System.Threading.CancellationToken)
+  id: UploadZipAsync(System.String,System.String,System.IO.Stream,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations
+  langs:
+  - csharp
+  - vb
+  name: UploadZipAsync(String, String, Stream, CancellationToken)
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.IContinuousWebJobOperations.UploadZipAsync(System.String, System.String, System.IO.Stream, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UploadZipAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/IContinuousWebJobOperations.cs
+    startLine: 181
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.WebSitesExtensions
+  summary: "\r\nCreate or replace a continuous WebJob with a zip file (containing\r\nthe WebJob binaries).\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> UploadZipAsync(string jobName, string fileName, Stream jobContent, CancellationToken cancellationToken)
+    content.vb: Function UploadZipAsync(jobName As String, fileName As String, jobContent As Stream, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nThe continuous WebJob name.\r\n"
+    - id: fileName
+      type: System.String
+      description: "\r\nThe zip file name.\r\n"
+    - id: jobContent
+      type: System.IO.Stream
+      description: "\r\nThe zip file content.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.WindowsAzure.WebSitesExtensions
+  isExternal: false
+  name: Microsoft.WindowsAzure.WebSitesExtensions
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ContinuousWebJobGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse)
+  name.vb: Task(Of ContinuousWebJobGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse
+    name: ContinuousWebJobGetResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse
+    name: ContinuousWebJobGetResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ContinuousWebJobSettingsResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse)
+  name.vb: Task(Of ContinuousWebJobSettingsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse
+    name: ContinuousWebJobSettingsResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse
+    name: ContinuousWebJobSettingsResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ContinuousWebJobListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse)
+  name.vb: Task(Of ContinuousWebJobListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse
+    name: ContinuousWebJobListResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse
+    name: ContinuousWebJobListResponse
+    fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters
+  parent: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: ContinuousWebJobSettingsUpdateParameters
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models.ContinuousWebJobSettingsUpdateParameters
+- uid: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  isExternal: false
+  name: Microsoft.WindowsAzure.WebSitesExtensions.Models
+  fullName: Microsoft.WindowsAzure.WebSitesExtensions.Models
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO

@@ -1,0 +1,685 @@
+items:
+- uid: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  id: SourceControlOperationsExtensions
+  parent: Microsoft.Azure.Management.WebSites
+  children:
+  - Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.Get(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String)
+  - Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.GetAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String)
+  - Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.List(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  - Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.ListAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  - Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.Update(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String,Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  - Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String,Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  langs:
+  - csharp
+  - vb
+  name: SourceControlOperationsExtensions
+  fullName: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SourceControlOperationsExtensions
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites
+  summary: "\r\nThe Windows Azure Web Sites management API provides a RESTful set of\r\nweb services that interact with Windows Azure Web Sites service to\r\nmanage your web sites. The API has entities that capture the\r\nrelationship between an end user and the Windows Azure Web Sites\r\nservice.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public class SourceControlOperationsExtensions
+    content.vb: Public Class SourceControlOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.Get(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.Get(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String)
+  id: Get(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String)
+  parent: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(ISourceControlOperations, String)
+  fullName: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.Get(Microsoft.Azure.Management.WebSites.ISourceControlOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites
+  summary: "\r\nGet user source control\r\n"
+  example: []
+  syntax:
+    content: public static SourceControlGetResponse Get(ISourceControlOperations operations, string name)
+    content.vb: Public Shared Function Get(operations As ISourceControlOperations, name As String) As SourceControlGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.WebSites.ISourceControlOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.WebSites.ISourceControlOperations.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the source control (GitHub, Bitbucket,\r\nCodePlex or Dropbox)\r\n"
+    return:
+      type: Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse
+      description: "\r\nThe get source control operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.GetAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.GetAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String)
+  id: GetAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String)
+  parent: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(ISourceControlOperations, String)
+  fullName: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.GetAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites
+  summary: "\r\nGet user source control\r\n"
+  example: []
+  syntax:
+    content: public static Task<SourceControlGetResponse> GetAsync(ISourceControlOperations operations, string name)
+    content.vb: Public Shared Function GetAsync(operations As ISourceControlOperations, name As String) As Task(Of SourceControlGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.WebSites.ISourceControlOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.WebSites.ISourceControlOperations.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the source control (GitHub, Bitbucket,\r\nCodePlex or Dropbox)\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse}
+      description: "\r\nThe get source control operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.List(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  commentId: M:Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.List(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  id: List(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  parent: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(ISourceControlOperations)
+  fullName: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.List(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites
+  summary: "\r\nList source controls for user.\r\n"
+  example: []
+  syntax:
+    content: public static SourceControlListResponse List(ISourceControlOperations operations)
+    content.vb: Public Shared Function List(operations As ISourceControlOperations) As SourceControlListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.WebSites.ISourceControlOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.WebSites.ISourceControlOperations.\r\n"
+    return:
+      type: Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse
+      description: "\r\nThe list source controls operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.ListAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  commentId: M:Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.ListAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  id: ListAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  parent: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(ISourceControlOperations)
+  fullName: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.ListAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+    startLine: 112
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites
+  summary: "\r\nList source controls for user.\r\n"
+  example: []
+  syntax:
+    content: public static Task<SourceControlListResponse> ListAsync(ISourceControlOperations operations)
+    content.vb: Public Shared Function ListAsync(operations As ISourceControlOperations) As Task(Of SourceControlListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.WebSites.ISourceControlOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.WebSites.ISourceControlOperations.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse}
+      description: "\r\nThe list source controls operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.Update(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String,Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  commentId: M:Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.Update(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String,Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  id: Update(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String,Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  parent: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Update(ISourceControlOperations, String, SourceControlUpdateParameters)
+  fullName: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.Update(Microsoft.Azure.Management.WebSites.ISourceControlOperations, System.String, Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Update
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites
+  summary: "\r\nUpdate source control for user.\r\n"
+  example: []
+  syntax:
+    content: public static SourceControlUpdateResponse Update(ISourceControlOperations operations, string name, SourceControlUpdateParameters parameters)
+    content.vb: Public Shared Function Update(operations As ISourceControlOperations, name As String, parameters As SourceControlUpdateParameters) As SourceControlUpdateResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.WebSites.ISourceControlOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.WebSites.ISourceControlOperations.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the source control (can be: GitHub,\r\nBitbucket, CodePlex, Dropbox)\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters
+      description: "\r\nRequired. Parameters supplied to the Update Source Control\r\noperation.\r\n"
+    return:
+      type: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse
+      description: "\r\nThe update source control operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String,Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  commentId: M:Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String,Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  id: UpdateAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations,System.String,Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  parent: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(ISourceControlOperations, String, SourceControlUpdateParameters)
+  fullName: Microsoft.Azure.Management.WebSites.SourceControlOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.WebSites.ISourceControlOperations, System.String, Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UpdateAsync
+    path: src/src/ResourceManagement/WebSite/WebSiteManagement/Generated/SourceControlOperationsExtensions.cs
+    startLine: 162
+  assemblies:
+  - Microsoft.Azure.Management.WebSites
+  namespace: Microsoft.Azure.Management.WebSites
+  summary: "\r\nUpdate source control for user.\r\n"
+  example: []
+  syntax:
+    content: public static Task<SourceControlUpdateResponse> UpdateAsync(ISourceControlOperations operations, string name, SourceControlUpdateParameters parameters)
+    content.vb: Public Shared Function UpdateAsync(operations As ISourceControlOperations, name As String, parameters As SourceControlUpdateParameters) As Task(Of SourceControlUpdateResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.WebSites.ISourceControlOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.WebSites.ISourceControlOperations.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the source control (can be: GitHub,\r\nBitbucket, CodePlex, Dropbox)\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters
+      description: "\r\nRequired. Parameters supplied to the Update Source Control\r\noperation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse}
+      description: "\r\nThe update source control operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.WebSites
+  isExternal: false
+  name: Microsoft.Azure.Management.WebSites
+  fullName: Microsoft.Azure.Management.WebSites
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.WebSites.ISourceControlOperations
+  parent: Microsoft.Azure.Management.WebSites
+  isExternal: false
+  name: ISourceControlOperations
+  fullName: Microsoft.Azure.Management.WebSites.ISourceControlOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse
+  parent: Microsoft.Azure.Management.WebSites.Models
+  isExternal: false
+  name: SourceControlGetResponse
+  fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse
+- uid: Microsoft.Azure.Management.WebSites.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.WebSites.Models
+  fullName: Microsoft.Azure.Management.WebSites.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SourceControlGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse)
+  name.vb: Task(Of SourceControlGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse
+    name: SourceControlGetResponse
+    fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse
+    name: SourceControlGetResponse
+    fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse
+  parent: Microsoft.Azure.Management.WebSites.Models
+  isExternal: false
+  name: SourceControlListResponse
+  fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SourceControlListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse)
+  name.vb: Task(Of SourceControlListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse
+    name: SourceControlListResponse
+    fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse
+    name: SourceControlListResponse
+    fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters
+  parent: Microsoft.Azure.Management.WebSites.Models
+  isExternal: false
+  name: SourceControlUpdateParameters
+  fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateParameters
+- uid: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse
+  parent: Microsoft.Azure.Management.WebSites.Models
+  isExternal: false
+  name: SourceControlUpdateResponse
+  fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SourceControlUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse)
+  name.vb: Task(Of SourceControlUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse
+    name: SourceControlUpdateResponse
+    fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse
+    name: SourceControlUpdateResponse
+    fullName: Microsoft.Azure.Management.WebSites.Models.SourceControlUpdateResponse
+  - name: )
+    fullName: )

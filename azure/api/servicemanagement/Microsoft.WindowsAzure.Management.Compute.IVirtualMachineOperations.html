@@ -1,0 +1,3288 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations">
+          <span class="lang-csharp">IVirtualMachineOperations</span>
+          <span class="lang-vb">IVirtualMachineOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.WindowsAzure.Management.Compute.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Service Management API includes operations for managing the virtual
+machines in your subscription.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157206.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157206.aspx</a> for
+more information)</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginCapturingOSImageAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureOSImageParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCapturingOSImageAsync(String, String, String, VirtualMachineCaptureOSImageParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginCapturingOSImageAsync(String, String, String, VirtualMachineCaptureOSImageParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Capturing Role operation creates a copy of the operating
+system virtual hard disk (VHD) that is deployed in the virtual
+machine, saves the VHD copy in the same storage location as the
+operating system VHD, and registers the copy as an image in your
+image gallery. From the captured image, you can create additional
+customized virtual machines. For more information about images and
+disks, see Manage Disks and Images at
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj672979.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj672979.aspx</a>.
+For more information about capturing images, see How to Capture an
+Image of a Virtual Machine Running Windows Server 2008 R2 at
+<a href="http://www.windowsazure.com/en-us/documentation/articles/virtual-machines-capture-image-windows-server/">http://www.windowsazure.com/en-us/documentation/articles/virtual-machines-capture-image-windows-server/</a>
+or How to Capture an Image of a Virtual Machine Running Linux at
+<a href="http://www.windowsazure.com/en-us/documentation/articles/virtual-machines-linux-capture-image/">http://www.windowsazure.com/en-us/documentation/articles/virtual-machines-linux-capture-image/</a>.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157201.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157201.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginCapturingOSImageAsync(string serviceName, string deploymentName, string virtualMachineName, VirtualMachineCaptureOSImageParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginCapturingOSImageAsync(serviceName As String, deploymentName As String, virtualMachineName As String, parameters As VirtualMachineCaptureOSImageParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to restart.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCaptureOSImageParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureOSImageParameters">VirtualMachineCaptureOSImageParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCaptureOSImageParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureOSImageParameters">VirtualMachineCaptureOSImageParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Begin Capturing Virtual Machine
+operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginCapturingVMImageAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureVMImageParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCapturingVMImageAsync(String, String, String, VirtualMachineCaptureVMImageParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginCapturingVMImageAsync(String, String, String, VirtualMachineCaptureVMImageParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin capturing role as VM template.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginCapturingVMImageAsync(string serviceName, string deploymentName, string virtualMachineName, VirtualMachineCaptureVMImageParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginCapturingVMImageAsync(serviceName As String, deploymentName As String, virtualMachineName As String, parameters As VirtualMachineCaptureVMImageParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to restart.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCaptureVMImageParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureVMImageParameters">VirtualMachineCaptureVMImageParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCaptureVMImageParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureVMImageParameters">VirtualMachineCaptureVMImageParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Capture Virtual Machine operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginCreatingAsync_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreatingAsync(String, String, VirtualMachineCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginCreatingAsync(String, String, VirtualMachineCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Creating Role operation adds a virtual machine to an
+existing deployment. You can refer to the OSDisk in the Add Role
+operation in the following ways: Platform/User Image - Set the
+SourceImageName to a platform or user image. You can optionally
+specify the DiskName and MediaLink values as part the operation to
+control the name and location of target disk. When DiskName and
+MediaLink are specified in this mode, they must not already exist
+in the system, otherwise a conflict fault is returned; UserDisk -
+Set DiskName to a user supplied image in image repository.
+SourceImageName must be set to NULL. All other properties are
+ignored; or Blob in a Storage Account - Set MediaLink to a blob
+containing the image. SourceImageName and DiskName are set to
+NULL.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157186.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157186.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginCreatingAsync(string serviceName, string deploymentName, VirtualMachineCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginCreatingAsync(serviceName As String, deploymentName As String, parameters As VirtualMachineCreateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateParameters">VirtualMachineCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateParameters">VirtualMachineCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Begin Creating Virtual Machine operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginCreatingDeploymentAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateDeploymentParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreatingDeploymentAsync(String, VirtualMachineCreateDeploymentParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginCreatingDeploymentAsync(String, VirtualMachineCreateDeploymentParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Creating Virtual Machine Deployment operation provisions
+a virtual machine based on the supplied configuration. When you
+create a deployment of a virtual machine, you should make sure
+that the cloud service and the disk or image that you use are
+located in the same region. For example, if the cloud service was
+created in the West US region, the disk or image that you use
+should also be located in a storage account in the West US region.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157194.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157194.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginCreatingDeploymentAsync(string serviceName, VirtualMachineCreateDeploymentParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginCreatingDeploymentAsync(serviceName As String, parameters As VirtualMachineCreateDeploymentParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateDeploymentParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateDeploymentParameters">VirtualMachineCreateDeploymentParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateDeploymentParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateDeploymentParameters">VirtualMachineCreateDeploymentParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Begin Creating Virtual Machine
+Deployment operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginDeletingAsync_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeletingAsync(String, String, String, Boolean, CancellationToken)</code>
+          <code class="lang-vb">BeginDeletingAsync(String, String, String, Boolean, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Deleting Role operation deletes the specified virtual
+machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157184.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157184.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginDeletingAsync(string serviceName, string deploymentName, string virtualMachineName, bool deleteFromStorage, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginDeletingAsync(serviceName As String, deploymentName As String, virtualMachineName As String, deleteFromStorage As Boolean, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to delete.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deleteFromStorage</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Boolean</span></code>
+                        <code class="lang-vb"><span class="xref">System.Boolean</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Specifies that the source blob(s) for the virtual machine should
+also be deleted from storage.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginRedeployingAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginRedeployingAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">BeginRedeployingAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Redeploying role operation redeploys the specified
+virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157197.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157197.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginRedeployingAsync(string serviceName, string deploymentName, string virtualMachineName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginRedeployingAsync(serviceName As String, deploymentName As String, virtualMachineName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to redeploy.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginRestartingAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginRestartingAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">BeginRestartingAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Restarting role operation restarts the specified virtual
+machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157197.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157197.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginRestartingAsync(string serviceName, string deploymentName, string virtualMachineName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginRestartingAsync(serviceName As String, deploymentName As String, virtualMachineName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to restart.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginShutdownAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginShutdownAsync(String, String, String, VirtualMachineShutdownParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginShutdownAsync(String, String, String, VirtualMachineShutdownParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Shutdown Role operation shuts down the specified virtual
+machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157195.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157195.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginShutdownAsync(string serviceName, string deploymentName, string virtualMachineName, VirtualMachineShutdownParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginShutdownAsync(serviceName As String, deploymentName As String, virtualMachineName As String, parameters As VirtualMachineShutdownParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to shutdown.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineShutdownParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownParameters">VirtualMachineShutdownParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineShutdownParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownParameters">VirtualMachineShutdownParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The parameters for the shutdown vm operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginShuttingDownRolesAsync_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownRolesParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginShuttingDownRolesAsync(String, String, VirtualMachineShutdownRolesParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginShuttingDownRolesAsync(String, String, VirtualMachineShutdownRolesParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Shutting Down Roles operation stops the specified set of
+virtual machines.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn469421.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn469421.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginShuttingDownRolesAsync(string serviceName, string deploymentName, VirtualMachineShutdownRolesParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginShuttingDownRolesAsync(serviceName As String, deploymentName As String, parameters As VirtualMachineShutdownRolesParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineShutdownRolesParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownRolesParameters">VirtualMachineShutdownRolesParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineShutdownRolesParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownRolesParameters">VirtualMachineShutdownRolesParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters to pass to the Begin Shutting Down Roles operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginStartingAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginStartingAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">BeginStartingAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Starting Role operation starts the specified virtual
+machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157189.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157189.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginStartingAsync(string serviceName, string deploymentName, string virtualMachineName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginStartingAsync(serviceName As String, deploymentName As String, virtualMachineName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to start.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginStartingRolesAsync_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineStartRolesParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginStartingRolesAsync(String, String, VirtualMachineStartRolesParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginStartingRolesAsync(String, String, VirtualMachineStartRolesParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Starting Roles operation starts the specified set of
+virtual machines.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn469419.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn469419.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginStartingRolesAsync(string serviceName, string deploymentName, VirtualMachineStartRolesParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginStartingRolesAsync(serviceName As String, deploymentName As String, parameters As VirtualMachineStartRolesParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineStartRolesParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineStartRolesParameters">VirtualMachineStartRolesParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineStartRolesParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineStartRolesParameters">VirtualMachineStartRolesParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters to pass to the Begin Starting Roles operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginUpdatingAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginUpdatingAsync(String, String, String, VirtualMachineUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginUpdatingAsync(String, String, String, VirtualMachineUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Updating Role operation adds a virtual machine to an
+existing deployment.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157187.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157187.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginUpdatingAsync(string serviceName, string deploymentName, string virtualMachineName, VirtualMachineUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginUpdatingAsync(serviceName As String, deploymentName As String, virtualMachineName As String, parameters As VirtualMachineUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your virtual machine.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateParameters">VirtualMachineUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateParameters">VirtualMachineUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Begin Updating Virtual Machine operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_BeginUpdatingLoadBalancedEndpointSetAsync_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateLoadBalancedSetParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginUpdatingLoadBalancedEndpointSetAsync(String, String, VirtualMachineUpdateLoadBalancedSetParameters, CancellationToken)</code>
+          <code class="lang-vb">BeginUpdatingLoadBalancedEndpointSetAsync(String, String, VirtualMachineUpdateLoadBalancedSetParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Updating Load Balanced Endpoint Set operation changes the
+specified load-balanced InputEndpoints on all the roles of an
+Infrastructure as a Service deployment. Non-load-balanced
+endpoints must be changed using UpdateRole.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/dn469417.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/dn469417.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; BeginUpdatingLoadBalancedEndpointSetAsync(string serviceName, string deploymentName, VirtualMachineUpdateLoadBalancedSetParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginUpdatingLoadBalancedEndpointSetAsync(serviceName As String, deploymentName As String, parameters As VirtualMachineUpdateLoadBalancedSetParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineUpdateLoadBalancedSetParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateLoadBalancedSetParameters">VirtualMachineUpdateLoadBalancedSetParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineUpdateLoadBalancedSetParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateLoadBalancedSetParameters">VirtualMachineUpdateLoadBalancedSetParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Begin Updating Load Balanced Endpoint
+Set operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_CaptureOSImageAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureOSImageParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CaptureOSImageAsync(String, String, String, VirtualMachineCaptureOSImageParameters, CancellationToken)</code>
+          <code class="lang-vb">CaptureOSImageAsync(String, String, String, VirtualMachineCaptureOSImageParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Capture Role operation creates a copy of the operating system
+virtual hard disk (VHD) that is deployed in the virtual machine,
+saves the VHD copy in the same storage location as the operating
+system VHD, and registers the copy as an image in your image
+gallery. From the captured image, you can create additional
+customized virtual machines. For more information about images and
+disks, see Manage Disks and Images at
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj672979.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj672979.aspx</a>.
+For more information about capturing images, see How to Capture an
+Image of a Virtual Machine Running Windows Server 2008 R2 at
+<a href="http://www.windowsazure.com/en-us/documentation/articles/virtual-machines-capture-image-windows-server/">http://www.windowsazure.com/en-us/documentation/articles/virtual-machines-capture-image-windows-server/</a>
+or How to Capture an Image of a Virtual Machine Running Linux at
+<a href="http://www.windowsazure.com/en-us/documentation/articles/virtual-machines-linux-capture-image/">http://www.windowsazure.com/en-us/documentation/articles/virtual-machines-linux-capture-image/</a>.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157201.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157201.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; CaptureOSImageAsync(string serviceName, string deploymentName, string virtualMachineName, VirtualMachineCaptureOSImageParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CaptureOSImageAsync(serviceName As String, deploymentName As String, virtualMachineName As String, parameters As VirtualMachineCaptureOSImageParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to restart.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCaptureOSImageParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureOSImageParameters">VirtualMachineCaptureOSImageParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCaptureOSImageParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureOSImageParameters">VirtualMachineCaptureOSImageParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Capture Virtual Machine operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_CaptureVMImageAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureVMImageParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CaptureVMImageAsync(String, String, String, VirtualMachineCaptureVMImageParameters, CancellationToken)</code>
+          <code class="lang-vb">CaptureVMImageAsync(String, String, String, VirtualMachineCaptureVMImageParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Capture role as VM template.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; CaptureVMImageAsync(string serviceName, string deploymentName, string virtualMachineName, VirtualMachineCaptureVMImageParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CaptureVMImageAsync(serviceName As String, deploymentName As String, virtualMachineName As String, parameters As VirtualMachineCaptureVMImageParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to restart.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCaptureVMImageParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureVMImageParameters">VirtualMachineCaptureVMImageParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCaptureVMImageParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCaptureVMImageParameters">VirtualMachineCaptureVMImageParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Capture Virtual Machine operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_CreateAsync_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateAsync(String, String, VirtualMachineCreateParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateAsync(String, String, VirtualMachineCreateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create Role operation adds a virtual machine to an existing
+deployment. You can refer to the OSDisk in the Add Role operation
+in the following ways: Platform/User Image - Set the
+SourceImageName to a platform or user image. You can optionally
+specify the DiskName and MediaLink values as part the operation to
+control the name and location of target disk. When DiskName and
+MediaLink are specified in this mode, they must not already exist
+in the system, otherwise a conflict fault is returned; UserDisk -
+Set DiskName to a user supplied image in image repository.
+SourceImageName must be set to NULL. All other properties are
+ignored; or Blob in a Storage Account - Set MediaLink to a blob
+containing the image. SourceImageName and DiskName are set to
+NULL.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157186.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157186.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; CreateAsync(string serviceName, string deploymentName, VirtualMachineCreateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateAsync(serviceName As String, deploymentName As String, parameters As VirtualMachineCreateParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateParameters">VirtualMachineCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateParameters">VirtualMachineCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Create Virtual Machine operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_CreateDeploymentAsync_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateDeploymentParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateDeploymentAsync(String, VirtualMachineCreateDeploymentParameters, CancellationToken)</code>
+          <code class="lang-vb">CreateDeploymentAsync(String, VirtualMachineCreateDeploymentParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create Virtual Machine Deployment operation provisions a
+virtual machine based on the supplied configuration. When you
+create a deployment of a virtual machine, you should make sure
+that the cloud service and the disk or image that you use are
+located in the same region. For example, if the cloud service was
+created in the West US region, the disk or image that you use
+should also be located in a storage account in the West US region.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157194.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157194.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; CreateDeploymentAsync(string serviceName, VirtualMachineCreateDeploymentParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateDeploymentAsync(serviceName As String, parameters As VirtualMachineCreateDeploymentParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateDeploymentParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateDeploymentParameters">VirtualMachineCreateDeploymentParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineCreateDeploymentParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineCreateDeploymentParameters">VirtualMachineCreateDeploymentParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Create Virtual Machine Deployment
+operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_DeleteAsync_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, String, String, Boolean, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, String, String, Boolean, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete Role operation deletes the specified virtual machine.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157184.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157184.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; DeleteAsync(string serviceName, string deploymentName, string virtualMachineName, bool deleteFromStorage, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(serviceName As String, deploymentName As String, virtualMachineName As String, deleteFromStorage As Boolean, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to delete.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deleteFromStorage</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Boolean</span></code>
+                        <code class="lang-vb"><span class="xref">System.Boolean</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Specifies that the source blob(s) for the virtual machine should
+also be deleted from storage.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_GetAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Role operation retrieves information about the specified
+virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157193.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157193.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;VirtualMachineGetResponse&gt; GetAsync(string serviceName, string deploymentName, string virtualMachineName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(serviceName As String, deploymentName As String, virtualMachineName As String, cancellationToken As CancellationToken) As Task(Of VirtualMachineGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineGetResponse">VirtualMachineGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineGetResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineGetResponse">VirtualMachineGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Get Virtual Machine operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_GetRemoteDesktopFileAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetRemoteDesktopFileAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">GetRemoteDesktopFileAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Download RDP file operation retrieves the Remote Desktop
+Protocol configuration file from the specified virtual machine.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157183.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157183.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;VirtualMachineGetRemoteDesktopFileResponse&gt; GetRemoteDesktopFileAsync(string serviceName, string deploymentName, string virtualMachineName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetRemoteDesktopFileAsync(serviceName As String, deploymentName As String, virtualMachineName As String, cancellationToken As CancellationToken) As Task(Of VirtualMachineGetRemoteDesktopFileResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineGetRemoteDesktopFileResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineGetRemoteDesktopFileResponse">VirtualMachineGetRemoteDesktopFileResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineGetRemoteDesktopFileResponse.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineGetRemoteDesktopFileResponse">VirtualMachineGetRemoteDesktopFileResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The Download RDP file operation response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_RedeployAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RedeployAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">RedeployAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Redeploy role operation redeploys the specified virtual
+machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157197.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157197.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; RedeployAsync(string serviceName, string deploymentName, string virtualMachineName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function RedeployAsync(serviceName As String, deploymentName As String, virtualMachineName As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to redeploy.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_RestartAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RestartAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">RestartAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Restart role operation restarts the specified virtual machine.
+(see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157197.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157197.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; RestartAsync(string serviceName, string deploymentName, string virtualMachineName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function RestartAsync(serviceName As String, deploymentName As String, virtualMachineName As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to restart.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_ShutdownAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ShutdownAsync(String, String, String, VirtualMachineShutdownParameters, CancellationToken)</code>
+          <code class="lang-vb">ShutdownAsync(String, String, String, VirtualMachineShutdownParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Shutdown Role operation shuts down the specified virtual
+machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157195.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157195.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; ShutdownAsync(string serviceName, string deploymentName, string virtualMachineName, VirtualMachineShutdownParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ShutdownAsync(serviceName As String, deploymentName As String, virtualMachineName As String, parameters As VirtualMachineShutdownParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to shutdown.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineShutdownParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownParameters">VirtualMachineShutdownParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineShutdownParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownParameters">VirtualMachineShutdownParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The parameters for the shutdown virtual machine operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_ShutdownRolesAsync_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownRolesParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ShutdownRolesAsync(String, String, VirtualMachineShutdownRolesParameters, CancellationToken)</code>
+          <code class="lang-vb">ShutdownRolesAsync(String, String, VirtualMachineShutdownRolesParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Shutdown Roles operation stops the specified set of virtual
+machines.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; ShutdownRolesAsync(string serviceName, string deploymentName, VirtualMachineShutdownRolesParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ShutdownRolesAsync(serviceName As String, deploymentName As String, parameters As VirtualMachineShutdownRolesParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineShutdownRolesParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownRolesParameters">VirtualMachineShutdownRolesParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineShutdownRolesParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineShutdownRolesParameters">VirtualMachineShutdownRolesParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters to pass to the Shutdown Roles operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_StartAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StartAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">StartAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Start Role operation starts the specified virtual machine.
+(see <a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157189.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157189.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; StartAsync(string serviceName, string deploymentName, string virtualMachineName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function StartAsync(serviceName As String, deploymentName As String, virtualMachineName As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the virtual machine to start.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_StartRolesAsync_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineStartRolesParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">StartRolesAsync(String, String, VirtualMachineStartRolesParameters, CancellationToken)</code>
+          <code class="lang-vb">StartRolesAsync(String, String, VirtualMachineStartRolesParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Start Roles operation starts the specified set of virtual
+machines.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; StartRolesAsync(string serviceName, string deploymentName, VirtualMachineStartRolesParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function StartRolesAsync(serviceName As String, deploymentName As String, parameters As VirtualMachineStartRolesParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineStartRolesParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineStartRolesParameters">VirtualMachineStartRolesParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineStartRolesParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineStartRolesParameters">VirtualMachineStartRolesParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters to pass to the Start Roles operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_UpdateAsync_System_String_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateAsync(String, String, String, VirtualMachineUpdateParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateAsync(String, String, String, VirtualMachineUpdateParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Update Role operation adds a virtual machine to an existing
+deployment.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157187.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157187.aspx</a>
+for more information)</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; UpdateAsync(string serviceName, string deploymentName, string virtualMachineName, VirtualMachineUpdateParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateAsync(serviceName As String, deploymentName As String, virtualMachineName As String, parameters As VirtualMachineUpdateParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>virtualMachineName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your virtual machine.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateParameters">VirtualMachineUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineUpdateParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateParameters">VirtualMachineUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Update Virtual Machine operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_WindowsAzure_Management_Compute_IVirtualMachineOperations_UpdateLoadBalancedEndpointSetAsync_System_String_System_String_Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateLoadBalancedSetParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateLoadBalancedEndpointSetAsync(String, String, VirtualMachineUpdateLoadBalancedSetParameters, CancellationToken)</code>
+          <code class="lang-vb">UpdateLoadBalancedEndpointSetAsync(String, String, VirtualMachineUpdateLoadBalancedSetParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Update Load Balanced Endpoint Set operation changes the
+specified load-balanced InputEndpoints on all the roles of an
+Infrastructure as a Service deployment. Non-load-balanced
+endpoints must be changed using UpdateRole.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;OperationStatusResponse&gt; UpdateLoadBalancedEndpointSetAsync(string serviceName, string deploymentName, VirtualMachineUpdateLoadBalancedSetParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateLoadBalancedEndpointSetAsync(serviceName As String, deploymentName As String, parameters As VirtualMachineUpdateLoadBalancedSetParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>deploymentName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of your deployment.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineUpdateLoadBalancedSetParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateLoadBalancedSetParameters">VirtualMachineUpdateLoadBalancedSetParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.WindowsAzure.Management.Compute.Models.VirtualMachineUpdateLoadBalancedSetParameters.html#Microsoft_WindowsAzure_Management_Compute_Models_VirtualMachineUpdateLoadBalancedSetParameters">VirtualMachineUpdateLoadBalancedSetParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the Update Load Balanced Endpoint Set
+operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">OperationStatusResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">OperationStatusResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

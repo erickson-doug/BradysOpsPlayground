@@ -1,0 +1,645 @@
+items:
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  commentId: T:Microsoft.Azure.Graph.RBAC.IGroupOperations
+  id: IGroupOperations
+  parent: Microsoft.Azure.Graph.RBAC
+  children:
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.AddMemberAsync(System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.CreateAsync(Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.GetGroupMembersAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.GetGroupMembersNextAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Graph.RBAC.IGroupOperations.RemoveMemberAsync(System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IGroupOperations
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IGroupOperations
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nOperations for working with Groups in Azure Active Directory Graph API.\r\n(see http://msdn.microsoft.com/en-us/library/azure/hh974476.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public interface IGroupOperations
+    content.vb: Public Interface IGroupOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.AddMemberAsync(System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.AddMemberAsync(System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters,System.Threading.CancellationToken)
+  id: AddMemberAsync(System.String,Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: AddMemberAsync(String, GroupAddMemberParameters, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.AddMemberAsync(System.String, Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AddMemberAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nAdd a memeber to a group.   (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151600.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> AddMemberAsync(string groupObjectId, GroupAddMemberParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function AddMemberAsync(groupObjectId As String, parameters As GroupAddMemberParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nGroup object id\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters
+      description: "\r\nMember Object Url as\r\nhttps://graph.windows.net/contoso.onmicrosoft.com/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.CreateAsync(Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.CreateAsync(Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters,System.Threading.CancellationToken)
+  id: CreateAsync(Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(GroupCreateParameters, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.CreateAsync(Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nCreate a group in the directory.  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151614.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: Task<GroupGetResult> CreateAsync(GroupCreateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateAsync(parameters As GroupCreateParameters, cancellationToken As CancellationToken) As Task(Of GroupGetResult)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters
+      description: "\r\nParameters to create a group\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetResult}
+      description: "\r\nServer response for Get group information API call\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.DeleteAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 90
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nDelete a group in the directory.  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151608.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string groupObjectId, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(groupObjectId As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nObject id\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.GetAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 104
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets group information from the directory.\r\n"
+  example: []
+  syntax:
+    content: Task<GroupGetResult> GetAsync(string objectId, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(objectId As String, cancellationToken As CancellationToken) As Task(Of GroupGetResult)
+    parameters:
+    - id: objectId
+      type: System.String
+      description: "\r\nUser objectId to get group information.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetResult}
+      description: "\r\nServer response for Get group information API call\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.GetGroupMembersAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.GetGroupMembersAsync(System.String,System.Threading.CancellationToken)
+  id: GetGroupMembersAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: GetGroupMembersAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.GetGroupMembersAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetGroupMembersAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets the members of a group.\r\n"
+  example: []
+  syntax:
+    content: Task<GetObjectsResult> GetGroupMembersAsync(string objectId, CancellationToken cancellationToken)
+    content.vb: Function GetGroupMembersAsync(objectId As String, cancellationToken As CancellationToken) As Task(Of GetObjectsResult)
+    parameters:
+    - id: objectId
+      type: System.String
+      description: "\r\nGroup object Id who's members should be retrieved.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult}
+      description: "\r\nServer response for Active Directory objects inquiry API calls\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.GetGroupMembersNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.GetGroupMembersNextAsync(System.String,System.Threading.CancellationToken)
+  id: GetGroupMembersNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: GetGroupMembersNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.GetGroupMembersNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetGroupMembersNextAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 133
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets next set of members of a group.\r\n"
+  example: []
+  syntax:
+    content: Task<GetObjectsResult> GetGroupMembersNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Function GetGroupMembersNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of GetObjectsResult)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nNextLink from the previous successful call to GetGroupMembers or\r\nGetGroupMembersNext.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult}
+      description: "\r\nServer response for Active Directory objects inquiry API calls\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters,System.Threading.CancellationToken)
+  id: GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: GetMemberGroupsAsync(GroupGetMemberGroupsParameters, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.GetMemberGroupsAsync(Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMemberGroupsAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 148
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets a collection that contains the Object IDs of the groups of\r\nwhich the group is a member.\r\n"
+  example: []
+  syntax:
+    content: Task<GroupGetMemberGroupsResult> GetMemberGroupsAsync(GroupGetMemberGroupsParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function GetMemberGroupsAsync(parameters As GroupGetMemberGroupsParameters, cancellationToken As CancellationToken) As Task(Of GroupGetMemberGroupsResult)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters
+      description: "\r\nGroup filtering parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult}
+      description: "\r\nServer response for GetMemberGroups API call\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.ListAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 165
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of groups for the current tenant.\r\n"
+  example: []
+  syntax:
+    content: Task<GroupListResult> ListAsync(string mail, string displayNameStartsWith, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(mail As String, displayNameStartsWith As String, cancellationToken As CancellationToken) As Task(Of GroupListResult)
+    parameters:
+    - id: mail
+      type: System.String
+      description: "\r\nEmail to filter results.\r\n"
+    - id: displayNameStartsWith
+      type: System.String
+      description: "\r\nDisplay name to filter results.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupListResult}
+      description: "\r\nServer response for Get tenant groups API call\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.ListNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 179
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nGets list of groups for the current tenant.\r\n"
+  example: []
+  syntax:
+    content: Task<GroupListResult> ListNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of GroupListResult)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nNextLink from the previous successful call to List operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupListResult}
+      description: "\r\nServer response for Get tenant groups API call\r\n"
+- uid: Microsoft.Azure.Graph.RBAC.IGroupOperations.RemoveMemberAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Graph.RBAC.IGroupOperations.RemoveMemberAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: RemoveMemberAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Graph.RBAC.IGroupOperations
+  langs:
+  - csharp
+  - vb
+  name: RemoveMemberAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Graph.RBAC.IGroupOperations.RemoveMemberAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RemoveMemberAsync
+    path: src/src/Graph.RBAC/Graph.RBAC/Generated/IGroupOperations.cs
+    startLine: 199
+  assemblies:
+  - Microsoft.Azure.Graph.RBAC
+  namespace: Microsoft.Azure.Graph.RBAC
+  summary: "\r\nRemove a memeber from a group  (see\r\nhttp://msdn.microsoft.com/en-us/library/azure/dn151607.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> RemoveMemberAsync(string groupObjectId, string memberObjectId, CancellationToken cancellationToken)
+    content.vb: Function RemoveMemberAsync(groupObjectId As String, memberObjectId As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: groupObjectId
+      type: System.String
+      description: "\r\nGroup object id\r\n"
+    - id: memberObjectId
+      type: System.String
+      description: "\r\nMember Object id\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.Azure.Graph.RBAC
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC
+  fullName: Microsoft.Azure.Graph.RBAC
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters
+  parent: Microsoft.Azure.Graph.RBAC
+  isExternal: false
+  name: GroupAddMemberParameters
+  fullName: Microsoft.Azure.Graph.RBAC.GroupAddMemberParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GroupCreateParameters
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GroupCreateParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GroupGetResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GroupGetResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GroupGetResult)
+  name.vb: Task(Of GroupGetResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+    name: GroupGetResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+    name: GroupGetResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetResult
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: Microsoft.Azure.Graph.RBAC.Models
+  fullName: Microsoft.Azure.Graph.RBAC.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetObjectsResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult)
+  name.vb: Task(Of GetObjectsResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+    name: GetObjectsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+    name: GetObjectsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GetObjectsResult
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters
+  parent: Microsoft.Azure.Graph.RBAC.Models
+  isExternal: false
+  name: GroupGetMemberGroupsParameters
+  fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GroupGetMemberGroupsResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult)
+  name.vb: Task(Of GroupGetMemberGroupsResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+    name: GroupGetMemberGroupsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+    name: GroupGetMemberGroupsResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupGetMemberGroupsResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Graph.RBAC.Models.GroupListResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GroupListResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Graph.RBAC.Models.GroupListResult>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Graph.RBAC.Models.GroupListResult)
+  name.vb: Task(Of GroupListResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+    name: GroupListResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+    name: GroupListResult
+    fullName: Microsoft.Azure.Graph.RBAC.Models.GroupListResult
+  - name: )
+    fullName: )

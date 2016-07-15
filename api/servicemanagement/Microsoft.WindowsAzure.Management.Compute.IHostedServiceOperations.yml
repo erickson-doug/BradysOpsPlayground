@@ -1,0 +1,1070 @@
+items:
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  commentId: T:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  id: IHostedServiceOperations
+  parent: Microsoft.WindowsAzure.Management.Compute
+  children:
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.AddExtensionAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginAddingExtensionAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginDeletingAllAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginDeletingExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.CheckNameAvailabilityAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteAllAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetDetailedAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListAvailableExtensionsAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListExtensionsAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListExtensionVersionsAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListPublisherExtensionsAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.UpdateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IHostedServiceOperations
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IHostedServiceOperations
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Service Management API includes operations for managing the hosted\r\nservices beneath your subscription.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460812.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public interface IHostedServiceOperations
+    content.vb: Public Interface IHostedServiceOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.AddExtensionAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.AddExtensionAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters,System.Threading.CancellationToken)
+  id: AddExtensionAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: AddExtensionAsync(String, HostedServiceAddExtensionParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.AddExtensionAsync(System.String, Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AddExtensionAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 68
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Add Extension operation adds an available extension to your\r\ncloud service. In Azure, a process can run as an extension of a\r\ncloud service. For example, Remote Desktop Access or the Azure\r\nDiagnostics Agent can run as extensions to the cloud service. You\r\ncan find the available extension by using the List Available\r\nExtensions operation.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn169558.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<OperationStatusResponse> AddExtensionAsync(string serviceName, HostedServiceAddExtensionParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function AddExtensionAsync(serviceName As String, parameters As HostedServiceAddExtensionParameters, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters
+      description: "\r\nParameters supplied to the Add Extension operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{OperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginAddingExtensionAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginAddingExtensionAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters,System.Threading.CancellationToken)
+  id: BeginAddingExtensionAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginAddingExtensionAsync(String, HostedServiceAddExtensionParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginAddingExtensionAsync(System.String, Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginAddingExtensionAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Begin Adding Extension operation adds an available extension to\r\nyour cloud service. In Azure, a process can run as an extension of\r\na cloud service. For example, Remote Desktop Access or the Azure\r\nDiagnostics Agent can run as extensions to the cloud service. You\r\ncan find the available extension by using the List Available\r\nExtensions operation.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn169558.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> BeginAddingExtensionAsync(string serviceName, HostedServiceAddExtensionParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginAddingExtensionAsync(serviceName As String, parameters As HostedServiceAddExtensionParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters
+      description: "\r\nParameters supplied to the Begin Adding Extension operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginDeletingAllAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginDeletingAllAsync(System.String,System.Threading.CancellationToken)
+  id: BeginDeletingAllAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginDeletingAllAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginDeletingAllAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeletingAllAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 113
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe DeleteAll Hosted Service operation deletes the specified cloud\r\nservice as well as operating system disk, attached data disks, and\r\nthe source blobs for the disks from storage from Microsoft Azure.\r\n(see\r\n'http://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx'\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> BeginDeletingAllAsync(string serviceName, CancellationToken cancellationToken)
+    content.vb: Function BeginDeletingAllAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginDeletingExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginDeletingExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: BeginDeletingExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginDeletingExtensionAsync(String, String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.BeginDeletingExtensionAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeletingExtensionAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Begin Deleting Extension operation deletes the specified\r\nextension from a cloud service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn169560.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> BeginDeletingExtensionAsync(string serviceName, string extensionId, CancellationToken cancellationToken)
+    content.vb: Function BeginDeletingExtensionAsync(serviceName As String, extensionId As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: extensionId
+      type: System.String
+      description: "\r\nThe identifier that was assigned to the extension when it was added\r\nto the cloud service\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.CheckNameAvailabilityAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.CheckNameAvailabilityAsync(System.String,System.Threading.CancellationToken)
+  id: CheckNameAvailabilityAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: CheckNameAvailabilityAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.CheckNameAvailabilityAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CheckNameAvailabilityAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 152
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Check Hosted Service Name Availability operation checks for the\r\navailability of the specified cloud service name.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/jj154116.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceCheckNameAvailabilityResponse> CheckNameAvailabilityAsync(string serviceName, CancellationToken cancellationToken)
+    content.vb: Function CheckNameAvailabilityAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of HostedServiceCheckNameAvailabilityResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe cloud service name that you would like to use.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse}
+      description: "\r\nThe Check Hosted Service Name Availability operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters,System.Threading.CancellationToken)
+  id: CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(HostedServiceCreateParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.CreateAsync(Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 170
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Create Hosted Service operation creates a new cloud service in\r\nAzure.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/gg441304.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> CreateAsync(HostedServiceCreateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateAsync(parameters As HostedServiceCreateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters
+      description: "\r\nParameters supplied to the Create Hosted Service operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 188
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Delete Hosted Service operation deletes the specified cloud\r\nservice from Azure.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string serviceName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteAllAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteAllAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAllAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAllAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteAllAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAllAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 215
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe DeleteAll Hosted Service operation deletes the specified cloud\r\nservice as well as operating system disk, attached data disks, and\r\nthe source blobs for the disks from storage from Microsoft Azure.\r\n(see\r\n'http://msdn.microsoft.com/en-us/library/windowsazure/gg441305.aspx'\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<OperationStatusResponse> DeleteAllAsync(string serviceName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAllAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{OperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteExtensionAsync(String, String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.DeleteExtensionAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteExtensionAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 244
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Delete Extension operation deletes the specified extension from\r\na cloud service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn169560.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<OperationStatusResponse> DeleteExtensionAsync(string serviceName, string extensionId, CancellationToken cancellationToken)
+    content.vb: Function DeleteExtensionAsync(serviceName As String, extensionId As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: extensionId
+      type: System.String
+      description: "\r\nThe identifier that was assigned to the extension when it was added\r\nto the cloud service\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{OperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 264
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Get Hosted Service Properties operation retrieves system\r\nproperties for the specified cloud service. These properties\r\ninclude the service name and service type; and the name of the\r\naffinity group to which the service belongs, or its location if it\r\nis not part of an affinity group.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460806.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceGetResponse> GetAsync(string serviceName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of HostedServiceGetResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse}
+      description: "\r\nThe Get Hosted Service operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetDetailedAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetDetailedAsync(System.String,System.Threading.CancellationToken)
+  id: GetDetailedAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: GetDetailedAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetDetailedAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDetailedAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 285
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Get Detailed Hosted Service Properties operation retrieves\r\nsystem properties for the specified cloud service. These\r\nproperties include the service name and service type; the name of\r\nthe affinity group to which the service belongs, or its location\r\nif it is not part of an affinity group; and information on the\r\ndeployments of the service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460806.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceGetDetailedResponse> GetDetailedAsync(string serviceName, CancellationToken cancellationToken)
+    content.vb: Function GetDetailedAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of HostedServiceGetDetailedResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse}
+      description: "\r\nThe detailed Get Hosted Service operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: GetExtensionAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: GetExtensionAsync(String, String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.GetExtensionAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetExtensionAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 306
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Get Extension operation retrieves information about a specified\r\nextension that was added to a cloud service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn169557.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceGetExtensionResponse> GetExtensionAsync(string serviceName, string extensionId, CancellationToken cancellationToken)
+    content.vb: Function GetExtensionAsync(serviceName As String, extensionId As String, cancellationToken As CancellationToken) As Task(Of HostedServiceGetExtensionResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: extensionId
+      type: System.String
+      description: "\r\nThe identifier that was assigned to the extension when it was added\r\nto the cloud service\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse}
+      description: "\r\nThe Get Extension operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 320
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe List Hosted Services operation lists the cloud services\r\navailable under the current subscription.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460781.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceListResponse> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of HostedServiceListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse}
+      description: "\r\nThe List Hosted Service operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListAvailableExtensionsAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListAvailableExtensionsAsync(System.Threading.CancellationToken)
+  id: ListAvailableExtensionsAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAvailableExtensionsAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListAvailableExtensionsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAvailableExtensionsAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 337
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe List Available Extensions operation lists the extensions that\r\nare available to add to your cloud service. In Windows Azure, a\r\nprocess can run as an extension of a cloud service. For example,\r\nRemote Desktop Access or the Azure Diagnostics Agent can run as\r\nextensions to the cloud service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn169559.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceListAvailableExtensionsResponse> ListAvailableExtensionsAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAvailableExtensionsAsync(cancellationToken As CancellationToken) As Task(Of HostedServiceListAvailableExtensionsResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse}
+      description: "\r\nThe List Available Extensions operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListExtensionsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListExtensionsAsync(System.String,System.Threading.CancellationToken)
+  id: ListExtensionsAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: ListExtensionsAsync(String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListExtensionsAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListExtensionsAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 354
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe List Extensions operation lists all of the extensions that were\r\nadded to a cloud service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn169561.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceListExtensionsResponse> ListExtensionsAsync(string serviceName, CancellationToken cancellationToken)
+    content.vb: Function ListExtensionsAsync(serviceName As String, cancellationToken As CancellationToken) As Task(Of HostedServiceListExtensionsResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse}
+      description: "\r\nThe List Extensions operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListExtensionVersionsAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListExtensionVersionsAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListExtensionVersionsAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: ListExtensionVersionsAsync(String, String, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListExtensionVersionsAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListExtensionVersionsAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 377
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe List Extension Versions operation lists the versions of an\r\nextension that are available to add to a cloud service. In Azure,\r\na process can run as an extension of a cloud service. For example,\r\nRemote Desktop Access or the Azure Diagnostics Agent can run as\r\nextensions to the cloud service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn495437.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceListAvailableExtensionsResponse> ListExtensionVersionsAsync(string providerNamespace, string extensionType, CancellationToken cancellationToken)
+    content.vb: Function ListExtensionVersionsAsync(providerNamespace As String, extensionType As String, cancellationToken As CancellationToken) As Task(Of HostedServiceListAvailableExtensionsResponse)
+    parameters:
+    - id: providerNamespace
+      type: System.String
+      description: "\r\nThe provider namespace.\r\n"
+    - id: extensionType
+      type: System.String
+      description: "\r\nThe extension type name.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse}
+      description: "\r\nThe List Available Extensions operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListPublisherExtensionsAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListPublisherExtensionsAsync(System.Threading.CancellationToken)
+  id: ListPublisherExtensionsAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: ListPublisherExtensionsAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.ListPublisherExtensionsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListPublisherExtensionsAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 394
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe List Available Extensions operation lists the extensions that\r\nare available to add to your cloud service. In Windows Azure, a\r\nprocess can run as an extension of a cloud service. For example,\r\nRemote Desktop Access or the Azure Diagnostics Agent can run as\r\nextensions to the cloud service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn169559.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<HostedServiceListAvailableExtensionsResponse> ListPublisherExtensionsAsync(CancellationToken cancellationToken)
+    content.vb: Function ListPublisherExtensionsAsync(cancellationToken As CancellationToken) As Task(Of HostedServiceListAvailableExtensionsResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse}
+      description: "\r\nThe List Available Extensions operation response.\r\n"
+- uid: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.UpdateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.UpdateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters,System.Threading.CancellationToken)
+  id: UpdateAsync(System.String,Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(String, HostedServiceUpdateParameters, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Management.Compute.IHostedServiceOperations.UpdateAsync(System.String, Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UpdateAsync
+    path: src/src/ServiceManagement/Compute/ComputeManagement/Generated/IHostedServiceOperations.cs
+    startLine: 415
+  assemblies:
+  - Microsoft.WindowsAzure.Management.Compute
+  namespace: Microsoft.WindowsAzure.Management.Compute
+  summary: "\r\nThe Update Hosted Service operation can update the label or\r\ndescription of a cloud service in Azure.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/gg441303.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> UpdateAsync(string serviceName, HostedServiceUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function UpdateAsync(serviceName As String, parameters As HostedServiceUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the cloud service.\r\n"
+    - id: parameters
+      type: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters
+      description: "\r\nParameters supplied to the Update Hosted Service operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.WindowsAzure.Management.Compute
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.Compute
+  fullName: Microsoft.WindowsAzure.Management.Compute
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: HostedServiceAddExtensionParameters
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceAddExtensionParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{OperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<OperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of OperationStatusResponse)
+  name.vb: Task(Of OperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: OperationStatusResponse
+    name: OperationStatusResponse
+    fullName: OperationStatusResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: OperationStatusResponse
+    name: OperationStatusResponse
+    fullName: OperationStatusResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.Compute.Models
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HostedServiceCheckNameAvailabilityResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse)
+  name.vb: Task(Of HostedServiceCheckNameAvailabilityResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse
+    name: HostedServiceCheckNameAvailabilityResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse
+    name: HostedServiceCheckNameAvailabilityResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCheckNameAvailabilityResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: HostedServiceCreateParameters
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceCreateParameters
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HostedServiceGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse)
+  name.vb: Task(Of HostedServiceGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse
+    name: HostedServiceGetResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse
+    name: HostedServiceGetResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HostedServiceGetDetailedResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse)
+  name.vb: Task(Of HostedServiceGetDetailedResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse
+    name: HostedServiceGetDetailedResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse
+    name: HostedServiceGetDetailedResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetDetailedResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HostedServiceGetExtensionResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse)
+  name.vb: Task(Of HostedServiceGetExtensionResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse
+    name: HostedServiceGetExtensionResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse
+    name: HostedServiceGetExtensionResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceGetExtensionResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HostedServiceListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse)
+  name.vb: Task(Of HostedServiceListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse
+    name: HostedServiceListResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse
+    name: HostedServiceListResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HostedServiceListAvailableExtensionsResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse)
+  name.vb: Task(Of HostedServiceListAvailableExtensionsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse
+    name: HostedServiceListAvailableExtensionsResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse
+    name: HostedServiceListAvailableExtensionsResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListAvailableExtensionsResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HostedServiceListExtensionsResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse)
+  name.vb: Task(Of HostedServiceListExtensionsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse
+    name: HostedServiceListExtensionsResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse
+    name: HostedServiceListExtensionsResponse
+    fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceListExtensionsResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters
+  parent: Microsoft.WindowsAzure.Management.Compute.Models
+  isExternal: false
+  name: HostedServiceUpdateParameters
+  fullName: Microsoft.WindowsAzure.Management.Compute.Models.HostedServiceUpdateParameters

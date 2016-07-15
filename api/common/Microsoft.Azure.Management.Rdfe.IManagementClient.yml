@@ -1,0 +1,460 @@
+items:
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient
+  commentId: T:Microsoft.Azure.Management.Rdfe.IManagementClient
+  id: IManagementClient
+  parent: Microsoft.Azure.Management.Rdfe
+  children:
+  - Microsoft.Azure.Management.Rdfe.IManagementClient.ApiVersion
+  - Microsoft.Azure.Management.Rdfe.IManagementClient.BaseUri
+  - Microsoft.Azure.Management.Rdfe.IManagementClient.Credentials
+  - Microsoft.Azure.Management.Rdfe.IManagementClient.GetOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Rdfe.IManagementClient.LongRunningOperationInitialTimeout
+  - Microsoft.Azure.Management.Rdfe.IManagementClient.LongRunningOperationRetryTimeout
+  - Microsoft.Azure.Management.Rdfe.IManagementClient.Subscriptions
+  langs:
+  - csharp
+  - vb
+  name: IManagementClient
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient
+  type: Interface
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IManagementClient
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe Service Management API provides programmatic access to much of the\r\nfunctionality available through the Management Portal. The Service\r\nManagement API is a REST API. All API operations are performed over\r\nSSL and are mutually authenticated using X.509 v3 certificates.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460799.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: 'public interface IManagementClient : IDisposable'
+    content.vb: >-
+      Public Interface IManagementClient
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient.ApiVersion
+  commentId: P:Microsoft.Azure.Management.Rdfe.IManagementClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Azure.Management.Rdfe.IManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient.BaseUri
+  commentId: P:Microsoft.Azure.Management.Rdfe.IManagementClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Azure.Management.Rdfe.IManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient.Credentials
+  commentId: P:Microsoft.Azure.Management.Rdfe.IManagementClient.Credentials
+  id: Credentials
+  parent: Microsoft.Azure.Management.Rdfe.IManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.Azure.Management.Rdfe.IManagementClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.Azure.Management.Rdfe.IManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+    startLine: 66
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.Azure.Management.Rdfe.IManagementClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.Azure.Management.Rdfe.IManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+    startLine: 74
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient.Subscriptions
+  commentId: P:Microsoft.Azure.Management.Rdfe.IManagementClient.Subscriptions
+  id: Subscriptions
+  parent: Microsoft.Azure.Management.Rdfe.IManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Subscriptions
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient.Subscriptions
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Subscriptions
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nOperations for listing subscription details.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/gg715315.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: >-
+      ISubscriptionOperations Subscriptions
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property Subscriptions As ISubscriptionOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Rdfe.IManagementClient.GetOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Rdfe.IManagementClient.GetOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Rdfe.IManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Rdfe.IManagementClient.GetOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationStatusAsync
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/IManagementClient.cs
+    startLine: 115
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Management.Rdfe
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: Task<OperationStatusResponse> GetOperationStatusAsync(string requestId, CancellationToken cancellationToken)
+    content.vb: Function GetOperationStatusAsync(requestId As String, cancellationToken As CancellationToken) As Task(Of OperationStatusResponse)
+    parameters:
+    - id: requestId
+      type: System.String
+      description: "\r\nThe request ID for the request you wish to track. The request ID is\r\nreturned in the x-ms-request-id response header for every request.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{OperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself.  If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request.  If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request, and also includes error\r\ninformation regarding the failure.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Rdfe
+  isExternal: false
+  name: Microsoft.Azure.Management.Rdfe
+  fullName: Microsoft.Azure.Management.Rdfe
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+  parent: Microsoft.Azure.Management.Rdfe
+  isExternal: false
+  name: ISubscriptionOperations
+  fullName: Microsoft.Azure.Management.Rdfe.ISubscriptionOperations
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{OperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<OperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of OperationStatusResponse)
+  name.vb: Task(Of OperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: OperationStatusResponse
+    name: OperationStatusResponse
+    fullName: OperationStatusResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: OperationStatusResponse
+    name: OperationStatusResponse
+    fullName: OperationStatusResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

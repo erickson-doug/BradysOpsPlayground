@@ -1,0 +1,471 @@
+items:
+- uid: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer
+  commentId: T:Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer
+  id: JsonProfileSerializer
+  parent: Microsoft.Azure.Common.Authentication.Models
+  children:
+  - Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.Deserialize(System.String,Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  - Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.DeserializeErrors
+  - Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.Serialize(Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  langs:
+  - csharp
+  - vb
+  name: JsonProfileSerializer
+  fullName: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer
+  type: Class
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Models/JsonProfileSerializer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: JsonProfileSerializer
+    path: src/src/Authentication/Common.Authentication/Models/JsonProfileSerializer.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Models
+  syntax:
+    content: 'public class JsonProfileSerializer : IProfileSerializer'
+    content.vb: >-
+      Public Class JsonProfileSerializer
+
+          Implements IProfileSerializer
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Common.Authentication.IProfileSerializer
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.Serialize(Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  commentId: M:Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.Serialize(Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  id: Serialize(Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  parent: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize(AzureProfile)
+  fullName: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.Serialize(Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Models/JsonProfileSerializer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Serialize
+    path: src/src/Authentication/Common.Authentication/Models/JsonProfileSerializer.cs
+    startLine: 24
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Models
+  syntax:
+    content: public string Serialize(AzureProfile profile)
+    content.vb: Public Function Serialize(profile As AzureProfile) As String
+    parameters:
+    - id: profile
+      type: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.Deserialize(System.String,Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  commentId: M:Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.Deserialize(System.String,Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  id: Deserialize(System.String,Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  parent: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(String, AzureProfile)
+  fullName: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.Deserialize(System.String, Microsoft.Azure.Common.Authentication.Models.AzureProfile)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Models/JsonProfileSerializer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Deserialize
+    path: src/src/Authentication/Common.Authentication/Models/JsonProfileSerializer.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Models
+  syntax:
+    content: public bool Deserialize(string contents, AzureProfile profile)
+    content.vb: Public Function Deserialize(contents As String, profile As AzureProfile) As Boolean
+    parameters:
+    - id: contents
+      type: System.String
+    - id: profile
+      type: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.DeserializeErrors
+  commentId: P:Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.DeserializeErrors
+  id: DeserializeErrors
+  parent: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeErrors
+  fullName: Microsoft.Azure.Common.Authentication.Models.JsonProfileSerializer.DeserializeErrors
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Models/JsonProfileSerializer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeserializeErrors
+    path: src/src/Authentication/Common.Authentication/Models/JsonProfileSerializer.cs
+    startLine: 88
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Models
+  syntax:
+    content: >-
+      public IList<string> DeserializeErrors
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property DeserializeErrors As IList(Of String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication.Models
+  fullName: Microsoft.Azure.Common.Authentication.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Common.Authentication.IProfileSerializer
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IProfileSerializer
+  fullName: Microsoft.Azure.Common.Authentication.IProfileSerializer
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication
+  fullName: Microsoft.Azure.Common.Authentication
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureProfile
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<String>
+  fullName: System.Collections.Generic.IList<System.String>
+  fullname.vb: System.Collections.Generic.IList(Of System.String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

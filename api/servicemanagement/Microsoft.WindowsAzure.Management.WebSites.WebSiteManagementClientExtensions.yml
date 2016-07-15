@@ -1,0 +1,645 @@
+items:
+- uid: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  commentId: T:Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  id: WebSiteManagementClientExtensions
+  parent: Microsoft.WindowsAzure.Management.WebSites
+  children:
+  - Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.GetOperationStatus(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient,System.String,System.String,System.String)
+  - Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.GetOperationStatusAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient,System.String,System.String,System.String)
+  - Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.RegisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  - Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.RegisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  - Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.UnregisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  - Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.UnregisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  langs:
+  - csharp
+  - vb
+  name: WebSiteManagementClientExtensions
+  fullName: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: WebSiteManagementClientExtensions
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nThe Web Sites Management API provides a RESTful set of web services\r\nthat interact with the Windows Azure Web Sites service to manage your\r\nweb sites. The API has entities that capture the relationship between\r\nan end user and Windows Azure Web Sites service.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx for\r\nmore information)\r\n"
+  example: []
+  syntax:
+    content: public class WebSiteManagementClientExtensions
+    content.vb: Public Class WebSiteManagementClientExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.GetOperationStatus(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient,System.String,System.String,System.String)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.GetOperationStatus(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient,System.String,System.String,System.String)
+  id: GetOperationStatus(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient,System.String,System.String,System.String)
+  parent: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOperationStatus(IWebSiteManagementClient, String, String, String)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.GetOperationStatus(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationStatus
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling a long-running operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, timed out, or is still in progress.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: public static WebSiteOperationStatusResponse GetOperationStatus(IWebSiteManagementClient operations, string webSpaceName, string siteName, string operationId)
+    content.vb: Public Shared Function GetOperationStatus(operations As IWebSiteManagementClient, webSpaceName As String, siteName As String, operationId As String) As WebSiteOperationStatusResponse
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.\r\n"
+    - id: webSpaceName
+      type: System.String
+      description: "\r\nRequired. The name of the webspace for the website where the\r\noperation was targeted.\r\n"
+    - id: siteName
+      type: System.String
+      description: "\r\nRequired. The name of the site where the operation was targeted.\r\n"
+    - id: operationId
+      type: System.String
+      description: "\r\nRequired. The operation ID for the operation you wish to track. The\r\noperation ID is returned in the ID field in the body of the\r\nresponse for long-running operations.\r\n"
+    return:
+      type: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+      description: "\r\nThe response body contains the status of the specified long-running\r\noperation, indicating whether it has succeeded, is inprogress, has\r\ntimed out, or has failed. Note that this status is distinct from\r\nthe HTTP status code returned for the Get Operation Status\r\noperation itself. If the long-running operation failed, the\r\nresponse body includes error information regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.GetOperationStatusAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient,System.String,System.String,System.String)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.GetOperationStatusAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient,System.String,System.String,System.String)
+  id: GetOperationStatusAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient,System.String,System.String,System.String)
+  parent: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOperationStatusAsync(IWebSiteManagementClient, String, String, String)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.GetOperationStatusAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationStatusAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+    startLine: 114
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling a long-running operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, timed out, or is still in progress.  (see\r\nhttp://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx\r\nfor more information)\r\n"
+  example: []
+  syntax:
+    content: public static Task<WebSiteOperationStatusResponse> GetOperationStatusAsync(IWebSiteManagementClient operations, string webSpaceName, string siteName, string operationId)
+    content.vb: Public Shared Function GetOperationStatusAsync(operations As IWebSiteManagementClient, webSpaceName As String, siteName As String, operationId As String) As Task(Of WebSiteOperationStatusResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.\r\n"
+    - id: webSpaceName
+      type: System.String
+      description: "\r\nRequired. The name of the webspace for the website where the\r\noperation was targeted.\r\n"
+    - id: siteName
+      type: System.String
+      description: "\r\nRequired. The name of the site where the operation was targeted.\r\n"
+    - id: operationId
+      type: System.String
+      description: "\r\nRequired. The operation ID for the operation you wish to track. The\r\noperation ID is returned in the ID field in the body of the\r\nresponse for long-running operations.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified long-running\r\noperation, indicating whether it has succeeded, is inprogress, has\r\ntimed out, or has failed. Note that this status is distinct from\r\nthe HTTP status code returned for the Get Operation Status\r\noperation itself. If the long-running operation failed, the\r\nresponse body includes error information regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.RegisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.RegisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  id: RegisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  parent: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: RegisterSubscription(IWebSiteManagementClient)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.RegisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RegisterSubscription
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+    startLine: 130
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nRegister your subscription to use Azure Web Sites.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse RegisterSubscription(IWebSiteManagementClient operations)
+    content.vb: Public Shared Function RegisterSubscription(operations As IWebSiteManagementClient) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.RegisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.RegisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  id: RegisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  parent: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: RegisterSubscriptionAsync(IWebSiteManagementClient)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.RegisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RegisterSubscriptionAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+    startLine: 150
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nRegister your subscription to use Azure Web Sites.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> RegisterSubscriptionAsync(IWebSiteManagementClient operations)
+    content.vb: Public Shared Function RegisterSubscriptionAsync(operations As IWebSiteManagementClient) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.UnregisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.UnregisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  id: UnregisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  parent: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnregisterSubscription(IWebSiteManagementClient)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.UnregisterSubscription(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UnregisterSubscription
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+    startLine: 166
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nUnregister your subscription to use Azure Web Sites.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse UnregisterSubscription(IWebSiteManagementClient operations)
+    content.vb: Public Shared Function UnregisterSubscription(operations As IWebSiteManagementClient) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.UnregisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  commentId: M:Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.UnregisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  id: UnregisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  parent: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnregisterSubscriptionAsync(IWebSiteManagementClient)
+  fullName: Microsoft.WindowsAzure.Management.WebSites.WebSiteManagementClientExtensions.UnregisterSubscriptionAsync(Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient)
+  type: Method
+  source:
+    remote:
+      path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UnregisterSubscriptionAsync
+    path: src/src/ServiceManagement/WebSite/WebSiteManagement/Generated/WebSiteManagementClientExtensions.cs
+    startLine: 186
+  assemblies:
+  - Microsoft.WindowsAzure.Management.WebSites
+  namespace: Microsoft.WindowsAzure.Management.WebSites
+  summary: "\r\nUnregister your subscription to use Azure Web Sites.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> UnregisterSubscriptionAsync(IWebSiteManagementClient operations)
+    content.vb: Public Shared Function UnregisterSubscriptionAsync(operations As IWebSiteManagementClient) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.WindowsAzure.Management.WebSites
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.WebSites
+  fullName: Microsoft.WindowsAzure.Management.WebSites
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+  parent: Microsoft.WindowsAzure.Management.WebSites
+  isExternal: false
+  name: IWebSiteManagementClient
+  fullName: Microsoft.WindowsAzure.Management.WebSites.IWebSiteManagementClient
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+  parent: Microsoft.WindowsAzure.Management.WebSites.Models
+  isExternal: false
+  name: WebSiteOperationStatusResponse
+  fullName: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+- uid: Microsoft.WindowsAzure.Management.WebSites.Models
+  isExternal: false
+  name: Microsoft.WindowsAzure.Management.WebSites.Models
+  fullName: Microsoft.WindowsAzure.Management.WebSites.Models
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<WebSiteOperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse)
+  name.vb: Task(Of WebSiteOperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+    name: WebSiteOperationStatusResponse
+    fullName: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+    name: WebSiteOperationStatusResponse
+    fullName: Microsoft.WindowsAzure.Management.WebSites.Models.WebSiteOperationStatusResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: AzureOperationResponse
+  isExternal: true
+  name: AzureOperationResponse
+  fullName: AzureOperationResponse
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )

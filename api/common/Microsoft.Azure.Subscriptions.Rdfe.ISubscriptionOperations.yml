@@ -1,0 +1,143 @@
+items:
+- uid: Microsoft.Azure.Subscriptions.Rdfe.ISubscriptionOperations
+  commentId: T:Microsoft.Azure.Subscriptions.Rdfe.ISubscriptionOperations
+  id: ISubscriptionOperations
+  parent: Microsoft.Azure.Subscriptions.Rdfe
+  children:
+  - Microsoft.Azure.Subscriptions.Rdfe.ISubscriptionOperations.ListAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ISubscriptionOperations
+  fullName: Microsoft.Azure.Subscriptions.Rdfe.ISubscriptionOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Subscriptions/ISubscriptionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ISubscriptionOperations
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Subscriptions/ISubscriptionOperations.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Subscriptions.Rdfe
+  syntax:
+    content: public interface ISubscriptionOperations
+    content.vb: Public Interface ISubscriptionOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Subscriptions.Rdfe.ISubscriptionOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Subscriptions.Rdfe.ISubscriptionOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Subscriptions.Rdfe.ISubscriptionOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.Azure.Subscriptions.Rdfe.ISubscriptionOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Management.Rdfe/Subscriptions/ISubscriptionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/Authentication/Common.Authentication/Management.Rdfe/Subscriptions/ISubscriptionOperations.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Subscriptions.Rdfe
+  example: []
+  syntax:
+    content: Task<SubscriptionListOperationResponse> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of SubscriptionListOperationResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Subscriptions.Rdfe.Models.SubscriptionListOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.Azure.Subscriptions.Rdfe
+  isExternal: false
+  name: Microsoft.Azure.Subscriptions.Rdfe
+  fullName: Microsoft.Azure.Subscriptions.Rdfe
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Subscriptions.Rdfe.Models.SubscriptionListOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionListOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Subscriptions.Rdfe.Models.SubscriptionListOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Subscriptions.Rdfe.Models.SubscriptionListOperationResponse)
+  name.vb: Task(Of SubscriptionListOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Subscriptions.Rdfe.Models.SubscriptionListOperationResponse
+    name: SubscriptionListOperationResponse
+    fullName: Microsoft.Azure.Subscriptions.Rdfe.Models.SubscriptionListOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Subscriptions.Rdfe.Models.SubscriptionListOperationResponse
+    name: SubscriptionListOperationResponse
+    fullName: Microsoft.Azure.Subscriptions.Rdfe.Models.SubscriptionListOperationResponse
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

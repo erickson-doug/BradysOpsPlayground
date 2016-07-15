@@ -1,0 +1,929 @@
+items:
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  commentId: T:Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  id: ClientFactory
+  parent: Microsoft.Azure.Common.Authentication.Factories
+  children:
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.#ctor
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddAction(Microsoft.Azure.Common.Authentication.Models.IClientAction)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddUserAgent(System.String)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddUserAgent(System.String,System.String)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureContext,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureSubscription,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateCustomClient``1(System.Object[])
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClient(System.String,System.Net.Http.HttpMessageHandler)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClient(System.String,System.Net.ICredentials)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClientHandler(System.String,System.Net.ICredentials)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.RemoveAction(System.Type)
+  - Microsoft.Azure.Common.Authentication.Factories.ClientFactory.UserAgents
+  langs:
+  - csharp
+  - vb
+  name: ClientFactory
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  type: Class
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ClientFactory
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 25
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: 'public class ClientFactory : IClientFactory'
+    content.vb: >-
+      Public Class ClientFactory
+
+          Implements IClientFactory
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Common.Authentication.IClientFactory
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.#ctor
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: ClientFactory()
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.ClientFactory()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public ClientFactory()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureContext,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureContext,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  id: CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureContext,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateClient<TClient>(AzureContext, AzureEnvironment.Endpoint)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient<TClient>(Microsoft.Azure.Common.Authentication.Models.AzureContext, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateClient
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: 'public virtual TClient CreateClient<TClient>(AzureContext context, AzureEnvironment.Endpoint endpoint)where TClient : ServiceClient<TClient>'
+    content.vb: Public Overridable Function CreateClient(Of TClient As ServiceClient(Of TClient))(context As AzureContext, endpoint As AzureEnvironment.Endpoint) As TClient
+    parameters:
+    - id: context
+      type: Microsoft.Azure.Common.Authentication.Models.AzureContext
+    - id: endpoint
+      type: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+    typeParameters:
+    - id: TClient
+    return:
+      type: '{TClient}'
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient(Of TClient)(Microsoft.Azure.Common.Authentication.Models.AzureContext, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  name.vb: CreateClient(Of TClient)(AzureContext, AzureEnvironment.Endpoint)
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  id: CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateClient<TClient>(AzureProfile, AzureEnvironment.Endpoint)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient<TClient>(Microsoft.Azure.Common.Authentication.Models.AzureProfile, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateClient
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: 'public virtual TClient CreateClient<TClient>(AzureProfile profile, AzureEnvironment.Endpoint endpoint)where TClient : ServiceClient<TClient>'
+    content.vb: Public Overridable Function CreateClient(Of TClient As ServiceClient(Of TClient))(profile As AzureProfile, endpoint As AzureEnvironment.Endpoint) As TClient
+    parameters:
+    - id: profile
+      type: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+    - id: endpoint
+      type: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+    typeParameters:
+    - id: TClient
+    return:
+      type: '{TClient}'
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient(Of TClient)(Microsoft.Azure.Common.Authentication.Models.AzureProfile, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  name.vb: CreateClient(Of TClient)(AzureProfile, AzureEnvironment.Endpoint)
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureSubscription,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureSubscription,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  id: CreateClient``1(Microsoft.Azure.Common.Authentication.Models.AzureProfile,Microsoft.Azure.Common.Authentication.Models.AzureSubscription,Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateClient<TClient>(AzureProfile, AzureSubscription, AzureEnvironment.Endpoint)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient<TClient>(Microsoft.Azure.Common.Authentication.Models.AzureProfile, Microsoft.Azure.Common.Authentication.Models.AzureSubscription, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateClient
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 69
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  summary: "\r\nTODO: Migrate all code that references this method to use AzureContext\r\n"
+  example: []
+  syntax:
+    content: 'public virtual TClient CreateClient<TClient>(AzureProfile profile, AzureSubscription subscription, AzureEnvironment.Endpoint endpoint)where TClient : ServiceClient<TClient>'
+    content.vb: Public Overridable Function CreateClient(Of TClient As ServiceClient(Of TClient))(profile As AzureProfile, subscription As AzureSubscription, endpoint As AzureEnvironment.Endpoint) As TClient
+    parameters:
+    - id: profile
+      type: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+    - id: subscription
+      type: Microsoft.Azure.Common.Authentication.Models.AzureSubscription
+    - id: endpoint
+      type: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+    typeParameters:
+    - id: TClient
+    return:
+      type: '{TClient}'
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateClient(Of TClient)(Microsoft.Azure.Common.Authentication.Models.AzureProfile, Microsoft.Azure.Common.Authentication.Models.AzureSubscription, Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint)
+  name.vb: CreateClient(Of TClient)(AzureProfile, AzureSubscription, AzureEnvironment.Endpoint)
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateCustomClient``1(System.Object[])
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateCustomClient``1(System.Object[])
+  id: CreateCustomClient``1(System.Object[])
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateCustomClient<TClient>(Object[])
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateCustomClient<TClient>(System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateCustomClient
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: 'public virtual TClient CreateCustomClient<TClient>(params object[] parameters)where TClient : ServiceClient<TClient>'
+    content.vb: Public Overridable Function CreateCustomClient(Of TClient As ServiceClient(Of TClient))(ParamArray parameters As Object()) As TClient
+    parameters:
+    - id: parameters
+      type: System.Object[]
+    typeParameters:
+    - id: TClient
+    return:
+      type: '{TClient}'
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateCustomClient(Of TClient)(System.Object())
+  name.vb: CreateCustomClient(Of TClient)(Object())
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClient(System.String,System.Net.ICredentials)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClient(System.String,System.Net.ICredentials)
+  id: CreateHttpClient(System.String,System.Net.ICredentials)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateHttpClient(String, ICredentials)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClient(System.String, System.Net.ICredentials)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateHttpClient
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 116
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public virtual HttpClient CreateHttpClient(string endpoint, ICredentials credentials)
+    content.vb: Public Overridable Function CreateHttpClient(endpoint As String, credentials As ICredentials) As HttpClient
+    parameters:
+    - id: endpoint
+      type: System.String
+    - id: credentials
+      type: System.Net.ICredentials
+    return:
+      type: System.Net.Http.HttpClient
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClient(System.String,System.Net.Http.HttpMessageHandler)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClient(System.String,System.Net.Http.HttpMessageHandler)
+  id: CreateHttpClient(System.String,System.Net.Http.HttpMessageHandler)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateHttpClient(String, HttpMessageHandler)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClient(System.String, System.Net.Http.HttpMessageHandler)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateHttpClient
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 121
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public virtual HttpClient CreateHttpClient(string endpoint, HttpMessageHandler effectiveHandler)
+    content.vb: Public Overridable Function CreateHttpClient(endpoint As String, effectiveHandler As HttpMessageHandler) As HttpClient
+    parameters:
+    - id: endpoint
+      type: System.String
+    - id: effectiveHandler
+      type: System.Net.Http.HttpMessageHandler
+    return:
+      type: System.Net.Http.HttpClient
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClientHandler(System.String,System.Net.ICredentials)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClientHandler(System.String,System.Net.ICredentials)
+  id: CreateHttpClientHandler(System.String,System.Net.ICredentials)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateHttpClientHandler(String, ICredentials)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.CreateHttpClientHandler(System.String, System.Net.ICredentials)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateHttpClientHandler
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 140
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public static HttpClientHandler CreateHttpClientHandler(string endpoint, ICredentials credentials)
+    content.vb: Public Shared Function CreateHttpClientHandler(endpoint As String, credentials As ICredentials) As HttpClientHandler
+    parameters:
+    - id: endpoint
+      type: System.String
+    - id: credentials
+      type: System.Net.ICredentials
+    return:
+      type: System.Net.Http.HttpClientHandler
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddAction(Microsoft.Azure.Common.Authentication.Models.IClientAction)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddAction(Microsoft.Azure.Common.Authentication.Models.IClientAction)
+  id: AddAction(Microsoft.Azure.Common.Authentication.Models.IClientAction)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: AddAction(IClientAction)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddAction(Microsoft.Azure.Common.Authentication.Models.IClientAction)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AddAction
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 169
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public void AddAction(IClientAction action)
+    content.vb: Public Sub AddAction(action As IClientAction)
+    parameters:
+    - id: action
+      type: Microsoft.Azure.Common.Authentication.Models.IClientAction
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.RemoveAction(System.Type)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.RemoveAction(System.Type)
+  id: RemoveAction(System.Type)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: RemoveAction(Type)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.RemoveAction(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RemoveAction
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 175
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  syntax:
+    content: public void RemoveAction(Type actionType)
+    content.vb: Public Sub RemoveAction(actionType As Type)
+    parameters:
+    - id: actionType
+      type: System.Type
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddUserAgent(System.String,System.String)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddUserAgent(System.String,System.String)
+  id: AddUserAgent(System.String,System.String)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: AddUserAgent(String, String)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddUserAgent(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AddUserAgent
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 188
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  summary: "\r\nAdds user agent to UserAgents collection.\r\n"
+  example: []
+  syntax:
+    content: public void AddUserAgent(string productName, string productVersion)
+    content.vb: Public Sub AddUserAgent(productName As String, productVersion As String)
+    parameters:
+    - id: productName
+      type: System.String
+      description: Product name.
+    - id: productVersion
+      type: System.String
+      description: Product version.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddUserAgent(System.String)
+  commentId: M:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddUserAgent(System.String)
+  id: AddUserAgent(System.String)
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: AddUserAgent(String)
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.AddUserAgent(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AddUserAgent
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 197
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  summary: "\r\nAdds user agent to UserAgents collection with empty version.\r\n"
+  example: []
+  syntax:
+    content: public void AddUserAgent(string productName)
+    content.vb: Public Sub AddUserAgent(productName As String)
+    parameters:
+    - id: productName
+      type: System.String
+      description: Product name.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.UserAgents
+  commentId: P:Microsoft.Azure.Common.Authentication.Factories.ClientFactory.UserAgents
+  id: UserAgents
+  parent: Microsoft.Azure.Common.Authentication.Factories.ClientFactory
+  langs:
+  - csharp
+  - vb
+  name: UserAgents
+  fullName: Microsoft.Azure.Common.Authentication.Factories.ClientFactory.UserAgents
+  type: Property
+  source:
+    remote:
+      path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UserAgents
+    path: src/src/Authentication/Common.Authentication/Factories/ClientFactory.cs
+    startLine: 205
+  assemblies:
+  - Microsoft.Azure.Common.Authentication
+  namespace: Microsoft.Azure.Common.Authentication.Factories
+  summary: "\r\nGets a hash set of user agents to be included in created clients.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public HashSet<ProductInfoHeaderValue> UserAgents
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property UserAgents As HashSet(Of ProductInfoHeaderValue)
+    parameters: []
+    return:
+      type: System.Collections.Generic.HashSet{System.Net.Http.Headers.ProductInfoHeaderValue}
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Microsoft.Azure.Common.Authentication.Factories
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication.Factories
+  fullName: Microsoft.Azure.Common.Authentication.Factories
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Common.Authentication.IClientFactory
+  parent: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: IClientFactory
+  fullName: Microsoft.Azure.Common.Authentication.IClientFactory
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Common.Authentication
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication
+  fullName: Microsoft.Azure.Common.Authentication
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureContext
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureContext
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureContext
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureEnvironment.Endpoint
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureEnvironment.Endpoint
+- uid: '{TClient}'
+  isExternal: false
+  name: TClient
+  fullName: TClient
+- uid: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: Microsoft.Azure.Common.Authentication.Models
+  fullName: Microsoft.Azure.Common.Authentication.Models
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureProfile
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureProfile
+- uid: Microsoft.Azure.Common.Authentication.Models.AzureSubscription
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: AzureSubscription
+  fullName: Microsoft.Azure.Common.Authentication.Models.AzureSubscription
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Net.ICredentials
+  parent: System.Net
+  isExternal: true
+  name: ICredentials
+  fullName: System.Net.ICredentials
+- uid: System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+- uid: System.Net.Http.HttpMessageHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpMessageHandler
+  fullName: System.Net.Http.HttpMessageHandler
+- uid: System.Net.Http.HttpClientHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClientHandler
+  fullName: System.Net.Http.HttpClientHandler
+- uid: Microsoft.Azure.Common.Authentication.Models.IClientAction
+  parent: Microsoft.Azure.Common.Authentication.Models
+  isExternal: false
+  name: IClientAction
+  fullName: Microsoft.Azure.Common.Authentication.Models.IClientAction
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.HashSet{System.Net.Http.Headers.ProductInfoHeaderValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  name: HashSet<ProductInfoHeaderValue>
+  fullName: System.Collections.Generic.HashSet<System.Net.Http.Headers.ProductInfoHeaderValue>
+  fullname.vb: System.Collections.Generic.HashSet(Of System.Net.Http.Headers.ProductInfoHeaderValue)
+  name.vb: HashSet(Of ProductInfoHeaderValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Net.Http.Headers.ProductInfoHeaderValue
+    name: ProductInfoHeaderValue
+    fullName: System.Net.Http.Headers.ProductInfoHeaderValue
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.Headers.ProductInfoHeaderValue
+    name: ProductInfoHeaderValue
+    fullName: System.Net.Http.Headers.ProductInfoHeaderValue
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.HashSet`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  fullname.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

@@ -1,0 +1,321 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure">
+          <span class="lang-csharp">Microsoft.Azure</span>
+          <span class="lang-vb">Microsoft.Azure</span>
+          Namespace
+      </h1>
+    </header>
+    <header class="header" id="classes">
+      <h2>Classes
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li id="Microsoft_Azure_AnonymousCloudCredentials" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.AnonymousCloudCredentials.html#Microsoft_Azure_AnonymousCloudCredentials">AnonymousCloudCredentials</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.AnonymousCloudCredentials.html#Microsoft_Azure_AnonymousCloudCredentials">AnonymousCloudCredentials</a>
+              </code>
+            </h4>
+            <p>Class for token based credentials associated with a particular subscription.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class AnonymousCloudCredentials : SubscriptionCloudCredentials</code><code class="vb lang-vb">Public Class AnonymousCloudCredentials
+
+    Inherits SubscriptionCloudCredentials</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_AzureOperationResponse" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.AzureOperationResponse.html#Microsoft_Azure_AzureOperationResponse">AzureOperationResponse</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.AzureOperationResponse.html#Microsoft_Azure_AzureOperationResponse">AzureOperationResponse</a>
+              </code>
+            </h4>
+            <p>A standard service response including an HTTP status code and request
+ID.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class AzureOperationResponse : HttpOperationResponse</code><code class="vb lang-vb">Public Class AzureOperationResponse
+
+    Inherits HttpOperationResponse</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_CertificateCloudCredentials" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.CertificateCloudCredentials.html#Microsoft_Azure_CertificateCloudCredentials">CertificateCloudCredentials</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.CertificateCloudCredentials.html#Microsoft_Azure_CertificateCloudCredentials">CertificateCloudCredentials</a>
+              </code>
+            </h4>
+            <p>Credentials using a management certificate to authorize requests.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public sealed class CertificateCloudCredentials : SubscriptionCloudCredentials</code><code class="vb lang-vb">Public NotInheritable Class CertificateCloudCredentials
+
+    Inherits SubscriptionCloudCredentials</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_ClientRequestTrackingHandler" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.ClientRequestTrackingHandler.html#Microsoft_Azure_ClientRequestTrackingHandler">ClientRequestTrackingHandler</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.ClientRequestTrackingHandler.html#Microsoft_Azure_ClientRequestTrackingHandler">ClientRequestTrackingHandler</a>
+              </code>
+            </h4>
+            
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class ClientRequestTrackingHandler : MessageProcessingHandler, IDisposable</code><code class="vb lang-vb">Public Class ClientRequestTrackingHandler
+
+    Inherits MessageProcessingHandler
+
+    Implements IDisposable</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_CloudConfigurationManager" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.CloudConfigurationManager.html#Microsoft_Azure_CloudConfigurationManager">CloudConfigurationManager</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.CloudConfigurationManager.html#Microsoft_Azure_CloudConfigurationManager">CloudConfigurationManager</a>
+              </code>
+            </h4>
+            <p>Configuration manager for accessing Microsoft Azure settings.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class CloudConfigurationManager</code><code class="vb lang-vb">Public Class CloudConfigurationManager</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_OperationStatusResponse" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.OperationStatusResponse.html#Microsoft_Azure_OperationStatusResponse">OperationStatusResponse</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.OperationStatusResponse.html#Microsoft_Azure_OperationStatusResponse">OperationStatusResponse</a>
+              </code>
+            </h4>
+            <p>The response body contains the status of the specified
+asynchronous operation, indicating whether it has succeeded, is i
+progress, or has failed. Note that this status is distinct from the
+HTTP status code returned for the Get Operation Status operation
+itself.  If the asynchronous operation succeeded, the response body
+includes the HTTP status code for the successful request.  If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request, and also includes error
+information regarding the failure.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class OperationStatusResponse : AzureOperationResponse</code><code class="vb lang-vb">Public Class OperationStatusResponse
+
+    Inherits AzureOperationResponse</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_OperationStatusResponse_ErrorDetails" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.OperationStatusResponse.ErrorDetails.html#Microsoft_Azure_OperationStatusResponse_ErrorDetails">OperationStatusResponse.ErrorDetails</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.OperationStatusResponse.ErrorDetails.html#Microsoft_Azure_OperationStatusResponse_ErrorDetails">OperationStatusResponse.ErrorDetails</a>
+              </code>
+            </h4>
+            <p>If the asynchronous operation failed, the response body includes
+the HTTP status code for the failed request, and also includes
+error information regarding the failure.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class ErrorDetails</code><code class="vb lang-vb">Public Class ErrorDetails</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_ResourceBase" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.ResourceBase.html#Microsoft_Azure_ResourceBase">ResourceBase</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.ResourceBase.html#Microsoft_Azure_ResourceBase">ResourceBase</a>
+              </code>
+            </h4>
+            <p>Resource information.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class ResourceBase</code><code class="vb lang-vb">Public Class ResourceBase</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_ResourceBaseExtended" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.ResourceBaseExtended.html#Microsoft_Azure_ResourceBaseExtended">ResourceBaseExtended</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.ResourceBaseExtended.html#Microsoft_Azure_ResourceBaseExtended">ResourceBaseExtended</a>
+              </code>
+            </h4>
+            <p>Resource information with extended details.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class ResourceBaseExtended : ResourceBase</code><code class="vb lang-vb">Public Class ResourceBaseExtended
+
+    Inherits ResourceBase</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_ResourceIdentity" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.ResourceIdentity.html#Microsoft_Azure_ResourceIdentity">ResourceIdentity</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.ResourceIdentity.html#Microsoft_Azure_ResourceIdentity">ResourceIdentity</a>
+              </code>
+            </h4>
+            <p>Resource identity.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class ResourceIdentity</code><code class="vb lang-vb">Public Class ResourceIdentity</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_SubscriptionCloudCredentials" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.SubscriptionCloudCredentials.html#Microsoft_Azure_SubscriptionCloudCredentials">SubscriptionCloudCredentials</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.SubscriptionCloudCredentials.html#Microsoft_Azure_SubscriptionCloudCredentials">SubscriptionCloudCredentials</a>
+              </code>
+            </h4>
+            <p>Base class for credentials associated with a particular subscription.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public abstract class SubscriptionCloudCredentials : CloudCredentials</code><code class="vb lang-vb">Public MustInherit Class SubscriptionCloudCredentials
+
+    Inherits CloudCredentials</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+      <li id="Microsoft_Azure_TokenCloudCredentials" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.TokenCloudCredentials.html#Microsoft_Azure_TokenCloudCredentials">TokenCloudCredentials</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.TokenCloudCredentials.html#Microsoft_Azure_TokenCloudCredentials">TokenCloudCredentials</a>
+              </code>
+            </h4>
+            <p>Class for token based credentials associated with a particular subscription.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public class TokenCloudCredentials : SubscriptionCloudCredentials</code><code class="vb lang-vb">Public Class TokenCloudCredentials
+
+    Inherits SubscriptionCloudCredentials</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+    </ul>
+    <header class="header" id="enums">
+      <h2>Enums
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li id="Microsoft_Azure_OperationStatus" class="enable-platform-filter">
+        <div class="level">
+          <section class="primary">
+            <h4>
+              <code class="lang-csharp">
+                <a class="xref" href="Microsoft.Azure.OperationStatus.html#Microsoft_Azure_OperationStatus">OperationStatus</a>
+              </code>
+              <code class="lang-vb">
+                <a class="xref" href="Microsoft.Azure.OperationStatus.html#Microsoft_Azure_OperationStatus">OperationStatus</a>
+              </code>
+            </h4>
+            <p>The status of the asynchronous request.</p>
+
+          </section>
+          <section class="secondary">
+            <figure>
+              <pre><code class="csharp lang-csharp">public enum OperationStatus</code><code class="vb lang-vb">Public Enum OperationStatus</code></pre>
+            </figure>
+          </section>
+        </div>
+      </li>
+    </ul>

@@ -34,7 +34,7 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="api/common">
+                                <a href="api/common/index">
                                     <h3>Common SDK Utilities</h3>
                                     <p>Reference for the common classes used throughout the Azure SDK for .NET</p>
                                 </a>

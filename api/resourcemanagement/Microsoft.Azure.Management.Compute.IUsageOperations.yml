@@ -1,0 +1,158 @@
+items:
+- uid: Microsoft.Azure.Management.Compute.IUsageOperations
+  commentId: T:Microsoft.Azure.Management.Compute.IUsageOperations
+  id: IUsageOperations
+  parent: Microsoft.Azure.Management.Compute
+  children:
+  - Microsoft.Azure.Management.Compute.IUsageOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IUsageOperations
+  fullName: Microsoft.Azure.Management.Compute.IUsageOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IUsageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IUsageOperations
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IUsageOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nOperations for listing usage.\r\n"
+  example: []
+  syntax:
+    content: public interface IUsageOperations
+    content.vb: Public Interface IUsageOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Compute.IUsageOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Compute.IUsageOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Compute.IUsageOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Compute.IUsageOperations.ListAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IUsageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Compute/ComputeManagement/Generated/IUsageOperations.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.Azure.Management.Compute
+  namespace: Microsoft.Azure.Management.Compute
+  summary: "\r\nLists compute usages for a subscription.\r\n"
+  example: []
+  syntax:
+    content: Task<ListUsagesResponse> ListAsync(string location, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(location As String, cancellationToken As CancellationToken) As Task(Of ListUsagesResponse)
+    parameters:
+    - id: location
+      type: System.String
+      description: "\r\nThe location upon which resource usage is queried.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.ListUsagesResponse}
+      description: "\r\nThe List Usages operation response.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Compute
+  isExternal: false
+  name: Microsoft.Azure.Management.Compute
+  fullName: Microsoft.Azure.Management.Compute
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Compute.Models.ListUsagesResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ListUsagesResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Compute.Models.ListUsagesResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Compute.Models.ListUsagesResponse)
+  name.vb: Task(Of ListUsagesResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Compute.Models.ListUsagesResponse
+    name: ListUsagesResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.ListUsagesResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Compute.Models.ListUsagesResponse
+    name: ListUsagesResponse
+    fullName: Microsoft.Azure.Management.Compute.Models.ListUsagesResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
