@@ -34,19 +34,19 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="api/webapps/">
+                                <a href="api/webapps/index">
                                     <h3>Web Apps</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/apiapps/">
+                                <a href="api/apiapps/index">
                                     <h3>API Apps</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/apimanagement/">
+                                <a href="api/apimanagement/index">
                                     <h3>API Management</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
@@ -67,19 +67,19 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="api/compute/">
+                                <a href="api/compute/index">
                                     <h3>Virtual Machines</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/network/">
+                                <a href="api/network/index">
                                     <h3>Networking</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/dns/">
+                                <a href="api/dns/index">
                                     <h3>DNS</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
@@ -100,19 +100,19 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="api/storage/">
+                                <a href="api/storage/index">
                                     <h3>Azure Storage</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/sql/">
+                                <a href="api/sql/index">
                                     <h3>SQL Server</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/redis/">
+                                <a href="api/redis/index">
                                     <h3>Redis Cache</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
@@ -133,19 +133,19 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="api/hdinsight/">
+                                <a href="api/hdinsight/index">
                                     <h3>HDInsight</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/streamanalytics/">
+                                <a href="api/streamanalytics/index">
                                     <h3>Stream Analytics</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/batch/">
+                                <a href="api/batch/index">
                                     <h3>Azure Batch</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
@@ -166,19 +166,19 @@ layout: HubPage
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="api/recovery/">
+                                <a href="api/recovery/index">
                                     <h3>Recovery Services</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/recoverybackup/">
+                                <a href="api/recoverybackup/index">
                                     <h3>Recovery Services Backup</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/siterecovery/">
+                                <a href="api/siterecovery/index">
                                     <h3>Site Recovery</h3>
                                     <p>Descriptive text here about managing this resource type using .NET</p>
                                 </a>
