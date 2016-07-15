@@ -1,0 +1,337 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations
+  commentId: T:Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations
+  id: IProductGroupsOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.AddAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.ListAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.RemoveAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IProductGroupsOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IProductGroupsOperations
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nOperations for managing Product Groups.\r\n"
+  example: []
+  syntax:
+    content: public interface IProductGroupsOperations
+    content.vb: Public Interface IProductGroupsOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.AddAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.AddAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: AddAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(String, String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.AddAsync(System.String, System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AddAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nAssigns group to product.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> AddAsync(string resourceGroupName, string serviceName, string pid, string gid, CancellationToken cancellationToken)
+    content.vb: Function AddAsync(resourceGroupName As String, serviceName As String, pid As String, gid As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nIdentifier of the product.\r\n"
+    - id: gid
+      type: System.String
+      description: "\r\nIdentifier of the Group.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.ListAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.ListAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, String, QueryParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.ListAsync(System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all Product Groups.\r\n"
+  example: []
+  syntax:
+    content: Task<GroupListResponse> ListAsync(string resourceGroupName, string serviceName, string pid, QueryParameters query, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, serviceName As String, pid As String, query As QueryParameters, cancellationToken As CancellationToken) As Task(Of GroupListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nIdentifier of the product.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse}
+      description: "\r\nList Groups operation response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.ListNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all Product Groups.\r\n"
+  example: []
+  syntax:
+    content: Task<GroupListResponse> ListNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of GroupListResponse)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nNextLink from the previous successful call to List operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse}
+      description: "\r\nList Groups operation response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.RemoveAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.RemoveAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: RemoveAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations
+  langs:
+  - csharp
+  - vb
+  name: RemoveAsync(String, String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductGroupsOperations.RemoveAsync(System.String, System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RemoveAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductGroupsOperations.cs
+    startLine: 115
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nRemoves group assignement from product.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> RemoveAsync(string resourceGroupName, string serviceName, string pid, string gid, CancellationToken cancellationToken)
+    content.vb: Function RemoveAsync(resourceGroupName As String, serviceName As String, pid As String, gid As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nIdentifier of the product.\r\n"
+    - id: gid
+      type: System.String
+      description: "\r\nIdentifier of the Group.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: QueryParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GroupListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse)
+  name.vb: Task(Of GroupListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse
+    name: GroupListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse
+    name: GroupListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.GroupListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels

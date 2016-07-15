@@ -1,0 +1,699 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  id: RecoveryPoint
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.#ctor
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.IsInstantILRSessionActive
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.IsSourceVMEncrypted
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.KeyAndSecret
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointAdditionalInfo
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointTime
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointType
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.SourceVMStorageType
+  langs:
+  - csharp
+  - vb
+  name: RecoveryPoint
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecoveryPoint
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nBase class for recovery points. Workload-specific recovery points are\r\nderived from this class.\r\n"
+  example: []
+  syntax:
+    content: 'public class RecoveryPoint : RecoveryPointBase'
+    content.vb: >-
+      Public Class RecoveryPoint
+
+          Inherits RecoveryPointBase
+  inheritance:
+  - System.Object
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPointBase
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.IsInstantILRSessionActive
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.IsInstantILRSessionActive
+  id: IsInstantILRSessionActive
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  langs:
+  - csharp
+  - vb
+  name: IsInstantILRSessionActive
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.IsInstantILRSessionActive
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IsInstantILRSessionActive
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Identifies whether the instant ILR session associated\r\nwith this recovery point is still active.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool IsInstantILRSessionActive
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IsInstantILRSessionActive As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.IsSourceVMEncrypted
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.IsSourceVMEncrypted
+  id: IsSourceVMEncrypted
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  langs:
+  - csharp
+  - vb
+  name: IsSourceVMEncrypted
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.IsSourceVMEncrypted
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IsSourceVMEncrypted
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Identifies whether this recovery point represents an\r\nencrypted VM at the time of backup.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool ? IsSourceVMEncrypted
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IsSourceVMEncrypted As Boolean?
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.KeyAndSecret
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.KeyAndSecret
+  id: KeyAndSecret
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  langs:
+  - csharp
+  - vb
+  name: KeyAndSecret
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.KeyAndSecret
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: KeyAndSecret
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Required details for recovering an encrypted VM.\r\nApplicable only when IsSourceVMEncrypted is true.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public KeyAndSecretDetails KeyAndSecret
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property KeyAndSecret As KeyAndSecretDetails
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.KeyAndSecretDetails
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointAdditionalInfo
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointAdditionalInfo
+  id: RecoveryPointAdditionalInfo
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  langs:
+  - csharp
+  - vb
+  name: RecoveryPointAdditionalInfo
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointAdditionalInfo
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecoveryPointAdditionalInfo
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 75
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Additional information associated with this recovery\r\npoint.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string RecoveryPointAdditionalInfo
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RecoveryPointAdditionalInfo As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointTime
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointTime
+  id: RecoveryPointTime
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  langs:
+  - csharp
+  - vb
+  name: RecoveryPointTime
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointTime
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecoveryPointTime
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 86
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Time at which this recovery point was created.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string RecoveryPointTime
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RecoveryPointTime As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointType
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointType
+  id: RecoveryPointType
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  langs:
+  - csharp
+  - vb
+  name: RecoveryPointType
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPointType
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecoveryPointType
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 97
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Type of the recovery point.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string RecoveryPointType
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RecoveryPointType As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.SourceVMStorageType
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.SourceVMStorageType
+  id: SourceVMStorageType
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  langs:
+  - csharp
+  - vb
+  name: SourceVMStorageType
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.SourceVMStorageType
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SourceVMStorageType
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 109
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Storage type of the source VM associated with this\r\nrecovery point.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string SourceVMStorageType
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SourceVMStorageType As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.#ctor
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint
+  langs:
+  - csharp
+  - vb
+  name: RecoveryPoint()
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPoint.RecoveryPoint()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/RecoveryPoint.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nInitializes a new instance of the RecoveryPoint class.\r\n"
+  example: []
+  syntax:
+    content: public RecoveryPoint()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPointBase
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: RecoveryPointBase
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RecoveryPointBase
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  fullname.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.KeyAndSecretDetails
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: KeyAndSecretDetails
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.KeyAndSecretDetails
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

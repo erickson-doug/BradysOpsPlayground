@@ -1,0 +1,590 @@
+items:
+- uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  commentId: T:Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  id: ElasticPoolCreateOrUpdateProperties
+  parent: Microsoft.Azure.Management.Sql.Models
+  children:
+  - Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.#ctor
+  - Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.DatabaseDtuMax
+  - Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.DatabaseDtuMin
+  - Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.Dtu
+  - Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.Edition
+  - Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.StorageMB
+  langs:
+  - csharp
+  - vb
+  name: ElasticPoolCreateOrUpdateProperties
+  fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ElasticPoolCreateOrUpdateProperties
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql.Models
+  summary: "\r\nCreate or update Azure Sql Database Elastic Pool parameters properties.\r\n"
+  example: []
+  syntax:
+    content: public class ElasticPoolCreateOrUpdateProperties
+    content.vb: Public Class ElasticPoolCreateOrUpdateProperties
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.DatabaseDtuMax
+  commentId: P:Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.DatabaseDtuMax
+  id: DatabaseDtuMax
+  parent: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  langs:
+  - csharp
+  - vb
+  name: DatabaseDtuMax
+  fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.DatabaseDtuMax
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DatabaseDtuMax
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql.Models
+  summary: "\r\nOptional. Gets or sets the maximum DTU any one Sql Azure Database\r\ncan consume.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? DatabaseDtuMax
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DatabaseDtuMax As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.DatabaseDtuMin
+  commentId: P:Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.DatabaseDtuMin
+  id: DatabaseDtuMin
+  parent: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  langs:
+  - csharp
+  - vb
+  name: DatabaseDtuMin
+  fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.DatabaseDtuMin
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DatabaseDtuMin
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql.Models
+  summary: "\r\nOptional. Gets or sets the minimum DTU all Sql Azure Databases are\r\nguaranteed.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? DatabaseDtuMin
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DatabaseDtuMin As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.Dtu
+  commentId: P:Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.Dtu
+  id: Dtu
+  parent: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  langs:
+  - csharp
+  - vb
+  name: Dtu
+  fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.Dtu
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Dtu
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql.Models
+  summary: "\r\nOptional. Gets or sets the total shared DTU for the Sql Azure\r\nDatabase Elastic Pool.This must agree with the StorageMB if both\r\nare specified.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? Dtu
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Dtu As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.Edition
+  commentId: P:Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.Edition
+  id: Edition
+  parent: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  langs:
+  - csharp
+  - vb
+  name: Edition
+  fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.Edition
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Edition
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+    startLine: 74
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql.Models
+  summary: "\r\nOptional. Gets or sets the edition for the Azure Sql Database\r\nElastic Pool being updated or created.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Edition
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Edition As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.StorageMB
+  commentId: P:Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.StorageMB
+  id: StorageMB
+  parent: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  langs:
+  - csharp
+  - vb
+  name: StorageMB
+  fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.StorageMB
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StorageMB
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+    startLine: 87
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql.Models
+  summary: "\r\nOptional. Gets or sets storage limit for the Sql Azure Database\r\nElastic Pool in MB.This must agree with the Dtu if both are\r\nspecified.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? StorageMB
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property StorageMB As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.#ctor
+  commentId: M:Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties
+  langs:
+  - csharp
+  - vb
+  name: ElasticPoolCreateOrUpdateProperties()
+  fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateProperties.ElasticPoolCreateOrUpdateProperties()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/Models/ElasticPoolCreateOrUpdateProperties.cs
+    startLine: 97
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql.Models
+  summary: "\r\nInitializes a new instance of the\r\nElasticPoolCreateOrUpdateProperties class.\r\n"
+  example: []
+  syntax:
+    content: public ElasticPoolCreateOrUpdateProperties()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql.Models
+  fullName: Microsoft.Azure.Management.Sql.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

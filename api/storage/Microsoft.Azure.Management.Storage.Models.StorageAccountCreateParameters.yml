@@ -1,0 +1,622 @@
+items:
+- uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters
+  commentId: T:Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters
+  id: StorageAccountCreateParameters
+  parent: Microsoft.Azure.Management.Storage.Models
+  children:
+  - Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.#ctor
+  - Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.#ctor(System.Nullable{Microsoft.Azure.Management.Storage.Models.AccountType},System.String)
+  - Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.AccountType
+  - Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.Location
+  - Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.Tags
+  langs:
+  - csharp
+  - vb
+  name: StorageAccountCreateParameters
+  fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StorageAccountCreateParameters
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage.Models
+  summary: "\r\nThe parameters to provide for the account.\r\n"
+  example: []
+  syntax:
+    content: public class StorageAccountCreateParameters
+    content.vb: Public Class StorageAccountCreateParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.AccountType
+  commentId: P:Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.AccountType
+  id: AccountType
+  parent: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: AccountType
+  fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.AccountType
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AccountType
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage.Models
+  summary: "\r\nRequired. Gets or sets the account type.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public AccountType? AccountType
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AccountType As AccountType?
+    parameters: []
+    return:
+      type: System.Nullable{Microsoft.Azure.Management.Storage.Models.AccountType}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.Location
+  commentId: P:Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.Location
+  id: Location
+  parent: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: Location
+  fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.Location
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Location
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage.Models
+  summary: "\r\nRequired. Gets or sets the location of the resource. This will be\r\none of the supported and registered Azure Geo Regions (e.g. West\r\nUS, East US, Southeast Asia, etc.). The geo region of a resource\r\ncannot be changed once it is created.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Location
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Location As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.Tags
+  commentId: P:Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.Tags
+  id: Tags
+  parent: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.Tags
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Tags
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+    startLine: 68
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage.Models
+  summary: "\r\nOptional. Gets or sets a list of key value pairs that describe the\r\nresource. These tags can be used in viewing and grouping this\r\nresource (across resource groups). A maximum of 15 tags can be\r\nprovided for a resource. Each tag must have a key no greater than\r\n128 characters and value no greater than 256 characters.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IDictionary<string, string> Tags
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Tags As IDictionary(Of String, String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.#ctor
+  commentId: M:Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: StorageAccountCreateParameters()
+  fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.StorageAccountCreateParameters()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage.Models
+  summary: "\r\nInitializes a new instance of the StorageAccountCreateParameters\r\nclass.\r\n"
+  example: []
+  syntax:
+    content: public StorageAccountCreateParameters()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.#ctor(System.Nullable{Microsoft.Azure.Management.Storage.Models.AccountType},System.String)
+  commentId: M:Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.#ctor(System.Nullable{Microsoft.Azure.Management.Storage.Models.AccountType},System.String)
+  id: '#ctor(System.Nullable{Microsoft.Azure.Management.Storage.Models.AccountType},System.String)'
+  parent: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters
+  langs:
+  - csharp
+  - vb
+  name: StorageAccountCreateParameters(Nullable<AccountType>, String)
+  fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.StorageAccountCreateParameters(System.Nullable<Microsoft.Azure.Management.Storage.Models.AccountType>, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/Models/StorageAccountCreateParameters.cs
+    startLine: 87
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage.Models
+  summary: "\r\nInitializes a new instance of the StorageAccountCreateParameters\r\nclass with required arguments.\r\n"
+  example: []
+  syntax:
+    content: public StorageAccountCreateParameters(AccountType? accountType, string location)
+    content.vb: Public Sub New(accountType As AccountType?, location As String)
+    parameters:
+    - id: accountType
+      type: System.Nullable{Microsoft.Azure.Management.Storage.Models.AccountType}
+    - id: location
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateParameters.StorageAccountCreateParameters(System.Nullable(Of Microsoft.Azure.Management.Storage.Models.AccountType), System.String)
+  name.vb: StorageAccountCreateParameters(Nullable(Of AccountType), String)
+references:
+- uid: Microsoft.Azure.Management.Storage.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Storage.Models
+  fullName: Microsoft.Azure.Management.Storage.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Nullable{Microsoft.Azure.Management.Storage.Models.AccountType}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<AccountType>
+  fullName: System.Nullable<Microsoft.Azure.Management.Storage.Models.AccountType>
+  fullname.vb: System.Nullable(Of Microsoft.Azure.Management.Storage.Models.AccountType)
+  name.vb: Nullable(Of AccountType)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Storage.Models.AccountType
+    name: AccountType
+    fullName: Microsoft.Azure.Management.Storage.Models.AccountType
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Storage.Models.AccountType
+    name: AccountType
+    fullName: Microsoft.Azure.Management.Storage.Models.AccountType
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  fullname.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullname.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

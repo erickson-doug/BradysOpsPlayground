@@ -1,0 +1,436 @@
+items:
+- uid: Microsoft.Azure.Management.Storage.StorageManagementClientExtensions
+  commentId: T:Microsoft.Azure.Management.Storage.StorageManagementClientExtensions
+  id: StorageManagementClientExtensions
+  parent: Microsoft.Azure.Management.Storage
+  children:
+  - Microsoft.Azure.Management.Storage.StorageManagementClientExtensions.GetCreateOperationStatus(Microsoft.Azure.Management.Storage.IStorageManagementClient,System.String)
+  - Microsoft.Azure.Management.Storage.StorageManagementClientExtensions.GetCreateOperationStatusAsync(Microsoft.Azure.Management.Storage.IStorageManagementClient,System.String)
+  langs:
+  - csharp
+  - vb
+  name: StorageManagementClientExtensions
+  fullName: Microsoft.Azure.Management.Storage.StorageManagementClientExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/StorageManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StorageManagementClientExtensions
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/StorageManagementClientExtensions.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage
+  summary: "\r\nThe Storage Management Client.\r\n"
+  example: []
+  syntax:
+    content: public class StorageManagementClientExtensions
+    content.vb: Public Class StorageManagementClientExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Storage.StorageManagementClientExtensions.GetCreateOperationStatus(Microsoft.Azure.Management.Storage.IStorageManagementClient,System.String)
+  commentId: M:Microsoft.Azure.Management.Storage.StorageManagementClientExtensions.GetCreateOperationStatus(Microsoft.Azure.Management.Storage.IStorageManagementClient,System.String)
+  id: GetCreateOperationStatus(Microsoft.Azure.Management.Storage.IStorageManagementClient,System.String)
+  parent: Microsoft.Azure.Management.Storage.StorageManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetCreateOperationStatus(IStorageManagementClient, String)
+  fullName: Microsoft.Azure.Management.Storage.StorageManagementClientExtensions.GetCreateOperationStatus(Microsoft.Azure.Management.Storage.IStorageManagementClient, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/StorageManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetCreateOperationStatus
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/StorageManagementClientExtensions.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage
+  summary: "\r\nThe Get Create Operation Status operation returns the status of the\r\nspecified create operation. After calling the asynchronous Begin\r\nCreate operation, you can call Get Create Operation Status to\r\ndetermine whether the operation has succeeded, failed, or is still\r\nin progress.\r\n"
+  example: []
+  syntax:
+    content: public static StorageAccountCreateResponse GetCreateOperationStatus(IStorageManagementClient operations, string operationStatusLink)
+    content.vb: Public Shared Function GetCreateOperationStatus(operations As IStorageManagementClient, operationStatusLink As String) As StorageAccountCreateResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Storage.IStorageManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Storage.IStorageManagementClient.\r\n"
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nRequired. The URL where the status of the long-running create\r\noperation can be checked.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse
+      description: "\r\nThe Create storage account operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Storage.StorageManagementClientExtensions.GetCreateOperationStatusAsync(Microsoft.Azure.Management.Storage.IStorageManagementClient,System.String)
+  commentId: M:Microsoft.Azure.Management.Storage.StorageManagementClientExtensions.GetCreateOperationStatusAsync(Microsoft.Azure.Management.Storage.IStorageManagementClient,System.String)
+  id: GetCreateOperationStatusAsync(Microsoft.Azure.Management.Storage.IStorageManagementClient,System.String)
+  parent: Microsoft.Azure.Management.Storage.StorageManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetCreateOperationStatusAsync(IStorageManagementClient, String)
+  fullName: Microsoft.Azure.Management.Storage.StorageManagementClientExtensions.GetCreateOperationStatusAsync(Microsoft.Azure.Management.Storage.IStorageManagementClient, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/StorageManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetCreateOperationStatusAsync
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/StorageManagementClientExtensions.cs
+    startLine: 80
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage
+  summary: "\r\nThe Get Create Operation Status operation returns the status of the\r\nspecified create operation. After calling the asynchronous Begin\r\nCreate operation, you can call Get Create Operation Status to\r\ndetermine whether the operation has succeeded, failed, or is still\r\nin progress.\r\n"
+  example: []
+  syntax:
+    content: public static Task<StorageAccountCreateResponse> GetCreateOperationStatusAsync(IStorageManagementClient operations, string operationStatusLink)
+    content.vb: Public Shared Function GetCreateOperationStatusAsync(operations As IStorageManagementClient, operationStatusLink As String) As Task(Of StorageAccountCreateResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Storage.IStorageManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Storage.IStorageManagementClient.\r\n"
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nRequired. The URL where the status of the long-running create\r\noperation can be checked.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse}
+      description: "\r\nThe Create storage account operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.Storage
+  isExternal: false
+  name: Microsoft.Azure.Management.Storage
+  fullName: Microsoft.Azure.Management.Storage
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Storage.IStorageManagementClient
+  parent: Microsoft.Azure.Management.Storage
+  isExternal: false
+  name: IStorageManagementClient
+  fullName: Microsoft.Azure.Management.Storage.IStorageManagementClient
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse
+  parent: Microsoft.Azure.Management.Storage.Models
+  isExternal: false
+  name: StorageAccountCreateResponse
+  fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse
+- uid: Microsoft.Azure.Management.Storage.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Storage.Models
+  fullName: Microsoft.Azure.Management.Storage.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StorageAccountCreateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse)
+  name.vb: Task(Of StorageAccountCreateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse
+    name: StorageAccountCreateResponse
+    fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse
+    name: StorageAccountCreateResponse
+    fullName: Microsoft.Azure.Management.Storage.Models.StorageAccountCreateResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

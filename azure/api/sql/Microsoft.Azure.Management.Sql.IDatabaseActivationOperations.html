@@ -1,0 +1,543 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">
+          <span class="lang-csharp">IDatabaseActivationOperations</span>
+          <span class="lang-vb">IDatabaseActivationOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.Sql.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Represents all the operations for operating pertaining to activation on
+Azure SQL Data Warehouse databases. Contains operations to: Pause and
+Resume databases</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_BeginPauseAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginPauseAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">BeginPauseAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database pause operation.To
+determine the status of the operation call
+GetDatabaseActivationOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;DatabaseCreateOrUpdateResponse&gt; BeginPauseAsync(string resourceGroupName, string serverName, string databaseName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginPauseAsync(resourceGroupName As String, serverName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Resource Group to which the Azure SQL Server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Azure SQL Server on which the data warehouse
+database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Azure SQL Data Warehouse database to pause.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_BeginResumeAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginResumeAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">BeginResumeAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database resume operation. To
+determine the status of the operation call
+GetDatabaseActivationOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;DatabaseCreateOrUpdateResponse&gt; BeginResumeAsync(string resourceGroupName, string serverName, string databaseName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginResumeAsync(resourceGroupName As String, serverName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Resource Group to which the Azure SQL Server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Azure SQL Server on which the data warehouse
+database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Azure SQL Data Warehouse database to resume.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_GetDatabaseActivationOperationStatusAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetDatabaseActivationOperationStatusAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetDatabaseActivationOperationStatusAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure SQL Data Warehouse Database pause or
+resume operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;DatabaseCreateOrUpdateResponse&gt; GetDatabaseActivationOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetDatabaseActivationOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_PauseAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">PauseAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">PauseAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database pause operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;DatabaseCreateOrUpdateResponse&gt; PauseAsync(string resourceGroupName, string serverName, string databaseName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function PauseAsync(resourceGroupName As String, serverName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Resource Group to which the Azure SQL Server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Azure SQL Server on which the data warehouse
+database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Azure SQL Data Warehouse database to pause.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_ResumeAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ResumeAsync(String, String, String, CancellationToken)</code>
+          <code class="lang-vb">ResumeAsync(String, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database resume operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;DatabaseCreateOrUpdateResponse&gt; ResumeAsync(string resourceGroupName, string serverName, string databaseName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ResumeAsync(resourceGroupName As String, serverName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Resource Group to which the Azure SQL Server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Azure SQL Server on which the data warehouse
+database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the Azure SQL Data Warehouse database to resume.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

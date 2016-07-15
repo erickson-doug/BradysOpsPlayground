@@ -1,0 +1,1319 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions">
+          <span class="lang-csharp">ServerCommunicationLinkOperationsExtensions</span>
+          <span class="lang-vb">ServerCommunicationLinkOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">ServerCommunicationLinkOperationsExtensions</code>
+                <code class="lang-vb">ServerCommunicationLinkOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.Sql.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Windows Azure SQL Database management API provides a RESTful set of
+web services that interact with Windows Azure SQL Database services to
+manage your databases. The API enables users to create, retrieve,
+update, and delete databases and servers.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_BeginCreateOrUpdate_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreateOrUpdate(IServerCommunicationLinkOperations, String, String, String, ServerCommunicationLinkCreateOrUpdateParameters)</code>
+          <code class="lang-vb">BeginCreateOrUpdate(IServerCommunicationLinkOperations, String, String, String, ServerCommunicationLinkCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins creating a new or updating an existing Azure SQL Server
+communication. To determine the status of the operation call
+GetServerCommunicationLinkOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerCommunicationLinkCreateOrUpdateResponse BeginCreateOrUpdate(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName, string communicationLinkName, ServerCommunicationLinkCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreateOrUpdate(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String, communicationLinkName As String, parameters As ServerCommunicationLinkCreateOrUpdateParameters) As ServerCommunicationLinkCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>communicationLinkName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server communication link to be
+operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters">ServerCommunicationLinkCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters">ServerCommunicationLinkCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+communication link.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server communication link
+operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_BeginCreateOrUpdateAsync_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreateOrUpdateAsync(IServerCommunicationLinkOperations, String, String, String, ServerCommunicationLinkCreateOrUpdateParameters)</code>
+          <code class="lang-vb">BeginCreateOrUpdateAsync(IServerCommunicationLinkOperations, String, String, String, ServerCommunicationLinkCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins creating a new or updating an existing Azure SQL Server
+communication. To determine the status of the operation call
+GetServerCommunicationLinkOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerCommunicationLinkCreateOrUpdateResponse&gt; BeginCreateOrUpdateAsync(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName, string communicationLinkName, ServerCommunicationLinkCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreateOrUpdateAsync(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String, communicationLinkName As String, parameters As ServerCommunicationLinkCreateOrUpdateParameters) As Task(Of ServerCommunicationLinkCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>communicationLinkName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server communication link to be
+operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters">ServerCommunicationLinkCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters">ServerCommunicationLinkCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+communication link.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server communication link
+operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_CreateOrUpdate_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdate(IServerCommunicationLinkOperations, String, String, String, ServerCommunicationLinkCreateOrUpdateParameters)</code>
+          <code class="lang-vb">CreateOrUpdate(IServerCommunicationLinkOperations, String, String, String, ServerCommunicationLinkCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a new or updates an existing Azure SQL Server communication
+link.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerCommunicationLinkCreateOrUpdateResponse CreateOrUpdate(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName, string communicationLinkName, ServerCommunicationLinkCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function CreateOrUpdate(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String, communicationLinkName As String, parameters As ServerCommunicationLinkCreateOrUpdateParameters) As ServerCommunicationLinkCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Database Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>communicationLinkName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server communication link to be
+operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters">ServerCommunicationLinkCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters">ServerCommunicationLinkCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+communication link.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server communication link
+operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_CreateOrUpdateAsync_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdateAsync(IServerCommunicationLinkOperations, String, String, String, ServerCommunicationLinkCreateOrUpdateParameters)</code>
+          <code class="lang-vb">CreateOrUpdateAsync(IServerCommunicationLinkOperations, String, String, String, ServerCommunicationLinkCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a new or updates an existing Azure SQL Server communication
+link.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerCommunicationLinkCreateOrUpdateResponse&gt; CreateOrUpdateAsync(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName, string communicationLinkName, ServerCommunicationLinkCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function CreateOrUpdateAsync(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String, communicationLinkName As String, parameters As ServerCommunicationLinkCreateOrUpdateParameters) As Task(Of ServerCommunicationLinkCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Database Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>communicationLinkName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server communication link to be
+operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters">ServerCommunicationLinkCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateParameters">ServerCommunicationLinkCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+communication link.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server communication link
+operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_Delete_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Delete(IServerCommunicationLinkOperations, String, String, String)</code>
+          <code class="lang-vb">Delete(IServerCommunicationLinkOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deletes the Azure SQL server communication link with the given name.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse Delete(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName, string communicationLinkName)</code><code class="vb lang-vb">Public Shared Function Delete(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String, communicationLinkName As String) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>communicationLinkName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server communication link to be
+retrieved.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_DeleteAsync_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(IServerCommunicationLinkOperations, String, String, String)</code>
+          <code class="lang-vb">DeleteAsync(IServerCommunicationLinkOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deletes the Azure SQL server communication link with the given name.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; DeleteAsync(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName, string communicationLinkName)</code><code class="vb lang-vb">Public Shared Function DeleteAsync(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String, communicationLinkName As String) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>communicationLinkName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server communication link to be
+retrieved.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_Get_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Get(IServerCommunicationLinkOperations, String, String, String)</code>
+          <code class="lang-vb">Get(IServerCommunicationLinkOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns information about an Azure SQL Server communication links.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerCommunicationLinkGetResponse Get(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName, string communicationLinkName)</code><code class="vb lang-vb">Public Shared Function Get(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String, communicationLinkName As String) As ServerCommunicationLinkGetResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>communicationLinkName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server communication link to be
+retrieved.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkGetResponse">ServerCommunicationLinkGetResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkGetResponse">ServerCommunicationLinkGetResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a get server communication link request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_GetAsync_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(IServerCommunicationLinkOperations, String, String, String)</code>
+          <code class="lang-vb">GetAsync(IServerCommunicationLinkOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns information about an Azure SQL Server communication links.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerCommunicationLinkGetResponse&gt; GetAsync(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName, string communicationLinkName)</code><code class="vb lang-vb">Public Shared Function GetAsync(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String, communicationLinkName As String) As Task(Of ServerCommunicationLinkGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>communicationLinkName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server communication link to be
+retrieved.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkGetResponse">ServerCommunicationLinkGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkGetResponse">ServerCommunicationLinkGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a get server communication link request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_GetServerCommunicationLinkOperationStatus_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetServerCommunicationLinkOperationStatus(IServerCommunicationLinkOperations, String)</code>
+          <code class="lang-vb">GetServerCommunicationLinkOperationStatus(IServerCommunicationLinkOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure Sql Server communication link create or
+update operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerCommunicationLinkCreateOrUpdateResponse GetServerCommunicationLinkOperationStatus(IServerCommunicationLinkOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetServerCommunicationLinkOperationStatus(operations As IServerCommunicationLinkOperations, operationStatusLink As String) As ServerCommunicationLinkCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server communication link
+operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_GetServerCommunicationLinkOperationStatusAsync_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetServerCommunicationLinkOperationStatusAsync(IServerCommunicationLinkOperations, String)</code>
+          <code class="lang-vb">GetServerCommunicationLinkOperationStatusAsync(IServerCommunicationLinkOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure Sql Server communication link create or
+update operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerCommunicationLinkCreateOrUpdateResponse&gt; GetServerCommunicationLinkOperationStatusAsync(IServerCommunicationLinkOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetServerCommunicationLinkOperationStatusAsync(operations As IServerCommunicationLinkOperations, operationStatusLink As String) As Task(Of ServerCommunicationLinkCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkCreateOrUpdateResponse">ServerCommunicationLinkCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server communication link
+operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_List_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">List(IServerCommunicationLinkOperations, String, String)</code>
+          <code class="lang-vb">List(IServerCommunicationLinkOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns information about Azure SQL Server communication links.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerCommunicationLinkListResponse List(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName)</code><code class="vb lang-vb">Public Shared Function List(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String) As ServerCommunicationLinkListResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkListResponse">ServerCommunicationLinkListResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkListResponse">ServerCommunicationLinkListResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a List Azure Sql Server communication
+link request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerCommunicationLinkOperationsExtensions_ListAsync_Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(IServerCommunicationLinkOperations, String, String)</code>
+          <code class="lang-vb">ListAsync(IServerCommunicationLinkOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns information about Azure SQL Server communication links.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerCommunicationLinkListResponse&gt; ListAsync(IServerCommunicationLinkOperations operations, string resourceGroupName, string serverName)</code><code class="vb lang-vb">Public Shared Function ListAsync(operations As IServerCommunicationLinkOperations, resourceGroupName As String, serverName As String) As Task(Of ServerCommunicationLinkListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.html#Microsoft_Azure_Management_Sql_IServerCommunicationLinkOperations">IServerCommunicationLinkOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkListResponse">ServerCommunicationLinkListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerCommunicationLinkListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerCommunicationLinkListResponse">ServerCommunicationLinkListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a List Azure Sql Server communication
+link request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

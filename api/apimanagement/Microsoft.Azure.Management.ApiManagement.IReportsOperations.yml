@@ -1,0 +1,220 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+  commentId: T:Microsoft.Azure.Management.ApiManagement.IReportsOperations
+  id: IReportsOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.IReportsOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IReportsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IReportsOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IReportsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IReportsOperations
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IReportsOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nOperations for managing Reports.\r\n"
+  example: []
+  syntax:
+    content: public interface IReportsOperations
+    content.vb: Public Interface IReportsOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.ApiManagement.IReportsOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IReportsOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, ReportsAggregation, QueryParameters, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IReportsOperations.ListAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IReportsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IReportsOperations.cs
+    startLine: 60
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nLists report records.\r\n"
+  example: []
+  syntax:
+    content: Task<ReportListResponse> ListAsync(string resourceGroupName, string serviceName, ReportsAggregation aggregation, QueryParameters query, string interval, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, serviceName As String, aggregation As ReportsAggregation, query As QueryParameters, interval As String, cancellationToken As CancellationToken) As Task(Of ReportListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: aggregation
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation
+      description: "\r\nReport aggregation.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+    - id: interval
+      type: System.String
+      description: "\r\nBy time interval. This value is only applicable to ByTime\r\naggregation. Interval must be multiple of 15 minutes and may not\r\nbe zero. The value should be in ISO  8601 format\r\n(http://en.wikipedia.org/wiki/ISO_8601#Durations).This code can be\r\nused to convert TimSpan to a valid interval string:\r\nXmlConvert.ToString(new TimeSpan(hours, minutes, secconds))\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse}
+      description: "\r\nList Report records operation response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IReportsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IReportsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IReportsOperations.ListNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IReportsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IReportsOperations.cs
+    startLine: 74
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList report records.\r\n"
+  example: []
+  syntax:
+    content: Task<ReportListResponse> ListNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of ReportListResponse)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nNextLink from the previous successful call to List operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse}
+      description: "\r\nList Report records operation response details.\r\n"
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: ReportsAggregation
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: QueryParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ReportListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse)
+  name.vb: Task(Of ReportListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+    name: ReportListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+    name: ReportListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,321 @@
+items:
+- uid: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations
+  commentId: T:Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations
+  id: IStorageClassificationOperations
+  parent: Microsoft.Azure.Management.SiteRecovery
+  children:
+  - Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListNextAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IStorageClassificationOperations
+  fullName: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IStorageClassificationOperations
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nDefinition of storage classification operations for the Site Recovery\r\nextension.\r\n"
+  example: []
+  syntax:
+    content: public interface IStorageClassificationOperations
+    content.vb: Public Interface IStorageClassificationOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.GetAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGets the replication storage object by name.\r\n"
+  example: []
+  syntax:
+    content: Task<StorageClassificationResponse> GetAsync(string fabricName, string storageClassificationName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(fabricName As String, storageClassificationName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of StorageClassificationResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nFabric unique name.\r\n"
+    - id: storageClassificationName
+      type: System.String
+      description: "\r\nStorage classification unique name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationResponse}
+      description: "\r\nThe response model for the storage object\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGets the replication storage objects under a fabric.\r\n"
+  example: []
+  syntax:
+    content: Task<StorageClassificationListResponse> ListAsync(string fabricName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(fabricName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of StorageClassificationListResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nFabric unique name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse}
+      description: "\r\nThe response model for the list storage classification operation.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAllAsync(CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAllAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGets the replication storage classifications under a vault.\r\n"
+  example: []
+  syntax:
+    content: Task<StorageClassificationListResponse> ListAllAsync(CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAllAsync(customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of StorageClassificationListResponse)
+    parameters:
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse}
+      description: "\r\nThe response model for the list storage classification operation.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListNextAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListNextAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IStorageClassificationOperations.ListNextAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IStorageClassificationOperations.cs
+    startLine: 101
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGets the replication storage classification objects under a vault.\r\n"
+  example: []
+  syntax:
+    content: Task<StorageClassificationListResponse> ListNextAsync(string nextLink, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListNextAsync(nextLink As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of StorageClassificationListResponse)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nThe url to the next protected items page.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse}
+      description: "\r\nThe response model for the list storage classification operation.\r\n"
+references:
+- uid: Microsoft.Azure.Management.SiteRecovery
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery
+  fullName: Microsoft.Azure.Management.SiteRecovery
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StorageClassificationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationResponse)
+  name.vb: Task(Of StorageClassificationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationResponse
+    name: StorageClassificationResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationResponse
+    name: StorageClassificationResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery.Models
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StorageClassificationListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse)
+  name.vb: Task(Of StorageClassificationListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse
+    name: StorageClassificationListResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse
+    name: StorageClassificationListResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.StorageClassificationListResponse
+  - name: )
+    fullName: )

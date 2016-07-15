@@ -1,0 +1,157 @@
+items:
+- uid: Microsoft.Azure.Management.Batch.ISubscriptionOperations
+  commentId: T:Microsoft.Azure.Management.Batch.ISubscriptionOperations
+  id: ISubscriptionOperations
+  parent: Microsoft.Azure.Management.Batch
+  children:
+  - Microsoft.Azure.Management.Batch.ISubscriptionOperations.GetSubscriptionQuotasAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ISubscriptionOperations
+  fullName: Microsoft.Azure.Management.Batch.ISubscriptionOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Batch/BatchManagement/Generated/ISubscriptionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ISubscriptionOperations
+    path: src/src/ResourceManagement/Batch/BatchManagement/Generated/ISubscriptionOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.Batch
+  namespace: Microsoft.Azure.Management.Batch
+  summary: "\r\nOperations for managing Batch service properties at the subscription\r\nlevel.\r\n"
+  example: []
+  syntax:
+    content: public interface ISubscriptionOperations
+    content.vb: Public Interface ISubscriptionOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Batch.ISubscriptionOperations.GetSubscriptionQuotasAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Batch.ISubscriptionOperations.GetSubscriptionQuotasAsync(System.String,System.Threading.CancellationToken)
+  id: GetSubscriptionQuotasAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Batch.ISubscriptionOperations
+  langs:
+  - csharp
+  - vb
+  name: GetSubscriptionQuotasAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Batch.ISubscriptionOperations.GetSubscriptionQuotasAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Batch/BatchManagement/Generated/ISubscriptionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetSubscriptionQuotasAsync
+    path: src/src/ResourceManagement/Batch/BatchManagement/Generated/ISubscriptionOperations.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.Azure.Management.Batch
+  namespace: Microsoft.Azure.Management.Batch
+  summary: "\r\nThe Get Subscription Quotas operation returns the quotas of the\r\nsubscription in the Batch service.\r\n"
+  example: []
+  syntax:
+    content: Task<SubscriptionQuotasGetResponse> GetSubscriptionQuotasAsync(string locationName, CancellationToken cancellationToken)
+    content.vb: Function GetSubscriptionQuotasAsync(locationName As String, cancellationToken As CancellationToken) As Task(Of SubscriptionQuotasGetResponse)
+    parameters:
+    - id: locationName
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Batch.Models.SubscriptionQuotasGetResponse}
+      description: "\r\nValues returned by the Get Subscription Quotas operation.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Batch
+  isExternal: false
+  name: Microsoft.Azure.Management.Batch
+  fullName: Microsoft.Azure.Management.Batch
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Batch.Models.SubscriptionQuotasGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionQuotasGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Batch.Models.SubscriptionQuotasGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Batch.Models.SubscriptionQuotasGetResponse)
+  name.vb: Task(Of SubscriptionQuotasGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Batch.Models.SubscriptionQuotasGetResponse
+    name: SubscriptionQuotasGetResponse
+    fullName: Microsoft.Azure.Management.Batch.Models.SubscriptionQuotasGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Batch.Models.SubscriptionQuotasGetResponse
+    name: SubscriptionQuotasGetResponse
+    fullName: Microsoft.Azure.Management.Batch.Models.SubscriptionQuotasGetResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

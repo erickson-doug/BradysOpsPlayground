@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Batch.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Azure.Batch.Test.AccountUndoHandler">
+            <summary>
+            Undo handler for Account Operations
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Batch.Test.AccountUndoHandler.DoLookup(Hyak.Common.IServiceOperations{Microsoft.Azure.Management.Batch.BatchManagementClient},System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Action@)">
+            <summary>
+            Look up the undo operation for the given Account operation
+            </summary>
+            <param name="client">The IDeploymentOperations instance used for the operation</param>
+            <param name="method">The name of the deployment method</param>
+            <param name="parameters">The parameters passed to the operation</param>
+            <param name="undoAction">The undo action for the given operation, if any</param>
+            <returns>True if an undo operation is found, otherwise false</returns>
+        </member>
+        <member name="T:Microsoft.Azure.Batch.Test.UndoContextDiscoveryExtensions">
+            <summary>
+            Discovery extensions - used to discover and construct available undo handlers 
+            in the current app domain
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.Batch.Test.UndoContextDiscoveryExtensions.CreateAccountUndoHandler">
+            <summary>
+            Create the undo handler for deployment operations
+            </summary>
+            <returns>An undo handler for deployment operations</returns>
+        </member>
+    </members>
+</doc>

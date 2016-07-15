@@ -1,0 +1,779 @@
+items:
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  commentId: T:Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  id: IElasticPoolOperations
+  parent: Microsoft.Azure.Management.Sql
+  children:
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.BeginCreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetDatabasesAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetElasticPoolOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListDatabaseActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListDatabasesAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IElasticPoolOperations
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IElasticPoolOperations
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\nElastic Pools.  Contains operations to: Create, Retrieve, Update, and\r\nDelete.\r\n"
+  example: []
+  syntax:
+    content: public interface IElasticPoolOperations
+    content.vb: Public Interface IElasticPoolOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.BeginCreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.BeginCreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters,System.Threading.CancellationToken)
+  id: BeginCreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginCreateOrUpdateAsync(String, String, String, ElasticPoolCreateOrUpdateParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.BeginCreateOrUpdateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreateOrUpdateAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nBegins creating a new Azure SQL Database Elastic Pool or updating\r\nan existing Azure SQL Database Elastic Pool. To determine the\r\nstatus of the operation call GetElasticPoolOperationStatus.\r\n"
+  example: []
+  syntax:
+    content: Task<ElasticPoolCreateOrUpdateResponse> BeginCreateOrUpdateAsync(string resourceGroupName, string serverName, string elasticPoolName, ElasticPoolCreateOrUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginCreateOrUpdateAsync(resourceGroupName As String, serverName As String, elasticPoolName As String, parameters As ElasticPoolCreateOrUpdateParameters, cancellationToken As CancellationToken) As Task(Of ElasticPoolCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Database\r\nServer belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server on which the database is\r\nhosted.\r\n"
+    - id: elasticPoolName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Elastic Pool to be operated on\r\n(Updated or created).\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters
+      description: "\r\nThe required parameters for createing or updating an Elastic Pool.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure Sql Database Elastic Pool operation.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, String, String, ElasticPoolCreateOrUpdateParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.CreateOrUpdateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nCreates a new Azure SQL Database Elastic Pool or updates an\r\nexisting Azure SQL Database Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: Task<ElasticPoolCreateOrUpdateResponse> CreateOrUpdateAsync(string resourceGroupName, string serverName, string elasticPoolName, ElasticPoolCreateOrUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, serverName As String, elasticPoolName As String, parameters As ElasticPoolCreateOrUpdateParameters, cancellationToken As CancellationToken) As Task(Of ElasticPoolCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Database\r\nServer belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server on which the Azure SQL\r\nDatabase Elastic Pool is hosted.\r\n"
+    - id: elasticPoolName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Elastic Pool to be operated on\r\n(updated or created).\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters
+      description: "\r\nThe required parameters for createing or updating an Azure Sql\r\nDatabaser Elastic Pool.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure Sql Database Elastic Pool operation.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.DeleteAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 114
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nDeletes the Azure SQL Database Elastic Pool with the given name.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string serverName, string elasticPoolName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, serverName As String, elasticPoolName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Database\r\nServer belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server on which the Azure SQL\r\nDatabase Elastic Pool is hosted.\r\n"
+    - id: elasticPoolName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Elastic Pool to be deleted.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 136
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: Task<ElasticPoolGetResponse> GetAsync(string resourceGroupName, string serverName, string elasticPoolName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, serverName As String, elasticPoolName As String, cancellationToken As CancellationToken) As Task(Of ElasticPoolGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Database\r\nServer belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server on which the Azure SQL\r\nDatabase Elastic Pool is hosted.\r\n"
+    - id: elasticPoolName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Elastic Pool to be retrieved.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolGetResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Elastic Pool request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetDatabasesAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetDatabasesAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetDatabasesAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: GetDatabasesAsync(String, String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetDatabasesAsync(System.String, System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDatabasesAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 161
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database inside of an Azure\r\nSql Database Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: Task<DatabaseGetResponse> GetDatabasesAsync(string resourceGroupName, string serverName, string elasticPoolName, string databaseName, CancellationToken cancellationToken)
+    content.vb: Function GetDatabasesAsync(resourceGroupName As String, serverName As String, elasticPoolName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server on which the database is\r\nhosted.\r\n"
+    - id: elasticPoolName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Elastic Pool to be retrieved.\r\n"
+    - id: databaseName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database to be retrieved.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Database request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetElasticPoolOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetElasticPoolOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetElasticPoolOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: GetElasticPoolOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.GetElasticPoolOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetElasticPoolOperationStatusAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 176
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets the status of an Azure Sql Database Elastic Pool create or\r\nupdate operation.\r\n"
+  example: []
+  syntax:
+    content: Task<ElasticPoolCreateOrUpdateResponse> GetElasticPoolOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetElasticPoolOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of ElasticPoolCreateOrUpdateResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure Sql Database Elastic Pool operation.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 195
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about Azure SQL Database Elastic Pools.\r\n"
+  example: []
+  syntax:
+    content: Task<ElasticPoolListResponse> ListAsync(string resourceGroupName, string serverName, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, serverName As String, cancellationToken As CancellationToken) As Task(Of ElasticPoolListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Database\r\nServe belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server in which Azure SQL\r\nDatabase Elastic Pools are hosted.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolListResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Elastic Pool request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: ListActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: ListActivityAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListActivityAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListActivityAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 219
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about Azure SQL Database Elastic Pool Activity.\r\n"
+  example: []
+  syntax:
+    content: Task<ElasticPoolActivityListResponse> ListActivityAsync(string resourceGroupName, string serverName, string elasticPoolName, CancellationToken cancellationToken)
+    content.vb: Function ListActivityAsync(resourceGroupName As String, serverName As String, elasticPoolName As String, cancellationToken As CancellationToken) As Task(Of ElasticPoolActivityListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Database\r\nServe belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server in which Azure SQL\r\nDatabase Elastic Pools are hosted.\r\n"
+    - id: elasticPoolName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Elastic Pool for which to get\r\nthe current activity.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolActivityListResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Elastic Pool Activity\r\nrequest.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListDatabaseActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListDatabaseActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: ListDatabaseActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: ListDatabaseActivityAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListDatabaseActivityAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListDatabaseActivityAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 242
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about activity on Azure SQL Databases inside of\r\nan Azure Sql Database Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: Task<ElasticPoolDatabaseActivityListResponse> ListDatabaseActivityAsync(string resourceGroupName, string serverName, string elasticPoolName, CancellationToken cancellationToken)
+    content.vb: Function ListDatabaseActivityAsync(resourceGroupName As String, serverName As String, elasticPoolName As String, cancellationToken As CancellationToken) As Task(Of ElasticPoolDatabaseActivityListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server on which the Elastic Pool\r\nis hosted.\r\n"
+    - id: elasticPoolName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Elastic Pool.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolDatabaseActivityListResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Elastic Pool Database\r\nActivity request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListDatabasesAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListDatabasesAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: ListDatabasesAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  langs:
+  - csharp
+  - vb
+  name: ListDatabasesAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations.ListDatabasesAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListDatabasesAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IElasticPoolOperations.cs
+    startLine: 264
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database inside of an Azure\r\nSql Database Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: Task<DatabaseListResponse> ListDatabasesAsync(string resourceGroupName, string serverName, string elasticPoolName, CancellationToken cancellationToken)
+    content.vb: Function ListDatabasesAsync(resourceGroupName As String, serverName As String, elasticPoolName As String, cancellationToken As CancellationToken) As Task(Of DatabaseListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server on which the database is\r\nhosted.\r\n"
+    - id: elasticPoolName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Elastic Pool to be retrieved.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseListResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Database request.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql
+  fullName: Microsoft.Azure.Management.Sql
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters
+  parent: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: ElasticPoolCreateOrUpdateParameters
+  fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ElasticPoolCreateOrUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse)
+  name.vb: Task(Of ElasticPoolCreateOrUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse
+    name: ElasticPoolCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse
+    name: ElasticPoolCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolCreateOrUpdateResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql.Models
+  fullName: Microsoft.Azure.Management.Sql.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ElasticPoolGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ElasticPoolGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ElasticPoolGetResponse)
+  name.vb: Task(Of ElasticPoolGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolGetResponse
+    name: ElasticPoolGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolGetResponse
+    name: ElasticPoolGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DatabaseGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse)
+  name.vb: Task(Of DatabaseGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+    name: DatabaseGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+    name: DatabaseGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ElasticPoolListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ElasticPoolListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ElasticPoolListResponse)
+  name.vb: Task(Of ElasticPoolListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolListResponse
+    name: ElasticPoolListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolListResponse
+    name: ElasticPoolListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolActivityListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ElasticPoolActivityListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ElasticPoolActivityListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ElasticPoolActivityListResponse)
+  name.vb: Task(Of ElasticPoolActivityListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolActivityListResponse
+    name: ElasticPoolActivityListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolActivityListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolActivityListResponse
+    name: ElasticPoolActivityListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolActivityListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ElasticPoolDatabaseActivityListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ElasticPoolDatabaseActivityListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ElasticPoolDatabaseActivityListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ElasticPoolDatabaseActivityListResponse)
+  name.vb: Task(Of ElasticPoolDatabaseActivityListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolDatabaseActivityListResponse
+    name: ElasticPoolDatabaseActivityListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolDatabaseActivityListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ElasticPoolDatabaseActivityListResponse
+    name: ElasticPoolDatabaseActivityListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ElasticPoolDatabaseActivityListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DatabaseListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.DatabaseListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.DatabaseListResponse)
+  name.vb: Task(Of DatabaseListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+    name: DatabaseListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+    name: DatabaseListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+  - name: )
+    fullName: )

@@ -1,0 +1,507 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  id: IProtectedItemOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.CreateOrUpdateProtectedItemAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemCreateOrUpdateRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.DeleteProtectedItemAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetProtectedItemQueryParam,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetOperationResultAsync(System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetProtectedItemOperationResultByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListQueryParam,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IProtectedItemOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IProtectedItemOperations
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing the items\r\nprotected by your Recovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: public interface IProtectedItemOperations
+    content.vb: Public Interface IProtectedItemOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.CreateOrUpdateProtectedItemAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemCreateOrUpdateRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.CreateOrUpdateProtectedItemAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemCreateOrUpdateRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: CreateOrUpdateProtectedItemAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemCreateOrUpdateRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateProtectedItemAsync(String, String, String, String, String, ProtectedItemCreateOrUpdateRequest, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.CreateOrUpdateProtectedItemAsync(System.String, System.String, System.String, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemCreateOrUpdateRequest, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateProtectedItemAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Create Or Update Protected Item Operation is used to enable\r\nprotection of an item within a container or to modify the\r\nprotection of an already protected item. In the case of enable\r\nprotection, this operation creates a new protected item entity in\r\nthe backend service. In the case of modify protection, this\r\noperation updates the already created entity in the backend\r\nservice. This is an asynchronous operation. To determine whether\r\nthe backend service has finished processing the request, call the\r\nGet Item Operation Result API.\r\n"
+  example: []
+  syntax:
+    content: Task<BaseRecoveryServicesJobResponse> CreateOrUpdateProtectedItemAsync(string resourceGroupName, string resourceName, string fabricName, string containerName, string protectedItemName, ProtectedItemCreateOrUpdateRequest request, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateProtectedItemAsync(resourceGroupName As String, resourceName As String, fabricName As String, containerName As String, protectedItemName As String, request As ProtectedItemCreateOrUpdateRequest, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of BaseRecoveryServicesJobResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nResource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nName of your recovery services vault.\r\n"
+    - id: fabricName
+      type: System.String
+      description: "\r\nFabric name of the protected item.\r\n"
+    - id: containerName
+      type: System.String
+      description: "\r\nName of the container where the protected item belongs to.\r\n"
+    - id: protectedItemName
+      type: System.String
+      description: "\r\nName of the protected item which has to be backed up.\r\n"
+    - id: request
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemCreateOrUpdateRequest
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse}
+      description: "\r\nBase recovery job response for all the asynchronous operations.\r\n"
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.DeleteProtectedItemAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.DeleteProtectedItemAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: DeleteProtectedItemAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteProtectedItemAsync(String, String, String, String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.DeleteProtectedItemAsync(System.String, System.String, System.String, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteProtectedItemAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+    startLine: 104
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Delete Protected Item Operation is used to disable protection\r\nof an item within a container. This operation marks the already\r\nexisting protected item entity as not protected in the backend\r\nservice. This is an asynchronous operation. To determine whether\r\nthe backend service has finished processing the request, call the\r\nGet Item Operation Result API.\r\n"
+  example: []
+  syntax:
+    content: Task<BaseRecoveryServicesJobResponse> DeleteProtectedItemAsync(string resourceGroupName, string resourceName, string fabricName, string containerName, string protectedItemName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function DeleteProtectedItemAsync(resourceGroupName As String, resourceName As String, fabricName As String, containerName As String, protectedItemName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of BaseRecoveryServicesJobResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nResource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nName of your recovery services vault.\r\n"
+    - id: fabricName
+      type: System.String
+      description: "\r\nFabric name of the protected item.\r\n"
+    - id: containerName
+      type: System.String
+      description: "\r\nName of the container where the protected item belongs to.\r\n"
+    - id: protectedItemName
+      type: System.String
+      description: "\r\nName of the protected item which has to be backed up.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse}
+      description: "\r\nBase recovery job response for all the asynchronous operations.\r\n"
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetProtectedItemQueryParam,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetProtectedItemQueryParam,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetProtectedItemQueryParam,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, String, String, String, GetProtectedItemQueryParam, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetAsync(System.String, System.String, System.String, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetProtectedItemQueryParam, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+    startLine: 130
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nGets Info for the given item present in the given container\r\nspecified by the names passed in the arguments. When the query\r\nparameter is used to pass the expand flag, this operation would\r\nreturn the extended info as well for the given item.This is an\r\nasynchronous operation. To determine whether the backend service\r\nhas finished processing the request, call the Get Item Operation\r\nResult API.\r\n"
+  example: []
+  syntax:
+    content: Task<ProtectedItemResponse> GetAsync(string resourceGroupName, string resourceName, string fabricName, string containerName, string protectedItemName, GetProtectedItemQueryParam queryFilter, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, resourceName As String, fabricName As String, containerName As String, protectedItemName As String, queryFilter As GetProtectedItemQueryParam, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectedItemResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nResource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nName of your recovery services vault.\r\n"
+    - id: fabricName
+      type: System.String
+    - id: containerName
+      type: System.String
+    - id: protectedItemName
+      type: System.String
+    - id: queryFilter
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetProtectedItemQueryParam
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse}
+      description: "\r\nA single instance of a protected item response.\r\n"
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetOperationResultAsync(System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetOperationResultAsync(System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetOperationResultAsync(System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  langs:
+  - csharp
+  - vb
+  name: GetOperationResultAsync(String, String, String, String, String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetOperationResultAsync(System.String, System.String, System.String, System.String, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationResultAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+    startLine: 151
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nFetches the result of any operation on the protected item given the\r\nID of operation.\r\n"
+  example: []
+  syntax:
+    content: Task<ProtectedItemResponse> GetOperationResultAsync(string resourceGroupName, string resourceName, string fabricName, string containerName, string protectedItemName, string operationId, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function GetOperationResultAsync(resourceGroupName As String, resourceName As String, fabricName As String, containerName As String, protectedItemName As String, operationId As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectedItemResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nResource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nName of your recovery services vault.\r\n"
+    - id: fabricName
+      type: System.String
+    - id: containerName
+      type: System.String
+    - id: protectedItemName
+      type: System.String
+    - id: operationId
+      type: System.String
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse}
+      description: "\r\nA single instance of a protected item response.\r\n"
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetProtectedItemOperationResultByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetProtectedItemOperationResultByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetProtectedItemOperationResultByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  langs:
+  - csharp
+  - vb
+  name: GetProtectedItemOperationResultByURLAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.GetProtectedItemOperationResultByURLAsync(System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetProtectedItemOperationResultByURLAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+    startLine: 170
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nFetches the result of any operation on the protected item given the\r\nURL for tracking the operation as returned by APIs such as Create\r\nOr Update, Delete etc.\r\n"
+  example: []
+  syntax:
+    content: Task<ProtectedItemResponse> GetProtectedItemOperationResultByURLAsync(string operationResultLink, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function GetProtectedItemOperationResultByURLAsync(operationResultLink As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectedItemResponse)
+    parameters:
+    - id: operationResultLink
+      type: System.String
+      description: "\r\nLocation value returned by operation.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse}
+      description: "\r\nA single instance of a protected item response.\r\n"
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListQueryParam,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListQueryParam,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListQueryParam,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, ProtectedItemListQueryParam, PaginationRequest, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations.ListAsync(System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListQueryParam, Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IProtectedItemOperations.cs
+    startLine: 193
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nLists all the items protected by your Recovery Services Vault\r\naccording to the query and pagination parameters supplied in the\r\narguments.\r\n"
+  example: []
+  syntax:
+    content: Task<ProtectedItemListResponse> ListAsync(string resourceGroupName, string resourceName, ProtectedItemListQueryParam queryFilter, PaginationRequest paginationParams, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, resourceName As String, queryFilter As ProtectedItemListQueryParam, paginationParams As PaginationRequest, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectedItemListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nResource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nName of your recovery services vault.\r\n"
+    - id: queryFilter
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListQueryParam
+    - id: paginationParams
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListResponse}
+      description: "\r\nList of protected items returned as a response by the list\r\nprotected item API.\r\n"
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemCreateOrUpdateRequest
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: ProtectedItemCreateOrUpdateRequest
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemCreateOrUpdateRequest
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<BaseRecoveryServicesJobResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse)
+  name.vb: Task(Of BaseRecoveryServicesJobResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse
+    name: BaseRecoveryServicesJobResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse
+    name: BaseRecoveryServicesJobResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetProtectedItemQueryParam
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: GetProtectedItemQueryParam
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetProtectedItemQueryParam
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProtectedItemResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse)
+  name.vb: Task(Of ProtectedItemResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse
+    name: ProtectedItemResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse
+    name: ProtectedItemResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListQueryParam
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: ProtectedItemListQueryParam
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListQueryParam
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: PaginationRequest
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProtectedItemListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListResponse)
+  name.vb: Task(Of ProtectedItemListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListResponse
+    name: ProtectedItemListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListResponse
+    name: ProtectedItemListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectedItemListResponse
+  - name: )
+    fullName: )

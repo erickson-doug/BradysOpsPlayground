@@ -1,0 +1,1130 @@
+items:
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  id: RouteOperationsExtensions
+  parent: Microsoft.Azure.Management.Network
+  children:
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginCreateOrUpdating(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginCreateOrUpdatingAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginDeleting(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginDeletingAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.Delete(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.Get(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.GetAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.List(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Network.RouteOperationsExtensions.ListAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: RouteOperationsExtensions
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RouteOperationsExtensions
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 38
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Windows Azure Network management API provides a RESTful set of web\r\nservices that interact with Windows Azure Networks service to manage\r\nyour network resrources. The API has entities that capture the\r\nrelationship between an end user and the Windows Azure Networks\r\nservice.\r\n"
+  example: []
+  syntax:
+    content: public class RouteOperationsExtensions
+    content.vb: Public Class RouteOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginCreateOrUpdating(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginCreateOrUpdating(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  id: BeginCreateOrUpdating(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeginCreateOrUpdating(IRouteOperations, String, String, String, Route)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginCreateOrUpdating(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String, Microsoft.Azure.Management.Network.Models.Route)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreateOrUpdating
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put route operation creates/updates a route in the specified\r\nroute table\r\n"
+  example: []
+  syntax:
+    content: public static RoutePutResponse BeginCreateOrUpdating(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName, Route routeParameters)
+    content.vb: Public Shared Function BeginCreateOrUpdating(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String, routeParameters As Route) As RoutePutResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    - id: routeParameters
+      type: Microsoft.Azure.Management.Network.Models.Route
+      description: "\r\nRequired. Parameters supplied to the create/update routeoperation\r\n"
+    return:
+      type: Microsoft.Azure.Management.Network.Models.RoutePutResponse
+      description: "\r\nResponse for PUT Routes Api servive call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginCreateOrUpdatingAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginCreateOrUpdatingAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  id: BeginCreateOrUpdatingAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeginCreateOrUpdatingAsync(IRouteOperations, String, String, String, Route)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginCreateOrUpdatingAsync(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String, Microsoft.Azure.Management.Network.Models.Route)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreateOrUpdatingAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put route operation creates/updates a route in the specified\r\nroute table\r\n"
+  example: []
+  syntax:
+    content: public static Task<RoutePutResponse> BeginCreateOrUpdatingAsync(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName, Route routeParameters)
+    content.vb: Public Shared Function BeginCreateOrUpdatingAsync(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String, routeParameters As Route) As Task(Of RoutePutResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    - id: routeParameters
+      type: Microsoft.Azure.Management.Network.Models.Route
+      description: "\r\nRequired. Parameters supplied to the create/update routeoperation\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.RoutePutResponse}
+      description: "\r\nResponse for PUT Routes Api servive call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginDeleting(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginDeleting(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  id: BeginDeleting(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeginDeleting(IRouteOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginDeleting(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeleting
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe delete route operation deletes the specified route from a route\r\ntable.\r\n"
+  example: []
+  syntax:
+    content: public static UpdateOperationResponse BeginDeleting(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName)
+    content.vb: Public Shared Function BeginDeleting(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String) As UpdateOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+      description: "\r\nIf the resource provide needs to return an error to any operation,\r\nit should return the appropriate HTTP error code and a message\r\nbody as can be seen below.The message should be localized per the\r\nAccept-Language header specified in the original request such\r\nthatit could be directly be exposed to users\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginDeletingAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginDeletingAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  id: BeginDeletingAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeginDeletingAsync(IRouteOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.BeginDeletingAsync(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeletingAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 157
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe delete route operation deletes the specified route from a route\r\ntable.\r\n"
+  example: []
+  syntax:
+    content: public static Task<UpdateOperationResponse> BeginDeletingAsync(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName)
+    content.vb: Public Shared Function BeginDeletingAsync(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String) As Task(Of UpdateOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.UpdateOperationResponse}
+      description: "\r\nIf the resource provide needs to return an error to any operation,\r\nit should return the appropriate HTTP error code and a message\r\nbody as can be seen below.The message should be localized per the\r\nAccept-Language header specified in the original request such\r\nthatit could be directly be exposed to users\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  id: CreateOrUpdate(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdate(IRouteOperations, String, String, String, Route)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String, Microsoft.Azure.Management.Network.Models.Route)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdate
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 193
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put route operation creates/updates a route in the specified\r\nroute table\r\n"
+  example: []
+  syntax:
+    content: public static AzureAsyncOperationResponse CreateOrUpdate(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName, Route routeParameters)
+    content.vb: Public Shared Function CreateOrUpdate(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String, routeParameters As Route) As AzureAsyncOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    - id: routeParameters
+      type: Microsoft.Azure.Management.Network.Models.Route
+      description: "\r\nRequired. Parameters supplied to the create/update route operation\r\n"
+    return:
+      type: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  id: CreateOrUpdateAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String,Microsoft.Azure.Management.Network.Models.Route)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(IRouteOperations, String, String, String, Route)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String, Microsoft.Azure.Management.Network.Models.Route)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 233
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put route operation creates/updates a route in the specified\r\nroute table\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureAsyncOperationResponse> CreateOrUpdateAsync(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName, Route routeParameters)
+    content.vb: Public Shared Function CreateOrUpdateAsync(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String, routeParameters As Route) As Task(Of AzureAsyncOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    - id: routeParameters
+      type: Microsoft.Azure.Management.Network.Models.Route
+      description: "\r\nRequired. Parameters supplied to the create/update route operation\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.Delete(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.Delete(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  id: Delete(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Delete(IRouteOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.Delete(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Delete
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 259
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe delete route operation deletes the specified route from a route\r\ntable.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse Delete(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName)
+    content.vb: Public Shared Function Delete(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  id: DeleteAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(IRouteOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 289
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe delete route operation deletes the specified route from a route\r\ntable.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> DeleteAsync(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName)
+    content.vb: Public Shared Function DeleteAsync(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.Get(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.Get(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  id: Get(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(IRouteOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.Get(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 314
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Get route operation retreives information about the specified\r\nroute from the route table.\r\n"
+  example: []
+  syntax:
+    content: public static RouteGetResponse Get(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName)
+    content.vb: Public Shared Function Get(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String) As RouteGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Network.Models.RouteGetResponse
+      description: "\r\nResponse for GetRoute Api service call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.GetAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.GetAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  id: GetAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(IRouteOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.GetAsync(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 343
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Get route operation retreives information about the specified\r\nroute from the route table.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RouteGetResponse> GetAsync(IRouteOperations operations, string resourceGroupName, string routeTableName, string routeName)
+    content.vb: Public Shared Function GetAsync(operations As IRouteOperations, resourceGroupName As String, routeTableName As String, routeName As String) As Task(Of RouteGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    - id: routeName
+      type: System.String
+      description: "\r\nRequired. The name of the route.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.RouteGetResponse}
+      description: "\r\nResponse for GetRoute Api service call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.List(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.List(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String)
+  id: List(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IRouteOperations, String, String)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.List(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 365
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe List network security rule opertion retrieves all the routes in\r\na route table.\r\n"
+  example: []
+  syntax:
+    content: public static RouteListResponse List(IRouteOperations operations, string resourceGroupName, string routeTableName)
+    content.vb: Public Shared Function List(operations As IRouteOperations, resourceGroupName As String, routeTableName As String) As RouteListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Network.Models.RouteListResponse
+      description: "\r\nResponse for ListRoute Api servive call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Network.RouteOperationsExtensions.ListAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.RouteOperationsExtensions.ListAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String)
+  id: ListAsync(Microsoft.Azure.Management.Network.IRouteOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Network.RouteOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IRouteOperations, String, String)
+  fullName: Microsoft.Azure.Management.Network.RouteOperationsExtensions.ListAsync(Microsoft.Azure.Management.Network.IRouteOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/RouteOperationsExtensions.cs
+    startLine: 391
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe List network security rule opertion retrieves all the routes in\r\na route table.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RouteListResponse> ListAsync(IRouteOperations operations, string resourceGroupName, string routeTableName)
+    content.vb: Public Shared Function ListAsync(operations As IRouteOperations, resourceGroupName As String, routeTableName As String) As Task(Of RouteListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Network.IRouteOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Network.IRouteOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: routeTableName
+      type: System.String
+      description: "\r\nRequired. The name of the route table.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.RouteListResponse}
+      description: "\r\nResponse for ListRoute Api servive call\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.Network
+  isExternal: false
+  name: Microsoft.Azure.Management.Network
+  fullName: Microsoft.Azure.Management.Network
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Network.IRouteOperations
+  parent: Microsoft.Azure.Management.Network
+  isExternal: false
+  name: IRouteOperations
+  fullName: Microsoft.Azure.Management.Network.IRouteOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Network.Models.Route
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: Route
+  fullName: Microsoft.Azure.Management.Network.Models.Route
+- uid: Microsoft.Azure.Management.Network.Models.RoutePutResponse
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: RoutePutResponse
+  fullName: Microsoft.Azure.Management.Network.Models.RoutePutResponse
+- uid: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Network.Models
+  fullName: Microsoft.Azure.Management.Network.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.RoutePutResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RoutePutResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.RoutePutResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.RoutePutResponse)
+  name.vb: Task(Of RoutePutResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.RoutePutResponse
+    name: RoutePutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.RoutePutResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.RoutePutResponse
+    name: RoutePutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.RoutePutResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: UpdateOperationResponse
+  fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.UpdateOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<UpdateOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.UpdateOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.UpdateOperationResponse)
+  name.vb: Task(Of UpdateOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+    name: UpdateOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+    name: UpdateOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: AzureAsyncOperationResponse
+  fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureAsyncOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse)
+  name.vb: Task(Of AzureAsyncOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+    name: AzureAsyncOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+    name: AzureAsyncOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  - name: )
+    fullName: )
+- uid: AzureOperationResponse
+  isExternal: true
+  name: AzureOperationResponse
+  fullName: AzureOperationResponse
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Network.Models.RouteGetResponse
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: RouteGetResponse
+  fullName: Microsoft.Azure.Management.Network.Models.RouteGetResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.RouteGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RouteGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.RouteGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.RouteGetResponse)
+  name.vb: Task(Of RouteGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.RouteGetResponse
+    name: RouteGetResponse
+    fullName: Microsoft.Azure.Management.Network.Models.RouteGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.RouteGetResponse
+    name: RouteGetResponse
+    fullName: Microsoft.Azure.Management.Network.Models.RouteGetResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Network.Models.RouteListResponse
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: RouteListResponse
+  fullName: Microsoft.Azure.Management.Network.Models.RouteListResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.RouteListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RouteListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.RouteListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.RouteListResponse)
+  name.vb: Task(Of RouteListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.RouteListResponse
+    name: RouteListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.RouteListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.RouteListResponse
+    name: RouteListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.RouteListResponse
+  - name: )
+    fullName: )

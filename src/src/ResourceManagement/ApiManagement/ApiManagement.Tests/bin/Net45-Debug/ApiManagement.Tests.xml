@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiManagement.Tests</name>
+    </assembly>
+    <members>
+        <member name="M:ApiManagement.Tests.ApiManagementResourceProviderUndoHandler.DoLookup(Hyak.Common.IServiceOperations{Microsoft.Azure.Management.ApiManagement.ApiManagementClient},System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Action@)">
+            <summary>
+            Look up the undo operation for the given ApiManagement operation
+            </summary>
+            <param name="client">The IServiceOperations instance used for the operation</param>
+            <param name="method">The name of the ApiManagement method</param>
+            <param name="parameters">The parameters passed to the operation</param>
+            <param name="undoAction">The undo action for the given operation, if any</param>
+            <returns>True if an undo operation is found, otherwise false</returns>
+        </member>
+        <member name="T:ApiManagement.Tests.UndoContextDiscoveryExtensions">
+            <summary>
+            Class used to discover and construct undo handlers available in the app domain
+            </summary>
+            
+        </member>
+        <member name="M:ApiManagement.Tests.UndoContextDiscoveryExtensions.CreateApiManagementUndoHandler">
+            <summary>
+            Create an undo handler for Api Management service operations
+            </summary>
+            <returns>AN undo handler for Api Management service operations</returns>
+        </member>
+    </members>
+</doc>

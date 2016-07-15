@@ -1,0 +1,1079 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions">
+          <span class="lang-csharp">DatabaseActivationOperationsExtensions</span>
+          <span class="lang-vb">DatabaseActivationOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">DatabaseActivationOperationsExtensions</code>
+                <code class="lang-vb">DatabaseActivationOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.Sql.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Windows Azure SQL Database management API provides a RESTful set of
+web services that interact with Windows Azure SQL Database services to
+manage your databases. The API enables users to create, retrieve,
+update, and delete databases and servers.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_BeginPause_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginPause(IDatabaseActivationOperations, String, String, String)</code>
+          <code class="lang-vb">BeginPause(IDatabaseActivationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database pause operation.To
+determine the status of the operation call
+GetDatabaseActivationOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static DatabaseCreateOrUpdateResponse BeginPause(IDatabaseActivationOperations operations, string resourceGroupName, string serverName, string databaseName)</code><code class="vb lang-vb">Public Shared Function BeginPause(operations As IDatabaseActivationOperations, resourceGroupName As String, serverName As String, databaseName As String) As DatabaseCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the data
+warehouse database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Data Warehouse database to
+pause.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_BeginPauseAsync_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginPauseAsync(IDatabaseActivationOperations, String, String, String)</code>
+          <code class="lang-vb">BeginPauseAsync(IDatabaseActivationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database pause operation.To
+determine the status of the operation call
+GetDatabaseActivationOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;DatabaseCreateOrUpdateResponse&gt; BeginPauseAsync(IDatabaseActivationOperations operations, string resourceGroupName, string serverName, string databaseName)</code><code class="vb lang-vb">Public Shared Function BeginPauseAsync(operations As IDatabaseActivationOperations, resourceGroupName As String, serverName As String, databaseName As String) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the data
+warehouse database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Data Warehouse database to
+pause.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_BeginResume_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginResume(IDatabaseActivationOperations, String, String, String)</code>
+          <code class="lang-vb">BeginResume(IDatabaseActivationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database resume operation. To
+determine the status of the operation call
+GetDatabaseActivationOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static DatabaseCreateOrUpdateResponse BeginResume(IDatabaseActivationOperations operations, string resourceGroupName, string serverName, string databaseName)</code><code class="vb lang-vb">Public Shared Function BeginResume(operations As IDatabaseActivationOperations, resourceGroupName As String, serverName As String, databaseName As String) As DatabaseCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the data
+warehouse database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Data Warehouse database to
+resume.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_BeginResumeAsync_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginResumeAsync(IDatabaseActivationOperations, String, String, String)</code>
+          <code class="lang-vb">BeginResumeAsync(IDatabaseActivationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database resume operation. To
+determine the status of the operation call
+GetDatabaseActivationOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;DatabaseCreateOrUpdateResponse&gt; BeginResumeAsync(IDatabaseActivationOperations operations, string resourceGroupName, string serverName, string databaseName)</code><code class="vb lang-vb">Public Shared Function BeginResumeAsync(operations As IDatabaseActivationOperations, resourceGroupName As String, serverName As String, databaseName As String) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the data
+warehouse database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Data Warehouse database to
+resume.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_GetDatabaseActivationOperationStatus_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetDatabaseActivationOperationStatus(IDatabaseActivationOperations, String)</code>
+          <code class="lang-vb">GetDatabaseActivationOperationStatus(IDatabaseActivationOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure SQL Data Warehouse Database pause or
+resume operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static DatabaseCreateOrUpdateResponse GetDatabaseActivationOperationStatus(IDatabaseActivationOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetDatabaseActivationOperationStatus(operations As IDatabaseActivationOperations, operationStatusLink As String) As DatabaseCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_GetDatabaseActivationOperationStatusAsync_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetDatabaseActivationOperationStatusAsync(IDatabaseActivationOperations, String)</code>
+          <code class="lang-vb">GetDatabaseActivationOperationStatusAsync(IDatabaseActivationOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure SQL Data Warehouse Database pause or
+resume operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;DatabaseCreateOrUpdateResponse&gt; GetDatabaseActivationOperationStatusAsync(IDatabaseActivationOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetDatabaseActivationOperationStatusAsync(operations As IDatabaseActivationOperations, operationStatusLink As String) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_Pause_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Pause(IDatabaseActivationOperations, String, String, String)</code>
+          <code class="lang-vb">Pause(IDatabaseActivationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database pause operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static DatabaseCreateOrUpdateResponse Pause(IDatabaseActivationOperations operations, string resourceGroupName, string serverName, string databaseName)</code><code class="vb lang-vb">Public Shared Function Pause(operations As IDatabaseActivationOperations, resourceGroupName As String, serverName As String, databaseName As String) As DatabaseCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the data
+warehouse database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Data Warehouse database to
+pause.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_PauseAsync_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">PauseAsync(IDatabaseActivationOperations, String, String, String)</code>
+          <code class="lang-vb">PauseAsync(IDatabaseActivationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database pause operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;DatabaseCreateOrUpdateResponse&gt; PauseAsync(IDatabaseActivationOperations operations, string resourceGroupName, string serverName, string databaseName)</code><code class="vb lang-vb">Public Shared Function PauseAsync(operations As IDatabaseActivationOperations, resourceGroupName As String, serverName As String, databaseName As String) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the data
+warehouse database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Data Warehouse database to
+pause.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_Resume_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Resume(IDatabaseActivationOperations, String, String, String)</code>
+          <code class="lang-vb">Resume(IDatabaseActivationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database resume operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static DatabaseCreateOrUpdateResponse Resume(IDatabaseActivationOperations operations, string resourceGroupName, string serverName, string databaseName)</code><code class="vb lang-vb">Public Shared Function Resume(operations As IDatabaseActivationOperations, resourceGroupName As String, serverName As String, databaseName As String) As DatabaseCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the data
+warehouse database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Data Warehouse database to
+resume.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_DatabaseActivationOperationsExtensions_ResumeAsync_Microsoft_Azure_Management_Sql_IDatabaseActivationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ResumeAsync(IDatabaseActivationOperations, String, String, String)</code>
+          <code class="lang-vb">ResumeAsync(IDatabaseActivationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Start an Azure SQL Data Warehouse database resume operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;DatabaseCreateOrUpdateResponse&gt; ResumeAsync(IDatabaseActivationOperations operations, string resourceGroupName, string serverName, string databaseName)</code><code class="vb lang-vb">Public Shared Function ResumeAsync(operations As IDatabaseActivationOperations, resourceGroupName As String, serverName As String, databaseName As String) As Task(Of DatabaseCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.html#Microsoft_Azure_Management_Sql_IDatabaseActivationOperations">IDatabaseActivationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the data
+warehouse database is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>databaseName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Data Warehouse database to
+resume.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_DatabaseCreateOrUpdateResponse">DatabaseCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql Database operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

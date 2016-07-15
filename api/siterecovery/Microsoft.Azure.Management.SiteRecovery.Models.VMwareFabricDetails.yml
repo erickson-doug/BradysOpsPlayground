@@ -1,0 +1,1726 @@
+items:
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  commentId: T:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  id: VMwareFabricDetails
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  children:
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.#ctor
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AgentCount
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AgentVersion
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AvailableMemoryInBytes
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AvailableSpaceInBytes
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CpuLoad
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CpuLoadStatus
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CsServiceStatus
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.DatabaseServerLoad
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.DatabaseServerLoadStatus
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.HostName
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.IpAddress
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.LastHeartbeat
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.MasterTargetServers
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.MemoryUsageStatus
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProcessServerCount
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProcessServers
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProtectedServers
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ReplicationPairCount
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.RunAsAccounts
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SpaceUsageStatus
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SystemLoad
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SystemLoadStatus
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.TotalMemoryInBytes
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.TotalSpaceInBytes
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.VersionStatus
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.WebLoad
+  - Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.WebLoadStatus
+  langs:
+  - csharp
+  - vb
+  name: VMwareFabricDetails
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VMwareFabricDetails
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nStore the extended details of the VMware fabric.\r\n"
+  example: []
+  syntax:
+    content: 'public class VMwareFabricDetails : FabricSpecificDetails'
+    content.vb: >-
+      Public Class VMwareFabricDetails
+
+          Inherits FabricSpecificDetails
+  inheritance:
+  - System.Object
+  - Microsoft.Azure.Management.SiteRecovery.Models.FabricSpecificDetails
+  inheritedMembers:
+  - Microsoft.Azure.Management.SiteRecovery.Models.FabricSpecificDetails.InstanceType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AgentCount
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AgentCount
+  id: AgentCount
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: AgentCount
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AgentCount
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AgentCount
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The number of source and target servers configured to\r\ntalk to this fabric.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string AgentCount
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AgentCount As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AgentVersion
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AgentVersion
+  id: AgentVersion
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: AgentVersion
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AgentVersion
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AgentVersion
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The agent Version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string AgentVersion
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AgentVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AvailableMemoryInBytes
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AvailableMemoryInBytes
+  id: AvailableMemoryInBytes
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: AvailableMemoryInBytes
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AvailableMemoryInBytes
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AvailableMemoryInBytes
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The available memory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AvailableMemoryInBytes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AvailableMemoryInBytes As Long
+    parameters: []
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AvailableSpaceInBytes
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AvailableSpaceInBytes
+  id: AvailableSpaceInBytes
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: AvailableSpaceInBytes
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.AvailableSpaceInBytes
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AvailableSpaceInBytes
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The available space.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AvailableSpaceInBytes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AvailableSpaceInBytes As Long
+    parameters: []
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CpuLoad
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CpuLoad
+  id: CpuLoad
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: CpuLoad
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CpuLoad
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CpuLoad
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The percentage of the CPU load.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string CpuLoad
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CpuLoad As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CpuLoadStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CpuLoadStatus
+  id: CpuLoadStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: CpuLoadStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CpuLoadStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CpuLoadStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The CPU load status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string CpuLoadStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CpuLoadStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CsServiceStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CsServiceStatus
+  id: CsServiceStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: CsServiceStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.CsServiceStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CsServiceStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 106
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The CS service status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string CsServiceStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CsServiceStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.DatabaseServerLoad
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.DatabaseServerLoad
+  id: DatabaseServerLoad
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: DatabaseServerLoad
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.DatabaseServerLoad
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DatabaseServerLoad
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 117
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The database server load.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string DatabaseServerLoad
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DatabaseServerLoad As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.DatabaseServerLoadStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.DatabaseServerLoadStatus
+  id: DatabaseServerLoadStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: DatabaseServerLoadStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.DatabaseServerLoadStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DatabaseServerLoadStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 128
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The database server load status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string DatabaseServerLoadStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DatabaseServerLoadStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.HostName
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.HostName
+  id: HostName
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: HostName
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.HostName
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: HostName
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 139
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The host name.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string HostName
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property HostName As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.IpAddress
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.IpAddress
+  id: IpAddress
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: IpAddress
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.IpAddress
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IpAddress
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 150
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The IP address.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string IpAddress
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IpAddress As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.LastHeartbeat
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.LastHeartbeat
+  id: LastHeartbeat
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: LastHeartbeat
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.LastHeartbeat
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LastHeartbeat
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 161
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The last heartbeat received from CS server.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime? LastHeartbeat
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LastHeartbeat As Date?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.MasterTargetServers
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.MasterTargetServers
+  id: MasterTargetServers
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: MasterTargetServers
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.MasterTargetServers
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MasterTargetServers
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 173
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The list of Master Target servers associated with the\r\nfabric.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<MasterTargetServer> MasterTargetServers
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MasterTargetServers As IList(Of MasterTargetServer)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.MasterTargetServer}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.MemoryUsageStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.MemoryUsageStatus
+  id: MemoryUsageStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: MemoryUsageStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.MemoryUsageStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MemoryUsageStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 184
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The memory usage status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string MemoryUsageStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MemoryUsageStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProcessServerCount
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProcessServerCount
+  id: ProcessServerCount
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: ProcessServerCount
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProcessServerCount
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProcessServerCount
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 195
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The number of process servers.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ProcessServerCount
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProcessServerCount As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProcessServers
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProcessServers
+  id: ProcessServers
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: ProcessServers
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProcessServers
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProcessServers
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 206
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The list of Process Servers associated with the fabric.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<ProcessServer> ProcessServers
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProcessServers As IList(Of ProcessServer)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.ProcessServer}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProtectedServers
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProtectedServers
+  id: ProtectedServers
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: ProtectedServers
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ProtectedServers
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProtectedServers
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 217
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The number of protected servers.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ProtectedServers
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProtectedServers As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ReplicationPairCount
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ReplicationPairCount
+  id: ReplicationPairCount
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: ReplicationPairCount
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.ReplicationPairCount
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReplicationPairCount
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 228
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The number of replication pairs configured in this CS.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ReplicationPairCount
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ReplicationPairCount As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.RunAsAccounts
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.RunAsAccounts
+  id: RunAsAccounts
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: RunAsAccounts
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.RunAsAccounts
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RunAsAccounts
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 239
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The list of RunAs accounts registered with the fabric.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<RunAsAccount> RunAsAccounts
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RunAsAccounts As IList(Of RunAsAccount)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.RunAsAccount}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SpaceUsageStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SpaceUsageStatus
+  id: SpaceUsageStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: SpaceUsageStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SpaceUsageStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SpaceUsageStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 250
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The space usage status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string SpaceUsageStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SpaceUsageStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SystemLoad
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SystemLoad
+  id: SystemLoad
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: SystemLoad
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SystemLoad
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SystemLoad
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 261
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The percentage of the system load.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string SystemLoad
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SystemLoad As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SystemLoadStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SystemLoadStatus
+  id: SystemLoadStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: SystemLoadStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.SystemLoadStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SystemLoadStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 272
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The system load status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string SystemLoadStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SystemLoadStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.TotalMemoryInBytes
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.TotalMemoryInBytes
+  id: TotalMemoryInBytes
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: TotalMemoryInBytes
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.TotalMemoryInBytes
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TotalMemoryInBytes
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 283
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The total memory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long TotalMemoryInBytes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TotalMemoryInBytes As Long
+    parameters: []
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.TotalSpaceInBytes
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.TotalSpaceInBytes
+  id: TotalSpaceInBytes
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: TotalSpaceInBytes
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.TotalSpaceInBytes
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TotalSpaceInBytes
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 294
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The total space.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long TotalSpaceInBytes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TotalSpaceInBytes As Long
+    parameters: []
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.VersionStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.VersionStatus
+  id: VersionStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: VersionStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.VersionStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VersionStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 305
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The version status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VersionStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VersionStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.WebLoad
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.WebLoad
+  id: WebLoad
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: WebLoad
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.WebLoad
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: WebLoad
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 316
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The web load.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string WebLoad
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property WebLoad As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.WebLoadStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.WebLoadStatus
+  id: WebLoadStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: WebLoadStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.WebLoadStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: WebLoadStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 327
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The web load status.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string WebLoadStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property WebLoadStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.#ctor
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails
+  langs:
+  - csharp
+  - vb
+  name: VMwareFabricDetails()
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMwareFabricDetails.VMwareFabricDetails()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/VMwareFabricDetails.cs
+    startLine: 336
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nInitializes a new instance of the VMwareFabricDetails class.\r\n"
+  example: []
+  syntax:
+    content: public VMwareFabricDetails()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery.Models
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.FabricSpecificDetails
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: FabricSpecificDetails
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.FabricSpecificDetails
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.FabricSpecificDetails.InstanceType
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.FabricSpecificDetails
+  isExternal: false
+  name: InstanceType
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.FabricSpecificDetails.InstanceType
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  fullname.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.MasterTargetServer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<MasterTargetServer>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Management.SiteRecovery.Models.MasterTargetServer>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Management.SiteRecovery.Models.MasterTargetServer)
+  name.vb: IList(Of MasterTargetServer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.MasterTargetServer
+    name: MasterTargetServer
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.MasterTargetServer
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.MasterTargetServer
+    name: MasterTargetServer
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.MasterTargetServer
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.ProcessServer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<ProcessServer>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Management.SiteRecovery.Models.ProcessServer>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Management.SiteRecovery.Models.ProcessServer)
+  name.vb: IList(Of ProcessServer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.ProcessServer
+    name: ProcessServer
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.ProcessServer
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.ProcessServer
+    name: ProcessServer
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.ProcessServer
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.RunAsAccount}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<RunAsAccount>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Management.SiteRecovery.Models.RunAsAccount>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Management.SiteRecovery.Models.RunAsAccount)
+  name.vb: IList(Of RunAsAccount)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.RunAsAccount
+    name: RunAsAccount
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.RunAsAccount
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.RunAsAccount
+    name: RunAsAccount
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.RunAsAccount
+  - name: )
+    fullName: )

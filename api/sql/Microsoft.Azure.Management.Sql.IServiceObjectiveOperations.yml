@@ -1,0 +1,235 @@
+items:
+- uid: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations
+  commentId: T:Microsoft.Azure.Management.Sql.IServiceObjectiveOperations
+  id: IServiceObjectiveOperations
+  parent: Microsoft.Azure.Management.Sql
+  children:
+  - Microsoft.Azure.Management.Sql.IServiceObjectiveOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServiceObjectiveOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IServiceObjectiveOperations
+  fullName: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServiceObjectiveOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IServiceObjectiveOperations
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServiceObjectiveOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\nService Objectives.   Contains operations to: Retrieve service\r\nobjectives.\r\n"
+  example: []
+  syntax:
+    content: public interface IServiceObjectiveOperations
+    content.vb: Public Interface IServiceObjectiveOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServiceObjectiveOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations.GetAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServiceObjectiveOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServiceObjectiveOperations.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database Server Service\r\nObjectives.\r\n"
+  example: []
+  syntax:
+    content: Task<ServiceObjectiveGetResponse> GetAsync(string resourceGroupName, string serverName, string serviceObjectiveName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, serverName As String, serviceObjectiveName As String, cancellationToken As CancellationToken) As Task(Of ServiceObjectiveGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Server.\r\n"
+    - id: serviceObjectiveName
+      type: System.String
+      description: "\r\nThe name of the service objective to retrieve.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServiceObjectiveGetResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Database Service\r\nObjective request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServiceObjectiveOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations.ListAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServiceObjectiveOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServiceObjectiveOperations.cs
+    startLine: 75
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database Server Service\r\nObjectives.\r\n"
+  example: []
+  syntax:
+    content: Task<ServiceObjectiveListResponse> ListAsync(string resourceGroupName, string serverName, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, serverName As String, cancellationToken As CancellationToken) As Task(Of ServiceObjectiveListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Server.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServiceObjectiveListResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Database Service\r\nObjectives request.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql
+  fullName: Microsoft.Azure.Management.Sql
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServiceObjectiveGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServiceObjectiveGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServiceObjectiveGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServiceObjectiveGetResponse)
+  name.vb: Task(Of ServiceObjectiveGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServiceObjectiveGetResponse
+    name: ServiceObjectiveGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServiceObjectiveGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServiceObjectiveGetResponse
+    name: ServiceObjectiveGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServiceObjectiveGetResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServiceObjectiveListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServiceObjectiveListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServiceObjectiveListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServiceObjectiveListResponse)
+  name.vb: Task(Of ServiceObjectiveListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServiceObjectiveListResponse
+    name: ServiceObjectiveListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServiceObjectiveListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServiceObjectiveListResponse
+    name: ServiceObjectiveListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServiceObjectiveListResponse
+  - name: )
+    fullName: )

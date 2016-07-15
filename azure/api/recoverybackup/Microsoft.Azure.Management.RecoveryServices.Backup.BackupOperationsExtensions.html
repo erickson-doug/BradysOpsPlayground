@@ -1,0 +1,365 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_RecoveryServices_Backup_BackupOperationsExtensions">
+          <span class="lang-csharp">BackupOperationsExtensions</span>
+          <span class="lang-vb">BackupOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">BackupOperationsExtensions</code>
+                <code class="lang-vb">BackupOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.RecoveryServices.Backup.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_BackupOperationsExtensions_TriggerBackup_Microsoft_Azure_Management_RecoveryServices_Backup_IBackupOperations_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_TriggerBackupRequest_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">TriggerBackup(IBackupOperations, String, String, CustomRequestHeaders, String, String, String, TriggerBackupRequest)</code>
+          <code class="lang-vb">TriggerBackup(IBackupOperations, String, String, CustomRequestHeaders, String, String, String, TriggerBackupRequest)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Trigger Backup Operation starts an operation in the service
+which triggers the backup of the specified item in the specified
+container in your Recovery Services Vault. This is an asynchronous
+operation. To determine whether the backend service has finished
+processing the request, call Get Protected Item Operation Result
+API.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BaseRecoveryServicesJobResponse TriggerBackup(IBackupOperations operations, string resourceGroupName, string resourceName, CustomRequestHeaders customRequestHeaders, string fabricName, string containerName, string protectedItemName, TriggerBackupRequest request)</code><code class="vb lang-vb">Public Shared Function TriggerBackup(operations As IBackupOperations, resourceGroupName As String, resourceName As String, customRequestHeaders As CustomRequestHeaders, fabricName As String, containerName As String, protectedItemName As String, request As TriggerBackupRequest) As BaseRecoveryServicesJobResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations.html#Microsoft_Azure_Management_RecoveryServices_Backup_IBackupOperations">IBackupOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations.html#Microsoft_Azure_Management_RecoveryServices_Backup_IBackupOperations">IBackupOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>fabricName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. Fabric name of the protected item.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>containerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. Name of the container where the protected item belongs to.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>protectedItemName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. Name of the protected item which has to be backed up.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>request</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TriggerBackupRequest.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_TriggerBackupRequest">TriggerBackupRequest</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TriggerBackupRequest.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_TriggerBackupRequest">TriggerBackupRequest</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. Backup request for the backup item.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Base recovery job response for all the asynchronous operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_BackupOperationsExtensions_TriggerBackupAsync_Microsoft_Azure_Management_RecoveryServices_Backup_IBackupOperations_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_TriggerBackupRequest_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">TriggerBackupAsync(IBackupOperations, String, String, CustomRequestHeaders, String, String, String, TriggerBackupRequest)</code>
+          <code class="lang-vb">TriggerBackupAsync(IBackupOperations, String, String, CustomRequestHeaders, String, String, String, TriggerBackupRequest)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Trigger Backup Operation starts an operation in the service
+which triggers the backup of the specified item in the specified
+container in your Recovery Services Vault. This is an asynchronous
+operation. To determine whether the backend service has finished
+processing the request, call Get Protected Item Operation Result
+API.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BaseRecoveryServicesJobResponse&gt; TriggerBackupAsync(IBackupOperations operations, string resourceGroupName, string resourceName, CustomRequestHeaders customRequestHeaders, string fabricName, string containerName, string protectedItemName, TriggerBackupRequest request)</code><code class="vb lang-vb">Public Shared Function TriggerBackupAsync(operations As IBackupOperations, resourceGroupName As String, resourceName As String, customRequestHeaders As CustomRequestHeaders, fabricName As String, containerName As String, protectedItemName As String, request As TriggerBackupRequest) As Task(Of BaseRecoveryServicesJobResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations.html#Microsoft_Azure_Management_RecoveryServices_Backup_IBackupOperations">IBackupOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations.html#Microsoft_Azure_Management_RecoveryServices_Backup_IBackupOperations">IBackupOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>fabricName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. Fabric name of the protected item.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>containerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. Name of the container where the protected item belongs to.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>protectedItemName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. Name of the protected item which has to be backed up.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>request</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TriggerBackupRequest.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_TriggerBackupRequest">TriggerBackupRequest</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TriggerBackupRequest.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_TriggerBackupRequest">TriggerBackupRequest</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. Backup request for the backup item.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Base recovery job response for all the asynchronous operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

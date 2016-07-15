@@ -1,0 +1,473 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions
+  id: BackupEngineOperationsExtensions
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions.List(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions.ListAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  langs:
+  - csharp
+  - vb
+  name: BackupEngineOperationsExtensions
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/BackupEngineOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BackupEngineOperationsExtensions
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/BackupEngineOperationsExtensions.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  syntax:
+    content: public class BackupEngineOperationsExtensions
+    content.vb: Public Class BackupEngineOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions.List(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions.List(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  id: List(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IBackupEngineOperations, String, String, BackupEngineListQueryParams, PaginationRequest, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions.List(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams, Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/BackupEngineOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/BackupEngineOperationsExtensions.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nLists all the backup engines registered to your Recovery Services\r\nVault based on the query parameters and the pagination parameters\r\npassed in the arguments.\r\n"
+  example: []
+  syntax:
+    content: public static BackupEngineListResponse List(IBackupEngineOperations operations, string resourceGroupName, string resourceName, BackupEngineListQueryParams queryParams, PaginationRequest paginationParams, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function List(operations As IBackupEngineOperations, resourceGroupName As String, resourceName As String, queryParams As BackupEngineListQueryParams, paginationParams As PaginationRequest, customRequestHeaders As CustomRequestHeaders) As BackupEngineListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. Resource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of your recovery services vault.\r\n"
+    - id: queryParams
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams
+      description: "\r\nRequired. Query parameters for listing backup engines.\r\n"
+    - id: paginationParams
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+      description: "\r\nOptional. Pagination parameters for controlling the response.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequired. Request header parameters.\r\n"
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+      description: "\r\nResponse returned by the list backup engines operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions.ListAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions.ListAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  id: ListAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IBackupEngineOperations, String, String, BackupEngineListQueryParams, PaginationRequest, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.BackupEngineOperationsExtensions.ListAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams, Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/BackupEngineOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/BackupEngineOperationsExtensions.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nLists all the backup engines registered to your Recovery Services\r\nVault based on the query parameters and the pagination parameters\r\npassed in the arguments.\r\n"
+  example: []
+  syntax:
+    content: public static Task<BackupEngineListResponse> ListAsync(IBackupEngineOperations operations, string resourceGroupName, string resourceName, BackupEngineListQueryParams queryParams, PaginationRequest paginationParams, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function ListAsync(operations As IBackupEngineOperations, resourceGroupName As String, resourceName As String, queryParams As BackupEngineListQueryParams, paginationParams As PaginationRequest, customRequestHeaders As CustomRequestHeaders) As Task(Of BackupEngineListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. Resource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of your recovery services vault.\r\n"
+    - id: queryParams
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams
+      description: "\r\nRequired. Query parameters for listing backup engines.\r\n"
+    - id: paginationParams
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+      description: "\r\nOptional. Pagination parameters for controlling the response.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequired. Request header parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse}
+      description: "\r\nResponse returned by the list backup engines operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IBackupEngineOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: BackupEngineListQueryParams
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: PaginationRequest
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: BackupEngineListResponse
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<BackupEngineListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse)
+  name.vb: Task(Of BackupEngineListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+    name: BackupEngineListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+    name: BackupEngineListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

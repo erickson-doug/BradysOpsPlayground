@@ -1,0 +1,842 @@
+items:
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  commentId: T:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  id: HDInsightManagementClient
+  parent: Microsoft.Azure.Management.HDInsight
+  children:
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials)
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.ApiVersion
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.BaseUri
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.HDInsight.HDInsightManagementClient})
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clusters
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Credentials
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightRetryPolicy
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.LongRunningOperationInitialTimeout
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.LongRunningOperationRetryTimeout
+  langs:
+  - csharp
+  - vb
+  name: HDInsightManagementClient
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: HDInsightManagementClient
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nThe HDInsight Management Client.\r\n"
+  example: []
+  syntax:
+    content: 'public class HDInsightManagementClient : ServiceClient<HDInsightManagementClient>, IHDInsightManagementClient, IDisposable, ServiceClient<HDInsightManagementClient>'
+    content.vb: >-
+      Public Class HDInsightManagementClient
+
+          Inherits ServiceClient(Of HDInsightManagementClient)
+
+          Implements IHDInsightManagementClient, IDisposable, ServiceClient(Of HDInsightManagementClient)
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient
+  - System.IDisposable
+  - ServiceClient{Microsoft.Azure.Management.HDInsight.HDInsightManagementClient}
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightRetryPolicy
+  commentId: P:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightRetryPolicy
+  id: HDInsightRetryPolicy
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: HDInsightRetryPolicy
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightRetryPolicy
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/CustomizationModels/HDInsightRetryPolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: HDInsightRetryPolicy
+    path: src/src/ResourceManagement/HDInsight/HDInsight/CustomizationModels/HDInsightRetryPolicy.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nGets the recommended Retry Policy for the HDInsight Management Client.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static RetryPolicy HDInsightRetryPolicy
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property HDInsightRetryPolicy As RetryPolicy
+    parameters: []
+    return:
+      type: RetryPolicy
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.ApiVersion
+  commentId: P:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.BaseUri
+  commentId: P:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Credentials
+  commentId: P:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Credentials
+  id: Credentials
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 68
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 89
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clusters
+  commentId: P:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clusters
+  id: Clusters
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Clusters
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clusters
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Clusters
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 100
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nContains all the cluster operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IClusterOperations Clusters
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Clusters As IClusterOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.HDInsight.IClusterOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: HDInsightManagementClient()
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightManagementClient()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 108
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nInitializes a new instance of the HDInsightManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public HDInsightManagementClient()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri)'
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: HDInsightManagementClient(SubscriptionCloudCredentials, Uri)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightManagementClient(SubscriptionCloudCredentials, System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 131
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nInitializes a new instance of the HDInsightManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public HDInsightManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials)
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials)
+  id: '#ctor(SubscriptionCloudCredentials)'
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: HDInsightManagementClient(SubscriptionCloudCredentials)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightManagementClient(SubscriptionCloudCredentials)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 156
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nInitializes a new instance of the HDInsightManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public HDInsightManagementClient(SubscriptionCloudCredentials credentials)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(System.Net.Http.HttpClient)
+  id: '#ctor(System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: HDInsightManagementClient(HttpClient)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightManagementClient(System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 175
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nInitializes a new instance of the HDInsightManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public HDInsightManagementClient(HttpClient httpClient)
+    content.vb: Public Sub New(httpClient As HttpClient)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: HDInsightManagementClient(SubscriptionCloudCredentials, Uri, HttpClient)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightManagementClient(SubscriptionCloudCredentials, System.Uri, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 201
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nInitializes a new instance of the HDInsightManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public HDInsightManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: HDInsightManagementClient(SubscriptionCloudCredentials, HttpClient)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.HDInsightManagementClient(SubscriptionCloudCredentials, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 229
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nInitializes a new instance of the HDInsightManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public HDInsightManagementClient(SubscriptionCloudCredentials credentials, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.HDInsight.HDInsightManagementClient})
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.HDInsight.HDInsightManagementClient})
+  id: Clone(ServiceClient{Microsoft.Azure.Management.HDInsight.HDInsightManagementClient})
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Clone(ServiceClient<HDInsightManagementClient>)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clone(ServiceClient<Microsoft.Azure.Management.HDInsight.HDInsightManagementClient>)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Clone
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 249
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nClones properties from current instance to another\r\nHDInsightManagementClient instance\r\n"
+  example: []
+  syntax:
+    content: protected override void Clone(ServiceClient<HDInsightManagementClient> client)
+    content.vb: Protected Overrides Sub Clone(client As ServiceClient(Of HDInsightManagementClient))
+    parameters:
+    - id: client
+      type: ServiceClient{Microsoft.Azure.Management.HDInsight.HDInsightManagementClient}
+      description: "\r\nInstance of HDInsightManagementClient to clone to\r\n"
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.Clone(ServiceClient(Of Microsoft.Azure.Management.HDInsight.HDInsightManagementClient))
+  name.vb: Clone(ServiceClient(Of HDInsightManagementClient))
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetLongRunningOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient.GetLongRunningOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetLongRunningOperationStatusAsync
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClient.cs
+    startLine: 282
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: public Task<OperationResource> GetLongRunningOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Public Function GetLongRunningOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of OperationResource)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.HDInsight.Models.OperationResource}
+      description: "\r\nThe azure async operation response.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.HDInsight
+  isExternal: false
+  name: Microsoft.Azure.Management.HDInsight
+  fullName: Microsoft.Azure.Management.HDInsight
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient
+  parent: Microsoft.Azure.Management.HDInsight
+  isExternal: false
+  name: IHDInsightManagementClient
+  fullName: Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: ServiceClient{Microsoft.Azure.Management.HDInsight.HDInsightManagementClient}
+  definition: ServiceClient`1
+  name: ServiceClient<HDInsightManagementClient>
+  fullName: ServiceClient<Microsoft.Azure.Management.HDInsight.HDInsightManagementClient>
+  fullname.vb: ServiceClient(Of Microsoft.Azure.Management.HDInsight.HDInsightManagementClient)
+  name.vb: ServiceClient(Of HDInsightManagementClient)
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+    name: HDInsightManagementClient
+    fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+    name: HDInsightManagementClient
+    fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClient
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: ServiceClient`1
+  isExternal: true
+  name: ServiceClient<>
+  fullName: ServiceClient<>
+  fullname.vb: ServiceClient(Of )
+  name.vb: ServiceClient(Of )
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+- uid: RetryPolicy
+  isExternal: true
+  name: RetryPolicy
+  fullName: RetryPolicy
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.Azure.Management.HDInsight.IClusterOperations
+  parent: Microsoft.Azure.Management.HDInsight
+  isExternal: false
+  name: IClusterOperations
+  fullName: Microsoft.Azure.Management.HDInsight.IClusterOperations
+- uid: System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.HDInsight.Models.OperationResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OperationResource>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.HDInsight.Models.OperationResource>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.HDInsight.Models.OperationResource)
+  name.vb: Task(Of OperationResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+    name: OperationResource
+    fullName: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+    name: OperationResource
+    fullName: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

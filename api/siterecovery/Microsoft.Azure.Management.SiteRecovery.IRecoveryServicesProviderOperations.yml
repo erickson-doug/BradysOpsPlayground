@@ -1,0 +1,681 @@
+items:
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  commentId: T:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  id: IRecoveryServicesProviderOperations
+  parent: Microsoft.Azure.Management.SiteRecovery
+  children:
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginDeletingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginPurgingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginRefreshingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.DeleteAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetDeleteStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetPurgeStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetRefreshStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.PurgeAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.RefreshAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IRecoveryServicesProviderOperations
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IRecoveryServicesProviderOperations
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nDefinition of provider operations for the Site Recovery extension.\r\n"
+  example: []
+  syntax:
+    content: public interface IRecoveryServicesProviderOperations
+    content.vb: Public Interface IRecoveryServicesProviderOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginDeletingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginDeletingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: BeginDeletingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginDeletingAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginDeletingAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeletingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nDeletes a provider\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> BeginDeletingAsync(string fabricName, string providerName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function BeginDeletingAsync(fabricName As String, providerName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nName of provider's fabric\r\n"
+    - id: providerName
+      type: System.String
+      description: "\r\nProvider Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginPurgingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginPurgingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: BeginPurgingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginPurgingAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginPurgingAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginPurgingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nPurges a provider\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> BeginPurgingAsync(string fabricName, string providerName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function BeginPurgingAsync(fabricName As String, providerName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nName of provider's fabric\r\n"
+    - id: providerName
+      type: System.String
+      description: "\r\nProvider Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginRefreshingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginRefreshingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: BeginRefreshingAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginRefreshingAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.BeginRefreshingAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginRefreshingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 92
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nRefreshes a provider\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> BeginRefreshingAsync(string fabricName, string providerName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function BeginRefreshingAsync(fabricName As String, providerName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nName of provider's fabric\r\n"
+    - id: providerName
+      type: System.String
+      description: "\r\nName of provider\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.DeleteAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.DeleteAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.DeleteAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 112
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nDeletes a provider\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> DeleteAsync(string fabricName, string providerName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(fabricName As String, providerName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nName of provider's fabric\r\n"
+    - id: providerName
+      type: System.String
+      description: "\r\nProvider Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 132
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGet the server object by Id.\r\n"
+  example: []
+  syntax:
+    content: Task<RecoveryServicesProviderResponse> GetAsync(string fabricName, string providerName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(fabricName As String, providerName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of RecoveryServicesProviderResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nFabric Name.\r\n"
+    - id: providerName
+      type: System.String
+      description: "\r\nProvider Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderResponse}
+      description: "\r\nThe response model for the provider object\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetDeleteStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetDeleteStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetDeleteStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: GetDeleteStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetDeleteStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDeleteStatusAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 149
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> GetDeleteStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetDeleteStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetPurgeStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetPurgeStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetPurgeStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: GetPurgeStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetPurgeStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetPurgeStatusAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 166
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> GetPurgeStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetPurgeStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetRefreshStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetRefreshStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetRefreshStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: GetRefreshStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.GetRefreshStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetRefreshStatusAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 183
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> GetRefreshStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetRefreshStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.ListAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 200
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGet the list of all servers under the vault for given fabric.\r\n"
+  example: []
+  syntax:
+    content: Task<RecoveryServicesProviderListResponse> ListAsync(string fabricName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(fabricName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of RecoveryServicesProviderListResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nFabric Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse}
+      description: "\r\nThe response model for the list servers operation.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAllAsync(CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.ListAllAsync(Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAllAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 214
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGet the list of all servers under the vault.\r\n"
+  example: []
+  syntax:
+    content: Task<RecoveryServicesProviderListResponse> ListAllAsync(CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAllAsync(customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of RecoveryServicesProviderListResponse)
+    parameters:
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse}
+      description: "\r\nThe response model for the list servers operation.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.PurgeAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.PurgeAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: PurgeAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: PurgeAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.PurgeAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PurgeAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 234
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nPurges a provider\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> PurgeAsync(string fabricName, string providerName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function PurgeAsync(fabricName As String, providerName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nName of provider's fabric\r\n"
+    - id: providerName
+      type: System.String
+      description: "\r\nProvider Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.RefreshAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.RefreshAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: RefreshAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations
+  langs:
+  - csharp
+  - vb
+  name: RefreshAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IRecoveryServicesProviderOperations.RefreshAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RefreshAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IRecoveryServicesProviderOperations.cs
+    startLine: 254
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nRefreshes a provider\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> RefreshAsync(string fabricName, string providerName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function RefreshAsync(fabricName As String, providerName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nName of provider's fabric\r\n"
+    - id: providerName
+      type: System.String
+      description: "\r\nName of provider\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+references:
+- uid: Microsoft.Azure.Management.SiteRecovery
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery
+  fullName: Microsoft.Azure.Management.SiteRecovery
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<LongRunningOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse)
+  name.vb: Task(Of LongRunningOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse
+    name: LongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse
+    name: LongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery.Models
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecoveryServicesProviderResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderResponse)
+  name.vb: Task(Of RecoveryServicesProviderResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderResponse
+    name: RecoveryServicesProviderResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderResponse
+    name: RecoveryServicesProviderResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecoveryServicesProviderListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse)
+  name.vb: Task(Of RecoveryServicesProviderListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse
+    name: RecoveryServicesProviderListResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse
+    name: RecoveryServicesProviderListResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.RecoveryServicesProviderListResponse
+  - name: )
+    fullName: )

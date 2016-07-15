@@ -1,0 +1,806 @@
+items:
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  commentId: T:Microsoft.Azure.Management.Network.Models.InboundNatRule
+  id: InboundNatRule
+  parent: Microsoft.Azure.Management.Network.Models
+  children:
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.#ctor
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.#ctor(System.String,System.Int32,System.Boolean)
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.BackendIPConfiguration
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.BackendPort
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.EnableFloatingIP
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.FrontendIPConfiguration
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.FrontendPort
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.IdleTimeoutInMinutes
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.Protocol
+  - Microsoft.Azure.Management.Network.Models.InboundNatRule.ProvisioningState
+  langs:
+  - csharp
+  - vb
+  name: InboundNatRule
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: InboundNatRule
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nInbound NAT rule of the loadbalancer\r\n"
+  example: []
+  syntax:
+    content: 'public class InboundNatRule : ChildResource'
+    content.vb: >-
+      Public Class InboundNatRule
+
+          Inherits ChildResource
+  inheritance:
+  - System.Object
+  - Microsoft.Azure.Management.Network.Models.ResourceId
+  - Microsoft.Azure.Management.Network.Models.ChildResource
+  inheritedMembers:
+  - Microsoft.Azure.Management.Network.Models.ChildResource.Etag
+  - Microsoft.Azure.Management.Network.Models.ChildResource.Name
+  - Microsoft.Azure.Management.Network.Models.ResourceId.Id
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.BackendIPConfiguration
+  commentId: P:Microsoft.Azure.Management.Network.Models.InboundNatRule.BackendIPConfiguration
+  id: BackendIPConfiguration
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: BackendIPConfiguration
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.BackendIPConfiguration
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BackendIPConfiguration
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets a reference to a private ip address defined\r\non a NetworkInterface of a VM. Traffic sent to frontendPort of\r\neach of the frontendIPConfigurations is forwarded to the backed IP\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ResourceId BackendIPConfiguration
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property BackendIPConfiguration As ResourceId
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Network.Models.ResourceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.BackendPort
+  commentId: P:Microsoft.Azure.Management.Network.Models.InboundNatRule.BackendPort
+  id: BackendPort
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: BackendPort
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.BackendPort
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BackendPort
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets a port used for internal connections on the\r\nendpoint. The localPort attribute maps the eternal port of the\r\nendpoint to an internal port on a role. This is useful in\r\nscenarios where a role must communicate to an internal compotnent\r\non a port that is different from the one that is exposed\r\nexternally. If not specified, the value of localPort is the same\r\nas the port attribute. Set the value of localPort to '*' to\r\nautomatically assign an unallocated port that is discoverable\r\nusing the runtime API\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int BackendPort
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property BackendPort As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.EnableFloatingIP
+  commentId: P:Microsoft.Azure.Management.Network.Models.InboundNatRule.EnableFloatingIP
+  id: EnableFloatingIP
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: EnableFloatingIP
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.EnableFloatingIP
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: EnableFloatingIP
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nRequired. Configures a virtual machine's endpoint for the floating\r\nIP capability required to configure a SQL AlwaysOn availability\r\nGroup. This setting is required when using the SQL Always ON\r\navailability Groups in SQL server. This setting can't be changed\r\nafter you create the endpoint\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool EnableFloatingIP
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property EnableFloatingIP As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.FrontendIPConfiguration
+  commentId: P:Microsoft.Azure.Management.Network.Models.InboundNatRule.FrontendIPConfiguration
+  id: FrontendIPConfiguration
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: FrontendIPConfiguration
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.FrontendIPConfiguration
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: FrontendIPConfiguration
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets a reference to frontend IP Addresses\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ResourceId FrontendIPConfiguration
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property FrontendIPConfiguration As ResourceId
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Network.Models.ResourceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.FrontendPort
+  commentId: P:Microsoft.Azure.Management.Network.Models.InboundNatRule.FrontendPort
+  id: FrontendPort
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: FrontendPort
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.FrontendPort
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: FrontendPort
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 98
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nRequired. Gets or sets the port for the external endpoint. You can\r\nspcify any port number you choose, but the port numbers specified\r\nfor each role in the service must be unique. Possible values range\r\nbetween 1 and 65535, inclusive\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int FrontendPort
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property FrontendPort As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.IdleTimeoutInMinutes
+  commentId: P:Microsoft.Azure.Management.Network.Models.InboundNatRule.IdleTimeoutInMinutes
+  id: IdleTimeoutInMinutes
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: IdleTimeoutInMinutes
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.IdleTimeoutInMinutes
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IdleTimeoutInMinutes
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 111
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets the timeout for the Tcp idle connection. The\r\nvalue can be set between 4 and 30 minutes. The default value is 4\r\nminutes. This emlement is only used when the protocol is set to Tcp\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? IdleTimeoutInMinutes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IdleTimeoutInMinutes As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.Protocol
+  commentId: P:Microsoft.Azure.Management.Network.Models.InboundNatRule.Protocol
+  id: Protocol
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: Protocol
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.Protocol
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Protocol
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 123
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nRequired. Gets or sets the transport potocol for the external\r\nendpoint. Possible values are Udp or Tcp\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Protocol
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Protocol As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.ProvisioningState
+  commentId: P:Microsoft.Azure.Management.Network.Models.InboundNatRule.ProvisioningState
+  id: ProvisioningState
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: ProvisioningState
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.ProvisioningState
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProvisioningState
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets Provisioning state of the PublicIP resource\r\nUpdating/Deleting/Failed\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ProvisioningState
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProvisioningState As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.#ctor
+  commentId: M:Microsoft.Azure.Management.Network.Models.InboundNatRule.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: InboundNatRule()
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.InboundNatRule()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 144
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nInitializes a new instance of the InboundNatRule class.\r\n"
+  example: []
+  syntax:
+    content: public InboundNatRule()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.InboundNatRule.#ctor(System.String,System.Int32,System.Boolean)
+  commentId: M:Microsoft.Azure.Management.Network.Models.InboundNatRule.#ctor(System.String,System.Int32,System.Boolean)
+  id: '#ctor(System.String,System.Int32,System.Boolean)'
+  parent: Microsoft.Azure.Management.Network.Models.InboundNatRule
+  langs:
+  - csharp
+  - vb
+  name: InboundNatRule(String, Int32, Boolean)
+  fullName: Microsoft.Azure.Management.Network.Models.InboundNatRule.InboundNatRule(System.String, System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/InboundNatRule.cs
+    startLine: 152
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nInitializes a new instance of the InboundNatRule class with\r\nrequired arguments.\r\n"
+  example: []
+  syntax:
+    content: public InboundNatRule(string protocol, int frontendPort, bool enableFloatingIP)
+    content.vb: Public Sub New(protocol As String, frontendPort As Integer, enableFloatingIP As Boolean)
+    parameters:
+    - id: protocol
+      type: System.String
+    - id: frontendPort
+      type: System.Int32
+    - id: enableFloatingIP
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Network.Models
+  fullName: Microsoft.Azure.Management.Network.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.Network.Models.ResourceId
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: ResourceId
+  fullName: Microsoft.Azure.Management.Network.Models.ResourceId
+- uid: Microsoft.Azure.Management.Network.Models.ChildResource
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: ChildResource
+  fullName: Microsoft.Azure.Management.Network.Models.ChildResource
+- uid: Microsoft.Azure.Management.Network.Models.ChildResource.Etag
+  parent: Microsoft.Azure.Management.Network.Models.ChildResource
+  isExternal: false
+  name: Etag
+  fullName: Microsoft.Azure.Management.Network.Models.ChildResource.Etag
+- uid: Microsoft.Azure.Management.Network.Models.ChildResource.Name
+  parent: Microsoft.Azure.Management.Network.Models.ChildResource
+  isExternal: false
+  name: Name
+  fullName: Microsoft.Azure.Management.Network.Models.ChildResource.Name
+- uid: Microsoft.Azure.Management.Network.Models.ResourceId.Id
+  parent: Microsoft.Azure.Management.Network.Models.ResourceId
+  isExternal: false
+  name: Id
+  fullName: Microsoft.Azure.Management.Network.Models.ResourceId.Id
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

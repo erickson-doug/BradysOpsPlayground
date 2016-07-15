@@ -1,0 +1,1149 @@
+items:
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  id: RedisOperationsExtensions
+  parent: Microsoft.Azure.Management.Redis
+  children:
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.Delete(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.Get(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.GetAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.List(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListKeys(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListKeysAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListNext(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.RegenerateKey(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  - Microsoft.Azure.Management.Redis.RedisOperationsExtensions.RegenerateKeyAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  langs:
+  - csharp
+  - vb
+  name: RedisOperationsExtensions
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RedisOperationsExtensions
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\n.Net client wrapper for the REST API for Azure Redis Cache Management\r\nService\r\n"
+  example: []
+  syntax:
+    content: public class RedisOperationsExtensions
+    content.vb: Public Class RedisOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  id: CreateOrUpdate(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdate(IRedisOperations, String, String, RedisCreateOrUpdateParameters)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String, Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdate
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nCreate a redis cache, or replace (overwrite/recreate, with\r\npotential downtime) an existing cache\r\n"
+  example: []
+  syntax:
+    content: public static RedisCreateOrUpdateResponse CreateOrUpdate(IRedisOperations operations, string resourceGroupName, string name, RedisCreateOrUpdateParameters parameters)
+    content.vb: Public Shared Function CreateOrUpdate(operations As IRedisOperations, resourceGroupName As String, name As String, parameters As RedisCreateOrUpdateParameters) As RedisCreateOrUpdateResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters
+      description: "\r\nRequired. Parameters supplied to the CreateOrUpdate redis operation.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse
+      description: "\r\nThe response of CreateOrUpdate redis operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  id: CreateOrUpdateAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(IRedisOperations, String, String, RedisCreateOrUpdateParameters)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String, Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nCreate a redis cache, or replace (overwrite/recreate, with\r\npotential downtime) an existing cache\r\n"
+  example: []
+  syntax:
+    content: public static Task<RedisCreateOrUpdateResponse> CreateOrUpdateAsync(IRedisOperations operations, string resourceGroupName, string name, RedisCreateOrUpdateParameters parameters)
+    content.vb: Public Shared Function CreateOrUpdateAsync(operations As IRedisOperations, resourceGroupName As String, name As String, parameters As RedisCreateOrUpdateParameters) As Task(Of RedisCreateOrUpdateResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters
+      description: "\r\nRequired. Parameters supplied to the CreateOrUpdate redis operation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse}
+      description: "\r\nThe response of CreateOrUpdate redis operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.Delete(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.Delete(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  id: Delete(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Delete(IRedisOperations, String, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.Delete(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Delete
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 105
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nDeletes a redis cache. This operation takes a while to complete.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse Delete(IRedisOperations operations, string resourceGroupName, string name)
+    content.vb: Public Shared Function Delete(operations As IRedisOperations, resourceGroupName As String, name As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  id: DeleteAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(IRedisOperations, String, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 130
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nDeletes a redis cache. This operation takes a while to complete.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> DeleteAsync(IRedisOperations operations, string resourceGroupName, string name)
+    content.vb: Public Shared Function DeleteAsync(operations As IRedisOperations, resourceGroupName As String, name As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.Get(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.Get(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  id: Get(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(IRedisOperations, String, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.Get(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 150
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nGets a redis cache (resource description).\r\n"
+  example: []
+  syntax:
+    content: public static RedisGetResponse Get(IRedisOperations operations, string resourceGroupName, string name)
+    content.vb: Public Shared Function Get(operations As IRedisOperations, resourceGroupName As String, name As String) As RedisGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Redis.Models.RedisGetResponse
+      description: "\r\nThe response of GET redis operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.GetAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.GetAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  id: GetAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(IRedisOperations, String, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.GetAsync(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 174
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nGets a redis cache (resource description).\r\n"
+  example: []
+  syntax:
+    content: public static Task<RedisGetResponse> GetAsync(IRedisOperations operations, string resourceGroupName, string name)
+    content.vb: Public Shared Function GetAsync(operations As IRedisOperations, resourceGroupName As String, name As String) As Task(Of RedisGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisGetResponse}
+      description: "\r\nThe response of GET redis operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.List(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.List(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  id: List(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IRedisOperations, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.List(Microsoft.Azure.Management.Redis.IRedisOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 192
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nGets all redis caches in a resource group (if provided) otherwise\r\nall in subscription.\r\n"
+  example: []
+  syntax:
+    content: public static RedisListResponse List(IRedisOperations operations, string resourceGroupName)
+    content.vb: Public Shared Function List(operations As IRedisOperations, resourceGroupName As String) As RedisListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nOptional. The name of the resource group.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Redis.Models.RedisListResponse
+      description: "\r\nThe response of list redis operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  id: ListAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IRedisOperations, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListAsync(Microsoft.Azure.Management.Redis.IRedisOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 214
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nGets all redis caches in a resource group (if provided) otherwise\r\nall in subscription.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RedisListResponse> ListAsync(IRedisOperations operations, string resourceGroupName)
+    content.vb: Public Shared Function ListAsync(operations As IRedisOperations, resourceGroupName As String) As Task(Of RedisListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nOptional. The name of the resource group.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisListResponse}
+      description: "\r\nThe response of list redis operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListKeys(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListKeys(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  id: ListKeys(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListKeys(IRedisOperations, String, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListKeys(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListKeys
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 235
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nRetrieve a redis cache's access keys. This operation requires write\r\npermission to the cache resource.\r\n"
+  example: []
+  syntax:
+    content: public static RedisListKeysResponse ListKeys(IRedisOperations operations, string resourceGroupName, string name)
+    content.vb: Public Shared Function ListKeys(operations As IRedisOperations, resourceGroupName As String, name As String) As RedisListKeysResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse
+      description: "\r\nThe response of redis list keys operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListKeysAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListKeysAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  id: ListKeysAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListKeysAsync(IRedisOperations, String, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListKeysAsync(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListKeysAsync
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 260
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nRetrieve a redis cache's access keys. This operation requires write\r\npermission to the cache resource.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RedisListKeysResponse> ListKeysAsync(IRedisOperations operations, string resourceGroupName, string name)
+    content.vb: Public Shared Function ListKeysAsync(operations As IRedisOperations, resourceGroupName As String, name As String) As Task(Of RedisListKeysResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse}
+      description: "\r\nThe response of redis list keys operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListNext(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListNext(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  id: ListNext(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNext(IRedisOperations, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListNext(Microsoft.Azure.Management.Redis.IRedisOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNext
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 278
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nGets all redis caches using next link.\r\n"
+  example: []
+  syntax:
+    content: public static RedisListResponse ListNext(IRedisOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNext(operations As IRedisOperations, nextLink As String) As RedisListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Redis.Models.RedisListResponse
+      description: "\r\nThe response of list redis operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  id: ListNextAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(IRedisOperations, String)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Redis.IRedisOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 300
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nGets all redis caches using next link.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RedisListResponse> ListNextAsync(IRedisOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNextAsync(operations As IRedisOperations, nextLink As String) As Task(Of RedisListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisListResponse}
+      description: "\r\nThe response of list redis operation.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.RegenerateKey(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.RegenerateKey(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  id: RegenerateKey(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: RegenerateKey(IRedisOperations, String, String, RedisRegenerateKeyParameters)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.RegenerateKey(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String, Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RegenerateKey
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 325
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nRegenerate redis cache's access keys. This operation requires write\r\npermission to the cache resource.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse RegenerateKey(IRedisOperations operations, string resourceGroupName, string name, RedisRegenerateKeyParameters parameters)
+    content.vb: Public Shared Function RegenerateKey(operations As IRedisOperations, resourceGroupName As String, name As String, parameters As RedisRegenerateKeyParameters) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters
+      description: "\r\nRequired. Specifies which key to reset.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.RegenerateKeyAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  commentId: M:Microsoft.Azure.Management.Redis.RedisOperationsExtensions.RegenerateKeyAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  id: RegenerateKeyAsync(Microsoft.Azure.Management.Redis.IRedisOperations,System.String,System.String,Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  parent: Microsoft.Azure.Management.Redis.RedisOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: RegenerateKeyAsync(IRedisOperations, String, String, RedisRegenerateKeyParameters)
+  fullName: Microsoft.Azure.Management.Redis.RedisOperationsExtensions.RegenerateKeyAsync(Microsoft.Azure.Management.Redis.IRedisOperations, System.String, System.String, Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RegenerateKeyAsync
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/RedisOperationsExtensions.cs
+    startLine: 354
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis
+  summary: "\r\nRegenerate redis cache's access keys. This operation requires write\r\npermission to the cache resource.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> RegenerateKeyAsync(IRedisOperations operations, string resourceGroupName, string name, RedisRegenerateKeyParameters parameters)
+    content.vb: Public Shared Function RegenerateKeyAsync(operations As IRedisOperations, resourceGroupName As String, name As String, parameters As RedisRegenerateKeyParameters) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Redis.IRedisOperations
+      description: "\r\nReference to the Microsoft.Azure.Management.Redis.IRedisOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: name
+      type: System.String
+      description: "\r\nRequired. The name of the redis cache.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters
+      description: "\r\nRequired. Specifies which key to reset.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.Redis
+  isExternal: false
+  name: Microsoft.Azure.Management.Redis
+  fullName: Microsoft.Azure.Management.Redis
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Redis.IRedisOperations
+  parent: Microsoft.Azure.Management.Redis
+  isExternal: false
+  name: IRedisOperations
+  fullName: Microsoft.Azure.Management.Redis.IRedisOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters
+  parent: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: RedisCreateOrUpdateParameters
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateParameters
+- uid: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse
+  parent: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: RedisCreateOrUpdateResponse
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse
+- uid: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Redis.Models
+  fullName: Microsoft.Azure.Management.Redis.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RedisCreateOrUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse)
+  name.vb: Task(Of RedisCreateOrUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse
+    name: RedisCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse
+    name: RedisCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Redis.Models.RedisCreateOrUpdateResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: AzureOperationResponse
+  isExternal: true
+  name: AzureOperationResponse
+  fullName: AzureOperationResponse
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Redis.Models.RedisGetResponse
+  parent: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: RedisGetResponse
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisGetResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RedisGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Redis.Models.RedisGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Redis.Models.RedisGetResponse)
+  name.vb: Task(Of RedisGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Redis.Models.RedisGetResponse
+    name: RedisGetResponse
+    fullName: Microsoft.Azure.Management.Redis.Models.RedisGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Redis.Models.RedisGetResponse
+    name: RedisGetResponse
+    fullName: Microsoft.Azure.Management.Redis.Models.RedisGetResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Redis.Models.RedisListResponse
+  parent: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: RedisListResponse
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisListResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RedisListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Redis.Models.RedisListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Redis.Models.RedisListResponse)
+  name.vb: Task(Of RedisListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Redis.Models.RedisListResponse
+    name: RedisListResponse
+    fullName: Microsoft.Azure.Management.Redis.Models.RedisListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Redis.Models.RedisListResponse
+    name: RedisListResponse
+    fullName: Microsoft.Azure.Management.Redis.Models.RedisListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse
+  parent: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: RedisListKeysResponse
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RedisListKeysResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse)
+  name.vb: Task(Of RedisListKeysResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse
+    name: RedisListKeysResponse
+    fullName: Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse
+    name: RedisListKeysResponse
+    fullName: Microsoft.Azure.Management.Redis.Models.RedisListKeysResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters
+  parent: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: RedisRegenerateKeyParameters
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisRegenerateKeyParameters

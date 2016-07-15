@@ -1,0 +1,212 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations
+  commentId: T:Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations
+  id: IProductSubscriptionsOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations.ListAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IProductSubscriptionsOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductSubscriptionsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IProductSubscriptionsOperations
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductSubscriptionsOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nOperations for managing Product Subscriptions.\r\n"
+  example: []
+  syntax:
+    content: public interface IProductSubscriptionsOperations
+    content.vb: Public Interface IProductSubscriptionsOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations.ListAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations.ListAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, String, QueryParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations.ListAsync(System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductSubscriptionsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductSubscriptionsOperations.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all Product APIs.\r\n"
+  example: []
+  syntax:
+    content: Task<SubscriptionListResponse> ListAsync(string resourceGroupName, string serviceName, string pid, QueryParameters query, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, serviceName As String, pid As String, query As QueryParameters, cancellationToken As CancellationToken) As Task(Of SubscriptionListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nIdentifier of the product.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse}
+      description: "\r\nList Subscriptions operation response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductSubscriptionsOperations.ListNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductSubscriptionsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IProductSubscriptionsOperations.cs
+    startLine: 66
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all Product APIs.\r\n"
+  example: []
+  syntax:
+    content: Task<SubscriptionListResponse> ListNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of SubscriptionListResponse)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nNextLink from the previous successful call to List operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse}
+      description: "\r\nList Subscriptions operation response details.\r\n"
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: QueryParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse)
+  name.vb: Task(Of SubscriptionListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse
+    name: SubscriptionListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse
+    name: SubscriptionListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.SubscriptionListResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

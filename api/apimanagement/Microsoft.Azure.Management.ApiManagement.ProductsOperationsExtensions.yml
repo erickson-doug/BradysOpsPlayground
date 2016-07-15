@@ -1,0 +1,1049 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  id: ProductsOperationsExtensions
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Create(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.CreateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Delete(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,System.String,System.Boolean)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,System.String,System.Boolean)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Get(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Update(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters,System.String)
+  - Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ProductsOperationsExtensions
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProductsOperationsExtensions
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\n.Net client wrapper for the REST API for Azure ApiManagement Service\r\n"
+  example: []
+  syntax:
+    content: public class ProductsOperationsExtensions
+    content.vb: Public Class ProductsOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Create(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Create(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  id: Create(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Create(IProductsOperations, String, String, String, ProductCreateParameters)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Create(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Create
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nCreate new product.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse Create(IProductsOperations operations, string resourceGroupName, string serviceName, string pid, ProductCreateParameters parameters)
+    content.vb: Public Shared Function Create(operations As IProductsOperations, resourceGroupName As String, serviceName As String, pid As String, parameters As ProductCreateParameters) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nRequired. Identifier of the product.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters
+      description: "\r\nRequired. Create or update parameters.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.CreateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.CreateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  id: CreateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(IProductsOperations, String, String, String, ProductCreateParameters)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.CreateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nCreate new product.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> CreateAsync(IProductsOperations operations, string resourceGroupName, string serviceName, string pid, ProductCreateParameters parameters)
+    content.vb: Public Shared Function CreateAsync(operations As IProductsOperations, resourceGroupName As String, serviceName As String, pid As String, parameters As ProductCreateParameters) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nRequired. Identifier of the product.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters
+      description: "\r\nRequired. Create or update parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Delete(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,System.String,System.Boolean)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Delete(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,System.String,System.Boolean)
+  id: Delete(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,System.String,System.Boolean)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Delete(IProductsOperations, String, String, String, String, Boolean)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Delete(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Delete
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nDelete product.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse Delete(IProductsOperations operations, string resourceGroupName, string serviceName, string pid, string etag, bool deleteSubscriptions)
+    content.vb: Public Shared Function Delete(operations As IProductsOperations, resourceGroupName As String, serviceName As String, pid As String, etag As String, deleteSubscriptions As Boolean) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nRequired. Identifier of the product.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nRequired. ETag.\r\n"
+    - id: deleteSubscriptions
+      type: System.Boolean
+      description: "\r\nRequired. Delete existing subscriptions to the product ot not.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,System.String,System.Boolean)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,System.String,System.Boolean)
+  id: DeleteAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,System.String,System.Boolean)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(IProductsOperations, String, String, String, String, Boolean)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 157
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nDelete product.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> DeleteAsync(IProductsOperations operations, string resourceGroupName, string serviceName, string pid, string etag, bool deleteSubscriptions)
+    content.vb: Public Shared Function DeleteAsync(operations As IProductsOperations, resourceGroupName As String, serviceName As String, pid As String, etag As String, deleteSubscriptions As Boolean) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nRequired. Identifier of the product.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nRequired. ETag.\r\n"
+    - id: deleteSubscriptions
+      type: System.Boolean
+      description: "\r\nRequired. Delete existing subscriptions to the product ot not.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Get(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Get(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String)
+  id: Get(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(IProductsOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Get(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 181
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nGet specific product.\r\n"
+  example: []
+  syntax:
+    content: public static ProductGetResponse Get(IProductsOperations operations, string resourceGroupName, string serviceName, string pid)
+    content.vb: Public Shared Function Get(operations As IProductsOperations, resourceGroupName As String, serviceName As String, pid As String) As ProductGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nRequired. Identifier of the product.\r\n"
+    return:
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse
+      description: "\r\nGet Product operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String)
+  id: GetAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(IProductsOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 209
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nGet specific product.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ProductGetResponse> GetAsync(IProductsOperations operations, string resourceGroupName, string serviceName, string pid)
+    content.vb: Public Shared Function GetAsync(operations As IProductsOperations, resourceGroupName As String, serviceName As String, pid As String) As Task(Of ProductGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nRequired. Identifier of the product.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse}
+      description: "\r\nGet Product operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  id: List(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IProductsOperations, String, String, QueryParameters)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 233
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all products.\r\n"
+  example: []
+  syntax:
+    content: public static ProductListResponse List(IProductsOperations operations, string resourceGroupName, string serviceName, QueryParameters query)
+    content.vb: Public Shared Function List(operations As IProductsOperations, resourceGroupName As String, serviceName As String, query As QueryParameters) As ProductListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+      description: "\r\nOptional.\r\n"
+    return:
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse
+      description: "\r\nList Products operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  id: ListAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IProductsOperations, String, String, QueryParameters)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 261
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all products.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ProductListResponse> ListAsync(IProductsOperations operations, string resourceGroupName, string serviceName, QueryParameters query)
+    content.vb: Public Shared Function ListAsync(operations As IProductsOperations, resourceGroupName As String, serviceName As String, query As QueryParameters) As Task(Of ProductListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+      description: "\r\nOptional.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse}
+      description: "\r\nList Products operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String)
+  id: ListNext(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNext(IProductsOperations, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNext
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 280
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all products.\r\n"
+  example: []
+  syntax:
+    content: public static ProductListResponse ListNext(IProductsOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNext(operations As IProductsOperations, nextLink As String) As ProductListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse
+      description: "\r\nList Products operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String)
+  id: ListNextAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(IProductsOperations, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 303
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all products.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ProductListResponse> ListNextAsync(IProductsOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNextAsync(operations As IProductsOperations, nextLink As String) As Task(Of ProductListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse}
+      description: "\r\nList Products operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Update(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Update(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters,System.String)
+  id: Update(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Update(IProductsOperations, String, String, String, ProductUpdateParameters, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.Update(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Update
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 334
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nUpdate product.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse Update(IProductsOperations operations, string resourceGroupName, string serviceName, string pid, ProductUpdateParameters parameters, string etag)
+    content.vb: Public Shared Function Update(operations As IProductsOperations, resourceGroupName As String, serviceName As String, pid As String, parameters As ProductUpdateParameters, etag As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nRequired. Identifier of the product.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters
+      description: "\r\nRequired. Update parameters.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nRequired. ETag.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters,System.String)
+  id: UpdateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(IProductsOperations, String, String, String, ProductUpdateParameters, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ProductsOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.ApiManagement.IProductsOperations, System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UpdateAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ProductsOperationsExtensions.cs
+    startLine: 369
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nUpdate product.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> UpdateAsync(IProductsOperations operations, string resourceGroupName, string serviceName, string pid, ProductUpdateParameters parameters, string etag)
+    content.vb: Public Shared Function UpdateAsync(operations As IProductsOperations, resourceGroupName As String, serviceName As String, pid As String, parameters As ProductUpdateParameters, etag As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IProductsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: pid
+      type: System.String
+      description: "\r\nRequired. Identifier of the product.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters
+      description: "\r\nRequired. Update parameters.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nRequired. ETag.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: IProductsOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.IProductsOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: ProductCreateParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductCreateParameters
+- uid: AzureOperationResponse
+  isExternal: true
+  name: AzureOperationResponse
+  fullName: AzureOperationResponse
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: ProductGetResponse
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProductGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse)
+  name.vb: Task(Of ProductGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse
+    name: ProductGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse
+    name: ProductGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductGetResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: QueryParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: ProductListResponse
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProductListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse)
+  name.vb: Task(Of ProductListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse
+    name: ProductListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse
+    name: ProductListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: ProductUpdateParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ProductUpdateParameters

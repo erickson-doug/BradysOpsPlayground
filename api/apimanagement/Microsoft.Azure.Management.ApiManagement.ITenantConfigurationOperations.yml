@@ -1,0 +1,498 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  commentId: T:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  id: ITenantConfigurationOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginDeployAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginSaveAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginValidateAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.DeployAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.GetTenantConfigurationLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.SaveAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.ValidateAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITenantConfigurationOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ITenantConfigurationOperations
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nOperation to apply changes from specified Git branch to the\r\nconfiguration database.\r\n"
+  example: []
+  syntax:
+    content: public interface ITenantConfigurationOperations
+    content.vb: Public Interface ITenantConfigurationOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginDeployAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginDeployAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  id: BeginDeployAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginDeployAsync(String, String, DeployConfigurationParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginDeployAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeployAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nBegin deploy operation of configuration from the specified Git\r\nbranch to the configuration database in an Api Management\r\nservice.To determine whether the operation has finished processing\r\nthe request, call GetTenantConfigurationLongRunningOperationStatus.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantLongRunningOperationResponse> BeginDeployAsync(string resourceGroupName, string serviceName, DeployConfigurationParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginDeployAsync(resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters, cancellationToken As CancellationToken) As Task(Of TenantLongRunningOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters
+      description: "\r\nDeploy Configuration parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse}
+      description: "\r\nA standard service response for long running tenant operations.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginSaveAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginSaveAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter,System.Threading.CancellationToken)
+  id: BeginSaveAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginSaveAsync(String, String, SaveConfigurationParameter, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginSaveAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginSaveAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 80
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nBegin save operation creates a commit of the current configuration\r\nsnapshot to the specified branch in the repository in an Api\r\nManagement service.To determine whether the operation has finished\r\nprocessing the request, call\r\nGetTenantConfigurationLongRunningOperationStatus.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantLongRunningOperationResponse> BeginSaveAsync(string resourceGroupName, string serviceName, SaveConfigurationParameter parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginSaveAsync(resourceGroupName As String, serviceName As String, parameters As SaveConfigurationParameter, cancellationToken As CancellationToken) As Task(Of TenantLongRunningOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter
+      description: "\r\nSave Configuration parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse}
+      description: "\r\nA standard service response for long running tenant operations.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginValidateAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginValidateAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  id: BeginValidateAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginValidateAsync(String, String, DeployConfigurationParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.BeginValidateAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginValidateAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 103
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nBegin validate operation of configuration changes in the specified\r\nGit branch of an Api Management service.To determine whether the\r\noperation has finished processing the request, call\r\nGetLongRunningOperationStatus.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantLongRunningOperationResponse> BeginValidateAsync(string resourceGroupName, string serviceName, DeployConfigurationParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginValidateAsync(resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters, cancellationToken As CancellationToken) As Task(Of TenantLongRunningOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters
+      description: "\r\nValidate Configuration parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse}
+      description: "\r\nA standard service response for long running tenant operations.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.DeployAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.DeployAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  id: DeployAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  langs:
+  - csharp
+  - vb
+  name: DeployAsync(String, String, DeployConfigurationParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.DeployAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeployAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 125
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nDeploy Git changes to configuration database in Api Management\r\nservice.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantConfigurationLongRunningOperationResponse> DeployAsync(string resourceGroupName, string serviceName, DeployConfigurationParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function DeployAsync(resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters, cancellationToken As CancellationToken) As Task(Of TenantConfigurationLongRunningOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters
+      description: "\r\nDeploy Configuration parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse}
+      description: "\r\nA standard service response for long running tenant configuration\r\noperations.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  langs:
+  - csharp
+  - vb
+  name: GetLongRunningOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.GetLongRunningOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetLongRunningOperationStatusAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 142
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantLongRunningOperationResponse> GetLongRunningOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetLongRunningOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of TenantLongRunningOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse}
+      description: "\r\nA standard service response for long running tenant operations.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.GetTenantConfigurationLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.GetTenantConfigurationLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetTenantConfigurationLongRunningOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  langs:
+  - csharp
+  - vb
+  name: GetTenantConfigurationLongRunningOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.GetTenantConfigurationLongRunningOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetTenantConfigurationLongRunningOperationStatusAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 160
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantConfigurationLongRunningOperationResponse> GetTenantConfigurationLongRunningOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetTenantConfigurationLongRunningOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of TenantConfigurationLongRunningOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse}
+      description: "\r\nA standard service response for long running tenant configuration\r\noperations.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.SaveAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.SaveAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter,System.Threading.CancellationToken)
+  id: SaveAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  langs:
+  - csharp
+  - vb
+  name: SaveAsync(String, String, SaveConfigurationParameter, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.SaveAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 181
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nCommit configuration snapshot to an Api Management service.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantConfigurationLongRunningOperationResponse> SaveAsync(string resourceGroupName, string serviceName, SaveConfigurationParameter parameters, CancellationToken cancellationToken)
+    content.vb: Function SaveAsync(resourceGroupName As String, serviceName As String, parameters As SaveConfigurationParameter, cancellationToken As CancellationToken) As Task(Of TenantConfigurationLongRunningOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter
+      description: "\r\nSave Configuration parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse}
+      description: "\r\nA standard service response for long running tenant configuration\r\noperations.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.ValidateAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.ValidateAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  id: ValidateAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsync(String, String, DeployConfigurationParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.ValidateAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ValidateAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantConfigurationOperations.cs
+    startLine: 202
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nValidate Git changes in an Api Management service.\r\n"
+  example: []
+  syntax:
+    content: Task<TenantConfigurationLongRunningOperationResponse> ValidateAsync(string resourceGroupName, string serviceName, DeployConfigurationParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function ValidateAsync(resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters, cancellationToken As CancellationToken) As Task(Of TenantConfigurationLongRunningOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters
+      description: "\r\nValidate Configuration parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse}
+      description: "\r\nA standard service response for long running tenant configuration\r\noperations.\r\n"
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: DeployConfigurationParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TenantLongRunningOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse)
+  name.vb: Task(Of TenantLongRunningOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse
+    name: TenantLongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse
+    name: TenantLongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: SaveConfigurationParameter
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TenantConfigurationLongRunningOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse)
+  name.vb: Task(Of TenantConfigurationLongRunningOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse
+    name: TenantConfigurationLongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse
+    name: TenantConfigurationLongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse
+  - name: )
+    fullName: )

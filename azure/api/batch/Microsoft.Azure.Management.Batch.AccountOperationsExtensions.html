@@ -1,0 +1,2305 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions">
+          <span class="lang-csharp">AccountOperationsExtensions</span>
+          <span class="lang-vb">AccountOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">AccountOperationsExtensions</code>
+                <code class="lang-vb">AccountOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.Batch.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_BeginCreating_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreating(IAccountOperations, String, String, BatchAccountCreateParameters)</code>
+          <code class="lang-vb">BeginCreating(IAccountOperations, String, String, BatchAccountCreateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin creating the batch account.To determine whether the operation
+has finished processing the request, call
+GetLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountCreateResponse BeginCreating(IAccountOperations operations, string resourceGroupName, string accountName, BatchAccountCreateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreating(operations As IAccountOperations, resourceGroupName As String, accountName As String, parameters As BatchAccountCreateParameters) As BatchAccountCreateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the new
+Batch account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. A name for the Batch account which must be unique within
+Azure. Batch account names must be between 3 and 24 characters in
+length and must use only numbers and lower-case letters. This name
+is used as part of the DNS name that is used to access the batch
+service in the region in which the account is created. For
+example: <a href="http://AccountName.batch.core.windows.net/">http://AccountName.batch.core.windows.net/</a>.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters">BatchAccountCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters">BatchAccountCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Additional parameters for account creation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateResponse">BatchAccountCreateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateResponse">BatchAccountCreateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the Create operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_BeginCreatingAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreatingAsync(IAccountOperations, String, String, BatchAccountCreateParameters)</code>
+          <code class="lang-vb">BeginCreatingAsync(IAccountOperations, String, String, BatchAccountCreateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin creating the batch account.To determine whether the operation
+has finished processing the request, call
+GetLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountCreateResponse&gt; BeginCreatingAsync(IAccountOperations operations, string resourceGroupName, string accountName, BatchAccountCreateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreatingAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String, parameters As BatchAccountCreateParameters) As Task(Of BatchAccountCreateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the new
+Batch account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. A name for the Batch account which must be unique within
+Azure. Batch account names must be between 3 and 24 characters in
+length and must use only numbers and lower-case letters. This name
+is used as part of the DNS name that is used to access the batch
+service in the region in which the account is created. For
+example: <a href="http://AccountName.batch.core.windows.net/">http://AccountName.batch.core.windows.net/</a>.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters">BatchAccountCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters">BatchAccountCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Additional parameters for account creation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateResponse">BatchAccountCreateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateResponse">BatchAccountCreateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the Create operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_BeginDeleting_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeleting(IAccountOperations, String, String)</code>
+          <code class="lang-vb">BeginDeleting(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin deleting the batch account.To determine whether the operation
+has finished processing the request, call
+GetLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static LongRunningOperationResponse BeginDeleting(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function BeginDeleting(operations As IAccountOperations, resourceGroupName As String, accountName As String) As LongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account to be deleted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account to be deleted.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.LongRunningOperationResponse.html#Microsoft_Azure_Management_Batch_Models_LongRunningOperationResponse">LongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.LongRunningOperationResponse.html#Microsoft_Azure_Management_Batch_Models_LongRunningOperationResponse">LongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_BeginDeletingAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeletingAsync(IAccountOperations, String, String)</code>
+          <code class="lang-vb">BeginDeletingAsync(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin deleting the batch account.To determine whether the operation
+has finished processing the request, call
+GetLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;LongRunningOperationResponse&gt; BeginDeletingAsync(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function BeginDeletingAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String) As Task(Of LongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account to be deleted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account to be deleted.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.LongRunningOperationResponse.html#Microsoft_Azure_Management_Batch_Models_LongRunningOperationResponse">LongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.LongRunningOperationResponse.html#Microsoft_Azure_Management_Batch_Models_LongRunningOperationResponse">LongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_Create_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Create(IAccountOperations, String, String, BatchAccountCreateParameters)</code>
+          <code class="lang-vb">Create(IAccountOperations, String, String, BatchAccountCreateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create operation creates a new Batch account in the specified
+resource group and datacenter location.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountCreateResponse Create(IAccountOperations operations, string resourceGroupName, string accountName, BatchAccountCreateParameters parameters)</code><code class="vb lang-vb">Public Shared Function Create(operations As IAccountOperations, resourceGroupName As String, accountName As String, parameters As BatchAccountCreateParameters) As BatchAccountCreateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the new
+Batch account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. A name for the Batch account which must be unique within
+Azure. Batch account names must be between 3 and 24 characters in
+length and must use only numbers and lower-case letters. This name
+is used as part of the DNS name that is used to access the batch
+service in the region in which the account is created. For
+example: <a href="http://AccountName.batch.core.windows.net/">http://AccountName.batch.core.windows.net/</a>.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters">BatchAccountCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters">BatchAccountCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Additional parameters for account creation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateResponse">BatchAccountCreateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateResponse">BatchAccountCreateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the Create operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_CreateAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateAsync(IAccountOperations, String, String, BatchAccountCreateParameters)</code>
+          <code class="lang-vb">CreateAsync(IAccountOperations, String, String, BatchAccountCreateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create operation creates a new Batch account in the specified
+resource group and datacenter location.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountCreateResponse&gt; CreateAsync(IAccountOperations operations, string resourceGroupName, string accountName, BatchAccountCreateParameters parameters)</code><code class="vb lang-vb">Public Shared Function CreateAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String, parameters As BatchAccountCreateParameters) As Task(Of BatchAccountCreateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the new
+Batch account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. A name for the Batch account which must be unique within
+Azure. Batch account names must be between 3 and 24 characters in
+length and must use only numbers and lower-case letters. This name
+is used as part of the DNS name that is used to access the batch
+service in the region in which the account is created. For
+example: <a href="http://AccountName.batch.core.windows.net/">http://AccountName.batch.core.windows.net/</a>.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters">BatchAccountCreateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateParameters">BatchAccountCreateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Additional parameters for account creation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateResponse">BatchAccountCreateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountCreateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountCreateResponse">BatchAccountCreateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the Create operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_Delete_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Delete(IAccountOperations, String, String)</code>
+          <code class="lang-vb">Delete(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete operation deletes an existing Batch account. The
+operation will return NoContent if the requested account does not
+exist.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static LongRunningOperationResponse Delete(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function Delete(operations As IAccountOperations, resourceGroupName As String, accountName As String) As LongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account to be deleted.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.LongRunningOperationResponse.html#Microsoft_Azure_Management_Batch_Models_LongRunningOperationResponse">LongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.LongRunningOperationResponse.html#Microsoft_Azure_Management_Batch_Models_LongRunningOperationResponse">LongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_DeleteAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(IAccountOperations, String, String)</code>
+          <code class="lang-vb">DeleteAsync(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete operation deletes an existing Batch account. The
+operation will return NoContent if the requested account does not
+exist.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;LongRunningOperationResponse&gt; DeleteAsync(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function DeleteAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String) As Task(Of LongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account to be deleted.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.LongRunningOperationResponse.html#Microsoft_Azure_Management_Batch_Models_LongRunningOperationResponse">LongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.LongRunningOperationResponse.html#Microsoft_Azure_Management_Batch_Models_LongRunningOperationResponse">LongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_Get_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Get(IAccountOperations, String, String)</code>
+          <code class="lang-vb">Get(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get operation gets detailed information about the specified
+Batch account.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountGetResponse Get(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function Get(operations As IAccountOperations, resourceGroupName As String, accountName As String) As BatchAccountGetResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountGetResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountGetResponse">BatchAccountGetResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountGetResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountGetResponse">BatchAccountGetResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the Get operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_GetAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(IAccountOperations, String, String)</code>
+          <code class="lang-vb">GetAsync(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get operation gets detailed information about the specified
+Batch account.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountGetResponse&gt; GetAsync(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function GetAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String) As Task(Of BatchAccountGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountGetResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountGetResponse">BatchAccountGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountGetResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountGetResponse">BatchAccountGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the Get operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_List_Microsoft_Azure_Management_Batch_IAccountOperations_Microsoft_Azure_Management_Batch_Models_AccountListParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">List(IAccountOperations, AccountListParameters)</code>
+          <code class="lang-vb">List(IAccountOperations, AccountListParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List operation gets information about the Batch accounts
+associated either with the subscription if no resource group is
+specified or within the specified resource group.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountListResponse List(IAccountOperations operations, AccountListParameters parameters)</code><code class="vb lang-vb">Public Shared Function List(operations As IAccountOperations, parameters As AccountListParameters) As BatchAccountListResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.AccountListParameters.html#Microsoft_Azure_Management_Batch_Models_AccountListParameters">AccountListParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.AccountListParameters.html#Microsoft_Azure_Management_Batch_Models_AccountListParameters">AccountListParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. An optional argument which specifies the name of the
+resource group that constrains the set of accounts that are
+returned.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListResponse">BatchAccountListResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListResponse">BatchAccountListResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the List operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_ListActions_Microsoft_Azure_Management_Batch_IAccountOperations_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListActions(IAccountOperations)</code>
+          <code class="lang-vb">ListActions(IAccountOperations)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The ListActions operation gets information about non-standard
+actions for the provider.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountListActionsResponse ListActions(IAccountOperations operations)</code><code class="vb lang-vb">Public Shared Function ListActions(operations As IAccountOperations) As BatchAccountListActionsResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListActionsResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListActionsResponse">BatchAccountListActionsResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListActionsResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListActionsResponse">BatchAccountListActionsResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the ListActions operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_ListActionsAsync_Microsoft_Azure_Management_Batch_IAccountOperations_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListActionsAsync(IAccountOperations)</code>
+          <code class="lang-vb">ListActionsAsync(IAccountOperations)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The ListActions operation gets information about non-standard
+actions for the provider.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountListActionsResponse&gt; ListActionsAsync(IAccountOperations operations)</code><code class="vb lang-vb">Public Shared Function ListActionsAsync(operations As IAccountOperations) As Task(Of BatchAccountListActionsResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListActionsResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListActionsResponse">BatchAccountListActionsResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListActionsResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListActionsResponse">BatchAccountListActionsResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the ListActions operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_ListAsync_Microsoft_Azure_Management_Batch_IAccountOperations_Microsoft_Azure_Management_Batch_Models_AccountListParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(IAccountOperations, AccountListParameters)</code>
+          <code class="lang-vb">ListAsync(IAccountOperations, AccountListParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List operation gets information about the Batch accounts
+associated either with the subscription if no resource group is
+specified or within the specified resource group.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountListResponse&gt; ListAsync(IAccountOperations operations, AccountListParameters parameters)</code><code class="vb lang-vb">Public Shared Function ListAsync(operations As IAccountOperations, parameters As AccountListParameters) As Task(Of BatchAccountListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.AccountListParameters.html#Microsoft_Azure_Management_Batch_Models_AccountListParameters">AccountListParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.AccountListParameters.html#Microsoft_Azure_Management_Batch_Models_AccountListParameters">AccountListParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Optional. An optional argument which specifies the name of the
+resource group that constrains the set of accounts that are
+returned.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListResponse">BatchAccountListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListResponse">BatchAccountListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the List operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_ListKeys_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListKeys(IAccountOperations, String, String)</code>
+          <code class="lang-vb">ListKeys(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The ListKeys operation gets the account keys for the given Batch
+account.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountListKeyResponse ListKeys(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function ListKeys(operations As IAccountOperations, resourceGroupName As String, accountName As String) As BatchAccountListKeyResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListKeyResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListKeyResponse">BatchAccountListKeyResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListKeyResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListKeyResponse">BatchAccountListKeyResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the GetKeys operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_ListKeysAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListKeysAsync(IAccountOperations, String, String)</code>
+          <code class="lang-vb">ListKeysAsync(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The ListKeys operation gets the account keys for the given Batch
+account.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountListKeyResponse&gt; ListKeysAsync(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function ListKeysAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String) As Task(Of BatchAccountListKeyResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListKeyResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListKeyResponse">BatchAccountListKeyResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListKeyResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListKeyResponse">BatchAccountListKeyResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the GetKeys operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_ListNext_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListNext(IAccountOperations, String)</code>
+          <code class="lang-vb">ListNext(IAccountOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Get the next set of accounts based on the previously returned
+NextLink value.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountListResponse ListNext(IAccountOperations operations, string nextLink)</code><code class="vb lang-vb">Public Shared Function ListNext(operations As IAccountOperations, nextLink As String) As BatchAccountListResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>nextLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. NextLink from the previous successful call to List
+operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListResponse">BatchAccountListResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListResponse">BatchAccountListResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the List operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_ListNextAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListNextAsync(IAccountOperations, String)</code>
+          <code class="lang-vb">ListNextAsync(IAccountOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Get the next set of accounts based on the previously returned
+NextLink value.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountListResponse&gt; ListNextAsync(IAccountOperations operations, string nextLink)</code><code class="vb lang-vb">Public Shared Function ListNextAsync(operations As IAccountOperations, nextLink As String) As Task(Of BatchAccountListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>nextLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. NextLink from the previous successful call to List
+operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListResponse">BatchAccountListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountListResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountListResponse">BatchAccountListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the List operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_RegenerateKey_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RegenerateKey(IAccountOperations, String, String, BatchAccountRegenerateKeyParameters)</code>
+          <code class="lang-vb">RegenerateKey(IAccountOperations, String, String, BatchAccountRegenerateKeyParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The RegenerateKey operation regenerates the specified account key
+for the given Batch account.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountRegenerateKeyResponse RegenerateKey(IAccountOperations operations, string resourceGroupName, string accountName, BatchAccountRegenerateKeyParameters parameters)</code><code class="vb lang-vb">Public Shared Function RegenerateKey(operations As IAccountOperations, resourceGroupName As String, accountName As String, parameters As BatchAccountRegenerateKeyParameters) As BatchAccountRegenerateKeyResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountRegenerateKeyParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyParameters">BatchAccountRegenerateKeyParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountRegenerateKeyParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyParameters">BatchAccountRegenerateKeyParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The type of key to regenerate</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountRegenerateKeyResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyResponse">BatchAccountRegenerateKeyResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountRegenerateKeyResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyResponse">BatchAccountRegenerateKeyResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the RegenerateKey operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_RegenerateKeyAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RegenerateKeyAsync(IAccountOperations, String, String, BatchAccountRegenerateKeyParameters)</code>
+          <code class="lang-vb">RegenerateKeyAsync(IAccountOperations, String, String, BatchAccountRegenerateKeyParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The RegenerateKey operation regenerates the specified account key
+for the given Batch account.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountRegenerateKeyResponse&gt; RegenerateKeyAsync(IAccountOperations operations, string resourceGroupName, string accountName, BatchAccountRegenerateKeyParameters parameters)</code><code class="vb lang-vb">Public Shared Function RegenerateKeyAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String, parameters As BatchAccountRegenerateKeyParameters) As Task(Of BatchAccountRegenerateKeyResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountRegenerateKeyParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyParameters">BatchAccountRegenerateKeyParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountRegenerateKeyParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyParameters">BatchAccountRegenerateKeyParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The type of key to regenerate</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountRegenerateKeyResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyResponse">BatchAccountRegenerateKeyResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountRegenerateKeyResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountRegenerateKeyResponse">BatchAccountRegenerateKeyResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the RegenerateKey operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_SyncAutoStorageKeys_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">SyncAutoStorageKeys(IAccountOperations, String, String)</code>
+          <code class="lang-vb">SyncAutoStorageKeys(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The SyncAutoStorageKeys operation synchronizes access keys for the
+auto storage account configured for the specified Batch account.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse SyncAutoStorageKeys(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function SyncAutoStorageKeys(operations As IAccountOperations, resourceGroupName As String, accountName As String) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Batch account.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_SyncAutoStorageKeysAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">SyncAutoStorageKeysAsync(IAccountOperations, String, String)</code>
+          <code class="lang-vb">SyncAutoStorageKeysAsync(IAccountOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The SyncAutoStorageKeys operation synchronizes access keys for the
+auto storage account configured for the specified Batch account.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; SyncAutoStorageKeysAsync(IAccountOperations operations, string resourceGroupName, string accountName)</code><code class="vb lang-vb">Public Shared Function SyncAutoStorageKeysAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Batch account.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_Update_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Update(IAccountOperations, String, String, BatchAccountUpdateParameters)</code>
+          <code class="lang-vb">Update(IAccountOperations, String, String, BatchAccountUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Update operation updates the properties of an existing Batch
+account in the specified resource group.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static BatchAccountUpdateResponse Update(IAccountOperations operations, string resourceGroupName, string accountName, BatchAccountUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function Update(operations As IAccountOperations, resourceGroupName As String, accountName As String, parameters As BatchAccountUpdateParameters) As BatchAccountUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountUpdateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateParameters">BatchAccountUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountUpdateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateParameters">BatchAccountUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Additional parameters for account update</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountUpdateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateResponse">BatchAccountUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountUpdateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateResponse">BatchAccountUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the Update operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Batch_AccountOperationsExtensions_UpdateAsync_Microsoft_Azure_Management_Batch_IAccountOperations_System_String_System_String_Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateAsync(IAccountOperations, String, String, BatchAccountUpdateParameters)</code>
+          <code class="lang-vb">UpdateAsync(IAccountOperations, String, String, BatchAccountUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Update operation updates the properties of an existing Batch
+account in the specified resource group.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;BatchAccountUpdateResponse&gt; UpdateAsync(IAccountOperations operations, string resourceGroupName, string accountName, BatchAccountUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function UpdateAsync(operations As IAccountOperations, resourceGroupName As String, accountName As String, parameters As BatchAccountUpdateParameters) As Task(Of BatchAccountUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.IAccountOperations.html#Microsoft_Azure_Management_Batch_IAccountOperations">IAccountOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Batch.IAccountOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group that contains the Batch
+account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>accountName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the account.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountUpdateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateParameters">BatchAccountUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountUpdateParameters.html#Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateParameters">BatchAccountUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Additional parameters for account update</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountUpdateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateResponse">BatchAccountUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Batch.Models.BatchAccountUpdateResponse.html#Microsoft_Azure_Management_Batch_Models_BatchAccountUpdateResponse">BatchAccountUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Values returned by the Update operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

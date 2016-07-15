@@ -1,0 +1,425 @@
+items:
+- uid: Microsoft.Azure.Management.Sql.IServerOperations
+  commentId: T:Microsoft.Azure.Management.Sql.IServerOperations
+  id: IServerOperations
+  parent: Microsoft.Azure.Management.Sql
+  children:
+  - Microsoft.Azure.Management.Sql.IServerOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerCreateOrUpdateParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerOperations.ListUsagesAsync(System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IServerOperations
+  fullName: Microsoft.Azure.Management.Sql.IServerOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IServerOperations
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\nServers.  Contains operations to: Create, Retrieve, Update, and Delete\r\nservers.\r\n"
+  example: []
+  syntax:
+    content: public interface IServerOperations
+    content.vb: Public Interface IServerOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Sql.IServerOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerCreateOrUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerCreateOrUpdateParameters,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerCreateOrUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, String, ServerCreateOrUpdateParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerOperations.CreateOrUpdateAsync(System.String, System.String, Microsoft.Azure.Management.Sql.Models.ServerCreateOrUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nCreates a new Azure SQL Database server.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerGetResponse> CreateOrUpdateAsync(string resourceGroupName, string serverName, ServerCreateOrUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, serverName As String, parameters As ServerCreateOrUpdateParameters, cancellationToken As CancellationToken) As Task(Of ServerGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server on which the database is\r\nhosted.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Sql.Models.ServerCreateOrUpdateParameters
+      description: "\r\nThe required parameters for createing or updating a database.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerGetResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Database Server request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerOperations.DeleteAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+    startLine: 74
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database Server.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string serverName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, serverName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the server to delete.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerOperations.GetAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database Server.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerGetResponse> GetAsync(string resourceGroupName, string serverName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, serverName As String, cancellationToken As CancellationToken) As Task(Of ServerGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the server to retrieve.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerGetResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Database Server request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerOperations.ListAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+    startLine: 105
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database Server.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerListResponse> ListAsync(string resourceGroupName, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, cancellationToken As CancellationToken) As Task(Of ServerListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerListResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Database Server request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerOperations.ListUsagesAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerOperations.ListUsagesAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListUsagesAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerOperations
+  langs:
+  - csharp
+  - vb
+  name: ListUsagesAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerOperations.ListUsagesAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListUsagesAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerOperations.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about Azure SQL Database Server usage.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerMetricListResponse> ListUsagesAsync(string resourceGroupName, string serverName, CancellationToken cancellationToken)
+    content.vb: Function ListUsagesAsync(resourceGroupName As String, serverName As String, cancellationToken As CancellationToken) As Task(Of ServerMetricListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Database Server in which the Azure SQL\r\nDatabases are hosted.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerMetricListResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Database Server metrics\r\nrequest.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql
+  fullName: Microsoft.Azure.Management.Sql
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Sql.Models.ServerCreateOrUpdateParameters
+  parent: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: ServerCreateOrUpdateParameters
+  fullName: Microsoft.Azure.Management.Sql.Models.ServerCreateOrUpdateParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServerGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServerGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServerGetResponse)
+  name.vb: Task(Of ServerGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerGetResponse
+    name: ServerGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerGetResponse
+    name: ServerGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerGetResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql.Models
+  fullName: Microsoft.Azure.Management.Sql.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServerListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServerListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServerListResponse)
+  name.vb: Task(Of ServerListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerListResponse
+    name: ServerListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerListResponse
+    name: ServerListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerMetricListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServerMetricListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServerMetricListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServerMetricListResponse)
+  name.vb: Task(Of ServerMetricListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerMetricListResponse
+    name: ServerMetricListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerMetricListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerMetricListResponse
+    name: ServerMetricListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerMetricListResponse
+  - name: )
+    fullName: )

@@ -1,0 +1,173 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.IVaultUsageOperations
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.IVaultUsageOperations
+  id: IVaultUsageOperations
+  parent: Microsoft.Azure.Management.RecoveryServices
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.IVaultUsageOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IVaultUsageOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.IVaultUsageOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices/RecoveryServicesManagement/Generated/IVaultUsageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IVaultUsageOperations
+    path: src/src/ResourceManagement/RecoveryServices/RecoveryServicesManagement/Generated/IVaultUsageOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices
+  namespace: Microsoft.Azure.Management.RecoveryServices
+  summary: "\r\nDefinition of vault operations for the Recovery Services extension.\r\n"
+  example: []
+  syntax:
+    content: public interface IVaultUsageOperations
+    content.vb: Public Interface IVaultUsageOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.RecoveryServices.IVaultUsageOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.IVaultUsageOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.IVaultUsageOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.IVaultUsageOperations.ListAsync(System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices/RecoveryServicesManagement/Generated/IVaultUsageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/RecoveryServices/RecoveryServicesManagement/Generated/IVaultUsageOperations.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices
+  namespace: Microsoft.Azure.Management.RecoveryServices
+  summary: "\r\nGet the Vault Usage.\r\n"
+  example: []
+  syntax:
+    content: Task<VaultUsageListResponse> ListAsync(string resourceGroupName, string vaultName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, vaultName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of VaultUsageListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the (resource group?) cloud service containing the\r\nvault collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nThe name of the vault to get usage.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Models.VaultUsageListResponse}
+      description: "\r\nThe response model for Vault usage.\r\n"
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices
+  fullName: Microsoft.Azure.Management.RecoveryServices
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.RecoveryServices.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.RecoveryServices.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.RecoveryServices.Models.CustomRequestHeaders
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Models.VaultUsageListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VaultUsageListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Models.VaultUsageListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Models.VaultUsageListResponse)
+  name.vb: Task(Of VaultUsageListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Models.VaultUsageListResponse
+    name: VaultUsageListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Models.VaultUsageListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Models.VaultUsageListResponse
+    name: VaultUsageListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Models.VaultUsageListResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.RecoveryServices.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Models
+  fullName: Microsoft.Azure.Management.RecoveryServices.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,564 @@
+items:
+- uid: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  commentId: T:Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  id: IPublicIpAddressOperations
+  parent: Microsoft.Azure.Management.Network
+  children:
+  - Microsoft.Azure.Management.Network.IPublicIpAddressOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.PublicIpAddress,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IPublicIpAddressOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IPublicIpAddressOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.PublicIpAddress,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IPublicIpAddressOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IPublicIpAddressOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IPublicIpAddressOperations.ListAllAsync(System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IPublicIpAddressOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IPublicIpAddressOperations
+  fullName: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IPublicIpAddressOperations
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Network Resource Provider API includes operations for managing the\r\nPublicIPAddress for your subscription.\r\n"
+  example: []
+  syntax:
+    content: public interface IPublicIpAddressOperations
+    content.vb: Public Interface IPublicIpAddressOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.PublicIpAddress,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IPublicIpAddressOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.PublicIpAddress,System.Threading.CancellationToken)
+  id: BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.PublicIpAddress,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginCreateOrUpdatingAsync(String, String, PublicIpAddress, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.BeginCreateOrUpdatingAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.PublicIpAddress, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreateOrUpdatingAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put PublicIPAddress operation creates/updates a stable/dynamic\r\nPublicIP address\r\n"
+  example: []
+  syntax:
+    content: Task<PublicIpAddressPutResponse> BeginCreateOrUpdatingAsync(string resourceGroupName, string publicIpAddressName, PublicIpAddress parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginCreateOrUpdatingAsync(resourceGroupName As String, publicIpAddressName As String, parameters As PublicIpAddress, cancellationToken As CancellationToken) As Task(Of PublicIpAddressPutResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: publicIpAddressName
+      type: System.String
+      description: "\r\nThe name of the publicIpAddress.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+      description: "\r\nParameters supplied to the create/update PublicIPAddress operation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.PublicIpAddressPutResponse}
+      description: "\r\nResponse for PutPublicIpAddress Api servive call\r\n"
+- uid: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IPublicIpAddressOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginDeletingAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.BeginDeletingAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeletingAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe delete publicIpAddress operation deletes the specified\r\npublicIpAddress.\r\n"
+  example: []
+  syntax:
+    content: Task<UpdateOperationResponse> BeginDeletingAsync(string resourceGroupName, string publicIpAddressName, CancellationToken cancellationToken)
+    content.vb: Function BeginDeletingAsync(resourceGroupName As String, publicIpAddressName As String, cancellationToken As CancellationToken) As Task(Of UpdateOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: publicIpAddressName
+      type: System.String
+      description: "\r\nThe name of the subnet.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.UpdateOperationResponse}
+      description: "\r\nIf the resource provide needs to return an error to any operation,\r\nit should return the appropriate HTTP error code and a message\r\nbody as can be seen below.The message should be localized per the\r\nAccept-Language header specified in the original request such\r\nthatit could be directly be exposed to users\r\n"
+- uid: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.PublicIpAddress,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IPublicIpAddressOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.PublicIpAddress,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.PublicIpAddress,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, String, PublicIpAddress, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.CreateOrUpdateAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.PublicIpAddress, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+    startLine: 106
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put PublicIPAddress operation creates/updates a stable/dynamic\r\nPublicIP address\r\n"
+  example: []
+  syntax:
+    content: Task<AzureAsyncOperationResponse> CreateOrUpdateAsync(string resourceGroupName, string publicIpAddressName, PublicIpAddress parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, publicIpAddressName As String, parameters As PublicIpAddress, cancellationToken As CancellationToken) As Task(Of AzureAsyncOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: publicIpAddressName
+      type: System.String
+      description: "\r\nThe name of the publicIpAddress.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+      description: "\r\nParameters supplied to the create PublicIPAddress operation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IPublicIpAddressOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.DeleteAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+    startLine: 125
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Get Role operation retrieves information about the specified\r\nvirtual machine.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string publicIpAddressName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, publicIpAddressName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: publicIpAddressName
+      type: System.String
+      description: "\r\nThe name of the subnet.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IPublicIpAddressOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.GetAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+    startLine: 143
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Get publicIpAddress operation retreives information about the\r\nspecified pubicIpAddress\r\n"
+  example: []
+  syntax:
+    content: Task<PublicIpAddressGetResponse> GetAsync(string resourceGroupName, string publicIpAddressName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, publicIpAddressName As String, cancellationToken As CancellationToken) As Task(Of PublicIpAddressGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: publicIpAddressName
+      type: System.String
+      description: "\r\nThe name of the subnet.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.PublicIpAddressGetResponse}
+      description: "\r\nResponse for GetPublicIpAddress Api servive call\r\n"
+- uid: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IPublicIpAddressOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.ListAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+    startLine: 158
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe List publicIpAddress opertion retrieves all the\r\npublicIpAddresses in a resource group.\r\n"
+  example: []
+  syntax:
+    content: Task<PublicIpAddressListResponse> ListAsync(string resourceGroupName, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, cancellationToken As CancellationToken) As Task(Of PublicIpAddressListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse}
+      description: "\r\nResponse for ListPublicIpAddresses Api service call\r\n"
+- uid: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.ListAllAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IPublicIpAddressOperations.ListAllAsync(System.Threading.CancellationToken)
+  id: ListAllAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IPublicIpAddressOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAllAsync(CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IPublicIpAddressOperations.ListAllAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAllAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IPublicIpAddressOperations.cs
+    startLine: 170
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe List publicIpAddress opertion retrieves all the\r\npublicIpAddresses in a subscription.\r\n"
+  example: []
+  syntax:
+    content: Task<PublicIpAddressListResponse> ListAllAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAllAsync(cancellationToken As CancellationToken) As Task(Of PublicIpAddressListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse}
+      description: "\r\nResponse for ListPublicIpAddresses Api service call\r\n"
+references:
+- uid: Microsoft.Azure.Management.Network
+  isExternal: false
+  name: Microsoft.Azure.Management.Network
+  fullName: Microsoft.Azure.Management.Network
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: PublicIpAddress
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.PublicIpAddressPutResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PublicIpAddressPutResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.PublicIpAddressPutResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.PublicIpAddressPutResponse)
+  name.vb: Task(Of PublicIpAddressPutResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.PublicIpAddressPutResponse
+    name: PublicIpAddressPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddressPutResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.PublicIpAddressPutResponse
+    name: PublicIpAddressPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddressPutResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Network.Models
+  fullName: Microsoft.Azure.Management.Network.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.UpdateOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<UpdateOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.UpdateOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.UpdateOperationResponse)
+  name.vb: Task(Of UpdateOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+    name: UpdateOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+    name: UpdateOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureAsyncOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse)
+  name.vb: Task(Of AzureAsyncOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+    name: AzureAsyncOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+    name: AzureAsyncOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.PublicIpAddressGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PublicIpAddressGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.PublicIpAddressGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.PublicIpAddressGetResponse)
+  name.vb: Task(Of PublicIpAddressGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.PublicIpAddressGetResponse
+    name: PublicIpAddressGetResponse
+    fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddressGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.PublicIpAddressGetResponse
+    name: PublicIpAddressGetResponse
+    fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddressGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PublicIpAddressListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse)
+  name.vb: Task(Of PublicIpAddressListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse
+    name: PublicIpAddressListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse
+    name: PublicIpAddressListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddressListResponse
+  - name: )
+    fullName: )

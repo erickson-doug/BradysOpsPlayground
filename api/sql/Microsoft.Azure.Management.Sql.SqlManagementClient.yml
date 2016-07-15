@@ -1,0 +1,1778 @@
+items:
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient
+  commentId: T:Microsoft.Azure.Management.Sql.SqlManagementClient
+  id: SqlManagementClient
+  parent: Microsoft.Azure.Management.Sql
+  children:
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials)
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.ApiVersion
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.AuditingPolicy
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.BaseUri
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.Capabilities
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Sql.SqlManagementClient})
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.CommunicationLinks
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.Credentials
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseActivation
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseBackup
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseReplicationLinks
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.Databases
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.DataMasking
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.ElasticPools
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.FirewallRules
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.ImportExport
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.JobAccounts
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.LongRunningOperationInitialTimeout
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.LongRunningOperationRetryTimeout
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.RecommendedElasticPools
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.RecommendedIndexes
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.SecureConnection
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.SecurityAlertPolicy
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.ServerAdministrators
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.ServerDisasterRecoveryConfigurations
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.Servers
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.ServerUpgrades
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.ServiceObjectives
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.ServiceTierAdvisors
+  - Microsoft.Azure.Management.Sql.SqlManagementClient.TransparentDataEncryption
+  langs:
+  - csharp
+  - vb
+  name: SqlManagementClient
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SqlManagementClient
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nThe Windows Azure SQL Database management API provides a RESTful set of\r\nweb services that interact with Windows Azure SQL Database services to\r\nmanage your databases. The API enables users to create, retrieve,\r\nupdate, and delete databases and servers.\r\n"
+  example: []
+  syntax:
+    content: 'public class SqlManagementClient : ServiceClient<SqlManagementClient>, ISqlManagementClient, IDisposable'
+    content.vb: >-
+      Public Class SqlManagementClient
+
+          Inherits ServiceClient(Of SqlManagementClient)
+
+          Implements ISqlManagementClient, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Management.Sql.ISqlManagementClient
+  - System.IDisposable
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.ApiVersion
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 43
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.BaseUri
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.Credentials
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.Credentials
+  id: Credentials
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 75
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 86
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.AuditingPolicy
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.AuditingPolicy
+  id: AuditingPolicy
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: AuditingPolicy
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.AuditingPolicy
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AuditingPolicy
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations to manage Azure SQL Database and\r\nDatabase Server Audit policy.  Contains operations to: Create,\r\nRetrieve and Update audit policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IAuditingPolicyOperations AuditingPolicy
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property AuditingPolicy As IAuditingPolicyOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IAuditingPolicyOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.Capabilities
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.Capabilities
+  id: Capabilities
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Capabilities
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.Capabilities
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Capabilities
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 110
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for determining the set of\r\ncapabilites available in a specified region.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual ICapabilitiesOperations Capabilities
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Capabilities As ICapabilitiesOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.ICapabilitiesOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseActivation
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseActivation
+  id: DatabaseActivation
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: DatabaseActivation
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseActivation
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DatabaseActivation
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating pertaining to\r\nactivation on Azure SQL Data Warehouse databases. Contains\r\noperations to: Pause and Resume databases\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IDatabaseActivationOperations DatabaseActivation
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property DatabaseActivation As IDatabaseActivationOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseBackup
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseBackup
+  id: DatabaseBackup
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: DatabaseBackup
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseBackup
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DatabaseBackup
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 133
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\ndatabase backups.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IDatabaseBackupOperations DatabaseBackup
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property DatabaseBackup As IDatabaseBackupOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IDatabaseBackupOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.Databases
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.Databases
+  id: Databases
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Databases
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.Databases
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Databases
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 146
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Databases.\r\nContains operations to: Create, Retrieve, Update, and Delete\r\ndatabases, and also includes the ability to get the event logs for\r\na database.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IDatabaseOperations Databases
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Databases As IDatabaseOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IDatabaseOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.DataMasking
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.DataMasking
+  id: DataMasking
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: DataMasking
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.DataMasking
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DataMasking
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 159
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\ndata masking. Contains operations to: Create, Retrieve, Update,\r\nand Delete data masking rules, as well as Create, Retreive and\r\nUpdate data masking policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IDataMaskingOperations DataMasking
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property DataMasking As IDataMaskingOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IDataMaskingOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.ElasticPools
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.ElasticPools
+  id: ElasticPools
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ElasticPools
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.ElasticPools
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ElasticPools
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 171
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\nElastic Pools.  Contains operations to: Create, Retrieve, Update,\r\nand Delete.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IElasticPoolOperations ElasticPools
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ElasticPools As IElasticPoolOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.FirewallRules
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.FirewallRules
+  id: FirewallRules
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: FirewallRules
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.FirewallRules
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: FirewallRules
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 183
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\nServer Firewall Rules.  Contains operations to: Create, Retrieve,\r\nUpdate, and Delete firewall rules.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IFirewallRuleOperations FirewallRules
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property FirewallRules As IFirewallRuleOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IFirewallRuleOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.ImportExport
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.ImportExport
+  id: ImportExport
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ImportExport
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.ImportExport
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ImportExport
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 195
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for import/export on Azure SQL\r\nDatabases.  Contains operations to: Import, Export, Get\r\nImport/Export status for a database.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IImportExportOperations ImportExport
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ImportExport As IImportExportOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IImportExportOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.JobAccounts
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.JobAccounts
+  id: JobAccounts
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: JobAccounts
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.JobAccounts
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: JobAccounts
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 207
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Job\r\nAccounts. Contains operations to: Create, Retrieve, Update, and\r\nDelete Job Accounts\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IJobAccountOperations JobAccounts
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property JobAccounts As IJobAccountOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IJobAccountOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.RecommendedElasticPools
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.RecommendedElasticPools
+  id: RecommendedElasticPools
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecommendedElasticPools
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.RecommendedElasticPools
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecommendedElasticPools
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 218
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL\r\nRecommended Elastic Pools.  Contains operations to: Retrieve.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IRecommendedElasticPoolOperations RecommendedElasticPools
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property RecommendedElasticPools As IRecommendedElasticPoolOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.RecommendedIndexes
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.RecommendedIndexes
+  id: RecommendedIndexes
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecommendedIndexes
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.RecommendedIndexes
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecommendedIndexes
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 230
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for managing recommended indexes on\r\nAzure SQL Databases. Contains operations to retrieve recommended\r\nindex and update state.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IRecommendedIndexOperations RecommendedIndexes
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property RecommendedIndexes As IRecommendedIndexOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IRecommendedIndexOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseReplicationLinks
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseReplicationLinks
+  id: DatabaseReplicationLinks
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: DatabaseReplicationLinks
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.DatabaseReplicationLinks
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DatabaseReplicationLinks
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 242
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\nReplication Links.  Contains operations to: Delete and Retrieve\r\nreplication links.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IReplicationLinkOperations DatabaseReplicationLinks
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property DatabaseReplicationLinks As IReplicationLinkOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IReplicationLinkOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.SecureConnection
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.SecureConnection
+  id: SecureConnection
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: SecureConnection
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.SecureConnection
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SecureConnection
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 254
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for managing Azure SQL Database\r\nsecure connection.  Contains operations to: Create, Retrieve and\r\nUpdate secure connection policy .\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual ISecureConnectionPolicyOperations SecureConnection
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property SecureConnection As ISecureConnectionPolicyOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.ISecureConnectionPolicyOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.SecurityAlertPolicy
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.SecurityAlertPolicy
+  id: SecurityAlertPolicy
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: SecurityAlertPolicy
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.SecurityAlertPolicy
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SecurityAlertPolicy
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 266
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations to manage Azure SQL Database and\r\nDatabase Server Security Alert policy.  Contains operations to:\r\nCreate, Retrieve and Update policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual ISecurityAlertPolicyOperations SecurityAlertPolicy
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property SecurityAlertPolicy As ISecurityAlertPolicyOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.ISecurityAlertPolicyOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.ServerAdministrators
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.ServerAdministrators
+  id: ServerAdministrators
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ServerAdministrators
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.ServerAdministrators
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServerAdministrators
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 279
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Server\r\nActive Directory Administrators.  Contains operations to: Create,\r\nRetrieve, Update, and Delete Azure SQL Server Active Directory\r\nAdministrators.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IServerAdministratorOperations ServerAdministrators
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ServerAdministrators As IServerAdministratorOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.CommunicationLinks
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.CommunicationLinks
+  id: CommunicationLinks
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: CommunicationLinks
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.CommunicationLinks
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CommunicationLinks
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 291
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Server\r\ncommunication links.  Contains operations to: Create, Retrieve,\r\nUpdate, and Delete.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IServerCommunicationLinkOperations CommunicationLinks
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property CommunicationLinks As IServerCommunicationLinkOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.ServerDisasterRecoveryConfigurations
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.ServerDisasterRecoveryConfigurations
+  id: ServerDisasterRecoveryConfigurations
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ServerDisasterRecoveryConfigurations
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.ServerDisasterRecoveryConfigurations
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServerDisasterRecoveryConfigurations
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 303
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Server\r\ndisaster recovery configurations. Contains operations to: Create,\r\nRetrieve, Update, Failover, and Delete.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IServerDisasterRecoveryConfigurationOperations ServerDisasterRecoveryConfigurations
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ServerDisasterRecoveryConfigurations As IServerDisasterRecoveryConfigurationOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.Servers
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.Servers
+  id: Servers
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Servers
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.Servers
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Servers
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 315
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\nServers.  Contains operations to: Create, Retrieve, Update, and\r\nDelete servers.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IServerOperations Servers
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Servers As IServerOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IServerOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.ServerUpgrades
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.ServerUpgrades
+  id: ServerUpgrades
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ServerUpgrades
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.ServerUpgrades
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServerUpgrades
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 325
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for Azure SQL Database Server Upgrade\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IServerUpgradeOperations ServerUpgrades
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ServerUpgrades As IServerUpgradeOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IServerUpgradeOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.ServiceObjectives
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.ServiceObjectives
+  id: ServiceObjectives
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ServiceObjectives
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.ServiceObjectives
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServiceObjectives
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 337
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Database\r\nService Objectives.   Contains operations to: Retrieve service\r\nobjectives.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IServiceObjectiveOperations ServiceObjectives
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ServiceObjectives As IServiceObjectiveOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.ServiceTierAdvisors
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.ServiceTierAdvisors
+  id: ServiceTierAdvisors
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ServiceTierAdvisors
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.ServiceTierAdvisors
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServiceTierAdvisors
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 348
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on service tier\r\nadvisors.  Contains operations to: Retrieve.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IServiceTierAdvisorOperations ServiceTierAdvisors
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ServiceTierAdvisors As IServiceTierAdvisorOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.IServiceTierAdvisorOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.TransparentDataEncryption
+  commentId: P:Microsoft.Azure.Management.Sql.SqlManagementClient.TransparentDataEncryption
+  id: TransparentDataEncryption
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: TransparentDataEncryption
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.TransparentDataEncryption
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TransparentDataEncryption
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 360
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations of Azure SQL Database Transparent\r\nData Encryption.  Contains operations to: Retrieve, and Update\r\nTransparent Data Encryption.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual ITransparentDataEncryptionOperations TransparentDataEncryption
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property TransparentDataEncryption As ITransparentDataEncryptionOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Sql.ITransparentDataEncryptionOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor
+  commentId: M:Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: SqlManagementClient()
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.SqlManagementClient()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 368
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nInitializes a new instance of the SqlManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public SqlManagementClient()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  commentId: M:Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri)'
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: SqlManagementClient(SubscriptionCloudCredentials, Uri)
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.SqlManagementClient(SubscriptionCloudCredentials, System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 412
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nInitializes a new instance of the SqlManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public SqlManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials)
+  commentId: M:Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials)
+  id: '#ctor(SubscriptionCloudCredentials)'
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: SqlManagementClient(SubscriptionCloudCredentials)
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.SqlManagementClient(SubscriptionCloudCredentials)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 437
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nInitializes a new instance of the SqlManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public SqlManagementClient(SubscriptionCloudCredentials credentials)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(System.Net.Http.HttpClient)
+  id: '#ctor(System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: SqlManagementClient(HttpClient)
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.SqlManagementClient(System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 456
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nInitializes a new instance of the SqlManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public SqlManagementClient(HttpClient httpClient)
+    content.vb: Public Sub New(httpClient As HttpClient)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: SqlManagementClient(SubscriptionCloudCredentials, Uri, HttpClient)
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.SqlManagementClient(SubscriptionCloudCredentials, System.Uri, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 503
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nInitializes a new instance of the SqlManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public SqlManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.Sql.SqlManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: SqlManagementClient(SubscriptionCloudCredentials, HttpClient)
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.SqlManagementClient(SubscriptionCloudCredentials, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 531
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nInitializes a new instance of the SqlManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public SqlManagementClient(SubscriptionCloudCredentials credentials, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Sql.SqlManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Sql.SqlManagementClient})
+  commentId: M:Microsoft.Azure.Management.Sql.SqlManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.Sql.SqlManagementClient})
+  id: Clone(ServiceClient{Microsoft.Azure.Management.Sql.SqlManagementClient})
+  parent: Microsoft.Azure.Management.Sql.SqlManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Clone(ServiceClient<SqlManagementClient>)
+  fullName: Microsoft.Azure.Management.Sql.SqlManagementClient.Clone(ServiceClient<Microsoft.Azure.Management.Sql.SqlManagementClient>)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Clone
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/SqlManagementClient.cs
+    startLine: 551
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nClones properties from current instance to another\r\nSqlManagementClient instance\r\n"
+  example: []
+  syntax:
+    content: protected override void Clone(ServiceClient<SqlManagementClient> client)
+    content.vb: Protected Overrides Sub Clone(client As ServiceClient(Of SqlManagementClient))
+    parameters:
+    - id: client
+      type: ServiceClient{Microsoft.Azure.Management.Sql.SqlManagementClient}
+      description: "\r\nInstance of SqlManagementClient to clone to\r\n"
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Microsoft.Azure.Management.Sql.SqlManagementClient.Clone(ServiceClient(Of Microsoft.Azure.Management.Sql.SqlManagementClient))
+  name.vb: Clone(ServiceClient(Of SqlManagementClient))
+references:
+- uid: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql
+  fullName: Microsoft.Azure.Management.Sql
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.Sql.ISqlManagementClient
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: ISqlManagementClient
+  fullName: Microsoft.Azure.Management.Sql.ISqlManagementClient
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.Azure.Management.Sql.IAuditingPolicyOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IAuditingPolicyOperations
+  fullName: Microsoft.Azure.Management.Sql.IAuditingPolicyOperations
+- uid: Microsoft.Azure.Management.Sql.ICapabilitiesOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: ICapabilitiesOperations
+  fullName: Microsoft.Azure.Management.Sql.ICapabilitiesOperations
+- uid: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IDatabaseActivationOperations
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+- uid: Microsoft.Azure.Management.Sql.IDatabaseBackupOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IDatabaseBackupOperations
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseBackupOperations
+- uid: Microsoft.Azure.Management.Sql.IDatabaseOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IDatabaseOperations
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseOperations
+- uid: Microsoft.Azure.Management.Sql.IDataMaskingOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IDataMaskingOperations
+  fullName: Microsoft.Azure.Management.Sql.IDataMaskingOperations
+- uid: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IElasticPoolOperations
+  fullName: Microsoft.Azure.Management.Sql.IElasticPoolOperations
+- uid: Microsoft.Azure.Management.Sql.IFirewallRuleOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IFirewallRuleOperations
+  fullName: Microsoft.Azure.Management.Sql.IFirewallRuleOperations
+- uid: Microsoft.Azure.Management.Sql.IImportExportOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IImportExportOperations
+  fullName: Microsoft.Azure.Management.Sql.IImportExportOperations
+- uid: Microsoft.Azure.Management.Sql.IJobAccountOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IJobAccountOperations
+  fullName: Microsoft.Azure.Management.Sql.IJobAccountOperations
+- uid: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IRecommendedElasticPoolOperations
+  fullName: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+- uid: Microsoft.Azure.Management.Sql.IRecommendedIndexOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IRecommendedIndexOperations
+  fullName: Microsoft.Azure.Management.Sql.IRecommendedIndexOperations
+- uid: Microsoft.Azure.Management.Sql.IReplicationLinkOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IReplicationLinkOperations
+  fullName: Microsoft.Azure.Management.Sql.IReplicationLinkOperations
+- uid: Microsoft.Azure.Management.Sql.ISecureConnectionPolicyOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: ISecureConnectionPolicyOperations
+  fullName: Microsoft.Azure.Management.Sql.ISecureConnectionPolicyOperations
+- uid: Microsoft.Azure.Management.Sql.ISecurityAlertPolicyOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: ISecurityAlertPolicyOperations
+  fullName: Microsoft.Azure.Management.Sql.ISecurityAlertPolicyOperations
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IServerAdministratorOperations
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+- uid: Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IServerCommunicationLinkOperations
+  fullName: Microsoft.Azure.Management.Sql.IServerCommunicationLinkOperations
+- uid: Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IServerDisasterRecoveryConfigurationOperations
+  fullName: Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations
+- uid: Microsoft.Azure.Management.Sql.IServerOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IServerOperations
+  fullName: Microsoft.Azure.Management.Sql.IServerOperations
+- uid: Microsoft.Azure.Management.Sql.IServerUpgradeOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IServerUpgradeOperations
+  fullName: Microsoft.Azure.Management.Sql.IServerUpgradeOperations
+- uid: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IServiceObjectiveOperations
+  fullName: Microsoft.Azure.Management.Sql.IServiceObjectiveOperations
+- uid: Microsoft.Azure.Management.Sql.IServiceTierAdvisorOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IServiceTierAdvisorOperations
+  fullName: Microsoft.Azure.Management.Sql.IServiceTierAdvisorOperations
+- uid: Microsoft.Azure.Management.Sql.ITransparentDataEncryptionOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: ITransparentDataEncryptionOperations
+  fullName: Microsoft.Azure.Management.Sql.ITransparentDataEncryptionOperations
+- uid: System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+- uid: ServiceClient{Microsoft.Azure.Management.Sql.SqlManagementClient}
+  definition: ServiceClient`1
+  name: ServiceClient<SqlManagementClient>
+  fullName: ServiceClient<Microsoft.Azure.Management.Sql.SqlManagementClient>
+  fullname.vb: ServiceClient(Of Microsoft.Azure.Management.Sql.SqlManagementClient)
+  name.vb: ServiceClient(Of SqlManagementClient)
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.SqlManagementClient
+    name: SqlManagementClient
+    fullName: Microsoft.Azure.Management.Sql.SqlManagementClient
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.SqlManagementClient
+    name: SqlManagementClient
+    fullName: Microsoft.Azure.Management.Sql.SqlManagementClient
+  - name: )
+    fullName: )
+- uid: ServiceClient`1
+  isExternal: true
+  name: ServiceClient<>
+  fullName: ServiceClient<>
+  fullname.vb: ServiceClient(Of )
+  name.vb: ServiceClient(Of )
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )

@@ -1,0 +1,715 @@
+items:
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  commentId: T:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  id: NetworkInterfaceIpConfiguration
+  parent: Microsoft.Azure.Management.Network.Models
+  children:
+  - Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.#ctor
+  - Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.LoadBalancerBackendAddressPools
+  - Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.LoadBalancerInboundNatRules
+  - Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PrivateIpAddress
+  - Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PrivateIpAllocationMethod
+  - Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.ProvisioningState
+  - Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PublicIpAddress
+  - Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.Subnet
+  langs:
+  - csharp
+  - vb
+  name: NetworkInterfaceIpConfiguration
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: NetworkInterfaceIpConfiguration
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nIPConfiguration in a NetworkInterface\r\n"
+  example: []
+  syntax:
+    content: 'public class NetworkInterfaceIpConfiguration : ChildResource'
+    content.vb: >-
+      Public Class NetworkInterfaceIpConfiguration
+
+          Inherits ChildResource
+  inheritance:
+  - System.Object
+  - Microsoft.Azure.Management.Network.Models.ResourceId
+  - Microsoft.Azure.Management.Network.Models.ChildResource
+  inheritedMembers:
+  - Microsoft.Azure.Management.Network.Models.ChildResource.Etag
+  - Microsoft.Azure.Management.Network.Models.ChildResource.Name
+  - Microsoft.Azure.Management.Network.Models.ResourceId.Id
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.LoadBalancerBackendAddressPools
+  commentId: P:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.LoadBalancerBackendAddressPools
+  id: LoadBalancerBackendAddressPools
+  parent: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LoadBalancerBackendAddressPools
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.LoadBalancerBackendAddressPools
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LoadBalancerBackendAddressPools
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets the reference of\r\nLoadBalancerBackendAddressPool resource\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<ResourceId> LoadBalancerBackendAddressPools
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LoadBalancerBackendAddressPools As IList(Of ResourceId)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Models.ResourceId}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.LoadBalancerInboundNatRules
+  commentId: P:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.LoadBalancerInboundNatRules
+  id: LoadBalancerInboundNatRules
+  parent: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LoadBalancerInboundNatRules
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.LoadBalancerInboundNatRules
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LoadBalancerInboundNatRules
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets list of references of\r\nLoadBalancerInboundNatRules\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<ResourceId> LoadBalancerInboundNatRules
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LoadBalancerInboundNatRules As IList(Of ResourceId)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Models.ResourceId}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PrivateIpAddress
+  commentId: P:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PrivateIpAddress
+  id: PrivateIpAddress
+  parent: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PrivateIpAddress
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PrivateIpAddress
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PrivateIpAddress
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 64
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets the privateIPAddress of the Network\r\nInterface IP Configuration\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string PrivateIpAddress
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PrivateIpAddress As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PrivateIpAllocationMethod
+  commentId: P:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PrivateIpAllocationMethod
+  id: PrivateIpAllocationMethod
+  parent: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PrivateIpAllocationMethod
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PrivateIpAllocationMethod
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PrivateIpAllocationMethod
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 75
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets PrivateIP allocation method (Static/Dynamic)\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string PrivateIpAllocationMethod
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PrivateIpAllocationMethod As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.ProvisioningState
+  commentId: P:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.ProvisioningState
+  id: ProvisioningState
+  parent: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProvisioningState
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.ProvisioningState
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProvisioningState
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 87
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets Provisioning state of the PublicIP resource\r\nUpdating/Deleting/Failed\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ProvisioningState
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProvisioningState As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PublicIpAddress
+  commentId: P:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PublicIpAddress
+  id: PublicIpAddress
+  parent: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PublicIpAddress
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.PublicIpAddress
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PublicIpAddress
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 98
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets the reference of the PublicIP resource\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ResourceId PublicIpAddress
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PublicIpAddress As ResourceId
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Network.Models.ResourceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.Subnet
+  commentId: P:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.Subnet
+  id: Subnet
+  parent: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Subnet
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.Subnet
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Subnet
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 109
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets the reference of the subnet resource\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ResourceId Subnet
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Subnet As ResourceId
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Network.Models.ResourceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.#ctor
+  commentId: M:Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NetworkInterfaceIpConfiguration()
+  fullName: Microsoft.Azure.Management.Network.Models.NetworkInterfaceIpConfiguration.NetworkInterfaceIpConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/NetworkInterfaceIpConfiguration.cs
+    startLine: 119
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nInitializes a new instance of the NetworkInterfaceIpConfiguration\r\nclass.\r\n"
+  example: []
+  syntax:
+    content: public NetworkInterfaceIpConfiguration()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Network.Models
+  fullName: Microsoft.Azure.Management.Network.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.Network.Models.ResourceId
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: ResourceId
+  fullName: Microsoft.Azure.Management.Network.Models.ResourceId
+- uid: Microsoft.Azure.Management.Network.Models.ChildResource
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: ChildResource
+  fullName: Microsoft.Azure.Management.Network.Models.ChildResource
+- uid: Microsoft.Azure.Management.Network.Models.ChildResource.Etag
+  parent: Microsoft.Azure.Management.Network.Models.ChildResource
+  isExternal: false
+  name: Etag
+  fullName: Microsoft.Azure.Management.Network.Models.ChildResource.Etag
+- uid: Microsoft.Azure.Management.Network.Models.ChildResource.Name
+  parent: Microsoft.Azure.Management.Network.Models.ChildResource
+  isExternal: false
+  name: Name
+  fullName: Microsoft.Azure.Management.Network.Models.ChildResource.Name
+- uid: Microsoft.Azure.Management.Network.Models.ResourceId.Id
+  parent: Microsoft.Azure.Management.Network.Models.ResourceId
+  isExternal: false
+  name: Id
+  fullName: Microsoft.Azure.Management.Network.Models.ResourceId.Id
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Models.ResourceId}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<ResourceId>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Management.Network.Models.ResourceId>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Management.Network.Models.ResourceId)
+  name.vb: IList(Of ResourceId)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ResourceId
+    name: ResourceId
+    fullName: Microsoft.Azure.Management.Network.Models.ResourceId
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ResourceId
+    name: ResourceId
+    fullName: Microsoft.Azure.Management.Network.Models.ResourceId
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

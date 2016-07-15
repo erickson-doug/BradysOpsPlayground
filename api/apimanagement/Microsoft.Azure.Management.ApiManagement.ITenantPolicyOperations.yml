@@ -1,0 +1,298 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations
+  commentId: T:Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations
+  id: ITenantPolicyOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.SetAsync(System.String,System.String,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITenantPolicyOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantPolicyOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ITenantPolicyOperations
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantPolicyOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nOperations for managing Tenant Policy.\r\n"
+  example: []
+  syntax:
+    content: public interface ITenantPolicyOperations
+    content.vb: Public Interface ITenantPolicyOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.DeleteAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantPolicyOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantPolicyOperations.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nDeletes tenant-level policy.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string serviceName, string etag, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, serviceName As String, etag As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nETag.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.GetAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantPolicyOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantPolicyOperations.cs
+    startLine: 76
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nGets tenant-level policy.\r\n"
+  example: []
+  syntax:
+    content: Task<PolicyGetResponse> GetAsync(string resourceGroupName, string serviceName, string format, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, serviceName As String, format As String, cancellationToken As CancellationToken) As Task(Of PolicyGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: format
+      type: System.String
+      description: "\r\nFormat of the policy. Supported formats:\r\napplication/vnd.ms-azure-apim.policy+xml\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.PolicyGetResponse}
+      description: "\r\nThe response model for the get policy output operation.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.SetAsync(System.String,System.String,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.SetAsync(System.String,System.String,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  id: SetAsync(System.String,System.String,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations
+  langs:
+  - csharp
+  - vb
+  name: SetAsync(String, String, String, Stream, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.ITenantPolicyOperations.SetAsync(System.String, System.String, System.String, System.IO.Stream, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantPolicyOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SetAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ITenantPolicyOperations.cs
+    startLine: 104
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nSets tenant-level policy.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> SetAsync(string resourceGroupName, string serviceName, string format, Stream policyStream, string etag, CancellationToken cancellationToken)
+    content.vb: Function SetAsync(resourceGroupName As String, serviceName As String, format As String, policyStream As Stream, etag As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: format
+      type: System.String
+      description: "\r\nFormat of the policy. Supported formats:\r\napplication/vnd.ms-azure-apim.policy+xml\r\n"
+    - id: policyStream
+      type: System.IO.Stream
+      description: "\r\nPolicy stream.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nETag.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.PolicyGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PolicyGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.PolicyGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.PolicyGetResponse)
+  name.vb: Task(Of PolicyGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.PolicyGetResponse
+    name: PolicyGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.PolicyGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.PolicyGetResponse
+    name: PolicyGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.PolicyGetResponse
+  - name: )
+    fullName: )
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO

@@ -1,0 +1,605 @@
+items:
+- uid: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  commentId: T:Microsoft.Azure.Management.Dns.IRecordSetOperations
+  id: IRecordSetOperations
+  parent: Microsoft.Azure.Management.Dns
+  children:
+  - Microsoft.Azure.Management.Dns.IRecordSetOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Dns.IRecordSetOperations.DeleteAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Dns.IRecordSetOperations.GetAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Dns.IRecordSetOperations.ListAllAsync(System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordSetListParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Dns.IRecordSetOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetListParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Dns.IRecordSetOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Dns.IRecordSetOperations.UpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters,System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IRecordSetOperations
+  fullName: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IRecordSetOperations
+    path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.Dns
+  namespace: Microsoft.Azure.Management.Dns
+  summary: "\r\nOperations for managing the RecordSets in a DNS zone.\r\n"
+  example: []
+  syntax:
+    content: public interface IRecordSetOperations
+    content.vb: Public Interface IRecordSetOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Dns.IRecordSetOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Dns.IRecordSetOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters,System.String,System.String,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, String, String, RecordType, RecordSetCreateOrUpdateParameters, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Dns.IRecordSetOperations.CreateOrUpdateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.Dns.Models.RecordType, Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+    startLine: 66
+  assemblies:
+  - Microsoft.Azure.Management.Dns
+  namespace: Microsoft.Azure.Management.Dns
+  summary: "\r\nCreates a RecordSet within a DNS zone.\r\n"
+  example: []
+  syntax:
+    content: Task<RecordSetCreateOrUpdateResponse> CreateOrUpdateAsync(string resourceGroupName, string zoneName, string relativeRecordSetName, RecordType recordType, RecordSetCreateOrUpdateParameters parameters, string ifMatch, string ifNoneMatch, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, zoneName As String, relativeRecordSetName As String, recordType As RecordType, parameters As RecordSetCreateOrUpdateParameters, ifMatch As String, ifNoneMatch As String, cancellationToken As CancellationToken) As Task(Of RecordSetCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: zoneName
+      type: System.String
+      description: "\r\nThe name of the zone without a terminating dot.\r\n"
+    - id: relativeRecordSetName
+      type: System.String
+      description: "\r\nThe name of the RecordSet, relative to the name of the zone.\r\n"
+    - id: recordType
+      type: Microsoft.Azure.Management.Dns.Models.RecordType
+      description: "\r\nThe type of DNS record.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters
+      description: "\r\nParameters supplied to the CreateOrUpdate operation.\r\n"
+    - id: ifMatch
+      type: System.String
+      description: "\r\nThe etag of RecordSet.\r\n"
+    - id: ifNoneMatch
+      type: System.String
+      description: "\r\nDefines the If-None-Match condition. Set to '*' to force\r\nCreate-If-Not-Exist. Other values will be ignored.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse}
+      description: "\r\nThe response to a RecordSet CreateOrUpdate operation.\r\n"
+- uid: Microsoft.Azure.Management.Dns.IRecordSetOperations.DeleteAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Dns.IRecordSetOperations.DeleteAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, String, RecordType, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Dns.IRecordSetOperations.DeleteAsync(System.String, System.String, System.String, Microsoft.Azure.Management.Dns.Models.RecordType, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+    startLine: 100
+  assemblies:
+  - Microsoft.Azure.Management.Dns
+  namespace: Microsoft.Azure.Management.Dns
+  summary: "\r\nRemoves a RecordSet from a DNS zone.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string zoneName, string relativeRecordSetName, RecordType recordType, string ifMatch, string ifNoneMatch, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, zoneName As String, relativeRecordSetName As String, recordType As RecordType, ifMatch As String, ifNoneMatch As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: zoneName
+      type: System.String
+      description: "\r\nThe name of the zone without a terminating dot.\r\n"
+    - id: relativeRecordSetName
+      type: System.String
+      description: "\r\nThe name of the RecordSet, relative to the name of the zone.\r\n"
+    - id: recordType
+      type: Microsoft.Azure.Management.Dns.Models.RecordType
+      description: "\r\nThe type of DNS record.\r\n"
+    - id: ifMatch
+      type: System.String
+      description: "\r\nDefines the If-Match condition. The delete operation will be\r\nperformed only if the ETag of the zone on the server matches this\r\nvalue.\r\n"
+    - id: ifNoneMatch
+      type: System.String
+      description: "\r\nDefines the If-None-Match condition. The delete operation will be\r\nperformed only if the ETag of the zone on the server does not\r\nmatch this value.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.Dns.IRecordSetOperations.GetAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Dns.IRecordSetOperations.GetAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, String, RecordType, CancellationToken)
+  fullName: Microsoft.Azure.Management.Dns.IRecordSetOperations.GetAsync(System.String, System.String, System.String, Microsoft.Azure.Management.Dns.Models.RecordType, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+    startLine: 123
+  assemblies:
+  - Microsoft.Azure.Management.Dns
+  namespace: Microsoft.Azure.Management.Dns
+  summary: "\r\nGets a RecordSet.\r\n"
+  example: []
+  syntax:
+    content: Task<RecordSetGetResponse> GetAsync(string resourceGroupName, string zoneName, string relativeRecordSetName, RecordType recordType, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, zoneName As String, relativeRecordSetName As String, recordType As RecordType, cancellationToken As CancellationToken) As Task(Of RecordSetGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: zoneName
+      type: System.String
+      description: "\r\nThe name of the zone without a terminating dot.\r\n"
+    - id: relativeRecordSetName
+      type: System.String
+      description: "\r\nThe name of the RecordSet, relative to the name of the zone.\r\n"
+    - id: recordType
+      type: Microsoft.Azure.Management.Dns.Models.RecordType
+      description: "\r\nThe type of DNS record.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse}
+      description: "\r\nThe response to a RecordSet Get operation.\r\n"
+- uid: Microsoft.Azure.Management.Dns.IRecordSetOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetListParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Dns.IRecordSetOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetListParameters,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetListParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, RecordType, RecordSetListParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Dns.IRecordSetOperations.ListAsync(System.String, System.String, Microsoft.Azure.Management.Dns.Models.RecordType, Microsoft.Azure.Management.Dns.Models.RecordSetListParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+    startLine: 147
+  assemblies:
+  - Microsoft.Azure.Management.Dns
+  namespace: Microsoft.Azure.Management.Dns
+  summary: "\r\nLists the RecordSets of a specified type in a DNS zone.\r\n"
+  example: []
+  syntax:
+    content: Task<RecordSetListResponse> ListAsync(string resourceGroupName, string zoneName, RecordType recordType, RecordSetListParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, zoneName As String, recordType As RecordType, parameters As RecordSetListParameters, cancellationToken As CancellationToken) As Task(Of RecordSetListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group that contains the zone.\r\n"
+    - id: zoneName
+      type: System.String
+      description: "\r\nThe name of the zone from which to enumerate RecordsSets.\r\n"
+    - id: recordType
+      type: Microsoft.Azure.Management.Dns.Models.RecordType
+      description: "\r\nThe type of record sets to enumerate.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Dns.Models.RecordSetListParameters
+      description: "\r\nQuery parameters. If null is passed returns the default number of\r\nzones.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetListResponse}
+      description: "\r\nThe response to a RecordSet List operation.\r\n"
+- uid: Microsoft.Azure.Management.Dns.IRecordSetOperations.ListAllAsync(System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordSetListParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Dns.IRecordSetOperations.ListAllAsync(System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordSetListParameters,System.Threading.CancellationToken)
+  id: ListAllAsync(System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordSetListParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAllAsync(String, String, RecordSetListParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Dns.IRecordSetOperations.ListAllAsync(System.String, System.String, Microsoft.Azure.Management.Dns.Models.RecordSetListParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAllAsync
+    path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+    startLine: 168
+  assemblies:
+  - Microsoft.Azure.Management.Dns
+  namespace: Microsoft.Azure.Management.Dns
+  summary: "\r\nLists all RecordSets in a DNS zone.\r\n"
+  example: []
+  syntax:
+    content: Task<RecordSetListResponse> ListAllAsync(string resourceGroupName, string zoneName, RecordSetListParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function ListAllAsync(resourceGroupName As String, zoneName As String, parameters As RecordSetListParameters, cancellationToken As CancellationToken) As Task(Of RecordSetListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group that contains the zone.\r\n"
+    - id: zoneName
+      type: System.String
+      description: "\r\nThe name of the zone from which to enumerate RecordSets.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Dns.Models.RecordSetListParameters
+      description: "\r\nQuery parameters. If null is passed returns the default number of\r\nzones.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetListResponse}
+      description: "\r\nThe response to a RecordSet List operation.\r\n"
+- uid: Microsoft.Azure.Management.Dns.IRecordSetOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Dns.IRecordSetOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Dns.IRecordSetOperations.ListNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+    startLine: 183
+  assemblies:
+  - Microsoft.Azure.Management.Dns
+  namespace: Microsoft.Azure.Management.Dns
+  summary: "\r\nLists RecordSets in a DNS zone. Depending on the previous call, it\r\nwill list all types or by type.\r\n"
+  example: []
+  syntax:
+    content: Task<RecordSetListResponse> ListNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of RecordSetListResponse)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nNextLink from the previous successful call to List operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetListResponse}
+      description: "\r\nThe response to a RecordSet List operation.\r\n"
+- uid: Microsoft.Azure.Management.Dns.IRecordSetOperations.UpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Dns.IRecordSetOperations.UpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters,System.String,System.String,System.Threading.CancellationToken)
+  id: UpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Dns.Models.RecordType,Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Dns.IRecordSetOperations
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(String, String, String, RecordType, RecordSetUpdateParameters, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Dns.IRecordSetOperations.UpdateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.Dns.Models.RecordType, Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UpdateAsync
+    path: src/src/ResourceManagement/Dns/DnsManagement/Generated/IRecordSetOperations.cs
+    startLine: 216
+  assemblies:
+  - Microsoft.Azure.Management.Dns
+  namespace: Microsoft.Azure.Management.Dns
+  summary: "\r\nCreates a RecordSet within a DNS zone.\r\n"
+  example: []
+  syntax:
+    content: Task<RecordSetUpdateResponse> UpdateAsync(string resourceGroupName, string zoneName, string relativeRecordSetName, RecordType recordType, RecordSetUpdateParameters parameters, string ifMatch, string ifNoneMatch, CancellationToken cancellationToken)
+    content.vb: Function UpdateAsync(resourceGroupName As String, zoneName As String, relativeRecordSetName As String, recordType As RecordType, parameters As RecordSetUpdateParameters, ifMatch As String, ifNoneMatch As String, cancellationToken As CancellationToken) As Task(Of RecordSetUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: zoneName
+      type: System.String
+      description: "\r\nThe name of the zone without a terminating dot.\r\n"
+    - id: relativeRecordSetName
+      type: System.String
+      description: "\r\nThe name of the RecordSet, relative to the name of the zone.\r\n"
+    - id: recordType
+      type: Microsoft.Azure.Management.Dns.Models.RecordType
+      description: "\r\nThe type of DNS record.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters
+      description: "\r\nParameters supplied to the CreateOrUpdate operation.\r\n"
+    - id: ifMatch
+      type: System.String
+      description: "\r\nThe etag of Zone.\r\n"
+    - id: ifNoneMatch
+      type: System.String
+      description: "\r\nDefines the If-None-Match condition. Set to '*' to force\r\nCreate-If-Not-Exist. Other values will be ignored.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse}
+      description: "\r\nThe response to a RecordSet Update operation.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Dns
+  isExternal: false
+  name: Microsoft.Azure.Management.Dns
+  fullName: Microsoft.Azure.Management.Dns
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Dns.Models.RecordType
+  parent: Microsoft.Azure.Management.Dns.Models
+  isExternal: false
+  name: RecordType
+  fullName: Microsoft.Azure.Management.Dns.Models.RecordType
+- uid: Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters
+  parent: Microsoft.Azure.Management.Dns.Models
+  isExternal: false
+  name: RecordSetCreateOrUpdateParameters
+  fullName: Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecordSetCreateOrUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse)
+  name.vb: Task(Of RecordSetCreateOrUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse
+    name: RecordSetCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse
+    name: RecordSetCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Dns.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Dns.Models
+  fullName: Microsoft.Azure.Management.Dns.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecordSetGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse)
+  name.vb: Task(Of RecordSetGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse
+    name: RecordSetGetResponse
+    fullName: Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse
+    name: RecordSetGetResponse
+    fullName: Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Dns.Models.RecordSetListParameters
+  parent: Microsoft.Azure.Management.Dns.Models
+  isExternal: false
+  name: RecordSetListParameters
+  fullName: Microsoft.Azure.Management.Dns.Models.RecordSetListParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecordSetListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Dns.Models.RecordSetListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Dns.Models.RecordSetListResponse)
+  name.vb: Task(Of RecordSetListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Dns.Models.RecordSetListResponse
+    name: RecordSetListResponse
+    fullName: Microsoft.Azure.Management.Dns.Models.RecordSetListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Dns.Models.RecordSetListResponse
+    name: RecordSetListResponse
+    fullName: Microsoft.Azure.Management.Dns.Models.RecordSetListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters
+  parent: Microsoft.Azure.Management.Dns.Models
+  isExternal: false
+  name: RecordSetUpdateParameters
+  fullName: Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecordSetUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse)
+  name.vb: Task(Of RecordSetUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse
+    name: RecordSetUpdateResponse
+    fullName: Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse
+    name: RecordSetUpdateResponse
+    fullName: Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse
+  - name: )
+    fullName: )

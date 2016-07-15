@@ -1,0 +1,436 @@
+items:
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions
+  commentId: T:Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions
+  id: HDInsightManagementClientExtensions
+  parent: Microsoft.Azure.Management.HDInsight
+  children:
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions.GetLongRunningOperationStatus(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient,System.String)
+  - Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions.GetLongRunningOperationStatusAsync(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient,System.String)
+  langs:
+  - csharp
+  - vb
+  name: HDInsightManagementClientExtensions
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: HDInsightManagementClientExtensions
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClientExtensions.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nThe HDInsight Management Client.\r\n"
+  example: []
+  syntax:
+    content: public class HDInsightManagementClientExtensions
+    content.vb: Public Class HDInsightManagementClientExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions.GetLongRunningOperationStatus(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient,System.String)
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions.GetLongRunningOperationStatus(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient,System.String)
+  id: GetLongRunningOperationStatus(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient,System.String)
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLongRunningOperationStatus(IHDInsightManagementClient, String)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions.GetLongRunningOperationStatus(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetLongRunningOperationStatus
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClientExtensions.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: public static OperationResource GetLongRunningOperationStatus(IHDInsightManagementClient operations, string operationStatusLink)
+    content.vb: Public Shared Function GetLongRunningOperationStatus(operations As IHDInsightManagementClient, operationStatusLink As String) As OperationResource
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.HDInsight.IHDInsightManagementClient.\r\n"
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by the Begin operation.\r\n"
+    return:
+      type: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+      description: "\r\nThe azure async operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions.GetLongRunningOperationStatusAsync(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient,System.String)
+  commentId: M:Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions.GetLongRunningOperationStatusAsync(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient,System.String)
+  id: GetLongRunningOperationStatusAsync(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient,System.String)
+  parent: Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLongRunningOperationStatusAsync(IHDInsightManagementClient, String)
+  fullName: Microsoft.Azure.Management.HDInsight.HDInsightManagementClientExtensions.GetLongRunningOperationStatusAsync(Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetLongRunningOperationStatusAsync
+    path: src/src/ResourceManagement/HDInsight/HDInsight/Generated/HDInsightManagementClientExtensions.cs
+    startLine: 76
+  assemblies:
+  - Microsoft.Azure.Management.HDInsight
+  namespace: Microsoft.Azure.Management.HDInsight
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: public static Task<OperationResource> GetLongRunningOperationStatusAsync(IHDInsightManagementClient operations, string operationStatusLink)
+    content.vb: Public Shared Function GetLongRunningOperationStatusAsync(operations As IHDInsightManagementClient, operationStatusLink As String) As Task(Of OperationResource)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.HDInsight.IHDInsightManagementClient.\r\n"
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by the Begin operation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.HDInsight.Models.OperationResource}
+      description: "\r\nThe azure async operation response.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.HDInsight
+  isExternal: false
+  name: Microsoft.Azure.Management.HDInsight
+  fullName: Microsoft.Azure.Management.HDInsight
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient
+  parent: Microsoft.Azure.Management.HDInsight
+  isExternal: false
+  name: IHDInsightManagementClient
+  fullName: Microsoft.Azure.Management.HDInsight.IHDInsightManagementClient
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+  parent: Microsoft.Azure.Management.HDInsight.Models
+  isExternal: false
+  name: OperationResource
+  fullName: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+- uid: Microsoft.Azure.Management.HDInsight.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.HDInsight.Models
+  fullName: Microsoft.Azure.Management.HDInsight.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.HDInsight.Models.OperationResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OperationResource>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.HDInsight.Models.OperationResource>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.HDInsight.Models.OperationResource)
+  name.vb: Task(Of OperationResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+    name: OperationResource
+    fullName: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+    name: OperationResource
+    fullName: Microsoft.Azure.Management.HDInsight.Models.OperationResource
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

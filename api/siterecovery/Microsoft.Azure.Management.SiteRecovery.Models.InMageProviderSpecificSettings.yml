@@ -1,0 +1,1830 @@
+items:
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  commentId: T:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  id: InMageProviderSpecificSettings
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  children:
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.#ctor
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ActiveLocation
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.AgentDetails
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.CompressedDataRateInMB
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ConsistencyPoints
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.DiscoveryType
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.DiskResized
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.InfrastructureVmId
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.IpAddress
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.LastHeartbeat
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MasterTargetId
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MultiVmGroupId
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MultiVmGroupName
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.OsDetails
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProcessServerId
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProtectedDisks
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProtectionStage
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RebootAfterUpdateStatus
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ResyncDetails
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RetentionWindowEnd
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RetentionWindowStart
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RpoInSeconds
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.SourceVmCPUCount
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.SourceVmRAMSizeInMB
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.UncompressedDataRateInMB
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VCenterInfrastructureId
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VmId
+  - Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VMNics
+  langs:
+  - csharp
+  - vb
+  name: InMageProviderSpecificSettings
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: InMageProviderSpecificSettings
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nInMage provider specific protected item details\r\n"
+  example: []
+  syntax:
+    content: 'public class InMageProviderSpecificSettings : ReplicationProviderSpecificSettings'
+    content.vb: >-
+      Public Class InMageProviderSpecificSettings
+
+          Inherits ReplicationProviderSpecificSettings
+  inheritance:
+  - System.Object
+  - Microsoft.Azure.Management.SiteRecovery.Models.ReplicationProviderSpecificSettings
+  inheritedMembers:
+  - Microsoft.Azure.Management.SiteRecovery.Models.ReplicationProviderSpecificSettings.InstanceType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ActiveLocation
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ActiveLocation
+  id: ActiveLocation
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: ActiveLocation
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ActiveLocation
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ActiveLocation
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. Indicates whether vm is active on azure or onPrem.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ActiveLocation
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ActiveLocation As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.AgentDetails
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.AgentDetails
+  id: AgentDetails
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: AgentDetails
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.AgentDetails
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AgentDetails
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The agent details.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public InMageAgentDetails AgentDetails
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AgentDetails As InMageAgentDetails
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.SiteRecovery.Models.InMageAgentDetails
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.CompressedDataRateInMB
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.CompressedDataRateInMB
+  id: CompressedDataRateInMB
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: CompressedDataRateInMB
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.CompressedDataRateInMB
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CompressedDataRateInMB
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 61
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The compressed data change rate in MB.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double CompressedDataRateInMB
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property CompressedDataRateInMB As Double
+    parameters: []
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ConsistencyPoints
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ConsistencyPoints
+  id: ConsistencyPoints
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: ConsistencyPoints
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ConsistencyPoints
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ConsistencyPoints
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The collection of Consistency points.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IDictionary<string, DateTime> ConsistencyPoints
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ConsistencyPoints As IDictionary(Of String, Date)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.DateTime}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.DiscoveryType
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.DiscoveryType
+  id: DiscoveryType
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryType
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.DiscoveryType
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DiscoveryType
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. Gets or sets a value inidicating the discovery type of\r\nthe machine.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string DiscoveryType
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DiscoveryType As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.DiskResized
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.DiskResized
+  id: DiskResized
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: DiskResized
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.DiskResized
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DiskResized
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. Indicates whether any disk is resized for this VM.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string DiskResized
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DiskResized As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.InfrastructureVmId
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.InfrastructureVmId
+  id: InfrastructureVmId
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: InfrastructureVmId
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.InfrastructureVmId
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: InfrastructureVmId
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 106
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. Infrastructure VM Id.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string InfrastructureVmId
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property InfrastructureVmId As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.IpAddress
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.IpAddress
+  id: IpAddress
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: IpAddress
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.IpAddress
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IpAddress
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 117
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The source IP address.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string IpAddress
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IpAddress As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.LastHeartbeat
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.LastHeartbeat
+  id: LastHeartbeat
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: LastHeartbeat
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.LastHeartbeat
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LastHeartbeat
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 128
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The last heartbeat received from the source server.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime? LastHeartbeat
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LastHeartbeat As Date?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MasterTargetId
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MasterTargetId
+  id: MasterTargetId
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: MasterTargetId
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MasterTargetId
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MasterTargetId
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 139
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The master target Id.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string MasterTargetId
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MasterTargetId As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MultiVmGroupId
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MultiVmGroupId
+  id: MultiVmGroupId
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: MultiVmGroupId
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MultiVmGroupId
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MultiVmGroupId
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 150
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The multi vm group Id, if any.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string MultiVmGroupId
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MultiVmGroupId As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MultiVmGroupName
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MultiVmGroupName
+  id: MultiVmGroupName
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: MultiVmGroupName
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.MultiVmGroupName
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MultiVmGroupName
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 161
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The multi vm group name, if any.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string MultiVmGroupName
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MultiVmGroupName As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.OsDetails
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.OsDetails
+  id: OsDetails
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: OsDetails
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.OsDetails
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: OsDetails
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 172
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The details of the OS disk.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public OSDiskDetails OsDetails
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property OsDetails As OSDiskDetails
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.SiteRecovery.Models.OSDiskDetails
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProcessServerId
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProcessServerId
+  id: ProcessServerId
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: ProcessServerId
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProcessServerId
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProcessServerId
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 183
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The process server Id.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ProcessServerId
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProcessServerId As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProtectedDisks
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProtectedDisks
+  id: ProtectedDisks
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: ProtectedDisks
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProtectedDisks
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProtectedDisks
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 194
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The list of protected disks.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<InMageProtectedDiskDetails> ProtectedDisks
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProtectedDisks As IList(Of InMageProtectedDiskDetails)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.InMageProtectedDiskDetails}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProtectionStage
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProtectionStage
+  id: ProtectionStage
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: ProtectionStage
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ProtectionStage
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProtectionStage
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 205
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The protection stage.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ProtectionStage
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProtectionStage As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RebootAfterUpdateStatus
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RebootAfterUpdateStatus
+  id: RebootAfterUpdateStatus
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: RebootAfterUpdateStatus
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RebootAfterUpdateStatus
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RebootAfterUpdateStatus
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 217
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. Indicates whether the source server requires a restart\r\nafter update.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string RebootAfterUpdateStatus
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RebootAfterUpdateStatus As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ResyncDetails
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ResyncDetails
+  id: ResyncDetails
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: ResyncDetails
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.ResyncDetails
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ResyncDetails
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 228
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. Resync details.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public InitialReplicationDetails ResyncDetails
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ResyncDetails As InitialReplicationDetails
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.SiteRecovery.Models.InitialReplicationDetails
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RetentionWindowEnd
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RetentionWindowEnd
+  id: RetentionWindowEnd
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: RetentionWindowEnd
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RetentionWindowEnd
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RetentionWindowEnd
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 239
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The retention window end time.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime? RetentionWindowEnd
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RetentionWindowEnd As Date?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RetentionWindowStart
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RetentionWindowStart
+  id: RetentionWindowStart
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: RetentionWindowStart
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RetentionWindowStart
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RetentionWindowStart
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 250
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The retention window start time.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTime? RetentionWindowStart
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RetentionWindowStart As Date?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RpoInSeconds
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RpoInSeconds
+  id: RpoInSeconds
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: RpoInSeconds
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.RpoInSeconds
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RpoInSeconds
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 261
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The RPO in seconds.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ? RpoInSeconds
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RpoInSeconds As Long?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.SourceVmCPUCount
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.SourceVmCPUCount
+  id: SourceVmCPUCount
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: SourceVmCPUCount
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.SourceVmCPUCount
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SourceVmCPUCount
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 272
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The source VM CPU count.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int SourceVmCPUCount
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SourceVmCPUCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.SourceVmRAMSizeInMB
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.SourceVmRAMSizeInMB
+  id: SourceVmRAMSizeInMB
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: SourceVmRAMSizeInMB
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.SourceVmRAMSizeInMB
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SourceVmRAMSizeInMB
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 283
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The RAM size of the VM on the primary side.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int SourceVmRAMSizeInMB
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SourceVmRAMSizeInMB As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.UncompressedDataRateInMB
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.UncompressedDataRateInMB
+  id: UncompressedDataRateInMB
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: UncompressedDataRateInMB
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.UncompressedDataRateInMB
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UncompressedDataRateInMB
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 294
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. The uncompressed data change rate in MB.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double UncompressedDataRateInMB
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property UncompressedDataRateInMB As Double
+    parameters: []
+    return:
+      type: System.Double
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VCenterInfrastructureId
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VCenterInfrastructureId
+  id: VCenterInfrastructureId
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: VCenterInfrastructureId
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VCenterInfrastructureId
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VCenterInfrastructureId
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 305
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. vCenter Infrastructure Id.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VCenterInfrastructureId
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VCenterInfrastructureId As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VmId
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VmId
+  id: VmId
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: VmId
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VmId
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VmId
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 316
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. Virtual machine Id.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VmId
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VmId As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VMNics
+  commentId: P:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VMNics
+  id: VMNics
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: VMNics
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.VMNics
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VMNics
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 327
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nOptional. Gets or sets the network details.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<VMNicDetails> VMNics
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VMNics As IList(Of VMNicDetails)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.VMNicDetails}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.#ctor
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings
+  langs:
+  - csharp
+  - vb
+  name: InMageProviderSpecificSettings()
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProviderSpecificSettings.InMageProviderSpecificSettings()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/Models/InMageProviderSpecificSettings.cs
+    startLine: 337
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery.Models
+  summary: "\r\nInitializes a new instance of the InMageProviderSpecificSettings\r\nclass.\r\n"
+  example: []
+  syntax:
+    content: public InMageProviderSpecificSettings()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery.Models
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.ReplicationProviderSpecificSettings
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: ReplicationProviderSpecificSettings
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.ReplicationProviderSpecificSettings
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.ReplicationProviderSpecificSettings.InstanceType
+  parent: Microsoft.Azure.Management.SiteRecovery.Models.ReplicationProviderSpecificSettings
+  isExternal: false
+  name: InstanceType
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.ReplicationProviderSpecificSettings.InstanceType
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageAgentDetails
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: InMageAgentDetails
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageAgentDetails
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Collections.Generic.IDictionary{System.String,System.DateTime}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, DateTime>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.DateTime>
+  fullname.vb: System.Collections.Generic.IDictionary(Of System.String, System.DateTime)
+  name.vb: IDictionary(Of String, DateTime)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullname.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  fullname.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.OSDiskDetails
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: OSDiskDetails
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.OSDiskDetails
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.InMageProtectedDiskDetails}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<InMageProtectedDiskDetails>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Management.SiteRecovery.Models.InMageProtectedDiskDetails>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Management.SiteRecovery.Models.InMageProtectedDiskDetails)
+  name.vb: IList(Of InMageProtectedDiskDetails)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProtectedDiskDetails
+    name: InMageProtectedDiskDetails
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProtectedDiskDetails
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.InMageProtectedDiskDetails
+    name: InMageProtectedDiskDetails
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.InMageProtectedDiskDetails
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.InitialReplicationDetails
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: InitialReplicationDetails
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.InitialReplicationDetails
+- uid: System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  fullname.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IList{Microsoft.Azure.Management.SiteRecovery.Models.VMNicDetails}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<VMNicDetails>
+  fullName: System.Collections.Generic.IList<Microsoft.Azure.Management.SiteRecovery.Models.VMNicDetails>
+  fullname.vb: System.Collections.Generic.IList(Of Microsoft.Azure.Management.SiteRecovery.Models.VMNicDetails)
+  name.vb: IList(Of VMNicDetails)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.VMNicDetails
+    name: VMNicDetails
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMNicDetails
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.VMNicDetails
+    name: VMNicDetails
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.VMNicDetails
+  - name: )
+    fullName: )

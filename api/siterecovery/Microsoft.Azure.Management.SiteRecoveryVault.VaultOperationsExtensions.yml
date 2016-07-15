@@ -1,0 +1,906 @@
+items:
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  id: VaultOperationsExtensions
+  parent: Microsoft.Azure.Management.SiteRecoveryVault
+  children:
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginCreating(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginCreatingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginDeleting(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginDeletingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Create(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.CreateAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Delete(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Get(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  - Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.GetAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  langs:
+  - csharp
+  - vb
+  name: VaultOperationsExtensions
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VaultOperationsExtensions
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  syntax:
+    content: public class VaultOperationsExtensions
+    content.vb: Public Class VaultOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginCreating(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginCreating(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  id: BeginCreating(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeginCreating(IVaultOperations, String, String, VaultCreateArgs)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginCreating(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, System.String, Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreating
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nCreates a vault\r\n"
+  example: []
+  syntax:
+    content: public static VaultCreateResponse BeginCreating(IVaultOperations operations, string resourceGroupName, string vaultName, VaultCreateArgs vaultCreationInput)
+    content.vb: Public Shared Function BeginCreating(operations As IVaultOperations, resourceGroupName As String, vaultName As String, vaultCreationInput As VaultCreateArgs) As VaultCreateResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (resource group?) cloud service\r\ncontaining the job collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nRequired. The name of the vault to create.\r\n"
+    - id: vaultCreationInput
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs
+      description: "\r\nRequired. Vault object to be created\r\n"
+    return:
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse
+      description: "\r\nThe response model for the Vm group object.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginCreatingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginCreatingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  id: BeginCreatingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeginCreatingAsync(IVaultOperations, String, String, VaultCreateArgs)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginCreatingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, System.String, Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreatingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 82
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nCreates a vault\r\n"
+  example: []
+  syntax:
+    content: public static Task<VaultCreateResponse> BeginCreatingAsync(IVaultOperations operations, string resourceGroupName, string vaultName, VaultCreateArgs vaultCreationInput)
+    content.vb: Public Shared Function BeginCreatingAsync(operations As IVaultOperations, resourceGroupName As String, vaultName As String, vaultCreationInput As VaultCreateArgs) As Task(Of VaultCreateResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (resource group?) cloud service\r\ncontaining the job collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nRequired. The name of the vault to create.\r\n"
+    - id: vaultCreationInput
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs
+      description: "\r\nRequired. Vault object to be created\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse}
+      description: "\r\nThe response model for the Vm group object.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginDeleting(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginDeleting(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  id: BeginDeleting(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeginDeleting(IVaultOperations, String, String)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginDeleting(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeleting
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 112
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nDeletes a vault\r\n"
+  example: []
+  syntax:
+    content: public static RecoveryServicesOperationStatusResponse BeginDeleting(IVaultOperations operations, string resourceGroupName, string vaultName)
+    content.vb: Public Shared Function BeginDeleting(operations As IVaultOperations, resourceGroupName As String, vaultName As String) As RecoveryServicesOperationStatusResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (Resource Group) cloud service containing\r\nthe job collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nRequired. The name of the vault to delete.\r\n"
+    return:
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself.  If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request.  If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request, and also includes error\r\ninformation regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginDeletingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginDeletingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  id: BeginDeletingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: BeginDeletingAsync(IVaultOperations, String, String)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.BeginDeletingAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeletingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 146
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nDeletes a vault\r\n"
+  example: []
+  syntax:
+    content: public static Task<RecoveryServicesOperationStatusResponse> BeginDeletingAsync(IVaultOperations operations, string resourceGroupName, string vaultName)
+    content.vb: Public Shared Function BeginDeletingAsync(operations As IVaultOperations, resourceGroupName As String, vaultName As String) As Task(Of RecoveryServicesOperationStatusResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (Resource Group) cloud service containing\r\nthe job collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nRequired. The name of the vault to delete.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself.  If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request.  If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request, and also includes error\r\ninformation regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Create(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Create(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  id: Create(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Create(IVaultOperations, String, String, VaultCreateArgs)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Create(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, System.String, Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Create
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 179
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nCreates a vault\r\n"
+  example: []
+  syntax:
+    content: public static RecoveryServicesOperationStatusResponse Create(IVaultOperations operations, string resourceGroupName, string vaultName, VaultCreateArgs vaultCreationInput)
+    content.vb: Public Shared Function Create(operations As IVaultOperations, resourceGroupName As String, vaultName As String, vaultCreationInput As VaultCreateArgs) As RecoveryServicesOperationStatusResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (resource group) cloud service containing\r\nthe job collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nOptional. The name of the vault to create.\r\n"
+    - id: vaultCreationInput
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs
+      description: "\r\nRequired. Vault object to be created\r\n"
+    return:
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself.  If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request.  If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request, and also includes error\r\ninformation regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.CreateAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.CreateAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  id: CreateAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String,Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(IVaultOperations, String, String, VaultCreateArgs)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.CreateAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, System.String, Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 216
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nCreates a vault\r\n"
+  example: []
+  syntax:
+    content: public static Task<RecoveryServicesOperationStatusResponse> CreateAsync(IVaultOperations operations, string resourceGroupName, string vaultName, VaultCreateArgs vaultCreationInput)
+    content.vb: Public Shared Function CreateAsync(operations As IVaultOperations, resourceGroupName As String, vaultName As String, vaultCreationInput As VaultCreateArgs) As Task(Of RecoveryServicesOperationStatusResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (resource group) cloud service containing\r\nthe job collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nOptional. The name of the vault to create.\r\n"
+    - id: vaultCreationInput
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs
+      description: "\r\nRequired. Vault object to be created\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself.  If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request.  If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request, and also includes error\r\ninformation regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Delete(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Delete(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  id: Delete(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Delete(IVaultOperations, String, String)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Delete(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Delete
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 246
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nDeletes a vault\r\n"
+  example: []
+  syntax:
+    content: public static RecoveryServicesOperationStatusResponse Delete(IVaultOperations operations, string resourceGroupName, string vaultName)
+    content.vb: Public Shared Function Delete(operations As IVaultOperations, resourceGroupName As String, vaultName As String) As RecoveryServicesOperationStatusResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (Resource Group) cloud service containing\r\nthe job collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nRequired. The name of the vault to delete.\r\n"
+    return:
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself.  If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request.  If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request, and also includes error\r\ninformation regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  id: DeleteAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(IVaultOperations, String, String)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 280
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nDeletes a vault\r\n"
+  example: []
+  syntax:
+    content: public static Task<RecoveryServicesOperationStatusResponse> DeleteAsync(IVaultOperations operations, string resourceGroupName, string vaultName)
+    content.vb: Public Shared Function DeleteAsync(operations As IVaultOperations, resourceGroupName As String, vaultName As String) As Task(Of RecoveryServicesOperationStatusResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (Resource Group) cloud service containing\r\nthe job collection.\r\n"
+    - id: vaultName
+      type: System.String
+      description: "\r\nRequired. The name of the vault to delete.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself.  If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request.  If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request, and also includes error\r\ninformation regarding the failure.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Get(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Get(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  id: Get(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(IVaultOperations, String, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.Get(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 302
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nGet the Vaults.\r\n"
+  example: []
+  syntax:
+    content: public static VaultListResponse Get(IVaultOperations operations, string resourceGroupName, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function Get(operations As IVaultOperations, resourceGroupName As String, customRequestHeaders As CustomRequestHeaders) As VaultListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (resource group?) cloud service\r\ncontaining the vault collection.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    return:
+      type: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse
+      description: "\r\nThe response model for Vault.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.GetAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.GetAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  id: GetAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(IVaultOperations, String, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.VaultOperationsExtensions.GetAsync(Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/VaultOperationsExtensions.cs
+    startLine: 328
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecoveryVault
+  summary: "\r\nGet the Vaults.\r\n"
+  example: []
+  syntax:
+    content: public static Task<VaultListResponse> GetAsync(IVaultOperations operations, string resourceGroupName, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function GetAsync(operations As IVaultOperations, resourceGroupName As String, customRequestHeaders As CustomRequestHeaders) As Task(Of VaultListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.SiteRecoveryVault.IVaultOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the (resource group?) cloud service\r\ncontaining the vault collection.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse}
+      description: "\r\nThe response model for Vault.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.SiteRecoveryVault
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecoveryVault
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+  parent: Microsoft.Azure.Management.SiteRecoveryVault
+  isExternal: false
+  name: IVaultOperations
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.IVaultOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.Models
+  isExternal: false
+  name: VaultCreateArgs
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateArgs
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.Models
+  isExternal: false
+  name: VaultCreateResponse
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecoveryVault.Models
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VaultCreateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse)
+  name.vb: Task(Of VaultCreateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse
+    name: VaultCreateResponse
+    fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse
+    name: VaultCreateResponse
+    fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultCreateResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.Models
+  isExternal: false
+  name: RecoveryServicesOperationStatusResponse
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecoveryServicesOperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse)
+  name.vb: Task(Of RecoveryServicesOperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+    name: RecoveryServicesOperationStatusResponse
+    fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+    name: RecoveryServicesOperationStatusResponse
+    fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.RecoveryServicesOperationStatusResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+- uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse
+  parent: Microsoft.Azure.Management.SiteRecoveryVault.Models
+  isExternal: false
+  name: VaultListResponse
+  fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse
+- uid: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery.Models
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VaultListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse)
+  name.vb: Task(Of VaultListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse
+    name: VaultListResponse
+    fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse
+    name: VaultListResponse
+    fullName: Microsoft.Azure.Management.SiteRecoveryVault.Models.VaultListResponse
+  - name: )
+    fullName: )

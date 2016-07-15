@@ -1,0 +1,556 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions
+  id: ReportsOperationsExtensions
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String)
+  - Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String)
+  - Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String)
+  - Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ReportsOperationsExtensions
+  fullName: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReportsOperationsExtensions
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\n.Net client wrapper for the REST API for Azure ApiManagement Service\r\n"
+  example: []
+  syntax:
+    content: public class ReportsOperationsExtensions
+    content.vb: Public Class ReportsOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String)
+  id: List(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IReportsOperations, String, String, ReportsAggregation, QueryParameters, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.IReportsOperations, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nLists report records.\r\n"
+  example: []
+  syntax:
+    content: public static ReportListResponse List(IReportsOperations operations, string resourceGroupName, string serviceName, ReportsAggregation aggregation, QueryParameters query, string interval)
+    content.vb: Public Shared Function List(operations As IReportsOperations, resourceGroupName As String, serviceName As String, aggregation As ReportsAggregation, query As QueryParameters, interval As String) As ReportListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IReportsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: aggregation
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation
+      description: "\r\nRequired. Report aggregation.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+      description: "\r\nOptional.\r\n"
+    - id: interval
+      type: System.String
+      description: "\r\nOptional. By time interval. This value is only applicable to ByTime\r\naggregation. Interval must be multiple of 15 minutes and may not\r\nbe zero. The value should be in ISO  8601 format\r\n(http://en.wikipedia.org/wiki/ISO_8601#Durations).This code can be\r\nused to convert TimSpan to a valid interval string:\r\nXmlConvert.ToString(new TimeSpan(hours, minutes, secconds))\r\n"
+    return:
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+      description: "\r\nList Report records operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String)
+  id: ListAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IReportsOperations, String, String, ReportsAggregation, QueryParameters, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+    startLine: 104
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nLists report records.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ReportListResponse> ListAsync(IReportsOperations operations, string resourceGroupName, string serviceName, ReportsAggregation aggregation, QueryParameters query, string interval)
+    content.vb: Public Shared Function ListAsync(operations As IReportsOperations, resourceGroupName As String, serviceName As String, aggregation As ReportsAggregation, query As QueryParameters, interval As String) As Task(Of ReportListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IReportsOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: aggregation
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation
+      description: "\r\nRequired. Report aggregation.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+      description: "\r\nOptional.\r\n"
+    - id: interval
+      type: System.String
+      description: "\r\nOptional. By time interval. This value is only applicable to ByTime\r\naggregation. Interval must be multiple of 15 minutes and may not\r\nbe zero. The value should be in ISO  8601 format\r\n(http://en.wikipedia.org/wiki/ISO_8601#Durations).This code can be\r\nused to convert TimSpan to a valid interval string:\r\nXmlConvert.ToString(new TimeSpan(hours, minutes, secconds))\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse}
+      description: "\r\nList Report records operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String)
+  id: ListNext(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNext(IReportsOperations, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.IReportsOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNext
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+    startLine: 123
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList report records.\r\n"
+  example: []
+  syntax:
+    content: public static ReportListResponse ListNext(IReportsOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNext(operations As IReportsOperations, nextLink As String) As ReportListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IReportsOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+      description: "\r\nList Report records operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String)
+  id: ListNextAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(IReportsOperations, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.ReportsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.IReportsOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/ReportsOperationsExtensions.cs
+    startLine: 146
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList report records.\r\n"
+  example: []
+  syntax:
+    content: public static Task<ReportListResponse> ListNextAsync(IReportsOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNextAsync(operations As IReportsOperations, nextLink As String) As Task(Of ReportListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.IReportsOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse}
+      description: "\r\nList Report records operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: IReportsOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.IReportsOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: ReportsAggregation
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportsAggregation
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: QueryParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: ReportListResponse
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ReportListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse)
+  name.vb: Task(Of ReportListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+    name: ReportListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+    name: ReportListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ReportListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

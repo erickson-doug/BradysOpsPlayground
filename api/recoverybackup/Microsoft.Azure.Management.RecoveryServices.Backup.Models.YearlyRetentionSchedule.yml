@@ -1,0 +1,580 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule
+  id: YearlyRetentionSchedule
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.#ctor
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.MonthsOfYear
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleDaily
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleFormatType
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleWeekly
+  langs:
+  - csharp
+  - vb
+  name: YearlyRetentionSchedule
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: YearlyRetentionSchedule
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nYearly retention schedule.\r\n"
+  example: []
+  syntax:
+    content: 'public class YearlyRetentionSchedule : RetentionScheduleBase'
+    content.vb: >-
+      Public Class YearlyRetentionSchedule
+
+          Inherits RetentionScheduleBase
+  inheritance:
+  - System.Object
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase
+  inheritedMembers:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase.RetentionDuration
+  - Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase.RetentionTimes
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.MonthsOfYear
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.MonthsOfYear
+  id: MonthsOfYear
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule
+  langs:
+  - csharp
+  - vb
+  name: MonthsOfYear
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.MonthsOfYear
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MonthsOfYear
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. List of months of year of yearly retention policy.\r\nPossible Values: January, February, ..., December.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IList<string> MonthsOfYear
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MonthsOfYear As IList(Of String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleDaily
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleDaily
+  id: RetentionScheduleDaily
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule
+  langs:
+  - csharp
+  - vb
+  name: RetentionScheduleDaily
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleDaily
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RetentionScheduleDaily
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Daily retention format for yearly retention policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DailyRetentionFormat RetentionScheduleDaily
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RetentionScheduleDaily As DailyRetentionFormat
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.DailyRetentionFormat
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleFormatType
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleFormatType
+  id: RetentionScheduleFormatType
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule
+  langs:
+  - csharp
+  - vb
+  name: RetentionScheduleFormatType
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleFormatType
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RetentionScheduleFormatType
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Retention schedule format for yearly retention policy.\r\nPossible values: Daily, Weekly.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string RetentionScheduleFormatType
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RetentionScheduleFormatType As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleWeekly
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleWeekly
+  id: RetentionScheduleWeekly
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule
+  langs:
+  - csharp
+  - vb
+  name: RetentionScheduleWeekly
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.RetentionScheduleWeekly
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RetentionScheduleWeekly
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nOptional. Weekly retention format for yearly retention policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public WeeklyRetentionFormat RetentionScheduleWeekly
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RetentionScheduleWeekly As WeeklyRetentionFormat
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.WeeklyRetentionFormat
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.#ctor
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule
+  langs:
+  - csharp
+  - vb
+  name: YearlyRetentionSchedule()
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.YearlyRetentionSchedule.YearlyRetentionSchedule()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/Models/YearlyRetentionSchedule.cs
+    startLine: 82
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  summary: "\r\nInitializes a new instance of the YearlyRetentionSchedule class.\r\n"
+  example: []
+  syntax:
+    content: public YearlyRetentionSchedule()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: RetentionScheduleBase
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase.RetentionDuration
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase
+  isExternal: false
+  name: RetentionDuration
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase.RetentionDuration
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase.RetentionTimes
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase
+  isExternal: false
+  name: RetentionTimes
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionScheduleBase.RetentionTimes
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<String>
+  fullName: System.Collections.Generic.IList<System.String>
+  fullname.vb: System.Collections.Generic.IList(Of System.String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.DailyRetentionFormat
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: DailyRetentionFormat
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.DailyRetentionFormat
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.WeeklyRetentionFormat
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: WeeklyRetentionFormat
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.WeeklyRetentionFormat

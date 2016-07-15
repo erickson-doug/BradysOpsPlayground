@@ -1,0 +1,189 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+  id: IBackupEngineOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IBackupEngineOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IBackupEngineOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IBackupEngineOperations
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IBackupEngineOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing the backup\r\nengines registered to your Recovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: public interface IBackupEngineOperations
+    content.vb: Public Interface IBackupEngineOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams,Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, BackupEngineListQueryParams, PaginationRequest, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations.ListAsync(System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams, Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IBackupEngineOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/IBackupEngineOperations.cs
+    startLine: 61
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nLists all the backup engines registered to your Recovery Services\r\nVault based on the query parameters and the pagination parameters\r\npassed in the arguments.\r\n"
+  example: []
+  syntax:
+    content: Task<BackupEngineListResponse> ListAsync(string resourceGroupName, string resourceName, BackupEngineListQueryParams queryParams, PaginationRequest paginationParams, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, resourceName As String, queryParams As BackupEngineListQueryParams, paginationParams As PaginationRequest, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of BackupEngineListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nResource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nName of your recovery services vault.\r\n"
+    - id: queryParams
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams
+      description: "\r\nQuery parameters for listing backup engines.\r\n"
+    - id: paginationParams
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+      description: "\r\nPagination parameters for controlling the response.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse}
+      description: "\r\nResponse returned by the list backup engines operation.\r\n"
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: BackupEngineListQueryParams
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListQueryParams
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: PaginationRequest
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.PaginationRequest
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<BackupEngineListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse)
+  name.vb: Task(Of BackupEngineListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+    name: BackupEngineListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+    name: BackupEngineListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackupEngineListResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

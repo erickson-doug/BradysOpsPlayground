@@ -1,0 +1,776 @@
+items:
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  commentId: T:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  id: IExpressRouteCircuitOperations
+  parent: Microsoft.Azure.Management.Network
+  children:
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListAllAsync(System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListArpTableAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListRoutesTableAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListStatsAsync(System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IExpressRouteCircuitOperations
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IExpressRouteCircuitOperations
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Network Resource Provider API includes operations for managing the\r\nExpressRouteCircuits for your subscription.\r\n"
+  example: []
+  syntax:
+    content: public interface IExpressRouteCircuitOperations
+    content.vb: Public Interface IExpressRouteCircuitOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit,System.Threading.CancellationToken)
+  id: BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginCreateOrUpdatingAsync(String, String, ExpressRouteCircuit, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.BeginCreateOrUpdatingAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreateOrUpdatingAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put ExpressRouteCircuit operation creates/updates a\r\nExpressRouteCircuit\r\n"
+  example: []
+  syntax:
+    content: Task<ExpressRouteCircuitPutResponse> BeginCreateOrUpdatingAsync(string resourceGroupName, string circuitName, ExpressRouteCircuit parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginCreateOrUpdatingAsync(resourceGroupName As String, circuitName As String, parameters As ExpressRouteCircuit, cancellationToken As CancellationToken) As Task(Of ExpressRouteCircuitPutResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: circuitName
+      type: System.String
+      description: "\r\nThe name of the circuit.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit
+      description: "\r\nParameters supplied to the create/delete ExpressRouteCircuit\r\noperation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitPutResponse}
+      description: "\r\nResponse of a PUT ExpressRouteCircuit operation\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginDeletingAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.BeginDeletingAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeletingAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe delete ExpressRouteCircuit operation deletes the specified\r\nExpressRouteCircuit.\r\n"
+  example: []
+  syntax:
+    content: Task<UpdateOperationResponse> BeginDeletingAsync(string resourceGroupName, string circuitName, CancellationToken cancellationToken)
+    content.vb: Function BeginDeletingAsync(resourceGroupName As String, circuitName As String, cancellationToken As CancellationToken) As Task(Of UpdateOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: circuitName
+      type: System.String
+      description: "\r\nThe name of the express route Circuit.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.UpdateOperationResponse}
+      description: "\r\nIf the resource provide needs to return an error to any operation,\r\nit should return the appropriate HTTP error code and a message\r\nbody as can be seen below.The message should be localized per the\r\nAccept-Language header specified in the original request such\r\nthatit could be directly be exposed to users\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, String, ExpressRouteCircuit, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.CreateOrUpdateAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 108
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put ExpressRouteCircuit operation creates/updates a\r\nExpressRouteCircuit\r\n"
+  example: []
+  syntax:
+    content: Task<AzureAsyncOperationResponse> CreateOrUpdateAsync(string resourceGroupName, string circuitName, ExpressRouteCircuit parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, circuitName As String, parameters As ExpressRouteCircuit, cancellationToken As CancellationToken) As Task(Of AzureAsyncOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: circuitName
+      type: System.String
+      description: "\r\nThe name of the ExpressRouteCircuit.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit
+      description: "\r\nParameters supplied to the create/update ExpressRouteCircuit\r\noperation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.DeleteAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 123
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string circuitName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, circuitName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: circuitName
+      type: System.String
+      description: "\r\nThe name of the express route circuit.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.GetAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 141
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Get ExpressRouteCircuit operation retreives information about\r\nthe specified ExpressRouteCircuit.\r\n"
+  example: []
+  syntax:
+    content: Task<ExpressRouteCircuitGetResponse> GetAsync(string resourceGroupName, string circuitName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, circuitName As String, cancellationToken As CancellationToken) As Task(Of ExpressRouteCircuitGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: circuitName
+      type: System.String
+      description: "\r\nThe name of the circuit.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitGetResponse}
+      description: "\r\nResponse of a GET ExpressRouteCircuit operation\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 156
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe List ExpressRouteCircuit opertion retrieves all the\r\nExpressRouteCircuits in a resource group.\r\n"
+  example: []
+  syntax:
+    content: Task<ExpressRouteCircuitListResponse> ListAsync(string resourceGroupName, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, cancellationToken As CancellationToken) As Task(Of ExpressRouteCircuitListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse}
+      description: "\r\nResponse for ListExpressRouteCircuit Api service call\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListAllAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListAllAsync(System.Threading.CancellationToken)
+  id: ListAllAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAllAsync(CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListAllAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAllAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 168
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe List ExpressRouteCircuit opertion retrieves all the\r\nExpressRouteCircuits in a subscription.\r\n"
+  example: []
+  syntax:
+    content: Task<ExpressRouteCircuitListResponse> ListAllAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAllAsync(cancellationToken As CancellationToken) As Task(Of ExpressRouteCircuitListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse}
+      description: "\r\nResponse for ListExpressRouteCircuit Api service call\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListArpTableAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListArpTableAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListArpTableAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: ListArpTableAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListArpTableAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListArpTableAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 188
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe ListArpTable from ExpressRouteCircuit opertion retrieves the\r\ncurrently advertised arp table associated with the\r\nExpressRouteCircuits in a resource group.\r\n"
+  example: []
+  syntax:
+    content: Task<ExpressRouteCircuitsArpTableListResponse> ListArpTableAsync(string resourceGroupName, string circuitName, CancellationToken cancellationToken)
+    content.vb: Function ListArpTableAsync(resourceGroupName As String, circuitName As String, cancellationToken As CancellationToken) As Task(Of ExpressRouteCircuitsArpTableListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: circuitName
+      type: System.String
+      description: "\r\nThe name of the circuit.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsArpTableListResponse}
+      description: "\r\nResponse for ListArpTable associated with the Express Route\r\nCircuits Api\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListRoutesTableAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListRoutesTableAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListRoutesTableAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: ListRoutesTableAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListRoutesTableAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListRoutesTableAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 208
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe ListRoutesTable from ExpressRouteCircuit opertion retrieves the\r\ncurrently advertised routes table associated with the\r\nExpressRouteCircuits in a resource group.\r\n"
+  example: []
+  syntax:
+    content: Task<ExpressRouteCircuitsRoutesTableListResponse> ListRoutesTableAsync(string resourceGroupName, string circuitName, CancellationToken cancellationToken)
+    content.vb: Function ListRoutesTableAsync(resourceGroupName As String, circuitName As String, cancellationToken As CancellationToken) As Task(Of ExpressRouteCircuitsRoutesTableListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: circuitName
+      type: System.String
+      description: "\r\nThe name of the circuit.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsRoutesTableListResponse}
+      description: "\r\nResponse for ListRoutesTable associated with the Express Route\r\nCircuits Api\r\n"
+- uid: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListStatsAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListStatsAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListStatsAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations
+  langs:
+  - csharp
+  - vb
+  name: ListStatsAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IExpressRouteCircuitOperations.ListStatsAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListStatsAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IExpressRouteCircuitOperations.cs
+    startLine: 226
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Liststats ExpressRouteCircuit opertion retrieves all the stats\r\nfrom a ExpressRouteCircuits in a resource group.\r\n"
+  example: []
+  syntax:
+    content: Task<ExpressRouteCircuitsStatsListResponse> ListStatsAsync(string resourceGroupName, string circuitName, CancellationToken cancellationToken)
+    content.vb: Function ListStatsAsync(resourceGroupName As String, circuitName As String, cancellationToken As CancellationToken) As Task(Of ExpressRouteCircuitsStatsListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: circuitName
+      type: System.String
+      description: "\r\nThe name of the loadBalancer.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsStatsListResponse}
+      description: "\r\nResponse for ListStats from Express Route Circuits Api service call\r\n"
+references:
+- uid: Microsoft.Azure.Management.Network
+  isExternal: false
+  name: Microsoft.Azure.Management.Network
+  fullName: Microsoft.Azure.Management.Network
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: ExpressRouteCircuit
+  fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuit
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitPutResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ExpressRouteCircuitPutResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitPutResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitPutResponse)
+  name.vb: Task(Of ExpressRouteCircuitPutResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitPutResponse
+    name: ExpressRouteCircuitPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitPutResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitPutResponse
+    name: ExpressRouteCircuitPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitPutResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Network.Models
+  fullName: Microsoft.Azure.Management.Network.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.UpdateOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<UpdateOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.UpdateOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.UpdateOperationResponse)
+  name.vb: Task(Of UpdateOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+    name: UpdateOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+    name: UpdateOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureAsyncOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse)
+  name.vb: Task(Of AzureAsyncOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+    name: AzureAsyncOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+    name: AzureAsyncOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ExpressRouteCircuitGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitGetResponse)
+  name.vb: Task(Of ExpressRouteCircuitGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitGetResponse
+    name: ExpressRouteCircuitGetResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitGetResponse
+    name: ExpressRouteCircuitGetResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ExpressRouteCircuitListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse)
+  name.vb: Task(Of ExpressRouteCircuitListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse
+    name: ExpressRouteCircuitListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse
+    name: ExpressRouteCircuitListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsArpTableListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ExpressRouteCircuitsArpTableListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsArpTableListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsArpTableListResponse)
+  name.vb: Task(Of ExpressRouteCircuitsArpTableListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsArpTableListResponse
+    name: ExpressRouteCircuitsArpTableListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsArpTableListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsArpTableListResponse
+    name: ExpressRouteCircuitsArpTableListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsArpTableListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsRoutesTableListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ExpressRouteCircuitsRoutesTableListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsRoutesTableListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsRoutesTableListResponse)
+  name.vb: Task(Of ExpressRouteCircuitsRoutesTableListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsRoutesTableListResponse
+    name: ExpressRouteCircuitsRoutesTableListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsRoutesTableListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsRoutesTableListResponse
+    name: ExpressRouteCircuitsRoutesTableListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsRoutesTableListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsStatsListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ExpressRouteCircuitsStatsListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsStatsListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsStatsListResponse)
+  name.vb: Task(Of ExpressRouteCircuitsStatsListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsStatsListResponse
+    name: ExpressRouteCircuitsStatsListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsStatsListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsStatsListResponse
+    name: ExpressRouteCircuitsStatsListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ExpressRouteCircuitsStatsListResponse
+  - name: )
+    fullName: )

@@ -1,0 +1,146 @@
+items:
+- uid: Microsoft.Azure.Management.Storage.IUsageOperations
+  commentId: T:Microsoft.Azure.Management.Storage.IUsageOperations
+  id: IUsageOperations
+  parent: Microsoft.Azure.Management.Storage
+  children:
+  - Microsoft.Azure.Management.Storage.IUsageOperations.ListAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IUsageOperations
+  fullName: Microsoft.Azure.Management.Storage.IUsageOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/IUsageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IUsageOperations
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/IUsageOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage
+  summary: "\r\nOperations for listing usage.\r\n"
+  example: []
+  syntax:
+    content: public interface IUsageOperations
+    content.vb: Public Interface IUsageOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Storage.IUsageOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Storage.IUsageOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Storage.IUsageOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.Azure.Management.Storage.IUsageOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Storage/StorageManagement/Generated/IUsageOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Storage/StorageManagement/Generated/IUsageOperations.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.Azure.Management.Storage
+  namespace: Microsoft.Azure.Management.Storage
+  summary: "\r\nGets the current usage count and the limit for the resources under\r\nthe subscription.\r\n"
+  example: []
+  syntax:
+    content: Task<UsageListResponse> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of UsageListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Storage.Models.UsageListResponse}
+      description: "\r\nThe List Usages operation response.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Storage
+  isExternal: false
+  name: Microsoft.Azure.Management.Storage
+  fullName: Microsoft.Azure.Management.Storage
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Storage.Models.UsageListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<UsageListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Storage.Models.UsageListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Storage.Models.UsageListResponse)
+  name.vb: Task(Of UsageListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Storage.Models.UsageListResponse
+    name: UsageListResponse
+    fullName: Microsoft.Azure.Management.Storage.Models.UsageListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Storage.Models.UsageListResponse
+    name: UsageListResponse
+    fullName: Microsoft.Azure.Management.Storage.Models.UsageListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

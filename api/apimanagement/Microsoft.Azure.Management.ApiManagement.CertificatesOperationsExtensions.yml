@@ -1,0 +1,927 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  id: CertificatesOperationsExtensions
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters,System.String)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters,System.String)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.Delete(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.Get(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String)
+  - Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CertificatesOperationsExtensions
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CertificatesOperationsExtensions
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\n.Net client wrapper for the REST API for Azure ApiManagement Service\r\n"
+  example: []
+  syntax:
+    content: public class CertificatesOperationsExtensions
+    content.vb: Public Class CertificatesOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters,System.String)
+  id: CreateOrUpdate(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdate(ICertificatesOperations, String, String, String, CertificateCreateOrUpdateParameters, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdate
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nCreates new or update existing certificate.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse CreateOrUpdate(ICertificatesOperations operations, string resourceGroupName, string serviceName, string certificateId, CertificateCreateOrUpdateParameters parameters, string etag)
+    content.vb: Public Shared Function CreateOrUpdate(operations As ICertificatesOperations, resourceGroupName As String, serviceName As String, certificateId As String, parameters As CertificateCreateOrUpdateParameters, etag As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: certificateId
+      type: System.String
+      description: "\r\nRequired. Identifier of the subscription.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters
+      description: "\r\nRequired. Create parameters.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nOptional. ETag.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters,System.String)
+  id: CreateOrUpdateAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(ICertificatesOperations, String, String, String, CertificateCreateOrUpdateParameters, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 97
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nCreates new or update existing certificate.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> CreateOrUpdateAsync(ICertificatesOperations operations, string resourceGroupName, string serviceName, string certificateId, CertificateCreateOrUpdateParameters parameters, string etag)
+    content.vb: Public Shared Function CreateOrUpdateAsync(operations As ICertificatesOperations, resourceGroupName As String, serviceName As String, certificateId As String, parameters As CertificateCreateOrUpdateParameters, etag As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: certificateId
+      type: System.String
+      description: "\r\nRequired. Identifier of the subscription.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters
+      description: "\r\nRequired. Create parameters.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nOptional. ETag.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.Delete(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.Delete(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,System.String)
+  id: Delete(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Delete(ICertificatesOperations, String, String, String, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.Delete(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Delete
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 125
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nDeletes specific certificate.\r\n"
+  example: []
+  syntax:
+    content: public static AzureOperationResponse Delete(ICertificatesOperations operations, string resourceGroupName, string serviceName, string certificateId, string etag)
+    content.vb: Public Shared Function Delete(operations As ICertificatesOperations, resourceGroupName As String, serviceName As String, certificateId As String, etag As String) As AzureOperationResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: certificateId
+      type: System.String
+      description: "\r\nRequired. Identifier of the certificate.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nRequired. ETag.\r\n"
+    return:
+      type: AzureOperationResponse
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,System.String)
+  id: DeleteAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(ICertificatesOperations, String, String, String, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 157
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nDeletes specific certificate.\r\n"
+  example: []
+  syntax:
+    content: public static Task<AzureOperationResponse> DeleteAsync(ICertificatesOperations operations, string resourceGroupName, string serviceName, string certificateId, string etag)
+    content.vb: Public Shared Function DeleteAsync(operations As ICertificatesOperations, resourceGroupName As String, serviceName As String, certificateId As String, etag As String) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: certificateId
+      type: System.String
+      description: "\r\nRequired. Identifier of the certificate.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nRequired. ETag.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.Get(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.Get(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String)
+  id: Get(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(ICertificatesOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.Get(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 181
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nGets specific certificate.\r\n"
+  example: []
+  syntax:
+    content: public static CertificateGetResponse Get(ICertificatesOperations operations, string resourceGroupName, string serviceName, string certificateId)
+    content.vb: Public Shared Function Get(operations As ICertificatesOperations, resourceGroupName As String, serviceName As String, certificateId As String) As CertificateGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: certificateId
+      type: System.String
+      description: "\r\nRequired. Identifier of the certificate.\r\n"
+    return:
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse
+      description: "\r\nGet Certificate operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String)
+  id: GetAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(ICertificatesOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.GetAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 209
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nGets specific certificate.\r\n"
+  example: []
+  syntax:
+    content: public static Task<CertificateGetResponse> GetAsync(ICertificatesOperations operations, string resourceGroupName, string serviceName, string certificateId)
+    content.vb: Public Shared Function GetAsync(operations As ICertificatesOperations, resourceGroupName As String, serviceName As String, certificateId As String) As Task(Of CertificateGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: certificateId
+      type: System.String
+      description: "\r\nRequired. Identifier of the certificate.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse}
+      description: "\r\nGet Certificate operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  id: List(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(ICertificatesOperations, String, String, QueryParameters)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.List(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 230
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  example: []
+  syntax:
+    content: public static CertificateListResponse List(ICertificatesOperations operations, string resourceGroupName, string serviceName, QueryParameters query)
+    content.vb: Public Shared Function List(operations As ICertificatesOperations, resourceGroupName As String, serviceName As String, query As QueryParameters) As CertificateListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+      description: "\r\nOptional.\r\n"
+    return:
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse
+      description: "\r\nList Certificates operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  id: ListAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(ICertificatesOperations, String, String, QueryParameters)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 255
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  example: []
+  syntax:
+    content: public static Task<CertificateListResponse> ListAsync(ICertificatesOperations operations, string resourceGroupName, string serviceName, QueryParameters query)
+    content.vb: Public Shared Function ListAsync(operations As ICertificatesOperations, resourceGroupName As String, serviceName As String, query As QueryParameters) As Task(Of CertificateListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nRequired. The name of the Api Management service.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+      description: "\r\nOptional.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse}
+      description: "\r\nList Certificates operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String)
+  id: ListNext(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNext(ICertificatesOperations, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListNext(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNext
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 274
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all certificates of the Api Management service instance.\r\n"
+  example: []
+  syntax:
+    content: public static CertificateListResponse ListNext(ICertificatesOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNext(operations As ICertificatesOperations, nextLink As String) As CertificateListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse
+      description: "\r\nList Certificates operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String)
+  id: ListNextAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations,System.String)
+  parent: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(ICertificatesOperations, String)
+  fullName: Microsoft.Azure.Management.ApiManagement.CertificatesOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.ApiManagement.ICertificatesOperations, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/CertificatesOperationsExtensions.cs
+    startLine: 297
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all certificates of the Api Management service instance.\r\n"
+  example: []
+  syntax:
+    content: public static Task<CertificateListResponse> ListNextAsync(ICertificatesOperations operations, string nextLink)
+    content.vb: Public Shared Function ListNextAsync(operations As ICertificatesOperations, nextLink As String) As Task(Of CertificateListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.ApiManagement.ICertificatesOperations.\r\n"
+    - id: nextLink
+      type: System.String
+      description: "\r\nRequired. NextLink from the previous successful call to List\r\noperation.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse}
+      description: "\r\nList Certificates operation response details.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: ICertificatesOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.ICertificatesOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: CertificateCreateOrUpdateParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateCreateOrUpdateParameters
+- uid: AzureOperationResponse
+  isExternal: true
+  name: AzureOperationResponse
+  fullName: AzureOperationResponse
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: CertificateGetResponse
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<CertificateGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse)
+  name.vb: Task(Of CertificateGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse
+    name: CertificateGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse
+    name: CertificateGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateGetResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: QueryParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: CertificateListResponse
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<CertificateListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse)
+  name.vb: Task(Of CertificateListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse
+    name: CertificateListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse
+    name: CertificateListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.CertificateListResponse
+  - name: )
+    fullName: )

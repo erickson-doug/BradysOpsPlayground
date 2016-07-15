@@ -1,0 +1,146 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.IResourceGroupsOperations
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.IResourceGroupsOperations
+  id: IResourceGroupsOperations
+  parent: Microsoft.Azure.Management.RecoveryServices
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.IResourceGroupsOperations.ListAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IResourceGroupsOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.IResourceGroupsOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices/RecoveryServicesManagement/Generated/IResourceGroupsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IResourceGroupsOperations
+    path: src/src/ResourceManagement/RecoveryServices/RecoveryServicesManagement/Generated/IResourceGroupsOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices
+  namespace: Microsoft.Azure.Management.RecoveryServices
+  summary: "\r\nDefinition of cloud service operations for the Recovery services\r\nextension.\r\n"
+  example: []
+  syntax:
+    content: public interface IResourceGroupsOperations
+    content.vb: Public Interface IResourceGroupsOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.RecoveryServices.IResourceGroupsOperations.ListAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.IResourceGroupsOperations.ListAsync(System.Threading.CancellationToken)
+  id: ListAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.IResourceGroupsOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.IResourceGroupsOperations.ListAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices/RecoveryServicesManagement/Generated/IResourceGroupsOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/RecoveryServices/RecoveryServicesManagement/Generated/IResourceGroupsOperations.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices
+  namespace: Microsoft.Azure.Management.RecoveryServices
+  summary: "\r\nRetrieve a list of Resource Groups\r\n"
+  example: []
+  syntax:
+    content: Task<ResourceGroupListResponse> ListAsync(CancellationToken cancellationToken)
+    content.vb: Function ListAsync(cancellationToken As CancellationToken) As Task(Of ResourceGroupListResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Models.ResourceGroupListResponse}
+      description: "\r\nThe response model for the list resource group operation.\r\n"
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices
+  fullName: Microsoft.Azure.Management.RecoveryServices
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Models.ResourceGroupListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ResourceGroupListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Models.ResourceGroupListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Models.ResourceGroupListResponse)
+  name.vb: Task(Of ResourceGroupListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Models.ResourceGroupListResponse
+    name: ResourceGroupListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Models.ResourceGroupListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Models.ResourceGroupListResponse
+    name: ResourceGroupListResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Models.ResourceGroupListResponse
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

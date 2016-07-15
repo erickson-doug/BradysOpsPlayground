@@ -1,0 +1,913 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_Dns_IRecordSetOperations">
+          <span class="lang-csharp">IRecordSetOperations</span>
+          <span class="lang-vb">IRecordSetOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.Dns.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>Operations for managing the RecordSets in a DNS zone.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Dns_IRecordSetOperations_CreateOrUpdateAsync_System_String_System_String_System_String_Microsoft_Azure_Management_Dns_Models_RecordType_Microsoft_Azure_Management_Dns_Models_RecordSetCreateOrUpdateParameters_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdateAsync(String, String, String, RecordType, RecordSetCreateOrUpdateParameters, String, String, CancellationToken)</code>
+          <code class="lang-vb">CreateOrUpdateAsync(String, String, String, RecordType, RecordSetCreateOrUpdateParameters, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a RecordSet within a DNS zone.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;RecordSetCreateOrUpdateResponse&gt; CreateOrUpdateAsync(string resourceGroupName, string zoneName, string relativeRecordSetName, RecordType recordType, RecordSetCreateOrUpdateParameters parameters, string ifMatch, string ifNoneMatch, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateOrUpdateAsync(resourceGroupName As String, zoneName As String, relativeRecordSetName As String, recordType As RecordType, parameters As RecordSetCreateOrUpdateParameters, ifMatch As String, ifNoneMatch As String, cancellationToken As CancellationToken) As Task(Of RecordSetCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>zoneName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the zone without a terminating dot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>relativeRecordSetName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the RecordSet, relative to the name of the zone.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>recordType</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The type of DNS record.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters.html#Microsoft_Azure_Management_Dns_Models_RecordSetCreateOrUpdateParameters">RecordSetCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateParameters.html#Microsoft_Azure_Management_Dns_Models_RecordSetCreateOrUpdateParameters">RecordSetCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the CreateOrUpdate operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>ifMatch</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The etag of RecordSet.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>ifNoneMatch</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Defines the If-None-Match condition. Set to &#39;*&#39; to force
+Create-If-Not-Exist. Other values will be ignored.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetCreateOrUpdateResponse">RecordSetCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetCreateOrUpdateResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetCreateOrUpdateResponse">RecordSetCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response to a RecordSet CreateOrUpdate operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Dns_IRecordSetOperations_DeleteAsync_System_String_System_String_System_String_Microsoft_Azure_Management_Dns_Models_RecordType_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, String, String, RecordType, String, String, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, String, String, RecordType, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Removes a RecordSet from a DNS zone.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteAsync(string resourceGroupName, string zoneName, string relativeRecordSetName, RecordType recordType, string ifMatch, string ifNoneMatch, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(resourceGroupName As String, zoneName As String, relativeRecordSetName As String, recordType As RecordType, ifMatch As String, ifNoneMatch As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>zoneName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the zone without a terminating dot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>relativeRecordSetName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the RecordSet, relative to the name of the zone.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>recordType</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The type of DNS record.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>ifMatch</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Defines the If-Match condition. The delete operation will be
+performed only if the ETag of the zone on the server matches this
+value.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>ifNoneMatch</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Defines the If-None-Match condition. The delete operation will be
+performed only if the ETag of the zone on the server does not
+match this value.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Dns_IRecordSetOperations_GetAsync_System_String_System_String_System_String_Microsoft_Azure_Management_Dns_Models_RecordType_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, String, String, RecordType, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, String, String, RecordType, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets a RecordSet.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;RecordSetGetResponse&gt; GetAsync(string resourceGroupName, string zoneName, string relativeRecordSetName, RecordType recordType, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(resourceGroupName As String, zoneName As String, relativeRecordSetName As String, recordType As RecordType, cancellationToken As CancellationToken) As Task(Of RecordSetGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>zoneName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the zone without a terminating dot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>relativeRecordSetName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the RecordSet, relative to the name of the zone.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>recordType</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The type of DNS record.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetGetResponse">RecordSetGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetGetResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetGetResponse">RecordSetGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response to a RecordSet Get operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Dns_IRecordSetOperations_ListAllAsync_System_String_System_String_Microsoft_Azure_Management_Dns_Models_RecordSetListParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAllAsync(String, String, RecordSetListParameters, CancellationToken)</code>
+          <code class="lang-vb">ListAllAsync(String, String, RecordSetListParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Lists all RecordSets in a DNS zone.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;RecordSetListResponse&gt; ListAllAsync(string resourceGroupName, string zoneName, RecordSetListParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAllAsync(resourceGroupName As String, zoneName As String, parameters As RecordSetListParameters, cancellationToken As CancellationToken) As Task(Of RecordSetListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group that contains the zone.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>zoneName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the zone from which to enumerate RecordSets.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListParameters.html#Microsoft_Azure_Management_Dns_Models_RecordSetListParameters">RecordSetListParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListParameters.html#Microsoft_Azure_Management_Dns_Models_RecordSetListParameters">RecordSetListParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Query parameters. If null is passed returns the default number of
+zones.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetListResponse">RecordSetListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetListResponse">RecordSetListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response to a RecordSet List operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Dns_IRecordSetOperations_ListAsync_System_String_System_String_Microsoft_Azure_Management_Dns_Models_RecordType_Microsoft_Azure_Management_Dns_Models_RecordSetListParameters_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(String, String, RecordType, RecordSetListParameters, CancellationToken)</code>
+          <code class="lang-vb">ListAsync(String, String, RecordType, RecordSetListParameters, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Lists the RecordSets of a specified type in a DNS zone.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;RecordSetListResponse&gt; ListAsync(string resourceGroupName, string zoneName, RecordType recordType, RecordSetListParameters parameters, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(resourceGroupName As String, zoneName As String, recordType As RecordType, parameters As RecordSetListParameters, cancellationToken As CancellationToken) As Task(Of RecordSetListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group that contains the zone.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>zoneName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the zone from which to enumerate RecordsSets.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>recordType</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The type of record sets to enumerate.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListParameters.html#Microsoft_Azure_Management_Dns_Models_RecordSetListParameters">RecordSetListParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListParameters.html#Microsoft_Azure_Management_Dns_Models_RecordSetListParameters">RecordSetListParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Query parameters. If null is passed returns the default number of
+zones.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetListResponse">RecordSetListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetListResponse">RecordSetListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response to a RecordSet List operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Dns_IRecordSetOperations_ListNextAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListNextAsync(String, CancellationToken)</code>
+          <code class="lang-vb">ListNextAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Lists RecordSets in a DNS zone. Depending on the previous call, it
+will list all types or by type.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;RecordSetListResponse&gt; ListNextAsync(string nextLink, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of RecordSetListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>nextLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>NextLink from the previous successful call to List operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetListResponse">RecordSetListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetListResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetListResponse">RecordSetListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response to a RecordSet List operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Dns_IRecordSetOperations_UpdateAsync_System_String_System_String_System_String_Microsoft_Azure_Management_Dns_Models_RecordType_Microsoft_Azure_Management_Dns_Models_RecordSetUpdateParameters_System_String_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UpdateAsync(String, String, String, RecordType, RecordSetUpdateParameters, String, String, CancellationToken)</code>
+          <code class="lang-vb">UpdateAsync(String, String, String, RecordType, RecordSetUpdateParameters, String, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a RecordSet within a DNS zone.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;RecordSetUpdateResponse&gt; UpdateAsync(string resourceGroupName, string zoneName, string relativeRecordSetName, RecordType recordType, RecordSetUpdateParameters parameters, string ifMatch, string ifNoneMatch, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UpdateAsync(resourceGroupName As String, zoneName As String, relativeRecordSetName As String, recordType As RecordType, parameters As RecordSetUpdateParameters, ifMatch As String, ifNoneMatch As String, cancellationToken As CancellationToken) As Task(Of RecordSetUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>zoneName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the zone without a terminating dot.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>relativeRecordSetName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The name of the RecordSet, relative to the name of the zone.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>recordType</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordType.html#Microsoft_Azure_Management_Dns_Models_RecordType">RecordType</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The type of DNS record.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters.html#Microsoft_Azure_Management_Dns_Models_RecordSetUpdateParameters">RecordSetUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetUpdateParameters.html#Microsoft_Azure_Management_Dns_Models_RecordSetUpdateParameters">RecordSetUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Parameters supplied to the CreateOrUpdate operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>ifMatch</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The etag of Zone.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>ifNoneMatch</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Defines the If-None-Match condition. Set to &#39;*&#39; to force
+Create-If-Not-Exist. Other values will be ignored.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetUpdateResponse">RecordSetUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Dns.Models.RecordSetUpdateResponse.html#Microsoft_Azure_Management_Dns_Models_RecordSetUpdateResponse">RecordSetUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response to a RecordSet Update operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

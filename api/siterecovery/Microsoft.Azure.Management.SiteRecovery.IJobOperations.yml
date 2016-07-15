@@ -1,0 +1,787 @@
+items:
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  commentId: T:Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  id: IJobOperations
+  parent: Microsoft.Azure.Management.SiteRecovery
+  children:
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginCancellingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginExportingAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginRestartingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginResumingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.CancelAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.ExportAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetCancelStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetExportStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetRestartStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetResumeStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.ListAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.RestartAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.IJobOperations.ResumeAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IJobOperations
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IJobOperations
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nDefinition for Job Operations.\r\n"
+  example: []
+  syntax:
+    content: public interface IJobOperations
+    content.vb: Public Interface IJobOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginCancellingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginCancellingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: BeginCancellingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginCancellingAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginCancellingAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCancellingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nCancel the job .\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> BeginCancellingAsync(string jobName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function BeginCancellingAsync(jobName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nJob Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginExportingAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginExportingAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: BeginExportingAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginExportingAsync(JobQueryParameter, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginExportingAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginExportingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 66
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nExport jobs to blob.\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> BeginExportingAsync(JobQueryParameter parameters, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function BeginExportingAsync(parameters As JobQueryParameter, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter
+      description: "\r\nJob Query Filters\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginRestartingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginRestartingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: BeginRestartingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginRestartingAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginRestartingAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginRestartingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 83
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nRestart the job .\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> BeginRestartingAsync(string jobName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function BeginRestartingAsync(jobName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nJob Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginResumingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginResumingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: BeginResumingAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginResumingAsync(String, ResumeJobParams, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.BeginResumingAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginResumingAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 103
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nResume the job .\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> BeginResumingAsync(string jobId, ResumeJobParams resumeJobParameters, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function BeginResumingAsync(jobId As String, resumeJobParameters As ResumeJobParams, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: jobId
+      type: System.String
+      description: "\r\nJob ID.\r\n"
+    - id: resumeJobParameters
+      type: Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams
+      description: "\r\nResume job parameters.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.CancelAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.CancelAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: CancelAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: CancelAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.CancelAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CancelAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 120
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nCancel the job .\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> CancelAsync(string jobName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function CancelAsync(jobName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nJob Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.ExportAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.ExportAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ExportAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: ExportAsync(JobQueryParameter, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.ExportAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExportAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 137
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nExport jobs to blob.\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> ExportAsync(JobQueryParameter parameters, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ExportAsync(parameters As JobQueryParameter, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter
+      description: "\r\nJob Query Filters\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 154
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGet the job details.\r\n"
+  example: []
+  syntax:
+    content: Task<JobResponse> GetAsync(string jobId, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(jobId As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of JobResponse)
+    parameters:
+    - id: jobId
+      type: System.String
+      description: "\r\nJob ID.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobResponse}
+      description: "\r\nThe response model for the Job details object.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetCancelStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetCancelStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetCancelStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: GetCancelStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetCancelStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetCancelStatusAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 171
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<JobOperationResponse> GetCancelStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetCancelStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of JobOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetExportStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetExportStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetExportStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: GetExportStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetExportStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetExportStatusAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 188
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<JobOperationResponse> GetExportStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetExportStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of JobOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetRestartStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetRestartStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetRestartStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: GetRestartStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetRestartStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetRestartStatusAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 205
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<JobOperationResponse> GetRestartStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetRestartStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of JobOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetResumeStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetResumeStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetResumeStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: GetResumeStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.GetResumeStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetResumeStatusAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 222
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nThe Get Operation Status operation returns the status of the\r\nspecified operation. After calling an asynchronous operation, you\r\ncan call Get Operation Status to determine whether the operation\r\nhas succeeded, failed, or is still in progress.\r\n"
+  example: []
+  syntax:
+    content: Task<JobOperationResponse> GetResumeStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetResumeStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of JobOperationResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.ListAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.ListAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(JobQueryParameter, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.ListAsync(Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 239
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGet the list of all jobs.\r\n"
+  example: []
+  syntax:
+    content: Task<JobListResponse> ListAsync(JobQueryParameter parameters, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(parameters As JobQueryParameter, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of JobListResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter
+      description: "\r\nJob query parameter.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobListResponse}
+      description: "\r\nThe response model for the list Jobs operation.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.RestartAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.RestartAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: RestartAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: RestartAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.RestartAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RestartAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 256
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nRestart the job .\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> RestartAsync(string jobName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function RestartAsync(jobName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: jobName
+      type: System.String
+      description: "\r\nJob Name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.IJobOperations.ResumeAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.IJobOperations.ResumeAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ResumeAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.IJobOperations
+  langs:
+  - csharp
+  - vb
+  name: ResumeAsync(String, ResumeJobParams, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.IJobOperations.ResumeAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ResumeAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/IJobOperations.cs
+    startLine: 276
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nResume the job .\r\n"
+  example: []
+  syntax:
+    content: Task<LongRunningOperationResponse> ResumeAsync(string jobId, ResumeJobParams resumeJobParameters, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ResumeAsync(jobId As String, resumeJobParameters As ResumeJobParams, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LongRunningOperationResponse)
+    parameters:
+    - id: jobId
+      type: System.String
+      description: "\r\nJob ID.\r\n"
+    - id: resumeJobParameters
+      type: Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams
+      description: "\r\nResume job parameters.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+      description: "\r\nA standard service response for long running operations.\r\n"
+references:
+- uid: Microsoft.Azure.Management.SiteRecovery
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery
+  fullName: Microsoft.Azure.Management.SiteRecovery
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<LongRunningOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse)
+  name.vb: Task(Of LongRunningOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse
+    name: LongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse
+    name: LongRunningOperationResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.LongRunningOperationResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery.Models
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: JobQueryParameter
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.JobQueryParameter
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: ResumeJobParams
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.ResumeJobParams
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<JobResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.JobResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.JobResponse)
+  name.vb: Task(Of JobResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.JobResponse
+    name: JobResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.JobResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.JobResponse
+    name: JobResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.JobResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<JobOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse)
+  name.vb: Task(Of JobOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse
+    name: JobOperationResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse
+    name: JobOperationResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.JobOperationResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.JobListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<JobListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.JobListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.JobListResponse)
+  name.vb: Task(Of JobListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.JobListResponse
+    name: JobListResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.JobListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.JobListResponse
+    name: JobListResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.JobListResponse
+  - name: )
+    fullName: )

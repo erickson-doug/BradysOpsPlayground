@@ -1,0 +1,330 @@
+items:
+- uid: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  commentId: T:Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  id: IDatabaseActivationOperations
+  parent: Microsoft.Azure.Management.Sql
+  children:
+  - Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.BeginPauseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.BeginResumeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.GetDatabaseActivationOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.PauseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.ResumeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDatabaseActivationOperations
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IDatabaseActivationOperations
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating pertaining to activation on\r\nAzure SQL Data Warehouse databases. Contains operations to: Pause and\r\nResume databases\r\n"
+  example: []
+  syntax:
+    content: public interface IDatabaseActivationOperations
+    content.vb: Public Interface IDatabaseActivationOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.BeginPauseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.BeginPauseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: BeginPauseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginPauseAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.BeginPauseAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginPauseAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nStart an Azure SQL Data Warehouse database pause operation.To\r\ndetermine the status of the operation call\r\nGetDatabaseActivationOperationStatus.\r\n"
+  example: []
+  syntax:
+    content: Task<DatabaseCreateOrUpdateResponse> BeginPauseAsync(string resourceGroupName, string serverName, string databaseName, CancellationToken cancellationToken)
+    content.vb: Function BeginPauseAsync(resourceGroupName As String, serverName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server on which the data warehouse\r\ndatabase is hosted.\r\n"
+    - id: databaseName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Data Warehouse database to pause.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure Sql Database operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.BeginResumeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.BeginResumeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: BeginResumeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginResumeAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.BeginResumeAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginResumeAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+    startLine: 82
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nStart an Azure SQL Data Warehouse database resume operation. To\r\ndetermine the status of the operation call\r\nGetDatabaseActivationOperationStatus.\r\n"
+  example: []
+  syntax:
+    content: Task<DatabaseCreateOrUpdateResponse> BeginResumeAsync(string resourceGroupName, string serverName, string databaseName, CancellationToken cancellationToken)
+    content.vb: Function BeginResumeAsync(resourceGroupName As String, serverName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server on which the data warehouse\r\ndatabase is hosted.\r\n"
+    - id: databaseName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Data Warehouse database to resume.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure Sql Database operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.GetDatabaseActivationOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.GetDatabaseActivationOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetDatabaseActivationOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  langs:
+  - csharp
+  - vb
+  name: GetDatabaseActivationOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.GetDatabaseActivationOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDatabaseActivationOperationStatusAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+    startLine: 97
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets the status of an Azure SQL Data Warehouse Database pause or\r\nresume operation.\r\n"
+  example: []
+  syntax:
+    content: Task<DatabaseCreateOrUpdateResponse> GetDatabaseActivationOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetDatabaseActivationOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure Sql Database operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.PauseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.PauseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: PauseAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  langs:
+  - csharp
+  - vb
+  name: PauseAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.PauseAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PauseAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+    startLine: 119
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nStart an Azure SQL Data Warehouse database pause operation.\r\n"
+  example: []
+  syntax:
+    content: Task<DatabaseCreateOrUpdateResponse> PauseAsync(string resourceGroupName, string serverName, string databaseName, CancellationToken cancellationToken)
+    content.vb: Function PauseAsync(resourceGroupName As String, serverName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server on which the data warehouse\r\ndatabase is hosted.\r\n"
+    - id: databaseName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Data Warehouse database to pause.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure Sql Database operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.ResumeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.ResumeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: ResumeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations
+  langs:
+  - csharp
+  - vb
+  name: ResumeAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IDatabaseActivationOperations.ResumeAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ResumeAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IDatabaseActivationOperations.cs
+    startLine: 141
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nStart an Azure SQL Data Warehouse database resume operation.\r\n"
+  example: []
+  syntax:
+    content: Task<DatabaseCreateOrUpdateResponse> ResumeAsync(string resourceGroupName, string serverName, string databaseName, CancellationToken cancellationToken)
+    content.vb: Function ResumeAsync(resourceGroupName As String, serverName As String, databaseName As String, cancellationToken As CancellationToken) As Task(Of DatabaseCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the Azure SQL Server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server on which the data warehouse\r\ndatabase is hosted.\r\n"
+    - id: databaseName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Data Warehouse database to resume.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure Sql Database operations.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql
+  fullName: Microsoft.Azure.Management.Sql
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DatabaseCreateOrUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse)
+  name.vb: Task(Of DatabaseCreateOrUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse
+    name: DatabaseCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse
+    name: DatabaseCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseCreateOrUpdateResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

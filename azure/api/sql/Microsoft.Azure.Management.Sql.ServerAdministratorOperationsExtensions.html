@@ -1,0 +1,1715 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions">
+          <span class="lang-csharp">ServerAdministratorOperationsExtensions</span>
+          <span class="lang-vb">ServerAdministratorOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">ServerAdministratorOperationsExtensions</code>
+                <code class="lang-vb">ServerAdministratorOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.Sql.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Windows Azure SQL Database management API provides a RESTful set of
+web services that interact with Windows Azure SQL Database services to
+manage your databases. The API enables users to create, retrieve,
+update, and delete databases and servers.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_BeginCreateOrUpdate_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreateOrUpdate(IServerAdministratorOperations, String, String, String, ServerAdministratorCreateOrUpdateParameters)</code>
+          <code class="lang-vb">BeginCreateOrUpdate(IServerAdministratorOperations, String, String, String, ServerAdministratorCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins creating a new Azure SQL Server Active Directory
+Administrator or updating an existing Azure SQL Server Active
+Directory Administrator. To determine the status of the operation
+call GetServerAdministratorOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerAdministratorCreateOrUpdateResponse BeginCreateOrUpdate(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName, ServerAdministratorCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreateOrUpdate(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String, parameters As ServerAdministratorCreateOrUpdateParameters) As ServerAdministratorCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrator belongs</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters">ServerAdministratorCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters">ServerAdministratorCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for createing or updating an
+Active Directory Administrator.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+Administrator operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_BeginCreateOrUpdateAsync_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreateOrUpdateAsync(IServerAdministratorOperations, String, String, String, ServerAdministratorCreateOrUpdateParameters)</code>
+          <code class="lang-vb">BeginCreateOrUpdateAsync(IServerAdministratorOperations, String, String, String, ServerAdministratorCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins creating a new Azure SQL Server Active Directory
+Administrator or updating an existing Azure SQL Server Active
+Directory Administrator. To determine the status of the operation
+call GetServerAdministratorOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerAdministratorCreateOrUpdateResponse&gt; BeginCreateOrUpdateAsync(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName, ServerAdministratorCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreateOrUpdateAsync(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String, parameters As ServerAdministratorCreateOrUpdateParameters) As Task(Of ServerAdministratorCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrator belongs</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters">ServerAdministratorCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters">ServerAdministratorCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for createing or updating an
+Active Directory Administrator.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+Administrator operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_BeginDelete_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDelete(IServerAdministratorOperations, String, String, String)</code>
+          <code class="lang-vb">BeginDelete(IServerAdministratorOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins deleting an existing Azure SQL Server Active Directory
+Administrator.To determine the status of the operation call
+GetServerAdministratorDeleteOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerAdministratorDeleteResponse BeginDelete(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName)</code><code class="vb lang-vb">Public Shared Function BeginDelete(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String) As ServerAdministratorDeleteResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrator belongs</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+administrator delete operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_BeginDeleteAsync_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeleteAsync(IServerAdministratorOperations, String, String, String)</code>
+          <code class="lang-vb">BeginDeleteAsync(IServerAdministratorOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins deleting an existing Azure SQL Server Active Directory
+Administrator.To determine the status of the operation call
+GetServerAdministratorDeleteOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerAdministratorDeleteResponse&gt; BeginDeleteAsync(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName)</code><code class="vb lang-vb">Public Shared Function BeginDeleteAsync(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String) As Task(Of ServerAdministratorDeleteResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrator belongs</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+administrator delete operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_CreateOrUpdate_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdate(IServerAdministratorOperations, String, String, String, ServerAdministratorCreateOrUpdateParameters)</code>
+          <code class="lang-vb">CreateOrUpdate(IServerAdministratorOperations, String, String, String, ServerAdministratorCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a new Azure SQL Server Active Directory Administrator or
+updates an existing Azure SQL Server Active Directory
+Administrator.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerAdministratorCreateOrUpdateResponse CreateOrUpdate(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName, ServerAdministratorCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function CreateOrUpdate(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String, parameters As ServerAdministratorCreateOrUpdateParameters) As ServerAdministratorCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the Azure SQL
+Server Active Directory Administrator is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator to be operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters">ServerAdministratorCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters">ServerAdministratorCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+Administrator.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+Administrator operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_CreateOrUpdateAsync_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdateAsync(IServerAdministratorOperations, String, String, String, ServerAdministratorCreateOrUpdateParameters)</code>
+          <code class="lang-vb">CreateOrUpdateAsync(IServerAdministratorOperations, String, String, String, ServerAdministratorCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a new Azure SQL Server Active Directory Administrator or
+updates an existing Azure SQL Server Active Directory
+Administrator.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerAdministratorCreateOrUpdateResponse&gt; CreateOrUpdateAsync(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName, ServerAdministratorCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function CreateOrUpdateAsync(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String, parameters As ServerAdministratorCreateOrUpdateParameters) As Task(Of ServerAdministratorCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server on which the Azure SQL
+Server Active Directory Administrator is hosted.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator to be operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters">ServerAdministratorCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateParameters">ServerAdministratorCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+Administrator.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+Administrator operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_Delete_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Delete(IServerAdministratorOperations, String, String, String)</code>
+          <code class="lang-vb">Delete(IServerAdministratorOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deletes an existing Azure SQL Server Active Directory Administrator.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerAdministratorDeleteResponse Delete(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName)</code><code class="vb lang-vb">Public Shared Function Delete(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String) As ServerAdministratorDeleteResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrator belongs</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator to be operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+administrator delete operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_DeleteAsync_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(IServerAdministratorOperations, String, String, String)</code>
+          <code class="lang-vb">DeleteAsync(IServerAdministratorOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deletes an existing Azure SQL Server Active Directory Administrator.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerAdministratorDeleteResponse&gt; DeleteAsync(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName)</code><code class="vb lang-vb">Public Shared Function DeleteAsync(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String) As Task(Of ServerAdministratorDeleteResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrator belongs</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator to be operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+administrator delete operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_Get_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Get(IServerAdministratorOperations, String, String, String)</code>
+          <code class="lang-vb">Get(IServerAdministratorOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns an Azure SQL Server Administrator.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerAdministratorGetResponse Get(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName)</code><code class="vb lang-vb">Public Shared Function Get(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String) As ServerAdministratorGetResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrator belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorGetResponse">ServerAdministratorGetResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorGetResponse">ServerAdministratorGetResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a Get Azure SQL Server Active Directory
+Administrators request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_GetAsync_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(IServerAdministratorOperations, String, String, String)</code>
+          <code class="lang-vb">GetAsync(IServerAdministratorOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns an Azure SQL Server Administrator.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerAdministratorGetResponse&gt; GetAsync(IServerAdministratorOperations operations, string resourceGroupName, string serverName, string administratorName)</code><code class="vb lang-vb">Public Shared Function GetAsync(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String, administratorName As String) As Task(Of ServerAdministratorGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrator belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>administratorName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server Active Directory
+Administrator.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorGetResponse">ServerAdministratorGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorGetResponse">ServerAdministratorGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a Get Azure SQL Server Active Directory
+Administrators request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_GetServerAdministratorDeleteOperationStatus_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetServerAdministratorDeleteOperationStatus(IServerAdministratorOperations, String)</code>
+          <code class="lang-vb">GetServerAdministratorDeleteOperationStatus(IServerAdministratorOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure SQL Server Active Directory
+Administrator delete operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerAdministratorDeleteResponse GetServerAdministratorDeleteOperationStatus(IServerAdministratorOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetServerAdministratorDeleteOperationStatus(operations As IServerAdministratorOperations, operationStatusLink As String) As ServerAdministratorDeleteResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+administrator delete operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_GetServerAdministratorDeleteOperationStatusAsync_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetServerAdministratorDeleteOperationStatusAsync(IServerAdministratorOperations, String)</code>
+          <code class="lang-vb">GetServerAdministratorDeleteOperationStatusAsync(IServerAdministratorOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure SQL Server Active Directory
+Administrator delete operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerAdministratorDeleteResponse&gt; GetServerAdministratorDeleteOperationStatusAsync(IServerAdministratorOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetServerAdministratorDeleteOperationStatusAsync(operations As IServerAdministratorOperations, operationStatusLink As String) As Task(Of ServerAdministratorDeleteResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorDeleteResponse">ServerAdministratorDeleteResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+administrator delete operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_GetServerAdministratorOperationStatus_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetServerAdministratorOperationStatus(IServerAdministratorOperations, String)</code>
+          <code class="lang-vb">GetServerAdministratorOperationStatus(IServerAdministratorOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure SQL Server Active Directory
+Administrator create or update operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerAdministratorCreateOrUpdateResponse GetServerAdministratorOperationStatus(IServerAdministratorOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetServerAdministratorOperationStatus(operations As IServerAdministratorOperations, operationStatusLink As String) As ServerAdministratorCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+Administrator operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_GetServerAdministratorOperationStatusAsync_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetServerAdministratorOperationStatusAsync(IServerAdministratorOperations, String)</code>
+          <code class="lang-vb">GetServerAdministratorOperationStatusAsync(IServerAdministratorOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure SQL Server Active Directory
+Administrator create or update operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerAdministratorCreateOrUpdateResponse&gt; GetServerAdministratorOperationStatusAsync(IServerAdministratorOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetServerAdministratorOperationStatusAsync(operations As IServerAdministratorOperations, operationStatusLink As String) As Task(Of ServerAdministratorCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorCreateOrUpdateResponse">ServerAdministratorCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure SQL Server Active Directory
+Administrator operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_List_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">List(IServerAdministratorOperations, String, String)</code>
+          <code class="lang-vb">List(IServerAdministratorOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns a list of Azure SQL Server Administrators.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerAdministratorListResponse List(IServerAdministratorOperations operations, string resourceGroupName, string serverName)</code><code class="vb lang-vb">Public Shared Function List(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String) As ServerAdministratorListResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrators belongs.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorListResponse">ServerAdministratorListResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorListResponse">ServerAdministratorListResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a List Azure SQL Active Directory
+Administrators request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerAdministratorOperationsExtensions_ListAsync_Microsoft_Azure_Management_Sql_IServerAdministratorOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(IServerAdministratorOperations, String, String)</code>
+          <code class="lang-vb">ListAsync(IServerAdministratorOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns a list of Azure SQL Server Administrators.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerAdministratorListResponse&gt; ListAsync(IServerAdministratorOperations operations, string resourceGroupName, string serverName)</code><code class="vb lang-vb">Public Shared Function ListAsync(operations As IServerAdministratorOperations, resourceGroupName As String, serverName As String) As Task(Of ServerAdministratorListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerAdministratorOperations.html#Microsoft_Azure_Management_Sql_IServerAdministratorOperations">IServerAdministratorOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerAdministratorOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server to which the Azure SQL
+Server Active Directory administrators belongs.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorListResponse">ServerAdministratorListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerAdministratorListResponse">ServerAdministratorListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a List Azure SQL Active Directory
+Administrators request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

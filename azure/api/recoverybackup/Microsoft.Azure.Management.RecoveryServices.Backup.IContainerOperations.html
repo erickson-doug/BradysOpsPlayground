@@ -1,0 +1,961 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations">
+          <span class="lang-csharp">IContainerOperations</span>
+          <span class="lang-vb">IContainerOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.RecoveryServices.Backup.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Resource Manager API includes operations for managing the
+containers registered to your Recovery Services Vault.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations_BeginRefreshAsync_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginRefreshAsync(String, String, CustomRequestHeaders, String, CancellationToken)</code>
+          <code class="lang-vb">BeginRefreshAsync(String, String, CustomRequestHeaders, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Refresh Operation triggers an operation in the service
+which would discover all the containers in the subscription that
+are ready to be protected by your Recovery Services Vault. This is
+an asynchronous operation. To determine whether the backend
+service has finished processing the request, call Get Refresh
+Operation Result APIs.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;BaseRecoveryServicesJobResponse&gt; BeginRefreshAsync(string resourceGroupName, string resourceName, CustomRequestHeaders customRequestHeaders, string fabricName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function BeginRefreshAsync(resourceGroupName As String, resourceName As String, customRequestHeaders As CustomRequestHeaders, fabricName As String, cancellationToken As CancellationToken) As Task(Of BaseRecoveryServicesJobResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Nme of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>fabricName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Fabric name for the protection containers.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Base recovery job response for all the asynchronous operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations_GetContainerOperationResultAsync_System_String_System_String_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetContainerOperationResultAsync(String, String, String, String, String, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">GetContainerOperationResultAsync(String, String, String, String, String, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Fetches the result of any operation on the container given the ID
+of operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ProtectionContainerResponse&gt; GetContainerOperationResultAsync(string resourceGroupName, string resourceName, string fabricName, string containerName, string operationId, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetContainerOperationResultAsync(resourceGroupName As String, resourceName As String, fabricName As String, containerName As String, operationId As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectionContainerResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>fabricName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Fabric name of the protected item.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>containerName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of the container where the protected item belongs to.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>ID of the container operation whose result has to be fetched.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionContainerResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerResponse">ProtectionContainerResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionContainerResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerResponse">ProtectionContainerResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Protection container response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations_GetContainerOperationResultByURLAsync_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetContainerOperationResultByURLAsync(String, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">GetContainerOperationResultByURLAsync(String, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Fetches the result of any operation on the container given the URL
+for tracking the operation as returned by APIs such as Unregister
+etc.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ProtectionContainerResponse&gt; GetContainerOperationResultByURLAsync(string operationResultLink, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetContainerOperationResultByURLAsync(operationResultLink As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectionContainerResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operationResultLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Location value returned by operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionContainerResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerResponse">ProtectionContainerResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionContainerResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerResponse">ProtectionContainerResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Protection container response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations_GetRefreshOperationResultAsync_System_String_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetRefreshOperationResultAsync(String, String, String, String, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">GetRefreshOperationResultAsync(String, String, String, String, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Fetches the result of the refresh operation triggered by the Begin
+Refresh API given the ID of the operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;BaseRecoveryServicesJobResponse&gt; GetRefreshOperationResultAsync(string resourceGroupName, string resourceName, string fabricName, string operationId, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetRefreshOperationResultAsync(resourceGroupName As String, resourceName As String, fabricName As String, operationId As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of BaseRecoveryServicesJobResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>fabricName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Fabric name of the protected item.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>ID of the container operation whose result has to be fetched.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Base recovery job response for all the asynchronous operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations_GetRefreshOperationResultByURLAsync_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetRefreshOperationResultByURLAsync(String, CancellationToken)</code>
+          <code class="lang-vb">GetRefreshOperationResultByURLAsync(String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Fetches the result of the refresh operation triggered by the Begin
+Refresh operation given the URL for tracking the operation as
+returned by the Begin Refresh operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;BaseRecoveryServicesJobResponse&gt; GetRefreshOperationResultByURLAsync(string operationResultLink, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetRefreshOperationResultByURLAsync(operationResultLink As String, cancellationToken As CancellationToken) As Task(Of BaseRecoveryServicesJobResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operationResultLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Location value returned by operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Base recovery job response for all the asynchronous operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations_ListAsync_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerListQueryParams_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(String, String, ProtectionContainerListQueryParams, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">ListAsync(String, String, ProtectionContainerListQueryParams, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Lists all the containers registered to your Recovery Services Vault
+according to the query parameters supplied in the arguments.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ProtectionContainerListResponse&gt; ListAsync(string resourceGroupName, string resourceName, ProtectionContainerListQueryParams queryParams, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(resourceGroupName As String, resourceName As String, queryParams As ProtectionContainerListQueryParams, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectionContainerListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>queryParams</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionContainerListQueryParams.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerListQueryParams">ProtectionContainerListQueryParams</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionContainerListQueryParams.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerListQueryParams">ProtectionContainerListQueryParams</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Query parameters for listing protection containers.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionContainerListResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerListResponse">ProtectionContainerListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionContainerListResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionContainerListResponse">ProtectionContainerListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of protection containers returned as a response by the list
+protection containers API.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations_RefreshAsync_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_String_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">RefreshAsync(String, String, CustomRequestHeaders, String, CancellationToken)</code>
+          <code class="lang-vb">RefreshAsync(String, String, CustomRequestHeaders, String, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Refresh Operation triggers an operation in the service which
+would discover all the containers in the subscription that are
+ready to be protected by your Recovery Services Vault.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;BaseRecoveryServicesJobResponse&gt; RefreshAsync(string resourceGroupName, string resourceName, CustomRequestHeaders customRequestHeaders, string fabricName, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function RefreshAsync(resourceGroupName As String, resourceName As String, customRequestHeaders As CustomRequestHeaders, fabricName As String, cancellationToken As CancellationToken) As Task(Of BaseRecoveryServicesJobResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>fabricName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Fabric name for the protection containers.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BaseRecoveryServicesJobResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_BaseRecoveryServicesJobResponse">BaseRecoveryServicesJobResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Base recovery job response for all the asynchronous operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IContainerOperations_UnregisterAsync_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">UnregisterAsync(String, String, String, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">UnregisterAsync(String, String, String, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Begin Unregister Operation unregisters the given container from
+your Recovery Services Vault. This is an asynchronous operation.
+To determine whether the backend service has finished processing
+the request, call Get Container Operation Result API.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; UnregisterAsync(string resourceGroupName, string resourceName, string identityName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function UnregisterAsync(resourceGroupName As String, resourceName As String, identityName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>identityName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of the protection container to unregister.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

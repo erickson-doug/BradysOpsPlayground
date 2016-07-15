@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SiteRecovery.Tests</name>
+    </assembly>
+    <members>
+        <member name="M:SiteRecovery.Tests.EndToEndTests.GetUnprotectedItem(Microsoft.Azure.Management.SiteRecovery.SiteRecoveryManagementClient,System.String,System.String)">
+            <summary>
+            Returns an unprotected item.
+            </summary>
+            <param name="client">Site Recovery management client.</param>
+            <param name="fabricId">Fabric Id.</param>
+            <param name="containerId">Container Id.</param>
+            <returns>Unprotected VM.</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:SiteRecovery.Tests.DataContractUtils" -->
+        <member name="M:SiteRecovery.Tests.DataContractUtils.Serialize``1(``0)">
+            <summary>
+            Serializes the supplied object to the string.
+            </summary>
+            <typeparam name="T">The object type.</typeparam>
+            <param name="obj">The object to serialize.</param>
+            <returns>Serialized string.</returns>
+        </member>
+        <member name="M:SiteRecovery.Tests.DataContractUtils.Deserialize``1(System.String,``0@)">
+            <summary>
+            Deserialize the string to the expected object type.
+            </summary>
+            <param name="xmlString">Serialized string.</param>
+            <param name="result">Deserialized object.</param>
+        </member>
+        <member name="M:SiteRecovery.Tests.DataContractUtils`1.Serialize(`0)">
+            <summary>
+            Serializes the propertyBagContainer to the string. 
+            </summary>
+            <param name="propertyBagContainer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SiteRecovery.Tests.DataContractUtils`1.Deserialize(System.String)">
+            <summary>
+            Deserialize the string to the propertyBagContainer.
+            </summary>
+            <param name="xmlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SiteRecovery.Tests.MonitoringHelper.MonitorJobs(System.String,System.DateTime,Microsoft.Azure.Management.SiteRecovery.SiteRecoveryManagementClient,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)">
+            <summary>
+            Monitors jobs for specific object id.
+            </summary>
+            <param name="jobName">Name of the job to monitor.</param>
+            <param name="startTime">Start time of job</param>
+            <param name="client">SiteRecovery client.</param>
+            <param name="requestHeaders">Request headers.</param>
+        </member>
+        <member name="M:SiteRecovery.Tests.MonitoringHelper.GetJobId(System.String,System.DateTime,Microsoft.Azure.Management.SiteRecovery.SiteRecoveryManagementClient,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders)">
+            <summary>
+            Returns job id of the job.
+            </summary>
+            <param name="jobName">Name of the job to check for.</param>
+            <param name="startTime">Start time of job</param>
+            <param name="client">SiteRecovery client.</param>
+            <param name="requestHeaders">Request headers.</param>
+            <returns>Job object of the job queried.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.Test.SiteRecoveryManagementTestUtilities.GetSiteRecoveryVaultManagementClient(Microsoft.Azure.Test.TestBase)">
+            <summary>
+            Default constructor for management clients, using the TestSupport Infrastructure
+            </summary>
+            <param name="testBase">the test class</param>
+            <returns>A recovery services management client, created from the current context (environment variables)</returns>
+        </member>
+        <member name="M:Microsoft.Azure.Test.SiteRecoveryManagementTestUtilities.GetSiteRecoveryManagementClient(Microsoft.Azure.Test.TestBase)">
+            <summary>
+            Default constructor for management clients, using the TestSupport Infrastructure
+            </summary>
+            <param name="testBase">the test class</param>
+            <returns>A site recovery management client, created from the current context (environment variables)</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1376 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions">
+          <span class="lang-csharp">SecurityRuleOperationsExtensions</span>
+          <span class="lang-vb">SecurityRuleOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">SecurityRuleOperationsExtensions</code>
+                <code class="lang-vb">SecurityRuleOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.Network.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Windows Azure Network management API provides a RESTful set of web
+services that interact with Windows Azure Networks service to manage
+your network resrources. The API has entities that capture the
+relationship between an end user and the Windows Azure Networks
+service.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_BeginCreateOrUpdating_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Network_Models_SecurityRule_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreateOrUpdating(ISecurityRuleOperations, String, String, String, SecurityRule)</code>
+          <code class="lang-vb">BeginCreateOrUpdating(ISecurityRuleOperations, String, String, String, SecurityRule)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Put network security rule operation creates/updates a security
+rule in the specified network security group</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static SecurityRulePutResponse BeginCreateOrUpdating(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName, SecurityRule securityRuleParameters)</code><code class="vb lang-vb">Public Shared Function BeginCreateOrUpdating(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String, securityRuleParameters As SecurityRule) As SecurityRulePutResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleParameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRule.html#Microsoft_Azure_Management_Network_Models_SecurityRule">SecurityRule</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRule.html#Microsoft_Azure_Management_Network_Models_SecurityRule">SecurityRule</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the create/update network security
+rule operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRulePutResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRulePutResponse">SecurityRulePutResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRulePutResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRulePutResponse">SecurityRulePutResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for PUT SecurityRule Api service call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_BeginCreateOrUpdatingAsync_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Network_Models_SecurityRule_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreateOrUpdatingAsync(ISecurityRuleOperations, String, String, String, SecurityRule)</code>
+          <code class="lang-vb">BeginCreateOrUpdatingAsync(ISecurityRuleOperations, String, String, String, SecurityRule)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Put network security rule operation creates/updates a security
+rule in the specified network security group</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;SecurityRulePutResponse&gt; BeginCreateOrUpdatingAsync(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName, SecurityRule securityRuleParameters)</code><code class="vb lang-vb">Public Shared Function BeginCreateOrUpdatingAsync(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String, securityRuleParameters As SecurityRule) As Task(Of SecurityRulePutResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleParameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRule.html#Microsoft_Azure_Management_Network_Models_SecurityRule">SecurityRule</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRule.html#Microsoft_Azure_Management_Network_Models_SecurityRule">SecurityRule</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the create/update network security
+rule operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRulePutResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRulePutResponse">SecurityRulePutResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRulePutResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRulePutResponse">SecurityRulePutResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for PUT SecurityRule Api service call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_BeginDeleting_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeleting(ISecurityRuleOperations, String, String, String)</code>
+          <code class="lang-vb">BeginDeleting(ISecurityRuleOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The delete network security rule operation deletes the specified
+network security rule.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static UpdateOperationResponse BeginDeleting(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName)</code><code class="vb lang-vb">Public Shared Function BeginDeleting(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String) As UpdateOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.UpdateOperationResponse.html#Microsoft_Azure_Management_Network_Models_UpdateOperationResponse">UpdateOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.UpdateOperationResponse.html#Microsoft_Azure_Management_Network_Models_UpdateOperationResponse">UpdateOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>If the resource provide needs to return an error to any operation,
+it should return the appropriate HTTP error code and a message
+body as can be seen below.The message should be localized per the
+Accept-Language header specified in the original request such
+thatit could be directly be exposed to users</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_BeginDeletingAsync_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeletingAsync(ISecurityRuleOperations, String, String, String)</code>
+          <code class="lang-vb">BeginDeletingAsync(ISecurityRuleOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The delete network security rule operation deletes the specified
+network security rule.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;UpdateOperationResponse&gt; BeginDeletingAsync(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName)</code><code class="vb lang-vb">Public Shared Function BeginDeletingAsync(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String) As Task(Of UpdateOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Network.Models.UpdateOperationResponse.html#Microsoft_Azure_Management_Network_Models_UpdateOperationResponse">UpdateOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Network.Models.UpdateOperationResponse.html#Microsoft_Azure_Management_Network_Models_UpdateOperationResponse">UpdateOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>If the resource provide needs to return an error to any operation,
+it should return the appropriate HTTP error code and a message
+body as can be seen below.The message should be localized per the
+Accept-Language header specified in the original request such
+thatit could be directly be exposed to users</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_CreateOrUpdate_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Network_Models_SecurityRule_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdate(ISecurityRuleOperations, String, String, String, SecurityRule)</code>
+          <code class="lang-vb">CreateOrUpdate(ISecurityRuleOperations, String, String, String, SecurityRule)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Put network security rule operation creates/updates a security
+rule in the specified network security group</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureAsyncOperationResponse CreateOrUpdate(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName, SecurityRule securityRuleParameters)</code><code class="vb lang-vb">Public Shared Function CreateOrUpdate(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String, securityRuleParameters As SecurityRule) As AzureAsyncOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleParameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRule.html#Microsoft_Azure_Management_Network_Models_SecurityRule">SecurityRule</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRule.html#Microsoft_Azure_Management_Network_Models_SecurityRule">SecurityRule</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the create/update network security
+rule operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse.html#Microsoft_Azure_Management_Network_Models_AzureAsyncOperationResponse">AzureAsyncOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse.html#Microsoft_Azure_Management_Network_Models_AzureAsyncOperationResponse">AzureAsyncOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_CreateOrUpdateAsync_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Network_Models_SecurityRule_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdateAsync(ISecurityRuleOperations, String, String, String, SecurityRule)</code>
+          <code class="lang-vb">CreateOrUpdateAsync(ISecurityRuleOperations, String, String, String, SecurityRule)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Put network security rule operation creates/updates a security
+rule in the specified network security group</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureAsyncOperationResponse&gt; CreateOrUpdateAsync(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName, SecurityRule securityRuleParameters)</code><code class="vb lang-vb">Public Shared Function CreateOrUpdateAsync(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String, securityRuleParameters As SecurityRule) As Task(Of AzureAsyncOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleParameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRule.html#Microsoft_Azure_Management_Network_Models_SecurityRule">SecurityRule</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRule.html#Microsoft_Azure_Management_Network_Models_SecurityRule">SecurityRule</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Parameters supplied to the create/update network security
+rule operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse.html#Microsoft_Azure_Management_Network_Models_AzureAsyncOperationResponse">AzureAsyncOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse.html#Microsoft_Azure_Management_Network_Models_AzureAsyncOperationResponse">AzureAsyncOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The response body contains the status of the specified asynchronous
+operation, indicating whether it has succeeded, is inprogress, or
+has failed. Note that this status is distinct from the HTTP status
+code returned for the Get Operation Status operation itself. If
+the asynchronous operation succeeded, the response body includes
+the HTTP status code for the successful request. If the
+asynchronous operation failed, the response body includes the HTTP
+status code for the failed request and error information regarding
+the failure.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_Delete_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Delete(ISecurityRuleOperations, String, String, String)</code>
+          <code class="lang-vb">Delete(ISecurityRuleOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The delete network security rule operation deletes the specified
+network security rule.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse Delete(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName)</code><code class="vb lang-vb">Public Shared Function Delete(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_DeleteAsync_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(ISecurityRuleOperations, String, String, String)</code>
+          <code class="lang-vb">DeleteAsync(ISecurityRuleOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The delete network security rule operation deletes the specified
+network security rule.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; DeleteAsync(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName)</code><code class="vb lang-vb">Public Shared Function DeleteAsync(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_Get_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Get(ISecurityRuleOperations, String, String, String)</code>
+          <code class="lang-vb">Get(ISecurityRuleOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get NetworkSecurityRule operation retreives information about
+the specified network security rule.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static SecurityRuleGetResponse Get(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName)</code><code class="vb lang-vb">Public Shared Function Get(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String) As SecurityRuleGetResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRuleGetResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRuleGetResponse">SecurityRuleGetResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRuleGetResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRuleGetResponse">SecurityRuleGetResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for GetSecurityRule Api service call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_GetAsync_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(ISecurityRuleOperations, String, String, String)</code>
+          <code class="lang-vb">GetAsync(ISecurityRuleOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get NetworkSecurityRule operation retreives information about
+the specified network security rule.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;SecurityRuleGetResponse&gt; GetAsync(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName, string securityRuleName)</code><code class="vb lang-vb">Public Shared Function GetAsync(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String, securityRuleName As String) As Task(Of SecurityRuleGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>securityRuleName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the security rule.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRuleGetResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRuleGetResponse">SecurityRuleGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRuleGetResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRuleGetResponse">SecurityRuleGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for GetSecurityRule Api service call</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_List_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">List(ISecurityRuleOperations, String, String)</code>
+          <code class="lang-vb">List(ISecurityRuleOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List network security rule opertion retrieves all the security
+rules in a network security group.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static SecurityRuleListResponse List(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName)</code><code class="vb lang-vb">Public Shared Function List(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String) As SecurityRuleListResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRuleListResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRuleListResponse">SecurityRuleListResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRuleListResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRuleListResponse">SecurityRuleListResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for ListSecurityRule Api service callRetrieves all
+security rules that belongs to a network security group</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Network_SecurityRuleOperationsExtensions_ListAsync_Microsoft_Azure_Management_Network_ISecurityRuleOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(ISecurityRuleOperations, String, String)</code>
+          <code class="lang-vb">ListAsync(ISecurityRuleOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The List network security rule opertion retrieves all the security
+rules in a network security group.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;SecurityRuleListResponse&gt; ListAsync(ISecurityRuleOperations operations, string resourceGroupName, string networkSecurityGroupName)</code><code class="vb lang-vb">Public Shared Function ListAsync(operations As ISecurityRuleOperations, resourceGroupName As String, networkSecurityGroupName As String) As Task(Of SecurityRuleListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Network.ISecurityRuleOperations.html#Microsoft_Azure_Management_Network_ISecurityRuleOperations">ISecurityRuleOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Network.ISecurityRuleOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>networkSecurityGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the network security group.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRuleListResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRuleListResponse">SecurityRuleListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Network.Models.SecurityRuleListResponse.html#Microsoft_Azure_Management_Network_Models_SecurityRuleListResponse">SecurityRuleListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for ListSecurityRule Api service callRetrieves all
+security rules that belongs to a network security group</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

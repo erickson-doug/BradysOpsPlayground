@@ -1,0 +1,1082 @@
+items:
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  commentId: T:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  id: RecommendedElasticPoolOperationsExtensions
+  parent: Microsoft.Azure.Management.Sql
+  children:
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.Get(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.List(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListExpanded(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListExpandedAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListMetrics(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  - Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListMetricsAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: RecommendedElasticPoolOperationsExtensions
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecommendedElasticPoolOperationsExtensions
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nThe Windows Azure SQL Database management API provides a RESTful set of\r\nweb services that interact with Windows Azure SQL Database services to\r\nmanage your databases. The API enables users to create, retrieve,\r\nupdate, and delete databases and servers.\r\n"
+  example: []
+  syntax:
+    content: public class RecommendedElasticPoolOperationsExtensions
+    content.vb: Public Class RecommendedElasticPoolOperationsExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.Get(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.Get(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  id: Get(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get(IRecommendedElasticPoolOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.Get(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Get
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 61
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Recommended Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: public static RecommendedElasticPoolGetResponse Get(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string recommendedElasticPoolName)
+    content.vb: Public Shared Function Get(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, recommendedElasticPoolName As String) As RecommendedElasticPoolGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the Azure SQL\r\nRecommended Server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server for which the\r\nAzure SQL Recommended Elastic Pool is.\r\n"
+    - id: recommendedElasticPoolName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Recommended Elastic Pool to be\r\nretrieved.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse
+      description: "\r\nRepresents the response to a Get Azure Sql Recommended Resource\r\npool request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  id: GetAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(IRecommendedElasticPoolOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Recommended Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RecommendedElasticPoolGetResponse> GetAsync(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string recommendedElasticPoolName)
+    content.vb: Public Shared Function GetAsync(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, recommendedElasticPoolName As String) As Task(Of RecommendedElasticPoolGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the Azure SQL\r\nRecommended Server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server for which the\r\nAzure SQL Recommended Elastic Pool is.\r\n"
+    - id: recommendedElasticPoolName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Recommended Elastic Pool to be\r\nretrieved.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Recommended Resource\r\npool request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String,System.String)
+  id: GetDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDatabases(IRecommendedElasticPoolOperations, String, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDatabases
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database inside of an Azure\r\nSql Recommended Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: public static DatabaseGetResponse GetDatabases(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string recommendedElasticPoolName, string databaseName)
+    content.vb: Public Shared Function GetDatabases(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, recommendedElasticPoolName As String, databaseName As String) As DatabaseGetResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server on which the\r\ndatabase is hosted.\r\n"
+    - id: recommendedElasticPoolName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Elastic Pool to be\r\nretrieved.\r\n"
+    - id: databaseName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database to be retrieved.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+      description: "\r\nRepresents the response to a Get Azure Sql Database request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String,System.String)
+  id: GetDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDatabasesAsync(IRecommendedElasticPoolOperations, String, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.GetDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDatabasesAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 159
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database inside of an Azure\r\nSql Recommended Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: public static Task<DatabaseGetResponse> GetDatabasesAsync(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string recommendedElasticPoolName, string databaseName)
+    content.vb: Public Shared Function GetDatabasesAsync(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, recommendedElasticPoolName As String, databaseName As String) As Task(Of DatabaseGetResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server on which the\r\ndatabase is hosted.\r\n"
+    - id: recommendedElasticPoolName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Elastic Pool to be\r\nretrieved.\r\n"
+    - id: databaseName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database to be retrieved.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse}
+      description: "\r\nRepresents the response to a Get Azure Sql Database request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.List(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.List(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String)
+  id: List(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: List(IRecommendedElasticPoolOperations, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.List(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 183
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about Azure SQL Recommended Elastic Pools.\r\n"
+  example: []
+  syntax:
+    content: public static RecommendedElasticPoolListResponse List(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName)
+    content.vb: Public Shared Function List(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String) As RecommendedElasticPoolListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the Azure SQL\r\nRecommended Serve belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server in which Azure\r\nSQL Recommended Elastic Pools are hosted.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse
+      description: "\r\nRepresents the response to a List Azure Sql Recommended Elastic\r\nPool request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String)
+  id: ListAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(IRecommendedElasticPoolOperations, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 211
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about Azure SQL Recommended Elastic Pools.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RecommendedElasticPoolListResponse> ListAsync(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName)
+    content.vb: Public Shared Function ListAsync(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String) As Task(Of RecommendedElasticPoolListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the Azure SQL\r\nRecommended Serve belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server in which Azure\r\nSQL Recommended Elastic Pools are hosted.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Recommended Elastic\r\nPool request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  id: ListDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListDatabases(IRecommendedElasticPoolOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListDatabases(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListDatabases
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 239
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database inside of an Azure\r\nSql Recommended Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: public static DatabaseListResponse ListDatabases(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string recommendedElasticPoolName)
+    content.vb: Public Shared Function ListDatabases(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, recommendedElasticPoolName As String) As DatabaseListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server on which the\r\ndatabase is hosted.\r\n"
+    - id: recommendedElasticPoolName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Recommended Elastic Pool to be\r\nretrieved.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+      description: "\r\nRepresents the response to a List Azure Sql Database request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  id: ListDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListDatabasesAsync(IRecommendedElasticPoolOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListDatabasesAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListDatabasesAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 271
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an Azure SQL Database inside of an Azure\r\nSql Recommended Elastic Pool.\r\n"
+  example: []
+  syntax:
+    content: public static Task<DatabaseListResponse> ListDatabasesAsync(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string recommendedElasticPoolName)
+    content.vb: Public Shared Function ListDatabasesAsync(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, recommendedElasticPoolName As String) As Task(Of DatabaseListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server on which the\r\ndatabase is hosted.\r\n"
+    - id: recommendedElasticPoolName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Recommended Elastic Pool to be\r\nretrieved.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseListResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Database request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListExpanded(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListExpanded(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  id: ListExpanded(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListExpanded(IRecommendedElasticPoolOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListExpanded(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListExpanded
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 299
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about Azure SQL Recommended Elastic Pools.\r\n"
+  example: []
+  syntax:
+    content: public static RecommendedElasticPoolListResponse ListExpanded(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string expand)
+    content.vb: Public Shared Function ListExpanded(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, expand As String) As RecommendedElasticPoolListResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the Azure SQL\r\nRecommended Serve belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server in which Azure\r\nSQL Recommended Elastic Pools are hosted.\r\n"
+    - id: expand
+      type: System.String
+      description: "\r\nRequired. The comma separated list of child objects that we want to\r\nexpand on in response.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse
+      description: "\r\nRepresents the response to a List Azure Sql Recommended Elastic\r\nPool request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListExpandedAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListExpandedAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  id: ListExpandedAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListExpandedAsync(IRecommendedElasticPoolOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListExpandedAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListExpandedAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 331
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about Azure SQL Recommended Elastic Pools.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RecommendedElasticPoolListResponse> ListExpandedAsync(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string expand)
+    content.vb: Public Shared Function ListExpandedAsync(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, expand As String) As Task(Of RecommendedElasticPoolListResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the Azure SQL\r\nRecommended Serve belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server in which Azure\r\nSQL Recommended Elastic Pools are hosted.\r\n"
+    - id: expand
+      type: System.String
+      description: "\r\nRequired. The comma separated list of child objects that we want to\r\nexpand on in response.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Recommended Elastic\r\nPool request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListMetrics(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListMetrics(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  id: ListMetrics(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListMetrics(IRecommendedElasticPoolOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListMetrics(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListMetrics
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 358
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an recommended elastic pool metrics.\r\n"
+  example: []
+  syntax:
+    content: public static RecommendedElasticPoolListMetricsResponse ListMetrics(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string recommendedElasticPoolName)
+    content.vb: Public Shared Function ListMetrics(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, recommendedElasticPoolName As String) As RecommendedElasticPoolListMetricsResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server.\r\n"
+    - id: recommendedElasticPoolName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Recommended Elastic Pool to be\r\nretrieved.\r\n"
+    return:
+      type: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse
+      description: "\r\nRepresents the response to a List Azure Sql Recommended Elastic\r\nPool metrics request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListMetricsAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListMetricsAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  id: ListMetricsAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations,System.String,System.String,System.String)
+  parent: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions
+  langs:
+  - csharp
+  - vb
+  name: ListMetricsAsync(IRecommendedElasticPoolOperations, String, String, String)
+  fullName: Microsoft.Azure.Management.Sql.RecommendedElasticPoolOperationsExtensions.ListMetricsAsync(Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListMetricsAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/RecommendedElasticPoolOperationsExtensions.cs
+    startLine: 389
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns information about an recommended elastic pool metrics.\r\n"
+  example: []
+  syntax:
+    content: public static Task<RecommendedElasticPoolListMetricsResponse> ListMetricsAsync(IRecommendedElasticPoolOperations operations, string resourceGroupName, string serverName, string recommendedElasticPoolName)
+    content.vb: Public Shared Function ListMetricsAsync(operations As IRecommendedElasticPoolOperations, resourceGroupName As String, serverName As String, recommendedElasticPoolName As String) As Task(Of RecommendedElasticPoolListMetricsResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.Sql.IRecommendedElasticPoolOperations.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. The name of the Resource Group to which the server\r\nbelongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Database Server.\r\n"
+    - id: recommendedElasticPoolName
+      type: System.String
+      description: "\r\nRequired. The name of the Azure SQL Recommended Elastic Pool to be\r\nretrieved.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse}
+      description: "\r\nRepresents the response to a List Azure Sql Recommended Elastic\r\nPool metrics request.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql
+  fullName: Microsoft.Azure.Management.Sql
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+  parent: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: IRecommendedElasticPoolOperations
+  fullName: Microsoft.Azure.Management.Sql.IRecommendedElasticPoolOperations
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse
+  parent: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: RecommendedElasticPoolGetResponse
+  fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse
+- uid: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql.Models
+  fullName: Microsoft.Azure.Management.Sql.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecommendedElasticPoolGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse)
+  name.vb: Task(Of RecommendedElasticPoolGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse
+    name: RecommendedElasticPoolGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse
+    name: RecommendedElasticPoolGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+  parent: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: DatabaseGetResponse
+  fullName: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DatabaseGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse)
+  name.vb: Task(Of DatabaseGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+    name: DatabaseGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+    name: DatabaseGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseGetResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse
+  parent: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: RecommendedElasticPoolListResponse
+  fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecommendedElasticPoolListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse)
+  name.vb: Task(Of RecommendedElasticPoolListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse
+    name: RecommendedElasticPoolListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse
+    name: RecommendedElasticPoolListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+  parent: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: DatabaseListResponse
+  fullName: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.DatabaseListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DatabaseListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.DatabaseListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.DatabaseListResponse)
+  name.vb: Task(Of DatabaseListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+    name: DatabaseListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+    name: DatabaseListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.DatabaseListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse
+  parent: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: RecommendedElasticPoolListMetricsResponse
+  fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RecommendedElasticPoolListMetricsResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse)
+  name.vb: Task(Of RecommendedElasticPoolListMetricsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse
+    name: RecommendedElasticPoolListMetricsResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse
+    name: RecommendedElasticPoolListMetricsResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolListMetricsResponse
+  - name: )
+    fullName: )

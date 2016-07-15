@@ -1,0 +1,558 @@
+items:
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  commentId: T:Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  id: IServerAdministratorOperations
+  parent: Microsoft.Azure.Management.Sql
+  children:
+  - Microsoft.Azure.Management.Sql.IServerAdministratorOperations.BeginCreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerAdministratorOperations.BeginDeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerAdministratorOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerAdministratorOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetServerAdministratorDeleteOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetServerAdministratorOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Sql.IServerAdministratorOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IServerAdministratorOperations
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IServerAdministratorOperations
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nRepresents all the operations for operating on Azure SQL Server Active\r\nDirectory Administrators.  Contains operations to: Create, Retrieve,\r\nUpdate, and Delete Azure SQL Server Active Directory Administrators.\r\n"
+  example: []
+  syntax:
+    content: public interface IServerAdministratorOperations
+    content.vb: Public Interface IServerAdministratorOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.BeginCreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerAdministratorOperations.BeginCreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters,System.Threading.CancellationToken)
+  id: BeginCreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginCreateOrUpdateAsync(String, String, String, ServerAdministratorCreateOrUpdateParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.BeginCreateOrUpdateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreateOrUpdateAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nBegins creating a new Azure SQL Server Active Directory\r\nAdministrator or updating an existing Azure SQL Server Active\r\nDirectory Administrator. To determine the status of the operation\r\ncall GetServerAdministratorOperationStatus.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerAdministratorCreateOrUpdateResponse> BeginCreateOrUpdateAsync(string resourceGroupName, string serverName, string administratorName, ServerAdministratorCreateOrUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginCreateOrUpdateAsync(resourceGroupName As String, serverName As String, administratorName As String, parameters As ServerAdministratorCreateOrUpdateParameters, cancellationToken As CancellationToken) As Task(Of ServerAdministratorCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server to which the Azure SQL Server\r\nActive Directory administrator belongs\r\n"
+    - id: administratorName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server Active Directory Administrator.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters
+      description: "\r\nThe required parameters for createing or updating an Active\r\nDirectory Administrator.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure SQL Server Active Directory\r\nAdministrator operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.BeginDeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerAdministratorOperations.BeginDeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: BeginDeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginDeleteAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.BeginDeleteAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeleteAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 87
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nBegins deleting an existing Azure SQL Server Active Directory\r\nAdministrator.To determine the status of the operation call\r\nGetServerAdministratorDeleteOperationStatus.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerAdministratorDeleteResponse> BeginDeleteAsync(string resourceGroupName, string serverName, string administratorName, CancellationToken cancellationToken)
+    content.vb: Function BeginDeleteAsync(resourceGroupName As String, serverName As String, administratorName As String, cancellationToken As CancellationToken) As Task(Of ServerAdministratorDeleteResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server to which the Azure SQL Server\r\nActive Directory administrator belongs\r\n"
+    - id: administratorName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server Active Directory Administrator.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse}
+      description: "\r\nResponse for long running Azure SQL Server Active Directory\r\nadministrator delete operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerAdministratorOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, String, String, ServerAdministratorCreateOrUpdateParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.CreateOrUpdateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 116
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nCreates a new Azure SQL Server Active Directory Administrator or\r\nupdates an existing Azure SQL Server Active Directory\r\nAdministrator.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerAdministratorCreateOrUpdateResponse> CreateOrUpdateAsync(string resourceGroupName, string serverName, string administratorName, ServerAdministratorCreateOrUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, serverName As String, administratorName As String, parameters As ServerAdministratorCreateOrUpdateParameters, cancellationToken As CancellationToken) As Task(Of ServerAdministratorCreateOrUpdateResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server on which the Azure SQL Server\r\nActive Directory Administrator is hosted.\r\n"
+    - id: administratorName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server Active Directory Administrator to\r\nbe operated on (Updated or created).\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters
+      description: "\r\nThe required parameters for creating or updating a Server\r\nAdministrator.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure SQL Server Active Directory\r\nAdministrator operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerAdministratorOperations.DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.DeleteAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 139
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nDeletes an existing Azure SQL Server Active Directory Administrator.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerAdministratorDeleteResponse> DeleteAsync(string resourceGroupName, string serverName, string administratorName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, serverName As String, administratorName As String, cancellationToken As CancellationToken) As Task(Of ServerAdministratorDeleteResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server to which the Azure SQL Server\r\nActive Directory administrator belongs\r\n"
+    - id: administratorName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server Active Directory Administrator to\r\nbe operated on (Updated or created).\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse}
+      description: "\r\nResponse for long running Azure SQL Server Active Directory\r\nadministrator delete operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 161
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns an Azure SQL Server Administrator.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerAdministratorGetResponse> GetAsync(string resourceGroupName, string serverName, string administratorName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, serverName As String, administratorName As String, cancellationToken As CancellationToken) As Task(Of ServerAdministratorGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server to which the Azure SQL Server\r\nActive Directory administrator belongs.\r\n"
+    - id: administratorName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server Active Directory Administrator.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse}
+      description: "\r\nRepresents the response to a Get Azure SQL Server Active Directory\r\nAdministrators request.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetServerAdministratorDeleteOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetServerAdministratorDeleteOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetServerAdministratorDeleteOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  langs:
+  - csharp
+  - vb
+  name: GetServerAdministratorDeleteOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetServerAdministratorDeleteOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetServerAdministratorDeleteOperationStatusAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 177
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets the status of an Azure SQL Server Active Directory\r\nAdministrator delete operation.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerAdministratorDeleteResponse> GetServerAdministratorDeleteOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetServerAdministratorDeleteOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of ServerAdministratorDeleteResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse}
+      description: "\r\nResponse for long running Azure SQL Server Active Directory\r\nadministrator delete operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetServerAdministratorOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetServerAdministratorOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  id: GetServerAdministratorOperationStatusAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  langs:
+  - csharp
+  - vb
+  name: GetServerAdministratorOperationStatusAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.GetServerAdministratorOperationStatusAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetServerAdministratorOperationStatusAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 193
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nGets the status of an Azure SQL Server Active Directory\r\nAdministrator create or update operation.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerAdministratorCreateOrUpdateResponse> GetServerAdministratorOperationStatusAsync(string operationStatusLink, CancellationToken cancellationToken)
+    content.vb: Function GetServerAdministratorOperationStatusAsync(operationStatusLink As String, cancellationToken As CancellationToken) As Task(Of ServerAdministratorCreateOrUpdateResponse)
+    parameters:
+    - id: operationStatusLink
+      type: System.String
+      description: "\r\nLocation value returned by the Begin operation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse}
+      description: "\r\nResponse for long running Azure SQL Server Active Directory\r\nAdministrator operations.\r\n"
+- uid: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Sql.IServerAdministratorOperations.ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Sql.IServerAdministratorOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Sql.IServerAdministratorOperations.ListAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Sql/SqlManagement/Generated/IServerAdministratorOperations.cs
+    startLine: 212
+  assemblies:
+  - Microsoft.Azure.Management.Sql
+  namespace: Microsoft.Azure.Management.Sql
+  summary: "\r\nReturns a list of Azure SQL Server Administrators.\r\n"
+  example: []
+  syntax:
+    content: Task<ServerAdministratorListResponse> ListAsync(string resourceGroupName, string serverName, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, serverName As String, cancellationToken As CancellationToken) As Task(Of ServerAdministratorListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the Resource Group to which the server belongs.\r\n"
+    - id: serverName
+      type: System.String
+      description: "\r\nThe name of the Azure SQL Server to which the Azure SQL Server\r\nActive Directory administrators belongs.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse}
+      description: "\r\nRepresents the response to a List Azure SQL Active Directory\r\nAdministrators request.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Sql
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql
+  fullName: Microsoft.Azure.Management.Sql
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters
+  parent: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: ServerAdministratorCreateOrUpdateParameters
+  fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServerAdministratorCreateOrUpdateResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse)
+  name.vb: Task(Of ServerAdministratorCreateOrUpdateResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse
+    name: ServerAdministratorCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse
+    name: ServerAdministratorCreateOrUpdateResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorCreateOrUpdateResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Sql.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Sql.Models
+  fullName: Microsoft.Azure.Management.Sql.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServerAdministratorDeleteResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse)
+  name.vb: Task(Of ServerAdministratorDeleteResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse
+    name: ServerAdministratorDeleteResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse
+    name: ServerAdministratorDeleteResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorDeleteResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServerAdministratorGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse)
+  name.vb: Task(Of ServerAdministratorGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse
+    name: ServerAdministratorGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse
+    name: ServerAdministratorGetResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ServerAdministratorListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse)
+  name.vb: Task(Of ServerAdministratorListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse
+    name: ServerAdministratorListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse
+    name: ServerAdministratorListResponse
+    fullName: Microsoft.Azure.Management.Sql.Models.ServerAdministratorListResponse
+  - name: )
+    fullName: )

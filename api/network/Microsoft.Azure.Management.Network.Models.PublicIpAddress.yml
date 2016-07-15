@@ -1,0 +1,525 @@
+items:
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  commentId: T:Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  id: PublicIpAddress
+  parent: Microsoft.Azure.Management.Network.Models
+  children:
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.#ctor
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.#ctor(System.String,System.String)
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.DnsSettings
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.IdleTimeoutInMinutes
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.IpAddress
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.IpConfiguration
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.ProvisioningState
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.PublicIpAllocationMethod
+  - Microsoft.Azure.Management.Network.Models.PublicIpAddress.ResourceGuid
+  langs:
+  - csharp
+  - vb
+  name: PublicIpAddress
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PublicIpAddress
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nPublicIPAddress resource\r\n"
+  example: []
+  syntax:
+    content: 'public class PublicIpAddress : TopLevelResource'
+    content.vb: >-
+      Public Class PublicIpAddress
+
+          Inherits TopLevelResource
+  inheritance:
+  - System.Object
+  - Microsoft.Azure.Management.Network.Models.TopLevelResource
+  inheritedMembers:
+  - Microsoft.Azure.Management.Network.Models.TopLevelResource.Etag
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.DnsSettings
+  commentId: P:Microsoft.Azure.Management.Network.Models.PublicIpAddress.DnsSettings
+  id: DnsSettings
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: DnsSettings
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.DnsSettings
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DnsSettings
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 38
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets FQDN of the DNS record associated with the\r\npublic IP address\r\n"
+  example: []
+  syntax:
+    content: >-
+      public PublicIpAddressDnsSettings DnsSettings
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property DnsSettings As PublicIpAddressDnsSettings
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Network.Models.PublicIpAddressDnsSettings
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.IdleTimeoutInMinutes
+  commentId: P:Microsoft.Azure.Management.Network.Models.PublicIpAddress.IdleTimeoutInMinutes
+  id: IdleTimeoutInMinutes
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: IdleTimeoutInMinutes
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.IdleTimeoutInMinutes
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IdleTimeoutInMinutes
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets the Idletimeout of the public IP address\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? IdleTimeoutInMinutes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IdleTimeoutInMinutes As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.IpAddress
+  commentId: P:Microsoft.Azure.Management.Network.Models.PublicIpAddress.IpAddress
+  id: IpAddress
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: IpAddress
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.IpAddress
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IpAddress
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 60
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets the assigned public IP address\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string IpAddress
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IpAddress As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.IpConfiguration
+  commentId: P:Microsoft.Azure.Management.Network.Models.PublicIpAddress.IpConfiguration
+  id: IpConfiguration
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: IpConfiguration
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.IpConfiguration
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IpConfiguration
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets a reference to the network interface IP\r\nconfigurations using this public IP address\r\n"
+  example: []
+  syntax:
+    content: >-
+      public ResourceId IpConfiguration
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IpConfiguration As ResourceId
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Network.Models.ResourceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.ProvisioningState
+  commentId: P:Microsoft.Azure.Management.Network.Models.PublicIpAddress.ProvisioningState
+  id: ProvisioningState
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: ProvisioningState
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.ProvisioningState
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProvisioningState
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets Provisioning state of the PublicIP resource\r\nUpdating/Deleting/Failed\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ProvisioningState
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ProvisioningState As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.PublicIpAllocationMethod
+  commentId: P:Microsoft.Azure.Management.Network.Models.PublicIpAddress.PublicIpAllocationMethod
+  id: PublicIpAllocationMethod
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: PublicIpAllocationMethod
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.PublicIpAllocationMethod
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PublicIpAllocationMethod
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nRequired. Gets or sets PublicIP allocation method (Static/Dynamic)\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string PublicIpAllocationMethod
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PublicIpAllocationMethod As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.ResourceGuid
+  commentId: P:Microsoft.Azure.Management.Network.Models.PublicIpAddress.ResourceGuid
+  id: ResourceGuid
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: ResourceGuid
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.ResourceGuid
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ResourceGuid
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 107
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nOptional. Gets or sets resource guid property of the PublicIP\r\nresource\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ResourceGuid
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ResourceGuid As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.#ctor
+  commentId: M:Microsoft.Azure.Management.Network.Models.PublicIpAddress.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: PublicIpAddress()
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.PublicIpAddress()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 116
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nInitializes a new instance of the PublicIpAddress class.\r\n"
+  example: []
+  syntax:
+    content: public PublicIpAddress()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddress.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Azure.Management.Network.Models.PublicIpAddress.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Azure.Management.Network.Models.PublicIpAddress
+  langs:
+  - csharp
+  - vb
+  name: PublicIpAddress(String, String)
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddress.PublicIpAddress(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/Models/PublicIpAddress.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network.Models
+  summary: "\r\nInitializes a new instance of the PublicIpAddress class with\r\nrequired arguments.\r\n"
+  example: []
+  syntax:
+    content: public PublicIpAddress(string publicIpAllocationMethod, string location)
+    content.vb: Public Sub New(publicIpAllocationMethod As String, location As String)
+    parameters:
+    - id: publicIpAllocationMethod
+      type: System.String
+    - id: location
+      type: System.String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Network.Models
+  fullName: Microsoft.Azure.Management.Network.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.Network.Models.TopLevelResource
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: TopLevelResource
+  fullName: Microsoft.Azure.Management.Network.Models.TopLevelResource
+- uid: Microsoft.Azure.Management.Network.Models.TopLevelResource.Etag
+  parent: Microsoft.Azure.Management.Network.Models.TopLevelResource
+  isExternal: false
+  name: Etag
+  fullName: Microsoft.Azure.Management.Network.Models.TopLevelResource.Etag
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Network.Models.PublicIpAddressDnsSettings
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: PublicIpAddressDnsSettings
+  fullName: Microsoft.Azure.Management.Network.Models.PublicIpAddressDnsSettings
+- uid: System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Network.Models.ResourceId
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: ResourceId
+  fullName: Microsoft.Azure.Management.Network.Models.ResourceId

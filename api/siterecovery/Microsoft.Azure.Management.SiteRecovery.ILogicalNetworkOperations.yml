@@ -1,0 +1,244 @@
+items:
+- uid: Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations
+  commentId: T:Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations
+  id: ILogicalNetworkOperations
+  parent: Microsoft.Azure.Management.SiteRecovery
+  children:
+  - Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ILogicalNetworkOperations
+  fullName: Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/ILogicalNetworkOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ILogicalNetworkOperations
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/ILogicalNetworkOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nDefinition of Logical Network operations for the Site Recovery\r\nextension.\r\n"
+  example: []
+  syntax:
+    content: public interface ILogicalNetworkOperations
+    content.vb: Public Interface ILogicalNetworkOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations.GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations.GetAsync(System.String, System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/ILogicalNetworkOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/ILogicalNetworkOperations.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGets a VM logical network.\r\n"
+  example: []
+  syntax:
+    content: Task<LogicalNetworkResponse> GetAsync(string fabricName, string logicalNetworkName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(fabricName As String, logicalNetworkName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LogicalNetworkResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nFabric unique name.\r\n"
+    - id: logicalNetworkName
+      type: System.String
+      description: "\r\nNetwork name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworkResponse}
+      description: "\r\nThe response model for the Logical Network object.\r\n"
+- uid: Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations.ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: ListAsync(System.String,Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.SiteRecovery.ILogicalNetworkOperations.ListAsync(System.String, Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/ILogicalNetworkOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/SiteRecovery/SiteRecoveryManagement/Generated/ILogicalNetworkOperations.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.Azure.Management.SiteRecovery
+  namespace: Microsoft.Azure.Management.SiteRecovery
+  summary: "\r\nGet list of Logical Networks.\r\n"
+  example: []
+  syntax:
+    content: Task<LogicalNetworksListResponse> ListAsync(string fabricName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(fabricName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of LogicalNetworksListResponse)
+    parameters:
+    - id: fabricName
+      type: System.String
+      description: "\r\nFabric unique name.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+      description: "\r\nRequest header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworksListResponse}
+      description: "\r\nThe response model for the list of Logical Networks.\r\n"
+references:
+- uid: Microsoft.Azure.Management.SiteRecovery
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery
+  fullName: Microsoft.Azure.Management.SiteRecovery
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models.CustomRequestHeaders
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworkResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<LogicalNetworkResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworkResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworkResponse)
+  name.vb: Task(Of LogicalNetworkResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworkResponse
+    name: LogicalNetworkResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworkResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworkResponse
+    name: LogicalNetworkResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworkResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.SiteRecovery.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.SiteRecovery.Models
+  fullName: Microsoft.Azure.Management.SiteRecovery.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworksListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<LogicalNetworksListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworksListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworksListResponse)
+  name.vb: Task(Of LogicalNetworksListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworksListResponse
+    name: LogicalNetworksListResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworksListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworksListResponse
+    name: LogicalNetworksListResponse
+    fullName: Microsoft.Azure.Management.SiteRecovery.Models.LogicalNetworksListResponse
+  - name: )
+    fullName: )

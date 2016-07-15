@@ -1,0 +1,845 @@
+items:
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  commentId: T:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  id: IVirtualNetworkGatewayConnectionOperations
+  parent: Microsoft.Azure.Management.Network
+  children:
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginResetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginSetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionSharedKey,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.GetSharedKeyAsync(System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.ResetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.SetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionSharedKey,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IVirtualNetworkGatewayConnectionOperations
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IVirtualNetworkGatewayConnectionOperations
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Network Resource Provider API includes operations for managing the\r\nVirtual network Gateway for your subscription.\r\n"
+  example: []
+  syntax:
+    content: public interface IVirtualNetworkGatewayConnectionOperations
+    content.vb: Public Interface IVirtualNetworkGatewayConnectionOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection,System.Threading.CancellationToken)
+  id: BeginCreateOrUpdatingAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginCreateOrUpdatingAsync(String, String, VirtualNetworkGatewayConnection, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginCreateOrUpdatingAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginCreateOrUpdatingAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put VirtualNetworkGatewayConnection operation creates/updates a\r\nvirtual network gateway connection in the specified resource group\r\nthrough Network resource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualNetworkGatewayConnectionPutResponse> BeginCreateOrUpdatingAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, VirtualNetworkGatewayConnection parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginCreateOrUpdatingAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, parameters As VirtualNetworkGatewayConnection, cancellationToken As CancellationToken) As Task(Of VirtualNetworkGatewayConnectionPutResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe name of the virtual network gateway conenction.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection
+      description: "\r\nParameters supplied to the Begin Create or update Virtual Network\r\nGateway connection operation through Network resource provider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionPutResponse}
+      description: "\r\nResponse for CreateOrUpdateVirtualNetworkGatewayConnection Api\r\nservive call\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: BeginDeletingAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginDeletingAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginDeletingAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginDeletingAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 81
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Delete VirtualNetworkGatewayConnection operation deletes the\r\nspecifed virtual network Gateway connection through Network\r\nresource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<UpdateOperationResponse> BeginDeletingAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, CancellationToken cancellationToken)
+    content.vb: Function BeginDeletingAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, cancellationToken As CancellationToken) As Task(Of UpdateOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe name of the virtual network gateway connection.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.UpdateOperationResponse}
+      description: "\r\nIf the resource provide needs to return an error to any operation,\r\nit should return the appropriate HTTP error code and a message\r\nbody as can be seen below.The message should be localized per the\r\nAccept-Language header specified in the original request such\r\nthatit could be directly be exposed to users\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginResetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginResetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey,System.Threading.CancellationToken)
+  id: BeginResetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginResetSharedKeyAsync(String, String, ConnectionResetSharedKey, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginResetSharedKeyAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginResetSharedKeyAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 106
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe VirtualNetworkGatewayConnectionResetSharedKey operation resets\r\nthe virtual network gateway connection shared key for passed\r\nvirtual network gateway connection in the specified resource group\r\nthrough Network resource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<ConnectionResetSharedKeyPutResponse> BeginResetSharedKeyAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, ConnectionResetSharedKey parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginResetSharedKeyAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, parameters As ConnectionResetSharedKey, cancellationToken As CancellationToken) As Task(Of ConnectionResetSharedKeyPutResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe virtual network gateway connection reset shared key Name.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey
+      description: "\r\nParameters supplied to the Begin Reset Virtual Network Gateway\r\nconnection shared key operation through Network resource provider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKeyPutResponse}
+      description: "\r\nResponse for PutVirtualNetworkGatewayConnectionResetSharedKey Api\r\nservive call\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginSetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionSharedKey,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginSetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionSharedKey,System.Threading.CancellationToken)
+  id: BeginSetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionSharedKey,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: BeginSetSharedKeyAsync(String, String, ConnectionSharedKey, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.BeginSetSharedKeyAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.ConnectionSharedKey, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginSetSharedKeyAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 131
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put VirtualNetworkGatewayConnectionSharedKey operation sets the\r\nvirtual network gateway connection shared key for passed virtual\r\nnetwork gateway connection in the specified resource group through\r\nNetwork resource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<ConnectionSharedKeyPutResponse> BeginSetSharedKeyAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, ConnectionSharedKey parameters, CancellationToken cancellationToken)
+    content.vb: Function BeginSetSharedKeyAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, parameters As ConnectionSharedKey, cancellationToken As CancellationToken) As Task(Of ConnectionSharedKeyPutResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe virtual network gateway connection name.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.ConnectionSharedKey
+      description: "\r\nParameters supplied to the Begin Set Virtual Network Gateway\r\nconection Shared key operation throughNetwork resource provider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyPutResponse}
+      description: "\r\nResponse for PutVirtualNetworkGatewayConnectionSharedKey Api\r\nservive call\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, String, VirtualNetworkGatewayConnection, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.CreateOrUpdateAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 162
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe CreateOrUpdate Virtual network Gateway connection creates a new\r\nor updates an existing virtualnetwork gateway connection through\r\nNetwork resource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureAsyncOperationResponse> CreateOrUpdateAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, VirtualNetworkGatewayConnection parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, parameters As VirtualNetworkGatewayConnection, cancellationToken As CancellationToken) As Task(Of AzureAsyncOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe name of the virtual network gateway conenction.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection
+      description: "\r\nParameters supplied to the Begin Create or update Virtual Network\r\nGateway connection operation through Network resource provider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.DeleteAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 182
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Delete VirtualNetworkGatewayConnection operation deletes the\r\nspecifed virtual network Gateway connection through Network\r\nresource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe name of the virtual network gateway connection.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.GetAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 201
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Get VirtualNetworkGatewayConnection operation retrieves\r\ninformation about the specified virtual network gateway connection\r\nthrough Network resource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualNetworkGatewayConnectionGetResponse> GetAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, cancellationToken As CancellationToken) As Task(Of VirtualNetworkGatewayConnectionGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe name of the virtual network gateway connection.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionGetResponse}
+      description: "\r\nResponse for GetVitualNetworkGatewayConnection Api servive call.\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.GetSharedKeyAsync(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.GetSharedKeyAsync(System.String,System.String,System.Threading.CancellationToken)
+  id: GetSharedKeyAsync(System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: GetSharedKeyAsync(String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.GetSharedKeyAsync(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetSharedKeyAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 220
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Get VirtualNetworkGatewayConnectionSharedKey operation\r\nretrieves information about the specified virtual network gateway\r\nconnection shared key through Network resource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<ConnectionSharedKeyResponse> GetSharedKeyAsync(string resourceGroupName, string connectionSharedKeyName, CancellationToken cancellationToken)
+    content.vb: Function GetSharedKeyAsync(resourceGroupName As String, connectionSharedKeyName As String, cancellationToken As CancellationToken) As Task(Of ConnectionSharedKeyResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: connectionSharedKeyName
+      type: System.String
+      description: "\r\nThe virtual network gateway connection shared key name.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyResponse}
+      description: "\r\nResponse for CheckConnectionSharedKey Api servive call\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.ListAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 235
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe List VirtualNetworkGatewayConnections operation retrieves all\r\nthe virtual network gateways connections created.\r\n"
+  example: []
+  syntax:
+    content: Task<VirtualNetworkGatewayConnectionListResponse> ListAsync(string resourceGroupName, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, cancellationToken As CancellationToken) As Task(Of VirtualNetworkGatewayConnectionListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionListResponse}
+      description: "\r\nResponse for ListVirtualNetworkGatewayConnections Api service call\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.ResetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.ResetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey,System.Threading.CancellationToken)
+  id: ResetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: ResetSharedKeyAsync(String, String, ConnectionResetSharedKey, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.ResetSharedKeyAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ResetSharedKeyAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 267
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Reset VirtualNetworkGatewayConnectionSharedKey operation resets\r\nthe virtual network gateway connection shared key for passed\r\nvirtual network gateway connection in the specified resource group\r\nthrough Network resource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureAsyncOperationResponse> ResetSharedKeyAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, ConnectionResetSharedKey parameters, CancellationToken cancellationToken)
+    content.vb: Function ResetSharedKeyAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, parameters As ConnectionResetSharedKey, cancellationToken As CancellationToken) As Task(Of AzureAsyncOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe virtual network gateway connection name.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey
+      description: "\r\nParameters supplied to the Begin Reset Virtual Network Gateway\r\nconnection shared key operation through Network resource provider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+- uid: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.SetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionSharedKey,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.SetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionSharedKey,System.Threading.CancellationToken)
+  id: SetSharedKeyAsync(System.String,System.String,Microsoft.Azure.Management.Network.Models.ConnectionSharedKey,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations
+  langs:
+  - csharp
+  - vb
+  name: SetSharedKeyAsync(String, String, ConnectionSharedKey, CancellationToken)
+  fullName: Microsoft.Azure.Management.Network.IVirtualNetworkGatewayConnectionOperations.SetSharedKeyAsync(System.String, System.String, Microsoft.Azure.Management.Network.Models.ConnectionSharedKey, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SetSharedKeyAsync
+    path: src/src/ResourceManagement/Network/NetworkManagement/Generated/IVirtualNetworkGatewayConnectionOperations.cs
+    startLine: 300
+  assemblies:
+  - Microsoft.Azure.Management.Network
+  namespace: Microsoft.Azure.Management.Network
+  summary: "\r\nThe Put VirtualNetworkGatewayConnectionSharedKey operation sets the\r\nvirtual network gateway connection shared key for passed virtual\r\nnetwork gateway connection in the specified resource group through\r\nNetwork resource provider.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureAsyncOperationResponse> SetSharedKeyAsync(string resourceGroupName, string virtualNetworkGatewayConnectionName, ConnectionSharedKey parameters, CancellationToken cancellationToken)
+    content.vb: Function SetSharedKeyAsync(resourceGroupName As String, virtualNetworkGatewayConnectionName As String, parameters As ConnectionSharedKey, cancellationToken As CancellationToken) As Task(Of AzureAsyncOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: virtualNetworkGatewayConnectionName
+      type: System.String
+      description: "\r\nThe virtual network gateway connection name.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.Network.Models.ConnectionSharedKey
+      description: "\r\nParameters supplied to the Begin Create or update Virtual Network\r\nGateway connection shared key operation through Network resource\r\nprovider.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+      description: "\r\nThe response body contains the status of the specified asynchronous\r\noperation, indicating whether it has succeeded, is inprogress, or\r\nhas failed. Note that this status is distinct from the HTTP status\r\ncode returned for the Get Operation Status operation itself. If\r\nthe asynchronous operation succeeded, the response body includes\r\nthe HTTP status code for the successful request. If the\r\nasynchronous operation failed, the response body includes the HTTP\r\nstatus code for the failed request and error information regarding\r\nthe failure.\r\n"
+references:
+- uid: Microsoft.Azure.Management.Network
+  isExternal: false
+  name: Microsoft.Azure.Management.Network
+  fullName: Microsoft.Azure.Management.Network
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: VirtualNetworkGatewayConnection
+  fullName: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnection
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionPutResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualNetworkGatewayConnectionPutResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionPutResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionPutResponse)
+  name.vb: Task(Of VirtualNetworkGatewayConnectionPutResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionPutResponse
+    name: VirtualNetworkGatewayConnectionPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionPutResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionPutResponse
+    name: VirtualNetworkGatewayConnectionPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionPutResponse
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Network.Models
+  fullName: Microsoft.Azure.Management.Network.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.UpdateOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<UpdateOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.UpdateOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.UpdateOperationResponse)
+  name.vb: Task(Of UpdateOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+    name: UpdateOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+    name: UpdateOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.UpdateOperationResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: ConnectionResetSharedKey
+  fullName: Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKey
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKeyPutResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ConnectionResetSharedKeyPutResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKeyPutResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKeyPutResponse)
+  name.vb: Task(Of ConnectionResetSharedKeyPutResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKeyPutResponse
+    name: ConnectionResetSharedKeyPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKeyPutResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKeyPutResponse
+    name: ConnectionResetSharedKeyPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ConnectionResetSharedKeyPutResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Network.Models.ConnectionSharedKey
+  parent: Microsoft.Azure.Management.Network.Models
+  isExternal: false
+  name: ConnectionSharedKey
+  fullName: Microsoft.Azure.Management.Network.Models.ConnectionSharedKey
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyPutResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ConnectionSharedKeyPutResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyPutResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyPutResponse)
+  name.vb: Task(Of ConnectionSharedKeyPutResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyPutResponse
+    name: ConnectionSharedKeyPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyPutResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyPutResponse
+    name: ConnectionSharedKeyPutResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyPutResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureAsyncOperationResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse)
+  name.vb: Task(Of AzureAsyncOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+    name: AzureAsyncOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+    name: AzureAsyncOperationResponse
+    fullName: Microsoft.Azure.Management.Network.Models.AzureAsyncOperationResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualNetworkGatewayConnectionGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionGetResponse)
+  name.vb: Task(Of VirtualNetworkGatewayConnectionGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionGetResponse
+    name: VirtualNetworkGatewayConnectionGetResponse
+    fullName: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionGetResponse
+    name: VirtualNetworkGatewayConnectionGetResponse
+    fullName: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionGetResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ConnectionSharedKeyResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyResponse)
+  name.vb: Task(Of ConnectionSharedKeyResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyResponse
+    name: ConnectionSharedKeyResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyResponse
+    name: ConnectionSharedKeyResponse
+    fullName: Microsoft.Azure.Management.Network.Models.ConnectionSharedKeyResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VirtualNetworkGatewayConnectionListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionListResponse)
+  name.vb: Task(Of VirtualNetworkGatewayConnectionListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionListResponse
+    name: VirtualNetworkGatewayConnectionListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionListResponse
+    name: VirtualNetworkGatewayConnectionListResponse
+    fullName: Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewayConnectionListResponse
+  - name: )
+    fullName: )

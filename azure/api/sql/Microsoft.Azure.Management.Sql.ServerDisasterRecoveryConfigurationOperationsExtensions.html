@@ -1,0 +1,1761 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions">
+          <span class="lang-csharp">ServerDisasterRecoveryConfigurationOperationsExtensions</span>
+          <span class="lang-vb">ServerDisasterRecoveryConfigurationOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">ServerDisasterRecoveryConfigurationOperationsExtensions</code>
+                <code class="lang-vb">ServerDisasterRecoveryConfigurationOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.Sql.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Windows Azure SQL Database management API provides a RESTful set of
+web services that interact with Windows Azure SQL Database services to
+manage your databases. The API enables users to create, retrieve,
+update, and delete databases and servers.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_BeginCreateOrUpdate_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreateOrUpdate(IServerDisasterRecoveryConfigurationOperations, String, String, String, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters)</code>
+          <code class="lang-vb">BeginCreateOrUpdate(IServerDisasterRecoveryConfigurationOperations, String, String, String, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins creating a new or updating an existing Azure SQL Server
+disaster recovery configuration. To determine the status of the
+operation call
+GetServerDisasterRecoveryConfigurationOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerDisasterRecoveryConfigurationCreateOrUpdateResponse BeginCreateOrUpdate(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreateOrUpdate(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String, parameters As ServerDisasterRecoveryConfigurationCreateOrUpdateParameters) As ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server disaster recovery
+configuration to be operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters">ServerDisasterRecoveryConfigurationCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters">ServerDisasterRecoveryConfigurationCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+disaster recovery configuration.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server disaster recovery
+configuration operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_BeginCreateOrUpdateAsync_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginCreateOrUpdateAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters)</code>
+          <code class="lang-vb">BeginCreateOrUpdateAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins creating a new or updating an existing Azure SQL Server
+disaster recovery configuration. To determine the status of the
+operation call
+GetServerDisasterRecoveryConfigurationOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerDisasterRecoveryConfigurationCreateOrUpdateResponse&gt; BeginCreateOrUpdateAsync(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginCreateOrUpdateAsync(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String, parameters As ServerDisasterRecoveryConfigurationCreateOrUpdateParameters) As Task(Of ServerDisasterRecoveryConfigurationCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server disaster recovery
+configuration to be operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters">ServerDisasterRecoveryConfigurationCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters">ServerDisasterRecoveryConfigurationCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+disaster recovery configuration.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server disaster recovery
+configuration operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_CreateOrUpdate_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdate(IServerDisasterRecoveryConfigurationOperations, String, String, String, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters)</code>
+          <code class="lang-vb">CreateOrUpdate(IServerDisasterRecoveryConfigurationOperations, String, String, String, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a new or updates an existing Azure SQL Server disaster
+recovery configuration.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerDisasterRecoveryConfigurationCreateOrUpdateResponse CreateOrUpdate(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function CreateOrUpdate(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String, parameters As ServerDisasterRecoveryConfigurationCreateOrUpdateParameters) As ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Database Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server disaster recovery
+configuration to be operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters">ServerDisasterRecoveryConfigurationCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters">ServerDisasterRecoveryConfigurationCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+disaster recovery configuration.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server disaster recovery
+configuration operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_CreateOrUpdateAsync_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdateAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters)</code>
+          <code class="lang-vb">CreateOrUpdateAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Creates a new or updates an existing Azure SQL Server disaster
+recovery configuration.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerDisasterRecoveryConfigurationCreateOrUpdateResponse&gt; CreateOrUpdateAsync(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName, ServerDisasterRecoveryConfigurationCreateOrUpdateParameters parameters)</code><code class="vb lang-vb">Public Shared Function CreateOrUpdateAsync(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String, parameters As ServerDisasterRecoveryConfigurationCreateOrUpdateParameters) As Task(Of ServerDisasterRecoveryConfigurationCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Database Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server disaster recovery
+configuration to be operated on (Updated or created).</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters">ServerDisasterRecoveryConfigurationCreateOrUpdateParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateParameters.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateParameters">ServerDisasterRecoveryConfigurationCreateOrUpdateParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The required parameters for creating or updating a Server
+disaster recovery configuration.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server disaster recovery
+configuration operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_Delete_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Delete(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+          <code class="lang-vb">Delete(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deletes the Azure SQL server disaster recovery configuration with
+the given name.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse Delete(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName)</code><code class="vb lang-vb">Public Shared Function Delete(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server disaster recovery
+configuration to be deleted.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_DeleteAsync_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+          <code class="lang-vb">DeleteAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deletes the Azure SQL server disaster recovery configuration with
+the given name.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; DeleteAsync(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName)</code><code class="vb lang-vb">Public Shared Function DeleteAsync(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server disaster recovery
+configuration to be deleted.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_Failover_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Failover(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+          <code class="lang-vb">Failover(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins failover for the Azure SQL server disaster recovery
+configuration with the given name.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse Failover(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName)</code><code class="vb lang-vb">Public Shared Function Failover(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server disaster recovery
+configuration to start failover.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_FailoverAllowDataLoss_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">FailoverAllowDataLoss(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+          <code class="lang-vb">FailoverAllowDataLoss(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins failover for the Azure SQL server disaster recovery
+configuration with the given name.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static AzureOperationResponse FailoverAllowDataLoss(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName)</code><code class="vb lang-vb">Public Shared Function FailoverAllowDataLoss(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String) As AzureOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server disaster recovery
+configuration to start failover.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">AzureOperationResponse</span></code>
+                      <code class="lang-vb"><span class="xref">AzureOperationResponse</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_FailoverAllowDataLossAsync_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">FailoverAllowDataLossAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+          <code class="lang-vb">FailoverAllowDataLossAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins failover for the Azure SQL server disaster recovery
+configuration with the given name.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; FailoverAllowDataLossAsync(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName)</code><code class="vb lang-vb">Public Shared Function FailoverAllowDataLossAsync(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server disaster recovery
+configuration to start failover.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_FailoverAsync_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">FailoverAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+          <code class="lang-vb">FailoverAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begins failover for the Azure SQL server disaster recovery
+configuration with the given name.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;AzureOperationResponse&gt; FailoverAsync(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName)</code><code class="vb lang-vb">Public Shared Function FailoverAsync(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server disaster recovery
+configuration to start failover.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_Get_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Get(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+          <code class="lang-vb">Get(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns information about an Azure SQL Server disaster recovery
+configurations.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerDisasterRecoveryConfigurationGetResponse Get(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName)</code><code class="vb lang-vb">Public Shared Function Get(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String) As ServerDisasterRecoveryConfigurationGetResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server disaster recovery
+configuration to be retrieved.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationGetResponse">ServerDisasterRecoveryConfigurationGetResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationGetResponse">ServerDisasterRecoveryConfigurationGetResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a get server disaster recovery
+configuration request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_GetAsync_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+          <code class="lang-vb">GetAsync(IServerDisasterRecoveryConfigurationOperations, String, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns information about an Azure SQL Server disaster recovery
+configurations.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerDisasterRecoveryConfigurationGetResponse&gt; GetAsync(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName, string serverDisasterRecoveryConfigurationName)</code><code class="vb lang-vb">Public Shared Function GetAsync(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String, serverDisasterRecoveryConfigurationName As String) As Task(Of ServerDisasterRecoveryConfigurationGetResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the server
+belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverDisasterRecoveryConfigurationName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL server disaster recovery
+configuration to be retrieved.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationGetResponse">ServerDisasterRecoveryConfigurationGetResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationGetResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationGetResponse">ServerDisasterRecoveryConfigurationGetResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a get server disaster recovery
+configuration request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_GetServerDisasterRecoveryConfigurationOperationStatus_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetServerDisasterRecoveryConfigurationOperationStatus(IServerDisasterRecoveryConfigurationOperations, String)</code>
+          <code class="lang-vb">GetServerDisasterRecoveryConfigurationOperationStatus(IServerDisasterRecoveryConfigurationOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure Sql Server disaster recovery
+configuration create or update operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerDisasterRecoveryConfigurationCreateOrUpdateResponse GetServerDisasterRecoveryConfigurationOperationStatus(IServerDisasterRecoveryConfigurationOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetServerDisasterRecoveryConfigurationOperationStatus(operations As IServerDisasterRecoveryConfigurationOperations, operationStatusLink As String) As ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server disaster recovery
+configuration operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_GetServerDisasterRecoveryConfigurationOperationStatusAsync_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetServerDisasterRecoveryConfigurationOperationStatusAsync(IServerDisasterRecoveryConfigurationOperations, String)</code>
+          <code class="lang-vb">GetServerDisasterRecoveryConfigurationOperationStatusAsync(IServerDisasterRecoveryConfigurationOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets the status of an Azure Sql Server disaster recovery
+configuration create or update operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerDisasterRecoveryConfigurationCreateOrUpdateResponse&gt; GetServerDisasterRecoveryConfigurationOperationStatusAsync(IServerDisasterRecoveryConfigurationOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetServerDisasterRecoveryConfigurationOperationStatusAsync(operations As IServerDisasterRecoveryConfigurationOperations, operationStatusLink As String) As Task(Of ServerDisasterRecoveryConfigurationCreateOrUpdateResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationCreateOrUpdateResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationCreateOrUpdateResponse">ServerDisasterRecoveryConfigurationCreateOrUpdateResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Response for long running Azure Sql server disaster recovery
+configuration operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_List_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">List(IServerDisasterRecoveryConfigurationOperations, String, String)</code>
+          <code class="lang-vb">List(IServerDisasterRecoveryConfigurationOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns information about Azure SQL Server disaster recovery
+configurations.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static ServerDisasterRecoveryConfigurationListResponse List(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName)</code><code class="vb lang-vb">Public Shared Function List(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String) As ServerDisasterRecoveryConfigurationListResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationListResponse">ServerDisasterRecoveryConfigurationListResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationListResponse">ServerDisasterRecoveryConfigurationListResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a List Azure Sql Server disaster
+recovery configuration request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_Sql_ServerDisasterRecoveryConfigurationOperationsExtensions_ListAsync_Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations_System_String_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(IServerDisasterRecoveryConfigurationOperations, String, String)</code>
+          <code class="lang-vb">ListAsync(IServerDisasterRecoveryConfigurationOperations, String, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Returns information about Azure SQL Server disaster recovery
+configurations.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;ServerDisasterRecoveryConfigurationListResponse&gt; ListAsync(IServerDisasterRecoveryConfigurationOperations operations, string resourceGroupName, string serverName)</code><code class="vb lang-vb">Public Shared Function ListAsync(operations As IServerDisasterRecoveryConfigurationOperations, resourceGroupName As String, serverName As String) As Task(Of ServerDisasterRecoveryConfigurationListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.html#Microsoft_Azure_Management_Sql_IServerDisasterRecoveryConfigurationOperations">IServerDisasterRecoveryConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.Sql.IServerDisasterRecoveryConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Resource Group to which the Azure SQL
+Server belongs.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serverName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Azure SQL Server.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationListResponse">ServerDisasterRecoveryConfigurationListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.Sql.Models.ServerDisasterRecoveryConfigurationListResponse.html#Microsoft_Azure_Management_Sql_Models_ServerDisasterRecoveryConfigurationListResponse">ServerDisasterRecoveryConfigurationListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Represents the response to a List Azure Sql Server disaster
+recovery configuration request.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

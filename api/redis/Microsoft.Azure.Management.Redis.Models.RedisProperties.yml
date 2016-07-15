@@ -1,0 +1,928 @@
+items:
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  commentId: T:Microsoft.Azure.Management.Redis.Models.RedisProperties
+  id: RedisProperties
+  parent: Microsoft.Azure.Management.Redis.Models
+  children:
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.#ctor
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.#ctor(Microsoft.Azure.Management.Redis.Models.Sku)
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.EnableNonSslPort
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisConfiguration
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisVersion
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.ShardCount
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.Sku
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.StaticIP
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.Subnet
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.TenantSettings
+  - Microsoft.Azure.Management.Redis.Models.RedisProperties.VirtualNetwork
+  langs:
+  - csharp
+  - vb
+  name: RedisProperties
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RedisProperties
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nParameters supplied to CreateOrUpdate redis operation.\r\n"
+  example: []
+  syntax:
+    content: public class RedisProperties
+    content.vb: Public Class RedisProperties
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.EnableNonSslPort
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.EnableNonSslPort
+  id: EnableNonSslPort
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: EnableNonSslPort
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.EnableNonSslPort
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: EnableNonSslPort
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nOptional. If the value is true, then the non-ssl redis server port\r\n(6379) will be enabled.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public bool ? EnableNonSslPort
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property EnableNonSslPort As Boolean?
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisConfiguration
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisConfiguration
+  id: RedisConfiguration
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: RedisConfiguration
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisConfiguration
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RedisConfiguration
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nOptional. All Redis Settings. Few possible keys:\r\n<p>rdb-backup-enabled</p><p>rdb-storage-connection-string</p><p>rdb-backup-frequency</p><p>maxmemory-reserved</p><p>maxmemory-policy</p><p>notify-keyspace-events</p>.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IDictionary<string, string> RedisConfiguration
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RedisConfiguration As IDictionary(Of String, String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisVersion
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisVersion
+  id: RedisVersion
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: RedisVersion
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisVersion
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RedisVersion
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nOptional. RedisVersion parameter has been deprecated. As such, it\r\nis no longer necessary to provide this parameter and any value\r\nspecified is ignored.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string RedisVersion
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RedisVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.ShardCount
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.ShardCount
+  id: ShardCount
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: ShardCount
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.ShardCount
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ShardCount
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nOptional. The number of shards to be created on a Premium Cluster\r\nCache.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? ShardCount
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ShardCount As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.Sku
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.Sku
+  id: Sku
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: Sku
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.Sku
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Sku
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 88
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nRequired. What sku of redis cache to deploy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Sku Sku
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Sku As Sku
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.Redis.Models.Sku
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.StaticIP
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.StaticIP
+  id: StaticIP
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: StaticIP
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.StaticIP
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StaticIP
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 100
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nOptional. Required when deploying a redis cache inside an existing\r\nAzure Virtual Network.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string StaticIP
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property StaticIP As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.Subnet
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.Subnet
+  id: Subnet
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: Subnet
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.Subnet
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Subnet
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 112
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nOptional. Required when deploying a redis cache inside an existing\r\nAzure Virtual Network.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Subnet
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Subnet As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.TenantSettings
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.TenantSettings
+  id: TenantSettings
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: TenantSettings
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.TenantSettings
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TenantSettings
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 123
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nOptional. tenantSettings\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IDictionary<string, string> TenantSettings
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TenantSettings As IDictionary(Of String, String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.VirtualNetwork
+  commentId: P:Microsoft.Azure.Management.Redis.Models.RedisProperties.VirtualNetwork
+  id: VirtualNetwork
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: VirtualNetwork
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.VirtualNetwork
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: VirtualNetwork
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 136
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nOptional. The exact ARM resource ID of the virtual network to\r\ndeploy the redis cache in. Example format:\r\n/subscriptions/{subid}/resourceGroups/{resourceGroupName}/providers/Microsoft.ClassicNetwork/VirtualNetworks/{vnetName}\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string VirtualNetwork
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property VirtualNetwork As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.#ctor
+  commentId: M:Microsoft.Azure.Management.Redis.Models.RedisProperties.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: RedisProperties()
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisProperties()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 145
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nInitializes a new instance of the RedisProperties class.\r\n"
+  example: []
+  syntax:
+    content: public RedisProperties()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.Redis.Models.RedisProperties.#ctor(Microsoft.Azure.Management.Redis.Models.Sku)
+  commentId: M:Microsoft.Azure.Management.Redis.Models.RedisProperties.#ctor(Microsoft.Azure.Management.Redis.Models.Sku)
+  id: '#ctor(Microsoft.Azure.Management.Redis.Models.Sku)'
+  parent: Microsoft.Azure.Management.Redis.Models.RedisProperties
+  langs:
+  - csharp
+  - vb
+  name: RedisProperties(Sku)
+  fullName: Microsoft.Azure.Management.Redis.Models.RedisProperties.RedisProperties(Microsoft.Azure.Management.Redis.Models.Sku)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RedisCache/RedisCacheManagement/Generated/Models/RedisProperties.cs
+    startLine: 155
+  assemblies:
+  - Microsoft.Azure.Management.Redis
+  namespace: Microsoft.Azure.Management.Redis.Models
+  summary: "\r\nInitializes a new instance of the RedisProperties class with\r\nrequired arguments.\r\n"
+  example: []
+  syntax:
+    content: public RedisProperties(Sku sku)
+    content.vb: Public Sub New(sku As Sku)
+    parameters:
+    - id: sku
+      type: Microsoft.Azure.Management.Redis.Models.Sku
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.Redis.Models
+  fullName: Microsoft.Azure.Management.Redis.Models
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  fullname.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  fullname.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullname.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.Redis.Models.Sku
+  parent: Microsoft.Azure.Management.Redis.Models
+  isExternal: false
+  name: Sku
+  fullName: Microsoft.Azure.Management.Redis.Models.Sku

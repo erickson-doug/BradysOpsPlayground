@@ -1,0 +1,1372 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  id: RecoveryServicesBackupManagementClient
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(System.Net.Http.HttpClient)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ApiVersion
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.BackupEngines
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Backups
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.BaseUri
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient})
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Containers
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Credentials
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetDeleteOperationResultAsync(System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetDeleteOperationResultByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetOperationStatusByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Jobs
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.LongRunningOperationInitialTimeout
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.LongRunningOperationRetryTimeout
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectableObjects
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectedItems
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectionPolicies
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryPoints
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ResourceNamespace
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Restores
+  langs:
+  - csharp
+  - vb
+  name: RecoveryServicesBackupManagementClient
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecoveryServicesBackupManagementClient
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  syntax:
+    content: 'public class RecoveryServicesBackupManagementClient : ServiceClient<RecoveryServicesBackupManagementClient>, IRecoveryServicesBackupManagementClient, IDisposable'
+    content.vb: >-
+      Public Class RecoveryServicesBackupManagementClient
+
+          Inherits ServiceClient(Of RecoveryServicesBackupManagementClient)
+
+          Implements IRecoveryServicesBackupManagementClient, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+  - System.IDisposable
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ApiVersion
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ApiVersion
+  id: ApiVersion
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ApiVersion
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ApiVersion
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ApiVersion
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 43
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nGets the API version.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ApiVersion
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ApiVersion As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.BaseUri
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.BaseUri
+  id: BaseUri
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BaseUri
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nGets the URI used as the base for all cloud service requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Uri BaseUri
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property BaseUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Credentials
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Credentials
+  id: Credentials
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Credentials
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Credentials
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nGets subscription credentials which uniquely identify Microsoft\r\nAzure subscription. The subscription ID forms part of the URI for\r\nevery service call.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public SubscriptionCloudCredentials Credentials
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Credentials As SubscriptionCloudCredentials
+    parameters: []
+    return:
+      type: SubscriptionCloudCredentials
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.LongRunningOperationInitialTimeout
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.LongRunningOperationInitialTimeout
+  id: LongRunningOperationInitialTimeout
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationInitialTimeout
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.LongRunningOperationInitialTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationInitialTimeout
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 75
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nGets or sets the initial timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationInitialTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationInitialTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.LongRunningOperationRetryTimeout
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.LongRunningOperationRetryTimeout
+  id: LongRunningOperationRetryTimeout
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: LongRunningOperationRetryTimeout
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.LongRunningOperationRetryTimeout
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LongRunningOperationRetryTimeout
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 86
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nGets or sets the retry timeout for Long Running Operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int LongRunningOperationRetryTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LongRunningOperationRetryTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ResourceNamespace
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ResourceNamespace
+  id: ResourceNamespace
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ResourceNamespace
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ResourceNamespace
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ResourceNamespace
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 98
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nGet or sets the resource namespace. By default it points to Azure\r\nProduction. Override this value only if needed\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ResourceNamespace
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ResourceNamespace As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.BackupEngines
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.BackupEngines
+  id: BackupEngines
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: BackupEngines
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.BackupEngines
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BackupEngines
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 110
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing the\r\nbackup engines registered to your Recovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IBackupEngineOperations BackupEngines
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property BackupEngines As IBackupEngineOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Backups
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Backups
+  id: Backups
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Backups
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Backups
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Backups
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for triggering and\r\nmanaging the backups of items protected by your Recovery Services\r\nVault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IBackupOperations Backups
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Backups As IBackupOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Containers
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Containers
+  id: Containers
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Containers
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Containers
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Containers
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 133
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing the\r\ncontainers registered to your Recovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IContainerOperations Containers
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Containers As IContainerOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IContainerOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Jobs
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Jobs
+  id: Jobs
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Jobs
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Jobs
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Jobs
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 145
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing the jobs\r\ncreated by various operations on a given item protected by your\r\nRecovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IJobOperations Jobs
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Jobs As IJobOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IJobOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectableObjects
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectableObjects
+  id: ProtectableObjects
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ProtectableObjects
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectableObjects
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProtectableObjects
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 156
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing the\r\nprotectable objects registered to your Recovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IProtectableObjectOperations ProtectableObjects
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ProtectableObjects As IProtectableObjectOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectableObjectOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectedItems
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectedItems
+  id: ProtectedItems
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ProtectedItems
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectedItems
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProtectedItems
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 167
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing the items\r\nprotected by your Recovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IProtectedItemOperations ProtectedItems
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ProtectedItems As IProtectedItemOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectionPolicies
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectionPolicies
+  id: ProtectionPolicies
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: ProtectionPolicies
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.ProtectionPolicies
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ProtectionPolicies
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 178
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing\r\nprotection policies defined for your Recovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IProtectionPolicyOperations ProtectionPolicies
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property ProtectionPolicies As IProtectionPolicyOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectionPolicyOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryPoints
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryPoints
+  id: RecoveryPoints
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecoveryPoints
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryPoints
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecoveryPoints
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 190
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for managing recovery\r\npoints created by backup operations on the items protected by your\r\nRecovery Services Vault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IRecoveryPointOperations RecoveryPoints
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property RecoveryPoints As IRecoveryPointOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryPointOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Restores
+  commentId: P:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Restores
+  id: Restores
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Restores
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Restores
+  type: Property
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Restores
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 202
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe Resource Manager API includes operations for triggering and\r\nmanaging restore actions of the items protected by your Recovery\r\nServices Vault.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public virtual IRestoreOperations Restores
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Overridable ReadOnly Property Restores As IRestoreOperations
+    parameters: []
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IRestoreOperations
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor
+  id: '#ctor'
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecoveryServicesBackupManagementClient()
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryServicesBackupManagementClient()
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 211
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nInitializes a new instance of the\r\nRecoveryServicesBackupManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public RecoveryServicesBackupManagementClient()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri)'
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials, Uri)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials, System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 243
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nInitializes a new instance of the\r\nRecoveryServicesBackupManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials)
+  id: '#ctor(SubscriptionCloudCredentials)'
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 269
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nInitializes a new instance of the\r\nRecoveryServicesBackupManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials credentials)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(System.Net.Http.HttpClient)
+  id: '#ctor(System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecoveryServicesBackupManagementClient(HttpClient)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryServicesBackupManagementClient(System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 289
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nInitializes a new instance of the\r\nRecoveryServicesBackupManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public RecoveryServicesBackupManagementClient(HttpClient httpClient)
+    content.vb: Public Sub New(httpClient As HttpClient)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Uri,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials, Uri, HttpClient)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials, System.Uri, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 324
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nInitializes a new instance of the\r\nRecoveryServicesBackupManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials credentials, Uri baseUri, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, baseUri As Uri, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: baseUri
+      type: System.Uri
+      description: "\r\nOptional. Gets the URI used as the base for all cloud service\r\nrequests.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)
+  id: '#ctor(SubscriptionCloudCredentials,System.Net.Http.HttpClient)'
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials, HttpClient)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 353
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nInitializes a new instance of the\r\nRecoveryServicesBackupManagementClient class.\r\n"
+  example: []
+  syntax:
+    content: public RecoveryServicesBackupManagementClient(SubscriptionCloudCredentials credentials, HttpClient httpClient)
+    content.vb: Public Sub New(credentials As SubscriptionCloudCredentials, httpClient As HttpClient)
+    parameters:
+    - id: credentials
+      type: SubscriptionCloudCredentials
+      description: "\r\nRequired. Gets subscription credentials which uniquely identify\r\nMicrosoft Azure subscription. The subscription ID forms part of\r\nthe URI for every service call.\r\n"
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+      description: "\r\nThe Http client\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient})
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Clone(ServiceClient{Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient})
+  id: Clone(ServiceClient{Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient})
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: Clone(ServiceClient<RecoveryServicesBackupManagementClient>)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Clone(ServiceClient<Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient>)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Clone
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 373
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nClones properties from current instance to another\r\nRecoveryServicesBackupManagementClient instance\r\n"
+  example: []
+  syntax:
+    content: protected override void Clone(ServiceClient<RecoveryServicesBackupManagementClient> client)
+    content.vb: Protected Overrides Sub Clone(client As ServiceClient(Of RecoveryServicesBackupManagementClient))
+    parameters:
+    - id: client
+      type: ServiceClient{Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient}
+      description: "\r\nInstance of RecoveryServicesBackupManagementClient to clone to\r\n"
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.Clone(ServiceClient(Of Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient))
+  name.vb: Clone(ServiceClient(Of RecoveryServicesBackupManagementClient))
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetDeleteOperationResultAsync(System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetDeleteOperationResultAsync(System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetDeleteOperationResultAsync(System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetDeleteOperationResultAsync(String, String, String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetDeleteOperationResultAsync(System.String, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDeleteOperationResultAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 420
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nOnce you trigger a delete operation such as deleting a protected\r\nitem etc., you may use this method to get the operation's result.\r\nOnce the operation has started, the status code in the response\r\nwould be Accepted. It will continue to be in this state till it\r\nreaches completetion. On successful completion, the status code\r\nwill be OK. This method expects the ID of the operation to be\r\npassed in the arguments. This usually is part of the Location\r\nheader of the operation response.\r\n"
+  example: []
+  syntax:
+    content: public Task<GetOperationResultResponse> GetDeleteOperationResultAsync(string resourceGroupName, string resourceName, string operationId, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Public Function GetDeleteOperationResultAsync(resourceGroupName As String, resourceName As String, operationId As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of GetOperationResultResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. Resource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of your recovery services vault.\r\n"
+    - id: operationId
+      type: System.String
+      description: "\r\nRequired.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse}
+      description: "\r\nResponse object returned by the get operation result APIs.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetDeleteOperationResultByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetDeleteOperationResultByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetDeleteOperationResultByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetDeleteOperationResultByURLAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetDeleteOperationResultByURLAsync(System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDeleteOperationResultByURLAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 675
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nOnce you trigger a delete operation such as deleting a protected\r\nitem etc., you may use this method to get the operation's result.\r\nOnce the operation has started, the status code in the response\r\nwould be Accepted. It will continue to be in this state till it\r\nreaches completetion. On successful completion, the status code\r\nwill be OK. This method expects the tracking URL of the operation\r\nto be passed in the arguments. This usually is the Location header\r\nof the operation response.\r\n"
+  example: []
+  syntax:
+    content: public Task<GetOperationResultResponse> GetDeleteOperationResultByURLAsync(string operationResultLink, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Public Function GetDeleteOperationResultByURLAsync(operationResultLink As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of GetOperationResultResponse)
+    parameters:
+    - id: operationResultLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by operation.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse}
+      description: "\r\nResponse object returned by the get operation result APIs.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetOperationStatusByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetOperationStatusByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  id: GetOperationStatusByURLAsync(System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  langs:
+  - csharp
+  - vb
+  name: GetOperationStatusByURLAsync(String, CustomRequestHeaders, CancellationToken)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient.GetOperationStatusByURLAsync(System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationStatusByURLAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClient.cs
+    startLine: 885
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe GetOperationStatusByURL method can be used to fetch the status\r\nof an operation such as triggering a backup, restore etc. The\r\nstatus can be in progress, completed or failed. You can refer to\r\nthe Operation Status enum for all the possible states of the\r\noperation. Some operations may create jobs within the backend\r\nservice. This method can return the list of jobs when the\r\noperation is complete.\r\n"
+  example: []
+  syntax:
+    content: public Task<BackUpOperationStatusResponse> GetOperationStatusByURLAsync(string operationResultLink, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)
+    content.vb: Public Function GetOperationStatusByURLAsync(operationResultLink As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of BackUpOperationStatusResponse)
+    parameters:
+    - id: operationResultLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by operation.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse}
+      description: "\r\nResponse of the get operation status API calls.\r\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IRecoveryServicesBackupManagementClient
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: SubscriptionCloudCredentials
+  isExternal: true
+  name: SubscriptionCloudCredentials
+  fullName: SubscriptionCloudCredentials
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IBackupEngineOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupEngineOperations
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IBackupOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IBackupOperations
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IContainerOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IContainerOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IContainerOperations
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IJobOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IJobOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IJobOperations
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectableObjectOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IProtectableObjectOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectableObjectOperations
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IProtectedItemOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectedItemOperations
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectionPolicyOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IProtectionPolicyOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IProtectionPolicyOperations
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryPointOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IRecoveryPointOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryPointOperations
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IRestoreOperations
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IRestoreOperations
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IRestoreOperations
+- uid: System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+- uid: ServiceClient{Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient}
+  definition: ServiceClient`1
+  name: ServiceClient<RecoveryServicesBackupManagementClient>
+  fullName: ServiceClient<Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient>
+  fullname.vb: ServiceClient(Of Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient)
+  name.vb: ServiceClient(Of RecoveryServicesBackupManagementClient)
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+    name: RecoveryServicesBackupManagementClient
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+    name: RecoveryServicesBackupManagementClient
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClient
+  - name: )
+    fullName: )
+- uid: ServiceClient`1
+  isExternal: true
+  name: ServiceClient<>
+  fullName: ServiceClient<>
+  fullname.vb: ServiceClient(Of )
+  name.vb: ServiceClient(Of )
+  spec.csharp:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ServiceClient`1
+    name: ServiceClient
+    fullName: ServiceClient
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetOperationResultResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse)
+  name.vb: Task(Of GetOperationResultResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+    name: GetOperationResultResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+    name: GetOperationResultResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<BackUpOperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse)
+  name.vb: Task(Of BackUpOperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+    name: BackUpOperationStatusResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+    name: BackUpOperationStatusResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+  - name: )
+    fullName: )

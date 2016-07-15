@@ -1,0 +1,158 @@
+items:
+- uid: Microsoft.Azure.Management.ApiApps.ITemplateOperations
+  commentId: T:Microsoft.Azure.Management.ApiApps.ITemplateOperations
+  id: ITemplateOperations
+  parent: Microsoft.Azure.Management.ApiApps
+  children:
+  - Microsoft.Azure.Management.ApiApps.ITemplateOperations.GetMetadataAsync(Microsoft.Azure.Management.ApiApps.Models.GetDeploymentMetadataRequest,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITemplateOperations
+  fullName: Microsoft.Azure.Management.ApiApps.ITemplateOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiApp/ApiAppManagement/Generated/ITemplateOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ITemplateOperations
+    path: src/src/ResourceManagement/ApiApp/ApiAppManagement/Generated/ITemplateOperations.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Azure.Management.ApiApps
+  namespace: Microsoft.Azure.Management.ApiApps
+  summary: "\r\nOperations for generating deployment templates\r\n"
+  example: []
+  syntax:
+    content: public interface ITemplateOperations
+    content.vb: Public Interface ITemplateOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.ApiApps.ITemplateOperations.GetMetadataAsync(Microsoft.Azure.Management.ApiApps.Models.GetDeploymentMetadataRequest,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiApps.ITemplateOperations.GetMetadataAsync(Microsoft.Azure.Management.ApiApps.Models.GetDeploymentMetadataRequest,System.Threading.CancellationToken)
+  id: GetMetadataAsync(Microsoft.Azure.Management.ApiApps.Models.GetDeploymentMetadataRequest,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiApps.ITemplateOperations
+  langs:
+  - csharp
+  - vb
+  name: GetMetadataAsync(GetDeploymentMetadataRequest, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiApps.ITemplateOperations.GetMetadataAsync(Microsoft.Azure.Management.ApiApps.Models.GetDeploymentMetadataRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiApp/ApiAppManagement/Generated/ITemplateOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMetadataAsync
+    path: src/src/ResourceManagement/ApiApp/ApiAppManagement/Generated/ITemplateOperations.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.Azure.Management.ApiApps
+  namespace: Microsoft.Azure.Management.ApiApps
+  summary: "\r\nGet metadata for deploying a package to the given resource group\r\n"
+  example: []
+  syntax:
+    content: Task<GetDeploymentTemplateMetadataResponse> GetMetadataAsync(GetDeploymentMetadataRequest parameters, CancellationToken cancellationToken)
+    content.vb: Function GetMetadataAsync(parameters As GetDeploymentMetadataRequest, cancellationToken As CancellationToken) As Task(Of GetDeploymentTemplateMetadataResponse)
+    parameters:
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiApps.Models.GetDeploymentMetadataRequest
+      description: "\r\nParameters for operation\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiApps.Models.GetDeploymentTemplateMetadataResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.Azure.Management.ApiApps
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiApps
+  fullName: Microsoft.Azure.Management.ApiApps
+- uid: Microsoft.Azure.Management.ApiApps.Models.GetDeploymentMetadataRequest
+  parent: Microsoft.Azure.Management.ApiApps.Models
+  isExternal: false
+  name: GetDeploymentMetadataRequest
+  fullName: Microsoft.Azure.Management.ApiApps.Models.GetDeploymentMetadataRequest
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiApps.Models.GetDeploymentTemplateMetadataResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetDeploymentTemplateMetadataResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiApps.Models.GetDeploymentTemplateMetadataResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiApps.Models.GetDeploymentTemplateMetadataResponse)
+  name.vb: Task(Of GetDeploymentTemplateMetadataResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiApps.Models.GetDeploymentTemplateMetadataResponse
+    name: GetDeploymentTemplateMetadataResponse
+    fullName: Microsoft.Azure.Management.ApiApps.Models.GetDeploymentTemplateMetadataResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiApps.Models.GetDeploymentTemplateMetadataResponse
+    name: GetDeploymentTemplateMetadataResponse
+    fullName: Microsoft.Azure.Management.ApiApps.Models.GetDeploymentTemplateMetadataResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.ApiApps.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiApps.Models
+  fullName: Microsoft.Azure.Management.ApiApps.Models
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,1656 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions">
+          <span class="lang-csharp">TenantConfigurationOperationsExtensions</span>
+          <span class="lang-vb">TenantConfigurationOperationsExtensions</span>
+          Class
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <ul>
+            <li class="l0">
+              <code class="lang-csharp">
+                <span class="xref">System.Object</span>
+              </code>
+              <code class="lang-vb">
+                <span class="xref">System.Object</span>
+              </code>
+            </li>
+            <li class="l1">
+              <span class="xref">
+                <code class="lang-csharp">TenantConfigurationOperationsExtensions</code>
+                <code class="lang-vb">TenantConfigurationOperationsExtensions</code>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.ApiManagement.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>.Net client wrapper for the REST API for Azure ApiManagement Service</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_BeginDeploy_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeploy(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+          <code class="lang-vb">BeginDeploy(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin deploy operation of configuration from the specified Git
+branch to the configuration database in an Api Management
+service.To determine whether the operation has finished processing
+the request, call GetTenantConfigurationLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static TenantLongRunningOperationResponse BeginDeploy(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, DeployConfigurationParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginDeploy(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters) As TenantLongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Deploy Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_BeginDeployAsync_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginDeployAsync(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+          <code class="lang-vb">BeginDeployAsync(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin deploy operation of configuration from the specified Git
+branch to the configuration database in an Api Management
+service.To determine whether the operation has finished processing
+the request, call GetTenantConfigurationLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;TenantLongRunningOperationResponse&gt; BeginDeployAsync(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, DeployConfigurationParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginDeployAsync(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters) As Task(Of TenantLongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Deploy Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_BeginSave_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginSave(ITenantConfigurationOperations, String, String, SaveConfigurationParameter)</code>
+          <code class="lang-vb">BeginSave(ITenantConfigurationOperations, String, String, SaveConfigurationParameter)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin save operation creates a commit of the current configuration
+snapshot to the specified branch in the repository in an Api
+Management service.To determine whether the operation has finished
+processing the request, call
+GetTenantConfigurationLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static TenantLongRunningOperationResponse BeginSave(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, SaveConfigurationParameter parameters)</code><code class="vb lang-vb">Public Shared Function BeginSave(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As SaveConfigurationParameter) As TenantLongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter">SaveConfigurationParameter</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter">SaveConfigurationParameter</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Save Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_BeginSaveAsync_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginSaveAsync(ITenantConfigurationOperations, String, String, SaveConfigurationParameter)</code>
+          <code class="lang-vb">BeginSaveAsync(ITenantConfigurationOperations, String, String, SaveConfigurationParameter)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin save operation creates a commit of the current configuration
+snapshot to the specified branch in the repository in an Api
+Management service.To determine whether the operation has finished
+processing the request, call
+GetTenantConfigurationLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;TenantLongRunningOperationResponse&gt; BeginSaveAsync(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, SaveConfigurationParameter parameters)</code><code class="vb lang-vb">Public Shared Function BeginSaveAsync(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As SaveConfigurationParameter) As Task(Of TenantLongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter">SaveConfigurationParameter</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter">SaveConfigurationParameter</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Save Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_BeginValidate_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginValidate(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+          <code class="lang-vb">BeginValidate(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin validate operation of configuration changes in the specified
+Git branch of an Api Management service.To determine whether the
+operation has finished processing the request, call
+GetLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static TenantLongRunningOperationResponse BeginValidate(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, DeployConfigurationParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginValidate(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters) As TenantLongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Validate Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_BeginValidateAsync_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">BeginValidateAsync(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+          <code class="lang-vb">BeginValidateAsync(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Begin validate operation of configuration changes in the specified
+Git branch of an Api Management service.To determine whether the
+operation has finished processing the request, call
+GetLongRunningOperationStatus.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;TenantLongRunningOperationResponse&gt; BeginValidateAsync(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, DeployConfigurationParameters parameters)</code><code class="vb lang-vb">Public Shared Function BeginValidateAsync(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters) As Task(Of TenantLongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Validate Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_Deploy_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Deploy(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+          <code class="lang-vb">Deploy(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deploy Git changes to configuration database in Api Management
+service.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static TenantConfigurationLongRunningOperationResponse Deploy(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, DeployConfigurationParameters parameters)</code><code class="vb lang-vb">Public Shared Function Deploy(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters) As TenantConfigurationLongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Deploy Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant configuration
+operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_DeployAsync_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeployAsync(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+          <code class="lang-vb">DeployAsync(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Deploy Git changes to configuration database in Api Management
+service.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;TenantConfigurationLongRunningOperationResponse&gt; DeployAsync(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, DeployConfigurationParameters parameters)</code><code class="vb lang-vb">Public Shared Function DeployAsync(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters) As Task(Of TenantConfigurationLongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Deploy Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant configuration
+operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_GetLongRunningOperationStatus_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetLongRunningOperationStatus(ITenantConfigurationOperations, String)</code>
+          <code class="lang-vb">GetLongRunningOperationStatus(ITenantConfigurationOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Operation Status operation returns the status of the
+specified operation. After calling an asynchronous operation, you
+can call Get Operation Status to determine whether the operation
+has succeeded, failed, or is still in progress.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static TenantLongRunningOperationResponse GetLongRunningOperationStatus(ITenantConfigurationOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetLongRunningOperationStatus(operations As ITenantConfigurationOperations, operationStatusLink As String) As TenantLongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_GetLongRunningOperationStatusAsync_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetLongRunningOperationStatusAsync(ITenantConfigurationOperations, String)</code>
+          <code class="lang-vb">GetLongRunningOperationStatusAsync(ITenantConfigurationOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Operation Status operation returns the status of the
+specified operation. After calling an asynchronous operation, you
+can call Get Operation Status to determine whether the operation
+has succeeded, failed, or is still in progress.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;TenantLongRunningOperationResponse&gt; GetLongRunningOperationStatusAsync(ITenantConfigurationOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetLongRunningOperationStatusAsync(operations As ITenantConfigurationOperations, operationStatusLink As String) As Task(Of TenantLongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantLongRunningOperationResponse">TenantLongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_GetTenantConfigurationLongRunningOperationStatus_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetTenantConfigurationLongRunningOperationStatus(ITenantConfigurationOperations, String)</code>
+          <code class="lang-vb">GetTenantConfigurationLongRunningOperationStatus(ITenantConfigurationOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Operation Status operation returns the status of the
+specified operation. After calling an asynchronous operation, you
+can call Get Operation Status to determine whether the operation
+has succeeded, failed, or is still in progress.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static TenantConfigurationLongRunningOperationResponse GetTenantConfigurationLongRunningOperationStatus(ITenantConfigurationOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetTenantConfigurationLongRunningOperationStatus(operations As ITenantConfigurationOperations, operationStatusLink As String) As TenantConfigurationLongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant configuration
+operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_GetTenantConfigurationLongRunningOperationStatusAsync_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetTenantConfigurationLongRunningOperationStatusAsync(ITenantConfigurationOperations, String)</code>
+          <code class="lang-vb">GetTenantConfigurationLongRunningOperationStatusAsync(ITenantConfigurationOperations, String)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Get Operation Status operation returns the status of the
+specified operation. After calling an asynchronous operation, you
+can call Get Operation Status to determine whether the operation
+has succeeded, failed, or is still in progress.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;TenantConfigurationLongRunningOperationResponse&gt; GetTenantConfigurationLongRunningOperationStatusAsync(ITenantConfigurationOperations operations, string operationStatusLink)</code><code class="vb lang-vb">Public Shared Function GetTenantConfigurationLongRunningOperationStatusAsync(operations As ITenantConfigurationOperations, operationStatusLink As String) As Task(Of TenantConfigurationLongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationStatusLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Location value returned by the Begin operation.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant configuration
+operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_Save_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Save(ITenantConfigurationOperations, String, String, SaveConfigurationParameter)</code>
+          <code class="lang-vb">Save(ITenantConfigurationOperations, String, String, SaveConfigurationParameter)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Commit configuration snapshot to an Api Management service.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static TenantConfigurationLongRunningOperationResponse Save(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, SaveConfigurationParameter parameters)</code><code class="vb lang-vb">Public Shared Function Save(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As SaveConfigurationParameter) As TenantConfigurationLongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter">SaveConfigurationParameter</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter">SaveConfigurationParameter</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Save Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant configuration
+operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_SaveAsync_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">SaveAsync(ITenantConfigurationOperations, String, String, SaveConfigurationParameter)</code>
+          <code class="lang-vb">SaveAsync(ITenantConfigurationOperations, String, String, SaveConfigurationParameter)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Commit configuration snapshot to an Api Management service.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;TenantConfigurationLongRunningOperationResponse&gt; SaveAsync(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, SaveConfigurationParameter parameters)</code><code class="vb lang-vb">Public Shared Function SaveAsync(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As SaveConfigurationParameter) As Task(Of TenantConfigurationLongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter">SaveConfigurationParameter</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.SaveConfigurationParameter.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_SaveConfigurationParameter">SaveConfigurationParameter</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Save Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant configuration
+operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_Validate_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">Validate(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+          <code class="lang-vb">Validate(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Validate Git changes in an Api Management service.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static TenantConfigurationLongRunningOperationResponse Validate(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, DeployConfigurationParameters parameters)</code><code class="vb lang-vb">Public Shared Function Validate(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters) As TenantConfigurationLongRunningOperationResponse</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Validate Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a></code>
+                      <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant configuration
+operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_ApiManagement_TenantConfigurationOperationsExtensions_ValidateAsync_Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations_System_String_System_String_Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ValidateAsync(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+          <code class="lang-vb">ValidateAsync(ITenantConfigurationOperations, String, String, DeployConfigurationParameters)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Validate Git changes in an Api Management service.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">public static Task&lt;TenantConfigurationLongRunningOperationResponse&gt; ValidateAsync(ITenantConfigurationOperations operations, string resourceGroupName, string serviceName, DeployConfigurationParameters parameters)</code><code class="vb lang-vb">Public Shared Function ValidateAsync(operations As ITenantConfigurationOperations, resourceGroupName As String, serviceName As String, parameters As DeployConfigurationParameters) As Task(Of TenantConfigurationLongRunningOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operations</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.html#Microsoft_Azure_Management_ApiManagement_ITenantConfigurationOperations">ITenantConfigurationOperations</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Reference to the
+Microsoft.Azure.Management.ApiManagement.ITenantConfigurationOperations.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the resource group.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>serviceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. The name of the Api Management service.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>parameters</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.DeployConfigurationParameters.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_DeployConfigurationParameters">DeployConfigurationParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Required. Validate Configuration parameters.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.ApiManagement.SmapiModels.TenantConfigurationLongRunningOperationResponse.html#Microsoft_Azure_Management_ApiManagement_SmapiModels_TenantConfigurationLongRunningOperationResponse">TenantConfigurationLongRunningOperationResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response for long running tenant configuration
+operations.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

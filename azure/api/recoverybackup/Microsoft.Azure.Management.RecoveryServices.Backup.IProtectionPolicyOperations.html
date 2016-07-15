@@ -1,0 +1,754 @@
+﻿    
+    <header class="header" id="overview">
+      <h1 id="Microsoft_Azure_Management_RecoveryServices_Backup_IProtectionPolicyOperations">
+          <span class="lang-csharp">IProtectionPolicyOperations</span>
+          <span class="lang-vb">IProtectionPolicyOperations</span>
+          Interface
+      </h1>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <div class="alert alert-minimal inheritance">
+          <h5><span class="icon icon-inheritance"></span> Inheritance Hierarchy</h5>
+          <p><code>None</code></p>
+        </div>
+      </section>
+      <section class="secondary">
+        <div class="alert alert-minimal">
+          <h5><span class="icon icon-assembly"></span> Assembly</h5>
+          <p><code>Microsoft.Azure.Management.RecoveryServices.Backup.dll</code></p>
+        </div>
+      </section>
+    </div>
+    <header class="header" id="summary">
+      <h2>Introduction</h2>
+    </header>
+    <div class="level">
+      <section class="primary">
+        <p>The Resource Manager API includes operations for managing protection
+policies defined for your Recovery Services Vault.</p>
+
+      </section>
+      <section class="secondary">
+      </section>
+    </div>
+    <header class="header" id="methods">
+      <h2>Methods
+    </h2>
+    </header>
+    <ul class="list-clean">
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IProtectionPolicyOperations_CreateOrUpdateAsync_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyRequest_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">CreateOrUpdateAsync(String, String, String, ProtectionPolicyRequest, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">CreateOrUpdateAsync(String, String, String, ProtectionPolicyRequest, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Create Or Update Protection Policy Operation is used to create
+or modify a protection policy which is used in the context of a
+protected item.This is an asynchronous operation. To determine
+whether the backend service has finished processing the request,
+call the Get Policy Operation Result API.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ProtectionPolicyResponse&gt; CreateOrUpdateAsync(string resourceGroupName, string resourceName, string policyName, ProtectionPolicyRequest request, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function CreateOrUpdateAsync(resourceGroupName As String, resourceName As String, policyName As String, request As ProtectionPolicyRequest, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectionPolicyResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>policyName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of the protection policy to be added/updated.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>request</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyRequest.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyRequest">ProtectionPolicyRequest</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyRequest.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyRequest">ProtectionPolicyRequest</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>The protection policy creation request.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyResponse">ProtectionPolicyResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyResponse">ProtectionPolicyResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Protection policy response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IProtectionPolicyOperations_DeleteAsync_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">DeleteAsync(String, String, String, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">DeleteAsync(String, String, String, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>The Delete Protected Policy Operation is used to delete the
+specified policy from your Recovery Services Vault. This is an
+asynchronous operation. To determine whether the backend service
+has finished processing the request, call the Get Policy Operation
+Result API.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;AzureOperationResponse&gt; DeleteAsync(string resourceGroupName, string resourceName, string policyName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function DeleteAsync(resourceGroupName As String, resourceName As String, policyName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>policyName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of the protection policy to be added/updated.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <span class="xref">AzureOperationResponse</span>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>A standard service response including an HTTP status code and
+request ID.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IProtectionPolicyOperations_GetAsync_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetAsync(String, String, String, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">GetAsync(String, String, String, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Gets Info for the given policy present in your Recovery Services
+Vault as specified by the name passed in the arguments.This is an
+asynchronous operation. To determine whether the backend service
+has finished processing the request, call the Get Policy Operation
+Result API.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ProtectionPolicyResponse&gt; GetAsync(string resourceGroupName, string resourceName, string policyName, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetAsync(resourceGroupName As String, resourceName As String, policyName As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectionPolicyResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>policyName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of the protection policy to be added/updated.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyResponse">ProtectionPolicyResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyResponse">ProtectionPolicyResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Protection policy response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IProtectionPolicyOperations_GetOperationResultAsync_System_String_System_String_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetOperationResultAsync(String, String, String, String, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">GetOperationResultAsync(String, String, String, String, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Fetches the result of any operation on the protection policy given
+the ID of operation.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ProtectionPolicyResponse&gt; GetOperationResultAsync(string resourceGroupName, string resourceName, string policyName, string operationId, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetOperationResultAsync(resourceGroupName As String, resourceName As String, policyName As String, operationId As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectionPolicyResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>policyName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of the protection policy to be added/updated.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>operationId</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>ID of the operation whose result has to be fetched.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyResponse">ProtectionPolicyResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyResponse">ProtectionPolicyResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Protection policy response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IProtectionPolicyOperations_GetProtectionPolicyResultByURLAsync_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">GetProtectionPolicyResultByURLAsync(String, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">GetProtectionPolicyResultByURLAsync(String, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Fetches the result of any operation on the protection policy given
+the URL for tracking the operation as returned by APIs such as
+Create Or Update, Delete, Get etc.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ProtectionPolicyResponse&gt; GetProtectionPolicyResultByURLAsync(string operationResultLink, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function GetProtectionPolicyResultByURLAsync(operationResultLink As String, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectionPolicyResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>operationResultLink</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Location value returned by operation.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyResponse">ProtectionPolicyResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyResponse">ProtectionPolicyResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Protection policy response.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+      <li class="expand-container enable-platform-filter" id="Microsoft_Azure_Management_RecoveryServices_Backup_IProtectionPolicyOperations_ListAsync_System_String_System_String_Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyQueryParameters_Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders_System_Threading_CancellationToken_">
+        <h4><a href="" class="expander">
+          <code class="lang-csharp">ListAsync(String, String, ProtectionPolicyQueryParameters, CustomRequestHeaders, CancellationToken)</code>
+          <code class="lang-vb">ListAsync(String, String, ProtectionPolicyQueryParameters, CustomRequestHeaders, CancellationToken)</code>
+        </a></h4>
+        <section class="content">
+          <div class="level">
+            <section class="primary">
+              <h6>Summary</h6>
+              <p>Lists all the protection policies in your Recovery Services Vault
+according to the query and pagination parameters supplied in the
+arguments.</p>
+
+            </section>
+            <section class="secondary">
+              <h6>Declaration</h6>
+              <figure>
+                <pre><code class="csharp lang-csharp">Task&lt;ProtectionPolicyListResponse&gt; ListAsync(string resourceGroupName, string resourceName, ProtectionPolicyQueryParameters queryFilter, CustomRequestHeaders customRequestHeaders, CancellationToken cancellationToken)</code><code class="vb lang-vb">Function ListAsync(resourceGroupName As String, resourceName As String, queryFilter As ProtectionPolicyQueryParameters, customRequestHeaders As CustomRequestHeaders, cancellationToken As CancellationToken) As Task(Of ProtectionPolicyListResponse)</code></pre>
+              </figure>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+              <h6>Parameters</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceGroupName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Resource group name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>resourceName</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.String</span></code>
+                        <code class="lang-vb"><span class="xref">System.String</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Name of your recovery services vault.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>queryFilter</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyQueryParameters.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyQueryParameters">ProtectionPolicyQueryParameters</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyQueryParameters.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyQueryParameters">ProtectionPolicyQueryParameters</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>customRequestHeaders</code></li>
+                    <li>
+                        <code class="lang-csharp"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                        <code class="lang-vb"><a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_CustomRequestHeaders">CustomRequestHeaders</a></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Request header parameters.</p>
+
+                  </section>
+                </li>
+                <li>
+                  <ol class="meta">
+                    <li><code>cancellationToken</code></li>
+                    <li>
+                        <code class="lang-csharp"><span class="xref">System.Threading.CancellationToken</span></code>
+                        <code class="lang-vb"><span class="xref">System.Threading.CancellationToken</span></code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>Cancellation token.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h6>Returns</h6>
+              <ul class="member-details">
+                <li>
+                  <ol class="meta">
+                    <li>
+                      <code class="lang-csharp"><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyListResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyListResponse">ProtectionPolicyListResponse</a>&gt;</code>
+                      <code class="lang-vb"><span class="xref">System.Threading.Tasks.Task</span>(Of <a class="xref" href="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicyListResponse.html#Microsoft_Azure_Management_RecoveryServices_Backup_Models_ProtectionPolicyListResponse">ProtectionPolicyListResponse</a>)</code>
+                    </li>
+                  </ol>
+                  <section class="description">
+                    <p>List of protection policies as returned by the service with the
+list policies call.</p>
+
+                  </section>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="level">
+            <section class="primary">
+            </section>
+            <section class="secondary">
+            </section>
+          </div>
+        </section>
+      </li>
+    </ul>

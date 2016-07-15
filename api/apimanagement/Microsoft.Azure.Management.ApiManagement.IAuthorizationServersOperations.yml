@@ -1,0 +1,516 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  commentId: T:Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  id: IAuthorizationServersOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.CreateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.PatchAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.UpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IAuthorizationServersOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IAuthorizationServersOperations
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nOperations for managing Authorization Servers.\r\n"
+  example: []
+  syntax:
+    content: public interface IAuthorizationServersOperations
+    content.vb: Public Interface IAuthorizationServersOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.CreateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.CreateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters,System.Threading.CancellationToken)
+  id: CreateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(String, String, String, AuthorizationServerCreateOrUpdateParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.CreateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nCreates new authorization server.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> CreateAsync(string resourceGroupName, string serviceName, string authsid, AuthorizationServerCreateOrUpdateParameters parameters, CancellationToken cancellationToken)
+    content.vb: Function CreateAsync(resourceGroupName As String, serviceName As String, authsid As String, parameters As AuthorizationServerCreateOrUpdateParameters, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: authsid
+      type: System.String
+      description: "\r\nIdentifier of the authorization server.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters
+      description: "\r\nCreate or update parameters.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.DeleteAsync(System.String, System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+    startLine: 81
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nDeletes specific auuthorization server instance.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string serviceName, string authsid, string etag, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, serviceName As String, authsid As String, etag As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: authsid
+      type: System.String
+      description: "\r\nIdentifier of the authorization server.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nETag.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.GetAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+    startLine: 101
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nGets specific authorizations server.\r\n"
+  example: []
+  syntax:
+    content: Task<AuthorizationServerGetResponse> GetAsync(string resourceGroupName, string serviceName, string authsid, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, serviceName As String, authsid As String, cancellationToken As CancellationToken) As Task(Of AuthorizationServerGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: authsid
+      type: System.String
+      description: "\r\nIdentifier of the authorization server.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerGetResponse}
+      description: "\r\nGet Authorizations server operation response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, QueryParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.ListAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all authorization servers.\r\n"
+  example: []
+  syntax:
+    content: Task<AuthorizationServerListResponse> ListAsync(string resourceGroupName, string serviceName, QueryParameters query, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, serviceName As String, query As QueryParameters, cancellationToken As CancellationToken) As Task(Of AuthorizationServerListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse}
+      description: "\r\nList Authorization Servers operation response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.ListNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+    startLine: 132
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all authorization servers.\r\n"
+  example: []
+  syntax:
+    content: Task<AuthorizationServerListResponse> ListNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of AuthorizationServerListResponse)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nNextLink from the previous successful call to List operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse}
+      description: "\r\nList Authorization Servers operation response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.PatchAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.PatchAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters,System.String,System.Threading.CancellationToken)
+  id: PatchAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(String, String, String, PatchParameters, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.PatchAsync(System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PatchAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+    startLine: 159
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nPatches existing authorization server.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> PatchAsync(string resourceGroupName, string serviceName, string authsid, PatchParameters parameters, string etag, CancellationToken cancellationToken)
+    content.vb: Function PatchAsync(resourceGroupName As String, serviceName As String, authsid As String, parameters As PatchParameters, etag As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: authsid
+      type: System.String
+      description: "\r\nIdentifier of the authorization server.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters
+      description: "\r\nPatch parameters.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nETag.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.UpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.UpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters,System.String,System.Threading.CancellationToken)
+  id: UpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(String, String, String, AuthorizationServerCreateOrUpdateParameters, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IAuthorizationServersOperations.UpdateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UpdateAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IAuthorizationServersOperations.cs
+    startLine: 186
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nUpdates existing authorization server.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> UpdateAsync(string resourceGroupName, string serviceName, string authsid, AuthorizationServerCreateOrUpdateParameters parameters, string etag, CancellationToken cancellationToken)
+    content.vb: Function UpdateAsync(resourceGroupName As String, serviceName As String, authsid As String, parameters As AuthorizationServerCreateOrUpdateParameters, etag As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: authsid
+      type: System.String
+      description: "\r\nIdentifier of the authorization server.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters
+      description: "\r\nCreate or update parameters.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nETag.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: AuthorizationServerCreateOrUpdateParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerCreateOrUpdateParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AuthorizationServerGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerGetResponse)
+  name.vb: Task(Of AuthorizationServerGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerGetResponse
+    name: AuthorizationServerGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerGetResponse
+    name: AuthorizationServerGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerGetResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: QueryParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AuthorizationServerListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse)
+  name.vb: Task(Of AuthorizationServerListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse
+    name: AuthorizationServerListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse
+    name: AuthorizationServerListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.AuthorizationServerListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: PatchParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters

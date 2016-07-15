@@ -1,0 +1,677 @@
+items:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  commentId: T:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  id: RecoveryServicesBackupManagementClientExtensions
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  children:
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResult(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetOperationStatusByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  - Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetOperationStatusByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  langs:
+  - csharp
+  - vb
+  name: RecoveryServicesBackupManagementClientExtensions
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  type: Class
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RecoveryServicesBackupManagementClientExtensions
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  syntax:
+    content: public class RecoveryServicesBackupManagementClientExtensions
+    content.vb: Public Class RecoveryServicesBackupManagementClientExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResult(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResult(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  id: GetDeleteOperationResult(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDeleteOperationResult(IRecoveryServicesBackupManagementClient, String, String, String, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResult(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient, System.String, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDeleteOperationResult
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+    startLine: 61
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nOnce you trigger a delete operation such as deleting a protected\r\nitem etc., you may use this method to get the operation's result.\r\nOnce the operation has started, the status code in the response\r\nwould be Accepted. It will continue to be in this state till it\r\nreaches completetion. On successful completion, the status code\r\nwill be OK. This method expects the ID of the operation to be\r\npassed in the arguments. This usually is part of the Location\r\nheader of the operation response.\r\n"
+  example: []
+  syntax:
+    content: public static GetOperationResultResponse GetDeleteOperationResult(IRecoveryServicesBackupManagementClient operations, string resourceGroupName, string resourceName, string operationId, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function GetDeleteOperationResult(operations As IRecoveryServicesBackupManagementClient, resourceGroupName As String, resourceName As String, operationId As String, customRequestHeaders As CustomRequestHeaders) As GetOperationResultResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. Resource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of your recovery services vault.\r\n"
+    - id: operationId
+      type: System.String
+      description: "\r\nRequired.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+      description: "\r\nResponse object returned by the get operation result APIs.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  id: GetDeleteOperationResultAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,System.String,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDeleteOperationResultAsync(IRecoveryServicesBackupManagementClient, String, String, String, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient, System.String, System.String, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDeleteOperationResultAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nOnce you trigger a delete operation such as deleting a protected\r\nitem etc., you may use this method to get the operation's result.\r\nOnce the operation has started, the status code in the response\r\nwould be Accepted. It will continue to be in this state till it\r\nreaches completetion. On successful completion, the status code\r\nwill be OK. This method expects the ID of the operation to be\r\npassed in the arguments. This usually is part of the Location\r\nheader of the operation response.\r\n"
+  example: []
+  syntax:
+    content: public static Task<GetOperationResultResponse> GetDeleteOperationResultAsync(IRecoveryServicesBackupManagementClient operations, string resourceGroupName, string resourceName, string operationId, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function GetDeleteOperationResultAsync(operations As IRecoveryServicesBackupManagementClient, resourceGroupName As String, resourceName As String, operationId As String, customRequestHeaders As CustomRequestHeaders) As Task(Of GetOperationResultResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient.\r\n"
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nRequired. Resource group name of your recovery services vault.\r\n"
+    - id: resourceName
+      type: System.String
+      description: "\r\nRequired. Name of your recovery services vault.\r\n"
+    - id: operationId
+      type: System.String
+      description: "\r\nRequired.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse}
+      description: "\r\nResponse object returned by the get operation result APIs.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  id: GetDeleteOperationResultByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDeleteOperationResultByURL(IRecoveryServicesBackupManagementClient, String, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDeleteOperationResultByURL
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+    startLine: 127
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nOnce you trigger a delete operation such as deleting a protected\r\nitem etc., you may use this method to get the operation's result.\r\nOnce the operation has started, the status code in the response\r\nwould be Accepted. It will continue to be in this state till it\r\nreaches completetion. On successful completion, the status code\r\nwill be OK. This method expects the tracking URL of the operation\r\nto be passed in the arguments. This usually is the Location header\r\nof the operation response.\r\n"
+  example: []
+  syntax:
+    content: public static GetOperationResultResponse GetDeleteOperationResultByURL(IRecoveryServicesBackupManagementClient operations, string operationResultLink, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function GetDeleteOperationResultByURL(operations As IRecoveryServicesBackupManagementClient, operationResultLink As String, customRequestHeaders As CustomRequestHeaders) As GetOperationResultResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient.\r\n"
+    - id: operationResultLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by operation.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+      description: "\r\nResponse object returned by the get operation result APIs.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  id: GetDeleteOperationResultByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDeleteOperationResultByURLAsync(IRecoveryServicesBackupManagementClient, String, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetDeleteOperationResultByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDeleteOperationResultByURLAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+    startLine: 159
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nOnce you trigger a delete operation such as deleting a protected\r\nitem etc., you may use this method to get the operation's result.\r\nOnce the operation has started, the status code in the response\r\nwould be Accepted. It will continue to be in this state till it\r\nreaches completetion. On successful completion, the status code\r\nwill be OK. This method expects the tracking URL of the operation\r\nto be passed in the arguments. This usually is the Location header\r\nof the operation response.\r\n"
+  example: []
+  syntax:
+    content: public static Task<GetOperationResultResponse> GetDeleteOperationResultByURLAsync(IRecoveryServicesBackupManagementClient operations, string operationResultLink, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function GetDeleteOperationResultByURLAsync(operations As IRecoveryServicesBackupManagementClient, operationResultLink As String, customRequestHeaders As CustomRequestHeaders) As Task(Of GetOperationResultResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient.\r\n"
+    - id: operationResultLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by operation.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse}
+      description: "\r\nResponse object returned by the get operation result APIs.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetOperationStatusByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetOperationStatusByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  id: GetOperationStatusByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOperationStatusByURL(IRecoveryServicesBackupManagementClient, String, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetOperationStatusByURL(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationStatusByURL
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+    startLine: 186
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe GetOperationStatusByURL method can be used to fetch the status\r\nof an operation such as triggering a backup, restore etc. The\r\nstatus can be in progress, completed or failed. You can refer to\r\nthe Operation Status enum for all the possible states of the\r\noperation. Some operations may create jobs within the backend\r\nservice. This method can return the list of jobs when the\r\noperation is complete.\r\n"
+  example: []
+  syntax:
+    content: public static BackUpOperationStatusResponse GetOperationStatusByURL(IRecoveryServicesBackupManagementClient operations, string operationResultLink, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function GetOperationStatusByURL(operations As IRecoveryServicesBackupManagementClient, operationResultLink As String, customRequestHeaders As CustomRequestHeaders) As BackUpOperationStatusResponse
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient.\r\n"
+    - id: operationResultLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by operation.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    return:
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+      description: "\r\nResponse of the get operation status API calls.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetOperationStatusByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  commentId: M:Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetOperationStatusByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  id: GetOperationStatusByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient,System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOperationStatusByURLAsync(IRecoveryServicesBackupManagementClient, String, CustomRequestHeaders)
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.RecoveryServicesBackupManagementClientExtensions.GetOperationStatusByURLAsync(Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient, System.String, Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetOperationStatusByURLAsync
+    path: src/src/ResourceManagement/RecoveryServices.Backup/RecoveryServicesBackupManagement/Generated/RecoveryServicesBackupManagementClientExtensions.cs
+    startLine: 217
+  assemblies:
+  - Microsoft.Azure.Management.RecoveryServices.Backup
+  namespace: Microsoft.Azure.Management.RecoveryServices.Backup
+  summary: "\r\nThe GetOperationStatusByURL method can be used to fetch the status\r\nof an operation such as triggering a backup, restore etc. The\r\nstatus can be in progress, completed or failed. You can refer to\r\nthe Operation Status enum for all the possible states of the\r\noperation. Some operations may create jobs within the backend\r\nservice. This method can return the list of jobs when the\r\noperation is complete.\r\n"
+  example: []
+  syntax:
+    content: public static Task<BackUpOperationStatusResponse> GetOperationStatusByURLAsync(IRecoveryServicesBackupManagementClient operations, string operationResultLink, CustomRequestHeaders customRequestHeaders)
+    content.vb: Public Shared Function GetOperationStatusByURLAsync(operations As IRecoveryServicesBackupManagementClient, operationResultLink As String, customRequestHeaders As CustomRequestHeaders) As Task(Of BackUpOperationStatusResponse)
+    parameters:
+    - id: operations
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+      description: "\r\nReference to the\r\nMicrosoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient.\r\n"
+    - id: operationResultLink
+      type: System.String
+      description: "\r\nRequired. Location value returned by operation.\r\n"
+    - id: customRequestHeaders
+      type: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+      description: "\r\nOptional. Request header parameters.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse}
+      description: "\r\nResponse of the get operation status API calls.\r\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup
+  isExternal: false
+  name: IRecoveryServicesBackupManagementClient
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.IRecoveryServicesBackupManagementClient
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: CustomRequestHeaders
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.CustomRequestHeaders
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: GetOperationResultResponse
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetOperationResultResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse)
+  name.vb: Task(Of GetOperationResultResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+    name: GetOperationResultResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+    name: GetOperationResultResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.GetOperationResultResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+  parent: Microsoft.Azure.Management.RecoveryServices.Backup.Models
+  isExternal: false
+  name: BackUpOperationStatusResponse
+  fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<BackUpOperationStatusResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse)
+  name.vb: Task(Of BackUpOperationStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+    name: BackUpOperationStatusResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+    name: BackUpOperationStatusResponse
+    fullName: Microsoft.Azure.Management.RecoveryServices.Backup.Models.BackUpOperationStatusResponse
+  - name: )
+    fullName: )

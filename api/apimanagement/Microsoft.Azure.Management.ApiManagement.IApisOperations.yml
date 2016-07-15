@@ -1,0 +1,608 @@
+items:
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  commentId: T:Microsoft.Azure.Management.ApiManagement.IApisOperations
+  id: IApisOperations
+  parent: Microsoft.Azure.Management.ApiManagement
+  children:
+  - Microsoft.Azure.Management.ApiManagement.IApisOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiCreateOrUpdateParameters,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IApisOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IApisOperations.ExportAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IApisOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IApisOperations.ImportAsync(System.String,System.String,System.String,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IApisOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IApisOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Azure.Management.ApiManagement.IApisOperations.PatchAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IApisOperations
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  type: Interface
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IApisOperations
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nOperations for managing APIs.\r\n"
+  example: []
+  syntax:
+    content: public interface IApisOperations
+    content.vb: Public Interface IApisOperations
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiCreateOrUpdateParameters,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IApisOperations.CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiCreateOrUpdateParameters,System.String,System.Threading.CancellationToken)
+  id: CreateOrUpdateAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiCreateOrUpdateParameters,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  langs:
+  - csharp
+  - vb
+  name: CreateOrUpdateAsync(String, String, String, ApiCreateOrUpdateParameters, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations.CreateOrUpdateAsync(System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiCreateOrUpdateParameters, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateOrUpdateAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nCreates new or updates existing specific API of the Api Management\r\nservice instance.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> CreateOrUpdateAsync(string resourceGroupName, string serviceName, string aid, ApiCreateOrUpdateParameters parameters, string etag, CancellationToken cancellationToken)
+    content.vb: Function CreateOrUpdateAsync(resourceGroupName As String, serviceName As String, aid As String, parameters As ApiCreateOrUpdateParameters, etag As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: aid
+      type: System.String
+      description: "\r\nIdentifier of the API.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiCreateOrUpdateParameters
+      description: "\r\nCreate or update parameters.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nETag.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IApisOperations.DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations.DeleteAsync(System.String, System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 86
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nDeletes specific API of the Api Management service instance.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> DeleteAsync(string resourceGroupName, string serviceName, string aid, string etag, CancellationToken cancellationToken)
+    content.vb: Function DeleteAsync(resourceGroupName As String, serviceName As String, aid As String, etag As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: aid
+      type: System.String
+      description: "\r\nIdentifier of the API.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nETag.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations.ExportAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IApisOperations.ExportAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: ExportAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  langs:
+  - csharp
+  - vb
+  name: ExportAsync(String, String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations.ExportAsync(System.String, System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExportAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 109
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nExporst API to one of the supported formats.\r\n"
+  example: []
+  syntax:
+    content: Task<ApiExportResponse> ExportAsync(string resourceGroupName, string serviceName, string aid, string accept, CancellationToken cancellationToken)
+    content.vb: Function ExportAsync(resourceGroupName As String, serviceName As String, aid As String, accept As String, cancellationToken As CancellationToken) As Task(Of ApiExportResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: aid
+      type: System.String
+      description: "\r\nIdentifier of the API.\r\n"
+    - id: accept
+      type: System.String
+      description: "\r\nType of exporting content. Equivalent to Accept HTTP header.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiExportResponse}
+      description: "\r\nThe response model for the export API output operation.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IApisOperations.GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, String, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations.GetAsync(System.String, System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 129
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nGets specific API of the Api Management service instance.\r\n"
+  example: []
+  syntax:
+    content: Task<ApiGetResponse> GetAsync(string resourceGroupName, string serviceName, string aid, CancellationToken cancellationToken)
+    content.vb: Function GetAsync(resourceGroupName As String, serviceName As String, aid As String, cancellationToken As CancellationToken) As Task(Of ApiGetResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: aid
+      type: System.String
+      description: "\r\nIdentifier of the API.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiGetResponse}
+      description: "\r\nGet Api operation response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations.ImportAsync(System.String,System.String,System.String,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IApisOperations.ImportAsync(System.String,System.String,System.String,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  id: ImportAsync(System.String,System.String,System.String,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  langs:
+  - csharp
+  - vb
+  name: ImportAsync(String, String, String, String, Stream, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations.ImportAsync(System.String, System.String, System.String, System.String, System.IO.Stream, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ImportAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 159
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nImports API from one of the supported formats.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> ImportAsync(string resourceGroupName, string serviceName, string aid, string contentType, Stream content, string path, CancellationToken cancellationToken)
+    content.vb: Function ImportAsync(resourceGroupName As String, serviceName As String, aid As String, contentType As String, content As Stream, path As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: aid
+      type: System.String
+      description: "\r\nIdentifier of the API.\r\n"
+    - id: contentType
+      type: System.String
+      description: "\r\nType of importing content.\r\n"
+    - id: content
+      type: System.IO.Stream
+      description: "\r\nImporting content.\r\n"
+    - id: path
+      type: System.String
+      description: "\r\nPath in case importing document does not support path.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IApisOperations.ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(String, String, QueryParameters, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations.ListAsync(System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 176
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all APIs of the Api Management service instance.\r\n"
+  example: []
+  syntax:
+    content: Task<ApiListResponse> ListAsync(string resourceGroupName, string serviceName, QueryParameters query, CancellationToken cancellationToken)
+    content.vb: Function ListAsync(resourceGroupName As String, serviceName As String, query As QueryParameters, cancellationToken As CancellationToken) As Task(Of ApiListResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: query
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse}
+      description: "\r\nList Api operations response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IApisOperations.ListNextAsync(System.String,System.Threading.CancellationToken)
+  id: ListNextAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  langs:
+  - csharp
+  - vb
+  name: ListNextAsync(String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations.ListNextAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListNextAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 190
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nList all APIs of the Api Management service instance.\r\n"
+  example: []
+  syntax:
+    content: Task<ApiListResponse> ListNextAsync(string nextLink, CancellationToken cancellationToken)
+    content.vb: Function ListNextAsync(nextLink As String, cancellationToken As CancellationToken) As Task(Of ApiListResponse)
+    parameters:
+    - id: nextLink
+      type: System.String
+      description: "\r\nNextLink from the previous successful call to List operation.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse}
+      description: "\r\nList Api operations response details.\r\n"
+- uid: Microsoft.Azure.Management.ApiManagement.IApisOperations.PatchAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Azure.Management.ApiManagement.IApisOperations.PatchAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters,System.String,System.Threading.CancellationToken)
+  id: PatchAsync(System.String,System.String,System.String,Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Azure.Management.ApiManagement.IApisOperations
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(String, String, String, PatchParameters, String, CancellationToken)
+  fullName: Microsoft.Azure.Management.ApiManagement.IApisOperations.PatchAsync(System.String, System.String, System.String, Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PatchAsync
+    path: src/src/ResourceManagement/ApiManagement/ApiManagementManagement/Generated/IApisOperations.cs
+    startLine: 217
+  assemblies:
+  - Microsoft.Azure.Management.ApiManagement
+  namespace: Microsoft.Azure.Management.ApiManagement
+  summary: "\r\nPatches specific API of the Api Management service instance.\r\n"
+  example: []
+  syntax:
+    content: Task<AzureOperationResponse> PatchAsync(string resourceGroupName, string serviceName, string aid, PatchParameters parameters, string etag, CancellationToken cancellationToken)
+    content.vb: Function PatchAsync(resourceGroupName As String, serviceName As String, aid As String, parameters As PatchParameters, etag As String, cancellationToken As CancellationToken) As Task(Of AzureOperationResponse)
+    parameters:
+    - id: resourceGroupName
+      type: System.String
+      description: "\r\nThe name of the resource group.\r\n"
+    - id: serviceName
+      type: System.String
+      description: "\r\nThe name of the Api Management service.\r\n"
+    - id: aid
+      type: System.String
+      description: "\r\nIdentifier of the API.\r\n"
+    - id: parameters
+      type: Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters
+      description: "\r\nPatch parameters.\r\n"
+    - id: etag
+      type: System.String
+      description: "\r\nETag.\r\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\r\nCancellation token.\r\n"
+    return:
+      type: System.Threading.Tasks.Task{AzureOperationResponse}
+      description: "\r\nA standard service response including an HTTP status code and\r\nrequest ID.\r\n"
+references:
+- uid: Microsoft.Azure.Management.ApiManagement
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement
+  fullName: Microsoft.Azure.Management.ApiManagement
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiCreateOrUpdateParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: ApiCreateOrUpdateParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiCreateOrUpdateParameters
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AzureOperationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AzureOperationResponse>
+  fullName: System.Threading.Tasks.Task<AzureOperationResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of AzureOperationResponse)
+  name.vb: Task(Of AzureOperationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: AzureOperationResponse
+    name: AzureOperationResponse
+    fullName: AzureOperationResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiExportResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ApiExportResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiExportResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiExportResponse)
+  name.vb: Task(Of ApiExportResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiExportResponse
+    name: ApiExportResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiExportResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiExportResponse
+    name: ApiExportResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiExportResponse
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiGetResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ApiGetResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiGetResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiGetResponse)
+  name.vb: Task(Of ApiGetResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiGetResponse
+    name: ApiGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiGetResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiGetResponse
+    name: ApiGetResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiGetResponse
+  - name: )
+    fullName: )
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: QueryParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.QueryParameters
+- uid: System.Threading.Tasks.Task{Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ApiListResponse>
+  fullName: System.Threading.Tasks.Task<Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse)
+  name.vb: Task(Of ApiListResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse
+    name: ApiListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse
+    name: ApiListResponse
+    fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.ApiListResponse
+  - name: )
+    fullName: )
+- uid: Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters
+  parent: Microsoft.Azure.Management.ApiManagement.SmapiModels
+  isExternal: false
+  name: PatchParameters
+  fullName: Microsoft.Azure.Management.ApiManagement.SmapiModels.PatchParameters
