@@ -4,274 +4,17 @@
       "src": [
         {
           "files": [
-            "src/**.csproj"
+            "swagger/*.json",
+            "*.md"
           ],
           "exclude": [
             "**/bin/**",
             "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "**/ResourceManagement/**.csproj",
-            "src/**Tests.csproj"
+            "output/**"
           ]
         }
       ],
-      "dest": "api/common"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/WebSite/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/webapps"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/ApiApp/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/apiapps"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/ApiManagement/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/apimanagement"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/Compute/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/compute"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/Network/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/network"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/Dns/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/dns"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/Storage/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/storage"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/Sql/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/sql"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/RedisCache/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/redis"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/Dns/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/dns"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/RecoveryServices/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/recovery/"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/RecoveryServices.Backup/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/recoverybackup/"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/SiteRecovery/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/siterecovery"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/Batch/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/batch"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/HDInsight/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/hdinsight"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "src/**/StreamAnalytics/**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/ServiceManagement/**.csproj",
-            "src/**Tests.csproj"
-          ]
-        }
-      ],
-      "dest": "api/streamanalytics"
+      "dest": "output"
     }
   ],
   "build": {
@@ -282,7 +25,7 @@
         ],
         "exclude": [
           "**/obj/**",
-          "azure/**",
+          "output/**",
           "**/includes/**"
         ]
       },
@@ -295,7 +38,7 @@
         "dest": "api",
         "exclude": [
           "**/obj/**",
-          "azure/**",
+          "output/**",
           "**/includes/**"
         ]
       }
@@ -320,6 +63,6 @@
     "template": [
       "docs.html"
     ],
-    "dest": "azure"
+    "dest": "output"
   }
 }
