@@ -1,3 +1,3 @@
 
 #[Articles](articles)
-#[API Documentation](api/index.md)
+#[API Documentation](api)
