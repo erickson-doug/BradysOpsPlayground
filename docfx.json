@@ -4,65 +4,64 @@
       "src": [
         {
           "files": [
-            "swagger/*.json",
-            "*.md"
+            "src/**.csproj"
           ],
           "exclude": [
-            "**/bin/**",
             "**/obj/**",
-            "output/**"
+            "**/bin/**",
+            "_site/**"
           ]
         }
       ],
-      "dest": "output"
+      "dest": "api"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "output/**",
-          "**/includes/**"
+          "api/**.yml",
+          "api/index.md"
         ]
       },
       {
         "files": [
-          "**/*.yml",
-          "**/*.md"
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
         ],
-        "src": "api",
-        "dest": "api",
         "exclude": [
-          "**/obj/**",
-          "output/**",
-          "**/includes/**"
+          "obj/**",
+          "_site/**"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg"
+          "images/**"
         ],
         "exclude": [
-          "**/obj/**",
-          "azure/**",
-          "**/includes/**"
+          "obj/**",
+          "_site/**"
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [
-      "docs.html"
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
     ],
-    "dest": "output"
+    "dest": "_site",
+    "template": [
+      "default"
+    ]
   }
 }

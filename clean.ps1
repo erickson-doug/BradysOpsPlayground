@@ -1,3 +1,5 @@
+#Remove-Item _themes\* -Recurse
+#Remove-Item _themes
 Remove-Item _site\* -Recurse
 Remove-Item _site
 Remove-Item .optemp\* -Recurse
