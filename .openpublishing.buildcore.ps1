@@ -61,6 +61,15 @@ Filter timestamp
 
 echo "Running build core ps1 with parameters: $parameters" | timestamp
 
+# Print current PowerShell environment version
+echo "Current PowerShell environment version: $($PSVersionTable.PSVersion.ToString())" | timestamp
+
+# Check PowerShell version, exit when below 4.0
+if ($PSVersionTable.PSVersion.Major -lt 4)
+{
+    Write-Error "PowerShell version should be equal with or higher than 4.0, current PowerShell version is $PSVersionTable.PSVersion.Major"
+}
+
 # Define system value
 $systemDefaultVariables = @{
     ResourceContainerUrl = "https://opbuildstoragesandbox2.blob.core.windows.net/opps1container";
@@ -85,6 +94,12 @@ $systemDefaultVariables = @{
     DownloadNugetConfigTimeOutInSeconds= 30;
     BuildToolParallelism = 0;
     PreservedTemplateFolders = @("_themes", "_themes.MSDN.Modern", "_themes.VS.Modern")
+}
+
+function Write-HostWithTimestamp([string]$output)
+{
+    Write-Host -NoNewline -ForegroundColor Magenta "[$(((get-date).ToUniversalTime()).ToString("HH:mm:ss.ffffffZ"))]: "
+    Write-Host $output
 }
 
 Function ParseBoolValue([string]$variableName, [string]$stringValue, [bool]$defaultBoolValue)
@@ -129,11 +144,11 @@ Function ParseParameters([string]$parameters)
         if ($keyValuePair.Length -eq 2)
         {
             Set-Variable -Name $keyValuePair[0] -Value $keyValuePair[1] -Scope "Script" -Force
-            Write-Host "Create script scope variable with input $keyValuePair"
+            Write-HostWithTimestamp "Create script scope variable with input $keyValuePair"
         }
         else
         {
-            Write-Host "Invalid variable with input $keyValuePair. Ignore it."
+            Write-HostWithTimestamp "Invalid variable with input $keyValuePair. Ignore it."
         }
     }
 }
@@ -175,30 +190,30 @@ Function RetryCommand
     $currentRetryIteration = 1
     $retryIntervalInSeconds = 0
 
-    Write-Host ("Start to run command [{0}] with args [{1}]." -f $command, $($args | Out-String))
+    Write-HostWithTimestamp ("Start to run command [{0}] with args [{1}]." -f $command, $($args | Out-String))
     do{
         try
         {
-            Write-Host "Calling iteration $currentRetryIteration"
+            Write-HostWithTimestamp "Calling iteration $currentRetryIteration"
             & $command @args
 
-            Write-Host "Command ['$command'] succeeded at iteration $currentRetryIteration."
+            Write-HostWithTimestamp "Command ['$command'] succeeded at iteration $currentRetryIteration."
             return
         }
         Catch
         {
-            Write-Host "Calling iteration $currentRetryIteration failed, exception: '$($_.Exception.Message)'"
+            Write-HostWithTimestamp "Calling iteration $currentRetryIteration failed, exception: '$($_.Exception.Message)'"
         }
 
         if ($currentRetryIteration -ne $maxRetryCount)
         {
             $retryIntervalInSeconds += $retryIncrementalIntervalInSeconds
-            Write-Host "Command ['$command'] failed. Retrying in $retryIntervalInSeconds seconds."
+            Write-HostWithTimestamp "Command ['$command'] failed. Retrying in $retryIntervalInSeconds seconds."
             Start-Sleep -Seconds $retryIntervalInSeconds
         }
     } while (++$currentRetryIteration -le $maxRetryCount)
 
-    Write-Host "Command ['$command'] failed. Maybe the network issues, please retry the build later."
+    Write-HostWithTimestamp "Command ['$command'] failed. Maybe the network issues, please retry the build later."
     exit 1
 }
 
@@ -206,7 +221,7 @@ Function DownloadFile([string]$source, [string]$destination, [bool]$forceDownloa
 {
     if($forceDownload -or !(IsPathExists($destination)))
     {
-        Write-Host "Download file to $destination from $source with force: $forceDownload"
+        Write-HostWithTimestamp "Download file to $destination from $source with force: $forceDownload"
         $destinationFolder = Split-Path -Parent $destination
         CreateFolderIfNotExists($destinationFolder)
         if ($timeoutSec -lt 0)
@@ -231,7 +246,7 @@ Function GetPackageLatestVersion([string]$nugetExeDestination, [string]$packageN
     {
         Try
         {
-            Write-Host "Use prerelease package for $packageName : $usePrereleasePackage"
+            Write-HostWithTimestamp "Use prerelease package for $packageName : $usePrereleasePackage"
 
             if ($usePrereleasePackage)
             {
@@ -254,22 +269,22 @@ Function GetPackageLatestVersion([string]$nugetExeDestination, [string]$packageN
                 }
             }
 
-            Write-Host "Call iteration '$currentRetryIteration', cannot find latest version for $packageName, filtered packages: $filteredPackages"
+            Write-HostWithTimestamp "Call iteration '$currentRetryIteration', cannot find latest version for $packageName, filtered packages: $filteredPackages"
         }
         Catch
         {
-            Write-Host "Call iteration '$currentRetryIteration', cannot find latest version for $packageName, exception: $($_.Exception.Message)"
+            Write-HostWithTimestamp "Call iteration '$currentRetryIteration', cannot find latest version for $packageName, exception: $($_.Exception.Message)"
         }
 
         if ($currentRetryIteration -ne $maxRetryCount)
         {
             $retryIntervalInSeconds += $retryIncrementalIntervalInSeconds
-            Write-Host "List package version failed, sleep $retryIntervalInSeconds seconds..."
+            Write-HostWithTimestamp "List package version failed, sleep $retryIntervalInSeconds seconds..."
             Start-Sleep -Seconds $retryIntervalInSeconds
         }
     } while (++$currentRetryIteration -le $maxRetryCount)
 
-    Write-Host "Current nuget package list service is busy, please retry the build in 10 minutes"
+    Write-HostWithTimestamp "Current nuget package list service is busy, please retry the build in 10 minutes"
     exit 1
 }
 
@@ -306,7 +321,7 @@ Function GeneratePackagesConfig([string]$outputFilePath, [object[]]$dependencies
             # Get latest package version
             $dependency.actualVersion = GetPackageLatestVersion($nugetExeDestination) ($dependency.id) ($nugetConfigDestination) ($usePrereleasePackage)
 
-            Write-Host "Using version $($dependency.actualVersion) for package $($dependency.id) (requested: $($dependency.version))"
+            Write-HostWithTimestamp "Using version $($dependency.actualVersion) for package $($dependency.id) (requested: $($dependency.version))"
         }
         else
         {

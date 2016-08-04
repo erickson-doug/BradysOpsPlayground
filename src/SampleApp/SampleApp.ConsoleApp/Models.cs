@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SampleApp.ConsoleApp
+﻿namespace SampleApp.ConsoleApp.Models
 {
     /// <summary>
     /// Provides an ontological system for the application domain.
