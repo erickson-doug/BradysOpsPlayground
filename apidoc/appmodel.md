@@ -1,4 +1,4 @@
 ---
 uid: sampleapp.consoleapp.models.appmodel
-remarks: Hello World
+name: Hello World
 ---
