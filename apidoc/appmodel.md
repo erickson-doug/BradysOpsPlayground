@@ -1,5 +1,4 @@
 ---
 uid: SampleApp.ConsoleApp.Models.AppModel
-remarks: 
+remarks: ## Hello World
 ---
-## Hello World
