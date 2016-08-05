@@ -1,5 +1,8 @@
 ---
 uid: SampleApp.ConsoleApp.Models.AppModel
-remarks: Testing removal of using
+remarks: ## Hello World
+
+Testing removal of using. This is the first paragraph. 
+
+And this is the second paragraph.
 ---
-## Hello World
