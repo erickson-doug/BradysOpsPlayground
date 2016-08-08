@@ -1,0 +1,211 @@
+items:
+- uid: RobotFactory.Services.IPersonRepository
+  commentId: T:RobotFactory.Services.IPersonRepository
+  id: IPersonRepository
+  parent: RobotFactory.Services
+  children:
+  - RobotFactory.Services.IPersonRepository.CreatePerson(RobotFactory.Models.Person)
+  - RobotFactory.Services.IPersonRepository.DeletePerson(System.Int32)
+  - RobotFactory.Services.IPersonRepository.GetPeople
+  langs:
+  - csharp
+  - vb
+  name: IPersonRepository
+  fullName: RobotFactory.Services.IPersonRepository
+  type: Interface
+  source:
+    remote:
+      path: src/RobotFactory/Services/IPersonRepository.cs
+      branch: basic-dotnet
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IPersonRepository
+    path: src/RobotFactory/Services/IPersonRepository.cs
+    startLine: 9
+  assemblies:
+  - RobotFactory
+  namespace: RobotFactory.Services
+  syntax:
+    content: public interface IPersonRepository
+    content.vb: Public Interface IPersonRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: RobotFactory.Services.IPersonRepository.GetPeople
+  commentId: M:RobotFactory.Services.IPersonRepository.GetPeople
+  id: GetPeople
+  parent: RobotFactory.Services.IPersonRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPeople()
+  fullName: RobotFactory.Services.IPersonRepository.GetPeople()
+  type: Method
+  source:
+    remote:
+      path: src/RobotFactory/Services/IPersonRepository.cs
+      branch: basic-dotnet
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetPeople
+    path: src/RobotFactory/Services/IPersonRepository.cs
+    startLine: 11
+  assemblies:
+  - RobotFactory
+  namespace: RobotFactory.Services
+  syntax:
+    content: IEnumerable<Person> GetPeople()
+    content.vb: Function GetPeople As IEnumerable(Of Person)
+    return:
+      type: System.Collections.Generic.IEnumerable{RobotFactory.Models.Person}
+- uid: RobotFactory.Services.IPersonRepository.CreatePerson(RobotFactory.Models.Person)
+  commentId: M:RobotFactory.Services.IPersonRepository.CreatePerson(RobotFactory.Models.Person)
+  id: CreatePerson(RobotFactory.Models.Person)
+  parent: RobotFactory.Services.IPersonRepository
+  langs:
+  - csharp
+  - vb
+  name: CreatePerson(Person)
+  fullName: RobotFactory.Services.IPersonRepository.CreatePerson(RobotFactory.Models.Person)
+  type: Method
+  source:
+    remote:
+      path: src/RobotFactory/Services/IPersonRepository.cs
+      branch: basic-dotnet
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreatePerson
+    path: src/RobotFactory/Services/IPersonRepository.cs
+    startLine: 12
+  assemblies:
+  - RobotFactory
+  namespace: RobotFactory.Services
+  syntax:
+    content: bool CreatePerson(Person person)
+    content.vb: Function CreatePerson(person As Person) As Boolean
+    parameters:
+    - id: person
+      type: RobotFactory.Models.Person
+    return:
+      type: System.Boolean
+- uid: RobotFactory.Services.IPersonRepository.DeletePerson(System.Int32)
+  commentId: M:RobotFactory.Services.IPersonRepository.DeletePerson(System.Int32)
+  id: DeletePerson(System.Int32)
+  parent: RobotFactory.Services.IPersonRepository
+  langs:
+  - csharp
+  - vb
+  name: DeletePerson(Int32)
+  fullName: RobotFactory.Services.IPersonRepository.DeletePerson(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/RobotFactory/Services/IPersonRepository.cs
+      branch: basic-dotnet
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeletePerson
+    path: src/RobotFactory/Services/IPersonRepository.cs
+    startLine: 13
+  assemblies:
+  - RobotFactory
+  namespace: RobotFactory.Services
+  syntax:
+    content: bool DeletePerson(int personId)
+    content.vb: Function DeletePerson(personId As Integer) As Boolean
+    parameters:
+    - id: personId
+      type: System.Int32
+    return:
+      type: System.Boolean
+references:
+- uid: RobotFactory.Services
+  isExternal: false
+  name: RobotFactory.Services
+  fullName: RobotFactory.Services
+- uid: System.Collections.Generic.IEnumerable{RobotFactory.Models.Person}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Person>
+  fullName: System.Collections.Generic.IEnumerable<RobotFactory.Models.Person>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of RobotFactory.Models.Person)
+  name.vb: IEnumerable(Of Person)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: RobotFactory.Models.Person
+    name: Person
+    fullName: RobotFactory.Models.Person
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: RobotFactory.Models.Person
+    name: Person
+    fullName: RobotFactory.Models.Person
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: RobotFactory.Models.Person
+  parent: RobotFactory.Models
+  isExternal: false
+  name: Person
+  fullName: RobotFactory.Models.Person
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: RobotFactory.Models
+  isExternal: false
+  name: RobotFactory.Models
+  fullName: RobotFactory.Models
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
