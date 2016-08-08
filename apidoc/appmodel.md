@@ -1,5 +1,9 @@
 ---
 uid: SampleApp.ConsoleApp.Models.AppModel
+summary: This is a class designed to represent state in the application. 
+---
+---
+uid: SampleApp.ConsoleApp.Models.AppModel
 remarks: *content
 ---
 ## Hello World
