@@ -1,6 +1,9 @@
 ---
 uid: SampleApp.ConsoleApp.Models.AppModel
-remarks: `## Hello World 
-
-This would be a remark para. And a second remark para.`
+remarks: *content
 ---
+## Hello World
+This is the first paragraph of text to be included in the remarks section. 
+
+### First Subheader
+Second paragraph of text to be shown in the remarks section. 
