@@ -3,8 +3,8 @@ items:
   commentId: N:RobotFactory.Services
   id: RobotFactory.Services
   children:
-  - RobotFactory.Services.IPersonRepository
-  - RobotFactory.Services.MockPersonRepository
+  - RobotFactory.Services.IRobotFactory
+  - RobotFactory.Services.MockRobotFactory
   langs:
   - csharp
   - vb
@@ -14,15 +14,15 @@ items:
   assemblies:
   - RobotFactory
 references:
-- uid: RobotFactory.Services.IPersonRepository
+- uid: RobotFactory.Services.IRobotFactory
   parent: RobotFactory.Services
   isExternal: false
-  name: IPersonRepository
-  fullName: RobotFactory.Services.IPersonRepository
-- uid: RobotFactory.Services.MockPersonRepository
+  name: IRobotFactory
+  fullName: RobotFactory.Services.IRobotFactory
+- uid: RobotFactory.Services.MockRobotFactory
   isExternal: false
-  name: MockPersonRepository
-  fullName: RobotFactory.Services.MockPersonRepository
+  name: MockRobotFactory
+  fullName: RobotFactory.Services.MockRobotFactory
 - uid: RobotFactory.Services
   isExternal: false
   name: RobotFactory.Services

@@ -1,32 +1,32 @@
 items:
-- uid: RobotFactory.Models.Person
-  commentId: T:RobotFactory.Models.Person
-  id: Person
+- uid: RobotFactory.Models.Robot
+  commentId: T:RobotFactory.Models.Robot
+  id: Robot
   parent: RobotFactory.Models
   children:
-  - RobotFactory.Models.Person.Email
-  - RobotFactory.Models.Person.Id
-  - RobotFactory.Models.Person.Name
+  - RobotFactory.Models.Robot.BatteryLeft
+  - RobotFactory.Models.Robot.Id
+  - RobotFactory.Models.Robot.Name
   langs:
   - csharp
   - vb
-  name: Person
-  fullName: RobotFactory.Models.Person
+  name: Robot
+  fullName: RobotFactory.Models.Robot
   type: Class
   source:
     remote:
-      path: src/RobotFactory/Models/Person.cs
+      path: src/RobotFactory/Models/Robot.cs
       branch: basic-dotnet
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
-    id: Person
-    path: src/RobotFactory/Models/Person.cs
+    id: Robot
+    path: src/RobotFactory/Models/Robot.cs
     startLine: 8
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Models
   syntax:
-    content: public class Person
-    content.vb: Public Class Person
+    content: public class Robot
+    content.vb: Public Class Robot
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,23 +43,23 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: RobotFactory.Models.Person.Id
-  commentId: P:RobotFactory.Models.Person.Id
+- uid: RobotFactory.Models.Robot.Id
+  commentId: P:RobotFactory.Models.Robot.Id
   id: Id
-  parent: RobotFactory.Models.Person
+  parent: RobotFactory.Models.Robot
   langs:
   - csharp
   - vb
   name: Id
-  fullName: RobotFactory.Models.Person.Id
+  fullName: RobotFactory.Models.Robot.Id
   type: Property
   source:
     remote:
-      path: src/RobotFactory/Models/Person.cs
+      path: src/RobotFactory/Models/Robot.cs
       branch: basic-dotnet
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Id
-    path: src/RobotFactory/Models/Person.cs
+    path: src/RobotFactory/Models/Robot.cs
     startLine: 10
   assemblies:
   - RobotFactory
@@ -69,8 +69,11 @@ items:
       public int Id
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Id As Integer
     parameters: []
@@ -82,23 +85,23 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: RobotFactory.Models.Person.Name
-  commentId: P:RobotFactory.Models.Person.Name
+- uid: RobotFactory.Models.Robot.Name
+  commentId: P:RobotFactory.Models.Robot.Name
   id: Name
-  parent: RobotFactory.Models.Person
+  parent: RobotFactory.Models.Robot
   langs:
   - csharp
   - vb
   name: Name
-  fullName: RobotFactory.Models.Person.Name
+  fullName: RobotFactory.Models.Robot.Name
   type: Property
   source:
     remote:
-      path: src/RobotFactory/Models/Person.cs
+      path: src/RobotFactory/Models/Robot.cs
       branch: basic-dotnet
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Name
-    path: src/RobotFactory/Models/Person.cs
+    path: src/RobotFactory/Models/Robot.cs
     startLine: 11
   assemblies:
   - RobotFactory
@@ -108,8 +111,11 @@ items:
       public string Name
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Name As String
     parameters: []
@@ -121,39 +127,42 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: RobotFactory.Models.Person.Email
-  commentId: P:RobotFactory.Models.Person.Email
-  id: Email
-  parent: RobotFactory.Models.Person
+- uid: RobotFactory.Models.Robot.BatteryLeft
+  commentId: P:RobotFactory.Models.Robot.BatteryLeft
+  id: BatteryLeft
+  parent: RobotFactory.Models.Robot
   langs:
   - csharp
   - vb
-  name: Email
-  fullName: RobotFactory.Models.Person.Email
+  name: BatteryLeft
+  fullName: RobotFactory.Models.Robot.BatteryLeft
   type: Property
   source:
     remote:
-      path: src/RobotFactory/Models/Person.cs
+      path: src/RobotFactory/Models/Robot.cs
       branch: basic-dotnet
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
-    id: Email
-    path: src/RobotFactory/Models/Person.cs
+    id: BatteryLeft
+    path: src/RobotFactory/Models/Robot.cs
     startLine: 12
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Models
   syntax:
     content: >-
-      public string Email
+      public int BatteryLeft
 
       {
+
           get;
+
           set;
+
       }
-    content.vb: Public Property Email As String
+    content.vb: Public Property BatteryLeft As Integer
     parameters: []
     return:
-      type: System.String
+      type: System.Int32
   modifiers.csharp:
   - public
   - get
