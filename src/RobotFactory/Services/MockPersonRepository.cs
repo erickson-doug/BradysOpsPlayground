@@ -9,7 +9,7 @@ namespace RobotFactory.Services
 {
     public class MockPersonRepository : IPersonRepository
     {
-        public bool CreatePerson(Person person)
+        public bool CreatePerson(Robot person)
         {
             throw new NotImplementedException();
         }
@@ -19,7 +19,7 @@ namespace RobotFactory.Services
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Person> GetPeople()
+        public IEnumerable<Robot> GetPeople()
         {
             throw new NotImplementedException();
         }

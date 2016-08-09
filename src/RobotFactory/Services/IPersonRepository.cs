@@ -9,8 +9,8 @@ namespace RobotFactory.Services
 {
     public interface IPersonRepository
     {
-        IEnumerable<Person> GetPeople();
-        bool CreatePerson(Person person);
+        IEnumerable<Robot> GetPeople();
+        bool CreatePerson(Robot person);
         bool DeletePerson(int personId);
     }
 }

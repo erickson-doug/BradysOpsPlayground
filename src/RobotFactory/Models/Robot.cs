@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace RobotFactory.Models
 {
-    public class Person
+    public class Robot
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
+        public int BatteryLeft { get; set; }
     }
 }
