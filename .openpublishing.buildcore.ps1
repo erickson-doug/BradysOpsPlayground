@@ -45,9 +45,11 @@ $entryPointPackage = @{
     targetFramework = "net45";
 }
 
-# Pre-step: Set the repository root folder and working folder
+# Pre-step: Set the repository root folder, working folder, packages folder and last op script version file path
 $repositoryRoot = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $workingDirectory = "$repositoryRoot\.optemp"
+$packagesDirectory = "$workingDirectory\packages"
+$lastOpScriptVersionRecordFile = "$workingDirectory\lastOpScriptVersion.txt";
 
 Filter timestamp
 {
@@ -93,7 +95,8 @@ $systemDefaultVariables = @{
     DownloadNugetExeTimeOutInSeconds= 300;
     DownloadNugetConfigTimeOutInSeconds= 30;
     BuildToolParallelism = 0;
-    PreservedTemplateFolders = @("_themes", "_themes.MSDN.Modern", "_themes.VS.Modern")
+    AllowUseDynamicRendering = $false;
+    PreservedTemplateFolders = @("_themes", "_themes.MSDN.Modern", "_themes.VS.Modern");
 }
 
 function Write-HostWithTimestamp([string]$output)
@@ -370,23 +373,7 @@ $publishConfigFile = "$repositoryRoot\.openpublishing.publish.config.json"
 CheckPath($publishConfigFile)
 $publishConfigContent = (Get-Content $publishConfigFile -Raw) | ConvertFrom-Json
 
-# Step-3: Download Nuget tools and nuget config
-echo "Download Nuget tool and config" | timestamp
-$resourceContainerUrl = GetValueFromVariableName($resourceContainerUrl) ($systemDefaultVariables.ResourceContainerUrl)
-$nugetConfigSource = "$resourceContainerUrl/Tools/Nuget/Nuget.Config"
-$nugetExeSource = "$resourceContainerUrl/Tools/Nuget/nuget.exe"
-
-$nugetConfigDestination = "$workingDirectory\Tools\Nuget\Nuget.Config"
-$nugetExeDestination = "$workingDirectory\Tools\Nuget\nuget.exe"
-
-$DownloadNugetExeTimeOutInSeconds = GetValueFromVariableName($DownloadNugetExeTimeOutInSeconds) ($systemDefaultVariables.DownloadNugetExeTimeOutInSeconds)
-$DownloadNugetConfigTimeOutInSeconds = GetValueFromVariableName($DownloadNugetConfigTimeOutInSeconds) ($systemDefaultVariables.DownloadNugetConfigTimeOutInSeconds)
-$UpdateNugetExe = ParseBoolValue("UpdateNugetExe") ($UpdateNugetExe) ($systemDefaultVariables.UpdateNugetExe)
-DownloadFile($nugetExeSource) ($nugetExeDestination) ($UpdateNugetExe) ($DownloadNugetExeTimeOutInSeconds)
-$UpdateNugetConfig = ParseBoolValue("UpdateNugetConfig") ($UpdateNugetConfig) ($systemDefaultVariables.UpdateNugetConfig)
-DownloadFile($nugetConfigSource) ($nugetConfigDestination) ($UpdateNugetConfig) ($DownloadNugetConfigTimeOutInSeconds)
-
-# Step-4: Create packages.config for entry-point package
+# Get config package information
 echo "Create packages.config for entry-point package" | timestamp
 $configPackageVersion = $publishConfigContent.package_version
 if (![string]::IsNullOrEmpty($configPackageVersion))
@@ -394,30 +381,68 @@ if (![string]::IsNullOrEmpty($configPackageVersion))
     $entryPointPackage.version = $configPackageVersion
 }
 
-# for non-PROD env, treat latest version as latest-prerelease version by default
-$treatLatestVersionAsLatestPrereleaseVersion = !$resourceContainerUrl.StartsWith("https://opbuildstorageprod.blob.core.windows.net")
-if ($_op_treatLatestVersionAsLatestPrereleaseVersion)
+# TODO: refine this part: $LocalBuild should be changed as a method with pass in $Targets
+$localBuild = $false
+$Targets = GetValueFromVariableName($Targets) ($systemDefaultVariables.MdprojTargets)
+if ([string]::Compare($Targets, "LocalBuild", $true) -eq 0)
 {
-    $treatLatestVersionAsLatestPrereleaseVersion = $_op_treatLatestVersionAsLatestPrereleaseVersion -eq "true"
+    $Targets = "build"
+    $localBuild = $true
 }
 
-if ($treatLatestVersionAsLatestPrereleaseVersion -and $entryPointPackage.version -eq "latest")
+if(!$localBuild)
 {
-    $entryPointPackage.version = "latest-prerelease"
-    echo "Use latest-prerelease version instead of latest version." | timestamp
+    # Step-3: Download Nuget tools and nuget config
+    echo "Download Nuget tool and config" | timestamp
+    $resourceContainerUrl = GetValueFromVariableName($resourceContainerUrl) ($systemDefaultVariables.ResourceContainerUrl)
+    $nugetConfigSource = "$resourceContainerUrl/Tools/Nuget/Nuget.Config"
+    $nugetExeSource = "$resourceContainerUrl/Tools/Nuget/nuget.exe"
+
+    $nugetConfigDestination = "$workingDirectory\Tools\Nuget\Nuget.Config"
+    $nugetExeDestination = "$workingDirectory\Tools\Nuget\nuget.exe"
+
+    $DownloadNugetExeTimeOutInSeconds = GetValueFromVariableName($DownloadNugetExeTimeOutInSeconds) ($systemDefaultVariables.DownloadNugetExeTimeOutInSeconds)
+    $DownloadNugetConfigTimeOutInSeconds = GetValueFromVariableName($DownloadNugetConfigTimeOutInSeconds) ($systemDefaultVariables.DownloadNugetConfigTimeOutInSeconds)
+    $UpdateNugetExe = ParseBoolValue("UpdateNugetExe") ($UpdateNugetExe) ($systemDefaultVariables.UpdateNugetExe)
+    DownloadFile($nugetExeSource) ($nugetExeDestination) ($UpdateNugetExe) ($DownloadNugetExeTimeOutInSeconds)
+    $UpdateNugetConfig = ParseBoolValue("UpdateNugetConfig") ($UpdateNugetConfig) ($systemDefaultVariables.UpdateNugetConfig)
+    DownloadFile($nugetConfigSource) ($nugetConfigDestination) ($UpdateNugetConfig) ($DownloadNugetConfigTimeOutInSeconds)
+
+    # Step-4: Create packages.config for entry-point package. For non-PROD env, treat latest version as latest-prerelease version by default
+    $treatLatestVersionAsLatestPrereleaseVersion = !$resourceContainerUrl.StartsWith("https://opbuildstorageprod.blob.core.windows.net")
+    if ($_op_treatLatestVersionAsLatestPrereleaseVersion)
+    {
+        $treatLatestVersionAsLatestPrereleaseVersion = $_op_treatLatestVersionAsLatestPrereleaseVersion -eq "true"
+    }
+
+    if ($treatLatestVersionAsLatestPrereleaseVersion -and $entryPointPackage.version -eq "latest")
+    {
+        $entryPointPackage.version = "latest-prerelease"
+        echo "Use latest-prerelease version instead of latest version." | timestamp
+    }
+
+    $packagesDestination = "$workingDirectory\packages.config"
+    GeneratePackagesConfig($packagesDestination) (@($entryPointPackage))
+
+    # Step-5: Restore entry-point package
+    echo "Restore entry-point package: $($entryPointPackage.id)" | timestamp
+    $restoreSucceeded = RestorePackage($nugetExeDestination) ($packagesDestination) ($packagesDirectory) ($nugetConfigDestination)
+    if (!$restoreSucceeded)
+    {
+        echo "Restore entry-point package failed" | timestamp
+        exit 1
+    }
 }
-
-$packagesDestination = "$workingDirectory\packages.config"
-GeneratePackagesConfig($packagesDestination) (@($entryPointPackage))
-
-# Step-5: Restore entry-point package
-echo "Restore entry-point package: $($entryPointPackage.id)" | timestamp
-$packagesDirectory = "$workingDirectory\packages"
-$restoreSucceeded = RestorePackage($nugetExeDestination) ($packagesDestination) ($packagesDirectory) ($nugetConfigDestination)
-if (!$restoreSucceeded)
+else
 {
-    echo "Restore entry-point package failed" | timestamp
-    exit 1
+    if(!(Test-Path "$lastOpScriptVersionRecordFile"))
+    {
+        echo "Please run a non local build at first to restore the necessary packages and files."
+        exit 1;
+    }
+
+    # TODO: check whether the actual version has a legal version stype
+    $entryPointPackage.actualVersion = (Get-Content $lastOpScriptVersionRecordFile -Raw).Trim()
 }
 
 # Step-6: Call build entry point
@@ -425,10 +450,19 @@ $packageToolsDirectory = "$packagesDirectory\$($entryPointPackage.id).$($entryPo
 $buildEntryPointDestination = "$packageToolsDirectory\build.entrypoint.ps1"
 
 $originalParameterDictionary.environment.repositoryRoot = $repositoryRoot
+$originalParameterDictionary.environment.workingDirectory = $workingDirectory
 $originalParameterDictionary.environment.systemDefaultVariables = $systemDefaultVariables
 $originalParameterDictionary.environment.packagesDirectory = $packagesDirectory
 $originalParameterDictionary.environment.nugetConfigDestination = $nugetConfigDestination
 $originalParameterDictionary.environment.nugetExeDestination = $nugetExeDestination
+$originalParameterDictionary.environment.LocalBuild = $localBuild
+$originalParameterDictionary.environment.LastOpScriptVersion = $entryPointPackage.actualVersion
+$originalParameterDictionary.environment.LastOpScriptVersionRecordFile = $lastOpScriptVersionRecordFile
+
+$AllowUseDynamicRendering = ParseBoolValue("AllowUseDynamicRendering") ($AllowUseDynamicRendering) ($systemDefaultVariables.AllowUseDynamicRendering)
+echo "Allow use of dynamic rendering: $AllowUseDynamicRendering" | timestamp
+$originalParameterDictionary.environment.docfxAllowUseDynamicRendering = $AllowUseDynamicRendering
+
 $ParameterDictionary = CloneParameterDictionaryWithContext($originalParameterDictionary) ($contextDictionary)
 
 echo "Call build entry point at $buildEntryPointDestination" | timestamp
