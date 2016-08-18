@@ -8,6 +8,7 @@ items:
   - RobotFactory.Services.IRobotFactory.DetachRobot(System.Int32)
   - RobotFactory.Services.IRobotFactory.RechargeRobot(System.Int32)
   - RobotFactory.Services.IRobotFactory.RobotUsed
+  - RobotFactory.Services.IRobotFactory.SomeGenericMethod``1(``0)
   - RobotFactory.Services.IRobotFactory.UseRobot(System.Int32)
   langs:
   - csharp
@@ -18,14 +19,16 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/IRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: IRobotFactory
     path: src/RobotFactory/Services/IRobotFactory.cs
-    startLine: 9
+    startLine: 12
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Services
+  summary: "\r\nThis is the developer-supplied summary. No one will ever see it as long as there's a remarks override. \r\n"
+  example: []
   syntax:
     content: public interface IRobotFactory
     content.vb: Public Interface IRobotFactory
@@ -48,22 +51,26 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/IRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: AttachRobot
     path: src/RobotFactory/Services/IRobotFactory.cs
-    startLine: 11
+    startLine: 19
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Services
+  summary: "\r\nAttach the robot to the assembly line.\r\n"
+  example: []
   syntax:
     content: bool AttachRobot(Robot robot)
     content.vb: Function AttachRobot(robot As Robot) As Boolean
     parameters:
     - id: robot
       type: RobotFactory.Models.Robot
+      description: The <em>robot</em> parameter is the robot you want to install.
     return:
       type: System.Boolean
+      description: 
 - uid: RobotFactory.Services.IRobotFactory.DetachRobot(System.Int32)
   commentId: M:RobotFactory.Services.IRobotFactory.DetachRobot(System.Int32)
   id: DetachRobot(System.Int32)
@@ -77,11 +84,11 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/IRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: DetachRobot
     path: src/RobotFactory/Services/IRobotFactory.cs
-    startLine: 12
+    startLine: 20
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Services
@@ -106,11 +113,11 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/IRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: RechargeRobot
     path: src/RobotFactory/Services/IRobotFactory.cs
-    startLine: 13
+    startLine: 21
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Services
@@ -135,11 +142,11 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/IRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: UseRobot
     path: src/RobotFactory/Services/IRobotFactory.cs
-    startLine: 14
+    startLine: 22
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Services
@@ -151,6 +158,41 @@ items:
       type: System.Int32
     return:
       type: System.Boolean
+- uid: RobotFactory.Services.IRobotFactory.SomeGenericMethod``1(``0)
+  commentId: M:RobotFactory.Services.IRobotFactory.SomeGenericMethod``1(``0)
+  id: SomeGenericMethod``1(``0)
+  parent: RobotFactory.Services.IRobotFactory
+  langs:
+  - csharp
+  - vb
+  name: SomeGenericMethod<T>(T)
+  fullName: RobotFactory.Services.IRobotFactory.SomeGenericMethod<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/RobotFactory/Services/IRobotFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SomeGenericMethod
+    path: src/RobotFactory/Services/IRobotFactory.cs
+    startLine: 29
+  assemblies:
+  - RobotFactory
+  namespace: RobotFactory.Services
+  summary: "\r\nMethod used to simply test out the <em>T</em>.\r\n"
+  example: []
+  syntax:
+    content: void SomeGenericMethod<T>(T input)
+    content.vb: Sub SomeGenericMethod(Of T)(input As T)
+    parameters:
+    - id: input
+      type: '{T}'
+      description: The instance to pass in.
+    typeParameters:
+    - id: T
+      description: The type to be handled.
+  fullName.vb: RobotFactory.Services.IRobotFactory.SomeGenericMethod(Of T)(T)
+  name.vb: SomeGenericMethod(Of T)(T)
 - uid: RobotFactory.Services.IRobotFactory.RobotUsed
   commentId: E:RobotFactory.Services.IRobotFactory.RobotUsed
   id: RobotUsed
@@ -164,11 +206,11 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/IRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: RobotUsed
     path: src/RobotFactory/Services/IRobotFactory.cs
-    startLine: 15
+    startLine: 31
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Services
@@ -205,6 +247,10 @@ references:
   isExternal: true
   name: Int32
   fullName: System.Int32
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
 - uid: System.EventHandler{RobotFactory.Models.Robot}
   parent: System
   definition: System.EventHandler`1

@@ -31,6 +31,11 @@ namespace RobotFactory.Services
             return true;
         }
 
+        public void SomeGenericMethod<T>(T input)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool UseRobot(int robotId)
         {
             if (_robots.First(x => x.Id == robotId).BatteryLeft > 10)

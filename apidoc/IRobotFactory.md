@@ -32,11 +32,6 @@ The IRobotFactory provides a contract that any Robot Factory implementor must fu
     }
 
 ---
-uid: RobotFactory.Services.IRobotFactory.AttachRobot(RobotFactory.Models.Robot)
-summary: Contributor-supplied summary since the developer didn't provide one.
----
-
----
 uid: RobotFactory.Services.IRobotFactory.DetachRobot(System.Int32)
 summary: Use this method **only** when you seriously want to detach the robot and let it go home for the rest of the day. 
 ---

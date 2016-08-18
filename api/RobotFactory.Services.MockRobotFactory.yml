@@ -9,6 +9,7 @@ items:
   - RobotFactory.Services.MockRobotFactory.DetachRobot(System.Int32)
   - RobotFactory.Services.MockRobotFactory.RechargeRobot(System.Int32)
   - RobotFactory.Services.MockRobotFactory.RobotUsed
+  - RobotFactory.Services.MockRobotFactory.SomeGenericMethod``1(``0)
   - RobotFactory.Services.MockRobotFactory.UseRobot(System.Int32)
   langs:
   - csharp
@@ -19,7 +20,7 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/MockRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: MockRobotFactory
     path: src/RobotFactory/Services/MockRobotFactory.cs
@@ -31,7 +32,6 @@ items:
     content: 'public class MockRobotFactory : IRobotFactory'
     content.vb: >-
       Public Class MockRobotFactory
-
           Implements IRobotFactory
   inheritance:
   - System.Object
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/MockRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: _robots
     path: src/RobotFactory/Services/MockRobotFactory.cs
@@ -77,9 +77,7 @@ items:
       public List<Robot> _robots
 
       {
-
           get;
-
       }
     content.vb: Public ReadOnly Property _robots As List(Of Robot)
     parameters: []
@@ -104,7 +102,7 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/MockRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: RobotUsed
     path: src/RobotFactory/Services/MockRobotFactory.cs
@@ -134,7 +132,7 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/MockRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: AttachRobot
     path: src/RobotFactory/Services/MockRobotFactory.cs
@@ -167,7 +165,7 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/MockRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: DetachRobot
     path: src/RobotFactory/Services/MockRobotFactory.cs
@@ -200,7 +198,7 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/MockRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: RechargeRobot
     path: src/RobotFactory/Services/MockRobotFactory.cs
@@ -220,6 +218,41 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: RobotFactory.Services.MockRobotFactory.SomeGenericMethod``1(``0)
+  commentId: M:RobotFactory.Services.MockRobotFactory.SomeGenericMethod``1(``0)
+  id: SomeGenericMethod``1(``0)
+  parent: RobotFactory.Services.MockRobotFactory
+  langs:
+  - csharp
+  - vb
+  name: SomeGenericMethod<T>(T)
+  fullName: RobotFactory.Services.MockRobotFactory.SomeGenericMethod<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/RobotFactory/Services/MockRobotFactory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SomeGenericMethod
+    path: src/RobotFactory/Services/MockRobotFactory.cs
+    startLine: 33
+  assemblies:
+  - RobotFactory
+  namespace: RobotFactory.Services
+  syntax:
+    content: public void SomeGenericMethod<T>(T input)
+    content.vb: Public Sub SomeGenericMethod(Of T)(input As T)
+    parameters:
+    - id: input
+      type: '{T}'
+    typeParameters:
+    - id: T
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RobotFactory.Services.MockRobotFactory.SomeGenericMethod(Of T)(T)
+  name.vb: SomeGenericMethod(Of T)(T)
 - uid: RobotFactory.Services.MockRobotFactory.UseRobot(System.Int32)
   commentId: M:RobotFactory.Services.MockRobotFactory.UseRobot(System.Int32)
   id: UseRobot(System.Int32)
@@ -233,11 +266,11 @@ items:
   source:
     remote:
       path: src/RobotFactory/Services/MockRobotFactory.cs
-      branch: basic-dotnet
+      branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: UseRobot
     path: src/RobotFactory/Services/MockRobotFactory.cs
-    startLine: 33
+    startLine: 38
   assemblies:
   - RobotFactory
   namespace: RobotFactory.Services
@@ -624,3 +657,7 @@ references:
   isExternal: true
   name: Int32
   fullName: System.Int32
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
