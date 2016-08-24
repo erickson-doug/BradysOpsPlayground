@@ -32,7 +32,7 @@ trap
 $errorActionPreference = 'Stop'
 
 $contextDictionary = @{}
-$originalParameterDictionary = @{
+$currentDictionary = @{
     environment = @{};
     docset = @{};
     context = @{}
@@ -352,12 +352,12 @@ Function CloneParameterDictionaryWithContext
 {
     param (
         [parameter(mandatory=$true)]
-        [hashtable]$originalParameterDictionary, 
+        [hashtable]$currentDictionary, 
         [parameter(mandatory=$true)]
         [hashtable]$context
     )
 
-    $ParameterDictionary = $originalParameterDictionary.Clone()
+    $ParameterDictionary = $currentDictionary.Clone()
     $ParameterDictionary.context = $context
 
     return $ParameterDictionary
@@ -449,21 +449,21 @@ else
 $packageToolsDirectory = "$packagesDirectory\$($entryPointPackage.id).$($entryPointPackage.actualVersion)\tools"
 $buildEntryPointDestination = "$packageToolsDirectory\build.entrypoint.ps1"
 
-$originalParameterDictionary.environment.repositoryRoot = $repositoryRoot
-$originalParameterDictionary.environment.workingDirectory = $workingDirectory
-$originalParameterDictionary.environment.systemDefaultVariables = $systemDefaultVariables
-$originalParameterDictionary.environment.packagesDirectory = $packagesDirectory
-$originalParameterDictionary.environment.nugetConfigDestination = $nugetConfigDestination
-$originalParameterDictionary.environment.nugetExeDestination = $nugetExeDestination
-$originalParameterDictionary.environment.LocalBuild = $localBuild
-$originalParameterDictionary.environment.LastOpScriptVersion = $entryPointPackage.actualVersion
-$originalParameterDictionary.environment.LastOpScriptVersionRecordFile = $lastOpScriptVersionRecordFile
+$currentDictionary.environment.repositoryRoot = $repositoryRoot
+$currentDictionary.environment.workingDirectory = $workingDirectory
+$currentDictionary.environment.systemDefaultVariables = $systemDefaultVariables
+$currentDictionary.environment.packagesDirectory = $packagesDirectory
+$currentDictionary.environment.nugetConfigDestination = $nugetConfigDestination
+$currentDictionary.environment.nugetExeDestination = $nugetExeDestination
+$currentDictionary.environment.LocalBuild = $localBuild
+$currentDictionary.environment.LastOpScriptVersion = $entryPointPackage.actualVersion
+$currentDictionary.environment.LastOpScriptVersionRecordFile = $lastOpScriptVersionRecordFile
 
 $AllowUseDynamicRendering = ParseBoolValue("AllowUseDynamicRendering") ($AllowUseDynamicRendering) ($systemDefaultVariables.AllowUseDynamicRendering)
 echo "Allow use of dynamic rendering: $AllowUseDynamicRendering" | timestamp
-$originalParameterDictionary.environment.docfxAllowUseDynamicRendering = $AllowUseDynamicRendering
+$currentDictionary.environment.docfxAllowUseDynamicRendering = $AllowUseDynamicRendering
 
-$ParameterDictionary = CloneParameterDictionaryWithContext($originalParameterDictionary) ($contextDictionary)
+$ParameterDictionary = CloneParameterDictionaryWithContext($currentDictionary) ($contextDictionary)
 
 echo "Call build entry point at $buildEntryPointDestination" | timestamp
 & "$buildEntryPointDestination" $ParameterDictionary
