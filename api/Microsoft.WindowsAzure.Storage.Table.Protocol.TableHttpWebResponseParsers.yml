@@ -1,0 +1,248 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  commentId: T:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  id: TableHttpWebResponseParsers
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol
+  children:
+  - Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.GetRequestId(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceProperties(Stream)
+  - Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceStats(Stream)
+  - Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadSharedAccessIdentifiers(Stream,Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  langs:
+  - csharp
+  - vb
+  name: TableHttpWebResponseParsers
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  type: Class
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TableHttpWebResponseParsers
+    path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nProvides a set of methods for parsing a response stream from the Table service.\r\n"
+  example: []
+  syntax:
+    content: 'public class TableHttpWebResponseParsers : object'
+    content.vb: >-
+      Public Class TableHttpWebResponseParsers
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.GetRequestId(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.GetRequestId(HttpWebResponse)
+  id: GetRequestId(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetRequestId(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.GetRequestId(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetRequestId
+    path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nGets the request ID from the response.\r\n"
+  example: []
+  syntax:
+    content: public static string GetRequestId(HttpWebResponse response)
+    content.vb: Public Shared Function GetRequestId(response As HttpWebResponse) As String
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The web response.
+    return:
+      type: System.String
+      description: A unique value associated with the request.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceProperties(Stream)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceProperties(Stream)
+  id: ReadServiceProperties(Stream)
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadServiceProperties(Stream)
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceProperties(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadServiceProperties
+    path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nReads service properties from a stream.\r\n"
+  example: []
+  syntax:
+    content: public static ServiceProperties ReadServiceProperties(Stream inputStream)
+    content.vb: Public Shared Function ReadServiceProperties(inputStream As Stream) As ServiceProperties
+    parameters:
+    - id: inputStream
+      type: Stream
+      description: The stream from which to read the service properties.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceProperties
+      description: The service properties stored in the stream.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceStats(Stream)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceStats(Stream)
+  id: ReadServiceStats(Stream)
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadServiceStats(Stream)
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceStats(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadServiceStats
+    path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nReads service stats from a stream.\r\n"
+  example: []
+  syntax:
+    content: public static ServiceStats ReadServiceStats(Stream inputStream)
+    content.vb: Public Shared Function ReadServiceStats(inputStream As Stream) As ServiceStats
+    parameters:
+    - id: inputStream
+      type: Stream
+      description: The stream from which to read the service stats.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+      description: The service stats stored in the stream.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadSharedAccessIdentifiers(Stream,Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadSharedAccessIdentifiers(Stream,Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  id: ReadSharedAccessIdentifiers(Stream,Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadSharedAccessIdentifiers(Stream, TablePermissions)
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadSharedAccessIdentifiers(Stream, Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadSharedAccessIdentifiers
+    path: src/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 64
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nReads the share access policies from a stream in XML.\r\n"
+  example: []
+  syntax:
+    content: public static void ReadSharedAccessIdentifiers(Stream inputStream, TablePermissions permissions)
+    content.vb: Public Shared Sub ReadSharedAccessIdentifiers(inputStream As Stream, permissions As TablePermissions)
+    parameters:
+    - id: inputStream
+      type: Stream
+      description: The stream of XML policies.
+    - id: permissions
+      type: Microsoft.WindowsAzure.Storage.Table.TablePermissions
+      description: The permissions object to which the policies are to be written.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: HttpWebResponse
+  isExternal: true
+  name: HttpWebResponse
+  fullName: HttpWebResponse
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Stream
+  isExternal: true
+  name: Stream
+  fullName: Stream
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceProperties
+  parent: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: ServiceProperties
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceProperties
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+  parent: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: ServiceStats
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+- uid: Microsoft.WindowsAzure.Storage.Table.TablePermissions
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TablePermissions
+  fullName: Microsoft.WindowsAzure.Storage.Table.TablePermissions
+- uid: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table
+  fullName: Microsoft.WindowsAzure.Storage.Table

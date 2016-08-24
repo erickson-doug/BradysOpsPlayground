@@ -1,0 +1,460 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken
+  commentId: T:Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken
+  id: QueueContinuationToken
+  parent: Microsoft.WindowsAzure.Storage.Queue
+  children:
+  - Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken.NextMarker
+  - Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken.TargetLocation
+  langs:
+  - csharp
+  - vb
+  name: QueueContinuationToken
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken
+  type: Class
+  source:
+    remote:
+      path: src/Common/Queue/QueueContinuationToken.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: QueueContinuationToken
+    path: src/Common/Queue/QueueContinuationToken.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nRepresents a continuation token returned by the Queue service.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [SuppressMessage("StyleCop.CSharp.SpacingRules", "SA1001:CommasMustBeSpacedCorrectly", Justification = "Reviewed.")]
+
+      public sealed class QueueContinuationToken : IContinuationToken
+    content.vb: >-
+      <SuppressMessage("StyleCop.CSharp.SpacingRules", "SA1001:CommasMustBeSpacedCorrectly", Justification:="Reviewed.")>
+
+      Public NotInheritable Class QueueContinuationToken
+          Implements IContinuationToken
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.WindowsAzure.Storage.IContinuationToken
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute
+    ctor: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: StyleCop.CSharp.SpacingRules
+    - type: System.String
+      value: SA1001:CommasMustBeSpacedCorrectly
+    namedArguments:
+    - name: Justification
+      type: System.String
+      value: Reviewed.
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken.NextMarker
+  commentId: P:Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken.NextMarker
+  id: NextMarker
+  parent: Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken
+  langs:
+  - csharp
+  - vb
+  name: NextMarker
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken.NextMarker
+  type: Property
+  source:
+    remote:
+      path: src/Common/Queue/QueueContinuationToken.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: NextMarker
+    path: src/Common/Queue/QueueContinuationToken.cs
+    startLine: 94
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nGets or sets the next marker for continuing results for <xref href=\"Microsoft.WindowsAzure.Storage.Queue.CloudQueue\" data-throw-if-not-resolved=\"false\"></xref> enumeration operations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string NextMarker
+
+      {
+          get;
+          set;
+      }
+    content.vb: Public Property NextMarker As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string containing the NextMarker value.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken.TargetLocation
+  commentId: P:Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken.TargetLocation
+  id: TargetLocation
+  parent: Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken
+  langs:
+  - csharp
+  - vb
+  name: TargetLocation
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueContinuationToken.TargetLocation
+  type: Property
+  source:
+    remote:
+      path: src/Common/Queue/QueueContinuationToken.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TargetLocation
+    path: src/Common/Queue/QueueContinuationToken.cs
+    startLine: 100
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nGets or sets the storage location that the continuation token applies to.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public StorageLocation? TargetLocation
+
+      {
+          get;
+          set;
+      }
+    content.vb: Public Property TargetLocation As StorageLocation?
+    parameters: []
+    return:
+      type: System.Nullable{Microsoft.WindowsAzure.Storage.StorageLocation}
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageLocation" data-throw-if-not-resolved="false"></xref> enumeration value.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Queue
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Queue
+  fullName: Microsoft.WindowsAzure.Storage.Queue
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.WindowsAzure.Storage.IContinuationToken
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: IContinuationToken
+  fullName: Microsoft.WindowsAzure.Storage.IContinuationToken
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage
+- uid: Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+  parent: Microsoft.WindowsAzure.Storage.Queue
+  isExternal: false
+  name: CloudQueue
+  fullName: Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.WindowsAzure.Storage.StorageLocation
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: StorageLocation
+  fullName: Microsoft.WindowsAzure.Storage.StorageLocation
+- uid: System.Nullable{Microsoft.WindowsAzure.Storage.StorageLocation}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<StorageLocation>
+  fullName: System.Nullable<Microsoft.WindowsAzure.Storage.StorageLocation>
+  fullname.vb: System.Nullable(Of Microsoft.WindowsAzure.Storage.StorageLocation)
+  name.vb: Nullable(Of StorageLocation)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.StorageLocation
+    name: StorageLocation
+    fullName: Microsoft.WindowsAzure.Storage.StorageLocation
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.StorageLocation
+    name: StorageLocation
+    fullName: Microsoft.WindowsAzure.Storage.StorageLocation
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

@@ -1,0 +1,203 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+  commentId: T:Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+  id: SharedKeyCanonicalizer
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth
+  children:
+  - Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.AuthorizationScheme
+  - Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.CanonicalizeHttpRequest(HttpWebRequest,System.String)
+  - Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.Instance
+  langs:
+  - csharp
+  - vb
+  name: SharedKeyCanonicalizer
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+  type: Class
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Core/Auth/SharedKeyCanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SharedKeyCanonicalizer
+    path: src/ClassLibraryCommon/Core/Auth/SharedKeyCanonicalizer.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nRepresents a canonicalizer that converts HTTP request data into a standard form appropriate for signing via \r\nthe Shared Key authentication scheme for the Blob or Queue service.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class SharedKeyCanonicalizer : object, ICanonicalizer'
+    content.vb: >-
+      Public NotInheritable Class SharedKeyCanonicalizer
+          Inherits Object
+          Implements ICanonicalizer
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.Instance
+  commentId: P:Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.Instance
+  id: Instance
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.Instance
+  type: Property
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Core/Auth/SharedKeyCanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Instance
+    path: src/ClassLibraryCommon/Core/Auth/SharedKeyCanonicalizer.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nGets a static instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer\" data-throw-if-not-resolved=\"false\"></xref> object.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static SharedKeyCanonicalizer Instance
+
+      {
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property Instance As SharedKeyCanonicalizer
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+      description: The static instance of the class.
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.AuthorizationScheme
+  commentId: P:Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.AuthorizationScheme
+  id: AuthorizationScheme
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+  langs:
+  - csharp
+  - vb
+  name: AuthorizationScheme
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.AuthorizationScheme
+  type: Property
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Core/Auth/SharedKeyCanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AuthorizationScheme
+    path: src/ClassLibraryCommon/Core/Auth/SharedKeyCanonicalizer.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nGets the authorization scheme used for canonicalization.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string AuthorizationScheme
+
+      {
+          get;
+      }
+    content.vb: Public ReadOnly Property AuthorizationScheme As String
+    parameters: []
+    return:
+      type: System.String
+      description: The authorization scheme used for canonicalization.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.CanonicalizeHttpRequest(HttpWebRequest,System.String)
+  commentId: M:Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.CanonicalizeHttpRequest(HttpWebRequest,System.String)
+  id: CanonicalizeHttpRequest(HttpWebRequest,System.String)
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+  langs:
+  - csharp
+  - vb
+  name: CanonicalizeHttpRequest(HttpWebRequest, String)
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer.CanonicalizeHttpRequest(HttpWebRequest, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Core/Auth/SharedKeyCanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CanonicalizeHttpRequest
+    path: src/ClassLibraryCommon/Core/Auth/SharedKeyCanonicalizer.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nConverts the specified HTTP request data into a standard form appropriate for signing.\r\n"
+  example: []
+  syntax:
+    content: public string CanonicalizeHttpRequest(HttpWebRequest request, string accountName)
+    content.vb: Public Function CanonicalizeHttpRequest(request As HttpWebRequest, accountName As String) As String
+    parameters:
+    - id: request
+      type: HttpWebRequest
+      description: The HTTP request that needs to be signed.
+    - id: accountName
+      type: System.String
+      description: The name of the storage account that the HTTP request will access.
+    return:
+      type: System.String
+      description: The canonicalized string containing the HTTP request data in a standard form appropriate for signing.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Core.Auth
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth
+  isExternal: false
+  name: ICanonicalizer
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth
+  isExternal: false
+  name: SharedKeyCanonicalizer
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyCanonicalizer
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: HttpWebRequest
+  isExternal: true
+  name: HttpWebRequest
+  fullName: HttpWebRequest

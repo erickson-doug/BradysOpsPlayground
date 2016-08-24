@@ -1,0 +1,148 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler
+  commentId: T:Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler
+  id: NoOpAuthenticationHandler
+  parent: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  children:
+  - Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler.#ctor
+  - Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler.SignRequest(HttpWebRequest,Microsoft.WindowsAzure.Storage.OperationContext)
+  langs:
+  - csharp
+  - vb
+  name: NoOpAuthenticationHandler
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler
+  type: Class
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Auth/Protocol/NoOpAuthenticationHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: NoOpAuthenticationHandler
+    path: src/ClassLibraryCommon/Auth/Protocol/NoOpAuthenticationHandler.cs
+    startLine: 24
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  summary: "\r\nRepresents a handler that signs HTTP requests with no authentication information.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class NoOpAuthenticationHandler : object, IAuthenticationHandler'
+    content.vb: >-
+      Public NotInheritable Class NoOpAuthenticationHandler
+          Inherits Object
+          Implements IAuthenticationHandler
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler.#ctor
+  commentId: M:Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler.#ctor
+  id: '#ctor'
+  parent: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler
+  langs:
+  - csharp
+  - vb
+  name: NoOpAuthenticationHandler()
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler.NoOpAuthenticationHandler()
+  type: Constructor
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Auth/Protocol/NoOpAuthenticationHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/ClassLibraryCommon/Auth/Protocol/NoOpAuthenticationHandler.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler\" data-throw-if-not-resolved=\"false\"></xref> class.\r\n"
+  example: []
+  syntax:
+    content: public NoOpAuthenticationHandler()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler.SignRequest(HttpWebRequest,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler.SignRequest(HttpWebRequest,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: SignRequest(HttpWebRequest,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler
+  langs:
+  - csharp
+  - vb
+  name: SignRequest(HttpWebRequest, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler.SignRequest(HttpWebRequest, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Auth/Protocol/NoOpAuthenticationHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SignRequest
+    path: src/ClassLibraryCommon/Auth/Protocol/NoOpAuthenticationHandler.cs
+    startLine: 38
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  summary: "\r\nSigns the specified HTTP request with no authentication information.\r\n"
+  example: []
+  syntax:
+    content: public void SignRequest(HttpWebRequest request, OperationContext operationContext)
+    content.vb: Public Sub SignRequest(request As HttpWebRequest, operationContext As OperationContext)
+    parameters:
+    - id: request
+      type: HttpWebRequest
+      description: The HTTP request to sign.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler
+  parent: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  isExternal: false
+  name: IAuthenticationHandler
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler
+  isExternal: false
+  name: NoOpAuthenticationHandler
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol.NoOpAuthenticationHandler
+- uid: Microsoft.WindowsAzure.Storage.OperationContext
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: OperationContext
+  fullName: Microsoft.WindowsAzure.Storage.OperationContext
+- uid: HttpWebRequest
+  isExternal: true
+  name: HttpWebRequest
+  fullName: HttpWebRequest
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage

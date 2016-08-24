@@ -1,0 +1,417 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  commentId: T:Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  id: FileHttpResponseParsers
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol
+  children:
+  - Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetCopyAttributes(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetMetadata(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetProperties(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetRequestId(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.ReadServiceProperties(Stream)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.ReadServiceStats(Stream)
+  langs:
+  - csharp
+  - vb
+  name: FileHttpResponseParsers
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  type: Class
+  source:
+    remote:
+      path: src/Common/File/Protocol/FileHttpResponseParsers.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: FileHttpResponseParsers
+    path: src/Common/File/Protocol/FileHttpResponseParsers.Common.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nProvides methods for parsing responses to operations on files in the File service.\r\n"
+  example: []
+  syntax:
+    content: 'public class FileHttpResponseParsers : object'
+    content.vb: >-
+      Public Class FileHttpResponseParsers
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetRequestId(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetRequestId(HttpWebResponse)
+  id: GetRequestId(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetRequestId(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetRequestId(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/FileHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetRequestId
+    path: src/ClassLibraryCommon/File/Protocol/FileHttpResponseParsers.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the request ID from the response.\r\n"
+  example: []
+  syntax:
+    content: public static string GetRequestId(HttpWebResponse response)
+    content.vb: Public Shared Function GetRequestId(response As HttpWebResponse) As String
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The web response.
+    return:
+      type: System.String
+      description: A unique value associated with the request.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetProperties(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetProperties(HttpWebResponse)
+  id: GetProperties(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetProperties(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetProperties(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/FileHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetProperties
+    path: src/ClassLibraryCommon/File/Protocol/FileHttpResponseParsers.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the file's properties from the response.\r\n"
+  example: []
+  syntax:
+    content: public static FileProperties GetProperties(HttpWebResponse response)
+    content.vb: Public Shared Function GetProperties(response As HttpWebResponse) As FileProperties
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The web response.
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.FileProperties
+      description: The file's properties.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetMetadata(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetMetadata(HttpWebResponse)
+  id: GetMetadata(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetMetadata(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetMetadata(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/FileHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMetadata
+    path: src/ClassLibraryCommon/File/Protocol/FileHttpResponseParsers.cs
+    startLine: 103
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the user-defined metadata.\r\n"
+  example: []
+  syntax:
+    content: public static IDictionary<string, string> GetMetadata(HttpWebResponse response)
+    content.vb: Public Shared Function GetMetadata(response As HttpWebResponse) As IDictionary(Of String, String)
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The response from server.
+    return:
+      type: IDictionary{System.String,System.String}
+      description: A <see cref="!:System.Collections.IDictionary"></see> of the metadata.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetCopyAttributes(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetCopyAttributes(HttpWebResponse)
+  id: GetCopyAttributes(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetCopyAttributes(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.GetCopyAttributes(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/FileHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetCopyAttributes
+    path: src/ClassLibraryCommon/File/Protocol/FileHttpResponseParsers.cs
+    startLine: 113
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nExtracts a <xref href=\"Microsoft.WindowsAzure.Storage.Blob.CopyState\" data-throw-if-not-resolved=\"false\"></xref> object from the headers of a web response.\r\n"
+  example: []
+  syntax:
+    content: public static CopyState GetCopyAttributes(HttpWebResponse response)
+    content.vb: Public Shared Function GetCopyAttributes(response As HttpWebResponse) As CopyState
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The HTTP web response.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.CopyState
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.CopyState" data-throw-if-not-resolved="false"></xref> object, or <code>null</code> if the web response does not include copy state.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.ReadServiceProperties(Stream)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.ReadServiceProperties(Stream)
+  id: ReadServiceProperties(Stream)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadServiceProperties(Stream)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.ReadServiceProperties(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/Common/File/Protocol/FileHttpResponseParsers.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadServiceProperties
+    path: src/Common/File/Protocol/FileHttpResponseParsers.Common.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nReads service properties from a stream.\r\n"
+  example: []
+  syntax:
+    content: public static FileServiceProperties ReadServiceProperties(Stream inputStream)
+    content.vb: Public Shared Function ReadServiceProperties(inputStream As Stream) As FileServiceProperties
+    parameters:
+    - id: inputStream
+      type: Stream
+      description: The stream from which to read the service properties.
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.Protocol.FileServiceProperties
+      description: The service properties stored in the stream.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.ReadServiceStats(Stream)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.ReadServiceStats(Stream)
+  id: ReadServiceStats(Stream)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadServiceStats(Stream)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.FileHttpResponseParsers.ReadServiceStats(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/Common/File/Protocol/FileHttpResponseParsers.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadServiceStats
+    path: src/Common/File/Protocol/FileHttpResponseParsers.Common.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nReads service stats from a stream.\r\n"
+  example: []
+  syntax:
+    content: public static ServiceStats ReadServiceStats(Stream inputStream)
+    content.vb: Public Shared Function ReadServiceStats(inputStream As Stream) As ServiceStats
+    parameters:
+    - id: inputStream
+      type: Stream
+      description: The stream from which to read the service stats.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+      description: The service stats stored in the stream.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: HttpWebResponse
+  isExternal: true
+  name: HttpWebResponse
+  fullName: HttpWebResponse
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.WindowsAzure.Storage.File.FileProperties
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: FileProperties
+  fullName: Microsoft.WindowsAzure.Storage.File.FileProperties
+- uid: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File
+  fullName: Microsoft.WindowsAzure.Storage.File
+- uid: IDictionary{System.String,System.String}
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  fullname.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  fullName: IDictionary<, >
+  fullname.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: 
+    fullName: 
+  - name: ', '
+    fullName: ', '
+  - name: 
+    fullName: 
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: 
+    fullName: 
+  - name: ', '
+    fullName: ', '
+  - name: 
+    fullName: 
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Blob.CopyState
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: CopyState
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CopyState
+- uid: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Blob
+  fullName: Microsoft.WindowsAzure.Storage.Blob
+- uid: Stream
+  isExternal: true
+  name: Stream
+  fullName: Stream
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.FileServiceProperties
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol
+  isExternal: false
+  name: FileServiceProperties
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.FileServiceProperties
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+  parent: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: ServiceStats
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol

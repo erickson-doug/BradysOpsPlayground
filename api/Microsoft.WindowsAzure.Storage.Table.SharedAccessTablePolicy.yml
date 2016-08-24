@@ -1,0 +1,586 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  commentId: T:Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  id: SharedAccessTablePolicy
+  parent: Microsoft.WindowsAzure.Storage.Table
+  children:
+  - Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.#ctor
+  - Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.Permissions
+  - Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.PermissionsFromString(System.String)
+  - Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.PermissionsToString(Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions)
+  - Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessExpiryTime
+  - Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessStartTime
+  langs:
+  - csharp
+  - vb
+  name: SharedAccessTablePolicy
+  fullName: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  type: Class
+  source:
+    remote:
+      path: src/Common/Table/SharedAccessTablePolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SharedAccessTablePolicy
+    path: src/Common/Table/SharedAccessTablePolicy.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nRepresents a shared access policy, which specifies the start time, expiry time, \r\nand permissions for a shared access signature.\r\n"
+  example: []
+  syntax:
+    content: public sealed class SharedAccessTablePolicy
+    content.vb: Public NotInheritable Class SharedAccessTablePolicy
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.#ctor
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.#ctor
+  id: '#ctor'
+  parent: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  langs:
+  - csharp
+  - vb
+  name: SharedAccessTablePolicy()
+  fullName: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessTablePolicy()
+  type: Constructor
+  source:
+    remote:
+      path: src/Common/Table/SharedAccessTablePolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Common/Table/SharedAccessTablePolicy.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nInitializes a new instance of the SharedAccessTablePolicy class.\r\n"
+  example: []
+  syntax:
+    content: public SharedAccessTablePolicy()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessStartTime
+  commentId: P:Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessStartTime
+  id: SharedAccessStartTime
+  parent: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  langs:
+  - csharp
+  - vb
+  name: SharedAccessStartTime
+  fullName: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessStartTime
+  type: Property
+  source:
+    remote:
+      path: src/Common/Table/SharedAccessTablePolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SharedAccessStartTime
+    path: src/Common/Table/SharedAccessTablePolicy.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nGets or sets the start time for a shared access signature associated with this shared access policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTimeOffset? SharedAccessStartTime
+
+      {
+          get;
+          set;
+      }
+    content.vb: Public Property SharedAccessStartTime As DateTimeOffset?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> specifying the shared access start time.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessExpiryTime
+  commentId: P:Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessExpiryTime
+  id: SharedAccessExpiryTime
+  parent: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  langs:
+  - csharp
+  - vb
+  name: SharedAccessExpiryTime
+  fullName: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.SharedAccessExpiryTime
+  type: Property
+  source:
+    remote:
+      path: src/Common/Table/SharedAccessTablePolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SharedAccessExpiryTime
+    path: src/Common/Table/SharedAccessTablePolicy.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nGets or sets the expiry time for a shared access signature associated with this shared access policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTimeOffset? SharedAccessExpiryTime
+
+      {
+          get;
+          set;
+      }
+    content.vb: Public Property SharedAccessExpiryTime As DateTimeOffset?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> specifying the shared access expiry time.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.Permissions
+  commentId: P:Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.Permissions
+  id: Permissions
+  parent: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  langs:
+  - csharp
+  - vb
+  name: Permissions
+  fullName: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.Permissions
+  type: Property
+  source:
+    remote:
+      path: src/Common/Table/SharedAccessTablePolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Permissions
+    path: src/Common/Table/SharedAccessTablePolicy.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nGets or sets the permissions for a shared access signature associated with this shared access policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public SharedAccessTablePermissions Permissions
+
+      {
+          get;
+          set;
+      }
+    content.vb: Public Property Permissions As SharedAccessTablePermissions
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.PermissionsToString(Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.PermissionsToString(Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions)
+  id: PermissionsToString(Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions)
+  parent: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  langs:
+  - csharp
+  - vb
+  name: PermissionsToString(SharedAccessTablePermissions)
+  fullName: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.PermissionsToString(Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions)
+  type: Method
+  source:
+    remote:
+      path: src/Common/Table/SharedAccessTablePolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PermissionsToString
+    path: src/Common/Table/SharedAccessTablePolicy.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nConverts the permissions specified for the shared access policy to a string.\r\n"
+  example: []
+  syntax:
+    content: public static string PermissionsToString(SharedAccessTablePermissions permissions)
+    content.vb: Public Shared Function PermissionsToString(permissions As SharedAccessTablePermissions) As String
+    parameters:
+    - id: permissions
+      type: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions" data-throw-if-not-resolved="false"></xref> object.
+    return:
+      type: System.String
+      description: The shared access permissions in string format.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.PermissionsFromString(System.String)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.PermissionsFromString(System.String)
+  id: PermissionsFromString(System.String)
+  parent: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
+  langs:
+  - csharp
+  - vb
+  name: PermissionsFromString(String)
+  fullName: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy.PermissionsFromString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Common/Table/SharedAccessTablePolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PermissionsFromString
+    path: src/Common/Table/SharedAccessTablePolicy.cs
+    startLine: 92
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nConstructs a <xref href=\"Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions\" data-throw-if-not-resolved=\"false\"></xref> object from a permissions string.\r\n"
+  example: []
+  syntax:
+    content: public static SharedAccessTablePermissions PermissionsFromString(string input)
+    content.vb: Public Shared Function PermissionsFromString(input As String) As SharedAccessTablePermissions
+    parameters:
+    - id: input
+      type: System.String
+      description: The shared access permissions in string format.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table
+  fullName: Microsoft.WindowsAzure.Storage.Table
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  fullname.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: SharedAccessTablePermissions
+  fullName: Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePermissions
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

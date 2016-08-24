@@ -1,0 +1,364 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers
+  commentId: T:Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers
+  id: ShareHttpResponseParsers
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol
+  children:
+  - Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetMetadata(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetProperties(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetRequestId(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.ReadSharedAccessIdentifiers(Stream,Microsoft.WindowsAzure.Storage.File.FileSharePermissions)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.ReadShareStats(Stream)
+  langs:
+  - csharp
+  - vb
+  name: ShareHttpResponseParsers
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers
+  type: Class
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ShareHttpResponseParsers
+    path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nProvides methods for parsing responses to operations on shares in the File service.\r\n"
+  example: []
+  syntax:
+    content: 'public class ShareHttpResponseParsers : object'
+    content.vb: >-
+      Public Class ShareHttpResponseParsers
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetRequestId(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetRequestId(HttpWebResponse)
+  id: GetRequestId(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetRequestId(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetRequestId(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetRequestId
+    path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the request ID from the response.\r\n"
+  example: []
+  syntax:
+    content: public static string GetRequestId(HttpWebResponse response)
+    content.vb: Public Shared Function GetRequestId(response As HttpWebResponse) As String
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The web response.
+    return:
+      type: System.String
+      description: A unique value associated with the request.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetProperties(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetProperties(HttpWebResponse)
+  id: GetProperties(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetProperties(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetProperties(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetProperties
+    path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the share's properties from the response.\r\n"
+  example: []
+  syntax:
+    content: public static FileShareProperties GetProperties(HttpWebResponse response)
+    content.vb: Public Shared Function GetProperties(response As HttpWebResponse) As FileShareProperties
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The web response.
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.FileShareProperties
+      description: The share's attributes.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetMetadata(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetMetadata(HttpWebResponse)
+  id: GetMetadata(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetMetadata(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.GetMetadata(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMetadata
+    path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+    startLine: 79
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the user-defined metadata.\r\n"
+  example: []
+  syntax:
+    content: public static IDictionary<string, string> GetMetadata(HttpWebResponse response)
+    content.vb: Public Shared Function GetMetadata(response As HttpWebResponse) As IDictionary(Of String, String)
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The response from server.
+    return:
+      type: IDictionary{System.String,System.String}
+      description: A <see cref="!:System.Collections.IDictionary"></see> of the metadata.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.ReadSharedAccessIdentifiers(Stream,Microsoft.WindowsAzure.Storage.File.FileSharePermissions)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.ReadSharedAccessIdentifiers(Stream,Microsoft.WindowsAzure.Storage.File.FileSharePermissions)
+  id: ReadSharedAccessIdentifiers(Stream,Microsoft.WindowsAzure.Storage.File.FileSharePermissions)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadSharedAccessIdentifiers(Stream, FileSharePermissions)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.ReadSharedAccessIdentifiers(Stream, Microsoft.WindowsAzure.Storage.File.FileSharePermissions)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadSharedAccessIdentifiers
+    path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+    startLine: 89
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nReads the share access policies from a stream in XML.\r\n"
+  example: []
+  syntax:
+    content: public static void ReadSharedAccessIdentifiers(Stream inputStream, FileSharePermissions permissions)
+    content.vb: Public Shared Sub ReadSharedAccessIdentifiers(inputStream As Stream, permissions As FileSharePermissions)
+    parameters:
+    - id: inputStream
+      type: Stream
+      description: The stream of XML policies.
+    - id: permissions
+      type: Microsoft.WindowsAzure.Storage.File.FileSharePermissions
+      description: The permissions object to which the policies are to be written.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.ReadShareStats(Stream)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.ReadShareStats(Stream)
+  id: ReadShareStats(Stream)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadShareStats(Stream)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.ShareHttpResponseParsers.ReadShareStats(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadShareStats
+    path: src/ClassLibraryCommon/File/Protocol/ShareHttpResponseParsers.cs
+    startLine: 101
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nReads share stats from a stream.\r\n"
+  example: []
+  syntax:
+    content: public static ShareStats ReadShareStats(Stream inputStream)
+    content.vb: Public Shared Function ReadShareStats(inputStream As Stream) As ShareStats
+    parameters:
+    - id: inputStream
+      type: Stream
+      description: The stream from which to read the share stats.
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.Protocol.ShareStats
+      description: The share stats stored in the stream.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: HttpWebResponse
+  isExternal: true
+  name: HttpWebResponse
+  fullName: HttpWebResponse
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.WindowsAzure.Storage.File.FileShareProperties
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: FileShareProperties
+  fullName: Microsoft.WindowsAzure.Storage.File.FileShareProperties
+- uid: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File
+  fullName: Microsoft.WindowsAzure.Storage.File
+- uid: IDictionary{System.String,System.String}
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  fullname.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  fullName: IDictionary<, >
+  fullname.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: 
+    fullName: 
+  - name: ', '
+    fullName: ', '
+  - name: 
+    fullName: 
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: 
+    fullName: 
+  - name: ', '
+    fullName: ', '
+  - name: 
+    fullName: 
+  - name: )
+    fullName: )
+- uid: Stream
+  isExternal: true
+  name: Stream
+  fullName: Stream
+- uid: Microsoft.WindowsAzure.Storage.File.FileSharePermissions
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: FileSharePermissions
+  fullName: Microsoft.WindowsAzure.Storage.File.FileSharePermissions
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.ShareStats
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol
+  isExternal: false
+  name: ShareStats
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.ShareStats

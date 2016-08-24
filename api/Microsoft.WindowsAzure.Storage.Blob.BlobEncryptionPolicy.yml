@@ -1,0 +1,198 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
+  commentId: T:Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
+  id: BlobEncryptionPolicy
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  children:
+  - Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.#ctor(IKey,IKeyResolver)
+  - Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.Key
+  - Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.KeyResolver
+  langs:
+  - csharp
+  - vb
+  name: BlobEncryptionPolicy
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
+  type: Class
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Blob/BlobEncryptionPolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BlobEncryptionPolicy
+    path: src/ClassLibraryCommon/Blob/BlobEncryptionPolicy.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nRepresents an encryption policy for performing envelope encryption/decryption of Azure blobs.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class BlobEncryptionPolicy : object'
+    content.vb: >-
+      Public NotInheritable Class BlobEncryptionPolicy
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.Key
+  commentId: P:Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.Key
+  id: Key
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
+  langs:
+  - csharp
+  - vb
+  name: Key
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.Key
+  type: Property
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Blob/BlobEncryptionPolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Key
+    path: src/ClassLibraryCommon/Blob/BlobEncryptionPolicy.cs
+    startLine: 43
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nAn object of type <see cref=\"!:IKey\"></see> that is used to wrap/unwrap the content key during encryption.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IKey Key
+
+      {
+          get;
+      }
+    content.vb: Public ReadOnly Property Key As IKey
+    parameters: []
+    return:
+      type: IKey
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.KeyResolver
+  commentId: P:Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.KeyResolver
+  id: KeyResolver
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
+  langs:
+  - csharp
+  - vb
+  name: KeyResolver
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.KeyResolver
+  type: Property
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Blob/BlobEncryptionPolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: KeyResolver
+    path: src/ClassLibraryCommon/Blob/BlobEncryptionPolicy.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nGets or sets the key resolver used to select the correct key for decrypting existing blobs.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IKeyResolver KeyResolver
+
+      {
+          get;
+      }
+    content.vb: Public ReadOnly Property KeyResolver As IKeyResolver
+    parameters: []
+    return:
+      type: IKeyResolver
+      description: A resolver that returns an <see cref="!:IKey"></see>, given a key ID.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.#ctor(IKey,IKeyResolver)
+  commentId: M:Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.#ctor(IKey,IKeyResolver)
+  id: '#ctor(IKey,IKeyResolver)'
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
+  langs:
+  - csharp
+  - vb
+  name: BlobEncryptionPolicy(IKey, IKeyResolver)
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy.BlobEncryptionPolicy(IKey, IKeyResolver)
+  type: Constructor
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Blob/BlobEncryptionPolicy.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/ClassLibraryCommon/Blob/BlobEncryptionPolicy.cs
+    startLine: 61
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy\" data-throw-if-not-resolved=\"false\"></xref> class with the specified key and resolver.\r\n"
+  remarks: >-
+    If the generated policy is to be used for encryption, users are expected to provide a key at the minimum.
+
+    The absence of key will cause an exception to be thrown during encryption.<br />
+
+    If the generated policy is intended to be used for decryption, users can provide a key resolver. The client library will:<br />
+
+    1. Invoke the key resolver, if specified, to get the key.<br />
+
+    2. If resolver is not specified but a key is specified, the client library will match the key ID against the key and use the key.
+  example: []
+  syntax:
+    content: public BlobEncryptionPolicy(IKey key, IKeyResolver keyResolver)
+    content.vb: Public Sub New(key As IKey, keyResolver As IKeyResolver)
+    parameters:
+    - id: key
+      type: IKey
+      description: An object of type <see cref="!:IKey"></see> that is used to wrap/unwrap the content key during encryption.
+    - id: keyResolver
+      type: IKeyResolver
+      description: The key resolver used to select the correct key for decrypting existing blobs.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Blob
+  fullName: Microsoft.WindowsAzure.Storage.Blob
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: IKey
+  isExternal: true
+  name: IKey
+  fullName: IKey
+- uid: IKeyResolver
+  isExternal: true
+  name: IKeyResolver
+  fullName: IKeyResolver
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: BlobEncryptionPolicy
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy

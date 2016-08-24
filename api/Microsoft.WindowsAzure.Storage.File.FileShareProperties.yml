@@ -1,0 +1,279 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.File.FileShareProperties
+  commentId: T:Microsoft.WindowsAzure.Storage.File.FileShareProperties
+  id: FileShareProperties
+  parent: Microsoft.WindowsAzure.Storage.File
+  children:
+  - Microsoft.WindowsAzure.Storage.File.FileShareProperties.ETag
+  - Microsoft.WindowsAzure.Storage.File.FileShareProperties.LastModified
+  - Microsoft.WindowsAzure.Storage.File.FileShareProperties.Quota
+  langs:
+  - csharp
+  - vb
+  name: FileShareProperties
+  fullName: Microsoft.WindowsAzure.Storage.File.FileShareProperties
+  type: Class
+  source:
+    remote:
+      path: src/Common/File/FileShareProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: FileShareProperties
+    path: src/Common/File/FileShareProperties.cs
+    startLine: 26
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nRepresents the system properties for a share.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class FileShareProperties : object'
+    content.vb: >-
+      Public NotInheritable Class FileShareProperties
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.File.FileShareProperties.ETag
+  commentId: P:Microsoft.WindowsAzure.Storage.File.FileShareProperties.ETag
+  id: ETag
+  parent: Microsoft.WindowsAzure.Storage.File.FileShareProperties
+  langs:
+  - csharp
+  - vb
+  name: ETag
+  fullName: Microsoft.WindowsAzure.Storage.File.FileShareProperties.ETag
+  type: Property
+  source:
+    remote:
+      path: src/Common/File/FileShareProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ETag
+    path: src/Common/File/FileShareProperties.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets the ETag value for the share.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string ETag
+
+      {
+          get;
+      }
+    content.vb: Public ReadOnly Property ETag As String
+    parameters: []
+    return:
+      type: System.String
+      description: The share's quoted ETag value.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.FileShareProperties.LastModified
+  commentId: P:Microsoft.WindowsAzure.Storage.File.FileShareProperties.LastModified
+  id: LastModified
+  parent: Microsoft.WindowsAzure.Storage.File.FileShareProperties
+  langs:
+  - csharp
+  - vb
+  name: LastModified
+  fullName: Microsoft.WindowsAzure.Storage.File.FileShareProperties.LastModified
+  type: Property
+  source:
+    remote:
+      path: src/Common/File/FileShareProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LastModified
+    path: src/Common/File/FileShareProperties.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets the share's last-modified time.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTimeOffset? LastModified
+
+      {
+          get;
+      }
+    content.vb: Public ReadOnly Property LastModified As DateTimeOffset?
+    parameters: []
+    return:
+      type: System.Nullable{DateTimeOffset}
+      description: The share's last-modified time.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.FileShareProperties.Quota
+  commentId: P:Microsoft.WindowsAzure.Storage.File.FileShareProperties.Quota
+  id: Quota
+  parent: Microsoft.WindowsAzure.Storage.File.FileShareProperties
+  langs:
+  - csharp
+  - vb
+  name: Quota
+  fullName: Microsoft.WindowsAzure.Storage.File.FileShareProperties.Quota
+  type: Property
+  source:
+    remote:
+      path: src/Common/File/FileShareProperties.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Quota
+    path: src/Common/File/FileShareProperties.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets or sets the maximum size for the share, in gigabytes.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public int ? Quota
+
+      {
+          get;
+          set;
+      }
+    content.vb: Public Property Quota As Integer?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File
+  fullName: Microsoft.WindowsAzure.Storage.File
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Nullable{DateTimeOffset}
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  fullName: System.Nullable<DateTimeOffset>
+  fullname.vb: System.Nullable(Of DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: DateTimeOffset
+    name: DateTimeOffset
+    fullName: DateTimeOffset
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: DateTimeOffset
+    name: DateTimeOffset
+    fullName: DateTimeOffset
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )

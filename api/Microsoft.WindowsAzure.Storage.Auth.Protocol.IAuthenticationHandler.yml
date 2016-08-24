@@ -1,0 +1,86 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler
+  commentId: T:Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler
+  id: IAuthenticationHandler
+  parent: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  children:
+  - Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler.SignRequest(HttpWebRequest,Microsoft.WindowsAzure.Storage.OperationContext)
+  langs:
+  - csharp
+  - vb
+  name: IAuthenticationHandler
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler
+  type: Interface
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Auth/Protocol/IAuthenticationHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IAuthenticationHandler
+    path: src/ClassLibraryCommon/Auth/Protocol/IAuthenticationHandler.cs
+    startLine: 24
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  summary: "\r\nRepresents a handler that signs HTTP requests.\r\n"
+  example: []
+  syntax:
+    content: public interface IAuthenticationHandler
+    content.vb: Public Interface IAuthenticationHandler
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler.SignRequest(HttpWebRequest,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler.SignRequest(HttpWebRequest,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: SignRequest(HttpWebRequest,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler
+  langs:
+  - csharp
+  - vb
+  name: SignRequest(HttpWebRequest, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol.IAuthenticationHandler.SignRequest(HttpWebRequest, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/Auth/Protocol/IAuthenticationHandler.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SignRequest
+    path: src/ClassLibraryCommon/Auth/Protocol/IAuthenticationHandler.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  summary: "\r\nSigns the specified HTTP request so it can be authenticated by the Microsoft Azure storage services.\r\n"
+  example: []
+  syntax:
+    content: void SignRequest(HttpWebRequest request, OperationContext operationContext)
+    content.vb: Sub SignRequest(request As HttpWebRequest, operationContext As OperationContext)
+    parameters:
+    - id: request
+      type: HttpWebRequest
+      description: The HTTP request to sign.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+references:
+- uid: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Auth.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.Auth.Protocol
+- uid: Microsoft.WindowsAzure.Storage.OperationContext
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: OperationContext
+  fullName: Microsoft.WindowsAzure.Storage.OperationContext
+- uid: HttpWebRequest
+  isExternal: true
+  name: HttpWebRequest
+  fullName: HttpWebRequest
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage

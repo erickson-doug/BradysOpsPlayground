@@ -1,0 +1,270 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers
+  commentId: T:Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers
+  id: DirectoryHttpResponseParsers
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol
+  children:
+  - Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetMetadata(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetProperties(HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetRequestId(HttpWebResponse)
+  langs:
+  - csharp
+  - vb
+  name: DirectoryHttpResponseParsers
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers
+  type: Class
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/DirectoryHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DirectoryHttpResponseParsers
+    path: src/ClassLibraryCommon/File/Protocol/DirectoryHttpResponseParsers.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nProvides methods for parsing responses to operations on directories in the File service.\r\n"
+  example: []
+  syntax:
+    content: 'public class DirectoryHttpResponseParsers : object'
+    content.vb: >-
+      Public Class DirectoryHttpResponseParsers
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetRequestId(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetRequestId(HttpWebResponse)
+  id: GetRequestId(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetRequestId(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetRequestId(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/DirectoryHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetRequestId
+    path: src/ClassLibraryCommon/File/Protocol/DirectoryHttpResponseParsers.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the request ID from the response.\r\n"
+  example: []
+  syntax:
+    content: public static string GetRequestId(HttpWebResponse response)
+    content.vb: Public Shared Function GetRequestId(response As HttpWebResponse) As String
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The web response.
+    return:
+      type: System.String
+      description: A unique value associated with the request.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetProperties(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetProperties(HttpWebResponse)
+  id: GetProperties(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetProperties(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetProperties(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/DirectoryHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetProperties
+    path: src/ClassLibraryCommon/File/Protocol/DirectoryHttpResponseParsers.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the directory's properties from the response.\r\n"
+  example: []
+  syntax:
+    content: public static FileDirectoryProperties GetProperties(HttpWebResponse response)
+    content.vb: Public Shared Function GetProperties(response As HttpWebResponse) As FileDirectoryProperties
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The web response.
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.FileDirectoryProperties
+      description: The directory's attributes.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetMetadata(HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetMetadata(HttpWebResponse)
+  id: GetMetadata(HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetMetadata(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol.DirectoryHttpResponseParsers.GetMetadata(HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/ClassLibraryCommon/File/Protocol/DirectoryHttpResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMetadata
+    path: src/ClassLibraryCommon/File/Protocol/DirectoryHttpResponseParsers.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File.Protocol
+  summary: "\r\nGets the user-defined metadata.\r\n"
+  example: []
+  syntax:
+    content: public static IDictionary<string, string> GetMetadata(HttpWebResponse response)
+    content.vb: Public Shared Function GetMetadata(response As HttpWebResponse) As IDictionary(Of String, String)
+    parameters:
+    - id: response
+      type: HttpWebResponse
+      description: The response from server.
+    return:
+      type: IDictionary{System.String,System.String}
+      description: A <see cref="!:System.Collections.IDictionary"></see> of the metadata.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.WindowsAzure.Storage.File.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.File.Protocol
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: HttpWebResponse
+  isExternal: true
+  name: HttpWebResponse
+  fullName: HttpWebResponse
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.WindowsAzure.Storage.File.FileDirectoryProperties
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: FileDirectoryProperties
+  fullName: Microsoft.WindowsAzure.Storage.File.FileDirectoryProperties
+- uid: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File
+  fullName: Microsoft.WindowsAzure.Storage.File
+- uid: IDictionary{System.String,System.String}
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  fullname.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  fullName: IDictionary<, >
+  fullname.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: 
+    fullName: 
+  - name: ', '
+    fullName: ', '
+  - name: 
+    fullName: 
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: 
+    fullName: 
+  - name: ', '
+    fullName: ', '
+  - name: 
+    fullName: 
+  - name: )
+    fullName: )

@@ -1,0 +1,258 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  commentId: T:Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  id: BlobListingDetails
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  children:
+  - Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.All
+  - Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Copy
+  - Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Metadata
+  - Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.None
+  - Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Snapshots
+  - Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.UncommittedBlobs
+  langs:
+  - csharp
+  - vb
+  name: BlobListingDetails
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  type: Enum
+  source:
+    remote:
+      path: src/Common/Blob/BlobListingDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BlobListingDetails
+    path: src/Common/Blob/BlobListingDetails.cs
+    startLine: 24
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nSpecifies which items to include when listing a set of blobs.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum BlobListingDetails
+    content.vb: >-
+      <Flags>
+
+      Public Enum BlobListingDetails
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.None
+  commentId: F:Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.None
+  id: None
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  langs:
+  - csharp
+  - vb
+  name: None
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.None
+  type: Field
+  source:
+    remote:
+      path: src/Common/Blob/BlobListingDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: None
+    path: src/Common/Blob/BlobListingDetails.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nList only committed blobs, and do not return blob metadata.\r\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Snapshots
+  commentId: F:Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Snapshots
+  id: Snapshots
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  langs:
+  - csharp
+  - vb
+  name: Snapshots
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Snapshots
+  type: Field
+  source:
+    remote:
+      path: src/Common/Blob/BlobListingDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Snapshots
+    path: src/Common/Blob/BlobListingDetails.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nList committed blobs and blob snapshots.\r\n"
+  example: []
+  syntax:
+    content: Snapshots = 1
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Metadata
+  commentId: F:Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Metadata
+  id: Metadata
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Metadata
+  type: Field
+  source:
+    remote:
+      path: src/Common/Blob/BlobListingDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Metadata
+    path: src/Common/Blob/BlobListingDetails.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nRetrieve blob metadata for each blob returned in the listing.\r\n"
+  example: []
+  syntax:
+    content: Metadata = 2
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.UncommittedBlobs
+  commentId: F:Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.UncommittedBlobs
+  id: UncommittedBlobs
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  langs:
+  - csharp
+  - vb
+  name: UncommittedBlobs
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.UncommittedBlobs
+  type: Field
+  source:
+    remote:
+      path: src/Common/Blob/BlobListingDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: UncommittedBlobs
+    path: src/Common/Blob/BlobListingDetails.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nList committed and uncommitted blobs.\r\n"
+  example: []
+  syntax:
+    content: UncommittedBlobs = 4
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Copy
+  commentId: F:Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Copy
+  id: Copy
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  langs:
+  - csharp
+  - vb
+  name: Copy
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.Copy
+  type: Field
+  source:
+    remote:
+      path: src/Common/Blob/BlobListingDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Copy
+    path: src/Common/Blob/BlobListingDetails.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nInclude copy properties in the listing.\r\n"
+  example: []
+  syntax:
+    content: Copy = 8
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.All
+  commentId: F:Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.All
+  id: All
+  parent: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  langs:
+  - csharp
+  - vb
+  name: All
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails.All
+  type: Field
+  source:
+    remote:
+      path: src/Common/Blob/BlobListingDetails.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: All
+    path: src/Common/Blob/BlobListingDetails.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nList all available committed blobs, uncommitted blobs, and snapshots, and return all metadata and copy status for those blobs.\r\n"
+  example: []
+  syntax:
+    content: All = 15
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Blob
+  fullName: Microsoft.WindowsAzure.Storage.Blob
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: BlobListingDetails
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
