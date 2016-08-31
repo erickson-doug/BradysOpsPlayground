@@ -1,0 +1,2185 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  commentId: T:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  id: CloudFileDirectory
+  parent: Microsoft.WindowsAzure.Storage.File
+  children:
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(System.Uri)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(System.Uri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.GetDirectoryReference(System.String)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.GetFileReference(System.String)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(Microsoft.WindowsAzure.Storage.File.FileContinuationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.File.FileContinuationToken,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.File.FileContinuationToken,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Metadata
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Name
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Parent
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Properties
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ServiceClient
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetdataAsync
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Share
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.StorageUri
+  - Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Uri
+  langs:
+  - csharp
+  - vb
+  name: CloudFileDirectory
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  type: Class
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CloudFileDirectory
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nRepresents a directory of files, designated by a delimiter character.\r\n"
+  remarks: Shares, which are encapsulated as <xref href="Microsoft.WindowsAzure.Storage.File.CloudFileShare" data-throw-if-not-resolved="false"></xref> objects, hold directories, and directories hold files. Directories can also contain sub-directories.
+  example: []
+  syntax:
+    content: 'public class CloudFileDirectory : IListFileItem'
+    content.vb: >-
+      Public Class CloudFileDirectory
+
+          Implements IListFileItem
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.WindowsAzure.Storage.File.IListFileItem
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync
+  id: CreateAsync
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync()
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nCreates the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task CreateAsync()
+    content.vb: Public Overridable Function CreateAsync As Task
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(FileRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nCreates the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task CreateAsync(FileRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function CreateAsync(options As FileRequestOptions, operationContext As OperationContext) As Task
+    parameters:
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(FileRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 64
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nCreates the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task CreateAsync(FileRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function CreateAsync(options As FileRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync
+  id: CreateIfNotExistsAsync
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CreateIfNotExistsAsync()
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateIfNotExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 80
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nCreates the directory if it does not already exist.\r\n"
+  remarks: This API performs an existence check and therefore requires read permissions.
+  example: []
+  syntax:
+    content: public virtual Task<bool> CreateIfNotExistsAsync()
+    content.vb: Public Overridable Function CreateIfNotExistsAsync As Task(Of Boolean)
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory did not already exist and was created; otherwise, <code>false</code>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CreateIfNotExistsAsync(FileRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateIfNotExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nCreates the directory if it does not already exist.\r\n"
+  remarks: This API performs an existence check and therefore requires read permissions.
+  example: []
+  syntax:
+    content: public virtual Task<bool> CreateIfNotExistsAsync(FileRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function CreateIfNotExistsAsync(options As FileRequestOptions, operationContext As OperationContext) As Task(Of Boolean)
+    parameters:
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory did not already exist and was created; otherwise <code>false</code>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CreateIfNotExistsAsync(FileRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CreateIfNotExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateIfNotExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 107
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nCreates the directory if it does not already exist.\r\n"
+  remarks: This API performs an existence check and therefore requires read permissions.
+  example: []
+  syntax:
+    content: public virtual Task<bool> CreateIfNotExistsAsync(FileRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function CreateIfNotExistsAsync(options As FileRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task(Of Boolean)
+    parameters:
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory did not already exist and was created; otherwise <code>false</code>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync
+  id: DeleteAsync
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync()
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 152
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nDeletes the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task DeleteAsync()
+    content.vb: Public Overridable Function DeleteAsync As Task
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(AccessCondition, FileRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 164
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nDeletes the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task DeleteAsync(AccessCondition accessCondition, FileRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function DeleteAsync(accessCondition As AccessCondition, options As FileRequestOptions, operationContext As OperationContext) As Task
+    parameters:
+    - id: accessCondition
+      type: Microsoft.WindowsAzure.Storage.AccessCondition
+      description: An object that represents the access conditions for the directory. If null, no condition is used.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(AccessCondition, FileRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteAsync(Microsoft.WindowsAzure.Storage.AccessCondition, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 177
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nDeletes the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task DeleteAsync(AccessCondition accessCondition, FileRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function DeleteAsync(accessCondition As AccessCondition, options As FileRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: accessCondition
+      type: Microsoft.WindowsAzure.Storage.AccessCondition
+      description: An object that represents the access conditions for the directory. If null, no condition is used.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync
+  id: DeleteIfExistsAsync
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: DeleteIfExistsAsync()
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteIfExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 192
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nDeletes the directory if it already exists.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<bool> DeleteIfExistsAsync()
+    content.vb: Public Overridable Function DeleteIfExistsAsync As Task(Of Boolean)
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory already existed and was deleted; otherwise, <code>false</code>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: DeleteIfExistsAsync(AccessCondition, FileRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteIfExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 205
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nDeletes the directory if it already exists.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<bool> DeleteIfExistsAsync(AccessCondition accessCondition, FileRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function DeleteIfExistsAsync(accessCondition As AccessCondition, options As FileRequestOptions, operationContext As OperationContext) As Task(Of Boolean)
+    parameters:
+    - id: accessCondition
+      type: Microsoft.WindowsAzure.Storage.AccessCondition
+      description: An <xref href="Microsoft.WindowsAzure.Storage.AccessCondition" data-throw-if-not-resolved="false"></xref> object that represents the condition that must be met in order for the request to proceed.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory already existed and was deleted; otherwise, <code>false</code>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: DeleteIfExistsAsync(AccessCondition, FileRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.DeleteIfExistsAsync(Microsoft.WindowsAzure.Storage.AccessCondition, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: DeleteIfExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 219
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nDeletes the directory if it already exists.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<bool> DeleteIfExistsAsync(AccessCondition accessCondition, FileRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function DeleteIfExistsAsync(accessCondition As AccessCondition, options As FileRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task(Of Boolean)
+    parameters:
+    - id: accessCondition
+      type: Microsoft.WindowsAzure.Storage.AccessCondition
+      description: An <xref href="Microsoft.WindowsAzure.Storage.AccessCondition" data-throw-if-not-resolved="false"></xref> object that represents the condition that must be met in order for the request to proceed.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory already existed and was deleted; otherwise, <code>false</code>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync
+  id: ExistsAsync
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: ExistsAsync()
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 264
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nChecks existence of the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<bool> ExistsAsync()
+    content.vb: Public Overridable Function ExistsAsync As Task(Of Boolean)
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory exists.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: ExistsAsync(FileRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 276
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nChecks existence of the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<bool> ExistsAsync(FileRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function ExistsAsync(options As FileRequestOptions, operationContext As OperationContext) As Task(Of Boolean)
+    parameters:
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory exists.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: ExistsAsync(FileRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ExistsAsync(Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExistsAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 289
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nChecks existence of the directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<bool> ExistsAsync(FileRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function ExistsAsync(options As FileRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task(Of Boolean)
+    parameters:
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the directory exists.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync
+  id: FetchAttributesAsync
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: FetchAttributesAsync()
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: FetchAttributesAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 303
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nPopulates a directory's properties and metadata.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task FetchAttributesAsync()
+    content.vb: Public Overridable Function FetchAttributesAsync As Task
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: FetchAttributesAsync(AccessCondition, FileRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: FetchAttributesAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 315
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nPopulates a directory's properties and metadata.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task FetchAttributesAsync(AccessCondition accessCondition, FileRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function FetchAttributesAsync(accessCondition As AccessCondition, options As FileRequestOptions, operationContext As OperationContext) As Task
+    parameters:
+    - id: accessCondition
+      type: Microsoft.WindowsAzure.Storage.AccessCondition
+      description: An object that represents the access conditions for the file. If null, no condition is used.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: FetchAttributesAsync(AccessCondition, FileRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.FetchAttributesAsync(Microsoft.WindowsAzure.Storage.AccessCondition, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: FetchAttributesAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 328
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nPopulates a directory's properties and metadata.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task FetchAttributesAsync(AccessCondition accessCondition, FileRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function FetchAttributesAsync(accessCondition As AccessCondition, options As FileRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: accessCondition
+      type: Microsoft.WindowsAzure.Storage.AccessCondition
+      description: An object that represents the access conditions for the file. If null, no condition is used.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(Microsoft.WindowsAzure.Storage.File.FileContinuationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(Microsoft.WindowsAzure.Storage.File.FileContinuationToken)
+  id: ListFilesAndDirectoriesSegmentedAsync(Microsoft.WindowsAzure.Storage.File.FileContinuationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: ListFilesAndDirectoriesSegmentedAsync(FileContinuationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(Microsoft.WindowsAzure.Storage.File.FileContinuationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListFilesAndDirectoriesSegmentedAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 345
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nReturns a result segment containing a collection of file items \r\nin the share.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<FileResultSegment> ListFilesAndDirectoriesSegmentedAsync(FileContinuationToken currentToken)
+    content.vb: Public Overridable Function ListFilesAndDirectoriesSegmentedAsync(currentToken As FileContinuationToken) As Task(Of FileResultSegment)
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.File.FileContinuationToken
+      description: A continuation token returned by a previous listing operation.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.File.FileResultSegment}
+      description: A result segment containing objects that implement <xref href="Microsoft.WindowsAzure.Storage.File.IListFileItem" data-throw-if-not-resolved="false"></xref>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.File.FileContinuationToken,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.File.FileContinuationToken,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ListFilesAndDirectoriesSegmentedAsync(System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.File.FileContinuationToken,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: ListFilesAndDirectoriesSegmentedAsync(Nullable<Int32>, FileContinuationToken, FileRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable<System.Int32>, Microsoft.WindowsAzure.Storage.File.FileContinuationToken, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListFilesAndDirectoriesSegmentedAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 361
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nReturns a result segment containing a collection of file items \r\nin the share.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<FileResultSegment> ListFilesAndDirectoriesSegmentedAsync(int ? maxResults, FileContinuationToken currentToken, FileRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function ListFilesAndDirectoriesSegmentedAsync(maxResults As Integer?, currentToken As FileContinuationToken, options As FileRequestOptions, operationContext As OperationContext) As Task(Of FileResultSegment)
+    parameters:
+    - id: maxResults
+      type: System.Nullable{System.Int32}
+      description: "A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the \r\nper-operation limit of 5000. If this value is zero, the maximum possible number of results will be returned, up to 5000."
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.File.FileContinuationToken
+      description: A continuation token returned by a previous listing operation.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.File.FileResultSegment}
+      description: A file result segment.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable(Of System.Int32), Microsoft.WindowsAzure.Storage.File.FileContinuationToken, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  name.vb: ListFilesAndDirectoriesSegmentedAsync(Nullable(Of Int32), FileContinuationToken, FileRequestOptions, OperationContext)
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.File.FileContinuationToken,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.File.FileContinuationToken,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: ListFilesAndDirectoriesSegmentedAsync(System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.File.FileContinuationToken,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: ListFilesAndDirectoriesSegmentedAsync(Nullable<Int32>, FileContinuationToken, FileRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable<System.Int32>, Microsoft.WindowsAzure.Storage.File.FileContinuationToken, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListFilesAndDirectoriesSegmentedAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 378
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nReturns a result segment containing a collection of file items \r\nin the share.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<FileResultSegment> ListFilesAndDirectoriesSegmentedAsync(int ? maxResults, FileContinuationToken currentToken, FileRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function ListFilesAndDirectoriesSegmentedAsync(maxResults As Integer?, currentToken As FileContinuationToken, options As FileRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task(Of FileResultSegment)
+    parameters:
+    - id: maxResults
+      type: System.Nullable{System.Int32}
+      description: "A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the \r\nper-operation limit of 5000. If this value is zero, the maximum possible number of results will be returned, up to 5000."
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.File.FileContinuationToken
+      description: A continuation token returned by a previous listing operation.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.File.FileResultSegment}
+      description: A file result segment.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ListFilesAndDirectoriesSegmentedAsync(System.Nullable(Of System.Int32), Microsoft.WindowsAzure.Storage.File.FileContinuationToken, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  name.vb: ListFilesAndDirectoriesSegmentedAsync(Nullable(Of Int32), FileContinuationToken, FileRequestOptions, OperationContext, CancellationToken)
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetdataAsync
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetdataAsync
+  id: SetMetdataAsync
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: SetMetdataAsync()
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetdataAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SetMetdataAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 397
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nUpdates the directory's metadata.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task SetMetdataAsync()
+    content.vb: Public Overridable Function SetMetdataAsync As Task
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: SetMetadataAsync(AccessCondition, FileRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SetMetadataAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 409
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nUpdates the directory's metadata.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task SetMetadataAsync(AccessCondition accessCondition, FileRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function SetMetadataAsync(accessCondition As AccessCondition, options As FileRequestOptions, operationContext As OperationContext) As Task
+    parameters:
+    - id: accessCondition
+      type: Microsoft.WindowsAzure.Storage.AccessCondition
+      description: An object that represents the access conditions for the directory. If null, no condition is used.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition,Microsoft.WindowsAzure.Storage.File.FileRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: SetMetadataAsync(AccessCondition, FileRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.SetMetadataAsync(Microsoft.WindowsAzure.Storage.AccessCondition, Microsoft.WindowsAzure.Storage.File.FileRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SetMetadataAsync
+    path: src/Storage/WindowsRuntime/File/CloudFileDirectory.cs
+    startLine: 422
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nUpdates the directory's metadata.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task SetMetadataAsync(AccessCondition accessCondition, FileRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function SetMetadataAsync(accessCondition As AccessCondition, options As FileRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: accessCondition
+      type: Microsoft.WindowsAzure.Storage.AccessCondition
+      description: An object that represents the access conditions for the directory. If null, no condition is used.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+      description: An object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation Token
+    return:
+      type: System.Threading.Tasks.Task
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(System.Uri)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(System.Uri)
+  id: '#ctor(System.Uri)'
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CloudFileDirectory(Uri)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CloudFileDirectory(System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.File.CloudFileDirectory\" data-throw-if-not-resolved=\"false\"></xref> class using an absolute URI to the directory.\r\n"
+  example: []
+  syntax:
+    content: public CloudFileDirectory(Uri directoryAbsoluteUri)
+    content.vb: Public Sub New(directoryAbsoluteUri As Uri)
+    parameters:
+    - id: directoryAbsoluteUri
+      type: System.Uri
+      description: A <xref href="System.Uri" data-throw-if-not-resolved="false"></xref> object containing the absolute URI to the directory.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(System.Uri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(System.Uri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  id: '#ctor(System.Uri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)'
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CloudFileDirectory(Uri, StorageCredentials)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CloudFileDirectory(System.Uri, Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.File.CloudFileDirectory\" data-throw-if-not-resolved=\"false\"></xref> class using an absolute URI to the directory.\r\n"
+  example: []
+  syntax:
+    content: public CloudFileDirectory(Uri directoryAbsoluteUri, StorageCredentials credentials)
+    content.vb: Public Sub New(directoryAbsoluteUri As Uri, credentials As StorageCredentials)
+    parameters:
+    - id: directoryAbsoluteUri
+      type: System.Uri
+      description: A <xref href="System.Uri" data-throw-if-not-resolved="false"></xref> object containing the absolute URI to the directory.
+    - id: credentials
+      type: Microsoft.WindowsAzure.Storage.Auth.StorageCredentials
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Auth.StorageCredentials" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.#ctor(Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  id: '#ctor(Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)'
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: CloudFileDirectory(StorageUri, StorageCredentials)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.CloudFileDirectory(Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 68
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.File.CloudFileDirectory\" data-throw-if-not-resolved=\"false\"></xref> class using an absolute URI to the directory.\r\n"
+  example: []
+  syntax:
+    content: public CloudFileDirectory(StorageUri directoryAbsoluteUri, StorageCredentials credentials)
+    content.vb: Public Sub New(directoryAbsoluteUri As StorageUri, credentials As StorageCredentials)
+    parameters:
+    - id: directoryAbsoluteUri
+      type: Microsoft.WindowsAzure.Storage.StorageUri
+      description: A <xref href="System.Uri" data-throw-if-not-resolved="false"></xref> object containing the absolute URI to the directory.
+    - id: credentials
+      type: Microsoft.WindowsAzure.Storage.Auth.StorageCredentials
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Auth.StorageCredentials" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ServiceClient
+  commentId: P:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ServiceClient
+  id: ServiceClient
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: ServiceClient
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.ServiceClient
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServiceClient
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets a <xref href=\"Microsoft.WindowsAzure.Storage.File.CloudFileClient\" data-throw-if-not-resolved=\"false\"></xref> object that specifies the endpoint for the File service.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public CloudFileClient ServiceClient
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ServiceClient As CloudFileClient
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.CloudFileClient
+      description: A <xref href="Microsoft.WindowsAzure.Storage.File.CloudFileClient" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Uri
+  commentId: P:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Uri
+  id: Uri
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Uri
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Uri
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 105
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets the directory's URI for the primary location.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Uri Uri
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Uri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+      description: A <xref href="System.Uri" data-throw-if-not-resolved="false"></xref> specifying the absolute URI to the directory at the primary location.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.StorageUri
+  commentId: P:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.StorageUri
+  id: StorageUri
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: StorageUri
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.StorageUri
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: StorageUri
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 117
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets the file directory's URIs for all locations.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public StorageUri StorageUri
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property StorageUri As StorageUri
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.StorageUri
+      description: A <xref href="Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.StorageUri" data-throw-if-not-resolved="false"></xref> object containing the file directory's URIs for all locations.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Properties
+  commentId: P:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Properties
+  id: Properties
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Properties
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Properties
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 123
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets a <xref href=\"Microsoft.WindowsAzure.Storage.File.FileDirectoryProperties\" data-throw-if-not-resolved=\"false\"></xref> object that represents the directory's system properties.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public FileDirectoryProperties Properties
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Properties As FileDirectoryProperties
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.FileDirectoryProperties
+      description: A <xref href="Microsoft.WindowsAzure.Storage.File.FileDirectoryProperties" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Metadata
+  commentId: P:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Metadata
+  id: Metadata
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Metadata
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Metadata
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 129
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets the user-defined metadata for the directory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IDictionary<string, string> Metadata
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Metadata As IDictionary(Of String, String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: The directory's metadata, as a collection of name-value pairs.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Share
+  commentId: P:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Share
+  id: Share
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: Share
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Share
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Share
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets a <xref href=\"Microsoft.WindowsAzure.Storage.File.CloudFileShare\" data-throw-if-not-resolved=\"false\"></xref> object that represents the share for the directory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public CloudFileShare Share
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Share As CloudFileShare
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.CloudFileShare
+      description: A <xref href="Microsoft.WindowsAzure.Storage.File.CloudFileShare" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Parent
+  commentId: P:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Parent
+  id: Parent
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Parent
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Parent
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 153
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets a <xref href=\"Microsoft.WindowsAzure.Storage.File.CloudFileDirectory\" data-throw-if-not-resolved=\"false\"></xref> object that represents the parent directory for the directory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public CloudFileDirectory Parent
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Parent As CloudFileDirectory
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+      description: A <xref href="Microsoft.WindowsAzure.Storage.File.CloudFileDirectory" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Name
+  commentId: P:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Name
+  id: Name
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: Name
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.Name
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Name
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 175
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nGets the name of the directory.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string Name
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the name of the directory.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.GetFileReference(System.String)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.GetFileReference(System.String)
+  id: GetFileReference(System.String)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetFileReference(String)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.GetFileReference(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetFileReference
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 208
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nReturns a <xref href=\"Microsoft.WindowsAzure.Storage.File.CloudFile\" data-throw-if-not-resolved=\"false\"></xref> object that represents a file in this directory.\r\n"
+  example: []
+  syntax:
+    content: public CloudFile GetFileReference(string fileName)
+    content.vb: Public Function GetFileReference(fileName As String) As CloudFile
+    parameters:
+    - id: fileName
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the name of the file.
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.CloudFile
+      description: A <xref href="Microsoft.WindowsAzure.Storage.File.CloudFile" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.GetDirectoryReference(System.String)
+  commentId: M:Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.GetDirectoryReference(System.String)
+  id: GetDirectoryReference(System.String)
+  parent: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  langs:
+  - csharp
+  - vb
+  name: GetDirectoryReference(String)
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.GetDirectoryReference(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetDirectoryReference
+    path: src/Storage/Common/File/CloudFileDirectory.Common.cs
+    startLine: 221
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nReturns a <xref href=\"Microsoft.WindowsAzure.Storage.File.CloudFileDirectory\" data-throw-if-not-resolved=\"false\"></xref> object that represents a subdirectory within this directory.\r\n"
+  example: []
+  syntax:
+    content: public CloudFileDirectory GetDirectoryReference(string itemName)
+    content.vb: Public Function GetDirectoryReference(itemName As String) As CloudFileDirectory
+    parameters:
+    - id: itemName
+      type: System.String
+      description: A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the name of the subdirectory.
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+      description: A <xref href="Microsoft.WindowsAzure.Storage.File.CloudFileDirectory" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileShare
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: CloudFileShare
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileShare
+- uid: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File
+  fullName: Microsoft.WindowsAzure.Storage.File
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.WindowsAzure.Storage.File.IListFileItem
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: IListFileItem
+  fullName: Microsoft.WindowsAzure.Storage.File.IListFileItem
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.WindowsAzure.Storage.OperationContext
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: OperationContext
+  fullName: Microsoft.WindowsAzure.Storage.OperationContext
+- uid: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: FileRequestOptions
+  fullName: Microsoft.WindowsAzure.Storage.File.FileRequestOptions
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.AccessCondition
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: AccessCondition
+  fullName: Microsoft.WindowsAzure.Storage.AccessCondition
+- uid: Microsoft.WindowsAzure.Storage.File.FileContinuationToken
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: FileContinuationToken
+  fullName: Microsoft.WindowsAzure.Storage.File.FileContinuationToken
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.File.FileResultSegment}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<FileResultSegment>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Storage.File.FileResultSegment>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Storage.File.FileResultSegment)
+  name.vb: Task(Of FileResultSegment)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.File.FileResultSegment
+    name: FileResultSegment
+    fullName: Microsoft.WindowsAzure.Storage.File.FileResultSegment
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.File.FileResultSegment
+    name: FileResultSegment
+    fullName: Microsoft.WindowsAzure.Storage.File.FileResultSegment
+  - name: )
+    fullName: )
+- uid: System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: CloudFileDirectory
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
+- uid: System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  fullName: System.Uri
+- uid: Microsoft.WindowsAzure.Storage.Auth.StorageCredentials
+  parent: Microsoft.WindowsAzure.Storage.Auth
+  isExternal: false
+  name: StorageCredentials
+  fullName: Microsoft.WindowsAzure.Storage.Auth.StorageCredentials
+- uid: Microsoft.WindowsAzure.Storage.Auth
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Auth
+  fullName: Microsoft.WindowsAzure.Storage.Auth
+- uid: Microsoft.WindowsAzure.Storage.StorageUri
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: StorageUri
+  fullName: Microsoft.WindowsAzure.Storage.StorageUri
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileClient
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: CloudFileClient
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFileClient
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory.StorageUri
+- uid: Microsoft.WindowsAzure.Storage.File.FileDirectoryProperties
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: FileDirectoryProperties
+  fullName: Microsoft.WindowsAzure.Storage.File.FileDirectoryProperties
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  fullname.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullname.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.WindowsAzure.Storage.File.CloudFile
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: CloudFile
+  fullName: Microsoft.WindowsAzure.Storage.File.CloudFile

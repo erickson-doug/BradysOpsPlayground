@@ -1,0 +1,4482 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  commentId: T:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  id: TableServiceContext
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices
+  children:
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.#ctor(Microsoft.WindowsAzure.Storage.Table.CloudTableClient)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.AsyncCallback,System.Object)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.Dispose
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.Dispose(System.Boolean)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.EndSaveChangesWithRetries(System.IAsyncResult)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetries
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.ServiceClient
+  langs:
+  - csharp
+  - vb
+  name: TableServiceContext
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  type: Class
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TableServiceContext
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 38
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nRepresents a <xref href=\"System.Data.Services.Client.DataServiceContext\" data-throw-if-not-resolved=\"false\"></xref> object for use with the Windows Azure Table service.\r\n"
+  remarks: The <xref href="Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext" data-throw-if-not-resolved="false"></xref> class does not support concurrent queries or requests.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public class TableServiceContext : DataServiceContext, IDisposable
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Class TableServiceContext
+
+          Inherits DataServiceContext
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Data.Services.Client.DataServiceContext
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Data.Services.Client.DataServiceContext.GetEntityDescriptor(System.Object)
+  - System.Data.Services.Client.DataServiceContext.GetLinkDescriptor(System.Object,System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.CancelRequest(System.IAsyncResult)
+  - System.Data.Services.Client.DataServiceContext.CreateQuery``1(System.String)
+  - System.Data.Services.Client.DataServiceContext.GetMetadataUri
+  - System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Uri,System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation,System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.EndLoadProperty(System.IAsyncResult)
+  - System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String)
+  - System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Uri)
+  - System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation)
+  - System.Data.Services.Client.DataServiceContext.LoadProperty``1(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation{{T}})
+  - System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object)
+  - System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object,System.String)
+  - System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.String,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.EndGetReadStream(System.IAsyncResult)
+  - System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object)
+  - System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String)
+  - System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs)
+  - System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String,System.Data.Services.Client.DataServiceRequestArgs)
+  - System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.String,System.String)
+  - System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)
+  - System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.String,System.IO.Stream,System.Boolean,System.String)
+  - System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.String,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)
+  - System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])
+  - System.Data.Services.Client.DataServiceContext.EndExecuteBatch(System.IAsyncResult)
+  - System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest[])
+  - System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.BeginExecute(System.Uri,System.AsyncCallback,System.Object,System.String,System.Data.Services.Client.OperationParameter[])
+  - System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object,System.String,System.Boolean,System.Data.Services.Client.OperationParameter[])
+  - System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Data.Services.Client.DataServiceQueryContinuation{{T}},System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.EndExecute``1(System.IAsyncResult)
+  - System.Data.Services.Client.DataServiceContext.EndExecute(System.IAsyncResult)
+  - System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri)
+  - System.Data.Services.Client.DataServiceContext.Execute``1(System.Data.Services.Client.DataServiceQueryContinuation{{T}})
+  - System.Data.Services.Client.DataServiceContext.Execute(System.Uri,System.String,System.Data.Services.Client.OperationParameter[])
+  - System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri,System.String,System.Boolean,System.Data.Services.Client.OperationParameter[])
+  - System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)
+  - System.Data.Services.Client.DataServiceContext.EndSaveChanges(System.IAsyncResult)
+  - System.Data.Services.Client.DataServiceContext.SaveChanges
+  - System.Data.Services.Client.DataServiceContext.SaveChanges(System.Data.Services.Client.SaveChangesOptions)
+  - System.Data.Services.Client.DataServiceContext.AddLink(System.Object,System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.AttachLink(System.Object,System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.DetachLink(System.Object,System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.DeleteLink(System.Object,System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.SetLink(System.Object,System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.AddObject(System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.AddRelatedObject(System.Object,System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object)
+  - System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object,System.String)
+  - System.Data.Services.Client.DataServiceContext.DeleteObject(System.Object)
+  - System.Data.Services.Client.DataServiceContext.Detach(System.Object)
+  - System.Data.Services.Client.DataServiceContext.UpdateObject(System.Object)
+  - System.Data.Services.Client.DataServiceContext.ChangeState(System.Object,System.Data.Services.Client.EntityStates)
+  - System.Data.Services.Client.DataServiceContext.TryGetEntity``1(System.Uri,{TEntity}@)
+  - System.Data.Services.Client.DataServiceContext.TryGetUri(System.Object,System.Uri@)
+  - System.Data.Services.Client.DataServiceContext.DefaultResolveType(System.String,System.String,System.String)
+  - System.Data.Services.Client.DataServiceContext.ResolveEntitySet
+  - System.Data.Services.Client.DataServiceContext.BaseUri
+  - System.Data.Services.Client.DataServiceContext.AddAndUpdateResponsePreference
+  - System.Data.Services.Client.DataServiceContext.MaxProtocolVersion
+  - System.Data.Services.Client.DataServiceContext.Credentials
+  - System.Data.Services.Client.DataServiceContext.MergeOption
+  - System.Data.Services.Client.DataServiceContext.ApplyingChanges
+  - System.Data.Services.Client.DataServiceContext.IgnoreMissingProperties
+  - System.Data.Services.Client.DataServiceContext.DataNamespace
+  - System.Data.Services.Client.DataServiceContext.ResolveName
+  - System.Data.Services.Client.DataServiceContext.ResolveType
+  - System.Data.Services.Client.DataServiceContext.Timeout
+  - System.Data.Services.Client.DataServiceContext.TypeScheme
+  - System.Data.Services.Client.DataServiceContext.UsePostTunneling
+  - System.Data.Services.Client.DataServiceContext.Links
+  - System.Data.Services.Client.DataServiceContext.Entities
+  - System.Data.Services.Client.DataServiceContext.SaveChangesDefaultOptions
+  - System.Data.Services.Client.DataServiceContext.IgnoreResourceNotFoundException
+  - System.Data.Services.Client.DataServiceContext.Configurations
+  - System.Data.Services.Client.DataServiceContext.Format
+  - System.Data.Services.Client.DataServiceContext.UrlConventions
+  - System.Data.Services.Client.DataServiceContext.SendingRequest
+  - System.Data.Services.Client.DataServiceContext.SendingRequest2
+  - System.Data.Services.Client.DataServiceContext.BuildingRequest
+  - System.Data.Services.Client.DataServiceContext.ReadingEntity
+  - System.Data.Services.Client.DataServiceContext.ReceivingResponse
+  - System.Data.Services.Client.DataServiceContext.WritingEntity
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.#ctor(Microsoft.WindowsAzure.Storage.Table.CloudTableClient)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.#ctor(Microsoft.WindowsAzure.Storage.Table.CloudTableClient)
+  id: '#ctor(Microsoft.WindowsAzure.Storage.Table.CloudTableClient)'
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: TableServiceContext(CloudTableClient)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.TableServiceContext(Microsoft.WindowsAzure.Storage.Table.CloudTableClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext\" data-throw-if-not-resolved=\"false\"></xref> class.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public TableServiceContext(CloudTableClient client)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Sub New(client As CloudTableClient)
+    parameters:
+    - id: client
+      type: Microsoft.WindowsAzure.Storage.Table.CloudTableClient
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.ServiceClient
+  commentId: P:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.ServiceClient
+  id: ServiceClient
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: ServiceClient
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.ServiceClient
+  type: Property
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServiceClient
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 200
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nGets the <xref href=\"Microsoft.WindowsAzure.Storage.Table.CloudTableClient\" data-throw-if-not-resolved=\"false\"></xref> object that represents the Table service.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public CloudTableClient ServiceClient
+
+      {
+
+          get;
+
+      }
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public ReadOnly Property ServiceClient As CloudTableClient
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.CloudTableClient
+      description: A client object that specifies the Table service endpoint.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetries
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetries
+  id: SaveChangesWithRetries
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesWithRetries()
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetries()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveChangesWithRetries
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 236
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nSaves changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public DataServiceResponse SaveChangesWithRetries()
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function SaveChangesWithRetries As DataServiceResponse
+    return:
+      type: System.Data.Services.Client.DataServiceResponse
+      description: A <xref href="System.Data.Services.Client.DataServiceResponse" data-throw-if-not-resolved="false"></xref> that represents the result of the operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: SaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesWithRetries(SaveChangesOptions, TableRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveChangesWithRetries
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 250
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nSaves changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public DataServiceResponse SaveChangesWithRetries(SaveChangesOptions options, TableRequestOptions requestOptions = null, OperationContext operationContext = null)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function SaveChangesWithRetries(options As SaveChangesOptions, requestOptions As TableRequestOptions = Nothing, operationContext As OperationContext = Nothing) As DataServiceResponse
+    parameters:
+    - id: options
+      type: System.Data.Services.Client.SaveChangesOptions
+      description: A <xref href="System.Data.Services.Client.SaveChangesOptions" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Data.Services.Client.DataServiceResponse
+      description: " A <xref href=\"System.Data.Services.Client.DataServiceResponse\" data-throw-if-not-resolved=\"false\"></xref> that represents the result of the operation."
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.AsyncCallback,System.Object)
+  id: BeginSaveChangesWithRetries(System.AsyncCallback,System.Object)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: BeginSaveChangesWithRetries(AsyncCallback, Object)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginSaveChangesWithRetries
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 266
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nBegins an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public ICancellableAsyncResult BeginSaveChangesWithRetries(AsyncCallback callback, object state)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function BeginSaveChangesWithRetries(callback As AsyncCallback, state As Object) As ICancellableAsyncResult
+    parameters:
+    - id: callback
+      type: System.AsyncCallback
+      description: An <xref href="System.AsyncCallback" data-throw-if-not-resolved="false"></xref> delegate that will receive notification when the asynchronous operation completes.
+    - id: state
+      type: System.Object
+      description: A user-defined object that will be passed to the callback delegate.
+    return:
+      type: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+      description: An <xref href="System.IAsyncResult" data-throw-if-not-resolved="false"></xref> that references the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)
+  id: BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: BeginSaveChangesWithRetries(SaveChangesOptions, AsyncCallback, Object)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginSaveChangesWithRetries
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 280
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nBegins an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public ICancellableAsyncResult BeginSaveChangesWithRetries(SaveChangesOptions options, AsyncCallback callback, object state)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function BeginSaveChangesWithRetries(options As SaveChangesOptions, callback As AsyncCallback, state As Object) As ICancellableAsyncResult
+    parameters:
+    - id: options
+      type: System.Data.Services.Client.SaveChangesOptions
+      description: A <xref href="System.Data.Services.Client.SaveChangesOptions" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: callback
+      type: System.AsyncCallback
+      description: An <xref href="System.AsyncCallback" data-throw-if-not-resolved="false"></xref> delegate that will receive notification when the asynchronous operation completes.
+    - id: state
+      type: System.Object
+      description: A user-defined object that will be passed to the callback delegate.
+    return:
+      type: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+      description: An <xref href="System.IAsyncResult" data-throw-if-not-resolved="false"></xref> that references the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  id: BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: BeginSaveChangesWithRetries(SaveChangesOptions, TableRequestOptions, OperationContext, AsyncCallback, Object)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.BeginSaveChangesWithRetries(System.Data.Services.Client.SaveChangesOptions, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginSaveChangesWithRetries
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 296
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nBegins an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public ICancellableAsyncResult BeginSaveChangesWithRetries(SaveChangesOptions options, TableRequestOptions requestOptions, OperationContext operationContext, AsyncCallback callback, object state)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function BeginSaveChangesWithRetries(options As SaveChangesOptions, requestOptions As TableRequestOptions, operationContext As OperationContext, callback As AsyncCallback, state As Object) As ICancellableAsyncResult
+    parameters:
+    - id: options
+      type: System.Data.Services.Client.SaveChangesOptions
+      description: A <xref href="System.Data.Services.Client.SaveChangesOptions" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: " "
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: callback
+      type: System.AsyncCallback
+      description: An <xref href="System.AsyncCallback" data-throw-if-not-resolved="false"></xref> delegate that will receive notification when the asynchronous operation completes.
+    - id: state
+      type: System.Object
+      description: A user-defined object that will be passed to the callback delegate.
+    return:
+      type: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+      description: An <xref href="System.IAsyncResult" data-throw-if-not-resolved="false"></xref> that references the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.EndSaveChangesWithRetries(System.IAsyncResult)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.EndSaveChangesWithRetries(System.IAsyncResult)
+  id: EndSaveChangesWithRetries(System.IAsyncResult)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: EndSaveChangesWithRetries(IAsyncResult)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.EndSaveChangesWithRetries(System.IAsyncResult)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: EndSaveChangesWithRetries
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 311
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nEnds an asynchronous operation to save changes.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public DataServiceResponse EndSaveChangesWithRetries(IAsyncResult asyncResult)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function EndSaveChangesWithRetries(asyncResult As IAsyncResult) As DataServiceResponse
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+      description: An <xref href="System.IAsyncResult" data-throw-if-not-resolved="false"></xref> that references the pending asynchronous operation.
+    return:
+      type: System.Data.Services.Client.DataServiceResponse
+      description: " A <xref href=\"System.Data.Services.Client.DataServiceResponse\" data-throw-if-not-resolved=\"false\"></xref> that represents the result of the operation."
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync
+  id: SaveChangesWithRetriesAsync
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesWithRetriesAsync()
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveChangesWithRetriesAsync
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 322
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nInitiates an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public Task<DataServiceResponse> SaveChangesWithRetriesAsync()
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function SaveChangesWithRetriesAsync As Task(Of DataServiceResponse)
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Services.Client.DataServiceResponse}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object that represents the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Threading.CancellationToken)
+  id: SaveChangesWithRetriesAsync(System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesWithRetriesAsync(CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveChangesWithRetriesAsync
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 334
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nInitiates an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public Task<DataServiceResponse> SaveChangesWithRetriesAsync(CancellationToken cancellationToken)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function SaveChangesWithRetriesAsync(cancellationToken As CancellationToken) As Task(Of DataServiceResponse)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Services.Client.DataServiceResponse}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object that represents the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions)
+  id: SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesWithRetriesAsync(SaveChangesOptions)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveChangesWithRetriesAsync
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 346
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nInitiates an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public Task<DataServiceResponse> SaveChangesWithRetriesAsync(SaveChangesOptions options)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function SaveChangesWithRetriesAsync(options As SaveChangesOptions) As Task(Of DataServiceResponse)
+    parameters:
+    - id: options
+      type: System.Data.Services.Client.SaveChangesOptions
+      description: A <xref href="System.Data.Services.Client.SaveChangesOptions" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Services.Client.DataServiceResponse}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object that represents the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,System.Threading.CancellationToken)
+  id: SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesWithRetriesAsync(SaveChangesOptions, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveChangesWithRetriesAsync
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 359
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nInitiates an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public Task<DataServiceResponse> SaveChangesWithRetriesAsync(SaveChangesOptions options, CancellationToken cancellationToken)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function SaveChangesWithRetriesAsync(options As SaveChangesOptions, cancellationToken As CancellationToken) As Task(Of DataServiceResponse)
+    parameters:
+    - id: options
+      type: System.Data.Services.Client.SaveChangesOptions
+      description: A <xref href="System.Data.Services.Client.SaveChangesOptions" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Services.Client.DataServiceResponse}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object that represents the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesWithRetriesAsync(SaveChangesOptions, TableRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveChangesWithRetriesAsync
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 373
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nInitiates an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public Task<DataServiceResponse> SaveChangesWithRetriesAsync(SaveChangesOptions options, TableRequestOptions requestOptions, OperationContext operationContext)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function SaveChangesWithRetriesAsync(options As SaveChangesOptions, requestOptions As TableRequestOptions, operationContext As OperationContext) As Task(Of DataServiceResponse)
+    parameters:
+    - id: options
+      type: System.Data.Services.Client.SaveChangesOptions
+      description: A <xref href="System.Data.Services.Client.SaveChangesOptions" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Services.Client.DataServiceResponse}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object that represents the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesWithRetriesAsync(SaveChangesOptions, TableRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.SaveChangesWithRetriesAsync(System.Data.Services.Client.SaveChangesOptions, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SaveChangesWithRetriesAsync
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 388
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nInitiates an asynchronous operation to save changes, using the retry policy specified for the service context.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")]
+
+      public Task<DataServiceResponse> SaveChangesWithRetriesAsync(SaveChangesOptions options, TableRequestOptions requestOptions, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: >-
+      <Obsolete("Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.")>
+
+      Public Function SaveChangesWithRetriesAsync(options As SaveChangesOptions, requestOptions As TableRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task(Of DataServiceResponse)
+    parameters:
+    - id: options
+      type: System.Data.Services.Client.SaveChangesOptions
+      description: A <xref href="System.Data.Services.Client.SaveChangesOptions" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Services.Client.DataServiceResponse}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object that represents the asynchronous operation.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for accessing Windows Azure Tables via WCF Data Services is now obsolete. It's recommended that you use the Microsoft.WindowsAzure.Storage.Table namespace for working with tables.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.Dispose
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.Dispose
+  id: Dispose
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Dispose
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 429
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nReleases all resources used by the TableServiceContext.\r\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.Dispose(System.Boolean)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Dispose
+    path: src/Storage/ClassLibraryCommon/Table/DataServices/TableServiceContext.cs
+    startLine: 439
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.DataServices
+  summary: "\r\nReleases the unmanaged resources used by the TableServiceContext and optionally releases the managed resources.\r\n"
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: <code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: System.Data.Services.Client.DataServiceContext
+  parent: System.Data.Services.Client
+  isExternal: true
+  name: DataServiceContext
+  fullName: System.Data.Services.Client.DataServiceContext
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+  parent: Microsoft.WindowsAzure.Storage.Table.DataServices
+  isExternal: false
+  name: TableServiceContext
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices.TableServiceContext
+- uid: Microsoft.WindowsAzure.Storage.Table.DataServices
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table.DataServices
+  fullName: Microsoft.WindowsAzure.Storage.Table.DataServices
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System.Data.Services.Client.DataServiceContext.GetEntityDescriptor(System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetEntityDescriptor(Object)
+  fullName: System.Data.Services.Client.DataServiceContext.GetEntityDescriptor(System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetEntityDescriptor(System.Object)
+    name: GetEntityDescriptor
+    fullName: System.Data.Services.Client.DataServiceContext.GetEntityDescriptor
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetEntityDescriptor(System.Object)
+    name: GetEntityDescriptor
+    fullName: System.Data.Services.Client.DataServiceContext.GetEntityDescriptor
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.GetLinkDescriptor(System.Object,System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetLinkDescriptor(Object, String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.GetLinkDescriptor(System.Object, System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetLinkDescriptor(System.Object,System.String,System.Object)
+    name: GetLinkDescriptor
+    fullName: System.Data.Services.Client.DataServiceContext.GetLinkDescriptor
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetLinkDescriptor(System.Object,System.String,System.Object)
+    name: GetLinkDescriptor
+    fullName: System.Data.Services.Client.DataServiceContext.GetLinkDescriptor
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.CancelRequest(System.IAsyncResult)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: CancelRequest(IAsyncResult)
+  fullName: System.Data.Services.Client.DataServiceContext.CancelRequest(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.CancelRequest(System.IAsyncResult)
+    name: CancelRequest
+    fullName: System.Data.Services.Client.DataServiceContext.CancelRequest
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.CancelRequest(System.IAsyncResult)
+    name: CancelRequest
+    fullName: System.Data.Services.Client.DataServiceContext.CancelRequest
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.CreateQuery``1(System.String)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: CreateQuery<T>(String)
+  fullName: System.Data.Services.Client.DataServiceContext.CreateQuery<T>(System.String)
+  fullname.vb: System.Data.Services.Client.DataServiceContext.CreateQuery(Of T)(System.String)
+  name.vb: CreateQuery(Of T)(String)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.CreateQuery``1(System.String)
+    name: CreateQuery<T>
+    fullName: System.Data.Services.Client.DataServiceContext.CreateQuery<T>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.CreateQuery``1(System.String)
+    name: CreateQuery(Of T)
+    fullName: System.Data.Services.Client.DataServiceContext.CreateQuery(Of T)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.GetMetadataUri
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetMetadataUri()
+  fullName: System.Data.Services.Client.DataServiceContext.GetMetadataUri()
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetMetadataUri
+    name: GetMetadataUri
+    fullName: System.Data.Services.Client.DataServiceContext.GetMetadataUri
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetMetadataUri
+    name: GetMetadataUri
+    fullName: System.Data.Services.Client.DataServiceContext.GetMetadataUri
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginLoadProperty(Object, String, AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object, System.String, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.AsyncCallback,System.Object)
+    name: BeginLoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.AsyncCallback,System.Object)
+    name: BeginLoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Uri,System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginLoadProperty(Object, String, Uri, AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object, System.String, System.Uri, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Uri,System.AsyncCallback,System.Object)
+    name: BeginLoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Uri,System.AsyncCallback,System.Object)
+    name: BeginLoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation,System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginLoadProperty(Object, String, DataServiceQueryContinuation, AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object, System.String, System.Data.Services.Client.DataServiceQueryContinuation, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation,System.AsyncCallback,System.Object)
+    name: BeginLoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation,System.AsyncCallback,System.Object)
+    name: BeginLoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.BeginLoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.EndLoadProperty(System.IAsyncResult)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: EndLoadProperty(IAsyncResult)
+  fullName: System.Data.Services.Client.DataServiceContext.EndLoadProperty(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.EndLoadProperty(System.IAsyncResult)
+    name: EndLoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.EndLoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.EndLoadProperty(System.IAsyncResult)
+    name: EndLoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.EndLoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: LoadProperty(Object, String)
+  fullName: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object, System.String)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String)
+    name: LoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.LoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String)
+    name: LoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.LoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Uri)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: LoadProperty(Object, String, Uri)
+  fullName: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object, System.String, System.Uri)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Uri)
+    name: LoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.LoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Uri)
+    name: LoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.LoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: LoadProperty(Object, String, DataServiceQueryContinuation)
+  fullName: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object, System.String, System.Data.Services.Client.DataServiceQueryContinuation)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation)
+    name: LoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.LoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation)
+    name: LoadProperty
+    fullName: System.Data.Services.Client.DataServiceContext.LoadProperty
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.LoadProperty``1(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation{{T}})
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: LoadProperty<T>(Object, String, DataServiceQueryContinuation<T>)
+  fullName: System.Data.Services.Client.DataServiceContext.LoadProperty<T>(System.Object, System.String, System.Data.Services.Client.DataServiceQueryContinuation<T>)
+  fullname.vb: System.Data.Services.Client.DataServiceContext.LoadProperty(Of T)(System.Object, System.String, System.Data.Services.Client.DataServiceQueryContinuation(Of T))
+  name.vb: LoadProperty(Of T)(Object, String, DataServiceQueryContinuation(Of T))
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.LoadProperty``1(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation{``0})
+    name: LoadProperty<T>
+    fullName: System.Data.Services.Client.DataServiceContext.LoadProperty<T>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation`1
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.LoadProperty``1(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation{``0})
+    name: LoadProperty(Of T)
+    fullName: System.Data.Services.Client.DataServiceContext.LoadProperty(Of T)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation`1
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetReadStreamUri(Object)
+  fullName: System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object)
+    name: GetReadStreamUri
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStreamUri
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object)
+    name: GetReadStreamUri
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStreamUri
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object,System.String)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetReadStreamUri(Object, String)
+  fullName: System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object, System.String)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object,System.String)
+    name: GetReadStreamUri
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStreamUri
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object,System.String)
+    name: GetReadStreamUri
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStreamUri
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginGetReadStream(Object, DataServiceRequestArgs, AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object, System.Data.Services.Client.DataServiceRequestArgs, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)
+    name: BeginGetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.BeginGetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)
+    name: BeginGetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.BeginGetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.String,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginGetReadStream(Object, String, DataServiceRequestArgs, AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object, System.String, System.Data.Services.Client.DataServiceRequestArgs, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.String,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)
+    name: BeginGetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.BeginGetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.String,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)
+    name: BeginGetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.BeginGetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.EndGetReadStream(System.IAsyncResult)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: EndGetReadStream(IAsyncResult)
+  fullName: System.Data.Services.Client.DataServiceContext.EndGetReadStream(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.EndGetReadStream(System.IAsyncResult)
+    name: EndGetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.EndGetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.EndGetReadStream(System.IAsyncResult)
+    name: EndGetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.EndGetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetReadStream(Object)
+  fullName: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object)
+    name: GetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object)
+    name: GetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetReadStream(Object, String)
+  fullName: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object, System.String)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String)
+    name: GetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String)
+    name: GetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetReadStream(Object, DataServiceRequestArgs)
+  fullName: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object, System.Data.Services.Client.DataServiceRequestArgs)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs)
+    name: GetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs)
+    name: GetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String,System.Data.Services.Client.DataServiceRequestArgs)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: GetReadStream(Object, String, DataServiceRequestArgs)
+  fullName: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object, System.String, System.Data.Services.Client.DataServiceRequestArgs)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String,System.Data.Services.Client.DataServiceRequestArgs)
+    name: GetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String,System.Data.Services.Client.DataServiceRequestArgs)
+    name: GetReadStream
+    fullName: System.Data.Services.Client.DataServiceContext.GetReadStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.String,System.String)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SetSaveStream(Object, Stream, Boolean, String, String)
+  fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object, System.IO.Stream, System.Boolean, System.String, System.String)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.String,System.String)
+    name: SetSaveStream
+    fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.String,System.String)
+    name: SetSaveStream
+    fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SetSaveStream(Object, Stream, Boolean, DataServiceRequestArgs)
+  fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object, System.IO.Stream, System.Boolean, System.Data.Services.Client.DataServiceRequestArgs)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)
+    name: SetSaveStream
+    fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)
+    name: SetSaveStream
+    fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.String,System.IO.Stream,System.Boolean,System.String)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SetSaveStream(Object, String, Stream, Boolean, String)
+  fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object, System.String, System.IO.Stream, System.Boolean, System.String)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.String,System.IO.Stream,System.Boolean,System.String)
+    name: SetSaveStream
+    fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.String,System.IO.Stream,System.Boolean,System.String)
+    name: SetSaveStream
+    fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.String,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SetSaveStream(Object, String, Stream, Boolean, DataServiceRequestArgs)
+  fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object, System.String, System.IO.Stream, System.Boolean, System.Data.Services.Client.DataServiceRequestArgs)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.String,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)
+    name: SetSaveStream
+    fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.String,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)
+    name: SetSaveStream
+    fullName: System.Data.Services.Client.DataServiceContext.SetSaveStream
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequestArgs
+    name: DataServiceRequestArgs
+    fullName: System.Data.Services.Client.DataServiceRequestArgs
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginExecuteBatch(AsyncCallback, Object, DataServiceRequest[])
+  fullName: System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback, System.Object, System.Data.Services.Client.DataServiceRequest[])
+  fullname.vb: System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback, System.Object, System.Data.Services.Client.DataServiceRequest())
+  name.vb: BeginExecuteBatch(AsyncCallback, Object, DataServiceRequest())
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])
+    name: BeginExecuteBatch
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecuteBatch
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequest
+    name: DataServiceRequest
+    fullName: System.Data.Services.Client.DataServiceRequest
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])
+    name: BeginExecuteBatch
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecuteBatch
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.DataServiceRequest
+    name: DataServiceRequest
+    fullName: System.Data.Services.Client.DataServiceRequest
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.EndExecuteBatch(System.IAsyncResult)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: EndExecuteBatch(IAsyncResult)
+  fullName: System.Data.Services.Client.DataServiceContext.EndExecuteBatch(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.EndExecuteBatch(System.IAsyncResult)
+    name: EndExecuteBatch
+    fullName: System.Data.Services.Client.DataServiceContext.EndExecuteBatch
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.EndExecuteBatch(System.IAsyncResult)
+    name: EndExecuteBatch
+    fullName: System.Data.Services.Client.DataServiceContext.EndExecuteBatch
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest[])
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: ExecuteBatch(DataServiceRequest[])
+  fullName: System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest[])
+  fullname.vb: System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest())
+  name.vb: ExecuteBatch(DataServiceRequest())
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest[])
+    name: ExecuteBatch
+    fullName: System.Data.Services.Client.DataServiceContext.ExecuteBatch
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.DataServiceRequest
+    name: DataServiceRequest
+    fullName: System.Data.Services.Client.DataServiceRequest
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest[])
+    name: ExecuteBatch
+    fullName: System.Data.Services.Client.DataServiceContext.ExecuteBatch
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.DataServiceRequest
+    name: DataServiceRequest
+    fullName: System.Data.Services.Client.DataServiceRequest
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginExecute<TElement>(Uri, AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginExecute<TElement>(System.Uri, System.AsyncCallback, System.Object)
+  fullname.vb: System.Data.Services.Client.DataServiceContext.BeginExecute(Of TElement)(System.Uri, System.AsyncCallback, System.Object)
+  name.vb: BeginExecute(Of TElement)(Uri, AsyncCallback, Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object)
+    name: BeginExecute<TElement>
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecute<TElement>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object)
+    name: BeginExecute(Of TElement)
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecute(Of TElement)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginExecute(System.Uri,System.AsyncCallback,System.Object,System.String,System.Data.Services.Client.OperationParameter[])
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginExecute(Uri, AsyncCallback, Object, String, OperationParameter[])
+  fullName: System.Data.Services.Client.DataServiceContext.BeginExecute(System.Uri, System.AsyncCallback, System.Object, System.String, System.Data.Services.Client.OperationParameter[])
+  fullname.vb: System.Data.Services.Client.DataServiceContext.BeginExecute(System.Uri, System.AsyncCallback, System.Object, System.String, System.Data.Services.Client.OperationParameter())
+  name.vb: BeginExecute(Uri, AsyncCallback, Object, String, OperationParameter())
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecute(System.Uri,System.AsyncCallback,System.Object,System.String,System.Data.Services.Client.OperationParameter[])
+    name: BeginExecute
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecute
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.OperationParameter
+    name: OperationParameter
+    fullName: System.Data.Services.Client.OperationParameter
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecute(System.Uri,System.AsyncCallback,System.Object,System.String,System.Data.Services.Client.OperationParameter[])
+    name: BeginExecute
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecute
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.OperationParameter
+    name: OperationParameter
+    fullName: System.Data.Services.Client.OperationParameter
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object,System.String,System.Boolean,System.Data.Services.Client.OperationParameter[])
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginExecute<TElement>(Uri, AsyncCallback, Object, String, Boolean, OperationParameter[])
+  fullName: System.Data.Services.Client.DataServiceContext.BeginExecute<TElement>(System.Uri, System.AsyncCallback, System.Object, System.String, System.Boolean, System.Data.Services.Client.OperationParameter[])
+  fullname.vb: System.Data.Services.Client.DataServiceContext.BeginExecute(Of TElement)(System.Uri, System.AsyncCallback, System.Object, System.String, System.Boolean, System.Data.Services.Client.OperationParameter())
+  name.vb: BeginExecute(Of TElement)(Uri, AsyncCallback, Object, String, Boolean, OperationParameter())
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object,System.String,System.Boolean,System.Data.Services.Client.OperationParameter[])
+    name: BeginExecute<TElement>
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecute<TElement>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.OperationParameter
+    name: OperationParameter
+    fullName: System.Data.Services.Client.OperationParameter
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object,System.String,System.Boolean,System.Data.Services.Client.OperationParameter[])
+    name: BeginExecute(Of TElement)
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecute(Of TElement)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.OperationParameter
+    name: OperationParameter
+    fullName: System.Data.Services.Client.OperationParameter
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Data.Services.Client.DataServiceQueryContinuation{{T}},System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginExecute<T>(DataServiceQueryContinuation<T>, AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginExecute<T>(System.Data.Services.Client.DataServiceQueryContinuation<T>, System.AsyncCallback, System.Object)
+  fullname.vb: System.Data.Services.Client.DataServiceContext.BeginExecute(Of T)(System.Data.Services.Client.DataServiceQueryContinuation(Of T), System.AsyncCallback, System.Object)
+  name.vb: BeginExecute(Of T)(DataServiceQueryContinuation(Of T), AsyncCallback, Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Data.Services.Client.DataServiceQueryContinuation{``0},System.AsyncCallback,System.Object)
+    name: BeginExecute<T>
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecute<T>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation`1
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Data.Services.Client.DataServiceQueryContinuation{``0},System.AsyncCallback,System.Object)
+    name: BeginExecute(Of T)
+    fullName: System.Data.Services.Client.DataServiceContext.BeginExecute(Of T)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation`1
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.EndExecute``1(System.IAsyncResult)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: EndExecute<TElement>(IAsyncResult)
+  fullName: System.Data.Services.Client.DataServiceContext.EndExecute<TElement>(System.IAsyncResult)
+  fullname.vb: System.Data.Services.Client.DataServiceContext.EndExecute(Of TElement)(System.IAsyncResult)
+  name.vb: EndExecute(Of TElement)(IAsyncResult)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.EndExecute``1(System.IAsyncResult)
+    name: EndExecute<TElement>
+    fullName: System.Data.Services.Client.DataServiceContext.EndExecute<TElement>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.EndExecute``1(System.IAsyncResult)
+    name: EndExecute(Of TElement)
+    fullName: System.Data.Services.Client.DataServiceContext.EndExecute(Of TElement)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.EndExecute(System.IAsyncResult)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: EndExecute(IAsyncResult)
+  fullName: System.Data.Services.Client.DataServiceContext.EndExecute(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.EndExecute(System.IAsyncResult)
+    name: EndExecute
+    fullName: System.Data.Services.Client.DataServiceContext.EndExecute
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.EndExecute(System.IAsyncResult)
+    name: EndExecute
+    fullName: System.Data.Services.Client.DataServiceContext.EndExecute
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Execute<TElement>(Uri)
+  fullName: System.Data.Services.Client.DataServiceContext.Execute<TElement>(System.Uri)
+  fullname.vb: System.Data.Services.Client.DataServiceContext.Execute(Of TElement)(System.Uri)
+  name.vb: Execute(Of TElement)(Uri)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri)
+    name: Execute<TElement>
+    fullName: System.Data.Services.Client.DataServiceContext.Execute<TElement>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri)
+    name: Execute(Of TElement)
+    fullName: System.Data.Services.Client.DataServiceContext.Execute(Of TElement)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Data.Services.Client.DataServiceQueryContinuation{{T}})
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Execute<T>(DataServiceQueryContinuation<T>)
+  fullName: System.Data.Services.Client.DataServiceContext.Execute<T>(System.Data.Services.Client.DataServiceQueryContinuation<T>)
+  fullname.vb: System.Data.Services.Client.DataServiceContext.Execute(Of T)(System.Data.Services.Client.DataServiceQueryContinuation(Of T))
+  name.vb: Execute(Of T)(DataServiceQueryContinuation(Of T))
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Data.Services.Client.DataServiceQueryContinuation{``0})
+    name: Execute<T>
+    fullName: System.Data.Services.Client.DataServiceContext.Execute<T>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation`1
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Data.Services.Client.DataServiceQueryContinuation{``0})
+    name: Execute(Of T)
+    fullName: System.Data.Services.Client.DataServiceContext.Execute(Of T)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.DataServiceQueryContinuation`1
+    name: DataServiceQueryContinuation
+    fullName: System.Data.Services.Client.DataServiceQueryContinuation
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.Execute(System.Uri,System.String,System.Data.Services.Client.OperationParameter[])
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Execute(Uri, String, OperationParameter[])
+  fullName: System.Data.Services.Client.DataServiceContext.Execute(System.Uri, System.String, System.Data.Services.Client.OperationParameter[])
+  fullname.vb: System.Data.Services.Client.DataServiceContext.Execute(System.Uri, System.String, System.Data.Services.Client.OperationParameter())
+  name.vb: Execute(Uri, String, OperationParameter())
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.Execute(System.Uri,System.String,System.Data.Services.Client.OperationParameter[])
+    name: Execute
+    fullName: System.Data.Services.Client.DataServiceContext.Execute
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.OperationParameter
+    name: OperationParameter
+    fullName: System.Data.Services.Client.OperationParameter
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.Execute(System.Uri,System.String,System.Data.Services.Client.OperationParameter[])
+    name: Execute
+    fullName: System.Data.Services.Client.DataServiceContext.Execute
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.OperationParameter
+    name: OperationParameter
+    fullName: System.Data.Services.Client.OperationParameter
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri,System.String,System.Boolean,System.Data.Services.Client.OperationParameter[])
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Execute<TElement>(Uri, String, Boolean, OperationParameter[])
+  fullName: System.Data.Services.Client.DataServiceContext.Execute<TElement>(System.Uri, System.String, System.Boolean, System.Data.Services.Client.OperationParameter[])
+  fullname.vb: System.Data.Services.Client.DataServiceContext.Execute(Of TElement)(System.Uri, System.String, System.Boolean, System.Data.Services.Client.OperationParameter())
+  name.vb: Execute(Of TElement)(Uri, String, Boolean, OperationParameter())
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri,System.String,System.Boolean,System.Data.Services.Client.OperationParameter[])
+    name: Execute<TElement>
+    fullName: System.Data.Services.Client.DataServiceContext.Execute<TElement>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.OperationParameter
+    name: OperationParameter
+    fullName: System.Data.Services.Client.OperationParameter
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri,System.String,System.Boolean,System.Data.Services.Client.OperationParameter[])
+    name: Execute(Of TElement)
+    fullName: System.Data.Services.Client.DataServiceContext.Execute(Of TElement)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.OperationParameter
+    name: OperationParameter
+    fullName: System.Data.Services.Client.OperationParameter
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginSaveChanges(AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.AsyncCallback,System.Object)
+    name: BeginSaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.BeginSaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.AsyncCallback,System.Object)
+    name: BeginSaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.BeginSaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BeginSaveChanges(SaveChangesOptions, AsyncCallback, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.Data.Services.Client.SaveChangesOptions, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)
+    name: BeginSaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.BeginSaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.SaveChangesOptions
+    name: SaveChangesOptions
+    fullName: System.Data.Services.Client.SaveChangesOptions
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)
+    name: BeginSaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.BeginSaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.SaveChangesOptions
+    name: SaveChangesOptions
+    fullName: System.Data.Services.Client.SaveChangesOptions
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.EndSaveChanges(System.IAsyncResult)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: EndSaveChanges(IAsyncResult)
+  fullName: System.Data.Services.Client.DataServiceContext.EndSaveChanges(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.EndSaveChanges(System.IAsyncResult)
+    name: EndSaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.EndSaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.EndSaveChanges(System.IAsyncResult)
+    name: EndSaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.EndSaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.SaveChanges
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SaveChanges()
+  fullName: System.Data.Services.Client.DataServiceContext.SaveChanges()
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.SaveChanges
+    name: SaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.SaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.SaveChanges
+    name: SaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.SaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.SaveChanges(System.Data.Services.Client.SaveChangesOptions)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SaveChanges(SaveChangesOptions)
+  fullName: System.Data.Services.Client.DataServiceContext.SaveChanges(System.Data.Services.Client.SaveChangesOptions)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.SaveChanges(System.Data.Services.Client.SaveChangesOptions)
+    name: SaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.SaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.SaveChangesOptions
+    name: SaveChangesOptions
+    fullName: System.Data.Services.Client.SaveChangesOptions
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.SaveChanges(System.Data.Services.Client.SaveChangesOptions)
+    name: SaveChanges
+    fullName: System.Data.Services.Client.DataServiceContext.SaveChanges
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Data.Services.Client.SaveChangesOptions
+    name: SaveChangesOptions
+    fullName: System.Data.Services.Client.SaveChangesOptions
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.AddLink(System.Object,System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: AddLink(Object, String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.AddLink(System.Object, System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.AddLink(System.Object,System.String,System.Object)
+    name: AddLink
+    fullName: System.Data.Services.Client.DataServiceContext.AddLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.AddLink(System.Object,System.String,System.Object)
+    name: AddLink
+    fullName: System.Data.Services.Client.DataServiceContext.AddLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.AttachLink(System.Object,System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: AttachLink(Object, String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.AttachLink(System.Object, System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.AttachLink(System.Object,System.String,System.Object)
+    name: AttachLink
+    fullName: System.Data.Services.Client.DataServiceContext.AttachLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.AttachLink(System.Object,System.String,System.Object)
+    name: AttachLink
+    fullName: System.Data.Services.Client.DataServiceContext.AttachLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.DetachLink(System.Object,System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: DetachLink(Object, String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.DetachLink(System.Object, System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.DetachLink(System.Object,System.String,System.Object)
+    name: DetachLink
+    fullName: System.Data.Services.Client.DataServiceContext.DetachLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.DetachLink(System.Object,System.String,System.Object)
+    name: DetachLink
+    fullName: System.Data.Services.Client.DataServiceContext.DetachLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.DeleteLink(System.Object,System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: DeleteLink(Object, String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.DeleteLink(System.Object, System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.DeleteLink(System.Object,System.String,System.Object)
+    name: DeleteLink
+    fullName: System.Data.Services.Client.DataServiceContext.DeleteLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.DeleteLink(System.Object,System.String,System.Object)
+    name: DeleteLink
+    fullName: System.Data.Services.Client.DataServiceContext.DeleteLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.SetLink(System.Object,System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SetLink(Object, String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.SetLink(System.Object, System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.SetLink(System.Object,System.String,System.Object)
+    name: SetLink
+    fullName: System.Data.Services.Client.DataServiceContext.SetLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.SetLink(System.Object,System.String,System.Object)
+    name: SetLink
+    fullName: System.Data.Services.Client.DataServiceContext.SetLink
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.AddObject(System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: AddObject(String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.AddObject(System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.AddObject(System.String,System.Object)
+    name: AddObject
+    fullName: System.Data.Services.Client.DataServiceContext.AddObject
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.AddObject(System.String,System.Object)
+    name: AddObject
+    fullName: System.Data.Services.Client.DataServiceContext.AddObject
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.AddRelatedObject(System.Object,System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: AddRelatedObject(Object, String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.AddRelatedObject(System.Object, System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.AddRelatedObject(System.Object,System.String,System.Object)
+    name: AddRelatedObject
+    fullName: System.Data.Services.Client.DataServiceContext.AddRelatedObject
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.AddRelatedObject(System.Object,System.String,System.Object)
+    name: AddRelatedObject
+    fullName: System.Data.Services.Client.DataServiceContext.AddRelatedObject
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: AttachTo(String, Object)
+  fullName: System.Data.Services.Client.DataServiceContext.AttachTo(System.String, System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object)
+    name: AttachTo
+    fullName: System.Data.Services.Client.DataServiceContext.AttachTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object)
+    name: AttachTo
+    fullName: System.Data.Services.Client.DataServiceContext.AttachTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object,System.String)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: AttachTo(String, Object, String)
+  fullName: System.Data.Services.Client.DataServiceContext.AttachTo(System.String, System.Object, System.String)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object,System.String)
+    name: AttachTo
+    fullName: System.Data.Services.Client.DataServiceContext.AttachTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object,System.String)
+    name: AttachTo
+    fullName: System.Data.Services.Client.DataServiceContext.AttachTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.DeleteObject(System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: DeleteObject(Object)
+  fullName: System.Data.Services.Client.DataServiceContext.DeleteObject(System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.DeleteObject(System.Object)
+    name: DeleteObject
+    fullName: System.Data.Services.Client.DataServiceContext.DeleteObject
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.DeleteObject(System.Object)
+    name: DeleteObject
+    fullName: System.Data.Services.Client.DataServiceContext.DeleteObject
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.Detach(System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Detach(Object)
+  fullName: System.Data.Services.Client.DataServiceContext.Detach(System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.Detach(System.Object)
+    name: Detach
+    fullName: System.Data.Services.Client.DataServiceContext.Detach
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.Detach(System.Object)
+    name: Detach
+    fullName: System.Data.Services.Client.DataServiceContext.Detach
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.UpdateObject(System.Object)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: UpdateObject(Object)
+  fullName: System.Data.Services.Client.DataServiceContext.UpdateObject(System.Object)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.UpdateObject(System.Object)
+    name: UpdateObject
+    fullName: System.Data.Services.Client.DataServiceContext.UpdateObject
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.UpdateObject(System.Object)
+    name: UpdateObject
+    fullName: System.Data.Services.Client.DataServiceContext.UpdateObject
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.ChangeState(System.Object,System.Data.Services.Client.EntityStates)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: ChangeState(Object, EntityStates)
+  fullName: System.Data.Services.Client.DataServiceContext.ChangeState(System.Object, System.Data.Services.Client.EntityStates)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.ChangeState(System.Object,System.Data.Services.Client.EntityStates)
+    name: ChangeState
+    fullName: System.Data.Services.Client.DataServiceContext.ChangeState
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.EntityStates
+    name: EntityStates
+    fullName: System.Data.Services.Client.EntityStates
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.ChangeState(System.Object,System.Data.Services.Client.EntityStates)
+    name: ChangeState
+    fullName: System.Data.Services.Client.DataServiceContext.ChangeState
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Data.Services.Client.EntityStates
+    name: EntityStates
+    fullName: System.Data.Services.Client.EntityStates
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.TryGetEntity``1(System.Uri,{TEntity}@)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: TryGetEntity<TEntity>(Uri, TEntity)
+  fullName: System.Data.Services.Client.DataServiceContext.TryGetEntity<TEntity>(System.Uri, TEntity)
+  fullname.vb: System.Data.Services.Client.DataServiceContext.TryGetEntity(Of TEntity)(System.Uri, TEntity)
+  name.vb: TryGetEntity(Of TEntity)(Uri, TEntity)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.TryGetEntity``1(System.Uri,``0@)
+    name: TryGetEntity<TEntity>
+    fullName: System.Data.Services.Client.DataServiceContext.TryGetEntity<TEntity>
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: TEntity
+    fullName: TEntity
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.TryGetEntity``1(System.Uri,``0@)
+    name: TryGetEntity(Of TEntity)
+    fullName: System.Data.Services.Client.DataServiceContext.TryGetEntity(Of TEntity)
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: TEntity
+    fullName: TEntity
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.TryGetUri(System.Object,System.Uri@)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: TryGetUri(Object, Uri)
+  fullName: System.Data.Services.Client.DataServiceContext.TryGetUri(System.Object, System.Uri)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.TryGetUri(System.Object,System.Uri@)
+    name: TryGetUri
+    fullName: System.Data.Services.Client.DataServiceContext.TryGetUri
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.TryGetUri(System.Object,System.Uri@)
+    name: TryGetUri
+    fullName: System.Data.Services.Client.DataServiceContext.TryGetUri
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.DefaultResolveType(System.String,System.String,System.String)
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: DefaultResolveType(String, String, String)
+  fullName: System.Data.Services.Client.DataServiceContext.DefaultResolveType(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: System.Data.Services.Client.DataServiceContext.DefaultResolveType(System.String,System.String,System.String)
+    name: DefaultResolveType
+    fullName: System.Data.Services.Client.DataServiceContext.DefaultResolveType
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Data.Services.Client.DataServiceContext.DefaultResolveType(System.String,System.String,System.String)
+    name: DefaultResolveType
+    fullName: System.Data.Services.Client.DataServiceContext.DefaultResolveType
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client.DataServiceContext.ResolveEntitySet
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: ResolveEntitySet
+  fullName: System.Data.Services.Client.DataServiceContext.ResolveEntitySet
+- uid: System.Data.Services.Client.DataServiceContext.BaseUri
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BaseUri
+  fullName: System.Data.Services.Client.DataServiceContext.BaseUri
+- uid: System.Data.Services.Client.DataServiceContext.AddAndUpdateResponsePreference
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: AddAndUpdateResponsePreference
+  fullName: System.Data.Services.Client.DataServiceContext.AddAndUpdateResponsePreference
+- uid: System.Data.Services.Client.DataServiceContext.MaxProtocolVersion
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: MaxProtocolVersion
+  fullName: System.Data.Services.Client.DataServiceContext.MaxProtocolVersion
+- uid: System.Data.Services.Client.DataServiceContext.Credentials
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Credentials
+  fullName: System.Data.Services.Client.DataServiceContext.Credentials
+- uid: System.Data.Services.Client.DataServiceContext.MergeOption
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: MergeOption
+  fullName: System.Data.Services.Client.DataServiceContext.MergeOption
+- uid: System.Data.Services.Client.DataServiceContext.ApplyingChanges
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: ApplyingChanges
+  fullName: System.Data.Services.Client.DataServiceContext.ApplyingChanges
+- uid: System.Data.Services.Client.DataServiceContext.IgnoreMissingProperties
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: IgnoreMissingProperties
+  fullName: System.Data.Services.Client.DataServiceContext.IgnoreMissingProperties
+- uid: System.Data.Services.Client.DataServiceContext.DataNamespace
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: DataNamespace
+  fullName: System.Data.Services.Client.DataServiceContext.DataNamespace
+- uid: System.Data.Services.Client.DataServiceContext.ResolveName
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: ResolveName
+  fullName: System.Data.Services.Client.DataServiceContext.ResolveName
+- uid: System.Data.Services.Client.DataServiceContext.ResolveType
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: ResolveType
+  fullName: System.Data.Services.Client.DataServiceContext.ResolveType
+- uid: System.Data.Services.Client.DataServiceContext.Timeout
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Timeout
+  fullName: System.Data.Services.Client.DataServiceContext.Timeout
+- uid: System.Data.Services.Client.DataServiceContext.TypeScheme
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: TypeScheme
+  fullName: System.Data.Services.Client.DataServiceContext.TypeScheme
+- uid: System.Data.Services.Client.DataServiceContext.UsePostTunneling
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: UsePostTunneling
+  fullName: System.Data.Services.Client.DataServiceContext.UsePostTunneling
+- uid: System.Data.Services.Client.DataServiceContext.Links
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Links
+  fullName: System.Data.Services.Client.DataServiceContext.Links
+- uid: System.Data.Services.Client.DataServiceContext.Entities
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Entities
+  fullName: System.Data.Services.Client.DataServiceContext.Entities
+- uid: System.Data.Services.Client.DataServiceContext.SaveChangesDefaultOptions
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SaveChangesDefaultOptions
+  fullName: System.Data.Services.Client.DataServiceContext.SaveChangesDefaultOptions
+- uid: System.Data.Services.Client.DataServiceContext.IgnoreResourceNotFoundException
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: IgnoreResourceNotFoundException
+  fullName: System.Data.Services.Client.DataServiceContext.IgnoreResourceNotFoundException
+- uid: System.Data.Services.Client.DataServiceContext.Configurations
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Configurations
+  fullName: System.Data.Services.Client.DataServiceContext.Configurations
+- uid: System.Data.Services.Client.DataServiceContext.Format
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: Format
+  fullName: System.Data.Services.Client.DataServiceContext.Format
+- uid: System.Data.Services.Client.DataServiceContext.UrlConventions
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: UrlConventions
+  fullName: System.Data.Services.Client.DataServiceContext.UrlConventions
+- uid: System.Data.Services.Client.DataServiceContext.SendingRequest
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SendingRequest
+  fullName: System.Data.Services.Client.DataServiceContext.SendingRequest
+- uid: System.Data.Services.Client.DataServiceContext.SendingRequest2
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: SendingRequest2
+  fullName: System.Data.Services.Client.DataServiceContext.SendingRequest2
+- uid: System.Data.Services.Client.DataServiceContext.BuildingRequest
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: BuildingRequest
+  fullName: System.Data.Services.Client.DataServiceContext.BuildingRequest
+- uid: System.Data.Services.Client.DataServiceContext.ReadingEntity
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: ReadingEntity
+  fullName: System.Data.Services.Client.DataServiceContext.ReadingEntity
+- uid: System.Data.Services.Client.DataServiceContext.ReceivingResponse
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: ReceivingResponse
+  fullName: System.Data.Services.Client.DataServiceContext.ReceivingResponse
+- uid: System.Data.Services.Client.DataServiceContext.WritingEntity
+  parent: System.Data.Services.Client.DataServiceContext
+  isExternal: true
+  name: WritingEntity
+  fullName: System.Data.Services.Client.DataServiceContext.WritingEntity
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Data.Services.Client
+  isExternal: false
+  name: System.Data.Services.Client
+  fullName: System.Data.Services.Client
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage.Table.CloudTableClient
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: CloudTableClient
+  fullName: Microsoft.WindowsAzure.Storage.Table.CloudTableClient
+- uid: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table
+  fullName: Microsoft.WindowsAzure.Storage.Table
+- uid: System.Data.Services.Client.DataServiceResponse
+  parent: System.Data.Services.Client
+  isExternal: true
+  name: DataServiceResponse
+  fullName: System.Data.Services.Client.DataServiceResponse
+- uid: System.Data.Services.Client.SaveChangesOptions
+  parent: System.Data.Services.Client
+  isExternal: true
+  name: SaveChangesOptions
+  fullName: System.Data.Services.Client.SaveChangesOptions
+- uid: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableRequestOptions
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+- uid: Microsoft.WindowsAzure.Storage.OperationContext
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: OperationContext
+  fullName: Microsoft.WindowsAzure.Storage.OperationContext
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage
+- uid: System.AsyncCallback
+  parent: System
+  isExternal: true
+  name: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  parent: System
+  isExternal: true
+  name: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: ICancellableAsyncResult
+  fullName: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Data.Services.Client.DataServiceResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DataServiceResponse>
+  fullName: System.Threading.Tasks.Task<System.Data.Services.Client.DataServiceResponse>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Data.Services.Client.DataServiceResponse)
+  name.vb: Task(Of DataServiceResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Data.Services.Client.DataServiceResponse
+    name: DataServiceResponse
+    fullName: System.Data.Services.Client.DataServiceResponse
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Data.Services.Client.DataServiceResponse
+    name: DataServiceResponse
+    fullName: System.Data.Services.Client.DataServiceResponse
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

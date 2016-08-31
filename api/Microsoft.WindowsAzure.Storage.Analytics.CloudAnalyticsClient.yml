@@ -1,0 +1,1499 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  commentId: T:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  id: CloudAnalyticsClient
+  parent: Microsoft.WindowsAzure.Storage.Analytics
+  children:
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.#ctor(Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateCapacityQuery
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateHourMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateMinuteMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetCapacityTable
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetLogDirectory(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset})
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset},Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset})
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset},Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlob(Microsoft.WindowsAzure.Storage.Blob.ICloudBlob)
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlobs(System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob})
+  - Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogStream(System.IO.Stream)
+  langs:
+  - csharp
+  - vb
+  name: CloudAnalyticsClient
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  type: Class
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CloudAnalyticsClient
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 38
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nProvides a client-side logical representation for Microsoft Azure Storage Analytics. \r\nThis client is used to configure and execute requests against storage analytics.\r\n"
+  remarks: "The analytics service client encapsulates the endpoints for the Blob and Table services. It also encapsulates \r\ncredentials for accessing the storage account."
+  example: []
+  syntax:
+    content: public sealed class CloudAnalyticsClient
+    content.vb: Public NotInheritable Class CloudAnalyticsClient
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.#ctor(Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.#ctor(Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  id: '#ctor(Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)'
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: CloudAnalyticsClient(StorageUri, StorageUri, StorageCredentials)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CloudAnalyticsClient(Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.Auth.StorageCredentials)
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient\" data-throw-if-not-resolved=\"false\"></xref> class using the specified Blob and Table service endpoints\r\nand account credentials.\r\n"
+  example: []
+  syntax:
+    content: public CloudAnalyticsClient(StorageUri blobStorageUri, StorageUri tableStorageUri, StorageCredentials credentials)
+    content.vb: Public Sub New(blobStorageUri As StorageUri, tableStorageUri As StorageUri, credentials As StorageCredentials)
+    parameters:
+    - id: blobStorageUri
+      type: Microsoft.WindowsAzure.Storage.StorageUri
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageUri" data-throw-if-not-resolved="false"></xref> object containing the Blob service endpoint to use to create the client.
+    - id: tableStorageUri
+      type: Microsoft.WindowsAzure.Storage.StorageUri
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageUri" data-throw-if-not-resolved="false"></xref> object containing the Table service endpoint to use to create the client.
+    - id: credentials
+      type: Microsoft.WindowsAzure.Storage.Auth.StorageCredentials
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Auth.StorageCredentials" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetLogDirectory(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetLogDirectory(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  id: GetLogDirectory(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: GetLogDirectory(StorageService)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetLogDirectory(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetLogDirectory
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 68
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets a <xref href=\"Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory\" data-throw-if-not-resolved=\"false\"></xref> object containing the logs for the specified storage service.\r\n"
+  example: []
+  syntax:
+    content: public CloudBlobDirectory GetLogDirectory(StorageService service)
+    content.vb: Public Function GetLogDirectory(service As StorageService) As CloudBlobDirectory
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  id: GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: GetHourMetricsTable(StorageService)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetHourMetricsTable
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the hourly metrics table for the specified storage service.\r\n"
+  example: []
+  syntax:
+    content: public CloudTable GetHourMetricsTable(StorageService service)
+    content.vb: Public Function GetHourMetricsTable(service As StorageService) As CloudTable
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.CloudTable
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.CloudTable" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  id: GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: GetHourMetricsTable(StorageService, StorageLocation)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetHourMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, Microsoft.WindowsAzure.Storage.StorageLocation)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetHourMetricsTable
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 89
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the hourly metrics table for the specified storage service.\r\n"
+  example: []
+  syntax:
+    content: public CloudTable GetHourMetricsTable(StorageService service, StorageLocation location)
+    content.vb: Public Function GetHourMetricsTable(service As StorageService, location As StorageLocation) As CloudTable
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: location
+      type: Microsoft.WindowsAzure.Storage.StorageLocation
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageLocation" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.CloudTable
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.CloudTable" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  id: GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: GetMinuteMetricsTable(StorageService)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMinuteMetricsTable
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 143
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the minute metrics table for the specified storage service.\r\n"
+  example: []
+  syntax:
+    content: public CloudTable GetMinuteMetricsTable(StorageService service)
+    content.vb: Public Function GetMinuteMetricsTable(service As StorageService) As CloudTable
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.CloudTable
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.CloudTable" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  id: GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: GetMinuteMetricsTable(StorageService, StorageLocation)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetMinuteMetricsTable(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, Microsoft.WindowsAzure.Storage.StorageLocation)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetMinuteMetricsTable
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 154
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the minute metrics table for the specified storage service.\r\n"
+  example: []
+  syntax:
+    content: public CloudTable GetMinuteMetricsTable(StorageService service, StorageLocation location)
+    content.vb: Public Function GetMinuteMetricsTable(service As StorageService, location As StorageLocation) As CloudTable
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: location
+      type: Microsoft.WindowsAzure.Storage.StorageLocation
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageLocation" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.CloudTable
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.CloudTable" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetCapacityTable
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetCapacityTable
+  id: GetCapacityTable
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: GetCapacityTable()
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.GetCapacityTable()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetCapacityTable
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 207
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the capacity metrics table for the Blob service.\r\n"
+  example: []
+  syntax:
+    content: public CloudTable GetCapacityTable()
+    content.vb: Public Function GetCapacityTable As CloudTable
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.CloudTable
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.CloudTable" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  id: ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ListLogs(StorageService)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogs
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 218
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of log blobs containing Analytics log records. The blobs are retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public IEnumerable<ICloudBlob> ListLogs(StorageService service)
+    content.vb: Public Function ListLogs(service As StorageService) As IEnumerable(Of ICloudBlob)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Blob.ICloudBlob" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ListLogs(StorageService, LoggingOperations, BlobListingDetails, BlobRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations, Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogs
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 235
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of log blobs containing Analytics log records. The blobs are retrieved lazily.\r\n"
+  remarks: "Note that specifying a logging operation type for the <em>operations</em> parameter will return any Analytics log blob that contains the specified logging operation,\r\neven if that log blob also includes other types of logging operations. Also note that the only currently supported values for the <em>details</em> \r\nparameter are <code>None</code> and <code>Metadata</code>."
+  example: []
+  syntax:
+    content: public IEnumerable<ICloudBlob> ListLogs(StorageService service, LoggingOperations operations, BlobListingDetails details, BlobRequestOptions options, OperationContext operationContext)
+    content.vb: Public Function ListLogs(service As StorageService, operations As LoggingOperations, details As BlobListingDetails, options As BlobRequestOptions, operationContext As OperationContext) As IEnumerable(Of ICloudBlob)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: operations
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations" data-throw-if-not-resolved="false"></xref> enumeration value that indicates the types of logging operations on which to filter the log blobs.
+    - id: details
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+      description: 'A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails" data-throw-if-not-resolved="false"></xref> enumeration value that indicates whether or not blob metadata should be returned. Only <code>None</code> and <code>Metadata</code> are valid values. '
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Blob.ICloudBlob" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset})
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset})
+  id: ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset})
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ListLogs(StorageService, DateTimeOffset, Nullable<DateTimeOffset>)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, System.DateTimeOffset, System.Nullable<System.DateTimeOffset>)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogs
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 267
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of log blobs containing Analytics log records. The blobs are retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public IEnumerable<ICloudBlob> ListLogs(StorageService service, DateTimeOffset startTime, DateTimeOffset? endTime)
+    content.vb: Public Function ListLogs(service As StorageService, startTime As DateTimeOffset, endTime As DateTimeOffset?) As IEnumerable(Of ICloudBlob)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: startTime
+      type: System.DateTimeOffset
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the start time for which logs should be retrieved.
+    - id: endTime
+      type: System.Nullable{System.DateTimeOffset}
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the end time for which logs should be retrieved.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Blob.ICloudBlob" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, System.DateTimeOffset, System.Nullable(Of System.DateTimeOffset))
+  name.vb: ListLogs(StorageService, DateTimeOffset, Nullable(Of DateTimeOffset))
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset},Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset},Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset},Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ListLogs(StorageService, DateTimeOffset, Nullable<DateTimeOffset>, LoggingOperations, BlobListingDetails, BlobRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, System.DateTimeOffset, System.Nullable<System.DateTimeOffset>, Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations, Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogs
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 286
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of log blobs containing Analytics log records. The blobs are retrieved lazily.\r\n"
+  remarks: "Note that specifying a logging operation type for the <em>operations</em> parameter will return any Analytics log blob that contains the specified logging operation,\r\neven if that log blob also includes other types of logging operations. Also note that the only currently supported values for the <em>details</em> \r\nparameter are <code>None</code> and <code>Metadata</code>."
+  example: []
+  syntax:
+    content: public IEnumerable<ICloudBlob> ListLogs(StorageService service, DateTimeOffset startTime, DateTimeOffset? endTime, LoggingOperations operations, BlobListingDetails details, BlobRequestOptions options, OperationContext operationContext)
+    content.vb: Public Function ListLogs(service As StorageService, startTime As DateTimeOffset, endTime As DateTimeOffset?, operations As LoggingOperations, details As BlobListingDetails, options As BlobRequestOptions, operationContext As OperationContext) As IEnumerable(Of ICloudBlob)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: startTime
+      type: System.DateTimeOffset
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the start of the time range for which logs should be retrieved.
+    - id: endTime
+      type: System.Nullable{System.DateTimeOffset}
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the end of the time range for which logs should be retrieved.
+    - id: operations
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations" data-throw-if-not-resolved="false"></xref> enumeration value that indicates the types of logging operations on which to filter the log blobs.
+    - id: details
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+      description: 'A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails" data-throw-if-not-resolved="false"></xref> enumeration value that indicates whether or not blob metadata should be returned. Only <code>None</code> and <code>Metadata</code> are valid values. '
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Blob.ICloudBlob" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogs(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, System.DateTimeOffset, System.Nullable(Of System.DateTimeOffset), Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations, Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  name.vb: ListLogs(StorageService, DateTimeOffset, Nullable(Of DateTimeOffset), LoggingOperations, BlobListingDetails, BlobRequestOptions, OperationContext)
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  id: ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ListLogRecords(StorageService)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogRecords
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 443
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of Analytics log records, retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public IEnumerable<LogRecord> ListLogRecords(StorageService service)
+    content.vb: Public Function ListLogRecords(service As StorageService) As IEnumerable(Of LogRecord)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Analytics.LogRecord}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Analytics.LogRecord" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ListLogRecords(StorageService, BlobRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogRecords
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 455
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of Analytics log records, retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public IEnumerable<LogRecord> ListLogRecords(StorageService service, BlobRequestOptions options, OperationContext operationContext)
+    content.vb: Public Function ListLogRecords(service As StorageService, options As BlobRequestOptions, operationContext As OperationContext) As IEnumerable(Of LogRecord)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Analytics.LogRecord}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Analytics.LogRecord" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset})
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset})
+  id: ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset})
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ListLogRecords(StorageService, DateTimeOffset, Nullable<DateTimeOffset>)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, System.DateTimeOffset, System.Nullable<System.DateTimeOffset>)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogRecords
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 467
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of Analytics log records, retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public IEnumerable<LogRecord> ListLogRecords(StorageService service, DateTimeOffset startTime, DateTimeOffset? endTime)
+    content.vb: Public Function ListLogRecords(service As StorageService, startTime As DateTimeOffset, endTime As DateTimeOffset?) As IEnumerable(Of LogRecord)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: startTime
+      type: System.DateTimeOffset
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the start of the time range for which logs should be retrieved.
+    - id: endTime
+      type: System.Nullable{System.DateTimeOffset}
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the end of the time range for which logs should be retrieved.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Analytics.LogRecord}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Analytics.LogRecord" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, System.DateTimeOffset, System.Nullable(Of System.DateTimeOffset))
+  name.vb: ListLogRecords(StorageService, DateTimeOffset, Nullable(Of DateTimeOffset))
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset},Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset},Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,System.DateTimeOffset,System.Nullable{System.DateTimeOffset},Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ListLogRecords(StorageService, DateTimeOffset, Nullable<DateTimeOffset>, BlobRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, System.DateTimeOffset, System.Nullable<System.DateTimeOffset>, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListLogRecords
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 481
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of Analytics log records, retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public IEnumerable<LogRecord> ListLogRecords(StorageService service, DateTimeOffset startTime, DateTimeOffset? endTime, BlobRequestOptions options, OperationContext operationContext)
+    content.vb: Public Function ListLogRecords(service As StorageService, startTime As DateTimeOffset, endTime As DateTimeOffset?, options As BlobRequestOptions, operationContext As OperationContext) As IEnumerable(Of LogRecord)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: startTime
+      type: System.DateTimeOffset
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the start of the time range for which logs should be retrieved.
+    - id: endTime
+      type: System.Nullable{System.DateTimeOffset}
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the end of the time range for which logs should be retrieved.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Analytics.LogRecord}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Analytics.LogRecord" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ListLogRecords(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, System.DateTimeOffset, System.Nullable(Of System.DateTimeOffset), Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  name.vb: ListLogRecords(StorageService, DateTimeOffset, Nullable(Of DateTimeOffset), BlobRequestOptions, OperationContext)
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlobs(System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob})
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlobs(System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob})
+  id: ParseLogBlobs(System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob})
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ParseLogBlobs(IEnumerable<ICloudBlob>)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlobs(System.Collections.Generic.IEnumerable<Microsoft.WindowsAzure.Storage.Blob.ICloudBlob>)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ParseLogBlobs
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 491
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of Analytics log records, retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<LogRecord> ParseLogBlobs(IEnumerable<ICloudBlob> logBlobs)
+    content.vb: Public Shared Function ParseLogBlobs(logBlobs As IEnumerable(Of ICloudBlob)) As IEnumerable(Of LogRecord)
+    parameters:
+    - id: logBlobs
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob}
+      description: An enumerable collection of <xref href="Microsoft.WindowsAzure.Storage.Blob.ICloudBlob" data-throw-if-not-resolved="false"></xref> objects from which to parse log records.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Analytics.LogRecord}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Analytics.LogRecord" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlobs(System.Collections.Generic.IEnumerable(Of Microsoft.WindowsAzure.Storage.Blob.ICloudBlob))
+  name.vb: ParseLogBlobs(IEnumerable(Of ICloudBlob))
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlob(Microsoft.WindowsAzure.Storage.Blob.ICloudBlob)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlob(Microsoft.WindowsAzure.Storage.Blob.ICloudBlob)
+  id: ParseLogBlob(Microsoft.WindowsAzure.Storage.Blob.ICloudBlob)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ParseLogBlob(ICloudBlob)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogBlob(Microsoft.WindowsAzure.Storage.Blob.ICloudBlob)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ParseLogBlob
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 501
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of Analytics log records, retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<LogRecord> ParseLogBlob(ICloudBlob logBlob)
+    content.vb: Public Shared Function ParseLogBlob(logBlob As ICloudBlob) As IEnumerable(Of LogRecord)
+    parameters:
+    - id: logBlob
+      type: Microsoft.WindowsAzure.Storage.Blob.ICloudBlob
+      description: The <xref href="Microsoft.WindowsAzure.Storage.Blob.ICloudBlob" data-throw-if-not-resolved="false"></xref> object from which to parse log records.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Analytics.LogRecord}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Analytics.LogRecord" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogStream(System.IO.Stream)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogStream(System.IO.Stream)
+  id: ParseLogStream(System.IO.Stream)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: ParseLogStream(Stream)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.ParseLogStream(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ParseLogStream
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 522
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nReturns an enumerable collection of Analytics log records, retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<LogRecord> ParseLogStream(Stream stream)
+    content.vb: Public Shared Function ParseLogStream(stream As Stream) As IEnumerable(Of LogRecord)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> object from which to parse log records.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Analytics.LogRecord}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Analytics.LogRecord" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateCapacityQuery
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateCapacityQuery
+  id: CreateCapacityQuery
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: CreateCapacityQuery()
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateCapacityQuery()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateCapacityQuery
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 539
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nCreates a <xref href=\"Microsoft.WindowsAzure.Storage.Table.TableQuery\" data-throw-if-not-resolved=\"false\"></xref> object for querying the Blob service capacity table.\r\n"
+  remarks: This method is applicable only to Blob service.
+  example: []
+  syntax:
+    content: public TableQuery<CapacityEntity> CreateCapacityQuery()
+    content.vb: Public Function CreateCapacityQuery As TableQuery(Of CapacityEntity)
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.TableQuery{Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity}
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuery" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateHourMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateHourMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  id: CreateHourMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: CreateHourMetricsQuery(StorageService, StorageLocation)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateHourMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, Microsoft.WindowsAzure.Storage.StorageLocation)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateHourMetricsQuery
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 551
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nCreates a <xref href=\"Microsoft.WindowsAzure.Storage.Table.TableQuery\" data-throw-if-not-resolved=\"false\"></xref> object for querying an hourly metrics log table.\r\n"
+  example: []
+  syntax:
+    content: public TableQuery<MetricsEntity> CreateHourMetricsQuery(StorageService service, StorageLocation location)
+    content.vb: Public Function CreateHourMetricsQuery(service As StorageService, location As StorageLocation) As TableQuery(Of MetricsEntity)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: location
+      type: Microsoft.WindowsAzure.Storage.StorageLocation
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageLocation" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.TableQuery{Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity}
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuery" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateMinuteMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateMinuteMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  id: CreateMinuteMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService,Microsoft.WindowsAzure.Storage.StorageLocation)
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  langs:
+  - csharp
+  - vb
+  name: CreateMinuteMetricsQuery(StorageService, StorageLocation)
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient.CreateMinuteMetricsQuery(Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService, Microsoft.WindowsAzure.Storage.StorageLocation)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateMinuteMetricsQuery
+    path: src/Storage/ClassLibraryCommon/Analytics/CloudAnalyticsClient.cs
+    startLine: 563
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nCreates a <xref href=\"Microsoft.WindowsAzure.Storage.Table.TableQuery\" data-throw-if-not-resolved=\"false\"></xref> object for querying a minute metrics log table.\r\n"
+  example: []
+  syntax:
+    content: public TableQuery<MetricsEntity> CreateMinuteMetricsQuery(StorageService service, StorageLocation location)
+    content.vb: Public Function CreateMinuteMetricsQuery(service As StorageService, location As StorageLocation) As TableQuery(Of MetricsEntity)
+    parameters:
+    - id: service
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService" data-throw-if-not-resolved="false"></xref> enumeration value.
+    - id: location
+      type: Microsoft.WindowsAzure.Storage.StorageLocation
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageLocation" data-throw-if-not-resolved="false"></xref> enumeration value.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.TableQuery{Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity}
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuery" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Analytics
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Analytics
+  fullName: Microsoft.WindowsAzure.Storage.Analytics
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  parent: Microsoft.WindowsAzure.Storage.Analytics
+  isExternal: false
+  name: CloudAnalyticsClient
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+- uid: Microsoft.WindowsAzure.Storage.StorageUri
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: StorageUri
+  fullName: Microsoft.WindowsAzure.Storage.StorageUri
+- uid: Microsoft.WindowsAzure.Storage.Auth.StorageCredentials
+  parent: Microsoft.WindowsAzure.Storage.Auth
+  isExternal: false
+  name: StorageCredentials
+  fullName: Microsoft.WindowsAzure.Storage.Auth.StorageCredentials
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage
+- uid: Microsoft.WindowsAzure.Storage.Auth
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Auth
+  fullName: Microsoft.WindowsAzure.Storage.Auth
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: CloudBlobDirectory
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+  parent: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: StorageService
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol.StorageService
+- uid: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Blob
+  fullName: Microsoft.WindowsAzure.Storage.Blob
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol
+- uid: Microsoft.WindowsAzure.Storage.Table.CloudTable
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: CloudTable
+  fullName: Microsoft.WindowsAzure.Storage.Table.CloudTable
+- uid: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table
+  fullName: Microsoft.WindowsAzure.Storage.Table
+- uid: Microsoft.WindowsAzure.Storage.StorageLocation
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: StorageLocation
+  fullName: Microsoft.WindowsAzure.Storage.StorageLocation
+- uid: Microsoft.WindowsAzure.Storage.Blob.ICloudBlob
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: ICloudBlob
+  fullName: Microsoft.WindowsAzure.Storage.Blob.ICloudBlob
+- uid: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.ICloudBlob}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ICloudBlob>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.WindowsAzure.Storage.Blob.ICloudBlob>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of Microsoft.WindowsAzure.Storage.Blob.ICloudBlob)
+  name.vb: IEnumerable(Of ICloudBlob)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.Blob.ICloudBlob
+    name: ICloudBlob
+    fullName: Microsoft.WindowsAzure.Storage.Blob.ICloudBlob
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.Blob.ICloudBlob
+    name: ICloudBlob
+    fullName: Microsoft.WindowsAzure.Storage.Blob.ICloudBlob
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations
+  parent: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: LoggingOperations
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol.LoggingOperations
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: BlobListingDetails
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: BlobRequestOptions
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+- uid: Microsoft.WindowsAzure.Storage.OperationContext
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: OperationContext
+  fullName: Microsoft.WindowsAzure.Storage.OperationContext
+- uid: System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  fullname.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Analytics.LogRecord
+  isExternal: false
+  name: LogRecord
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.LogRecord
+- uid: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Analytics.LogRecord}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<LogRecord>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.WindowsAzure.Storage.Analytics.LogRecord>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of Microsoft.WindowsAzure.Storage.Analytics.LogRecord)
+  name.vb: IEnumerable(Of LogRecord)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.Analytics.LogRecord
+    name: LogRecord
+    fullName: Microsoft.WindowsAzure.Storage.Analytics.LogRecord
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.Analytics.LogRecord
+    name: LogRecord
+    fullName: Microsoft.WindowsAzure.Storage.Analytics.LogRecord
+  - name: )
+    fullName: )
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableQuery
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery{Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity}
+  parent: Microsoft.WindowsAzure.Storage.Table
+  definition: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  name: TableQuery<CapacityEntity>
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity>
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity)
+  name.vb: TableQuery(Of CapacityEntity)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+    name: TableQuery
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+    name: CapacityEntity
+    fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+    name: TableQuery
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+    name: CapacityEntity
+    fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableQuery<TElement>
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement)
+  name.vb: TableQuery(Of TElement)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+    name: TableQuery
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  - name: <
+    fullName: <
+  - name: TElement
+    fullName: TElement
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+    name: TableQuery
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    fullName: TElement
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery{Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity}
+  parent: Microsoft.WindowsAzure.Storage.Table
+  definition: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  name: TableQuery<MetricsEntity>
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity>
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity)
+  name.vb: TableQuery(Of MetricsEntity)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+    name: TableQuery
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+    name: MetricsEntity
+    fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+    name: TableQuery
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+    name: MetricsEntity
+    fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  - name: )
+    fullName: )

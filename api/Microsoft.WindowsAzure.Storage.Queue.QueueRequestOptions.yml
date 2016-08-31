@@ -1,0 +1,615 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  commentId: T:Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  id: QueueRequestOptions
+  parent: Microsoft.WindowsAzure.Storage.Queue
+  children:
+  - Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.#ctor
+  - Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.LocationMode
+  - Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.MaximumExecutionTime
+  - Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.RetryPolicy
+  - Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.ServerTimeout
+  langs:
+  - csharp
+  - vb
+  name: QueueRequestOptions
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  type: Class
+  source:
+    remote:
+      path: src/Storage/Common/Queue/QueueRequestOptions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: QueueRequestOptions
+    path: src/Storage/Common/Queue/QueueRequestOptions.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nRepresents a set of timeout and retry policy options that may be specified for a request against the Queue service.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class QueueRequestOptions : IRequestOptions'
+    content.vb: >-
+      Public NotInheritable Class QueueRequestOptions
+
+          Implements IRequestOptions
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.WindowsAzure.Storage.IRequestOptions
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.#ctor
+  commentId: M:Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.#ctor
+  id: '#ctor'
+  parent: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  langs:
+  - csharp
+  - vb
+  name: QueueRequestOptions()
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.QueueRequestOptions()
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/Common/Queue/QueueRequestOptions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/Common/Queue/QueueRequestOptions.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions\" data-throw-if-not-resolved=\"false\"></xref> class.\r\n"
+  example: []
+  syntax:
+    content: public QueueRequestOptions()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.RetryPolicy
+  commentId: P:Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.RetryPolicy
+  id: RetryPolicy
+  parent: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  langs:
+  - csharp
+  - vb
+  name: RetryPolicy
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.RetryPolicy
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/Queue/QueueRequestOptions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RetryPolicy
+    path: src/Storage/Common/Queue/QueueRequestOptions.cs
+    startLine: 164
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nGets or sets the retry policy for the request.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IRetryPolicy RetryPolicy
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property RetryPolicy As IRetryPolicy
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy
+      description: An object of type <xref href="Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy" data-throw-if-not-resolved="false"></xref>.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.LocationMode
+  commentId: P:Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.LocationMode
+  id: LocationMode
+  parent: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  langs:
+  - csharp
+  - vb
+  name: LocationMode
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.LocationMode
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/Queue/QueueRequestOptions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: LocationMode
+    path: src/Storage/Common/Queue/QueueRequestOptions.cs
+    startLine: 184
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nGets or sets the location mode of the request.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public LocationMode? LocationMode
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property LocationMode As LocationMode?
+    parameters: []
+    return:
+      type: System.Nullable{Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode}
+      description: A <xref href="Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode" data-throw-if-not-resolved="false"></xref> enumeration value indicating the location mode of the request.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.ServerTimeout
+  commentId: P:Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.ServerTimeout
+  id: ServerTimeout
+  parent: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  langs:
+  - csharp
+  - vb
+  name: ServerTimeout
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.ServerTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/Queue/QueueRequestOptions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServerTimeout
+    path: src/Storage/Common/Queue/QueueRequestOptions.cs
+    startLine: 190
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nGets or sets the server timeout interval for the request.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public TimeSpan? ServerTimeout
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ServerTimeout As TimeSpan?
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+      description: A <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> containing the server timeout interval for the request.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.MaximumExecutionTime
+  commentId: P:Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.MaximumExecutionTime
+  id: MaximumExecutionTime
+  parent: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  langs:
+  - csharp
+  - vb
+  name: MaximumExecutionTime
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions.MaximumExecutionTime
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Common/Queue/QueueRequestOptions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MaximumExecutionTime
+    path: src/Storage/Common/Queue/QueueRequestOptions.cs
+    startLine: 196
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Queue
+  summary: "\r\nGets or sets the maximum execution time across all potential retries for the request. \r\n"
+  example: []
+  syntax:
+    content: >-
+      public TimeSpan? MaximumExecutionTime
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property MaximumExecutionTime As TimeSpan?
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+      description: A <xref href="System.TimeSpan" data-throw-if-not-resolved="false"></xref> representing the maximum execution time for retries for the request.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Queue
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Queue
+  fullName: Microsoft.WindowsAzure.Storage.Queue
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.WindowsAzure.Storage.IRequestOptions
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: IRequestOptions
+  fullName: Microsoft.WindowsAzure.Storage.IRequestOptions
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage
+- uid: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+  parent: Microsoft.WindowsAzure.Storage.Queue
+  isExternal: false
+  name: QueueRequestOptions
+  fullName: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
+- uid: Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy
+  parent: Microsoft.WindowsAzure.Storage.RetryPolicies
+  isExternal: false
+  name: IRetryPolicy
+  fullName: Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy
+- uid: Microsoft.WindowsAzure.Storage.RetryPolicies
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.RetryPolicies
+  fullName: Microsoft.WindowsAzure.Storage.RetryPolicies
+- uid: Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode
+  parent: Microsoft.WindowsAzure.Storage.RetryPolicies
+  isExternal: false
+  name: LocationMode
+  fullName: Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode
+- uid: System.Nullable{Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<LocationMode>
+  fullName: System.Nullable<Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode>
+  fullname.vb: System.Nullable(Of Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode)
+  name.vb: Nullable(Of LocationMode)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode
+    name: LocationMode
+    fullName: Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode
+    name: LocationMode
+    fullName: Microsoft.WindowsAzure.Storage.RetryPolicies.LocationMode
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  fullName: System.Nullable<T>
+  fullname.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  fullName: System.Nullable<System.TimeSpan>
+  fullname.vb: System.Nullable(Of System.TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    fullName: )

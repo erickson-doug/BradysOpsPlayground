@@ -1,0 +1,258 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  commentId: T:Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  id: SharedAccessFilePermissions
+  parent: Microsoft.WindowsAzure.Storage.File
+  children:
+  - Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Create
+  - Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Delete
+  - Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.List
+  - Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.None
+  - Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Read
+  - Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Write
+  langs:
+  - csharp
+  - vb
+  name: SharedAccessFilePermissions
+  fullName: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  type: Enum
+  source:
+    remote:
+      path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SharedAccessFilePermissions
+    path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+    startLine: 24
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nSpecifies the set of possible permissions for a shared access policy.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum SharedAccessFilePermissions
+    content.vb: >-
+      <Flags>
+
+      Public Enum SharedAccessFilePermissions
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.None
+  commentId: F:Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.None
+  id: None
+  parent: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  langs:
+  - csharp
+  - vb
+  name: None
+  fullName: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.None
+  type: Field
+  source:
+    remote:
+      path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: None
+    path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nNo shared access granted.\r\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Read
+  commentId: F:Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Read
+  id: Read
+  parent: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  langs:
+  - csharp
+  - vb
+  name: Read
+  fullName: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Read
+  type: Field
+  source:
+    remote:
+      path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Read
+    path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nRead access granted.\r\n"
+  example: []
+  syntax:
+    content: Read = 1
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Write
+  commentId: F:Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Write
+  id: Write
+  parent: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  langs:
+  - csharp
+  - vb
+  name: Write
+  fullName: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Write
+  type: Field
+  source:
+    remote:
+      path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Write
+    path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nWrite access granted.\r\n"
+  example: []
+  syntax:
+    content: Write = 2
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Delete
+  commentId: F:Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Delete
+  id: Delete
+  parent: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  fullName: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Delete
+  type: Field
+  source:
+    remote:
+      path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Delete
+    path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nDelete access granted for files.\r\n"
+  example: []
+  syntax:
+    content: Delete = 4
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.List
+  commentId: F:Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.List
+  id: List
+  parent: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  langs:
+  - csharp
+  - vb
+  name: List
+  fullName: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.List
+  type: Field
+  source:
+    remote:
+      path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: List
+    path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nList access granted.\r\n"
+  example: []
+  syntax:
+    content: List = 8
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Create
+  commentId: F:Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Create
+  id: Create
+  parent: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  langs:
+  - csharp
+  - vb
+  name: Create
+  fullName: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions.Create
+  type: Field
+  source:
+    remote:
+      path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Create
+    path: src/Storage/Common/File/SharedAccessFilePermissions.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.File
+  summary: "\r\nCreate access granted.\r\n"
+  example: []
+  syntax:
+    content: Create = 16
+    return:
+      type: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.File
+  fullName: Microsoft.WindowsAzure.Storage.File
+- uid: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions
+  parent: Microsoft.WindowsAzure.Storage.File
+  isExternal: false
+  name: SharedAccessFilePermissions
+  fullName: Microsoft.WindowsAzure.Storage.File.SharedAccessFilePermissions

@@ -1,0 +1,768 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  commentId: T:Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  id: CapacityEntity
+  parent: Microsoft.WindowsAzure.Storage.Analytics
+  children:
+  - Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.#ctor
+  - Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.Capacity
+  - Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.ContainerCount
+  - Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.ObjectCount
+  - Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.Time
+  langs:
+  - csharp
+  - vb
+  name: CapacityEntity
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  type: Class
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CapacityEntity
+    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nRepresents an entity in a storage analytics capacity table.\r\n"
+  example: []
+  syntax:
+    content: 'public class CapacityEntity : TableEntity, ITableEntity'
+    content.vb: >-
+      Public Class CapacityEntity
+
+          Inherits TableEntity
+
+          Implements ITableEntity
+  inheritance:
+  - System.Object
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity
+  implements:
+  - Microsoft.WindowsAzure.Storage.Table.ITableEntity
+  inheritedMembers:
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.PartitionKey
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.RowKey
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.Timestamp
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.ETag
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.DisableCompiledSerializers
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.DisablePropertyResolverCache
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.#ctor
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.#ctor
+  id: '#ctor'
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  langs:
+  - csharp
+  - vb
+  name: CapacityEntity()
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.CapacityEntity()
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity\" data-throw-if-not-resolved=\"false\"></xref> class.\r\n"
+  example: []
+  syntax:
+    content: public CapacityEntity()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.Time
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.Time
+  id: Time
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  langs:
+  - csharp
+  - vb
+  name: Time
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.Time
+  type: Property
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Time
+    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the capacity entity's timestamp in UTC, representing the start time for that log entry.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTimeOffset Time
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Time As DateTimeOffset
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+      description: A string containing a timestamp in UTC.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.Capacity
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.Capacity
+  id: Capacity
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.Capacity
+  type: Property
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Capacity
+    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the Capacity property for capacity entity, which indicates the quantity of Blob storage used by the storage account.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long Capacity
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Capacity As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the quantity of Blob storage used by the storage account, per this capacity entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.ContainerCount
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.ContainerCount
+  id: ContainerCount
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  langs:
+  - csharp
+  - vb
+  name: ContainerCount
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.ContainerCount
+  type: Property
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ContainerCount
+    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the ContainerCount property for the capacity entity, which indicates the number of blob containers in the storage account.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ContainerCount
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ContainerCount As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of blob containers in the storage account, per this capacity entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.ObjectCount
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.ObjectCount
+  id: ObjectCount
+  parent: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  langs:
+  - csharp
+  - vb
+  name: ObjectCount
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity.ObjectCount
+  type: Property
+  source:
+    remote:
+      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ObjectCount
+    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    startLine: 64
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the ObjectCount property for the capacity entity, which indicates the number of committed and uncommitted blobs in the storage account.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ObjectCount
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ObjectCount As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of committed and uncommitted blobs in the storage account, per this capacity entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Analytics
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Analytics
+  fullName: Microsoft.WindowsAzure.Storage.Analytics
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableEntity
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity
+- uid: Microsoft.WindowsAzure.Storage.Table.ITableEntity
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: ITableEntity
+  fullName: Microsoft.WindowsAzure.Storage.Table.ITableEntity
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.PartitionKey
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: PartitionKey
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.PartitionKey
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.RowKey
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: RowKey
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.RowKey
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.Timestamp
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: Timestamp
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.Timestamp
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ETag
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: ETag
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ETag
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: true
+  name: ReadEntity(IDictionary<String, EntityProperty>, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary<System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty>, Microsoft.WindowsAzure.Storage.OperationContext)
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary(Of System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty), Microsoft.WindowsAzure.Storage.OperationContext)
+  name.vb: ReadEntity(IDictionary(Of String, EntityProperty), OperationContext)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+    name: ReadEntity
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity
+  - name: (
+    fullName: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+    name: EntityProperty
+    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+    name: ReadEntity
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity
+  - name: (
+    fullName: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+    name: EntityProperty
+    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: true
+  name: ReadUserObject(Object, IDictionary<String, EntityProperty>, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object, System.Collections.Generic.IDictionary<System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty>, Microsoft.WindowsAzure.Storage.OperationContext)
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object, System.Collections.Generic.IDictionary(Of System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty), Microsoft.WindowsAzure.Storage.OperationContext)
+  name.vb: ReadUserObject(Object, IDictionary(Of String, EntityProperty), OperationContext)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+    name: ReadUserObject
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+    name: EntityProperty
+    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+    name: ReadUserObject
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+    name: EntityProperty
+    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: WriteEntity(OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+    name: WriteEntity
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity
+  - name: (
+    fullName: (
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+    name: WriteEntity
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity
+  - name: (
+    fullName: (
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: true
+  name: WriteUserObject(Object, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object, Microsoft.WindowsAzure.Storage.OperationContext)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object,Microsoft.WindowsAzure.Storage.OperationContext)
+    name: WriteUserObject
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object,Microsoft.WindowsAzure.Storage.OperationContext)
+    name: WriteUserObject
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.DisableCompiledSerializers
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: DisableCompiledSerializers
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.DisableCompiledSerializers
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.DisablePropertyResolverCache
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: DisablePropertyResolverCache
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.DisablePropertyResolverCache
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table
+  fullName: Microsoft.WindowsAzure.Storage.Table
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+  isExternal: false
+  name: CapacityEntity
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CapacityEntity
+- uid: System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
