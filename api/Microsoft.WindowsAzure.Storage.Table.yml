@@ -7,6 +7,7 @@ items:
   - Microsoft.WindowsAzure.Storage.Table.CloudTableClient
   - Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity
   - Microsoft.WindowsAzure.Storage.Table.EdmType
+  - Microsoft.WindowsAzure.Storage.Table.EncryptPropertyAttribute
   - Microsoft.WindowsAzure.Storage.Table.EntityProperty
   - Microsoft.WindowsAzure.Storage.Table.EntityResolver`1
   - Microsoft.WindowsAzure.Storage.Table.IgnorePropertyAttribute
@@ -17,6 +18,7 @@ items:
   - Microsoft.WindowsAzure.Storage.Table.SharedAccessTablePolicy
   - Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
   - Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+  - Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy
   - Microsoft.WindowsAzure.Storage.Table.TableEntity
   - Microsoft.WindowsAzure.Storage.Table.TableOperation
   - Microsoft.WindowsAzure.Storage.Table.TableOperationType
@@ -25,7 +27,6 @@ items:
   - Microsoft.WindowsAzure.Storage.Table.TablePermissions
   - Microsoft.WindowsAzure.Storage.Table.TableQuery
   - Microsoft.WindowsAzure.Storage.Table.TableQuery`1
-  - Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
   - Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
   - Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
   - Microsoft.WindowsAzure.Storage.Table.TableResult
@@ -50,21 +51,25 @@ references:
   isExternal: false
   name: CloudTableClient
   fullName: Microsoft.WindowsAzure.Storage.Table.CloudTableClient
-- uid: Microsoft.WindowsAzure.Storage.Table.TableOperation
-  parent: Microsoft.WindowsAzure.Storage.Table
+- uid: Microsoft.WindowsAzure.Storage.Table.EncryptPropertyAttribute
   isExternal: false
-  name: TableOperation
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableOperation
-- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery
-  parent: Microsoft.WindowsAzure.Storage.Table
-  isExternal: false
-  name: TableQuery
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  name: EncryptPropertyAttribute
+  fullName: Microsoft.WindowsAzure.Storage.Table.EncryptPropertyAttribute
 - uid: Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
   parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
   name: TableBatchOperation
   fullName: Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableEncryptionPolicy
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy
+- uid: Microsoft.WindowsAzure.Storage.Table.TableOperation
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableOperation
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableOperation
 - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
   parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
@@ -92,10 +97,11 @@ references:
     fullName: TElement
   - name: )
     fullName: )
-- uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
-  name: TableQuerySegment
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
+  name: TableQuery
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
 - uid: Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity
   isExternal: false
   name: DynamicTableEntity
@@ -171,6 +177,7 @@ references:
   name: TableContinuationToken
   fullName: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
 - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
   name: TableEntity
   fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity
@@ -194,6 +201,7 @@ references:
   name: TablePermissions
   fullName: Microsoft.WindowsAzure.Storage.Table.TablePermissions
 - uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+  parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
   name: TableQuerySegment<TElement>
   fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment<TElement>
@@ -225,10 +233,12 @@ references:
   name: TableRequestOptions
   fullName: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
 - uid: Microsoft.WindowsAzure.Storage.Table.TableResult
+  parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
   name: TableResult
   fullName: Microsoft.WindowsAzure.Storage.Table.TableResult
 - uid: Microsoft.WindowsAzure.Storage.Table.TableResultSegment
+  parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
   name: TableResultSegment
   fullName: Microsoft.WindowsAzure.Storage.Table.TableResultSegment

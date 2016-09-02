@@ -8,6 +8,7 @@ items:
   - Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.#ctor(System.String,System.String)
   - Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty})
   - Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.ETag
+  - Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.Item(System.String)
   - Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.PartitionKey
   - Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.Properties
   - Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
@@ -44,13 +45,13 @@ items:
   implements:
   - Microsoft.WindowsAzure.Storage.Table.ITableEntity
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
   - sealed
@@ -397,6 +398,56 @@ items:
   - set
   modifiers.vb:
   - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.Item(System.String)
+  commentId: P:Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.Item(System.String)
+  id: Item(System.String)
+  parent: Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity
+  langs:
+  - csharp
+  - vb
+  name: Item[String]
+  fullName: Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.Item[System.String]
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/Common/Table/DynamicTableEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: this[]
+    path: src/Storage/Lib/Common/Table/DynamicTableEntity.cs
+    startLine: 119
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nGets or sets the entity's property, given the name of the property.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public EntityProperty this[string key]
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Item(key As String) As EntityProperty
+    parameters:
+    - id: key
+      type: System.String
+      description: A string containing the name of the property.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+      description: An <xref href="Microsoft.WindowsAzure.Storage.Table.EntityProperty" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.Item(System.String)
+  name.vb: Item(String)
 - uid: Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
   commentId: M:Microsoft.WindowsAzure.Storage.Table.DynamicTableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
   id: ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
@@ -489,6 +540,29 @@ references:
   isExternal: true
   name: Object
   fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -548,6 +622,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -627,72 +744,6 @@ references:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
     fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
     isExternal: true
   - name: (
     fullName: (

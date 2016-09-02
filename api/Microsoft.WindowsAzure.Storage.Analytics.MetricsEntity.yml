@@ -1,0 +1,2476 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  commentId: T:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  id: MetricsEntity
+  parent: Microsoft.WindowsAzure.Storage.Analytics
+  children:
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.#ctor
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AccessType
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousAuthorizationError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousClientOtherError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousClientTimeoutError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousNetworkError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousServerOtherError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousServerTimeoutError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousSuccess
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousThrottlingError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AuthorizationError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Availability
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AverageE2ELatency
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AverageServerLatency
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ClientOtherError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ClientTimeoutError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.NetworkError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentAuthorizationError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentClientOtherError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentNetworkError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentServerOtherError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentSuccess
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentThrottlingError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentTimeoutError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASAuthorizationError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASClientOtherError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASClientTimeoutError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASNetworkError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASServerOtherError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASServerTimeoutError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASSuccess
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASThrottlingError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ServerOtherError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ServerTimeoutError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Success
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ThrottlingError
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Time
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalBillableRequests
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalEgress
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalIngress
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalRequests
+  - Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: MetricsEntity
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  type: Class
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: MetricsEntity
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nRepresents an entity in a storage analytics metrics table.\r\n"
+  example: []
+  syntax:
+    content: 'public class MetricsEntity : TableEntity, ITableEntity'
+    content.vb: >-
+      Public Class MetricsEntity
+
+          Inherits TableEntity
+
+          Implements ITableEntity
+  inheritance:
+  - System.Object
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity
+  implements:
+  - Microsoft.WindowsAzure.Storage.Table.ITableEntity
+  inheritedMembers:
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.PartitionKey
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.RowKey
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.Timestamp
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.ETag
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.DisableCompiledSerializers
+  - Microsoft.WindowsAzure.Storage.Table.TableEntity.DisablePropertyResolverCache
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.#ctor
+  commentId: M:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.#ctor
+  id: '#ctor'
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: MetricsEntity()
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.MetricsEntity()
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity\" data-throw-if-not-resolved=\"false\"></xref> class.\r\n"
+  example: []
+  syntax:
+    content: public MetricsEntity()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Time
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Time
+  id: Time
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: Time
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Time
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Time
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 42
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the metrics entity's timestamp in UTC, representing the start time for that log entry.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public DateTimeOffset Time
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Time As DateTimeOffset
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+      description: A string containing the timestamp in UTC.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AccessType
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AccessType
+  id: AccessType
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AccessType
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AccessType
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AccessType
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the AccessType property for the metrics entity, indicating the type of access logged.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string AccessType
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property AccessType As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string containing the access type for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TransactionType
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TransactionType
+  id: TransactionType
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: TransactionType
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TransactionType
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TransactionType
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 69
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets the TransactionType property for the metrics entity, indicating the type of transaction logged.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string TransactionType
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property TransactionType As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string containing the transaction type for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalIngress
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalIngress
+  id: TotalIngress
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: TotalIngress
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalIngress
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TotalIngress
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the TotalIngress property for the metrics entity, indicating the quantity of ingress data, in bytes.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long TotalIngress
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TotalIngress As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the quantity of ingress data, in bytes, for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalEgress
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalEgress
+  id: TotalEgress
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: TotalEgress
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalEgress
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TotalEgress
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 90
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the TotalEgress property for the metrics entity, indicating the quantity of egress data, in bytes.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long TotalEgress
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TotalEgress As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the quantity of egress data, in bytes, for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalRequests
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalRequests
+  id: TotalRequests
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: TotalRequests
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalRequests
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TotalRequests
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 96
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the TotalRequests property for the metrics entity, indicating the total number of requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long TotalRequests
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TotalRequests As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of total requests for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalBillableRequests
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalBillableRequests
+  id: TotalBillableRequests
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: TotalBillableRequests
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.TotalBillableRequests
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TotalBillableRequests
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 102
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the TotalBillableRequests property for the metrics entity, indicating the total number of billable requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long TotalBillableRequests
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property TotalBillableRequests As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the total number of billable requests for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Availability
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Availability
+  id: Availability
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: Availability
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Availability
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Availability
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 108
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the Availability property for the metrics entity, indicating the percentage of availability.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double Availability
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Availability As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the percentage of availability for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AverageE2ELatency
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AverageE2ELatency
+  id: AverageE2ELatency
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AverageE2ELatency
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AverageE2ELatency
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AverageE2ELatency
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 114
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AverageE2ELatency property for the metrics entity, indicating the average end-to-end latency of successful requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double AverageE2ELatency
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AverageE2ELatency As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the average end-to-end latency of successful requests for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AverageServerLatency
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AverageServerLatency
+  id: AverageServerLatency
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AverageServerLatency
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AverageServerLatency
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AverageServerLatency
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 121
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AverageServerLatency property for the metrics entity, indicating the average latency for the service to process \r\na successful request.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double AverageServerLatency
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AverageServerLatency As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the average latency for the service to process a successful request for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentSuccess
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentSuccess
+  id: PercentSuccess
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: PercentSuccess
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentSuccess
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PercentSuccess
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 127
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the PercentSuccess property for the metrics entity, indicating the percentage of successful requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double PercentSuccess
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PercentSuccess As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the percentage of successful requests for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentThrottlingError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentThrottlingError
+  id: PercentThrottlingError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: PercentThrottlingError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentThrottlingError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PercentThrottlingError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 133
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the PercentThrottlingError property for the metrics entity, indicating the percentage of requests that failed with a throttling error.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double PercentThrottlingError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PercentThrottlingError As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the percentage of requests that failed with a throttling error for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentTimeoutError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentTimeoutError
+  id: PercentTimeoutError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: PercentTimeoutError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentTimeoutError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PercentTimeoutError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 139
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the PercentTimeoutError property for the metrics entity, indicating the percentage of requests that failed with a timeout error.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double PercentTimeoutError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PercentTimeoutError As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the percentage of requests that failed with a timeout error for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentServerOtherError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentServerOtherError
+  id: PercentServerOtherError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: PercentServerOtherError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentServerOtherError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PercentServerOtherError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 145
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the PercentServerOtherError property for the metrics entity, indicating the percentage of requests that failed with a ServerOtherError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double PercentServerOtherError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PercentServerOtherError As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the percentage of requests that failed with a ServerOtherError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentClientOtherError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentClientOtherError
+  id: PercentClientOtherError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: PercentClientOtherError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentClientOtherError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PercentClientOtherError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 151
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the PercentClientOtherError property for the metrics entity, indicating the percentage of requests that failed with a ClientOtherError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double PercentClientOtherError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PercentClientOtherError As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the percentage of requests that failed with a ClientOtherError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentAuthorizationError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentAuthorizationError
+  id: PercentAuthorizationError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: PercentAuthorizationError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentAuthorizationError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PercentAuthorizationError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 157
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the PercentAuthorizationError property for the metrics entity, indicating the percentage of requests that failed with an AuthorizationError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double PercentAuthorizationError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PercentAuthorizationError As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the percentage of requests that failed with an AuthorizationError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentNetworkError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentNetworkError
+  id: PercentNetworkError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: PercentNetworkError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.PercentNetworkError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: PercentNetworkError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 163
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the PercentNetworkError property for the metrics entity, indicating the percentage of requests that failed with a NetworkError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public double PercentNetworkError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property PercentNetworkError As Double
+    parameters: []
+    return:
+      type: System.Double
+      description: A double containing the percentage of requests that failed with a NetworkError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Success
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Success
+  id: Success
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: Success
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.Success
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Success
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 169
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the Success property for the metrics entity, indicating the number of successful requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long Success
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property Success As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of successful requests for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousSuccess
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousSuccess
+  id: AnonymousSuccess
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AnonymousSuccess
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousSuccess
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AnonymousSuccess
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 175
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AnonymousSuccess property for the metrics entity, indicating the number of successful anonymous requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AnonymousSuccess
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AnonymousSuccess As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of successful anonymous requests for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASSuccess
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASSuccess
+  id: SASSuccess
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: SASSuccess
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASSuccess
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SASSuccess
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 181
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the SASSuccess property for the metrics entity, indicating the number of successful SAS requests.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long SASSuccess
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SASSuccess As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of successful SAS requests for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ThrottlingError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ThrottlingError
+  id: ThrottlingError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: ThrottlingError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ThrottlingError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ThrottlingError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 187
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the ThrottlingError property for the metrics entity, indicating the number of authenticated requests that returned a ThrottlingError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ThrottlingError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ThrottlingError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of authenticated requests that returned a ThrottlingError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousThrottlingError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousThrottlingError
+  id: AnonymousThrottlingError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AnonymousThrottlingError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousThrottlingError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AnonymousThrottlingError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 193
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AnonymousThrottlingError property for the metrics entity, indicating the number of anonymous requests that returned a ThrottlingError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AnonymousThrottlingError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AnonymousThrottlingError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of anonymous requests that returned a ThrottlingError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASThrottlingError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASThrottlingError
+  id: SASThrottlingError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: SASThrottlingError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASThrottlingError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SASThrottlingError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 199
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the SASThrottlingError property for the metrics entity, indicating the number of SAS requests that returned a ThrottlingError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long SASThrottlingError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SASThrottlingError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of SAS requests that returned a ThrottlingError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ClientTimeoutError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ClientTimeoutError
+  id: ClientTimeoutError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: ClientTimeoutError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ClientTimeoutError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ClientTimeoutError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 205
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the ClientTimeoutError property for the metrics entity, indicating the number of authenticated requests that returned a ClientTimeoutError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ClientTimeoutError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ClientTimeoutError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of authenticated requests that returned a ClientTimeoutError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousClientTimeoutError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousClientTimeoutError
+  id: AnonymousClientTimeoutError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AnonymousClientTimeoutError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousClientTimeoutError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AnonymousClientTimeoutError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 211
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AnonymousClientTimeoutError property for the metrics entity, indicating the number of anonymous requests that returned a ClientTimeoutError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AnonymousClientTimeoutError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AnonymousClientTimeoutError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of anonymous requests that returned a ClientTimeoutError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASClientTimeoutError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASClientTimeoutError
+  id: SASClientTimeoutError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: SASClientTimeoutError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASClientTimeoutError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SASClientTimeoutError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 217
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the SASClientTimeoutError property for the metrics entity, indicating the number of SAS requests that returned a ClientTimeoutError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long SASClientTimeoutError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SASClientTimeoutError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of SAS requests that returned a ClientTimeoutError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ServerTimeoutError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ServerTimeoutError
+  id: ServerTimeoutError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: ServerTimeoutError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ServerTimeoutError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServerTimeoutError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 223
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the ServerTimeoutError property for the metrics entity, indicating the number of authenticated requests that returned a ServerTimeoutError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ServerTimeoutError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ServerTimeoutError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of authenticated requests that returned a ServerTimeoutError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousServerTimeoutError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousServerTimeoutError
+  id: AnonymousServerTimeoutError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AnonymousServerTimeoutError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousServerTimeoutError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AnonymousServerTimeoutError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 229
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AnonymousServerTimeoutError property for the metrics entity, indicating the number of anonymous requests that returned a ServerTimeoutError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AnonymousServerTimeoutError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AnonymousServerTimeoutError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of anonymous requests that returned a ServerTimeoutError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASServerTimeoutError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASServerTimeoutError
+  id: SASServerTimeoutError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: SASServerTimeoutError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASServerTimeoutError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SASServerTimeoutError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 235
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the SASServerTimeoutError property for the metrics entity, indicating the number of SAS requests that returned a ServerTimeoutError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long SASServerTimeoutError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SASServerTimeoutError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of SAS requests that returned a ServerTimeoutError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ClientOtherError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ClientOtherError
+  id: ClientOtherError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: ClientOtherError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ClientOtherError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ClientOtherError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 241
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the ClientOtherError property for the metrics entity, indicating the number of authenticated requests that returned a ClientOtherError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ClientOtherError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ClientOtherError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of authenticated requests that returned a ClientOtherError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASClientOtherError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASClientOtherError
+  id: SASClientOtherError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: SASClientOtherError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASClientOtherError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SASClientOtherError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 247
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the SASClientOtherError property for the metrics entity, indicating the number of SAS requests that returned a ClientOtherError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long SASClientOtherError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SASClientOtherError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of SAS requests that returned a ClientOtherError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousClientOtherError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousClientOtherError
+  id: AnonymousClientOtherError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AnonymousClientOtherError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousClientOtherError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AnonymousClientOtherError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 253
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AnonymousClientOtherError property for the metrics entity, indicating the number of anonymous requests that returned an ClientOtherError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AnonymousClientOtherError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AnonymousClientOtherError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of anonymous requests that returned a ClientOtherError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ServerOtherError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ServerOtherError
+  id: ServerOtherError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: ServerOtherError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.ServerOtherError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ServerOtherError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 259
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the ServerOtherError property for the metrics entity, indicating the number of authenticated requests that returned a ServerOtherError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long ServerOtherError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property ServerOtherError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of authenticated requests that returned a ServerOtherError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousServerOtherError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousServerOtherError
+  id: AnonymousServerOtherError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AnonymousServerOtherError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousServerOtherError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AnonymousServerOtherError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 265
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AnonymousServerOtherError property for the metrics entity, indicating the number of anonymous requests that returned a ServerOtherError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AnonymousServerOtherError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AnonymousServerOtherError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of anonymous requests that returned a ServerOtherError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASServerOtherError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASServerOtherError
+  id: SASServerOtherError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: SASServerOtherError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASServerOtherError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SASServerOtherError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 271
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the SASServerOtherError property for the metrics entity, indicating the number of SAS requests that returned a ServerOtherError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long SASServerOtherError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SASServerOtherError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of SAS requests that returned a ServerOtherError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AuthorizationError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AuthorizationError
+  id: AuthorizationError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AuthorizationError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AuthorizationError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AuthorizationError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 277
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AuthorizationError property for the metrics entity, indicating the number of authenticated requests that returned an AuthorizationError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AuthorizationError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AuthorizationError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of authenticated requests that returned an AuthorizationError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousAuthorizationError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousAuthorizationError
+  id: AnonymousAuthorizationError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AnonymousAuthorizationError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousAuthorizationError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AnonymousAuthorizationError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 283
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AnonymousAuthorizationError property for the metrics entity, indicating the number of anonymous requests that returned an AuthorizationError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AnonymousAuthorizationError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AnonymousAuthorizationError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of anonymous requests that returned an AuthorizationError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASAuthorizationError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASAuthorizationError
+  id: SASAuthorizationError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: SASAuthorizationError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASAuthorizationError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SASAuthorizationError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 289
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the SASAuthorizationError property for the metrics entity, indicating the number of SAS requests that returned an AuthorizationError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long SASAuthorizationError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SASAuthorizationError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of SAS requests that returned an AuthorizationError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.NetworkError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.NetworkError
+  id: NetworkError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: NetworkError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.NetworkError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: NetworkError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 295
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the NetworkError property for the metrics entity, indicating the number of authenticated requests that returned a NetworkError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long NetworkError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property NetworkError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of authenticated requests that returned a NetworkError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousNetworkError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousNetworkError
+  id: AnonymousNetworkError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: AnonymousNetworkError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.AnonymousNetworkError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AnonymousNetworkError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 301
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the AnonymousNetworkError property for the metrics entity, indicating the number of anonymous requests that returned a NetworkError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long AnonymousNetworkError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property AnonymousNetworkError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of anonymous requests that returned a NetworkError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASNetworkError
+  commentId: P:Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASNetworkError
+  id: SASNetworkError
+  parent: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  langs:
+  - csharp
+  - vb
+  name: SASNetworkError
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity.SASNetworkError
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SASNetworkError
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/MetricsEntity.cs
+    startLine: 307
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Analytics
+  summary: "\r\nGets or sets the SASNetworkError property for the metrics entity, indicating the number of SAS requests that returned a NetworkError.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long SASNetworkError
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property SASNetworkError As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long containing the number of SAS requests that returned a NetworkError for the metrics entity.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Analytics
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Analytics
+  fullName: Microsoft.WindowsAzure.Storage.Analytics
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableEntity
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity
+- uid: Microsoft.WindowsAzure.Storage.Table.ITableEntity
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: ITableEntity
+  fullName: Microsoft.WindowsAzure.Storage.Table.ITableEntity
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.PartitionKey
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: PartitionKey
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.PartitionKey
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.RowKey
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: RowKey
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.RowKey
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.Timestamp
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: Timestamp
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.Timestamp
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ETag
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: ETag
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ETag
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: true
+  name: ReadEntity(IDictionary<String, EntityProperty>, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary<System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty>, Microsoft.WindowsAzure.Storage.OperationContext)
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary(Of System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty), Microsoft.WindowsAzure.Storage.OperationContext)
+  name.vb: ReadEntity(IDictionary(Of String, EntityProperty), OperationContext)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+    name: ReadEntity
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity
+  - name: (
+    fullName: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+    name: EntityProperty
+    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+    name: ReadEntity
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity
+  - name: (
+    fullName: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+    name: EntityProperty
+    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: true
+  name: ReadUserObject(Object, IDictionary<String, EntityProperty>, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object, System.Collections.Generic.IDictionary<System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty>, Microsoft.WindowsAzure.Storage.OperationContext)
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object, System.Collections.Generic.IDictionary(Of System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty), Microsoft.WindowsAzure.Storage.OperationContext)
+  name.vb: ReadUserObject(Object, IDictionary(Of String, EntityProperty), OperationContext)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+    name: ReadUserObject
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+    name: EntityProperty
+    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject(System.Object,System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
+    name: ReadUserObject
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadUserObject
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+    name: EntityProperty
+    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: WriteEntity(OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+    name: WriteEntity
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity
+  - name: (
+    fullName: (
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
+    name: WriteEntity
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity
+  - name: (
+    fullName: (
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: true
+  name: WriteUserObject(Object, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object, Microsoft.WindowsAzure.Storage.OperationContext)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object,Microsoft.WindowsAzure.Storage.OperationContext)
+    name: WriteUserObject
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject(System.Object,Microsoft.WindowsAzure.Storage.OperationContext)
+    name: WriteUserObject
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteUserObject
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: Microsoft.WindowsAzure.Storage.OperationContext
+    name: OperationContext
+    fullName: Microsoft.WindowsAzure.Storage.OperationContext
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.DisableCompiledSerializers
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: DisableCompiledSerializers
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.DisableCompiledSerializers
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.DisablePropertyResolverCache
+  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
+  isExternal: false
+  name: DisablePropertyResolverCache
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.DisablePropertyResolverCache
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table
+  fullName: Microsoft.WindowsAzure.Storage.Table
+- uid: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+  isExternal: false
+  name: MetricsEntity
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.MetricsEntity
+- uid: System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double

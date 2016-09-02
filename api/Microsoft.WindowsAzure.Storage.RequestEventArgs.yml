@@ -5,8 +5,9 @@ items:
   parent: Microsoft.WindowsAzure.Storage
   children:
   - Microsoft.WindowsAzure.Storage.RequestEventArgs.#ctor(Microsoft.WindowsAzure.Storage.RequestResult)
+  - Microsoft.WindowsAzure.Storage.RequestEventArgs.Request
   - Microsoft.WindowsAzure.Storage.RequestEventArgs.RequestInformation
-  - Microsoft.WindowsAzure.Storage.RequestEventArgs.RequestUri
+  - Microsoft.WindowsAzure.Storage.RequestEventArgs.Response
   langs:
   - csharp
   - vb
@@ -27,18 +28,23 @@ items:
   summary: "\r\nProvides information and event data that is associated with a request event.\r\n"
   example: []
   syntax:
-    content: public sealed class RequestEventArgs
-    content.vb: Public NotInheritable Class RequestEventArgs
+    content: 'public sealed class RequestEventArgs : EventArgs'
+    content.vb: >-
+      Public NotInheritable Class RequestEventArgs
+
+          Inherits EventArgs
   inheritance:
   - System.Object
+  - System.EventArgs
   inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
   - sealed
@@ -124,40 +130,86 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Microsoft.WindowsAzure.Storage.RequestEventArgs.RequestUri
-  commentId: P:Microsoft.WindowsAzure.Storage.RequestEventArgs.RequestUri
-  id: RequestUri
+- uid: Microsoft.WindowsAzure.Storage.RequestEventArgs.Request
+  commentId: P:Microsoft.WindowsAzure.Storage.RequestEventArgs.Request
+  id: Request
   parent: Microsoft.WindowsAzure.Storage.RequestEventArgs
   langs:
   - csharp
   - vb
-  name: RequestUri
-  fullName: Microsoft.WindowsAzure.Storage.RequestEventArgs.RequestUri
+  name: Request
+  fullName: Microsoft.WindowsAzure.Storage.RequestEventArgs.Request
   type: Property
   source:
     remote:
       path: src/Storage/Lib/Common/RequestEventArgs.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
-    id: RequestUri
+    id: Request
     path: src/Storage/Lib/Common/RequestEventArgs.cs
-    startLine: 52
+    startLine: 58
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nGets the HTTP request associated with this event.\r\n"
+  example: []
   syntax:
     content: >-
-      public Uri RequestUri
+      public HttpWebRequest Request
 
       {
 
           get;
 
       }
-    content.vb: Public ReadOnly Property RequestUri As Uri
+    content.vb: Public ReadOnly Property Request As HttpWebRequest
     parameters: []
     return:
-      type: System.Uri
+      type: System.Net.HttpWebRequest
+      description: The HTTP request associated with this event.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.RequestEventArgs.Response
+  commentId: P:Microsoft.WindowsAzure.Storage.RequestEventArgs.Response
+  id: Response
+  parent: Microsoft.WindowsAzure.Storage.RequestEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Response
+  fullName: Microsoft.WindowsAzure.Storage.RequestEventArgs.Response
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/Common/RequestEventArgs.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Response
+    path: src/Storage/Lib/Common/RequestEventArgs.cs
+    startLine: 64
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nGets the HTTP response associated with this event.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public HttpWebResponse Response
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Response As HttpWebResponse
+    parameters: []
+    return:
+      type: System.Net.HttpWebResponse
+      description: The HTTP response associated with this event.
   modifiers.csharp:
   - public
   - get
@@ -174,6 +226,39 @@ references:
   isExternal: true
   name: Object
   fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -233,6 +318,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -317,72 +445,6 @@ references:
     fullName: (
   - name: )
     fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
 - uid: System
   isExternal: false
   name: System
@@ -396,8 +458,17 @@ references:
   isExternal: false
   name: RequestResult
   fullName: Microsoft.WindowsAzure.Storage.RequestResult
-- uid: System.Uri
-  parent: System
+- uid: System.Net.HttpWebRequest
+  parent: System.Net
   isExternal: true
-  name: Uri
-  fullName: System.Uri
+  name: HttpWebRequest
+  fullName: System.Net.HttpWebRequest
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net
+- uid: System.Net.HttpWebResponse
+  parent: System.Net
+  isExternal: true
+  name: HttpWebResponse
+  fullName: System.Net.HttpWebResponse

@@ -49,8 +49,13 @@ items:
   remarks: "<p>A batch operation is a collection of table operations which are executed by the Storage Service REST API as a single atomic operation, by invoking an \r\n<a href=\"http://msdn.microsoft.com/en-us/library/windowsazure/dd894038.aspx\">Entity Group Transaction</a>.</p>\r\n<p>A batch operation may contain up to 100 individual \r\ntable operations, with the requirement that each operation entity must have same partition key. A batch with a retrieve operation cannot contain any other operations. \r\nNote that the total payload of a batch operation is limited to 4MB.</p>"
   example: []
   syntax:
-    content: 'public sealed class TableBatchOperation : IList<TableOperation>, ICollection<TableOperation>, IEnumerable<TableOperation>, IEnumerable'
+    content: >-
+      [SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification = "Back compatibility.")]
+
+      public sealed class TableBatchOperation : IList<TableOperation>, ICollection<TableOperation>, IEnumerable<TableOperation>, IEnumerable
     content.vb: >-
+      <SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification:="Back compatibility.")>
+
       Public NotInheritable Class TableBatchOperation
 
           Implements IList(Of TableOperation), ICollection(Of TableOperation), IEnumerable(Of TableOperation), IEnumerable
@@ -62,13 +67,25 @@ items:
   - System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Table.TableOperation}
   - System.Collections.IEnumerable
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute
+    ctor: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Naming
+    - type: System.String
+      value: CA1710:IdentifiersShouldHaveCorrectSuffix
+    namedArguments:
+    - name: Justification
+      type: System.String
+      value: Back compatibility.
   modifiers.csharp:
   - public
   - sealed
@@ -89,33 +106,51 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Lib/WindowsRuntime/Table/TableBatchOperation.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableBatchOperation.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Retrieve
-    path: src/Storage/Lib/WindowsRuntime/Table/TableBatchOperation.cs
-    startLine: 91
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableBatchOperation.cs
+    startLine: 44
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
-  summary: "\r\nAdds a table operation that retrieves an entity with the specified partition key and row key to the batch operation.  The entity will be deserialized into the specified class type which extends <xref href=\"Microsoft.WindowsAzure.Storage.Table.ITableEntity\" data-throw-if-not-resolved=\"false\"></xref>.\r\n"
+  summary: "\r\nInserts a <xref href=\"Microsoft.WindowsAzure.Storage.Table.TableOperation\" data-throw-if-not-resolved=\"false\"></xref> into the batch that retrieves an entity based on its row key and partition key. The entity will be deserialized into the specified class type which extends <xref href=\"Microsoft.WindowsAzure.Storage.Table.ITableEntity\" data-throw-if-not-resolved=\"false\"></xref>.\r\n"
   example: []
   syntax:
-    content: 'public void Retrieve<TElement>(string partitionKey, string rowkey, List<string> selectedColumns = null)where TElement : ITableEntity'
-    content.vb: Public Sub Retrieve(Of TElement As ITableEntity)(partitionKey As String, rowkey As String, selectedColumns As List(Of String) = Nothing)
+    content: >-
+      [SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter", Justification = "Reviewed.")]
+
+      public void Retrieve<TElement>(string partitionKey, string rowKey, List<string> selectedColumns = null)where TElement : ITableEntity
+    content.vb: >-
+      <SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter", Justification:="Reviewed.")>
+
+      Public Sub Retrieve(Of TElement As ITableEntity)(partitionKey As String, rowKey As String, selectedColumns As List(Of String) = Nothing)
     parameters:
     - id: partitionKey
       type: System.String
-      description: A string containing the partition key of the entity to be retrieved.
-    - id: rowkey
+      description: A string containing the partition key of the entity to retrieve.
+    - id: rowKey
       type: System.String
-      description: A string containing the row key of the entity to be retrieved.
+      description: A string containing the row key of the entity to retrieve.
     - id: selectedColumns
       type: System.Collections.Generic.List{System.String}
       description: List of column names for projection.
     typeParameters:
     - id: TElement
       description: The class of type for the entity to retrieve.
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute
+    ctor: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Design
+    - type: System.String
+      value: CA1004:GenericMethodsShouldProvideTypeParameter
+    namedArguments:
+    - name: Justification
+      type: System.String
+      value: Reviewed.
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -134,27 +169,27 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Lib/WindowsRuntime/Table/TableBatchOperation.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableBatchOperation.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Retrieve
-    path: src/Storage/Lib/WindowsRuntime/Table/TableBatchOperation.cs
-    startLine: 109
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableBatchOperation.cs
+    startLine: 62
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
-  summary: "\r\nAdds a table operation that retrieves an entity with the specified partition key and row key to the batch operation.\r\n"
+  summary: "\r\nAdds a table operation to retrieve an entity of the specified class type with the specified partition key and row key to the batch operation.\r\n"
   example: []
   syntax:
-    content: public void Retrieve<TResult>(string partitionKey, string rowkey, EntityResolver<TResult> resolver, List<string> selectedColumns = null)
-    content.vb: Public Sub Retrieve(Of TResult)(partitionKey As String, rowkey As String, resolver As EntityResolver(Of TResult), selectedColumns As List(Of String) = Nothing)
+    content: public void Retrieve<TResult>(string partitionKey, string rowKey, EntityResolver<TResult> resolver, List<string> selectedColumns = null)
+    content.vb: Public Sub Retrieve(Of TResult)(partitionKey As String, rowKey As String, resolver As EntityResolver(Of TResult), selectedColumns As List(Of String) = Nothing)
     parameters:
     - id: partitionKey
       type: System.String
-      description: A string containing the partition key of the entity to be retrieved.
-    - id: rowkey
+      description: A string containing the partition key of the entity to retrieve.
+    - id: rowKey
       type: System.String
-      description: A string containing the row key of the entity to be retrieved.
+      description: A string containing the row key of the entity to retrieve.
     - id: resolver
       type: Microsoft.WindowsAzure.Storage.Table.EntityResolver{{TResult}}
       description: The <xref href="Microsoft.WindowsAzure.Storage.Table.EntityResolver`1" data-throw-if-not-resolved="false"></xref> implementation to project the entity to retrieve as a particular type in the result.
@@ -1070,6 +1105,29 @@ references:
   isExternal: true
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -1129,6 +1187,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -1208,72 +1309,6 @@ references:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
     fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
     isExternal: true
   - name: (
     fullName: (
@@ -1378,16 +1413,16 @@ references:
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+- uid: Microsoft.WindowsAzure.Storage.Table.TableOperation
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableOperation
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableOperation
 - uid: Microsoft.WindowsAzure.Storage.Table.ITableEntity
   parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
   name: ITableEntity
   fullName: Microsoft.WindowsAzure.Storage.Table.ITableEntity
-- uid: Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
-  parent: Microsoft.WindowsAzure.Storage.Table
-  isExternal: false
-  name: TableBatchOperation
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
 - uid: System.String
   parent: System
   isExternal: true
@@ -1509,11 +1544,11 @@ references:
     fullName: TResult
   - name: )
     fullName: )
-- uid: Microsoft.WindowsAzure.Storage.Table.TableOperation
+- uid: Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
   parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
-  name: TableOperation
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableOperation
+  name: TableBatchOperation
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableBatchOperation
 - uid: System.Boolean
   parent: System
   isExternal: true

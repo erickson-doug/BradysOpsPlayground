@@ -1,0 +1,103 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+  commentId: T:Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+  id: ICancellableAsyncResult
+  parent: Microsoft.WindowsAzure.Storage
+  children:
+  - Microsoft.WindowsAzure.Storage.ICancellableAsyncResult.Cancel
+  langs:
+  - csharp
+  - vb
+  name: ICancellableAsyncResult
+  fullName: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+  type: Interface
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/ICancellableAsyncResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ICancellableAsyncResult
+    path: src/Storage/Lib/ClassLibraryCommon/ICancellableAsyncResult.cs
+    startLine: 24
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nRepresents the status of an asynchronous operation and provides support for cancellation.\r\n"
+  example: []
+  syntax:
+    content: 'public interface ICancellableAsyncResult : IAsyncResult'
+    content.vb: >-
+      Public Interface ICancellableAsyncResult
+
+          Inherits IAsyncResult
+  inheritedMembers:
+  - System.IAsyncResult.IsCompleted
+  - System.IAsyncResult.AsyncWaitHandle
+  - System.IAsyncResult.AsyncState
+  - System.IAsyncResult.CompletedSynchronously
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult.Cancel
+  commentId: M:Microsoft.WindowsAzure.Storage.ICancellableAsyncResult.Cancel
+  id: Cancel
+  parent: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  fullName: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult.Cancel()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/ICancellableAsyncResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Cancel
+    path: src/Storage/Lib/ClassLibraryCommon/ICancellableAsyncResult.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nCancels the asynchronous operation.\r\n"
+  example: []
+  syntax:
+    content: void Cancel()
+    content.vb: Sub Cancel
+references:
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage
+- uid: System.IAsyncResult.IsCompleted
+  parent: System.IAsyncResult
+  isExternal: true
+  name: IsCompleted
+  fullName: System.IAsyncResult.IsCompleted
+- uid: System.IAsyncResult.AsyncWaitHandle
+  parent: System.IAsyncResult
+  isExternal: true
+  name: AsyncWaitHandle
+  fullName: System.IAsyncResult.AsyncWaitHandle
+- uid: System.IAsyncResult.AsyncState
+  parent: System.IAsyncResult
+  isExternal: true
+  name: AsyncState
+  fullName: System.IAsyncResult.AsyncState
+- uid: System.IAsyncResult.CompletedSynchronously
+  parent: System.IAsyncResult
+  isExternal: true
+  name: CompletedSynchronously
+  fullName: System.IAsyncResult.CompletedSynchronously
+- uid: System.IAsyncResult
+  parent: System
+  isExternal: true
+  name: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

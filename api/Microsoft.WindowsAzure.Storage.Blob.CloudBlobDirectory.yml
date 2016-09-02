@@ -4,7 +4,10 @@ items:
   id: CloudBlobDirectory
   parent: Microsoft.WindowsAzure.Storage.Blob
   children:
+  - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,System.AsyncCallback,System.Object)
+  - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.Container
+  - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.EndListBlobsSegmented(System.IAsyncResult)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.GetAppendBlobReference(System.String)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.GetAppendBlobReference(System.String,System.Nullable{System.DateTimeOffset})
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.GetBlobReference(System.String)
@@ -14,7 +17,11 @@ items:
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.GetDirectoryReference(System.String)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.GetPageBlobReference(System.String)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.GetPageBlobReference(System.String,System.Nullable{System.DateTimeOffset})
+  - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobs(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
+  - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
+  - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,System.Threading.CancellationToken)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
   - Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.Parent
@@ -39,7 +46,8 @@ items:
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Blob
-  summary: "\r\nRepresents a virtual directory of blobs on the client which emulates a hierarchical data store by using delimiter characters.\r\n"
+  summary: "\r\nRepresents a virtual directory of blobs, designated by a delimiter character.\r\n"
+  remarks: Containers, which are encapsulated as <xref href="Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer" data-throw-if-not-resolved="false"></xref> objects, hold directories, and directories hold block blobs and page blobs. Directories can also contain sub-directories.
   example: []
   syntax:
     content: 'public class CloudBlobDirectory : IListBlobItem'
@@ -52,19 +60,308 @@ items:
   implements:
   - Microsoft.WindowsAzure.Storage.Blob.IListBlobItem
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobs(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobs(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ListBlobs(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  langs:
+  - csharp
+  - vb
+  name: ListBlobs(Boolean, BlobListingDetails, BlobRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobs(System.Boolean, Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListBlobs
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nReturns an enumerable collection of the blobs in the virtual directory that are retrieved lazily.\r\n"
+  example: []
+  syntax:
+    content: public virtual IEnumerable<IListBlobItem> ListBlobs(bool useFlatBlobListing = false, BlobListingDetails blobListingDetails = BlobListingDetails.None, BlobRequestOptions options = null, OperationContext operationContext = null)
+    content.vb: Public Overridable Function ListBlobs(useFlatBlobListing As Boolean = False, blobListingDetails As BlobListingDetails = BlobListingDetails.None, options As BlobRequestOptions = Nothing, operationContext As OperationContext = Nothing) As IEnumerable(Of IListBlobItem)
+    parameters:
+    - id: useFlatBlobListing
+      type: System.Boolean
+      description: A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.
+    - id: blobListingDetails
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails" data-throw-if-not-resolved="false"></xref> enumeration describing which items to include in the listing.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request. If <code>null</code>, default options are applied to the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.IListBlobItem}
+      description: An enumerable collection of objects that implement <xref href="Microsoft.WindowsAzure.Storage.Blob.IListBlobItem" data-throw-if-not-resolved="false"></xref> and are retrieved lazily.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
+  id: ListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
+  parent: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  langs:
+  - csharp
+  - vb
+  name: ListBlobsSegmented(BlobContinuationToken)
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListBlobsSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nReturns a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual BlobResultSegment ListBlobsSegmented(BlobContinuationToken currentToken)
+    content.vb: Public Overridable Function ListBlobsSegmented(currentToken As BlobContinuationToken) As BlobResultSegment
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken" data-throw-if-not-resolved="false"></xref> object returned by a previous listing operation.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ListBlobsSegmented(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  langs:
+  - csharp
+  - vb
+  name: ListBlobsSegmented(Boolean, BlobListingDetails, Nullable<Int32>, BlobContinuationToken, BlobRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(System.Boolean, Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails, System.Nullable<System.Int32>, Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListBlobsSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nReturns a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual BlobResultSegment ListBlobsSegmented(bool useFlatBlobListing, BlobListingDetails blobListingDetails, int ? maxResults, BlobContinuationToken currentToken, BlobRequestOptions options, OperationContext operationContext)
+    content.vb: Public Overridable Function ListBlobsSegmented(useFlatBlobListing As Boolean, blobListingDetails As BlobListingDetails, maxResults As Integer?, currentToken As BlobContinuationToken, options As BlobRequestOptions, operationContext As OperationContext) As BlobResultSegment
+    parameters:
+    - id: useFlatBlobListing
+      type: System.Boolean
+      description: A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.
+    - id: blobListingDetails
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails" data-throw-if-not-resolved="false"></xref> enumeration describing which items to include in the listing.
+    - id: maxResults
+      type: System.Nullable{System.Int32}
+      description: "A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the \r\nper-operation limit of 5000. If this value is <code>null</code>, the maximum possible number of results will be returned, up to 5000."
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
+      description: A continuation token returned by a previous listing operation.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmented(System.Boolean, Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails, System.Nullable(Of System.Int32), Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  name.vb: ListBlobsSegmented(Boolean, BlobListingDetails, Nullable(Of Int32), BlobContinuationToken, BlobRequestOptions, OperationContext)
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,System.AsyncCallback,System.Object)
+  id: BeginListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,System.AsyncCallback,System.Object)
+  parent: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  langs:
+  - csharp
+  - vb
+  name: BeginListBlobsSegmented(BlobContinuationToken, AsyncCallback, Object)
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginListBlobsSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 85
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nBegins an asynchronous operation to return a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual ICancellableAsyncResult BeginListBlobsSegmented(BlobContinuationToken currentToken, AsyncCallback callback, object state)
+    content.vb: Public Overridable Function BeginListBlobsSegmented(currentToken As BlobContinuationToken, callback As AsyncCallback, state As Object) As ICancellableAsyncResult
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
+      description: A continuation token returned by a previous listing operation.
+    - id: callback
+      type: System.AsyncCallback
+      description: An <xref href="System.AsyncCallback" data-throw-if-not-resolved="false"></xref> delegate that will receive notification when the asynchronous operation completes.
+    - id: state
+      type: System.Object
+      description: A user-defined object that will be passed to the callback delegate.
+    return:
+      type: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+      description: An <xref href="Microsoft.WindowsAzure.Storage.ICancellableAsyncResult" data-throw-if-not-resolved="false"></xref> that references the asynchronous operation.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  id: BeginListBlobsSegmented(System.Boolean,Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails,System.Nullable{System.Int32},Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  parent: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  langs:
+  - csharp
+  - vb
+  name: BeginListBlobsSegmented(Boolean, BlobListingDetails, Nullable<Int32>, BlobContinuationToken, BlobRequestOptions, OperationContext, AsyncCallback, Object)
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(System.Boolean, Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails, System.Nullable<System.Int32>, Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginListBlobsSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 105
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nBegins an asynchronous operation to return a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual ICancellableAsyncResult BeginListBlobsSegmented(bool useFlatBlobListing, BlobListingDetails blobListingDetails, int ? maxResults, BlobContinuationToken currentToken, BlobRequestOptions options, OperationContext operationContext, AsyncCallback callback, object state)
+    content.vb: Public Overridable Function BeginListBlobsSegmented(useFlatBlobListing As Boolean, blobListingDetails As BlobListingDetails, maxResults As Integer?, currentToken As BlobContinuationToken, options As BlobRequestOptions, operationContext As OperationContext, callback As AsyncCallback, state As Object) As ICancellableAsyncResult
+    parameters:
+    - id: useFlatBlobListing
+      type: System.Boolean
+      description: A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.
+    - id: blobListingDetails
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails" data-throw-if-not-resolved="false"></xref> enumeration describing which items to include in the listing.
+    - id: maxResults
+      type: System.Nullable{System.Int32}
+      description: "A non-negative integer value that indicates the maximum number of results to be returned at a time, up to the \r\nper-operation limit of 5000. If this value is <code>null</code>, the maximum possible number of results will be returned, up to 5000."
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
+      description: A continuation token returned by a previous listing operation.
+    - id: options
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: callback
+      type: System.AsyncCallback
+      description: An <xref href="System.AsyncCallback" data-throw-if-not-resolved="false"></xref> delegate that will receive notification when the asynchronous operation completes.
+    - id: state
+      type: System.Object
+      description: A user-defined object that will be passed to the callback delegate.
+    return:
+      type: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+      description: An <xref href="Microsoft.WindowsAzure.Storage.ICancellableAsyncResult" data-throw-if-not-resolved="false"></xref> that references the asynchronous operation.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.BeginListBlobsSegmented(System.Boolean, Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails, System.Nullable(Of System.Int32), Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken, Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.AsyncCallback, System.Object)
+  name.vb: BeginListBlobsSegmented(Boolean, BlobListingDetails, Nullable(Of Int32), BlobContinuationToken, BlobRequestOptions, OperationContext, AsyncCallback, Object)
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.EndListBlobsSegmented(System.IAsyncResult)
+  commentId: M:Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.EndListBlobsSegmented(System.IAsyncResult)
+  id: EndListBlobsSegmented(System.IAsyncResult)
+  parent: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  langs:
+  - csharp
+  - vb
+  name: EndListBlobsSegmented(IAsyncResult)
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.EndListBlobsSegmented(System.IAsyncResult)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: EndListBlobsSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 117
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nEnds an asynchronous operation to return a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual BlobResultSegment EndListBlobsSegmented(IAsyncResult asyncResult)
+    content.vb: Public Overridable Function EndListBlobsSegmented(asyncResult As IAsyncResult) As BlobResultSegment
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+      description: An <xref href="System.IAsyncResult" data-throw-if-not-resolved="false"></xref> that references the pending asynchronous operation.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
 - uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
   commentId: M:Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
   id: ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken)
@@ -77,16 +374,16 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Lib/WindowsRuntime/Blob/CloudBlobDirectory.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListBlobsSegmentedAsync
-    path: src/Storage/Lib/WindowsRuntime/Blob/CloudBlobDirectory.cs
-    startLine: 34
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 129
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Blob
-  summary: "\r\nReturns a result segment containing a collection of blob items \r\nin the container.\r\n"
+  summary: "\r\nInitiates an asynchronous operation to return a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
   example: []
   syntax:
     content: public virtual Task<BlobResultSegment> ListBlobsSegmentedAsync(BlobContinuationToken currentToken)
@@ -94,10 +391,52 @@ items:
     parameters:
     - id: currentToken
       type: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
-      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken" data-throw-if-not-resolved="false"></xref> token returned by a previous listing operation.
+      description: A continuation token returned by a previous listing operation.
     return:
       type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment}
-      description: A result segment containing objects that implement <xref href="Microsoft.WindowsAzure.Storage.Blob.IListBlobItem" data-throw-if-not-resolved="false"></xref>.
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object of type <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment" data-throw-if-not-resolved="false"></xref>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,System.Threading.CancellationToken)
+  id: ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  langs:
+  - csharp
+  - vb
+  name: ListBlobsSegmentedAsync(BlobContinuationToken, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory.ListBlobsSegmentedAsync(Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ListBlobsSegmentedAsync
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 142
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Blob
+  summary: "\r\nInitiates an asynchronous operation to return a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<BlobResultSegment> ListBlobsSegmentedAsync(BlobContinuationToken currentToken, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function ListBlobsSegmentedAsync(currentToken As BlobContinuationToken, cancellationToken As CancellationToken) As Task(Of BlobResultSegment)
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
+      description: A continuation token returned by a previous listing operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object of type <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment" data-throw-if-not-resolved="false"></xref>.
   modifiers.csharp:
   - public
   - virtual
@@ -116,16 +455,16 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Lib/WindowsRuntime/Blob/CloudBlobDirectory.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListBlobsSegmentedAsync
-    path: src/Storage/Lib/WindowsRuntime/Blob/CloudBlobDirectory.cs
-    startLine: 52
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 160
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Blob
-  summary: "\r\nReturns a result segment containing a collection of blob items \r\nin the container.\r\n"
+  summary: "\r\nInitiates an asynchronous operation to return a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
   example: []
   syntax:
     content: public virtual Task<BlobResultSegment> ListBlobsSegmentedAsync(bool useFlatBlobListing, BlobListingDetails blobListingDetails, int ? maxResults, BlobContinuationToken currentToken, BlobRequestOptions options, OperationContext operationContext)
@@ -133,7 +472,7 @@ items:
     parameters:
     - id: useFlatBlobListing
       type: System.Boolean
-      description: Whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.
+      description: A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.
     - id: blobListingDetails
       type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
       description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails" data-throw-if-not-resolved="false"></xref> enumeration describing which items to include in the listing.
@@ -145,13 +484,13 @@ items:
       description: A continuation token returned by a previous listing operation.
     - id: options
       type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
-      description: An object that specifies additional options for the request.
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
     - id: operationContext
       type: Microsoft.WindowsAzure.Storage.OperationContext
       description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
     return:
       type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment}
-      description: A result segment containing objects that implement <xref href="Microsoft.WindowsAzure.Storage.Blob.IListBlobItem" data-throw-if-not-resolved="false"></xref>.
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object of type <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment" data-throw-if-not-resolved="false"></xref>.
   modifiers.csharp:
   - public
   - virtual
@@ -172,16 +511,16 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Lib/WindowsRuntime/Blob/CloudBlobDirectory.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListBlobsSegmentedAsync
-    path: src/Storage/Lib/WindowsRuntime/Blob/CloudBlobDirectory.cs
-    startLine: 71
+    path: src/Storage/Lib/ClassLibraryCommon/Blob/CloudBlobDirectory.cs
+    startLine: 179
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Blob
-  summary: "\r\nReturns a result segment containing a collection of blob items \r\nin the container.\r\n"
+  summary: "\r\nInitiates an asynchronous operation to return a result segment containing a collection of blob items \r\nin the virtual directory.\r\n"
   example: []
   syntax:
     content: public virtual Task<BlobResultSegment> ListBlobsSegmentedAsync(bool useFlatBlobListing, BlobListingDetails blobListingDetails, int ? maxResults, BlobContinuationToken currentToken, BlobRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
@@ -189,7 +528,7 @@ items:
     parameters:
     - id: useFlatBlobListing
       type: System.Boolean
-      description: Whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.
+      description: A boolean value that specifies whether to list blobs in a flat listing, or whether to list blobs hierarchically, by virtual directory.
     - id: blobListingDetails
       type: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
       description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails" data-throw-if-not-resolved="false"></xref> enumeration describing which items to include in the listing.
@@ -201,7 +540,7 @@ items:
       description: A continuation token returned by a previous listing operation.
     - id: options
       type: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
-      description: An object that specifies additional options for the request.
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
     - id: operationContext
       type: Microsoft.WindowsAzure.Storage.OperationContext
       description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
@@ -210,7 +549,7 @@ items:
       description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
     return:
       type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment}
-      description: A result segment containing objects that implement <xref href="Microsoft.WindowsAzure.Storage.Blob.IListBlobItem" data-throw-if-not-resolved="false"></xref>.
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> object of type <xref href="Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment" data-throw-if-not-resolved="false"></xref>.
   modifiers.csharp:
   - public
   - virtual
@@ -831,6 +1170,11 @@ items:
   modifiers.vb:
   - Public
 references:
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: CloudBlobContainer
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer
 - uid: Microsoft.WindowsAzure.Storage.Blob
   isExternal: false
   name: Microsoft.WindowsAzure.Storage.Blob
@@ -845,6 +1189,29 @@ references:
   isExternal: false
   name: IListBlobItem
   fullName: Microsoft.WindowsAzure.Storage.Blob.IListBlobItem
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -904,6 +1271,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -988,150 +1398,20 @@ references:
     fullName: (
   - name: )
     fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
 - uid: System
   isExternal: false
   name: System
   fullName: System
-- uid: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
-  parent: Microsoft.WindowsAzure.Storage.Blob
-  isExternal: false
-  name: BlobContinuationToken
-  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
-- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
-  name: Task<BlobResultSegment>
-  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment>
-  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment)
-  name.vb: Task(Of BlobResultSegment)
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: <
-    fullName: <
-  - uid: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
-    name: BlobResultSegment
-    fullName: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: '(Of '
-    fullName: '(Of '
-  - uid: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
-    name: BlobResultSegment
-    fullName: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
-  - name: )
-    fullName: )
-- uid: System.Threading.Tasks.Task`1
-  parent: System.Threading.Tasks
-  isExternal: true
-  name: Task<TResult>
-  fullName: System.Threading.Tasks.Task<TResult>
-  fullname.vb: System.Threading.Tasks.Task(Of TResult)
-  name.vb: Task(Of TResult)
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: <
-    fullName: <
-  - name: TResult
-    fullName: TResult
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: '(Of '
-    fullName: '(Of '
-  - name: TResult
-    fullName: TResult
-  - name: )
-    fullName: )
-- uid: System.Threading.Tasks
-  isExternal: false
-  name: System.Threading.Tasks
-  fullName: System.Threading.Tasks
 - uid: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
   parent: Microsoft.WindowsAzure.Storage.Blob
   isExternal: false
   name: BlobListingDetails
   fullName: Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: BlobRequestOptions
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
 - uid: Microsoft.WindowsAzure.Storage.OperationContext
   parent: Microsoft.WindowsAzure.Storage
   isExternal: false
@@ -1142,6 +1422,84 @@ references:
   isExternal: true
   name: Boolean
   fullName: System.Boolean
+- uid: System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Blob.IListBlobItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IListBlobItem>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.WindowsAzure.Storage.Blob.IListBlobItem>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of Microsoft.WindowsAzure.Storage.Blob.IListBlobItem)
+  name.vb: IEnumerable(Of IListBlobItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.Blob.IListBlobItem
+    name: IListBlobItem
+    fullName: Microsoft.WindowsAzure.Storage.Blob.IListBlobItem
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.Blob.IListBlobItem
+    name: IListBlobItem
+    fullName: Microsoft.WindowsAzure.Storage.Blob.IListBlobItem
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: BlobContinuationToken
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: BlobResultSegment
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
 - uid: System.Nullable{System.Int32}
   parent: System
   definition: System.Nullable`1
@@ -1175,15 +1533,6 @@ references:
     isExternal: true
   - name: )
     fullName: )
-- uid: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
-  parent: Microsoft.WindowsAzure.Storage.Blob
-  isExternal: false
-  name: BlobRequestOptions
-  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
-- uid: Microsoft.WindowsAzure.Storage
-  isExternal: false
-  name: Microsoft.WindowsAzure.Storage
-  fullName: Microsoft.WindowsAzure.Storage
 - uid: System.Nullable`1
   parent: System
   isExternal: true
@@ -1213,6 +1562,85 @@ references:
     fullName: T
   - name: )
     fullName: )
+- uid: System.AsyncCallback
+  parent: System
+  isExternal: true
+  name: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: ICancellableAsyncResult
+  fullName: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+- uid: System.IAsyncResult
+  parent: System
+  isExternal: true
+  name: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<BlobResultSegment>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment)
+  name.vb: Task(Of BlobResultSegment)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+    name: BlobResultSegment
+    fullName: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+    name: BlobResultSegment
+    fullName: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
 - uid: System.Threading.CancellationToken
   parent: System.Threading
   isExternal: true
@@ -1238,11 +1666,6 @@ references:
   isExternal: false
   name: StorageUri
   fullName: Microsoft.WindowsAzure.Storage.StorageUri
-- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer
-  parent: Microsoft.WindowsAzure.Storage.Blob
-  isExternal: false
-  name: CloudBlobContainer
-  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer
 - uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
   parent: Microsoft.WindowsAzure.Storage.Blob
   isExternal: false

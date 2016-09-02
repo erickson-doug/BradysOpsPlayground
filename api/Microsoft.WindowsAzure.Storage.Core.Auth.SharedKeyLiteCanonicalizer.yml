@@ -1,0 +1,429 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+  commentId: T:Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+  id: SharedKeyLiteCanonicalizer
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth
+  children:
+  - Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.AuthorizationScheme
+  - Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.CanonicalizeHttpRequest(System.Net.HttpWebRequest,System.String)
+  - Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.Instance
+  langs:
+  - csharp
+  - vb
+  name: SharedKeyLiteCanonicalizer
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+  type: Class
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/SharedKeyLiteCanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: SharedKeyLiteCanonicalizer
+    path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/SharedKeyLiteCanonicalizer.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nRepresents a canonicalizer that converts HTTP request data into a standard form appropriate for signing via \r\nthe Shared Key Lite authentication scheme for the Blob or Queue service.\r\n"
+  example: []
+  syntax:
+    content: 'public sealed class SharedKeyLiteCanonicalizer : ICanonicalizer'
+    content.vb: >-
+      Public NotInheritable Class SharedKeyLiteCanonicalizer
+
+          Implements ICanonicalizer
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.Instance
+  commentId: P:Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.Instance
+  id: Instance
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.Instance
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/SharedKeyLiteCanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Instance
+    path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/SharedKeyLiteCanonicalizer.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nGets a static instance of the <xref href=\"Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer\" data-throw-if-not-resolved=\"false\"></xref> object.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public static SharedKeyLiteCanonicalizer Instance
+
+      {
+
+          get;
+
+      }
+    content.vb: Public Shared ReadOnly Property Instance As SharedKeyLiteCanonicalizer
+    parameters: []
+    return:
+      type: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+      description: The static instance of the class.
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.AuthorizationScheme
+  commentId: P:Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.AuthorizationScheme
+  id: AuthorizationScheme
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+  langs:
+  - csharp
+  - vb
+  name: AuthorizationScheme
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.AuthorizationScheme
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/SharedKeyLiteCanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AuthorizationScheme
+    path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/SharedKeyLiteCanonicalizer.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nGets the authorization scheme used for canonicalization.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public string AuthorizationScheme
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property AuthorizationScheme As String
+    parameters: []
+    return:
+      type: System.String
+      description: The authorization scheme used for canonicalization.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.CanonicalizeHttpRequest(System.Net.HttpWebRequest,System.String)
+  commentId: M:Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.CanonicalizeHttpRequest(System.Net.HttpWebRequest,System.String)
+  id: CanonicalizeHttpRequest(System.Net.HttpWebRequest,System.String)
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+  langs:
+  - csharp
+  - vb
+  name: CanonicalizeHttpRequest(HttpWebRequest, String)
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer.CanonicalizeHttpRequest(System.Net.HttpWebRequest, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/SharedKeyLiteCanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CanonicalizeHttpRequest
+    path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/SharedKeyLiteCanonicalizer.cs
+    startLine: 71
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nConverts the specified HTTP request data into a standard form appropriate for signing.\r\n"
+  example: []
+  syntax:
+    content: public string CanonicalizeHttpRequest(HttpWebRequest request, string accountName)
+    content.vb: Public Function CanonicalizeHttpRequest(request As HttpWebRequest, accountName As String) As String
+    parameters:
+    - id: request
+      type: System.Net.HttpWebRequest
+      description: The HTTP request that needs to be signed.
+    - id: accountName
+      type: System.String
+      description: The name of the storage account that the HTTP request will access.
+    return:
+      type: System.String
+      description: The canonicalized string containing the HTTP request data in a standard form appropriate for signing.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Core.Auth
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth
+  isExternal: false
+  name: ICanonicalizer
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth
+  isExternal: false
+  name: SharedKeyLiteCanonicalizer
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.SharedKeyLiteCanonicalizer
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Net.HttpWebRequest
+  parent: System.Net
+  isExternal: true
+  name: HttpWebRequest
+  fullName: System.Net.HttpWebRequest
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net

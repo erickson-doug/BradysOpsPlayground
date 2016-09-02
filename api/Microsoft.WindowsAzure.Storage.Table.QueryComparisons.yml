@@ -45,13 +45,13 @@ items:
   inheritance:
   - System.Object
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   attributes:
   - type: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute
     ctor: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)
@@ -82,7 +82,7 @@ items:
   - Public
   - Class
 - uid: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.Equal
-  commentId: P:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.Equal
+  commentId: F:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.Equal
   id: Equal
   parent: Microsoft.WindowsAzure.Storage.Table.QueryComparisons
   langs:
@@ -90,7 +90,7 @@ items:
   - vb
   name: Equal
   fullName: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.Equal
-  type: Property
+  type: Field
   source:
     remote:
       path: src/Storage/Lib/Common/Table/QueryComparisons.cs
@@ -98,33 +98,25 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Equal
     path: src/Storage/Lib/Common/Table/QueryComparisons.cs
-    startLine: 36
+    startLine: 69
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nRepresents the Equal operator.\r\n"
+  example: []
   syntax:
-    content: >-
-      public static string Equal
-
-      {
-
-          get;
-
-      }
-    content.vb: Public Shared ReadOnly Property Equal As String
-    parameters: []
+    content: public const string Equal = "eq"
+    content.vb: Public Const Equal As String = "eq"
     return:
       type: System.String
   modifiers.csharp:
   - public
-  - static
-  - get
+  - const
   modifiers.vb:
   - Public
-  - Shared
-  - ReadOnly
+  - Const
 - uid: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.NotEqual
-  commentId: P:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.NotEqual
+  commentId: F:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.NotEqual
   id: NotEqual
   parent: Microsoft.WindowsAzure.Storage.Table.QueryComparisons
   langs:
@@ -132,7 +124,7 @@ items:
   - vb
   name: NotEqual
   fullName: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.NotEqual
-  type: Property
+  type: Field
   source:
     remote:
       path: src/Storage/Lib/Common/Table/QueryComparisons.cs
@@ -140,33 +132,25 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: NotEqual
     path: src/Storage/Lib/Common/Table/QueryComparisons.cs
-    startLine: 41
+    startLine: 74
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nRepresents the Not Equal operator.\r\n"
+  example: []
   syntax:
-    content: >-
-      public static string NotEqual
-
-      {
-
-          get;
-
-      }
-    content.vb: Public Shared ReadOnly Property NotEqual As String
-    parameters: []
+    content: public const string NotEqual = "ne"
+    content.vb: Public Const NotEqual As String = "ne"
     return:
       type: System.String
   modifiers.csharp:
   - public
-  - static
-  - get
+  - const
   modifiers.vb:
   - Public
-  - Shared
-  - ReadOnly
+  - Const
 - uid: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.GreaterThan
-  commentId: P:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.GreaterThan
+  commentId: F:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.GreaterThan
   id: GreaterThan
   parent: Microsoft.WindowsAzure.Storage.Table.QueryComparisons
   langs:
@@ -174,7 +158,7 @@ items:
   - vb
   name: GreaterThan
   fullName: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.GreaterThan
-  type: Property
+  type: Field
   source:
     remote:
       path: src/Storage/Lib/Common/Table/QueryComparisons.cs
@@ -182,33 +166,25 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: GreaterThan
     path: src/Storage/Lib/Common/Table/QueryComparisons.cs
-    startLine: 46
+    startLine: 79
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nRepresents the Greater Than operator.\r\n"
+  example: []
   syntax:
-    content: >-
-      public static string GreaterThan
-
-      {
-
-          get;
-
-      }
-    content.vb: Public Shared ReadOnly Property GreaterThan As String
-    parameters: []
+    content: public const string GreaterThan = "gt"
+    content.vb: Public Const GreaterThan As String = "gt"
     return:
       type: System.String
   modifiers.csharp:
   - public
-  - static
-  - get
+  - const
   modifiers.vb:
   - Public
-  - Shared
-  - ReadOnly
+  - Const
 - uid: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.GreaterThanOrEqual
-  commentId: P:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.GreaterThanOrEqual
+  commentId: F:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.GreaterThanOrEqual
   id: GreaterThanOrEqual
   parent: Microsoft.WindowsAzure.Storage.Table.QueryComparisons
   langs:
@@ -216,7 +192,7 @@ items:
   - vb
   name: GreaterThanOrEqual
   fullName: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.GreaterThanOrEqual
-  type: Property
+  type: Field
   source:
     remote:
       path: src/Storage/Lib/Common/Table/QueryComparisons.cs
@@ -224,33 +200,25 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: GreaterThanOrEqual
     path: src/Storage/Lib/Common/Table/QueryComparisons.cs
-    startLine: 51
+    startLine: 84
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nRepresents the Greater Than or Equal operator.\r\n"
+  example: []
   syntax:
-    content: >-
-      public static string GreaterThanOrEqual
-
-      {
-
-          get;
-
-      }
-    content.vb: Public Shared ReadOnly Property GreaterThanOrEqual As String
-    parameters: []
+    content: public const string GreaterThanOrEqual = "ge"
+    content.vb: Public Const GreaterThanOrEqual As String = "ge"
     return:
       type: System.String
   modifiers.csharp:
   - public
-  - static
-  - get
+  - const
   modifiers.vb:
   - Public
-  - Shared
-  - ReadOnly
+  - Const
 - uid: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.LessThan
-  commentId: P:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.LessThan
+  commentId: F:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.LessThan
   id: LessThan
   parent: Microsoft.WindowsAzure.Storage.Table.QueryComparisons
   langs:
@@ -258,7 +226,7 @@ items:
   - vb
   name: LessThan
   fullName: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.LessThan
-  type: Property
+  type: Field
   source:
     remote:
       path: src/Storage/Lib/Common/Table/QueryComparisons.cs
@@ -266,33 +234,25 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: LessThan
     path: src/Storage/Lib/Common/Table/QueryComparisons.cs
-    startLine: 56
+    startLine: 89
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nRepresents the Less Than operator.\r\n"
+  example: []
   syntax:
-    content: >-
-      public static string LessThan
-
-      {
-
-          get;
-
-      }
-    content.vb: Public Shared ReadOnly Property LessThan As String
-    parameters: []
+    content: public const string LessThan = "lt"
+    content.vb: Public Const LessThan As String = "lt"
     return:
       type: System.String
   modifiers.csharp:
   - public
-  - static
-  - get
+  - const
   modifiers.vb:
   - Public
-  - Shared
-  - ReadOnly
+  - Const
 - uid: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.LessThanOrEqual
-  commentId: P:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.LessThanOrEqual
+  commentId: F:Microsoft.WindowsAzure.Storage.Table.QueryComparisons.LessThanOrEqual
   id: LessThanOrEqual
   parent: Microsoft.WindowsAzure.Storage.Table.QueryComparisons
   langs:
@@ -300,7 +260,7 @@ items:
   - vb
   name: LessThanOrEqual
   fullName: Microsoft.WindowsAzure.Storage.Table.QueryComparisons.LessThanOrEqual
-  type: Property
+  type: Field
   source:
     remote:
       path: src/Storage/Lib/Common/Table/QueryComparisons.cs
@@ -308,31 +268,23 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: LessThanOrEqual
     path: src/Storage/Lib/Common/Table/QueryComparisons.cs
-    startLine: 61
+    startLine: 94
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nRepresents the Less Than or Equal operator.\r\n"
+  example: []
   syntax:
-    content: >-
-      public static string LessThanOrEqual
-
-      {
-
-          get;
-
-      }
-    content.vb: Public Shared ReadOnly Property LessThanOrEqual As String
-    parameters: []
+    content: public const string LessThanOrEqual = "le"
+    content.vb: Public Const LessThanOrEqual As String = "le"
     return:
       type: System.String
   modifiers.csharp:
   - public
-  - static
-  - get
+  - const
   modifiers.vb:
   - Public
-  - Shared
-  - ReadOnly
+  - Const
 references:
 - uid: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
@@ -343,6 +295,29 @@ references:
   isExternal: true
   name: Object
   fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -402,6 +377,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -481,72 +499,6 @@ references:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
     fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
     isExternal: true
   - name: (
     fullName: (

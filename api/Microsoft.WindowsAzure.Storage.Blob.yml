@@ -7,6 +7,7 @@ items:
   - Microsoft.WindowsAzure.Storage.Blob.BlobContainerProperties
   - Microsoft.WindowsAzure.Storage.Blob.BlobContainerPublicAccessType
   - Microsoft.WindowsAzure.Storage.Blob.BlobContinuationToken
+  - Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
   - Microsoft.WindowsAzure.Storage.Blob.BlobListingDetails
   - Microsoft.WindowsAzure.Storage.Blob.BlobProperties
   - Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
@@ -50,6 +51,11 @@ items:
   assemblies:
   - Microsoft.WindowsAzure.Storage
 references:
+- uid: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: BlobEncryptionPolicy
+  fullName: Microsoft.WindowsAzure.Storage.Blob.BlobEncryptionPolicy
 - uid: Microsoft.WindowsAzure.Storage.Blob.CloudAppendBlob
   parent: Microsoft.WindowsAzure.Storage.Blob
   isExternal: false
@@ -70,6 +76,16 @@ references:
   isExternal: false
   name: CloudBlobContainer
   fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: CloudBlobDirectory
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
+- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobStream
+  parent: Microsoft.WindowsAzure.Storage.Blob
+  isExternal: false
+  name: CloudBlobStream
+  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobStream
 - uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlockBlob
   parent: Microsoft.WindowsAzure.Storage.Blob
   isExternal: false
@@ -80,15 +96,6 @@ references:
   isExternal: false
   name: CloudPageBlob
   fullName: Microsoft.WindowsAzure.Storage.Blob.CloudPageBlob
-- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
-  parent: Microsoft.WindowsAzure.Storage.Blob
-  isExternal: false
-  name: CloudBlobDirectory
-  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobDirectory
-- uid: Microsoft.WindowsAzure.Storage.Blob.CloudBlobStream
-  isExternal: false
-  name: CloudBlobStream
-  fullName: Microsoft.WindowsAzure.Storage.Blob.CloudBlobStream
 - uid: Microsoft.WindowsAzure.Storage.Blob.ICloudBlob
   parent: Microsoft.WindowsAzure.Storage.Blob
   isExternal: false
@@ -130,6 +137,7 @@ references:
   name: BlobRequestOptions
   fullName: Microsoft.WindowsAzure.Storage.Blob.BlobRequestOptions
 - uid: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
+  parent: Microsoft.WindowsAzure.Storage.Blob
   isExternal: false
   name: BlobResultSegment
   fullName: Microsoft.WindowsAzure.Storage.Blob.BlobResultSegment
@@ -154,6 +162,7 @@ references:
   name: ContainerListingDetails
   fullName: Microsoft.WindowsAzure.Storage.Blob.ContainerListingDetails
 - uid: Microsoft.WindowsAzure.Storage.Blob.ContainerResultSegment
+  parent: Microsoft.WindowsAzure.Storage.Blob
   isExternal: false
   name: ContainerResultSegment
   fullName: Microsoft.WindowsAzure.Storage.Blob.ContainerResultSegment

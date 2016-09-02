@@ -1,0 +1,473 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  commentId: T:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  id: TableHttpWebResponseParsers
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol
+  children:
+  - Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.GetRequestId(System.Net.HttpWebResponse)
+  - Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceProperties(System.IO.Stream)
+  - Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceStats(System.IO.Stream)
+  - Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadSharedAccessIdentifiers(System.IO.Stream,Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  langs:
+  - csharp
+  - vb
+  name: TableHttpWebResponseParsers
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  type: Class
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: TableHttpWebResponseParsers
+    path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nProvides a set of methods for parsing a response stream from the Table service.\r\n"
+  example: []
+  syntax:
+    content: public class TableHttpWebResponseParsers
+    content.vb: Public Class TableHttpWebResponseParsers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.GetRequestId(System.Net.HttpWebResponse)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.GetRequestId(System.Net.HttpWebResponse)
+  id: GetRequestId(System.Net.HttpWebResponse)
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: GetRequestId(HttpWebResponse)
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.GetRequestId(System.Net.HttpWebResponse)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetRequestId
+    path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nGets the request ID from the response.\r\n"
+  example: []
+  syntax:
+    content: public static string GetRequestId(HttpWebResponse response)
+    content.vb: Public Shared Function GetRequestId(response As HttpWebResponse) As String
+    parameters:
+    - id: response
+      type: System.Net.HttpWebResponse
+      description: The web response.
+    return:
+      type: System.String
+      description: A unique value associated with the request.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceProperties(System.IO.Stream)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceProperties(System.IO.Stream)
+  id: ReadServiceProperties(System.IO.Stream)
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadServiceProperties(Stream)
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceProperties(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadServiceProperties
+    path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nReads service properties from a stream.\r\n"
+  example: []
+  syntax:
+    content: public static ServiceProperties ReadServiceProperties(Stream inputStream)
+    content.vb: Public Shared Function ReadServiceProperties(inputStream As Stream) As ServiceProperties
+    parameters:
+    - id: inputStream
+      type: System.IO.Stream
+      description: The stream from which to read the service properties.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceProperties
+      description: The service properties stored in the stream.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceStats(System.IO.Stream)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceStats(System.IO.Stream)
+  id: ReadServiceStats(System.IO.Stream)
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadServiceStats(Stream)
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadServiceStats(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadServiceStats
+    path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nReads service stats from a stream.\r\n"
+  example: []
+  syntax:
+    content: public static ServiceStats ReadServiceStats(Stream inputStream)
+    content.vb: Public Shared Function ReadServiceStats(inputStream As Stream) As ServiceStats
+    parameters:
+    - id: inputStream
+      type: System.IO.Stream
+      description: The stream from which to read the service stats.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+      description: The service stats stored in the stream.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadSharedAccessIdentifiers(System.IO.Stream,Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadSharedAccessIdentifiers(System.IO.Stream,Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  id: ReadSharedAccessIdentifiers(System.IO.Stream,Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  parent: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers
+  langs:
+  - csharp
+  - vb
+  name: ReadSharedAccessIdentifiers(Stream, TablePermissions)
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol.TableHttpWebResponseParsers.ReadSharedAccessIdentifiers(System.IO.Stream, Microsoft.WindowsAzure.Storage.Table.TablePermissions)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadSharedAccessIdentifiers
+    path: src/Storage/Lib/ClassLibraryCommon/Table/Protocol/TableHttpWebResponseParsers.cs
+    startLine: 64
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table.Protocol
+  summary: "\r\nReads the share access policies from a stream in XML.\r\n"
+  example: []
+  syntax:
+    content: public static void ReadSharedAccessIdentifiers(Stream inputStream, TablePermissions permissions)
+    content.vb: Public Shared Sub ReadSharedAccessIdentifiers(inputStream As Stream, permissions As TablePermissions)
+    parameters:
+    - id: inputStream
+      type: System.IO.Stream
+      description: The stream of XML policies.
+    - id: permissions
+      type: Microsoft.WindowsAzure.Storage.Table.TablePermissions
+      description: The permissions object to which the policies are to be written.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.WindowsAzure.Storage.Table.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.Table.Protocol
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Net.HttpWebResponse
+  parent: System.Net
+  isExternal: true
+  name: HttpWebResponse
+  fullName: System.Net.HttpWebResponse
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceProperties
+  parent: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: ServiceProperties
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceProperties
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol
+- uid: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+  parent: Microsoft.WindowsAzure.Storage.Shared.Protocol
+  isExternal: false
+  name: ServiceStats
+  fullName: Microsoft.WindowsAzure.Storage.Shared.Protocol.ServiceStats
+- uid: Microsoft.WindowsAzure.Storage.Table.TablePermissions
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TablePermissions
+  fullName: Microsoft.WindowsAzure.Storage.Table.TablePermissions
+- uid: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Table
+  fullName: Microsoft.WindowsAzure.Storage.Table

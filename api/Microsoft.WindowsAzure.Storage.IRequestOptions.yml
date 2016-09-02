@@ -6,6 +6,7 @@ items:
   children:
   - Microsoft.WindowsAzure.Storage.IRequestOptions.LocationMode
   - Microsoft.WindowsAzure.Storage.IRequestOptions.MaximumExecutionTime
+  - Microsoft.WindowsAzure.Storage.IRequestOptions.RequireEncryption
   - Microsoft.WindowsAzure.Storage.IRequestOptions.RetryPolicy
   - Microsoft.WindowsAzure.Storage.IRequestOptions.ServerTimeout
   langs:
@@ -205,6 +206,48 @@ items:
   modifiers.csharp:
   - get
   - set
+- uid: Microsoft.WindowsAzure.Storage.IRequestOptions.RequireEncryption
+  commentId: P:Microsoft.WindowsAzure.Storage.IRequestOptions.RequireEncryption
+  id: RequireEncryption
+  parent: Microsoft.WindowsAzure.Storage.IRequestOptions
+  langs:
+  - csharp
+  - vb
+  name: RequireEncryption
+  fullName: Microsoft.WindowsAzure.Storage.IRequestOptions.RequireEncryption
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/Common/IRequestOptions.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: RequireEncryption
+    path: src/Storage/Lib/Common/IRequestOptions.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nGets or sets a value to indicate whether data written and read by the client library should be encrypted.\r\n"
+  example: []
+  syntax:
+    content: >-
+      bool ? RequireEncryption
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Property RequireEncryption As Boolean?
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+      description: Use <code>true</code> to specify that data should be encrypted/decrypted for all transactions; otherwise, <code>false</code>.
+  modifiers.csharp:
+  - get
+  - set
 references:
 - uid: Microsoft.WindowsAzure.Storage.Queue.QueueRequestOptions
   parent: Microsoft.WindowsAzure.Storage.Queue
@@ -355,6 +398,39 @@ references:
   - uid: System.TimeSpan
     name: TimeSpan
     fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  fullname.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
     isExternal: true
   - name: )
     fullName: )

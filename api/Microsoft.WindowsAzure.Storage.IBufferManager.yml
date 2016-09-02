@@ -52,23 +52,19 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ReturnBuffer
     path: src/Storage/Lib/Common/IBufferManager.cs
-    startLine: 36
+    startLine: 38
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
   summary: "\r\nReturns a buffer to the pool.\r\n"
   example: []
   syntax:
-    content: void ReturnBuffer([ReadOnlyArray] byte[] buffer)
+    content: void ReturnBuffer(byte[] buffer)
     content.vb: Sub ReturnBuffer(buffer As Byte())
     parameters:
     - id: buffer
       type: System.Byte[]
       description: A byte array specifying the buffer to return to the pool.
-      attributes:
-      - type: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute
-        ctor: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute.#ctor
-        arguments: []
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException

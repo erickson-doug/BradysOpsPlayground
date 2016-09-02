@@ -9,9 +9,11 @@ items:
   - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ErrorCode
   - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ErrorMessage
   - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadAndParseExtendedError(Microsoft.Data.OData.IODataResponseMessage)
+  - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadDataServiceResponseFromStream(System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.String},System.String)
   - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStream(System.IO.Stream)
-  - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStream(Windows.Storage.Streams.IInputStream)
-  - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStreamUsingODataLib(System.IO.Stream,System.Net.Http.HttpResponseMessage,System.String)
+  - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStreamUsingODataLib(System.IO.Stream,System.Net.HttpWebResponse,System.String)
+  - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadXml(System.Xml.XmlReader)
+  - Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.WriteXml(System.Xml.XmlWriter)
   langs:
   - csharp
   - vb
@@ -25,25 +27,35 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: StorageExtendedErrorInformation
     path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
-    startLine: 46
+    startLine: 44
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
   summary: "\r\nRepresents extended error information returned by the Microsoft Azure storage services.\r\n"
   example: []
   syntax:
-    content: public sealed class StorageExtendedErrorInformation
-    content.vb: Public NotInheritable Class StorageExtendedErrorInformation
+    content: >-
+      [Serializable]
+
+      public sealed class StorageExtendedErrorInformation
+    content.vb: >-
+      <Serializable>
+
+      Public NotInheritable Class StorageExtendedErrorInformation
   inheritance:
   - System.Object
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - sealed
@@ -211,41 +223,6 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStream(Windows.Storage.Streams.IInputStream)
-  commentId: M:Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStream(Windows.Storage.Streams.IInputStream)
-  id: ReadFromStream(Windows.Storage.Streams.IInputStream)
-  parent: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation
-  langs:
-  - csharp
-  - vb
-  name: ReadFromStream(IInputStream)
-  fullName: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStream(Windows.Storage.Streams.IInputStream)
-  type: Method
-  source:
-    remote:
-      path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
-      branch: master
-      repo: https://github.com/bradygaster/BradysOpsPlayground.git
-    id: ReadFromStream
-    path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
-    startLine: 74
-  assemblies:
-  - Microsoft.WindowsAzure.Storage
-  namespace: Microsoft.WindowsAzure.Storage
-  syntax:
-    content: public static StorageExtendedErrorInformation ReadFromStream(IInputStream inputStream)
-    content.vb: Public Shared Function ReadFromStream(inputStream As IInputStream) As StorageExtendedErrorInformation
-    parameters:
-    - id: inputStream
-      type: Windows.Storage.Streams.IInputStream
-    return:
-      type: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStream(System.IO.Stream)
   commentId: M:Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStream(System.IO.Stream)
   id: ReadFromStream(System.IO.Stream)
@@ -285,15 +262,15 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStreamUsingODataLib(System.IO.Stream,System.Net.Http.HttpResponseMessage,System.String)
-  commentId: M:Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStreamUsingODataLib(System.IO.Stream,System.Net.Http.HttpResponseMessage,System.String)
-  id: ReadFromStreamUsingODataLib(System.IO.Stream,System.Net.Http.HttpResponseMessage,System.String)
+- uid: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStreamUsingODataLib(System.IO.Stream,System.Net.HttpWebResponse,System.String)
+  commentId: M:Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStreamUsingODataLib(System.IO.Stream,System.Net.HttpWebResponse,System.String)
+  id: ReadFromStreamUsingODataLib(System.IO.Stream,System.Net.HttpWebResponse,System.String)
   parent: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation
   langs:
   - csharp
   - vb
-  name: ReadFromStreamUsingODataLib(Stream, HttpResponseMessage, String)
-  fullName: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStreamUsingODataLib(System.IO.Stream, System.Net.Http.HttpResponseMessage, System.String)
+  name: ReadFromStreamUsingODataLib(Stream, HttpWebResponse, String)
+  fullName: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadFromStreamUsingODataLib(System.IO.Stream, System.Net.HttpWebResponse, System.String)
   type: Method
   source:
     remote:
@@ -302,21 +279,21 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ReadFromStreamUsingODataLib
     path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
-    startLine: 120
+    startLine: 122
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
   summary: "\r\nGets the error details from the stream using OData library.\r\n"
   example: []
   syntax:
-    content: public static StorageExtendedErrorInformation ReadFromStreamUsingODataLib(Stream inputStream, HttpResponseMessage response, string contentType)
-    content.vb: Public Shared Function ReadFromStreamUsingODataLib(inputStream As Stream, response As HttpResponseMessage, contentType As String) As StorageExtendedErrorInformation
+    content: public static StorageExtendedErrorInformation ReadFromStreamUsingODataLib(Stream inputStream, HttpWebResponse response, string contentType)
+    content.vb: Public Shared Function ReadFromStreamUsingODataLib(inputStream As Stream, response As HttpWebResponse, contentType As String) As StorageExtendedErrorInformation
     parameters:
     - id: inputStream
       type: System.IO.Stream
       description: The input stream.
     - id: response
-      type: System.Net.Http.HttpResponseMessage
+      type: System.Net.HttpWebResponse
       description: The web response.
     - id: contentType
       type: System.String
@@ -330,6 +307,53 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadDataServiceResponseFromStream(System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.String},System.String)
+  commentId: M:Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadDataServiceResponseFromStream(System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.String},System.String)
+  id: ReadDataServiceResponseFromStream(System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.String},System.String)
+  parent: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation
+  langs:
+  - csharp
+  - vb
+  name: ReadDataServiceResponseFromStream(Stream, IDictionary<String, String>, String)
+  fullName: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadDataServiceResponseFromStream(System.IO.Stream, System.Collections.Generic.IDictionary<System.String, System.String>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadDataServiceResponseFromStream
+    path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
+    startLine: 145
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nGets the error details from the stream using OData library.\r\n"
+  example: []
+  syntax:
+    content: public static StorageExtendedErrorInformation ReadDataServiceResponseFromStream(Stream inputStream, IDictionary<string, string> responseHeaders, string contentType)
+    content.vb: Public Shared Function ReadDataServiceResponseFromStream(inputStream As Stream, responseHeaders As IDictionary(Of String, String), contentType As String) As StorageExtendedErrorInformation
+    parameters:
+    - id: inputStream
+      type: System.IO.Stream
+      description: The input stream.
+    - id: responseHeaders
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: The web response headers.
+    - id: contentType
+      type: System.String
+      description: The response Content-Type.
+    return:
+      type: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation
+      description: The error details.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadDataServiceResponseFromStream(System.IO.Stream, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String)
+  name.vb: ReadDataServiceResponseFromStream(Stream, IDictionary(Of String, String), String)
 - uid: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadAndParseExtendedError(Microsoft.Data.OData.IODataResponseMessage)
   commentId: M:Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadAndParseExtendedError(Microsoft.Data.OData.IODataResponseMessage)
   id: ReadAndParseExtendedError(Microsoft.Data.OData.IODataResponseMessage)
@@ -369,6 +393,74 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadXml(System.Xml.XmlReader)
+  commentId: M:Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation
+  langs:
+  - csharp
+  - vb
+  name: ReadXml(XmlReader)
+  fullName: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.ReadXml(System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadXml
+    path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
+    startLine: 214
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nGenerates a serializable <xref href=\"Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation\" data-throw-if-not-resolved=\"false\"></xref> object from its XML representation.\r\n"
+  example: []
+  syntax:
+    content: public void ReadXml(XmlReader reader)
+    content.vb: Public Sub ReadXml(reader As XmlReader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The <xref href="System.Xml.XmlReader" data-throw-if-not-resolved="false"></xref> stream from which the <xref href="Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation" data-throw-if-not-resolved="false"></xref> object is deserialized.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.WriteXml(System.Xml.XmlWriter)
+  commentId: M:Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  fullName: Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: WriteXml
+    path: src/Storage/Lib/Common/StorageExtendedErrorInformation.cs
+    startLine: 285
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nConverts a serializable <xref href=\"Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation\" data-throw-if-not-resolved=\"false\"></xref> object into its XML representation.\r\n"
+  example: []
+  syntax:
+    content: public void WriteXml(XmlWriter writer)
+    content.vb: Public Sub WriteXml(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The <xref href="System.Xml.XmlWriter" data-throw-if-not-resolved="false"></xref> stream to which the <xref href="Microsoft.WindowsAzure.Storage.StorageExtendedErrorInformation" data-throw-if-not-resolved="false"></xref> object is serialized.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
 - uid: Microsoft.WindowsAzure.Storage
   isExternal: false
@@ -379,6 +471,29 @@ references:
   isExternal: true
   name: Object
   fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -438,6 +553,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -517,72 +675,6 @@ references:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
     fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
     isExternal: true
   - name: (
     fullName: (
@@ -688,15 +780,6 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Windows.Storage.Streams.IInputStream
-  parent: Windows.Storage.Streams
-  isExternal: true
-  name: IInputStream
-  fullName: Windows.Storage.Streams.IInputStream
-- uid: Windows.Storage.Streams
-  isExternal: false
-  name: Windows.Storage.Streams
-  fullName: Windows.Storage.Streams
 - uid: System.IO.Stream
   parent: System.IO
   isExternal: true
@@ -706,15 +789,15 @@ references:
   isExternal: false
   name: System.IO
   fullName: System.IO
-- uid: System.Net.Http.HttpResponseMessage
-  parent: System.Net.Http
+- uid: System.Net.HttpWebResponse
+  parent: System.Net
   isExternal: true
-  name: HttpResponseMessage
-  fullName: System.Net.Http.HttpResponseMessage
-- uid: System.Net.Http
+  name: HttpWebResponse
+  fullName: System.Net.HttpWebResponse
+- uid: System.Net
   isExternal: false
-  name: System.Net.Http
-  fullName: System.Net.Http
+  name: System.Net
+  fullName: System.Net
 - uid: Microsoft.Data.OData.IODataResponseMessage
   parent: Microsoft.Data.OData
   isExternal: true
@@ -724,3 +807,17 @@ references:
   isExternal: false
   name: Microsoft.Data.OData
   fullName: Microsoft.Data.OData
+- uid: System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: true
+  name: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter

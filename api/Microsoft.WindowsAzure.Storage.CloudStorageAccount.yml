@@ -4,13 +4,14 @@ items:
   id: CloudStorageAccount
   parent: Microsoft.WindowsAzure.Storage
   children:
+  - Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri)
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,System.Boolean)
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,System.String,System.Boolean)
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,System.String,System.String,System.Boolean)
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,System.Uri,System.Uri,System.Uri,System.Uri)
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.BlobEndpoint
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.BlobStorageUri
-  - Microsoft.WindowsAzure.Storage.CloudStorageAccount.Create(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri)
+  - Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudAnalyticsClient
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudBlobClient
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudFileClient
   - Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudQueueClient
@@ -56,10 +57,10 @@ items:
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - sealed
@@ -161,51 +162,52 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Microsoft.WindowsAzure.Storage.CloudStorageAccount.Create(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri)
-  commentId: M:Microsoft.WindowsAzure.Storage.CloudStorageAccount.Create(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri)
-  id: Create(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri)
+- uid: Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri)
+  commentId: M:Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri)
+  id: '#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri,Microsoft.WindowsAzure.Storage.StorageUri)'
   parent: Microsoft.WindowsAzure.Storage.CloudStorageAccount
   langs:
   - csharp
   - vb
-  name: Create(StorageCredentials, StorageUri, StorageUri, StorageUri, StorageUri)
-  fullName: Microsoft.WindowsAzure.Storage.CloudStorageAccount.Create(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials, Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.StorageUri)
-  type: Method
+  name: CloudStorageAccount(StorageCredentials, StorageUri, StorageUri, StorageUri, StorageUri)
+  fullName: Microsoft.WindowsAzure.Storage.CloudStorageAccount.CloudStorageAccount(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials, Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.StorageUri, Microsoft.WindowsAzure.Storage.StorageUri)
+  type: Constructor
   source:
     remote:
       path: src/Storage/Lib/Common/CloudStorageAccount.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
-    id: Create
+    id: .ctor
     path: src/Storage/Lib/Common/CloudStorageAccount.cs
-    startLine: 253
+    startLine: 260
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nInitializes a new instance of the <xref href=\"Microsoft.WindowsAzure.Storage.CloudStorageAccount\" data-throw-if-not-resolved=\"false\"></xref> class using the specified\r\naccount credentials and service endpoints.\r\n"
   example: []
   syntax:
-    content: public static CloudStorageAccount Create(StorageCredentials storageCredentials, StorageUri blobStorageUri, StorageUri queueStorageUri, StorageUri tableStorageUri, StorageUri fileStorageUri)
-    content.vb: Public Shared Function Create(storageCredentials As StorageCredentials, blobStorageUri As StorageUri, queueStorageUri As StorageUri, tableStorageUri As StorageUri, fileStorageUri As StorageUri) As CloudStorageAccount
+    content: public CloudStorageAccount(StorageCredentials storageCredentials, StorageUri blobStorageUri, StorageUri queueStorageUri, StorageUri tableStorageUri, StorageUri fileStorageUri)
+    content.vb: Public Sub New(storageCredentials As StorageCredentials, blobStorageUri As StorageUri, queueStorageUri As StorageUri, tableStorageUri As StorageUri, fileStorageUri As StorageUri)
     parameters:
     - id: storageCredentials
       type: Microsoft.WindowsAzure.Storage.Auth.StorageCredentials
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Auth.StorageCredentials" data-throw-if-not-resolved="false"></xref> object.
     - id: blobStorageUri
       type: Microsoft.WindowsAzure.Storage.StorageUri
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageUri" data-throw-if-not-resolved="false"></xref> specifying the Blob service endpoint or endpoints.
     - id: queueStorageUri
       type: Microsoft.WindowsAzure.Storage.StorageUri
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageUri" data-throw-if-not-resolved="false"></xref> specifying the Queue service endpoint or endpoints.
     - id: tableStorageUri
       type: Microsoft.WindowsAzure.Storage.StorageUri
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageUri" data-throw-if-not-resolved="false"></xref> specifying the Table service endpoint or endpoints.
     - id: fileStorageUri
       type: Microsoft.WindowsAzure.Storage.StorageUri
-    return:
-      type: Microsoft.WindowsAzure.Storage.CloudStorageAccount
-      description: A <xref href="Microsoft.WindowsAzure.Storage.CloudStorageAccount" data-throw-if-not-resolved="false"></xref> instance for the specific credentials and service endpoints.
+      description: A <xref href="Microsoft.WindowsAzure.Storage.StorageUri" data-throw-if-not-resolved="false"></xref> specifying the File service endpoint or endpoints.
   modifiers.csharp:
   - public
-  - static
   modifiers.vb:
   - Public
-  - Shared
 - uid: Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,System.Boolean)
   commentId: M:Microsoft.WindowsAzure.Storage.CloudStorageAccount.#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,System.Boolean)
   id: '#ctor(Microsoft.WindowsAzure.Storage.Auth.StorageCredentials,System.Boolean)'
@@ -956,6 +958,39 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudAnalyticsClient
+  commentId: M:Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudAnalyticsClient
+  id: CreateCloudAnalyticsClient
+  parent: Microsoft.WindowsAzure.Storage.CloudStorageAccount
+  langs:
+  - csharp
+  - vb
+  name: CreateCloudAnalyticsClient()
+  fullName: Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudAnalyticsClient()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/Common/CloudStorageAccount.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CreateCloudAnalyticsClient
+    path: src/Storage/Lib/Common/CloudStorageAccount.cs
+    startLine: 579
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nCreates an analytics client.\r\n"
+  example: []
+  syntax:
+    content: public CloudAnalyticsClient CreateCloudAnalyticsClient()
+    content.vb: Public Function CreateCloudAnalyticsClient As CloudAnalyticsClient
+    return:
+      type: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient" data-throw-if-not-resolved="false"></xref> object.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudFileClient
   commentId: M:Microsoft.WindowsAzure.Storage.CloudStorageAccount.CreateCloudFileClient
   id: CreateCloudFileClient
@@ -1184,6 +1219,49 @@ references:
     isExternal: true
   - name: )
     fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
   isExternal: true
@@ -1251,49 +1329,6 @@ references:
     isExternal: true
   - name: (
     fullName: (
-  - name: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
   - name: )
     fullName: )
 - uid: System
@@ -1364,6 +1399,15 @@ references:
   isExternal: false
   name: Microsoft.WindowsAzure.Storage.Blob
   fullName: Microsoft.WindowsAzure.Storage.Blob
+- uid: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+  parent: Microsoft.WindowsAzure.Storage.Analytics
+  isExternal: false
+  name: CloudAnalyticsClient
+  fullName: Microsoft.WindowsAzure.Storage.Analytics.CloudAnalyticsClient
+- uid: Microsoft.WindowsAzure.Storage.Analytics
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Analytics
+  fullName: Microsoft.WindowsAzure.Storage.Analytics
 - uid: Microsoft.WindowsAzure.Storage.File.CloudFileClient
   parent: Microsoft.WindowsAzure.Storage.File
   isExternal: false

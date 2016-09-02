@@ -5,19 +5,22 @@ items:
   parent: Microsoft.WindowsAzure.Storage
   children:
   - Microsoft.WindowsAzure.Storage.RequestResult.ContentMd5
+  - Microsoft.WindowsAzure.Storage.RequestResult.EgressBytes
   - Microsoft.WindowsAzure.Storage.RequestResult.EndTime
   - Microsoft.WindowsAzure.Storage.RequestResult.Etag
   - Microsoft.WindowsAzure.Storage.RequestResult.Exception
-  - Microsoft.WindowsAzure.Storage.RequestResult.ExceptionInfo
   - Microsoft.WindowsAzure.Storage.RequestResult.ExtendedErrorInformation
   - Microsoft.WindowsAzure.Storage.RequestResult.HttpStatusCode
   - Microsoft.WindowsAzure.Storage.RequestResult.HttpStatusMessage
+  - Microsoft.WindowsAzure.Storage.RequestResult.IngressBytes
   - Microsoft.WindowsAzure.Storage.RequestResult.IsRequestServerEncrypted
+  - Microsoft.WindowsAzure.Storage.RequestResult.ReadXml(System.Xml.XmlReader)
   - Microsoft.WindowsAzure.Storage.RequestResult.RequestDate
   - Microsoft.WindowsAzure.Storage.RequestResult.ServiceRequestID
   - Microsoft.WindowsAzure.Storage.RequestResult.StartTime
   - Microsoft.WindowsAzure.Storage.RequestResult.TargetLocation
   - Microsoft.WindowsAzure.Storage.RequestResult.TranslateFromExceptionMessage(System.String)
+  - Microsoft.WindowsAzure.Storage.RequestResult.WriteXml(System.Xml.XmlWriter)
   langs:
   - csharp
   - vb
@@ -31,25 +34,35 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: RequestResult
     path: src/Storage/Lib/Common/RequestResult.cs
-    startLine: 35
+    startLine: 33
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
   summary: "\r\nRepresents the result of a physical request.\r\n"
   example: []
   syntax:
-    content: public sealed class RequestResult
-    content.vb: Public NotInheritable Class RequestResult
+    content: >-
+      [Serializable]
+
+      public sealed class RequestResult
+    content.vb: >-
+      <Serializable>
+
+      Public NotInheritable Class RequestResult
   inheritance:
   - System.Object
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - sealed
@@ -335,6 +348,94 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.RequestResult.IngressBytes
+  commentId: P:Microsoft.WindowsAzure.Storage.RequestResult.IngressBytes
+  id: IngressBytes
+  parent: Microsoft.WindowsAzure.Storage.RequestResult
+  langs:
+  - csharp
+  - vb
+  name: IngressBytes
+  fullName: Microsoft.WindowsAzure.Storage.RequestResult.IngressBytes
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/Common/RequestResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: IngressBytes
+    path: src/Storage/Lib/Common/RequestResult.cs
+    startLine: 76
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nThe number of bytes read from the response body for the given request\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long IngressBytes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property IngressBytes As Long
+    parameters: []
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.RequestResult.EgressBytes
+  commentId: P:Microsoft.WindowsAzure.Storage.RequestResult.EgressBytes
+  id: EgressBytes
+  parent: Microsoft.WindowsAzure.Storage.RequestResult
+  langs:
+  - csharp
+  - vb
+  name: EgressBytes
+  fullName: Microsoft.WindowsAzure.Storage.RequestResult.EgressBytes
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/Common/RequestResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: EgressBytes
+    path: src/Storage/Lib/Common/RequestResult.cs
+    startLine: 81
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "        \r\nThe number of bytes written to the request body for a given request\r\n"
+  example: []
+  syntax:
+    content: >-
+      public long EgressBytes
+
+      {
+
+          get;
+
+          set;
+
+      }
+    content.vb: Public Property EgressBytes As Long
+    parameters: []
+    return:
+      type: System.Int64
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: Microsoft.WindowsAzure.Storage.RequestResult.RequestDate
   commentId: P:Microsoft.WindowsAzure.Storage.RequestResult.RequestDate
   id: RequestDate
@@ -568,23 +669,26 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: StartTime
     path: src/Storage/Lib/Common/RequestResult.cs
-    startLine: 127
+    startLine: 137
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nGets the start time of the operation.\r\n"
+  example: []
   syntax:
     content: >-
-      public DateTimeOffset StartTime
+      public DateTime StartTime
 
       {
 
           get;
 
       }
-    content.vb: Public ReadOnly Property StartTime As DateTimeOffset
+    content.vb: Public ReadOnly Property StartTime As Date
     parameters: []
     return:
-      type: System.DateTimeOffset
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> value indicating the start time of the operation.
   modifiers.csharp:
   - public
   - get
@@ -608,63 +712,26 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: EndTime
     path: src/Storage/Lib/Common/RequestResult.cs
-    startLine: 129
+    startLine: 143
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nGets the end time of the operation.\r\n"
+  example: []
   syntax:
     content: >-
-      public DateTimeOffset EndTime
+      public DateTime EndTime
 
       {
 
           get;
 
       }
-    content.vb: Public ReadOnly Property EndTime As DateTimeOffset
+    content.vb: Public ReadOnly Property EndTime As Date
     parameters: []
     return:
-      type: System.DateTimeOffset
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Microsoft.WindowsAzure.Storage.RequestResult.ExceptionInfo
-  commentId: P:Microsoft.WindowsAzure.Storage.RequestResult.ExceptionInfo
-  id: ExceptionInfo
-  parent: Microsoft.WindowsAzure.Storage.RequestResult
-  langs:
-  - csharp
-  - vb
-  name: ExceptionInfo
-  fullName: Microsoft.WindowsAzure.Storage.RequestResult.ExceptionInfo
-  type: Property
-  source:
-    remote:
-      path: src/Storage/Lib/Common/RequestResult.cs
-      branch: master
-      repo: https://github.com/bradygaster/BradysOpsPlayground.git
-    id: ExceptionInfo
-    path: src/Storage/Lib/Common/RequestResult.cs
-    startLine: 131
-  assemblies:
-  - Microsoft.WindowsAzure.Storage
-  namespace: Microsoft.WindowsAzure.Storage
-  syntax:
-    content: >-
-      public ExceptionInfo ExceptionInfo
-
-      {
-
-          get;
-
-      }
-    content.vb: Public ReadOnly Property ExceptionInfo As ExceptionInfo
-    parameters: []
-    return:
-      type: Microsoft.WindowsAzure.Storage.ExceptionInfo
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> value indicating the end time of the operation.
   modifiers.csharp:
   - public
   - get
@@ -688,15 +755,21 @@ items:
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: TranslateFromExceptionMessage
     path: src/Storage/Lib/Common/RequestResult.cs
-    startLine: 153
+    startLine: 151
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage
   summary: "\r\nTranslates the specified message into a <xref href=\"Microsoft.WindowsAzure.Storage.RequestResult\" data-throw-if-not-resolved=\"false\"></xref> object.\r\n"
   example: []
   syntax:
-    content: public static RequestResult TranslateFromExceptionMessage(string message)
-    content.vb: Public Shared Function TranslateFromExceptionMessage(message As String) As RequestResult
+    content: >-
+      [Obsolete("This should be available only in Microsoft.WindowsAzure.Storage.WinMD and not in Microsoft.WindowsAzure.Storage.dll. Please use ReadXML to deserialize RequestResult when Microsoft.WindowsAzure.Storage.dll is used.")]
+
+      public static RequestResult TranslateFromExceptionMessage(string message)
+    content.vb: >-
+      <Obsolete("This should be available only in Microsoft.WindowsAzure.Storage.WinMD and not in Microsoft.WindowsAzure.Storage.dll. Please use ReadXML to deserialize RequestResult when Microsoft.WindowsAzure.Storage.dll is used.")>
+
+      Public Shared Function TranslateFromExceptionMessage(message As String) As RequestResult
     parameters:
     - id: message
       type: System.String
@@ -704,12 +777,143 @@ items:
     return:
       type: Microsoft.WindowsAzure.Storage.RequestResult
       description: The translated <xref href="Microsoft.WindowsAzure.Storage.RequestResult" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This should be available only in Microsoft.WindowsAzure.Storage.WinMD and not in Microsoft.WindowsAzure.Storage.dll. Please use ReadXML to deserialize RequestResult when Microsoft.WindowsAzure.Storage.dll is used.
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
+- uid: Microsoft.WindowsAzure.Storage.RequestResult.ReadXml(System.Xml.XmlReader)
+  commentId: M:Microsoft.WindowsAzure.Storage.RequestResult.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: Microsoft.WindowsAzure.Storage.RequestResult
+  langs:
+  - csharp
+  - vb
+  name: ReadXml(XmlReader)
+  fullName: Microsoft.WindowsAzure.Storage.RequestResult.ReadXml(System.Xml.XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/Common/RequestResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ReadXml
+    path: src/Storage/Lib/Common/RequestResult.cs
+    startLine: 194
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nGenerates a serializable RequestResult from its XML representation.\r\n"
+  example: []
+  syntax:
+    content: public void ReadXml(XmlReader reader)
+    content.vb: Public Sub ReadXml(reader As XmlReader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The <xref href="System.Xml.XmlReader" data-throw-if-not-resolved="false"></xref> stream from which the RequestResult is deserialized.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.RequestResult.WriteXml(System.Xml.XmlWriter)
+  commentId: M:Microsoft.WindowsAzure.Storage.RequestResult.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: Microsoft.WindowsAzure.Storage.RequestResult
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  fullName: Microsoft.WindowsAzure.Storage.RequestResult.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/Common/RequestResult.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: WriteXml
+    path: src/Storage/Lib/Common/RequestResult.cs
+    startLine: 243
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage
+  summary: "\r\nConverts a serializable RequestResult into its XML representation.\r\n"
+  example: []
+  syntax:
+    content: >-
+      [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "TranslateFromExceptionMessage", Justification = "TranslateFromException is a field name that when split could confuse the users")]
+
+      [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "RequestResult", Justification = "RequestResult is a variable name which when split could confuse the users")]
+
+      [SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters", MessageId = "System.Xml.XmlWriter.WriteComment(System.String)", Justification = "Reviewed. Literals can be used in an internal method")]
+
+      public void WriteXml(XmlWriter writer)
+    content.vb: >-
+      <SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId:="TranslateFromExceptionMessage", Justification:="TranslateFromException is a field name that when split could confuse the users")>
+
+      <SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId:="RequestResult", Justification:="RequestResult is a variable name which when split could confuse the users")>
+
+      <SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters", MessageId:="System.Xml.XmlWriter.WriteComment(System.String)", Justification:="Reviewed. Literals can be used in an internal method")>
+
+      Public Sub WriteXml(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The <xref href="System.Xml.XmlWriter" data-throw-if-not-resolved="false"></xref> stream to which the RequestResult is serialized.
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute
+    ctor: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Naming
+    - type: System.String
+      value: CA2204:Literals should be spelled correctly
+    namedArguments:
+    - name: MessageId
+      type: System.String
+      value: TranslateFromExceptionMessage
+    - name: Justification
+      type: System.String
+      value: TranslateFromException is a field name that when split could confuse the users
+  - type: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute
+    ctor: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Naming
+    - type: System.String
+      value: CA2204:Literals should be spelled correctly
+    namedArguments:
+    - name: MessageId
+      type: System.String
+      value: RequestResult
+    - name: Justification
+      type: System.String
+      value: RequestResult is a variable name which when split could confuse the users
+  - type: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute
+    ctor: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Globalization
+    - type: System.String
+      value: CA1303:Do not pass literals as localized parameters
+    namedArguments:
+    - name: MessageId
+      type: System.String
+      value: System.Xml.XmlWriter.WriteComment(System.String)
+    - name: Justification
+      type: System.String
+      value: Reviewed. Literals can be used in an internal method
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
 - uid: Microsoft.WindowsAzure.Storage
   isExternal: false
@@ -720,6 +924,29 @@ references:
   isExternal: true
   name: Object
   fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -779,6 +1006,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -863,72 +1133,6 @@ references:
     fullName: (
   - name: )
     fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
 - uid: System
   isExternal: false
   name: System
@@ -943,6 +1147,11 @@ references:
   isExternal: true
   name: String
   fullName: System.String
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
 - uid: Microsoft.WindowsAzure.Storage.StorageLocation
   parent: Microsoft.WindowsAzure.Storage
   isExternal: false
@@ -963,18 +1172,27 @@ references:
   isExternal: true
   name: Exception
   fullName: System.Exception
-- uid: System.DateTimeOffset
+- uid: System.DateTime
   parent: System
   isExternal: true
-  name: DateTimeOffset
-  fullName: System.DateTimeOffset
-- uid: Microsoft.WindowsAzure.Storage.ExceptionInfo
-  parent: Microsoft.WindowsAzure.Storage
-  isExternal: false
-  name: ExceptionInfo
-  fullName: Microsoft.WindowsAzure.Storage.ExceptionInfo
+  name: DateTime
+  fullName: System.DateTime
 - uid: Microsoft.WindowsAzure.Storage.RequestResult
   parent: Microsoft.WindowsAzure.Storage
   isExternal: false
   name: RequestResult
   fullName: Microsoft.WindowsAzure.Storage.RequestResult
+- uid: System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: true
+  name: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: true
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter

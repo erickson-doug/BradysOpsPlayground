@@ -1,0 +1,157 @@
+items:
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  commentId: T:Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  id: ICanonicalizer
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth
+  children:
+  - Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer.AuthorizationScheme
+  - Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer.CanonicalizeHttpRequest(System.Net.HttpWebRequest,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICanonicalizer
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  type: Interface
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/ICanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ICanonicalizer
+    path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/ICanonicalizer.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\n<p>Represents a canonicalizer that converts HTTP request data into a standard form appropriate for signing.</p>\r\n<p>For detailed information on how to authenticate a request, \r\nsee <see href=\"http://msdn.microsoft.com/en-us/library/windowsazure/dd179428.aspx\">Authentication for the Microsoft Azure Storage Services</see>.</p>\r\n"
+  example: []
+  syntax:
+    content: >-
+      [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Canonicalizer", Justification = "Reviewed: Canonicalizer can be used as an identifier name.")]
+
+      public interface ICanonicalizer
+    content.vb: >-
+      <SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId:="Canonicalizer", Justification:="Reviewed: Canonicalizer can be used as an identifier name.")>
+
+      Public Interface ICanonicalizer
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute
+    ctor: System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Naming
+    - type: System.String
+      value: CA1704:IdentifiersShouldBeSpelledCorrectly
+    namedArguments:
+    - name: MessageId
+      type: System.String
+      value: Canonicalizer
+    - name: Justification
+      type: System.String
+      value: 'Reviewed: Canonicalizer can be used as an identifier name.'
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer.AuthorizationScheme
+  commentId: P:Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer.AuthorizationScheme
+  id: AuthorizationScheme
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  langs:
+  - csharp
+  - vb
+  name: AuthorizationScheme
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer.AuthorizationScheme
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/ICanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: AuthorizationScheme
+    path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/ICanonicalizer.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nGets the authorization scheme used for canonicalization.\r\n"
+  example: []
+  syntax:
+    content: >-
+      string AuthorizationScheme
+
+      {
+
+          get;
+
+      }
+    content.vb: ReadOnly Property AuthorizationScheme As String
+    parameters: []
+    return:
+      type: System.String
+      description: The authorization scheme used for canonicalization.
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer.CanonicalizeHttpRequest(System.Net.HttpWebRequest,System.String)
+  commentId: M:Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer.CanonicalizeHttpRequest(System.Net.HttpWebRequest,System.String)
+  id: CanonicalizeHttpRequest(System.Net.HttpWebRequest,System.String)
+  parent: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer
+  langs:
+  - csharp
+  - vb
+  name: CanonicalizeHttpRequest(HttpWebRequest, String)
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth.ICanonicalizer.CanonicalizeHttpRequest(System.Net.HttpWebRequest, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/ICanonicalizer.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: CanonicalizeHttpRequest
+    path: src/Storage/Lib/ClassLibraryCommon/Core/Auth/ICanonicalizer.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Core.Auth
+  summary: "\r\nConverts the specified HTTP request data into a standard form appropriate for signing.\r\n"
+  example: []
+  syntax:
+    content: string CanonicalizeHttpRequest(HttpWebRequest request, string accountName)
+    content.vb: Function CanonicalizeHttpRequest(request As HttpWebRequest, accountName As String) As String
+    parameters:
+    - id: request
+      type: System.Net.HttpWebRequest
+      description: The HTTP request that needs to be signed.
+    - id: accountName
+      type: System.String
+      description: The name of the storage account that the HTTP request will access.
+    return:
+      type: System.String
+      description: The canonicalized string containing the HTTP request data in a standard form appropriate for signing.
+references:
+- uid: Microsoft.WindowsAzure.Storage.Core.Auth
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage.Core.Auth
+  fullName: Microsoft.WindowsAzure.Storage.Core.Auth
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Net.HttpWebRequest
+  parent: System.Net
+  isExternal: true
+  name: HttpWebRequest
+  fullName: System.Net.HttpWebRequest
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net

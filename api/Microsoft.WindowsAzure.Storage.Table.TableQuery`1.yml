@@ -5,9 +5,23 @@ items:
   parent: Microsoft.WindowsAzure.Storage.Table
   children:
   - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.#ctor
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,System.AsyncCallback,System.Object)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ElementType
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.EndExecuteSegmented(System.IAsyncResult)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Execute(Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,System.Threading.CancellationToken)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Expression
   - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.FilterString
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.GetEnumerator
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Provider
   - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Select(System.Collections.Generic.IList{System.String})
   - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.SelectColumns
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.System#Collections#IEnumerable#GetEnumerator
   - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Take(System.Nullable{System.Int32})
   - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.TakeCount
   - Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Where(System.String)
@@ -31,23 +45,29 @@ items:
   summary: "\r\nRepresents a query against a Microsoft Azure table.\r\n"
   example: []
   syntax:
-    content: >-
-      public class TableQuery<TElement>
+    content: 'public class TableQuery<TElement> : IQueryable<TElement>, IEnumerable<TElement>, IQueryable, IEnumerable'
+    content.vb: >-
+      Public Class TableQuery(Of TElement)
 
-          where TElement : ITableEntity, new ()
-    content.vb: Public Class TableQuery(Of TElement As {ITableEntity, New})
+          Implements IQueryable(Of TElement), IEnumerable(Of TElement), IQueryable, IEnumerable
     typeParameters:
     - id: TElement
+      description: A class which implements <xref href="Microsoft.WindowsAzure.Storage.Table.ITableEntity" data-throw-if-not-resolved="false"></xref>.
   inheritance:
   - System.Object
+  implements:
+  - System.Linq.IQueryable{{TElement}}
+  - System.Collections.Generic.IEnumerable{{TElement}}
+  - System.Linq.IQueryable
+  - System.Collections.IEnumerable
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
   - class
@@ -68,12 +88,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/Lib/WindowsRuntime/Table/TableQueryGeneric.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/Lib/WindowsRuntime/Table/TableQueryGeneric.cs
-    startLine: 40
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 52
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
@@ -87,6 +107,607 @@ items:
   modifiers.vb:
   - Public
   fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).TableQuery()
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Execute(Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Execute(Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: Execute(Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: Execute(TableRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.Execute(Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Execute
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 94
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nExecutes a query on a table.\r\n"
+  example: []
+  syntax:
+    content: public virtual IEnumerable<TElement> Execute(TableRequestOptions requestOptions = null, OperationContext operationContext = null)
+    content.vb: Public Overridable Function Execute(requestOptions As TableRequestOptions = Nothing, operationContext As OperationContext = Nothing) As IEnumerable(Of TElement)
+    parameters:
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: An enumerable collection, specialized for type <code>TElement</code>, of the results of executing the query.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).Execute(Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,System.AsyncCallback,System.Object)
+  id: BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,System.AsyncCallback,System.Object)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: BeginExecuteSegmented(TableContinuationToken, AsyncCallback, Object)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginExecuteSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nBegins an asynchronous operation to execute a query and return the results as a result segment.\r\n"
+  example: []
+  syntax:
+    content: public virtual ICancellableAsyncResult BeginExecuteSegmented(TableContinuationToken currentToken, AsyncCallback callback, object state)
+    content.vb: Public Overridable Function BeginExecuteSegmented(currentToken As TableContinuationToken, callback As AsyncCallback, state As Object) As ICancellableAsyncResult
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableContinuationToken" data-throw-if-not-resolved="false"></xref> object returned by a previous listing operation. May be <code>null</code>.
+    - id: callback
+      type: System.AsyncCallback
+      description: An <xref href="System.AsyncCallback" data-throw-if-not-resolved="false"></xref> delegate that will receive notification when the asynchronous operation completes.
+    - id: state
+      type: System.Object
+      description: A user-defined object that will be passed to the callback delegate.
+    return:
+      type: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+      description: An <xref href="System.IAsyncResult" data-throw-if-not-resolved="false"></xref> that references the asynchronous operation.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, System.AsyncCallback, System.Object)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  id: BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.AsyncCallback,System.Object)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: BeginExecuteSegmented(TableContinuationToken, TableRequestOptions, OperationContext, AsyncCallback, Object)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: BeginExecuteSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 139
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nBegins an asynchronous operation to execute a query and return the results as a result segment.\r\n"
+  example: []
+  syntax:
+    content: public virtual ICancellableAsyncResult BeginExecuteSegmented(TableContinuationToken currentToken, TableRequestOptions requestOptions, OperationContext operationContext, AsyncCallback callback, object state)
+    content.vb: Public Overridable Function BeginExecuteSegmented(currentToken As TableContinuationToken, requestOptions As TableRequestOptions, operationContext As OperationContext, callback As AsyncCallback, state As Object) As ICancellableAsyncResult
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableContinuationToken" data-throw-if-not-resolved="false"></xref> object returned by a previous listing operation. May be <code>null</code>.
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: callback
+      type: System.AsyncCallback
+      description: An <xref href="System.AsyncCallback" data-throw-if-not-resolved="false"></xref> delegate that will receive notification when the asynchronous operation completes.
+    - id: state
+      type: System.Object
+      description: A user-defined object that will be passed to the callback delegate.
+    return:
+      type: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+      description: An <xref href="System.IAsyncResult" data-throw-if-not-resolved="false"></xref> that references the asynchronous operation.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).BeginExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.AsyncCallback, System.Object)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.EndExecuteSegmented(System.IAsyncResult)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.EndExecuteSegmented(System.IAsyncResult)
+  id: EndExecuteSegmented(System.IAsyncResult)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: EndExecuteSegmented(IAsyncResult)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.EndExecuteSegmented(System.IAsyncResult)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: EndExecuteSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 182
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nEnds an asynchronous operation to execute a query and return the results as a result segment.\r\n"
+  example: []
+  syntax:
+    content: public virtual TableQuerySegment<TElement> EndExecuteSegmented(IAsyncResult asyncResult)
+    content.vb: Public Overridable Function EndExecuteSegmented(asyncResult As IAsyncResult) As TableQuerySegment(Of TElement)
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+      description: The reference to the pending asynchronous request to finish.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment{{TElement}}
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1" data-throw-if-not-resolved="false"></xref> object of type <em>TElement</em>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).EndExecuteSegmented(System.IAsyncResult)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken)
+  id: ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSegmentedAsync(TableContinuationToken)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExecuteSegmentedAsync
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 193
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nInitiates an asynchronous operation to execute a query and return the results as a result segment.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<TableQuerySegment<TElement>> ExecuteSegmentedAsync(TableContinuationToken currentToken)
+    content.vb: Public Overridable Function ExecuteSegmentedAsync(currentToken As TableContinuationToken) As Task(Of TableQuerySegment(Of TElement))
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+      description: A continuation token returned by a previous listing operation, can be null.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Table.TableQuerySegment{{TElement}}}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> of type <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1" data-throw-if-not-resolved="false"></xref> that represents the asynchronous operation.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,System.Threading.CancellationToken)
+  id: ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSegmentedAsync(TableContinuationToken, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExecuteSegmentedAsync
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 204
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nInitiates an asynchronous operation to execute a query and return the results as a result segment.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<TableQuerySegment<TElement>> ExecuteSegmentedAsync(TableContinuationToken currentToken, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function ExecuteSegmentedAsync(currentToken As TableContinuationToken, cancellationToken As CancellationToken) As Task(Of TableQuerySegment(Of TElement))
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+      description: A continuation token returned by a previous listing operation, can be null.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Table.TableQuerySegment{{TElement}}}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> of type <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1" data-throw-if-not-resolved="false"></xref> that represents the asynchronous operation.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, System.Threading.CancellationToken)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSegmentedAsync(TableContinuationToken, TableRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExecuteSegmentedAsync
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 217
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nInitiates an asynchronous operation to execute a query and return the results as a result segment.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<TableQuerySegment<TElement>> ExecuteSegmentedAsync(TableContinuationToken currentToken, TableRequestOptions requestOptions, OperationContext operationContext)
+    content.vb: Public Overridable Function ExecuteSegmentedAsync(currentToken As TableContinuationToken, requestOptions As TableRequestOptions, operationContext As OperationContext) As Task(Of TableQuerySegment(Of TElement))
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+      description: A continuation token returned by a previous listing operation, can be null.
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Table.TableQuerySegment{{TElement}}}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> of type <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1" data-throw-if-not-resolved="false"></xref> that represents the asynchronous operation.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  id: ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext,System.Threading.CancellationToken)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSegmentedAsync(TableContinuationToken, TableRequestOptions, OperationContext, CancellationToken)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExecuteSegmentedAsync
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 231
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nInitiates an asynchronous operation to execute a query and return the results as a result segment.\r\n"
+  example: []
+  syntax:
+    content: public virtual Task<TableQuerySegment<TElement>> ExecuteSegmentedAsync(TableContinuationToken currentToken, TableRequestOptions requestOptions, OperationContext operationContext, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function ExecuteSegmentedAsync(currentToken As TableContinuationToken, requestOptions As TableRequestOptions, operationContext As OperationContext, cancellationToken As CancellationToken) As Task(Of TableQuerySegment(Of TElement))
+    parameters:
+    - id: currentToken
+      type: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+      description: A continuation token returned by a previous listing operation, can be null.
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> to observe while waiting for a task to complete.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Table.TableQuerySegment{{TElement}}}
+      description: A <xref href="System.Threading.Tasks.Task`1" data-throw-if-not-resolved="false"></xref> of type <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1" data-throw-if-not-resolved="false"></xref> that represents the asynchronous operation.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).ExecuteSegmentedAsync(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext, System.Threading.CancellationToken)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  id: ExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken,Microsoft.WindowsAzure.Storage.Table.TableRequestOptions,Microsoft.WindowsAzure.Storage.OperationContext)
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteSegmented(TableContinuationToken, TableRequestOptions, OperationContext)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.ExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ExecuteSegmented
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 246
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nExecutes a segmented query against a table.\r\n"
+  example: []
+  syntax:
+    content: public virtual TableQuerySegment<TElement> ExecuteSegmented(TableContinuationToken continuationToken, TableRequestOptions requestOptions = null, OperationContext operationContext = null)
+    content.vb: Public Overridable Function ExecuteSegmented(continuationToken As TableContinuationToken, requestOptions As TableRequestOptions = Nothing, operationContext As OperationContext = Nothing) As TableQuerySegment(Of TElement)
+    parameters:
+    - id: continuationToken
+      type: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableContinuationToken" data-throw-if-not-resolved="false"></xref> object representing a continuation token from the server when the operation returns a partial result.
+    - id: requestOptions
+      type: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableRequestOptions" data-throw-if-not-resolved="false"></xref> object that specifies additional options for the request.
+    - id: operationContext
+      type: Microsoft.WindowsAzure.Storage.OperationContext
+      description: An <xref href="Microsoft.WindowsAzure.Storage.OperationContext" data-throw-if-not-resolved="false"></xref> object that represents the context for the current operation.
+    return:
+      type: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment{{TElement}}
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1" data-throw-if-not-resolved="false"></xref>, specialized for type <code>TElement</code>, containing the results of executing the query.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).ExecuteSegmented(Microsoft.WindowsAzure.Storage.Table.TableContinuationToken, Microsoft.WindowsAzure.Storage.Table.TableRequestOptions, Microsoft.WindowsAzure.Storage.OperationContext)
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.GetEnumerator
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: GetEnumerator
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 277
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nReturns an enumerator that iterates through the <xref href=\"Microsoft.WindowsAzure.Storage.Table.TableQuery`1\" data-throw-if-not-resolved=\"false\"></xref>.\r\n"
+  example: []
+  syntax:
+    content: public virtual IEnumerator<TElement> GetEnumerator()
+    content.vb: Public Overridable Function GetEnumerator As IEnumerator(Of TElement)
+    return:
+      type: System.Collections.Generic.IEnumerator{{TElement}}
+      description: An <xref href="System.Collections.Generic.IEnumerator`1" data-throw-if-not-resolved="false"></xref> for the <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuery`1" data-throw-if-not-resolved="false"></xref>.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).GetEnumerator()
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 303
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ElementType
+  commentId: P:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.ElementType
+  id: ElementType
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: ElementType
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.ElementType
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: ElementType
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 312
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nGets the type of the element(s) that are returned when the expression tree is executed.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Type ElementType
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property ElementType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: A <xref href="System.Type" data-throw-if-not-resolved="false"></xref> that represents the type of the element(s) that are returned when the expression tree associated with this object is executed.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).ElementType
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Expression
+  commentId: P:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Expression
+  id: Expression
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: Expression
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.Expression
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Expression
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 321
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nGets the expression tree.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public Expression Expression
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Expression As Expression
+    parameters: []
+    return:
+      type: System.Linq.Expressions.Expression
+      description: The <xref href="System.Linq.Expressions.Expression" data-throw-if-not-resolved="false"></xref> that is associated with this instance of <xref href="System.Linq.IQueryable" data-throw-if-not-resolved="false"></xref>.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).Expression
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Provider
+  commentId: P:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.Provider
+  id: Provider
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery<TElement>.Provider
+  type: Property
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Provider
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQuery.cs
+    startLine: 330
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nGets the query provider that is associated with this data source.\r\n"
+  example: []
+  syntax:
+    content: >-
+      public IQueryProvider Provider
+
+      {
+
+          get;
+
+      }
+    content.vb: Public ReadOnly Property Provider As IQueryProvider
+    parameters: []
+    return:
+      type: System.Linq.IQueryProvider
+      description: The <xref href="System.Linq.IQueryProvider" data-throw-if-not-resolved="false"></xref> that is associated with this data source.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).Provider
 - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1.TakeCount
   commentId: P:Microsoft.WindowsAzure.Storage.Table.TableQuery`1.TakeCount
   id: TakeCount
@@ -365,6 +986,11 @@ items:
   - Public
   fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery(Of TElement).Where(System.String)
 references:
+- uid: Microsoft.WindowsAzure.Storage.Table.ITableEntity
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: ITableEntity
+  fullName: Microsoft.WindowsAzure.Storage.Table.ITableEntity
 - uid: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
   name: Microsoft.WindowsAzure.Storage.Table
@@ -374,6 +1000,97 @@ references:
   isExternal: true
   name: Object
   fullName: System.Object
+- uid: System.Linq.IQueryable{{TElement}}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  name: IQueryable<TElement>
+  fullName: System.Linq.IQueryable<TElement>
+  fullname.vb: System.Linq.IQueryable(Of TElement)
+  name.vb: IQueryable(Of TElement)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TElement
+    fullName: TElement
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    fullName: TElement
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{TElement}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TElement>
+  fullName: System.Collections.Generic.IEnumerable<TElement>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of TElement)
+  name.vb: IEnumerable(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TElement
+    fullName: TElement
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    fullName: TElement
+  - name: )
+    fullName: )
+- uid: System.Linq.IQueryable
+  parent: System.Linq
+  isExternal: true
+  name: IQueryable
+  fullName: System.Linq.IQueryable
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -433,6 +1150,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -517,76 +1277,80 @@ references:
     fullName: (
   - name: )
     fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
 - uid: System
   isExternal: false
   name: System
   fullName: System
+- uid: System.Linq.IQueryable`1
+  parent: System.Linq
+  isExternal: true
+  name: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  fullname.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Linq
+  isExternal: false
+  name: System.Linq
+  fullName: System.Linq
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
 - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery`1
   parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
@@ -614,6 +1378,261 @@ references:
     fullName: TElement
   - name: )
     fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableRequestOptions
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableRequestOptions
+- uid: Microsoft.WindowsAzure.Storage.OperationContext
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: OperationContext
+  fullName: Microsoft.WindowsAzure.Storage.OperationContext
+- uid: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: Microsoft.WindowsAzure.Storage
+  fullName: Microsoft.WindowsAzure.Storage
+- uid: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableContinuationToken
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableContinuationToken
+- uid: System.AsyncCallback
+  parent: System
+  isExternal: true
+  name: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  parent: System
+  isExternal: true
+  name: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+  parent: Microsoft.WindowsAzure.Storage
+  isExternal: false
+  name: ICancellableAsyncResult
+  fullName: Microsoft.WindowsAzure.Storage.ICancellableAsyncResult
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableQuerySegment<TElement>
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment<TElement>
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment(Of TElement)
+  name.vb: TableQuerySegment(Of TElement)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+    name: TableQuerySegment
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
+  - name: <
+    fullName: <
+  - name: TElement
+    fullName: TElement
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+    name: TableQuerySegment
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    fullName: TElement
+  - name: )
+    fullName: )
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment{{TElement}}
+  parent: Microsoft.WindowsAzure.Storage.Table
+  definition: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+  name: TableQuerySegment<TElement>
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment<TElement>
+  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment(Of TElement)
+  name.vb: TableQuerySegment(Of TElement)
+  spec.csharp:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+    name: TableQuerySegment
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
+  - name: <
+    fullName: <
+  - name: TElement
+    fullName: TElement
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+    name: TableQuerySegment
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    fullName: TElement
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Microsoft.WindowsAzure.Storage.Table.TableQuerySegment{{TElement}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TableQuerySegment<TElement>>
+  fullName: System.Threading.Tasks.Task<Microsoft.WindowsAzure.Storage.Table.TableQuerySegment<TElement>>
+  fullname.vb: System.Threading.Tasks.Task(Of Microsoft.WindowsAzure.Storage.Table.TableQuerySegment(Of TElement))
+  name.vb: Task(Of TableQuerySegment(Of TElement))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+    name: TableQuerySegment
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
+  - name: <
+    fullName: <
+  - name: TElement
+    fullName: TElement
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment`1
+    name: TableQuerySegment
+    fullName: Microsoft.WindowsAzure.Storage.Table.TableQuerySegment
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    fullName: TElement
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullname.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{TElement}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<TElement>
+  fullName: System.Collections.Generic.IEnumerator<TElement>
+  fullname.vb: System.Collections.Generic.IEnumerator(Of TElement)
+  name.vb: IEnumerator(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TElement
+    fullName: TElement
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    fullName: TElement
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: true
+  name: Expression
+  fullName: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: System.Linq.IQueryProvider
+  parent: System.Linq
+  isExternal: true
+  name: IQueryProvider
+  fullName: System.Linq.IQueryProvider
 - uid: System.Nullable{System.Int32}
   parent: System
   definition: System.Nullable`1
@@ -743,10 +1762,6 @@ references:
     fullName: T
   - name: )
     fullName: )
-- uid: System.Collections.Generic
-  isExternal: false
-  name: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery
   parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false

@@ -4,6 +4,7 @@ items:
   id: TableQuery
   parent: Microsoft.WindowsAzure.Storage.Table
   children:
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery.#ctor
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.CombineFilters(System.String,System.String,System.String)
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.FilterString
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.GenerateFilterCondition(System.String,System.String,System.String)
@@ -14,6 +15,7 @@ items:
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.GenerateFilterConditionForGuid(System.String,System.String,System.Guid)
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.GenerateFilterConditionForInt(System.String,System.String,System.Int32)
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.GenerateFilterConditionForLong(System.String,System.String,System.Int64)
+  - Microsoft.WindowsAzure.Storage.Table.TableQuery.Project``1(``0,System.String[])
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.Select(System.Collections.Generic.IList{System.String})
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.SelectColumns
   - Microsoft.WindowsAzure.Storage.Table.TableQuery.Take(System.Nullable{System.Int32})
@@ -39,26 +41,103 @@ items:
   summary: "\r\nRepresents a query against a specified table.\r\n"
   example: []
   syntax:
-    content: public sealed class TableQuery
-    content.vb: Public NotInheritable Class TableQuery
+    content: public class TableQuery
+    content.vb: Public Class TableQuery
   inheritance:
   - System.Object
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
-  - sealed
   - class
   modifiers.vb:
   - Public
-  - NotInheritable
   - Class
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery.#ctor
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery.#ctor
+  id: '#ctor'
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  langs:
+  - csharp
+  - vb
+  name: TableQuery()
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery.TableQuery()
+  type: Constructor
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQueryNonGeneric.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: .ctor
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQueryNonGeneric.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nRepresents a query against a specified table.\r\n"
+  remarks: "A <xref href=\"Microsoft.WindowsAzure.Storage.Table.TableQuery\" data-throw-if-not-resolved=\"false\"></xref> instance aggregates the query parameters to use when the query is executed. One of the <code>executeQuery</code> or <code>executeQuerySegmented</code> methods \r\nof <xref href=\"Microsoft.WindowsAzure.Storage.Table.CloudTableClient\" data-throw-if-not-resolved=\"false\"></xref> must be called to execute the query. The parameters are encoded and passed to the server when the table query is executed."
+  example: []
+  syntax:
+    content: public TableQuery()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery.Project``1(``0,System.String[])
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery.Project``1(``0,System.String[])
+  id: Project``1(``0,System.String[])
+  parent: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  langs:
+  - csharp
+  - vb
+  name: Project<T>(T, String[])
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery.Project<T>(T, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableQueryNonGeneric.cs
+      branch: master
+      repo: https://github.com/bradygaster/BradysOpsPlayground.git
+    id: Project
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableQueryNonGeneric.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.WindowsAzure.Storage
+  namespace: Microsoft.WindowsAzure.Storage.Table
+  summary: "\r\nSpecifies the names of the entity properties to return when the query is executed against the table. \r\n"
+  remarks: The Project clause is optional on a query, used to limit the properties returned from the server. By default, a query will return all properties from the entity.
+  example: []
+  syntax:
+    content: public static T Project<T>(T entity, params string[] columns)
+    content.vb: Public Shared Function Project(Of T)(entity As T, ParamArray columns As String()) As T
+    parameters:
+    - id: entity
+      type: '{T}'
+      description: The entity instance to project off of.
+    - id: columns
+      type: System.String[]
+      description: A list of string objects containing the names of the entity properties to return when the query is executed.
+    typeParameters:
+    - id: T
+      description: The entity type of the query.
+    return:
+      type: '{T}'
+      description: A <xref href="Microsoft.WindowsAzure.Storage.Table.TableQuery" data-throw-if-not-resolved="false"></xref> instance set with the entity properties to return.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.WindowsAzure.Storage.Table.TableQuery.Project(Of T)(T, System.String())
+  name.vb: Project(Of T)(T, String())
 - uid: Microsoft.WindowsAzure.Storage.Table.TableQuery.GenerateFilterCondition(System.String,System.String,System.String)
   commentId: M:Microsoft.WindowsAzure.Storage.Table.TableQuery.GenerateFilterCondition(System.String,System.String,System.String)
   id: GenerateFilterCondition(System.String,System.String,System.String)
@@ -176,7 +255,7 @@ items:
     content: >-
       [SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1118:ParameterMustNotSpanMultipleLines", Justification = "Needed for Common Code preprocessor directives.")]
 
-      public static string GenerateFilterConditionForBinary(string propertyName, string operation, [ReadOnlyArray] byte[] givenValue)
+      public static string GenerateFilterConditionForBinary(string propertyName, string operation, byte[] givenValue)
     content.vb: >-
       <SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1118:ParameterMustNotSpanMultipleLines", Justification:="Needed for Common Code preprocessor directives.")>
 
@@ -191,10 +270,6 @@ items:
     - id: givenValue
       type: System.Byte[]
       description: A byte array containing the value to compare with the property.
-      attributes:
-      - type: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute
-        ctor: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute.#ctor
-        arguments: []
     return:
       type: System.String
       description: A string containing the formatted filter condition.
@@ -813,6 +888,29 @@ references:
   isExternal: true
   name: Object
   fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
@@ -872,6 +970,49 @@ references:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
   - name: (
     fullName: (
@@ -956,76 +1097,44 @@ references:
     fullName: (
   - name: )
     fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
 - uid: System
   isExternal: false
   name: System
   fullName: System
+- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: TableQuery
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
+- uid: Microsoft.WindowsAzure.Storage.Table.CloudTableClient
+  parent: Microsoft.WindowsAzure.Storage.Table
+  isExternal: false
+  name: CloudTableClient
+  fullName: Microsoft.WindowsAzure.Storage.Table.CloudTableClient
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  fullName: System.String[]
+  fullname.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
 - uid: System.String
   parent: System
   isExternal: true
@@ -1209,8 +1318,3 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Microsoft.WindowsAzure.Storage.Table.TableQuery
-  parent: Microsoft.WindowsAzure.Storage.Table
-  isExternal: false
-  name: TableQuery
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableQuery
