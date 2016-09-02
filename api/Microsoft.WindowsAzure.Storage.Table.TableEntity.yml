@@ -63,6 +63,7 @@ items:
       <SuppressMessage("StyleCop.CSharp.SpacingRules", "SA1001:CommasMustBeSpacedCorrectly", Justification:="Reviewed.")>
 
       Public Class TableEntity
+
           Implements ITableEntity
   inheritance:
   - System.Object
@@ -244,8 +245,11 @@ items:
       public string PartitionKey
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property PartitionKey As String
     parameters: []
@@ -286,8 +290,11 @@ items:
       public string RowKey
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property RowKey As String
     parameters: []
@@ -328,8 +335,11 @@ items:
       public DateTimeOffset Timestamp
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Timestamp As DateTimeOffset
     parameters: []
@@ -370,8 +380,11 @@ items:
       public string ETag
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property ETag As String
     parameters: []
@@ -552,7 +565,6 @@ items:
   - Shared
 references:
 - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity
-  parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false
   name: TableEntity
   fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity
@@ -562,99 +574,7 @@ references:
   name: ITableEntity
   fullName: Microsoft.WindowsAzure.Storage.Table.ITableEntity
 - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
-  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
-  isExternal: true
-  name: ReadEntity(IDictionary<String, EntityProperty>, OperationContext)
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary<System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty>, Microsoft.WindowsAzure.Storage.OperationContext)
-  fullname.vb: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary(Of System.String, Microsoft.WindowsAzure.Storage.Table.EntityProperty), Microsoft.WindowsAzure.Storage.OperationContext)
-  name.vb: ReadEntity(IDictionary(Of String, EntityProperty), OperationContext)
-  spec.csharp:
-  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
-    name: ReadEntity
-    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity
-  - name: (
-    fullName: (
-  - uid: System.Collections.Generic.IDictionary`2
-    name: IDictionary
-    fullName: System.Collections.Generic.IDictionary
-    isExternal: true
-  - name: <
-    fullName: <
-  - uid: System.String
-    name: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
-    name: EntityProperty
-    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
-  - name: '>'
-    fullName: '>'
-  - name: ', '
-    fullName: ', '
-  - uid: Microsoft.WindowsAzure.Storage.OperationContext
-    name: OperationContext
-    fullName: Microsoft.WindowsAzure.Storage.OperationContext
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
-    name: ReadEntity
-    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.ReadEntity
-  - name: (
-    fullName: (
-  - uid: System.Collections.Generic.IDictionary`2
-    name: IDictionary
-    fullName: System.Collections.Generic.IDictionary
-    isExternal: true
-  - name: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: Microsoft.WindowsAzure.Storage.Table.EntityProperty
-    name: EntityProperty
-    fullName: Microsoft.WindowsAzure.Storage.Table.EntityProperty
-  - name: )
-    fullName: )
-  - name: ', '
-    fullName: ', '
-  - uid: Microsoft.WindowsAzure.Storage.OperationContext
-    name: OperationContext
-    fullName: Microsoft.WindowsAzure.Storage.OperationContext
-  - name: )
-    fullName: )
 - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
-  parent: Microsoft.WindowsAzure.Storage.Table.TableEntity
-  isExternal: false
-  name: WriteEntity(OperationContext)
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
-  spec.csharp:
-  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
-    name: WriteEntity
-    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity
-  - name: (
-    fullName: (
-  - uid: Microsoft.WindowsAzure.Storage.OperationContext
-    name: OperationContext
-    fullName: Microsoft.WindowsAzure.Storage.OperationContext
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
-    name: WriteEntity
-    fullName: Microsoft.WindowsAzure.Storage.Table.TableEntity.WriteEntity
-  - name: (
-    fullName: (
-  - uid: Microsoft.WindowsAzure.Storage.OperationContext
-    name: OperationContext
-    fullName: Microsoft.WindowsAzure.Storage.OperationContext
-  - name: )
-    fullName: )
 - uid: Microsoft.WindowsAzure.Storage.Table.ITableEntity.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)
 - uid: Microsoft.WindowsAzure.Storage.Table.ITableEntity.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)
 - uid: Microsoft.WindowsAzure.Storage.Table

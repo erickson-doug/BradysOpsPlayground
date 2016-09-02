@@ -48,6 +48,7 @@ items:
       <SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification:="Public APIs should not expose base collection types.")>
 
       Public NotInheritable Class SharedAccessQueuePolicies
+
           Implements IDictionary(Of String, SharedAccessQueuePolicy), ICollection(Of KeyValuePair(Of String, SharedAccessQueuePolicy)), IEnumerable(Of KeyValuePair(Of String, SharedAccessQueuePolicy)), IEnumerable
   inheritance:
   - System.Object
@@ -186,7 +187,9 @@ items:
       public ICollection<string> Keys
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Keys As ICollection(Of String)
     parameters: []
@@ -306,7 +309,9 @@ items:
       public ICollection<SharedAccessQueuePolicy> Values
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Values As ICollection(Of SharedAccessQueuePolicy)
     parameters: []
@@ -347,8 +352,11 @@ items:
       public SharedAccessQueuePolicy this[string key]
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Item(key As String) As SharedAccessQueuePolicy
     parameters:
@@ -538,7 +546,9 @@ items:
       public int Count
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Count As Integer
     parameters: []
@@ -579,7 +589,9 @@ items:
       public bool IsReadOnly
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property IsReadOnly As Boolean
     parameters: []

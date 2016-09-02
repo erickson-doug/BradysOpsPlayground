@@ -73,7 +73,9 @@ items:
     content: 'public class CloudPageBlob : CloudBlob, ICloudBlob, IListBlobItem'
     content.vb: >-
       Public Class CloudPageBlob
+
           Inherits CloudBlob
+
           Implements ICloudBlob, IListBlobItem
   inheritance:
   - System.Object
@@ -2349,8 +2351,11 @@ items:
       public int StreamWriteSizeInBytes
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property StreamWriteSizeInBytes As Integer
     parameters: []

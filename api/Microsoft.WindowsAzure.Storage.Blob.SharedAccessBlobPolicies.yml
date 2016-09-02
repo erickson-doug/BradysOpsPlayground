@@ -48,6 +48,7 @@ items:
       <SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification:="Public APIs should not expose base collection types.")>
 
       Public NotInheritable Class SharedAccessBlobPolicies
+
           Implements IDictionary(Of String, SharedAccessBlobPolicy), ICollection(Of KeyValuePair(Of String, SharedAccessBlobPolicy)), IEnumerable(Of KeyValuePair(Of String, SharedAccessBlobPolicy)), IEnumerable
   inheritance:
   - System.Object
@@ -186,7 +187,9 @@ items:
       public ICollection<string> Keys
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Keys As ICollection(Of String)
     parameters: []
@@ -306,7 +309,9 @@ items:
       public ICollection<SharedAccessBlobPolicy> Values
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Values As ICollection(Of SharedAccessBlobPolicy)
     parameters: []
@@ -347,8 +352,11 @@ items:
       public SharedAccessBlobPolicy this[string key]
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Item(key As String) As SharedAccessBlobPolicy
     parameters:
@@ -538,7 +546,9 @@ items:
       public int Count
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Count As Integer
     parameters: []
@@ -579,7 +589,9 @@ items:
       public bool IsReadOnly
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property IsReadOnly As Boolean
     parameters: []

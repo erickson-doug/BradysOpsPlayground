@@ -36,6 +36,7 @@ items:
     content: 'public sealed class TableRequestOptions : IRequestOptions'
     content.vb: >-
       Public NotInheritable Class TableRequestOptions
+
           Implements IRequestOptions
   inheritance:
   - System.Object
@@ -149,8 +150,11 @@ items:
       public IRetryPolicy RetryPolicy
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property RetryPolicy As IRetryPolicy
     parameters: []
@@ -191,8 +195,11 @@ items:
       public bool ? ProjectSystemProperties
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property ProjectSystemProperties As Boolean?
     parameters: []
@@ -232,8 +239,11 @@ items:
       public LocationMode? LocationMode
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property LocationMode As LocationMode?
     parameters: []
@@ -274,8 +284,11 @@ items:
       public TimeSpan? ServerTimeout
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property ServerTimeout As TimeSpan?
     parameters: []
@@ -316,8 +329,11 @@ items:
       public TimeSpan? MaximumExecutionTime
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property MaximumExecutionTime As TimeSpan?
     parameters: []
@@ -358,8 +374,11 @@ items:
       public TablePayloadFormat? PayloadFormat
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property PayloadFormat As TablePayloadFormat?
     parameters: []
@@ -400,8 +419,11 @@ items:
       public Func<string, string, string, string, EdmType> PropertyResolver
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property PropertyResolver As Func(Of String, String, String, String, EdmType)
     parameters: []
