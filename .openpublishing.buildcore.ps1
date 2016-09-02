@@ -3,7 +3,7 @@
     This is a Powershell script to create a build
 .DESCRIPTION
     Usage: Run .openpublishing.build.ps1 -parameters:"_op_accessToken=<your Git repository access token>"
-    Refer to https://ppe.msdn.microsoft.com/en-us/openpublishing/docs/partnerdocs/local-build-and-preview?branch=master for more information.
+    Refer to https://opsdocs.azurewebsites.net/en-us/opsdocs/partnerdocs/local-build-and-preview?branch=master for more information.
 .PARAMETER parameters
     Specifies optional paramerters.
     _op_accessToken: access token for your Git repository, optional if the repository is public.
@@ -95,12 +95,16 @@ $systemDefaultVariables = @{
     DefaultSubmoduleBranch = "master";
     DownloadNugetExeTimeOutInSeconds= 300;
     DownloadNugetConfigTimeOutInSeconds= 30;
+    GitCloneRepositoryTimeOutInSeconds = 600;
+    GitPullRepositoryTimeOutInSeconds = 300;
+    GitOtherOperationsTimeOutInSeconds = 60;
     BuildToolParallelism = 0;
     AllowUseDynamicRendering = $false;
     PreservedTemplateFolders = @("_themes", "_themes.MSDN.Modern", "_themes.VS.Modern");
+    EnableIncrementalBuild = $false;
 }
 
-function Write-HostWithTimestamp([string]$output)
+Function Write-HostWithTimestamp([string]$output)
 {
     Write-Host -NoNewline -ForegroundColor Magenta "[$(((get-date).ToUniversalTime()).ToString("HH:mm:ss.ffffffZ"))]: "
     Write-Host $output
@@ -239,10 +243,30 @@ Function DownloadFile([string]$source, [string]$destination, [bool]$forceDownloa
     }
 }
 
-Function GetPackageLatestVersion([string]$nugetExeDestination, [string]$packageName, [string]$nugetConfigDestination, [bool]$usePrereleasePackage = $false)
+Function FindResource(
+    [object[]]$resources,
+    [parameter(mandatory=$true)]
+    [string]$resourceName,
+    [string]$resourceVersion = $null
+)
+{
+    foreach ($resource in $resources)
+    {
+        if ($resource.Name -eq $resourceName)
+        {
+            if ([string]::IsNullOrEmpty($resourceVersion) -or ($resource.Version -eq $resourceVersion))
+            {
+                return $resource
+            }
+        }
+    }
+
+    return $null
+}
+
+Function GetPackageLatestVersion([string]$nugetExeDestination, [string]$packageName, [string]$nugetConfigDestination, [int]$maxRetryCount, [bool]$usePrereleasePackage = $false, [object[]]$environmentResources = $null)
 {
     $currentRetryIteration = 0;
-    $maxRetryCount = $systemDefaultVariables.DefaultMaxRetryCount;
     $retryIntervalInSeconds = 0;
     $retryIncrementalIntervalInSeconds = 10;
 
@@ -251,6 +275,19 @@ Function GetPackageLatestVersion([string]$nugetExeDestination, [string]$packageN
         Try
         {
             Write-HostWithTimestamp "Use prerelease package for $packageName : $usePrereleasePackage"
+
+            $cachedPackageVersionString = "latest";
+            if ($usePrereleasePackage)
+            {
+                $cachedPackageVersionString = "latest-prerelease"
+            }
+
+            $cachedPackageVersion = FindResource($cachedPackageVersions) ($packageName) ($cachedPackageVersionString)
+            if ($cachedPackageVersion)
+            {
+                Write-HostWithTimestamp "Package version for $packageName loaded from cache: $cachedPackageVersion"
+                return $cachedPackageVersion.Location
+            }
 
             if ($usePrereleasePackage)
             {
@@ -305,7 +342,7 @@ Function RestorePackage([string] $nugetExeDestination, [string]$packagesDestinat
     }
 }
 
-Function GeneratePackagesConfig([string]$outputFilePath, [object[]]$dependencies)
+Function GeneratePackagesConfig([string]$outputFilePath, [object[]]$dependencies, [object[]]$cachedPackageVersions = $null)
 {
     $packageConfigXmlTemplate = @'
 <?xml version="1.0" encoding="utf-8"?>
@@ -323,7 +360,7 @@ Function GeneratePackagesConfig([string]$outputFilePath, [object[]]$dependencies
             $usePrereleasePackage = $dependency.version -eq "latest-prerelease"
 
             # Get latest package version
-            $dependency.actualVersion = GetPackageLatestVersion($nugetExeDestination) ($dependency.id) ($nugetConfigDestination) ($usePrereleasePackage)
+            $dependency.actualVersion = GetPackageLatestVersion($nugetExeDestination) ($dependency.id) ($nugetConfigDestination) ($systemDefaultVariables.DefaultMaxRetryCount) ($usePrereleasePackage) ($environmentResources)
 
             Write-HostWithTimestamp "Using version $($dependency.actualVersion) for package $($dependency.id) (requested: $($dependency.version))"
         }
@@ -391,9 +428,18 @@ if ([string]::Compare($Targets, "LocalBuild", $true) -eq 0)
     $localBuild = $true
 }
 
+# Step-3: Parse environment resources
+$EnvironmentResourcesFile = GetValueFromVariableName($EnvironmentResourcesFile) ($systemDefaultVariables.EnvironmentResourcesFile)
+
+$environmentResources = @{}
+if (![string]::IsNullOrEmpty($EnvironmentResourcesFile) -and (IsPathExists($EnvironmentResourcesFile)))
+{
+    $environmentResources = (Get-Content $EnvironmentResourcesFile -Raw) | ConvertFrom-Json
+}
+
 if(!$localBuild)
 {
-    # Step-3: Download Nuget tools and nuget config
+    # Step-4: Download Nuget tools and nuget config
     echo "Download Nuget tool and config" | timestamp
     $resourceContainerUrl = GetValueFromVariableName($resourceContainerUrl) ($systemDefaultVariables.ResourceContainerUrl)
     $nugetConfigSource = "$resourceContainerUrl/Tools/Nuget/Nuget.Config"
@@ -409,7 +455,7 @@ if(!$localBuild)
     $UpdateNugetConfig = ParseBoolValue("UpdateNugetConfig") ($UpdateNugetConfig) ($systemDefaultVariables.UpdateNugetConfig)
     DownloadFile($nugetConfigSource) ($nugetConfigDestination) ($UpdateNugetConfig) ($DownloadNugetConfigTimeOutInSeconds)
 
-    # Step-4: Create packages.config for entry-point package. For non-PROD env, treat latest version as latest-prerelease version by default
+    # Step-5: Create packages.config for entry-point package. For non-PROD env, treat latest version as latest-prerelease version by default
     $treatLatestVersionAsLatestPrereleaseVersion = !$resourceContainerUrl.StartsWith("https://opbuildstorageprod.blob.core.windows.net")
     if ($_op_treatLatestVersionAsLatestPrereleaseVersion)
     {
@@ -423,9 +469,9 @@ if(!$localBuild)
     }
 
     $packagesDestination = "$workingDirectory\packages.config"
-    GeneratePackagesConfig($packagesDestination) (@($entryPointPackage))
+    GeneratePackagesConfig($packagesDestination) (@($entryPointPackage)) ($environmentResources.PackageVersion)
 
-    # Step-5: Restore entry-point package
+    # Step-6: Restore entry-point package
     echo "Restore entry-point package: $($entryPointPackage.id)" | timestamp
     $restoreSucceeded = RestorePackage($nugetExeDestination) ($packagesDestination) ($packagesDirectory) ($nugetConfigDestination)
     if (!$restoreSucceeded)
@@ -459,6 +505,8 @@ $currentDictionary.environment.nugetExeDestination = $nugetExeDestination
 $currentDictionary.environment.LocalBuild = $localBuild
 $currentDictionary.environment.LastOpScriptVersion = $entryPointPackage.actualVersion
 $currentDictionary.environment.LastOpScriptVersionRecordFile = $lastOpScriptVersionRecordFile
+$currentDictionary.environment.EnvironmentResources = $environmentResources
+$currentDictionary.environment.enableIncrementalBuild = ParseBoolValue("EnableIncrementalBuild") ($EnableIncrementalBuild) ($systemDefaultVariables.EnableIncrementalBuild)
 
 $AllowUseDynamicRendering = ParseBoolValue("AllowUseDynamicRendering") ($AllowUseDynamicRendering) ($systemDefaultVariables.AllowUseDynamicRendering)
 echo "Allow use of dynamic rendering: $AllowUseDynamicRendering" | timestamp

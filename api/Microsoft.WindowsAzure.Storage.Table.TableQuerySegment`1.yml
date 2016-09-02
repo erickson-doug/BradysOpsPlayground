@@ -36,7 +36,6 @@ items:
       <SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification:="Back compatibility.")>
 
       Public Class TableQuerySegment(Of TElement)
-
           Implements IEnumerable(Of TElement), IEnumerable
     typeParameters:
     - id: TElement
@@ -104,9 +103,7 @@ items:
       public List<TElement> Results
 
       {
-
           get;
-
       }
     content.vb: >-
       <SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists", Justification:="Reviewed.")>
@@ -163,9 +160,7 @@ items:
       public TableContinuationToken ContinuationToken
 
       {
-
           get;
-
       }
     content.vb: Public ReadOnly Property ContinuationToken As TableContinuationToken
     parameters: []

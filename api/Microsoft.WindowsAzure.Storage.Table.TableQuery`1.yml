@@ -33,7 +33,6 @@ items:
   syntax:
     content: >-
       public class TableQuery<TElement>
-
           where TElement : ITableEntity, new ()
     content.vb: Public Class TableQuery(Of TElement As {ITableEntity, New})
     typeParameters:
@@ -115,11 +114,8 @@ items:
       public int ? TakeCount
 
       {
-
           get;
-
           set;
-
       }
     content.vb: Public Property TakeCount As Integer?
     parameters: []
@@ -161,11 +157,8 @@ items:
       public string FilterString
 
       {
-
           get;
-
           set;
-
       }
     content.vb: Public Property FilterString As String
     parameters: []
@@ -207,11 +200,8 @@ items:
       public IList<string> SelectColumns
 
       {
-
           get;
-
           set;
-
       }
     content.vb: Public Property SelectColumns As IList(Of String)
     parameters: []

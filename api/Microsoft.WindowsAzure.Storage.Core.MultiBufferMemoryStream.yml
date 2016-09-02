@@ -44,9 +44,7 @@ items:
     content: 'public class MultiBufferMemoryStream : Stream, IDisposable'
     content.vb: >-
       Public Class MultiBufferMemoryStream
-
           Inherits Stream
-
           Implements IDisposable
   inheritance:
   - System.Object
@@ -147,9 +145,7 @@ items:
       public override bool CanRead
 
       {
-
           get;
-
       }
     content.vb: Public Overrides ReadOnly Property CanRead As Boolean
     parameters: []
@@ -193,9 +189,7 @@ items:
       public override bool CanSeek
 
       {
-
           get;
-
       }
     content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
     parameters: []
@@ -239,9 +233,7 @@ items:
       public override bool CanWrite
 
       {
-
           get;
-
       }
     content.vb: Public Overrides ReadOnly Property CanWrite As Boolean
     parameters: []
@@ -285,9 +277,7 @@ items:
       public override long Length
 
       {
-
           get;
-
       }
     content.vb: Public Overrides ReadOnly Property Length As Long
     parameters: []
@@ -331,11 +321,8 @@ items:
       public override long Position
 
       {
-
           get;
-
           set;
-
       }
     content.vb: Public Overrides Property Position As Long
     parameters: []
@@ -842,6 +829,7 @@ references:
 - uid: System.IO.Stream.Null
   parent: System.IO.Stream
   isExternal: true
+  name: Null
   fullName: System.IO.Stream.Null
 - uid: System.IO.Stream.CopyTo(System.IO.Stream)
   parent: System.IO.Stream

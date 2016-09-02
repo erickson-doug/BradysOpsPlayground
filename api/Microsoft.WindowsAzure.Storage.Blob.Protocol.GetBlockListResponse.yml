@@ -30,9 +30,7 @@ items:
     content: 'public class GetBlockListResponse : ResponseParsingBase<ListBlockItem>, IDisposable'
     content.vb: >-
       Public Class GetBlockListResponse
-
           Inherits ResponseParsingBase(Of ListBlockItem)
-
           Implements IDisposable
   inheritance:
   - System.Object
@@ -122,9 +120,7 @@ items:
       public IEnumerable<ListBlockItem> Blocks
 
       {
-
           get;
-
       }
     content.vb: Public ReadOnly Property Blocks As IEnumerable(Of ListBlockItem)
     parameters: []

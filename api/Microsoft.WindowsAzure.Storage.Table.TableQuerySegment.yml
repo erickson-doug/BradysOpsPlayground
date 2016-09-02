@@ -31,7 +31,6 @@ items:
     content: 'public sealed class TableQuerySegment : IEnumerable<DynamicTableEntity>, IEnumerable'
     content.vb: >-
       Public NotInheritable Class TableQuerySegment
-
           Implements IEnumerable(Of DynamicTableEntity), IEnumerable
   inheritance:
   - System.Object
@@ -82,9 +81,7 @@ items:
       public IList<DynamicTableEntity> Results
 
       {
-
           get;
-
       }
     content.vb: Public ReadOnly Property Results As IList(Of DynamicTableEntity)
     parameters: []
@@ -125,9 +122,7 @@ items:
       public TableContinuationToken ContinuationToken
 
       {
-
           get;
-
       }
     content.vb: Public ReadOnly Property ContinuationToken As TableContinuationToken
     parameters: []

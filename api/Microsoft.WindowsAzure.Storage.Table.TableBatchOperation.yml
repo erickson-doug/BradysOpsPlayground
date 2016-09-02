@@ -52,7 +52,6 @@ items:
     content: 'public sealed class TableBatchOperation : IList<TableOperation>, ICollection<TableOperation>, IEnumerable<TableOperation>, IEnumerable'
     content.vb: >-
       Public NotInheritable Class TableBatchOperation
-
           Implements IList(Of TableOperation), ICollection(Of TableOperation), IEnumerable(Of TableOperation), IEnumerable
   inheritance:
   - System.Object
@@ -614,11 +613,8 @@ items:
       public TableOperation this[int index]
 
       {
-
           get;
-
           set;
-
       }
     content.vb: Public Property Item(index As Integer) As TableOperation
     parameters:
@@ -804,9 +800,7 @@ items:
       public int Count
 
       {
-
           get;
-
       }
     content.vb: Public ReadOnly Property Count As Integer
     parameters: []
@@ -847,9 +841,7 @@ items:
       public bool IsReadOnly
 
       {
-
           get;
-
       }
     content.vb: Public ReadOnly Property IsReadOnly As Boolean
     parameters: []
