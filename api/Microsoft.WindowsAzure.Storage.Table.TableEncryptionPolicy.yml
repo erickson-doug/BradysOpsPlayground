@@ -4,7 +4,7 @@ items:
   id: TableEncryptionPolicy
   parent: Microsoft.WindowsAzure.Storage.Table
   children:
-  - Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.#ctor(IKey,IKeyResolver)
+  - Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.#ctor(Microsoft.Azure.KeyVault.Core.IKey,Microsoft.Azure.KeyVault.Core.IKeyResolver)
   - Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.Key
   - Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.KeyResolver
   langs:
@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: TableEncryptionPolicy
-    path: src/Storage/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
     startLine: 33
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -57,28 +57,30 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Key
-    path: src/Storage/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
     startLine: 38
   assemblies:
   - Microsoft.WindowsAzure.Storage
   namespace: Microsoft.WindowsAzure.Storage.Table
-  summary: "\r\nAn object of type <see cref=\"!:IKey\"></see> that is used to wrap/unwrap the content key during encryption.\r\n"
+  summary: "\r\nAn object of type <xref href=\"Microsoft.Azure.KeyVault.Core.IKey\" data-throw-if-not-resolved=\"false\"></xref> that is used to wrap/unwrap the content key during encryption.\r\n"
   example: []
   syntax:
     content: >-
       public IKey Key
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Key As IKey
     parameters: []
     return:
-      type: IKey
+      type: Microsoft.Azure.KeyVault.Core.IKey
   modifiers.csharp:
   - public
   - get
@@ -97,11 +99,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: KeyResolver
-    path: src/Storage/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
     startLine: 44
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -113,36 +115,38 @@ items:
       public IKeyResolver KeyResolver
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property KeyResolver As IKeyResolver
     parameters: []
     return:
-      type: IKeyResolver
-      description: A resolver that returns an <see cref="!:IKeyResolver"></see>, given a key ID.
+      type: Microsoft.Azure.KeyVault.Core.IKeyResolver
+      description: A resolver that returns an <xref href="Microsoft.Azure.KeyVault.Core.IKeyResolver" data-throw-if-not-resolved="false"></xref>, given a key ID.
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.#ctor(IKey,IKeyResolver)
-  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.#ctor(IKey,IKeyResolver)
-  id: '#ctor(IKey,IKeyResolver)'
+- uid: Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.#ctor(Microsoft.Azure.KeyVault.Core.IKey,Microsoft.Azure.KeyVault.Core.IKeyResolver)
+  commentId: M:Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.#ctor(Microsoft.Azure.KeyVault.Core.IKey,Microsoft.Azure.KeyVault.Core.IKeyResolver)
+  id: '#ctor(Microsoft.Azure.KeyVault.Core.IKey,Microsoft.Azure.KeyVault.Core.IKeyResolver)'
   parent: Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy
   langs:
   - csharp
   - vb
   name: TableEncryptionPolicy(IKey, IKeyResolver)
-  fullName: Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.TableEncryptionPolicy(IKey, IKeyResolver)
+  fullName: Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy.TableEncryptionPolicy(Microsoft.Azure.KeyVault.Core.IKey, Microsoft.Azure.KeyVault.Core.IKeyResolver)
   type: Constructor
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Table/TableEncryptionPolicy.cs
     startLine: 56
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -164,10 +168,10 @@ items:
     content.vb: Public Sub New(key As IKey, keyResolver As IKeyResolver)
     parameters:
     - id: key
-      type: IKey
-      description: An object of type <see cref="!:IKey"></see> that is used to wrap/unwrap the content encryption key.
+      type: Microsoft.Azure.KeyVault.Core.IKey
+      description: An object of type <xref href="Microsoft.Azure.KeyVault.Core.IKey" data-throw-if-not-resolved="false"></xref> that is used to wrap/unwrap the content encryption key.
     - id: keyResolver
-      type: IKeyResolver
+      type: Microsoft.Azure.KeyVault.Core.IKeyResolver
       description: The key resolver used to select the correct key for decrypting existing table entities.
   modifiers.csharp:
   - public
@@ -396,14 +400,20 @@ references:
   isExternal: false
   name: System
   fullName: System
-- uid: IKey
+- uid: Microsoft.Azure.KeyVault.Core.IKey
+  parent: Microsoft.Azure.KeyVault.Core
   isExternal: true
   name: IKey
-  fullName: IKey
-- uid: IKeyResolver
+  fullName: Microsoft.Azure.KeyVault.Core.IKey
+- uid: Microsoft.Azure.KeyVault.Core
+  isExternal: false
+  name: Microsoft.Azure.KeyVault.Core
+  fullName: Microsoft.Azure.KeyVault.Core
+- uid: Microsoft.Azure.KeyVault.Core.IKeyResolver
+  parent: Microsoft.Azure.KeyVault.Core
   isExternal: true
   name: IKeyResolver
-  fullName: IKeyResolver
+  fullName: Microsoft.Azure.KeyVault.Core.IKeyResolver
 - uid: Microsoft.WindowsAzure.Storage.Table.TableEncryptionPolicy
   parent: Microsoft.WindowsAzure.Storage.Table
   isExternal: false

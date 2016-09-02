@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: CapacityEntity
-    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
     startLine: 27
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -32,7 +32,9 @@ items:
     content: 'public class CapacityEntity : TableEntity, ITableEntity'
     content.vb: >-
       Public Class CapacityEntity
+
           Inherits TableEntity
+
           Implements ITableEntity
   inheritance:
   - System.Object
@@ -75,11 +77,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
     startLine: 32
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -105,11 +107,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Time
-    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
     startLine: 40
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -121,7 +123,9 @@ items:
       public DateTimeOffset Time
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Time As DateTimeOffset
     parameters: []
@@ -146,11 +150,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Capacity
-    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
     startLine: 52
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -162,8 +166,11 @@ items:
       public long Capacity
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Capacity As Long
     parameters: []
@@ -188,11 +195,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ContainerCount
-    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
     startLine: 58
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -204,8 +211,11 @@ items:
       public long ContainerCount
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property ContainerCount As Long
     parameters: []
@@ -230,11 +240,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ObjectCount
-    path: src/Storage/ClassLibraryCommon/Analytics/CapacityEntity.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Analytics/CapacityEntity.cs
     startLine: 64
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -246,8 +256,11 @@ items:
       public long ObjectCount
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property ObjectCount As Long
     parameters: []

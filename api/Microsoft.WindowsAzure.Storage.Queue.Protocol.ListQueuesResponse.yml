@@ -20,11 +20,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListQueuesResponse
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 14
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -35,7 +35,9 @@ items:
     content: 'public sealed class ListQueuesResponse : ResponseParsingBase<QueueEntry>, IDisposable'
     content.vb: >-
       Public NotInheritable Class ListQueuesResponse
+
           Inherits ResponseParsingBase(Of QueueEntry)
+
           Implements IDisposable
   inheritance:
   - System.Object
@@ -77,11 +79,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 62
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -111,11 +113,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListingContext
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 71
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -127,7 +129,9 @@ items:
       public ListingContext ListingContext
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property ListingContext As ListingContext
     parameters: []
@@ -152,11 +156,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Queues
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 86
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -168,7 +172,9 @@ items:
       public IEnumerable<QueueEntry> Queues
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Queues As IEnumerable(Of QueueEntry)
     parameters: []
@@ -193,11 +199,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Prefix
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 98
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -209,7 +215,9 @@ items:
       public string Prefix
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Prefix As String
     parameters: []
@@ -234,11 +242,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Marker
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 112
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -250,7 +258,9 @@ items:
       public string Marker
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Marker As String
     parameters: []
@@ -275,11 +285,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: MaxResults
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 126
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -291,7 +301,9 @@ items:
       public int MaxResults
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property MaxResults As Integer
     parameters: []
@@ -316,11 +328,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: NextMarker
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 140
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -332,7 +344,9 @@ items:
       public string NextMarker
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property NextMarker As String
     parameters: []
@@ -357,11 +371,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ParseXml
-    path: src/Storage/Common/Queue/Protocol/ListQueuesResponse.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/ListQueuesResponse.cs
     startLine: 198
   assemblies:
   - Microsoft.WindowsAzure.Storage

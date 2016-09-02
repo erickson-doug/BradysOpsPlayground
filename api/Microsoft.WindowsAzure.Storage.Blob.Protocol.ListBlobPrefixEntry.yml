@@ -13,11 +13,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobPrefixEntry.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobPrefixEntry.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListBlobPrefixEntry
-    path: src/Storage/Common/Blob/Protocol/ListBlobPrefixEntry.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobPrefixEntry.cs
     startLine: 25
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -28,6 +28,7 @@ items:
     content: 'public sealed class ListBlobPrefixEntry : IListBlobEntry'
     content.vb: >-
       Public NotInheritable Class ListBlobPrefixEntry
+
           Implements IListBlobEntry
   inheritance:
   - System.Object
@@ -61,11 +62,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobPrefixEntry.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobPrefixEntry.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Name
-    path: src/Storage/Common/Blob/Protocol/ListBlobPrefixEntry.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobPrefixEntry.cs
     startLine: 33
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -77,7 +78,9 @@ items:
       public string Name
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Name As String
     parameters: []

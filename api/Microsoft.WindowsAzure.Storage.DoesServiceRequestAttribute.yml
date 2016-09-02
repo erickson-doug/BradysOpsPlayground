@@ -12,11 +12,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/DoesServiceRequestAttribute.cs
+      path: src/Storage/Lib/Common/DoesServiceRequestAttribute.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: DoesServiceRequestAttribute
-    path: src/Storage/Common/DoesServiceRequestAttribute.cs
+    path: src/Storage/Lib/Common/DoesServiceRequestAttribute.cs
     startLine: 24
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -32,7 +32,9 @@ items:
       <AttributeUsage(AttributeTargets.Method, AllowMultiple:=False)>
 
       Public NotInheritable Class DoesServiceRequestAttribute
+
           Inherits Attribute
+
           Implements _Attribute
   inheritance:
   - System.Object

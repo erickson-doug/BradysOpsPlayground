@@ -12,11 +12,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/ClassLibraryCommon/Table/EncryptPropertyAttribute.cs
+      path: src/Storage/Lib/ClassLibraryCommon/Table/EncryptPropertyAttribute.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: EncryptPropertyAttribute
-    path: src/Storage/ClassLibraryCommon/Table/EncryptPropertyAttribute.cs
+    path: src/Storage/Lib/ClassLibraryCommon/Table/EncryptPropertyAttribute.cs
     startLine: 24
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -32,7 +32,9 @@ items:
       <AttributeUsage(AttributeTargets.Property, AllowMultiple:=False)>
 
       Public NotInheritable Class EncryptPropertyAttribute
+
           Inherits Attribute
+
           Implements _Attribute
   inheritance:
   - System.Object

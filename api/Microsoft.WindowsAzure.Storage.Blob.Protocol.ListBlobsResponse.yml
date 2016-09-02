@@ -21,11 +21,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListBlobsResponse
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 34
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -36,7 +36,9 @@ items:
     content: 'public sealed class ListBlobsResponse : ResponseParsingBase<IListBlobEntry>, IDisposable'
     content.vb: >-
       Public NotInheritable Class ListBlobsResponse
+
           Inherits ResponseParsingBase(Of IListBlobEntry)
+
           Implements IDisposable
   inheritance:
   - System.Object
@@ -78,11 +80,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 92
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -112,11 +114,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListingContext
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 101
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -128,7 +130,9 @@ items:
       public BlobListingContext ListingContext
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property ListingContext As BlobListingContext
     parameters: []
@@ -153,11 +157,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Blobs
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 115
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -169,7 +173,9 @@ items:
       public IEnumerable<IListBlobEntry> Blobs
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Blobs As IEnumerable(Of IListBlobEntry)
     parameters: []
@@ -194,11 +200,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Prefix
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 127
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -210,7 +216,9 @@ items:
       public string Prefix
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Prefix As String
     parameters: []
@@ -235,11 +243,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Marker
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 141
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -251,7 +259,9 @@ items:
       public string Marker
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Marker As String
     parameters: []
@@ -276,11 +286,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Delimiter
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 155
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -292,7 +302,9 @@ items:
       public string Delimiter
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Delimiter As String
     parameters: []
@@ -317,11 +329,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: MaxResults
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 169
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -333,7 +345,9 @@ items:
       public int MaxResults
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property MaxResults As Integer
     parameters: []
@@ -358,11 +372,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: NextMarker
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 183
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -374,7 +388,9 @@ items:
       public string NextMarker
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property NextMarker As String
     parameters: []
@@ -399,11 +415,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ParseXml
-    path: src/Storage/Common/Blob/Protocol/ListBlobsResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/ListBlobsResponse.cs
     startLine: 424
   assemblies:
   - Microsoft.WindowsAzure.Storage

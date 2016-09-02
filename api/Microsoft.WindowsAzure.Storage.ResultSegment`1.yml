@@ -14,11 +14,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/ResultSegment.cs
+      path: src/Storage/Lib/Common/ResultSegment.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ResultSegment
-    path: src/Storage/Common/ResultSegment.cs
+    path: src/Storage/Lib/Common/ResultSegment.cs
     startLine: 26
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -79,11 +79,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/ResultSegment.cs
+      path: src/Storage/Lib/Common/ResultSegment.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Results
-    path: src/Storage/Common/ResultSegment.cs
+    path: src/Storage/Lib/Common/ResultSegment.cs
     startLine: 55
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -97,7 +97,9 @@ items:
       public List<TElement> Results
 
       {
+
           get;
+
       }
     content.vb: >-
       <SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists", Justification:="Reviewed.")>
@@ -138,11 +140,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/ResultSegment.cs
+      path: src/Storage/Lib/Common/ResultSegment.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ContinuationToken
-    path: src/Storage/Common/ResultSegment.cs
+    path: src/Storage/Lib/Common/ResultSegment.cs
     startLine: 62
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -154,7 +156,9 @@ items:
       public IContinuationToken ContinuationToken
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property ContinuationToken As IContinuationToken
     parameters: []

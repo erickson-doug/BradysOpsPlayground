@@ -20,11 +20,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListSharesResponse
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 31
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -35,7 +35,9 @@ items:
     content: 'public sealed class ListSharesResponse : ResponseParsingBase<FileShareEntry>, IDisposable'
     content.vb: >-
       Public NotInheritable Class ListSharesResponse
+
           Inherits ResponseParsingBase(Of FileShareEntry)
+
           Implements IDisposable
   inheritance:
   - System.Object
@@ -77,11 +79,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 79
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -111,11 +113,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ListingContext
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 88
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -127,7 +129,9 @@ items:
       public ListingContext ListingContext
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property ListingContext As ListingContext
     parameters: []
@@ -152,11 +156,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Shares
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 103
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -168,7 +172,9 @@ items:
       public IEnumerable<FileShareEntry> Shares
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Shares As IEnumerable(Of FileShareEntry)
     parameters: []
@@ -193,11 +199,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Prefix
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 115
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -209,7 +215,9 @@ items:
       public string Prefix
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Prefix As String
     parameters: []
@@ -234,11 +242,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Marker
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 129
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -250,7 +258,9 @@ items:
       public string Marker
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Marker As String
     parameters: []
@@ -275,11 +285,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: MaxResults
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 143
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -291,7 +301,9 @@ items:
       public int MaxResults
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property MaxResults As Integer
     parameters: []
@@ -316,11 +328,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: NextMarker
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 157
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -332,7 +344,9 @@ items:
       public string NextMarker
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property NextMarker As String
     parameters: []
@@ -357,11 +371,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+      path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ParseXml
-    path: src/Storage/Common/File/Protocol/ListSharesResponse.cs
+    path: src/Storage/Lib/Common/File/Protocol/ListSharesResponse.cs
     startLine: 257
   assemblies:
   - Microsoft.WindowsAzure.Storage

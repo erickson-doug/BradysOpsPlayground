@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/GetPageRangesResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/GetPageRangesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: GetPageRangesResponse
-    path: src/Storage/Common/Blob/Protocol/GetPageRangesResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/GetPageRangesResponse.cs
     startLine: 27
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -30,7 +30,9 @@ items:
     content: 'public sealed class GetPageRangesResponse : ResponseParsingBase<PageRange>, IDisposable'
     content.vb: >-
       Public NotInheritable Class GetPageRangesResponse
+
           Inherits ResponseParsingBase(Of PageRange)
+
           Implements IDisposable
   inheritance:
   - System.Object
@@ -72,11 +74,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/GetPageRangesResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/GetPageRangesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/Common/Blob/Protocol/GetPageRangesResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/GetPageRangesResponse.cs
     startLine: 37
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -106,11 +108,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/GetPageRangesResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/GetPageRangesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: PageRanges
-    path: src/Storage/Common/Blob/Protocol/GetPageRangesResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/GetPageRangesResponse.cs
     startLine: 46
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -122,7 +124,9 @@ items:
       public IEnumerable<PageRange> PageRanges
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property PageRanges As IEnumerable(Of PageRange)
     parameters: []
@@ -147,11 +151,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/GetPageRangesResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/GetPageRangesResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ParseXml
-    path: src/Storage/Common/Blob/Protocol/GetPageRangesResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/GetPageRangesResponse.cs
     startLine: 98
   assemblies:
   - Microsoft.WindowsAzure.Storage

@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/GetBlockListResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/GetBlockListResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: GetBlockListResponse
-    path: src/Storage/Common/Blob/Protocol/GetBlockListResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/GetBlockListResponse.cs
     startLine: 29
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -30,7 +30,9 @@ items:
     content: 'public class GetBlockListResponse : ResponseParsingBase<ListBlockItem>, IDisposable'
     content.vb: >-
       Public Class GetBlockListResponse
+
           Inherits ResponseParsingBase(Of ListBlockItem)
+
           Implements IDisposable
   inheritance:
   - System.Object
@@ -70,11 +72,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/GetBlockListResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/GetBlockListResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/Common/Blob/Protocol/GetBlockListResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/GetBlockListResponse.cs
     startLine: 37
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -104,11 +106,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/GetBlockListResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/GetBlockListResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Blocks
-    path: src/Storage/Common/Blob/Protocol/GetBlockListResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/GetBlockListResponse.cs
     startLine: 46
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -120,7 +122,9 @@ items:
       public IEnumerable<ListBlockItem> Blocks
 
       {
+
           get;
+
       }
     content.vb: Public ReadOnly Property Blocks As IEnumerable(Of ListBlockItem)
     parameters: []
@@ -145,11 +149,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/GetBlockListResponse.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/GetBlockListResponse.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: ParseXml
-    path: src/Storage/Common/Blob/Protocol/GetBlockListResponse.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/GetBlockListResponse.cs
     startLine: 101
   assemblies:
   - Microsoft.WindowsAzure.Storage

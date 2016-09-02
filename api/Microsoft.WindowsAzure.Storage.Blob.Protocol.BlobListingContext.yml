@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/BlobListingContext.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/BlobListingContext.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: BlobListingContext
-    path: src/Storage/Common/Blob/Protocol/BlobListingContext.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/BlobListingContext.cs
     startLine: 27
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -30,6 +30,7 @@ items:
     content: 'public sealed class BlobListingContext : ListingContext'
     content.vb: >-
       Public NotInheritable Class BlobListingContext
+
           Inherits ListingContext
   inheritance:
   - System.Object
@@ -65,11 +66,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/BlobListingContext.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/BlobListingContext.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/Common/Blob/Protocol/BlobListingContext.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/BlobListingContext.cs
     startLine: 38
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -110,11 +111,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/BlobListingContext.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/BlobListingContext.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Delimiter
-    path: src/Storage/Common/Blob/Protocol/BlobListingContext.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/BlobListingContext.cs
     startLine: 53
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -127,8 +128,11 @@ items:
       public string Delimiter
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Delimiter As String
     parameters: []
@@ -153,11 +157,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Blob/Protocol/BlobListingContext.cs
+      path: src/Storage/Lib/Common/Blob/Protocol/BlobListingContext.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Details
-    path: src/Storage/Common/Blob/Protocol/BlobListingContext.cs
+    path: src/Storage/Lib/Common/Blob/Protocol/BlobListingContext.cs
     startLine: 64
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -170,8 +174,11 @@ items:
       public BlobListingDetails Details
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Details As BlobListingDetails
     parameters: []

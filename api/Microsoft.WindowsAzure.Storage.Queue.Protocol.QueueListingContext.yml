@@ -14,11 +14,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/QueueListingContext.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/QueueListingContext.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: QueueListingContext
-    path: src/Storage/Common/Queue/Protocol/QueueListingContext.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/QueueListingContext.cs
     startLine: 27
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -29,6 +29,7 @@ items:
     content: 'public sealed class QueueListingContext : ListingContext'
     content.vb: >-
       Public NotInheritable Class QueueListingContext
+
           Inherits ListingContext
   inheritance:
   - System.Object
@@ -64,11 +65,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/QueueListingContext.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/QueueListingContext.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: .ctor
-    path: src/Storage/Common/Queue/Protocol/QueueListingContext.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/QueueListingContext.cs
     startLine: 37
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -106,11 +107,11 @@ items:
   type: Property
   source:
     remote:
-      path: src/Storage/Common/Queue/Protocol/QueueListingContext.cs
+      path: src/Storage/Lib/Common/Queue/Protocol/QueueListingContext.cs
       branch: master
       repo: https://github.com/bradygaster/BradysOpsPlayground.git
     id: Include
-    path: src/Storage/Common/Queue/Protocol/QueueListingContext.cs
+    path: src/Storage/Lib/Common/Queue/Protocol/QueueListingContext.cs
     startLine: 48
   assemblies:
   - Microsoft.WindowsAzure.Storage
@@ -122,8 +123,11 @@ items:
       public QueueListingDetails Include
 
       {
+
           get;
+
           set;
+
       }
     content.vb: Public Property Include As QueueListingDetails
     parameters: []
