@@ -1,4 +1,3 @@
-
 # DocFX Overwrite File Tutorials
 Markdown is the format we've chosen to give our customers great documentation in an agile and efficient manner. DocFX overwrite files gives authors and open-source contributors an opportunity to add to, improve upon, or submit changes to API documentation without needing to change the actual source code. This way, we enable our partnes to maintain maintain their own documentation through our "docs as code" strategy, but we also enable CSI to improve upon the generated reference content by adding higher-level conceptual content right in line with the documentation content generated from source code.
 
